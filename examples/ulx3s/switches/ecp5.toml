@@ -1,0 +1,13 @@
+# Four input-only DIP switches on the LEDs and debounced UART reports.
+# Build: ecp5_emu build examples/ulx3s/switches (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/switches; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/switches.
+
+[project]
+name = "switches"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+# top_pullup.lpf is the UP variant; set constraints = "top_pullup.lpf" to use it.
+constraints = "top.lpf"

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-22",
+  "scope": "latest_material_collection",
+  "checks": {
+    "clock_system_research": {
+      "files": 16,
+      "byte_identical": true,
+      "tables_parse": true
+    },
+    "package_system_research": {
+      "files": 9,
+      "byte_identical": true,
+      "tables_parse": true
+    },
+    "pio_bank_research": {
+      "files": 13,
+      "byte_identical": true,
+      "tables_parse": true
+    },
+    "system_metadata_research": {
+      "files": 5,
+      "byte_identical": true,
+      "tables_parse": true
+    }
+  },
+  "byte_identical_files": 43,
+  "new_bit_constraints_in_bounds": 149725,
+  "document_file_links_checked": 554,
+  "broken_local_links": [],
+  "questions": 78,
+  "prepared_hardware_series": 37,
+  "hardware_results": 0,
+  "package_GPIO_counts": {
+    "CABGA381": 205,
+    "CABGA554": 259,
+    "CABGA756": 365,
+    "CSFBGA285": 118
+  },
+  "runtime_changed": false,
+  "Rust_tests": "not_rerun_in_research_only_pass;prior_toolchain_results_in_TOOLCHAIN.md",
+  "validator_sha256": "3b3332cbf807934fd3507dbaf5ad04d9ed461a37f3d44906b7be3f778b1ed251"
+}

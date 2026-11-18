@@ -1,0 +1,51 @@
+HI12 run_2 analysis and R09 closure
+
+Raw data: 15 loads, 347010 bytes, 1885 complete HC records, 0 captured HB.
+Each load has one distinct complete record; sync_35 has three different boot
+phase records across its loads. All raw .bin bytes were preserved.
+Ten supplied .log/.stdout files were checked for path normalization; they
+already contain basenames, so no absolute scratch paths needed replacement.
+Raw byte counts and complete/heartbeat counts agree with both metadata copies.
+Hashes and per-load analysis: capture_checks.json; readable output: analysis.txt.
+
+All /2 snapshots have I=P+F, with startup deficit 0 against fabric counting.
+All /3.5 snapshots fit one common modulo-seven initial phase with D=0;
+some also fit D=1 under another phase. A four-period deficit does not fit.
+Every phase window: 0-sample CLKI/CDIVX edge offset at 10 ns resolution;
+/2 has rising interval 8 samples and low/high widths 4/4;
+/3.5 has rising interval 14 samples and low/high widths 6/8.
+
+Actual emulator replay, configured/observed, 1600000 cycles (64 ms):
+  python3 -B check_emulator.py /private/tmp/hi12-repair-build --variants none_default sync_2
+  none_default P=F: midpoint 262144, final 524288 (agrees with board).
+  sync_2 P=F: midpoint 262142, final 524286 (board 262144, 524288).
+  Both emit 29 HB and one complete HC record. Evidence: emulator/.
+Enabled ECLKSYNCB execution is unchanged; clock-history startup is an open item.
+
+Local support checks:
+  python3 -B check_support.py
+  PASS: 10 tests, including all 15 board captures, phase ambiguity, deliberate
+  lost-cycle rejection, and UART failure/retention tests.
+
+rserv, TMPDIR=$HOME/work/tmp:
+  cargo test --release --test eclksync_none --test edge_clock --test edge_clock_native --test eclk_bridge_native --test gearbox_native --test gearbox71_native --test cross_domain_fast -- --include-ignored
+  PASS: 20 tests, 0 failed, 0 ignored (including all 4 R09 tests).
+  cargo test --release --test automatic_compile preload_executes_and_unsupported_pio_paths_remain_refused -- --include-ignored
+  PASS: 1 test; the unqualified synthetic bypass remains refused.
+  cargo fmt --check
+  PASS.
+  cargo clippy --release --workspace --all-targets -- -D warnings
+  PASS.
+
+Extra broader check, outside the required ECLK selection:
+  automatic_compile: 15 passed, 1 failed. At tests/automatic_compile.rs:808,
+  native_two_clock_carry_counters_run_from_config_and_bit_through_gpio still
+  expects the old "synchronous global user GSR is not implemented" error.
+  Concurrent HY01 work now implements SYNC; this unrelated expectation was
+  left unchanged. No claim of a clean whole-suite run is made for this turn.
+
+R09 CSV changes: only BRGECLKSYNC.MODE, ECLKSYNC0_BK.MODE, ECLKSYNC1_BK.MODE.
+Recount: 208 executed, 29 partly, 21 refused, 23 resource-not-executed,
+41 ignored-no-effect, 0 ignored-RISK; 322 total.
+Generic personal/scratch-path scan, Python syntax, and git diff --check: PASS.
+No board, serial, flash or commit operation during analysis.

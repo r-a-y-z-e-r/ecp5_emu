@@ -1,0 +1,121 @@
+HC02 DCSC board build and emulator validation, 2026-11-17
+
+Original board build tools recorded in README.md:
+  Yosys 0.70+post, 0c11ea098be065e585a90a06e7b7da49936cf231
+  nextpnr-ecp5 0.11.1-77-g6b438a1c, 85k CABGA381 seed 1, default router1
+  ecppack / Trellis 1.4-86-ga31ff70
+  25 MHz G2 reference; 200 MHz sampling; UART 115200 8N1
+
+The planning session supplied the board artifacts and observations from a scratch copy:
+<scratch>/hc02
+
+Exact build commands from README.md (record only; not rerun during implementation):
+
+set -eu
+cd '~/IDE Workspaces/RustroverProjects/ecp5_emu'
+HC02="$PWD/docs/inventory/LFE5U-85F/hc02_dcs"
+HC02_LPF="$PWD/docs/inventory/LFE5U-85F/hb11_ebr_narrow_rbw/hb11.lpf"
+BUILD="$(mktemp -d /tmp/hc02-dcs.XXXXXX)"
+export PYTHONDONTWRITEBYTECODE=1
+python3 "$HC02/hc02_analyse.py" --selftest
+cd "$BUILD"
+for variant in dynamic static; do
+  python3 "$HC02/hc02_gen.py" --variant "$variant" > "$variant.v"
+  yosys -Q -T -p "read_verilog $variant.v; synth_ecp5 -top top -json $variant.json; check" \
+    > "$variant.yosys.log" 2>&1 || exit 1
+  nextpnr-ecp5 --85k --package CABGA381 --seed 1 --freq 200 \
+    --json "$variant.json" --lpf "$HC02_LPF" \
+    --pre-pack "$HC02/hc02_timing.py" --textcfg "$variant.config" \
+    > "$variant.nextpnr.log" 2>&1 || exit 1
+  if grep -q 'ERROR' "$variant.nextpnr.log"; then
+    cat "$variant.nextpnr.log"
+    exit 1
+  fi
+  grep -E 'enum: DCS[01]\.DCSMODE' "$variant.config"
+  ecppack --compress "$variant.config" "$variant.bit" \
+    > "$variant.ecppack.log" 2>&1 || exit 1
+done
+
+Board capture commands supplied by the planning session (record only, SRAM loads):
+  python3 ../hb11_ebr_narrow_rbw/run.py dynamic.bit D2 3 30
+  python3 ../hb11_ebr_narrow_rbw/run.py static.bit D2 3 15
+
+Analysis commands, from this directory:
+  PYTHONDONTWRITEBYTECODE=1 python3 hc02_analyse.py observations_dynamic.log --timelines --compare-rules > analysis_dynamic.txt 2>&1
+  PYTHONDONTWRITEBYTECODE=1 python3 hc02_analyse.py observations_static.log --timelines --compare-rules > analysis_static.txt 2>&1
+Each returns 2 for three retained cut records. Complete records: dynamic 165,
+static 80. The 48-rule comparison has only old=A+0,new=A+1 fitting all 113
+protected switches per DCS, with zero missing/extra edges. One static observer
+record is unresolved. This implementation did not regenerate the reports.
+
+Emulator validation host: rserv, through tools/rserv.sh. Edited Rust files were
+touched before every sync. Formatting was done remotely; only explicitly edited
+files were copied back. src/kernel/fast.rs retains exactly one added ensure at
+source collection; src/fast.rs and the other protected files were not edited.
+
+Targeted kernel tests:
+  tools/rserv.sh bash -c 'cargo fmt --all && cargo test --release --test event_kernel dcs_ -- --nocapture'
+  test dcs_all_static_tables_and_bypass_values ... ok
+  test dcs_protected_switches_have_exact_edges_at_many_phases_in_both_directions ... ok
+  test dcs_bypass_entry_truncates_immediately_and_cancels_a_pending_switch ... ok
+  test dcs_stopped_new_source_holds_without_timeout_then_resumes_after_two_edges ... ok
+  test dcs_coincident_old_and_new_edges_do_not_consume_the_new_stage ... ok
+  test dcs_unknown_controls_are_conservative_and_fast_mode_refuses_the_driver ... ok
+  test result: ok. 6 passed; 0 failed; 0 ignored; 22 filtered out; 0.11s
+  Coverage: all 80 static table/control entries and 400 value samples;
+  96 exact-edge POS/NEG direction/phase scenarios, plus directed controls.
+
+Native DCS and image regressions, after the metadata-only arc fix:
+  tools/rserv.sh bash -c 'cargo fmt --all && cargo test --release --test dcs_native --test configuration_state -- --include-ignored --nocapture'
+  test hc02_dynamic_port_edges_follow_two_new_active_edges ... ok
+    350 us design time, switches [2, 2], exact rational source/output edges;
+    3.54s on rserv, no UART decoding.
+  test hc02_static_ports_match_the_table_at_every_settled_time ... ok
+    350 us, settled samples [6565, 6565], control changes [2, 2]; 3.53s.
+  test hc02_dynamic_is_clearly_refused_by_fast_mode ... ok
+    fast mode does not run DCSC (HC02); the event kernel does
+  dcs_native: test result: ok. 3 passed; 0 failed; 0 ignored; 3.61s
+  configuration_state: test result: ok. 10 passed; 0 failed; 0 ignored; 6.46s
+    Includes text_service_metadata_does_not_reinterpret_duplicate_dcs_arcs and
+    native_bit_and_text_keep_the_same_payload_without_losing_service_registers.
+  The initial native attempt exposed a metadata parser rejection of nextpnr's
+  default-plus-selected DCS arcs. The native decoder still receives the complete
+  unchanged source; only metadata extraction skips routing declarations.
+
+Existing areas with ignored tests enabled:
+  tools/rserv.sh cargo test --release --test event_kernel --test fast_mode --test fast_reset_order -- --include-ignored --nocapture
+  event_kernel: test result: ok. 28 passed; 0 failed; 0 ignored; 6.03s
+  fast_mode: test result: ok. 19 passed; 0 failed; 0 ignored; 22.73s
+  fast_reset_order: test result: ok. 7 passed; 0 failed; 0 ignored; 0.01s
+
+Workspace suite, invoked exactly once, followed by format/lint checks:
+  tools/rserv.sh bash -c 'cargo test --release --workspace && cargo fmt --all -- --check && cargo clippy --release --workspace --all-targets -- -D warnings'
+  Workspace: 364 passed; 0 failed; 195 ignored, across 76 result groups.
+  Includes GUI: 75 passed; 6 ignored; documentation: 0 tests, success.
+  cargo fmt --all -- --check: passed.
+  cargo clippy --release --workspace --all-targets -- -D warnings: passed.
+
+On the Mac, only:
+  cargo check --tests
+  Finished dev profile successfully (final check: 5.65s).
+
+PRLD documentation correction: ed624e7 runs synchronous and asynchronous PRLD in
+fast mode. Simultaneous asynchronous LSR release and M change stops fast mode
+with error code 5 (the event kernel produces X); unknown initial M is StartsUnknown.
+No PRLD implementation changes were made here. The existing fast_reset_order
+include-ignored tests above pass, including release races across capture waves.
+
+Files edited by this implementation:
+  src/kernel/dcs.rs (new); src/compile/dcs.rs (new)
+  src/kernel/mod.rs; src/kernel/cache.rs; src/compile/mod.rs; src/compile/cache.rs
+  src/kernel/fast.rs (exactly one ensure); src/image.rs
+  tests/event_kernel.rs; tests/dcs_native.rs (new); tests/configuration_state.rs
+  docs/CLOCK_NETWORK.md; docs/HARDWARE_VALIDATION.md; docs/RESOURCE_COVERAGE.md
+  docs/SETTINGS_COVERAGE.md; docs/inventory/LFE5U-85F/settings_coverage.csv
+  docs/FF_CCU2.md; docs/inventory/LFE5U-85F/hs02_slice_prld/README.md
+  docs/inventory/LFE5U-85F/hs02_slice_prld/SHA256SUMS
+  this README.md, TOOLS.txt (new), SHA256SUMS (new)
+
+All eight frozen HC02 HDL/config/log/generator/timing files retained their
+pre-implementation SHA256 values. No board, serial access, branch switch,
+stash, reset or commit was performed. SHA256SUMS was generated last.

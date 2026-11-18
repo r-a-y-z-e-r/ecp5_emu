@@ -1,0 +1,19 @@
+# PicoRV32 copying firmware from block RAM and running it in SDRAM.
+# Build: ecp5_emu build examples/ulx3s/picorv32_sdram (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/picorv32_sdram; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/picorv32_sdram.
+
+[project]
+name = "picorv32_sdram"
+top = "top"
+
+[sources]
+verilog = ["controller.v", "picorv32.v", "top.v"]
+constraints = "top.lpf"
+files = []
+
+[memory]
+# The firmware (firmware/build.sh), one byte lane per EBR. They are put in
+# after place and route (ecpbram), so a new firmware needs no new place and
+# route: the same as ecpbram.txt for build.sh and swap.sh.
+images = ["fw0.hex", "fw1.hex", "fw2.hex", "fw3.hex"]

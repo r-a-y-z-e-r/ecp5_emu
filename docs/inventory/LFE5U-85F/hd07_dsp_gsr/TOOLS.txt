@@ -1,0 +1,9 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+  python3 hd07_gen.py > hd07.v; python3 hd07_gen.py s > hd07s.v
+  yosys -p 'read_verilog hd07.v; synth_ecp5 -top top; setparam -set GSR "DISABLED" t:TRELLIS_FF; write_json top.json'
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c), --85k --package CABGA381 --seed 1
+ecppack: prjtrellis a31ff7042e712c0e2ad217054116ce2c4995f5c7
+openFPGALoader v1.1.1
+pyserial 3.5, /dev/cu.usbserial-<FTDI-serial> at 115200 8N1
+Python 3 (hd07_gen.py, hd07_analyse.py)
+ecp5_emu fast mode and event kernel, 2026-11-15 working tree (tests/alu54_native.rs)

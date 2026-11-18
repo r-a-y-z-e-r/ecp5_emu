@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "scope": "Research evidence; no executable state machine or inferred pointer encoding",
+  "sources": {
+    "highspeed": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50467",
+      "path": "target/research/iologic/FPGA-TN-02035-1.3.pdf",
+      "revision": "FPGA-TN-02035-1.3"
+    },
+    "library": {
+      "url": "https://www.latticesemi.com/view_document?document_id=53950",
+      "path": "target/research/dsp/Diamond-3.13-FPGA-Libraries.pdf",
+      "revision": "Diamond 3.13, 2023-08-24"
+    },
+    "datasheet": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50461",
+      "path": "target/research/dqs/ECP5-Family-Data-Sheet.pdf",
+      "revision": "FPGA-DS-02012-3.4"
+    }
+  },
+  "rules": [
+    {
+      "id": "DD01",
+      "subject": "DDRDLL.FREEZE",
+      "high": "gate_internal_clock_and_ring_oscillator",
+      "low": "resume",
+      "source": "datasheet",
+      "page": 25
+    },
+    {
+      "id": "DD02",
+      "subject": "DDRDLL.UDDCNTLN",
+      "update_level": 0,
+      "observable_code": "DCNTL[7:0]",
+      "source": "datasheet",
+      "page": 25
+    },
+    {
+      "id": "DD03",
+      "subject": "DDRDLL.LOCK",
+      "meaning": "valid_delay_output",
+      "cycle_count": null,
+      "source": "datasheet",
+      "page": 25
+    },
+    {
+      "id": "DD04",
+      "subject": "DDRDLL.LOCK_CYC",
+      "category": "simulation_only_attribute",
+      "cram_field_expected": false,
+      "source": "library",
+      "page": 251
+    },
+    {
+      "id": "DQ01",
+      "subject": "DQSBUFM.RDLOADN/WRLOADN",
+      "action": "restore_nominal_90_degree_delay",
+      "source": "library",
+      "page": 296
+    },
+    {
+      "id": "DQ02",
+      "subject": "DQSBUFM.RDMOVE/WRMOVE",
+      "direction_sample_edge": "falling",
+      "direction_1": "decrease",
+      "direction_0": "increase",
+      "source": "library",
+      "page": 296
+    },
+    {
+      "id": "DQ03",
+      "subject": "DQSBUFM.PAUSE",
+      "stopped_outputs": [
+        "DQSW",
+        "DQSW270"
+      ],
+      "read_path_behavior": null,
+      "source": "library",
+      "page": 296
+    },
+    {
+      "id": "DQ04",
+      "subject": "DQSBUFM.margin_control",
+      "manual_level_on_RDLOADN_WRLOADN": 1,
+      "automatic_DDRDLL_tracking_in_manual_mode": false,
+      "source": "highspeed",
+      "page": 38
+    },
+    {
+      "id": "DQ05",
+      "subject": "DQSBUFM.control_updates",
+      "pause_before_T": 4,
+      "pause_after_T": 4,
+      "T": "memory_tCK",
+      "signals": [
+        "READCLKSEL[2:0]",
+        "DYNDELAY[7:0]",
+        "RDMOVE",
+        "WRMOVE",
+        "RDLOADN",
+        "WRLOADN",
+        "DDRDLL.UDDCNTLN"
+      ],
+      "source": "highspeed",
+      "page": 37
+    },
+    {
+      "id": "DQ06",
+      "subject": "DQSBUFM.READCLKSEL[2:0]",
+      "step_T_numerator": 1,
+      "step_T_denominator": 4,
+      "code_count": 8,
+      "source": "highspeed",
+      "page": 37
+    },
+    {
+      "id": "DQ07",
+      "subject": "DQSBUFM.DATAVALID",
+      "active_level": 1,
+      "meaning": "valid_IDDR_output_window",
+      "back_to_back_level": "may_remain_asserted",
+      "source": "highspeed",
+      "page": 35
+    },
+    {
+      "id": "DQ08",
+      "subject": "DQSBUFM.BURSTDET",
+      "assertion": "after_final_DQS_transition_if_READ_position_valid",
+      "holds_until": "next_read",
+      "source": "highspeed",
+      "page": 36
+    },
+    {
+      "id": "FI01",
+      "subject": "memory_IDDR_FIFO",
+      "depth": 8,
+      "read_pointer_bits": 3,
+      "write_pointer_bits": 3,
+      "pointer_encoding": null,
+      "word_width": null,
+      "source": "highspeed",
+      "page": 38
+    },
+    {
+      "id": "FI02",
+      "subject": "memory_IDDR_FIFO",
+      "write_domain": "DQS",
+      "read_domain": "ECLK",
+      "equal_nominal_frequency": true,
+      "controller_owner": "DQSBUF_group",
+      "source": "highspeed",
+      "page": 38
+    },
+    {
+      "id": "FI03",
+      "subject": "IDDRX2DQA",
+      "positive_edge_outputs": [
+        "Q0",
+        "Q2"
+      ],
+      "negative_edge_outputs": [
+        "Q1",
+        "Q3"
+      ],
+      "sampling_clock": "DQS",
+      "output_publication_phase": null,
+      "source": "highspeed",
+      "page": 74
+    },
+    {
+      "id": "SY01",
+      "subject": "MEM_SYNC",
+      "implementation": "soft_IP_in_fabric",
+      "scope": "Clarity_generated_memory_interface",
+      "source": "highspeed",
+      "page": 39
+    },
+    {
+      "id": "SY02",
+      "subject": "MEM_SYNC.reset_outputs",
+      "when_RST": 1,
+      "values": {
+        "STOP": 0,
+        "FREEZE": 0,
+        "UDDCNTLN": 1,
+        "DLL_RESET": 1,
+        "DDR_RESET": 1,
+        "READY": 0,
+        "PAUSE": 0
+      },
+      "source": "highspeed",
+      "page": 80
+    },
+    {
+      "id": "SY03",
+      "subject": "MEM_SYNC.clock",
+      "requirement": "independent_continuously_running_clock",
+      "diagram_name": "START_CLK",
+      "table_name": "SYNC_CLK",
+      "source": "highspeed",
+      "page": 80
+    },
+    {
+      "id": "SY04",
+      "subject": "MEM_SYNC.DDR_RESET",
+      "targets": [
+        "IDDRX",
+        "ODDRX",
+        "OSHX",
+        "DQSBUF",
+        "CLKDIV"
+      ],
+      "source": "highspeed",
+      "page": 80
+    }
+  ],
+  "source_disagreements": [
+    {
+      "id": "SC01",
+      "subject": "DQS_LI/LO_DEL_VAL",
+      "highspeed": {
+        "PLUS": [
+          0,
+          255
+        ],
+        "MINUS": [
+          1,
+          256
+        ],
+        "page": 73
+      },
+      "library": {
+        "PLUS": [
+          0,
+          63
+        ],
+        "MINUS": [
+          1,
+          64
+        ],
+        "page": 295
+      },
+      "resolution": "preserve_eight_bit_Trellis_word_and_nextpnr_encoding;physical_range_not_settled"
+    },
+    {
+      "id": "SC02",
+      "subject": "DDRDLL.FREEZE",
+      "highspeed_page": 67,
+      "highspeed_description": "polarity_not_explicit",
+      "datasheet_page": 25,
+      "resolution": "explicit_datasheet_high_gates_low_resumes"
+    }
+  ],
+  "open_questions": [
+    "FIFO pointer encoding, reset values, increment conditions and wrap sequence",
+    "FIFO word width, staging registers and simultaneous DQS/ECLK behavior",
+    "DATAVALID and BURSTDET exact cycle latency and READ window gate internals",
+    "PAUSE entry/exit phase, held clock levels and read-path effects",
+    "Delay counter bounds, wrap/saturation and CFLAG behavior at both limits",
+    "DDRDLL acquisition/relock timing, code calibration and FORCE_MAX_DELAY LOCK behavior",
+    "DDRDEL transport representation and its relationship to DCNTL[7:0]",
+    "DIVOSC function and its internal division/state",
+    "Hardware mapping of WRITE_LEVELING attribute and FACTORYONLY parameter defaults",
+    "Exact MEM_SYNC release/update sequence must follow the loaded fabric implementation"
+  ]
+}

@@ -1,0 +1,42 @@
+HC08 preparation on Mac, 2026-11-17. No board/serial/flash access. No commit.
+
+Five profiles A/B/C/D/E: Yosys synthesis, nextpnr-ecp5 --85k --package CABGA381
+--seed 1 routing, and ecppack: PASS. Both 25 MHz and 100 MHz timing targets PASS.
+Actual routed feedback enums, four analog words and feedback port nets checked.
+All TRELLIS_FF cells have GSR=DISABLED. See build_checks.json, timing.txt,
+pll_settings.txt and TOOLS.txt. Full generated sources/routing/bitstreams/logs
+were built in mktemp scratch outside the repository.
+
+Packed-bitstream CLI, every profile: PASS.
+Configured startup, observed scope, 25 MHz G2.
+Event-kernel LOCK=1 at 0 ns, first CLKOP rising edge 70 ns,
+all following rising-edge intervals 10 ns.
+Fast UART for 800000 G2 cycles (32 ms): four valid record bodies/profile.
+At 10 ms: synchronized LOCK=1 and CLKOP count=999987.
+At 20 ms: count=1999987; at 30 ms: count=2999987.
+Successive steady intervals have delta_pin=250000, delta_CLKOP=1000000:
+ratio=4 and CLKOP=100 MHz. The first window includes startup/CDC delay.
+See emulator_checks.json and emulator/; this is not board evidence.
+
+Full default startup-memory/replay run on packed A: PASS.
+101000000 pin cycles = 4.04 s; 404 live and 203 replay records.
+All 201 timestamps t=0,10,...,2000 ms recovered from replay and matched exactly
+against their initial live samples. Analysis also passed after discarding all
+initial live startup records, requiring replay to supply the entire early set.
+See emulator/A/startup_check.json and emulator.startup.* evidence beside it.
+
+check_support.py: PASS, all four RTL cases and runner/parser checks.
+No CLKOP, LOCK=0: 10 ms heartbeat; ratio=0; exact startup replay.
+100 MHz, LOCK=0: 10 ms heartbeat; ratio=4; exact startup replay.
+100 MHz, LOCK rises at 15 ms: first sampled high at 20 ms; exact startup replay.
+62.5 MHz, LOCK=0: ratio=2.5; exact startup replay.
+Each 80 ms fault test uses STARTUP_LAST=3 and verifies eight live records and
+four replayed records, including the t=0 snapshot. Sampling interval and UART
+baud are unchanged from the board build.
+Strict parsing, empty/partial captures, exact binary byte retention,
+SRAM-load-before-serial-open ordering, loader failure and partial read failure:
+PASS. No physical loader or serial call was made: these paths were mocked.
+
+Python sources parsed successfully. Repository tools/check_home_paths.py PASS.
+All new HC08 files separately scanned (including untracked files): no personal
+home paths or session-specific absolute scratch paths.

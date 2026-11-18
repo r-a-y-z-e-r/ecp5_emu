@@ -1,0 +1,137 @@
+events per load: {1: 804, 2: 804, 3: 802}
+
+== pa
+W=     1 n= 151: drop=2  during=0  level=0..1 (median 0)  first=0  stable=0..319 (median 287)  lock=98313  bmin=124..125 (median 124)  bmax=128  lost=56  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2044 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2044 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     2 n= 139: drop=2  during=0  level=0..1 (median 1)  first=0  stable=0..321 (median 295)  lock=98313  bmin=122..125 (median 122)  bmax=128  lost=52  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     3 n= 175: drop=2  during=0  level=0..1 (median 0)  first=3  stable=258..321 (median 292)  lock=98313  bmin=120..123 (median 120)  bmax=128  lost=48  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     4 n= 140: drop=2  during=0  level=0..1 (median 1)  first=3  stable=258..321 (median 295)  lock=98313  bmin=118..123 (median 118)  bmax=128  lost=44  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     5 n= 150: drop=2  during=0  level=0..1 (median 1)  first=3  stable=258..321 (median 289)  lock=98313  bmin=116..121 (median 116)  bmax=128  lost=40  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     8 n= 155: drop=2  during=0  level=0..1 (median 1)  first=3  stable=265..328 (median 294)  lock=98314  bmin=108..117 (median 108)  bmax=128  lost=24  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    16 n= 142: drop=2  during=0  level=0..1 (median 1)  first=3  stable=306..404 (median 347)  lock=98356..98359 (median 98358)  bmin=21..74 (median 44)  bmax=129..130 (median 129)  lost=32..49 (median 42)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1968 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1963 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    32 n= 151: drop=2  during=0  level=0..1 (median 0)  first=52  stable=991..1197 (median 1048)  lock=98915..99155 (median 98959)  bmin=0..37 (median 11)  bmax=128..130 (median 129)  lost=28..48 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1807 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1801 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=   100 n= 158: drop=2  during=0  level=0..1 (median 0)  first=55  stable=2885..3009 (median 2948)  lock=100798..101064 (median 100891)  bmin=0  bmax=128..129 (median 129)  lost=8..60 (median 32)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1376 1673 1962 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1372 1666 1955 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=   256 n= 164: drop=2  during=0  level=0..1 (median 0)  first=56..57 (median 57)  stable=6417..6631 (median 6497)  lock=104336..104618 (median 104441)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 32)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1248 1355 1371 1429 1570 1823 2044 2048 2048 2048 2048 2048  min: 1247 1353 1370 1427 1563 1813 2041 2048 2048 2048 2048 2048
+W=  1000 n= 140: drop=2  during=0  level=0..1 (median 0)  first=56..57 (median 56)  stable=9380..9493 (median 9442)  lock=107284..107561 (median 107411)  bmin=0  bmax=128..129 (median 129)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1248 1350 1350 1351 1355 1376 1441 1595 1863 2048 2048 2048  min: 1246 1349 1349 1349 1354 1374 1438 1590 1853 2047 2048 2048
+W=  4096 n= 158: drop=2  during=0  level=0..1 (median 0)  first=56  stable=9390..9579 (median 9457)  lock=107306..107585 (median 107402)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1247 1350 1350 1351 1355 1375 1440 1592 1859 2048 2048 2048  min: 1246 1348 1348 1349 1354 1374 1437 1587 1850 2047 2048 2048
+W= 10000 n= 149: drop=2  during=0  level=0..1 (median 0)  first=56..57 (median 56)  stable=9390..9577 (median 9453)  lock=107293..107570 (median 107384)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1247 1350 1350 1351 1355 1375 1440 1592 1859 2048 2048 2048  min: 1246 1348 1349 1349 1354 1374 1437 1587 1851 2047 2048 2048
+W= 25000 n= 139: drop=2  during=0  level=0..1 (median 0)  first=56..57 (median 56)  stable=9371..9608 (median 9462)  lock=107297..107575 (median 107407)  bmin=0  bmax=128..130 (median 128)  lost=0..60 (median 24)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1248 1350 1350 1351 1355 1375 1440 1592 1858 2048 2048 2048  min: 1247 1349 1349 1350 1354 1373 1437 1586 1850 2047 2048 2048
+W= 50000 n= 159: drop=2  during=0  level=0..1 (median 0)  first=56  stable=9391..9587 (median 9449)  lock=107295..107566 (median 107401)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1248 1350 1350 1351 1356 1375 1440 1592 1860 2048 2048 2048  min: 1246 1349 1349 1349 1354 1374 1437 1587 1850 2047 2048 2048
+W=100000 n= 140: drop=2  during=0  level=0..1 (median 0)  first=56..57 (median 56)  stable=9399..9522 (median 9455)  lock=107300..107556 (median 107378)  bmin=0  bmax=128..129 (median 129)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1248 1350 1350 1351 1355 1375 1440 1592 1859 2048 2048 2048  min: 1247 1349 1349 1350 1354 1373 1438 1587 1852 2047 2048 2048
+
+== pb
+W=     1 n= 151: drop=2  during=0  level=0  first=0  stable=0..319 (median 287)  lock=98311  bmin=123..125 (median 124)  bmax=128..129 (median 128)  lost=56  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2044 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2044 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     2 n= 139: drop=2  during=0  level=0  first=0  stable=0..321 (median 295)  lock=98311  bmin=121..125 (median 122)  bmax=128..129 (median 128)  lost=52  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     3 n= 175: drop=2  during=0  level=0  first=3  stable=258..321 (median 292)  lock=98311  bmin=119..123 (median 120)  bmax=128..129 (median 128)  lost=48  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     4 n= 140: drop=2  during=0  level=0  first=3  stable=258..321 (median 295)  lock=98311  bmin=117..123 (median 117)  bmax=128..129 (median 129)  lost=44  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     5 n= 150: drop=2  during=0  level=0  first=3  stable=259..322 (median 290)  lock=98311  bmin=115..121 (median 115)  bmax=128..129 (median 129)  lost=40  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     8 n= 155: drop=2  during=0  level=0  first=3  stable=259..322 (median 289)  lock=98311  bmin=109..118 (median 109)  bmax=129  lost=28  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2041 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    16 n= 142: drop=2  during=0  level=0..1 (median 1)  first=3  stable=454..583 (median 510)  lock=98411..98541 (median 98483)  bmin=19..67 (median 41)  bmax=129  lost=0..62 (median 52)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1941 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1935 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    32 n= 151: drop=2  during=0  level=0  first=53..54 (median 54)  stable=1508..1791 (median 1587)  lock=99429..99683 (median 99528)  bmin=0..33 (median 6)  bmax=129..130 (median 129)  lost=0..44 (median 24)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1659 2027 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1651 2023 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=   100 n= 158: drop=2  during=0  level=0  first=58..59 (median 59)  stable=3743..3987 (median 3797)  lock=101638..101897 (median 101726)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 20)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1277 1521 1737 2003 2048 2048 2048 2048 2048 2048 2048 2048  min: 1274 1516 1730 1998 2048 2048 2048 2048 2048 2048 2048 2048
+W=   256 n= 164: drop=2  during=0  level=0  first=59..61 (median 60)  stable=7746..8011 (median 7815)  lock=105644..105926 (median 105744)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 24)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1192 1311 1317 1340 1402 1535 1759 2016 2048 2048 2048 2048  min: 1190 1309 1316 1338 1399 1529 1748 2010 2048 2048 2048 2048
+W=  1000 n= 140: drop=2  during=0  level=0  first=60..61 (median 60)  stable=10762..11042 (median 10825)  lock=108669..108943 (median 108758)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1309 1311 1318 1342 1407 1545 1774 2024 2048  min: 1189 1307 1308 1308 1310 1316 1340 1403 1538 1762 2018 2048
+W=  4096 n= 158: drop=2  during=0  level=0  first=59..61 (median 60)  stable=10762..11054 (median 10840)  lock=108677..108926 (median 108769)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1310 1311 1318 1341 1406 1543 1771 2023 2048  min: 1189 1308 1308 1308 1309 1317 1340 1402 1535 1758 2016 2048
+W= 10000 n= 149: drop=2  during=0  level=0  first=59..61 (median 60)  stable=10755..11045 (median 10840)  lock=108664..108941 (median 108769)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 32)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1310 1311 1318 1341 1406 1543 1771 2023 2048  min: 1189 1308 1308 1308 1310 1317 1340 1402 1535 1757 2016 2048
+W= 25000 n= 139: drop=2  during=0  level=0  first=60..61 (median 60)  stable=10768..11039 (median 10831)  lock=108660..108977 (median 108782)  bmin=0  bmax=129..130 (median 129)  lost=0..60 (median 28)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1310 1311 1318 1341 1406 1543 1771 2022 2048  min: 1189 1308 1308 1309 1310 1316 1340 1403 1537 1761 2017 2048
+W= 50000 n= 159: drop=2  during=0  level=0  first=59..61 (median 60)  stable=10777..11028 (median 10843)  lock=108670..108964 (median 108777)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 32)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1310 1311 1318 1341 1406 1543 1771 2022 2048  min: 1189 1308 1308 1308 1310 1317 1339 1402 1537 1761 2017 2048
+W=100000 n= 140: drop=2  during=0  level=0  first=59..61 (median 60)  stable=10760..11033 (median 10845)  lock=108681..108931 (median 108768)  bmin=0  bmax=128..130 (median 129)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1191 1309 1309 1310 1311 1318 1341 1406 1543 1771 2022 2048  min: 1189 1308 1308 1309 1310 1317 1340 1403 1536 1761 2017 2048
+
+== pc
+W=     1 n= 151: drop=2  during=0  level=1  first=0  stable=0..370 (median 335)  lock=491546  bmin=116..121 (median 119)  bmax=129  lost=42  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2037 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2037 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     2 n= 139: drop=2  during=0  level=0..1 (median 1)  first=3  stable=301..366 (median 333)  lock=491546  bmin=113..120 (median 117)  bmax=129  lost=38  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     3 n= 175: drop=2  during=0  level=0..1 (median 0)  first=3  stable=299..366 (median 333)  lock=491546  bmin=111..119 (median 115)  bmax=129  lost=34  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     4 n= 140: drop=2  during=0  level=0..1 (median 0)  first=3  stable=295..362 (median 327)  lock=491546  bmin=109..118 (median 112)  bmax=129  lost=30  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     5 n= 150: drop=2  during=0  level=0  first=3  stable=296..359 (median 329)  lock=491546  bmin=107..117 (median 110)  bmax=129  lost=26  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     8 n= 155: drop=2  during=0  level=0  first=3  stable=288..351 (median 322)  lock=491546  bmin=100..114 (median 104)  bmax=129  lost=14  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2035 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    16 n= 142: drop=2  during=0  level=0  first=3  stable=582..654 (median 619)  lock=491586..491587 (median 491587)  bmin=21..70 (median 41)  bmax=130..131 (median 131)  lost=40..44 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1968 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1968 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    32 n= 151: drop=2  during=0  level=0  first=51..52 (median 51)  stable=1240..1685 (median 1533)  lock=492237..492293 (median 492272)  bmin=0..35 (median 9)  bmax=129..133 (median 130)  lost=14..62 (median 18)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1728 2051 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1721 2046 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=   100 n= 158: drop=2  during=0  level=0  first=57..58 (median 58)  stable=3580..4015 (median 3891)  lock=494402..494943 (median 494482)  bmin=0  bmax=128..132 (median 131)  lost=2..46 (median 42)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1316 1594 1804 2032 2048 2048 2048 2048 2048 2048 2048 2048  min: 1309 1590 1795 2026 2048 2048 2048 2048 2048 2048 2048 2048
+W=   256 n= 164: drop=2  during=0  level=0  first=60..62 (median 60)  stable=7938..8359 (median 8250)  lock=498737..499303 (median 498957)  bmin=0  bmax=128..133 (median 131)  lost=14..62 (median 38)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1364 1370 1390 1444 1555 1743 1995 2048 2048 2048 2048  min: 1208 1362 1369 1389 1440 1550 1734 1984 2048 2048 2048 2048
+W=  1000 n= 140: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11508..11953 (median 11824)  lock=502297..502862 (median 502452)  bmin=0  bmax=128..133 (median 131)  lost=2..50 (median 26)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1361 1361 1361 1362 1366 1378 1412 1492 1641 1871 2051  min: 1207 1360 1360 1360 1361 1364 1376 1410 1488 1635 1860 2046
+W=  4096 n= 158: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11497..11964 (median 11847)  lock=502312..502958 (median 502492)  bmin=0  bmax=128..133 (median 131)  lost=14..62 (median 38)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1361 1361 1362 1362 1366 1377 1411 1490 1638 1867 2052  min: 1207 1360 1360 1360 1361 1364 1376 1410 1486 1632 1856 2045
+W= 10000 n= 149: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11522..11967 (median 11842)  lock=502297..502877 (median 502547)  bmin=0  bmax=128..133 (median 131)  lost=14..62 (median 38)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1361 1361 1362 1362 1366 1377 1411 1490 1638 1867 2052  min: 1208 1360 1360 1360 1361 1364 1376 1409 1486 1631 1855 2045
+W= 25000 n= 139: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11515..11954 (median 11829)  lock=502297..502867 (median 502467)  bmin=0  bmax=128..133 (median 130)  lost=2..54 (median 30)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1209 1361 1361 1362 1362 1366 1377 1411 1490 1638 1867 2050  min: 1207 1360 1360 1360 1361 1364 1376 1409 1486 1631 1856 2045
+W= 50000 n= 159: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11511..11962 (median 11839)  lock=502312..502857 (median 502482)  bmin=0  bmax=128..132 (median 131)  lost=14..62 (median 38)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1361 1361 1362 1363 1366 1377 1411 1490 1638 1867 2051  min: 1208 1360 1360 1360 1361 1364 1376 1409 1487 1633 1858 2045
+W=100000 n= 140: drop=2  during=0  level=0  first=60..61 (median 60)  stable=11520..11965 (median 11832)  lock=502337..502862 (median 502522)  bmin=0  bmax=129..132 (median 131)  lost=14..62 (median 38)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1210 1361 1362 1362 1362 1366 1378 1411 1490 1638 1867 2051  min: 1207 1360 1360 1361 1361 1364 1376 1409 1486 1631 1855 2045
+
+== pd
+W=     1 n= 151: drop=2  during=0  level=0  first=0  stable=0..334 (median 302)  lock=491546  bmin=122..125 (median 122)  bmax=128  lost=52  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2042 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     2 n= 139: drop=2  during=0  level=0  first=0  stable=0..332 (median 298)  lock=491546  bmin=120..123 (median 120)  bmax=128  lost=48  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2040 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2040 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     3 n= 175: drop=2  during=0  level=0  first=3  stable=267..330 (median 299)  lock=491546  bmin=118..123 (median 118)  bmax=128  lost=44  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     4 n= 140: drop=2  during=0  level=0..1 (median 1)  first=3  stable=267..330 (median 300)  lock=491546  bmin=115..121 (median 116)  bmax=128..129 (median 128)  lost=40  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     5 n= 150: drop=2  during=0  level=1  first=3  stable=267..329 (median 296)  lock=491546  bmin=113..121 (median 114)  bmax=128..129 (median 128)  lost=36  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=     8 n= 155: drop=2  during=0  level=1  first=3  stable=264..327 (median 293)  lock=491546  bmin=107..117 (median 107)  bmax=128..129 (median 129)  lost=24  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 2039 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    16 n= 142: drop=2  during=0  level=0..1 (median 1)  first=3  stable=547..905 (median 830)  lock=491602..491608 (median 491603)  bmin=24..69 (median 45)  bmax=129..133 (median 132)  lost=32..60 (median 56)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1944 2047 2048 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1932 2047 2047 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=    32 n= 151: drop=2  during=0  level=0  first=54..55 (median 55)  stable=1858..2293 (median 2179)  lock=492700..493270 (median 492760)  bmin=0..33 (median 7)  bmax=129..133 (median 131)  lost=0..44 (median 44)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1586 1979 2047 2048 2048 2048 2048 2048 2048 2048 2048 2048  min: 1580 1969 2047 2048 2048 2048 2048 2048 2048 2048 2048 2048
+W=   100 n= 158: drop=2  during=0  level=0  first=58  stable=4298..4750 (median 4643)  lock=495120..495660 (median 495340)  bmin=0  bmax=129..133 (median 131)  lost=12..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1233 1445 1614 1866 2052 2047 2048 2048 2048 2048 2048 2048  min: 1230 1440 1605 1851 2046 2047 2048 2048 2048 2048 2048 2048
+W=   256 n= 164: drop=2  during=0  level=0  first=58..59 (median 58)  stable=8715..9188 (median 9035)  lock=499515..500105 (median 499720)  bmin=0  bmax=129..133 (median 131)  lost=0..60 (median 36)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1287 1290 1301 1334 1411 1557 1785 2029 2047 2048 2048  min: 1171 1286 1289 1300 1331 1405 1546 1767 2016 2047 2047 2048
+W=  1000 n= 140: drop=2  during=0  level=0  first=58..59 (median 58)  stable=11761..12238 (median 12104)  lock=502545..503165 (median 502825)  bmin=0  bmax=129..133 (median 131)  lost=4..56 (median 28)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1286 1287 1290 1302 1335 1413 1562 1792 2032  min: 1171 1285 1285 1285 1285 1289 1300 1332 1407 1549 1772 2020
+W=  4096 n= 158: drop=2  during=0  level=0  first=58..59 (median 58)  stable=11747..12266 (median 12099)  lock=502570..503160 (median 502785)  bmin=0  bmax=129..132 (median 131)  lost=0..60 (median 24)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1287 1287 1290 1302 1334 1412 1559 1788 2031  min: 1170 1285 1285 1285 1286 1289 1300 1331 1404 1546 1765 2016
+W= 10000 n= 149: drop=2  during=0  level=0  first=58  stable=11753..12240 (median 12095)  lock=502570..503215 (median 502815)  bmin=0  bmax=129..133 (median 131)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1286 1287 1290 1302 1334 1412 1559 1787 2030  min: 1171 1285 1285 1285 1286 1289 1300 1331 1403 1543 1762 2012
+W= 25000 n= 139: drop=2  during=0  level=0  first=58  stable=11770..12228 (median 12095)  lock=502570..503145 (median 502805)  bmin=0  bmax=129..133 (median 131)  lost=8..56 (median 28)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1287 1287 1291 1302 1334 1412 1559 1788 2030  min: 1171 1285 1285 1285 1286 1289 1300 1332 1405 1547 1769 2018
+W= 50000 n= 159: drop=2  during=0  level=0  first=58  stable=11755..12224 (median 12079)  lock=502595..503170 (median 502805)  bmin=0  bmax=129..133 (median 131)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1286 1287 1291 1302 1335 1412 1560 1789 2031  min: 1170 1285 1285 1285 1286 1289 1300 1331 1405 1545 1766 2018
+W=100000 n= 140: drop=2  during=0  level=0  first=58  stable=11772..12250 (median 12089)  lock=502575..503200 (median 502800)  bmin=0  bmax=129..133 (median 131)  lost=0..60 (median 40)  lrise=1
+         ramp medians (of 2048 per 1024 cycles): 1172 1286 1286 1287 1287 1291 1302 1335 1413 1560 1790 2032  min: 1170 1285 1285 1285 1286 1289 1300 1331 1406 1547 1769 2017

@@ -1,0 +1,8 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis ecppack Version 1.4-86-ga31ff70
+Icarus Verilog version 13.0 (stable) (v13_0)
+Board target: ULX3S LFE5U-85F CABGA381; seed 1.
+Repair profile: HY01 CLKOP external feedback and analog attributes.
+Original planning board run: silent; no board access during this repair.
+Run_2: planning-session records from 15 SRAM loads; analysis used stored bytes only.

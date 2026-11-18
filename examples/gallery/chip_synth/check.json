@@ -1,0 +1,9 @@
+{
+  "cycles": 25000000,
+  "input": "r",
+  "marker": "RESTART",
+  "needs": "peripherals",
+  "peripherals": ["oled"],
+  "board_seconds": 3.0,
+  "margin_cycles": 0
+}

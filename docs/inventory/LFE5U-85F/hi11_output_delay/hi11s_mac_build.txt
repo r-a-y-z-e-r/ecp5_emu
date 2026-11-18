@@ -1,0 +1,114 @@
+HI11s Mac verification; software only; no board or serial access
+2026-11-17T15:13:50.795604+00:00
+
+Build command (from repository root):
+python3 -u -B docs/inventory/LFE5U-85F/hi11_output_delay/build.py /private/tmp/ecp5-hi11s.wGQEly/verified hi11s10 hi11s100
+
+Yosys:
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis - Open Source Tools for ECP5 FPGAs
+Version 1.4-86-ga31ff70
+ecppack: ECP5 bitstream packer
+
+hi11s10: /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 0001010
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 0001010
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  bit SHA256=d9bc993d32bfb8ac59ab17590c42b6c0562f8a9c544b5b4a077441b2ea1c24cc
+hi11s100: /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 1100100
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 1100100
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  bit SHA256=2e55c5180dbb4274c374ad2648c5c0a23ca515b7a706bf0510e1b043d24efed8
+
+Exact routed-config grep:
+rg 'DELAY.OUTDEL|DELAY.DEL_VALUE|DELAY.WAIT_FOR_EDGE|IOLOGIC[A-D]\\.MODE ' /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s{10,100}/top.config
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:word: IOLOGICA.DELAY.DEL_VALUE 0001010
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:word: IOLOGICC.DELAY.DEL_VALUE 0001010
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config:enum: IOLOGICC.MODE IREG_OREG
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:word: IOLOGICA.DELAY.DEL_VALUE 1100100
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:word: IOLOGICC.DELAY.DEL_VALUE 1100100
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config:enum: IOLOGICC.MODE IREG_OREG
+
+SHA256 (source and final artifacts):
+d5717aa87c6a5416cb848090c7903b966e788339a7f7df630dd297b01d2d63eb  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s_gen.py
+577ffce58f3712cb7aea162de321a2f83620c8cad8288d983c8e81401c0137a1  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s.lpf
+d89e20027786153d44f1d23a7eda4c211553adcf07dd0598864355f2d34b5bf2  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s10.v
+8ca77bedce44e8c8c872bc33318c2b44c63220697d6cfd305bc60069198de8e0  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s100.v
+221ac8f722a33c37b4460f9c0b87bb58ef4c84ba9c1a9e1e564e30c7f1e0cdf9  /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.config
+d9bc993d32bfb8ac59ab17590c42b6c0562f8a9c544b5b4a077441b2ea1c24cc  /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s10/top.bit
+fc51b5eca2efe638852d3594cf99e0de766ac0ad8bb29b1316ced3fbde327a5e  /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.config
+2e55c5180dbb4274c374ad2648c5c0a23ca515b7a706bf0510e1b043d24efed8  /private/tmp/ecp5-hi11s.wGQEly/verified/hi11s100/top.bit
+
+Software checks:
+python3 -B -m unittest discover -s docs/inventory/LFE5U-85F/hi11_output_delay -p 'test_*.py'
+5 tests passed: original 90 board frames, startup lane/value inference, post-load error rejection,
+new framing/checksum/sequence checks, generated-source reproducibility.
+
+Emulator UART smoke check: 10,000,000 cycles per design; unchanged execution startup model.
+/private/tmp/ecp5-hi11s.wGQEly/emulated-hi11s10.txt: 1 frames OK, variant=S0, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+/private/tmp/ecp5-hi11s.wGQEly/emulated-hi11s100.txt: 1 frames OK, variant=S1, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+
+The emulated startup of zero above is a software result, not a HI11s board observation.
+HI11s board observations: PENDING.

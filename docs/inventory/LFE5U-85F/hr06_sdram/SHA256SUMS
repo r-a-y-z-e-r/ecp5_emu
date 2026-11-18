@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+4c8d64b6a4944e5b0f01d7788237f64ba7159f1e608ca507d0a188c446f93a37  observations.log
+188250f83498660be47c1b5b323ec02552847bfb9bee25eb3360a2009f095a42  sdram_test.config
+ea84b130e25b5d3b071274c689dbc921ad41af4ce6107358e95aa31f03ebea9a  picorv32_sdram.config
+091696a553ec19d336fccf253063595508c8a8d53855290614ec0edc30eb9058  emulator_sdram_test.txt
+5418e68344324e399486de83ed7e53e3908cbd1a80d7f2ac6b420becb0179e16  emulator_picorv32_sdram.txt
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 8e13583432d7489a73588a2a03304668b0fd078709e27b42a4a62d19f824093c  sdram_test top.bit (target/reference/sdram_test, examples/ulx3s/build.sh; not stored)
+# Historical digest (artifact unavailable in this record): 00e0dbe007cc301784a0fd4f4ec6127e7b5e5b9c04174e0df5e5c33066abcd35  picorv32_sdram top.bit (target/reference/picorv32_sdram, examples/ulx3s/build.sh; not stored)

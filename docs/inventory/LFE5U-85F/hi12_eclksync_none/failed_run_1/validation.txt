@@ -1,0 +1,32 @@
+none_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+none_2: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+none_35: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; route/pack PASS
+sync_2: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=ECLKSYNCB; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=constant 0; route/pack PASS
+sync_35: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=ECLKSYNCB; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=constant 0; route/pack PASS
+probe_pin_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+probe_pin_2.0: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+probe_pin_3.5: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; route/pack PASS
+probe_pll_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+probe_pll_2.0: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; route/pack PASS
+probe_pll_3.5: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; route/pack PASS
+
+Rust validation on rserv, TMPDIR=$HOME/work/tmp:
+  cargo test --release --test eclksync_none --test edge_clock --test edge_clock_native --test eclk_bridge_native --test gearbox_native --test gearbox71_native --test cross_domain_fast --test fast_mode -- --include-ignored
+  PASS: 41 passed, 0 failed, 0 ignored; includes all 4 new tests.
+  cargo test --release --workspace
+  PASS: 453 passed, 0 failed, 217 ignored (80 test binaries/doc-test groups).
+  cargo fmt --check
+  PASS.
+  cargo clippy --release --workspace --all-targets -- -D warnings
+  PASS.
+
+No fast-mode source change was required. Board measurements remain pending.
+
+Preparation simulation (Icarus with provisional primitive stubs; not board evidence):
+  none_default: freeze, 182 UART bytes, both count snapshots PASS; missing CLKI periods=0; snapshots=[(524288, 262144, 262144), (1048576, 524288, 524288)]
+  none_2: freeze, 182 UART bytes, both count snapshots PASS; missing CLKI periods=0; snapshots=[(524288, 262144, 262144), (1048576, 524288, 524288)]
+  none_35: freeze, 182 UART bytes, both count snapshots PASS; missing CLKI periods=0; snapshots=[(524288, 149797, 149796), (1048576, 299594, 299593)]
+  sync_2: freeze, 182 UART bytes, both count snapshots PASS; missing CLKI periods=4; snapshots=[(524288, 262142, 262142), (1048576, 524286, 524286)]
+  sync_35: freeze, 182 UART bytes, both count snapshots PASS; missing CLKI periods=4; snapshots=[(524288, 149796, 149795), (1048576, 299592, 299592)]
+  Generated artifact checksums: 71 verified.
+  Local tools/check_home_paths.py and explicit scan including untracked R09 files: PASS.

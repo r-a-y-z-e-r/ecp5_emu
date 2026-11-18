@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "packages": 4,
+  "physical_balls": 1976,
+  "official_PAD_rows": 1114,
+  "GPIO_matches": 947,
+  "boundary_cells": 3000,
+  "boundary_cells_per_package": [
+    750
+  ],
+  "BSDL_IDCODE": "0x41113043",
+  "private_opcodes_are_not_implemented": true,
+  "pinout_gaps": 0,
+  "hardware": "not_run",
+  "runtime_changed": false,
+  "sources": {
+    "pinout_url": "https://www.latticesemi.com/view_document?document_id=50487",
+    "BSDL_archive_url": "https://www.latticesemi.com/view_document?document_id=54703"
+  },
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "a421e8eb4e1e6a019eb186bde353d2bc662bdfb53682df3517603b794b750867"
+    },
+    {
+      "source": "official_pinout",
+      "sha256": "c97b21eca6f07893c6e4643a74221436c889c2580238537e9f679a7731ca45a3"
+    },
+    {
+      "source": "native_pins",
+      "sha256": "5ce77832f56945ae3964835c874c35a0a0123f1cd24573945ee2a4c5cec3a081"
+    },
+    {
+      "source": "CABGA381:BSDL",
+      "sha256": "b3fa92f8e8ca5de2bb02e6f3a52b710dd34200e799022b38156773cde4a07f4c"
+    },
+    {
+      "source": "CABGA554:BSDL",
+      "sha256": "d4da5d6575eee29e9cc865bddfbde049fce6e6da994172d5398895f1b842e256"
+    },
+    {
+      "source": "CABGA756:BSDL",
+      "sha256": "5477734d6abe3f42c7bbd4b3bc7dcf4f47e466bdcba17bf5fdd7d05fbacbb0f5"
+    },
+    {
+      "source": "CSFBGA285:BSDL",
+      "sha256": "5c534e4981dcc3130e63539112cd837b7554c80be05f1fa4bc6c17e45f254cfa"
+    }
+  ]
+}

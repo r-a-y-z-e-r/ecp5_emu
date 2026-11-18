@@ -1,0 +1,16 @@
+New event kernel; scope: Observed; startup: Configured
+Executed FF: 434; LUT4: 427; LUTRAM columns: 0; RAMW: 0; carry halves: 148; PIO: 2; routes: 8982
+Undriven wires: 1; inactive test-access descriptions: 70
+0 ns: clkop=0 locked=1
+Fast mode: 750 gates (410 on demand), 434 FF, 0 LUTRAM columns, 0 IOLOGIC, 2 EBR, 1 PLL, 0 OSC; compiled in 0.01 s
+Starting with 1 thread, folding 12; tuning in the background
+Fast mode choice: 1 thread, folding 12, chosen in 0.00 s
+Fast mode tuning: started in 0.01 s; measuring as the design runs
+
+4040000000 ns: clkop=1 locked=1
+Fast mode ran 101000000 cycles (4.040000 s of board time) in 91.942 s: 1.10 MHz
+Fast mode tuning: running 1 thread, split from 2000 lines, folding to 12 inputs, meeting 300 lines; 32 measurements, 0 changes of program (0 taken back), 5 moves of its speed, 0.68 s of 90.42 on others, spread of its speed 8.5%; the others, by their speed over its (median of the last measurements):
+  1 thread, split from 2000 lines, folding to 8 inputs, meeting 300 lines: 101% (5 measured)
+  1 thread, split from 2000 lines, folding off, meeting 300 lines: 99% (5 measured)
+  1 thread, split from 2000 lines, folding to 10 inputs, meeting 300 lines: 99% (5 measured)
+  1 thread, split from 2000 lines, folding to 6 inputs, meeting 300 lines: 99% (5 measured)

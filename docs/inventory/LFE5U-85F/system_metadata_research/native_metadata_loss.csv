@@ -1,0 +1,5 @@
+field,native_Chip,after_text_config
+ctrl0,0x11223344,0x40000000
+ctrl1,0x55667788,0x45000000
+sed_reference,0x89abcdef,0xffffffff
+usercode,0x13579bdf,0x00000000

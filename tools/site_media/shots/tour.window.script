@@ -1,0 +1,7 @@
+# Chip part of the scripted walkthrough (current --tour requires user gestures).
+0 theme dark
+0 board 3d
+0 rate 4
+0 run
+14 waves open
+15 watch count[2]

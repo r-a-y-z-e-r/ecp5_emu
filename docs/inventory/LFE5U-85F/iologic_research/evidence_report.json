@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "families": {
+    "IOLOGIC": 224,
+    "PIO": 365,
+    "SIOLOGIC": 141
+  },
+  "native_interface_check": {
+    "status": "matched",
+    "scope": "BEL interfaces; not full routing or behaviour",
+    "resources": 730,
+    "ports": 13269
+  },
+  "port_count": 13269,
+  "iologic_ports": 11444,
+  "field_fragments": 10976,
+  "iologic_field_fragments": 9660,
+  "whole_fields": 10976,
+  "bit_references": 17976,
+  "unique_cram_bits": 13888,
+  "missing_iologic_settings": [
+    "LFE5U-85F/R95C18/SIOLOGICA"
+  ],
+  "unresolved_candidate_references": 56,
+  "local_enum_aliases": 364,
+  "complete_field_aliases": 364,
+  "default_discrepancies": 0,
+  "option_polarity_conflicts": 0,
+  "shared_cram_bits_within_selection": 896,
+  "shared_cram_bits_with_prior_catalogue": 0,
+  "dqs_members": 224,
+  "dqs_groups": 14,
+  "seven_to_one_locations": 112,
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "d932bd45a5556b48d39af04a6eca5ffcb7067706b1241330b23564b6c9812626"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "a02ae21d30ab01fab14838e61cf36dc462db691cd78bdce271f7b23bcd2a5ff7"
+    },
+    {
+      "source": "binding_rules",
+      "sha256": "69af393c7930252451a606d6bc447292c931c7acd3a0228b906012d2849c573a"
+    },
+    {
+      "source": "config_audit",
+      "sha256": "407151ca2abd62e19081ca6a385f5decb637a0364ee64741bacf008d70e0e92b"
+    },
+    {
+      "source": "device_inventory.json",
+      "sha256": "aae1fc16d0bec9b56b2e5890aad3c725a53cf849ff46bc6ccdc924883789b145"
+    },
+    {
+      "source": "resource_instances.csv",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "site_bindings.csv",
+      "sha256": "674c7c155e6b5e6cb756342663a49fcc5c6297d04b3c6673c16086962113e702"
+    },
+    {
+      "source": "config_field_bits.csv",
+      "sha256": "4a30592b07ccc6230280be752f8b1b214bd508dd10ab6a79e9367a173ecabf41"
+    },
+    {
+      "source": "Trellis:libtrellis/src/Bels.cpp",
+      "sha256": "574e04b6cfa113c9cd8c6aa18c203f884d89d6c4a194c4b73297d1ece840b58d"
+    },
+    {
+      "source": "Trellis:libtrellis/src/Chip.cpp",
+      "sha256": "4846ae613fb9b9507371a808f4b8e018f6c7585f493673c4bd794bd8f3a0ae52"
+    },
+    {
+      "source": "nextpnr:ecp5/pack.cc",
+      "sha256": "3c6842deafc1d62c1fa8c5530ad7ad68e50877599cb38d6aba7a88ef2f89f03d"
+    },
+    {
+      "source": "nextpnr:ecp5/bitstream.cc",
+      "sha256": "416e2405fa185c70dcf0f2c2793fbb32c1d12123d567424e91e59e329d996105"
+    },
+    {
+      "source": "Yosys:cells_bb_ecp5.v",
+      "sha256": "a698fe41f333531be7a622b0410ed1ffcfddf730f4e0cf2009dd88e3751ceeed"
+    },
+    {
+      "source": "Yosys:cells_sim_ecp5.v",
+      "sha256": "c1ddb9de055c6c2a2225215ffd6ded48c884d12d5c7321eaf1a2f417d4f23ce0"
+    },
+    {
+      "source": "fuzzer:060-iologic_modes",
+      "sha256": "1000b791b23610ddbba6f06f91f10e382981d90f6cfff0fb444e700afbd13e9b"
+    },
+    {
+      "source": "fuzzer:061-basic_ddr",
+      "sha256": "43ca3061774d4d0f0ce3c9cdec8c52b7331d1b14d03ee41c223215aeb20e1e3a"
+    },
+    {
+      "source": "fuzzer:063-oddrxn",
+      "sha256": "26650a7a5b87f7042a62d680603b4d287e395e66792088e3fd08b6ab27729979"
+    },
+    {
+      "source": "fuzzer:064-iddrxn",
+      "sha256": "62bf79af7878d3851f8423be40b95531785275d4a0629ff11ea96c32497af3c0"
+    },
+    {
+      "source": "fuzzer:065-mddrx",
+      "sha256": "b4c01f091b229dff98ce523eabad57e4646d949f19a2e4e5431b13d362350a50"
+    },
+    {
+      "source": "fuzzer:066-iodelay",
+      "sha256": "394cca21bbe29034043444f0c1302ab5880032b6a87d7582a68b296732ad066d"
+    },
+    {
+      "source": "fuzzer:067-ioreg",
+      "sha256": "60d26834ad52bfa975129bb99f3266216e960332c504462b1294e2b63fc24202"
+    },
+    {
+      "source": "FPGA-TN-02035-1.3.pdf",
+      "sha256": "a7f8017226158f78309344149e5ae756b2e76124533dbfedd761133f9d7422cd"
+    },
+    {
+      "source": "FPGA-TN-02032-1.4.pdf",
+      "sha256": "47830ffc0c7a879c8458431a1861c82a7656d0015092826337a317a6b08ee5cc"
+    },
+    {
+      "source": "native_probe_binary",
+      "sha256": "a7fad8be04c91f3d4d4bc0d5870568f9ac73b7bf8a55b5355a992d78c37f17ff"
+    },
+    {
+      "source": "native_library",
+      "sha256": "d3ecc36231525beac047ab8f29769b0284b81f05c87d6f10c37e75f9f5d75835"
+    }
+  ],
+  "limitations": [
+    "Interface verification does not verify internal register topology or routing.",
+    "7:1 modes consume the paired DDR register bank; simultaneous RX/TX sharing is not proven.",
+    "SPICB0 SIOLOGICA has ports but no named settings in this database.",
+    "ALIGNWD descriptions conflict; IDDRX2F alignment is not packed by this nextpnr revision.",
+    "Only PIO data/tristate mux fields are collected here; other PIO/bank settings remain separate.",
+    "No runtime decoder extension or behavioural implementation is included."
+  ]
+}

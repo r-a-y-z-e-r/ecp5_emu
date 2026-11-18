@@ -1,0 +1,134 @@
+{
+  "runs": [
+    {
+      "variant": "none_default",
+      "legacy": false,
+      "startup": "configured",
+      "scope": "observed",
+      "simulated_cycles": 1600000,
+      "lock_at_time_zero": 1,
+      "finished_at_64ms": 1,
+      "complete_records": 1,
+      "heartbeats": 29,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ]
+    },
+    {
+      "variant": "none_2",
+      "legacy": false,
+      "startup": "configured",
+      "scope": "observed",
+      "simulated_cycles": 1600000,
+      "lock_at_time_zero": 1,
+      "finished_at_64ms": 1,
+      "complete_records": 1,
+      "heartbeats": 29,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ]
+    },
+    {
+      "variant": "none_35",
+      "legacy": false,
+      "startup": "configured",
+      "scope": "observed",
+      "simulated_cycles": 1600000,
+      "lock_at_time_zero": 1,
+      "finished_at_64ms": 1,
+      "complete_records": 1,
+      "heartbeats": 29,
+      "snapshots": [
+        [
+          524288,
+          149797,
+          149796
+        ],
+        [
+          1048576,
+          299594,
+          299593
+        ]
+      ]
+    },
+    {
+      "variant": "sync_2",
+      "legacy": false,
+      "startup": "configured",
+      "scope": "observed",
+      "simulated_cycles": 1600000,
+      "lock_at_time_zero": 1,
+      "finished_at_64ms": 1,
+      "complete_records": 1,
+      "heartbeats": 29,
+      "snapshots": [
+        [
+          524288,
+          262142,
+          262142
+        ],
+        [
+          1048576,
+          524286,
+          524286
+        ]
+      ]
+    },
+    {
+      "variant": "sync_35",
+      "legacy": false,
+      "startup": "configured",
+      "scope": "observed",
+      "simulated_cycles": 1600000,
+      "lock_at_time_zero": 1,
+      "finished_at_64ms": 1,
+      "complete_records": 1,
+      "heartbeats": 29,
+      "snapshots": [
+        [
+          524288,
+          149796,
+          149795
+        ],
+        [
+          1048576,
+          299592,
+          299592
+        ]
+      ]
+    }
+  ],
+  "pll_resource": "LFE5U-85F/R4C1/EHXPLL_UL",
+  "pll_rule": "EHXPLLL static settings: dividers minus one and CPHASE/FPHASE as nextpnr writes them; internal FEEDBK_PATH selects CLKINTFB, external feedback output found by tracing the CLKFB route; outputs follow Fout = Fin x CLKFB_DIV x Dfb / (CLKI_DIV x Dout) with phase relative to the feedback output and an assumed 50% duty; LOCK high from the start and static output enables override ENCLK (HC05 on the board); reference period learnt from two rising edges; RST/STDBY act only where enabled and hold outputs and LOCK low, outputs restart on their phase grid and LOCK rises 98 304 phase-detector periods plus feedback latency and an acquisition time after the fall (HC07; the board's slow restart ramp is not modelled); dynamic phase and REFCLK bypass not executed",
+  "feedback_fields": [
+    {
+      "candidates": [
+        "CLKOP",
+        "CLKOS",
+        "CLKOS2",
+        "CLKOS3",
+        "USERCLOCK"
+      ],
+      "name": "FEEDBK_PATH",
+      "status": "ambiguous"
+    }
+  ]
+}

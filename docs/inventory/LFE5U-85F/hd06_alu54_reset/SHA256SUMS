@@ -1,0 +1,15 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+59357aae9886cfa95ddce5250de00ce2f53f2c26cf3fc928bb3b7f18c80629b8  hd06.v
+2e246a953695f35e321b142be9d459de878c6adee718278b16ec57b3b09116e0  hd06b.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hd06.lpf
+0ad534cab8911853078d59a1f7188e10ba4b542a80d6ec22f6ad9a315a0883c4  hd06.config
+e80ab2af9e59f93755e60e91c3b27bb648c4bc98bc53f457276fec926ecc1bbb  hd06b.config
+bdb1c71294c54c175b638c413a35f22cf5b3e2790893b677a5a8a9617f1d5e75  hd06_gen.py
+7514c5f96033b6f5eb5fef0a90fe38fe1f8d02be5998d80a0cef784f88bc7475  hd06_analyse.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+c2289ff3e57594c7a334ae4bfc6c00c2a084cd75f1a301b6565ac671ce007b6f  observations.log
+35484b269e6a39e277e48ae7b5a91e926e5fa317a2cf5e15ad976a79c50e318c  observations_b.log
+1e0593012a3968071fdf1a5644271afaa8620380f58d5941ebf24d890c269785  analysis.txt
+565e6af6f1606c70efc6804675ee6ccb46d07deebe40007ae013062092486914  analysis_b.txt
+# Historical digest (artifact unavailable in this record): 092c7d9fdddfeea52baefa5e0b7938da9d850f3e50ed2209379ecde1cf63a956  hd06.bit (ecppack; not stored)
+# Historical digest (artifact unavailable in this record): 24197588eea1232c0abe0a82f7dd8a641d024aca1198dde96e018f485b1b760a  hd06b.bit (ecppack; not stored)

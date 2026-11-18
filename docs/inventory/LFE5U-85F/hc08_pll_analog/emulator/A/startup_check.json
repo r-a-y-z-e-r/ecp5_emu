@@ -1,0 +1,11 @@
+{
+  "profile": "A",
+  "cycles": 101000000,
+  "board_time_ms": 4040,
+  "live_records": 404,
+  "replay_records": 203,
+  "startup_timestamps_recovered": 201,
+  "startup_replay_matches_all_initial_samples": true,
+  "discarded_initial_live_startup_records": true,
+  "replay_alone_recovers_first_2s": true
+}

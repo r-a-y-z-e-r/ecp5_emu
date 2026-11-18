@@ -1,0 +1,23 @@
+[project]
+name = "serv_shell"
+top = "top"
+[sources]
+# serv_*.v are symlinks into serv/ (olofk/serv 1.4.0).
+verilog = [
+  "top.v",
+  "serv_alu.v",
+  "serv_bufreg.v",
+  "serv_bufreg2.v",
+  "serv_csr.v",
+  "serv_ctrl.v",
+  "serv_decode.v",
+  "serv_immdec.v",
+  "serv_mem_if.v",
+  "serv_rf_if.v",
+  "serv_rf_ram.v",
+  "serv_rf_ram_if.v",
+  "serv_rf_top.v",
+  "serv_state.v",
+  "serv_top.v",
+]
+constraints = "top.lpf"

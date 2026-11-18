@@ -1,0 +1,6 @@
+load 0 at 2026-10-29T16:43:48Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]
+load 1 at 2026-10-29T16:44:06Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]
+load 2 at 2026-10-29T16:44:13Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]
+load 3 at 2026-10-29T16:44:21Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]
+load 4 at 2026-10-29T16:44:28Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]
+load 5 at 2026-10-29T16:44:35Z: loader_done=True lines=16 distinct=[(2, 2, 262144, 0)]

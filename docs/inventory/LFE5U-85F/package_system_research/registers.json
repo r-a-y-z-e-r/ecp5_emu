@@ -1,0 +1,30 @@
+[
+  {
+    "package": "CABGA381",
+    "register_access": "ISC_ADDRESS[16]\t\t(ISC_ADDRESS_SHIFT), ISC_SECTOR[8]\t\t(ISC_ERASE), ISC_DEFAULT[1]\t\t(ISC_DISABLE, \t\t\t ISC_NOOP, \t\t\t ISC_DISCHARGE, \t\t\t ISC_PROGRAM_DONE, \t\t\t ISC_ERASE_DONE, \t\t\t ISC_PROGRAM_SECURITY, \t\t\t LSC_PROGRAM_SECPLUS), BYPASS\t\t(CLAMP, \t\t\t HIGHZ, \t\t\t BYPASS), ISC_CONFIG[8]\t\t(ISC_ENABLE, \t\t\t LSC_ENABLE_X), ISC_PDATA[1136]\t\t(ISC_PROGRAM, \t\t\t ISC_READ, \t\t\t ISC_DATA_SHIFT), BOUNDARY\t\t(EXTEST, \t\t\t PRELOAD, \t\t\t SAMPLE), DEVICE_ID\t\t(IDCODE, \t\t\t USERCODE, \t\t\t ISC_PROGRAM_USERCODE)",
+    "instruction_capture": "0XXXXX01",
+    "usercode_reset_bits": "11111111111111111111111111111111",
+    "source_warning": "preliminary;not_verified_on_silicon;generic_bidirectional_IO_assumption;LVDS_VREF_output_only_require_application_specific_BSDL"
+  },
+  {
+    "package": "CABGA554",
+    "register_access": "ISC_ADDRESS[16]\t\t(ISC_ADDRESS_SHIFT), ISC_SECTOR[8]\t\t(ISC_ERASE), ISC_DEFAULT[1]\t\t(ISC_DISABLE, \t\t\t ISC_NOOP, \t\t\t ISC_DISCHARGE, \t\t\t ISC_PROGRAM_DONE, \t\t\t ISC_ERASE_DONE, \t\t\t ISC_PROGRAM_SECURITY, \t\t\t LSC_PROGRAM_SECPLUS), BYPASS\t\t(CLAMP, \t\t\t HIGHZ, \t\t\t BYPASS), ISC_CONFIG[8]\t\t(ISC_ENABLE, \t\t\t LSC_ENABLE_X), ISC_PDATA[1136]\t\t(ISC_PROGRAM, \t\t\t ISC_READ, \t\t\t ISC_DATA_SHIFT), BOUNDARY\t\t(EXTEST, \t\t\t PRELOAD, \t\t\t SAMPLE), DEVICE_ID\t\t(IDCODE, \t\t\t USERCODE, \t\t\t ISC_PROGRAM_USERCODE)",
+    "instruction_capture": "0XXXXX01",
+    "usercode_reset_bits": "11111111111111111111111111111111",
+    "source_warning": "preliminary;not_verified_on_silicon;generic_bidirectional_IO_assumption;LVDS_VREF_output_only_require_application_specific_BSDL"
+  },
+  {
+    "package": "CABGA756",
+    "register_access": "ISC_ADDRESS[16]\t\t(ISC_ADDRESS_SHIFT), ISC_SECTOR[8]\t\t(ISC_ERASE), ISC_DEFAULT[1]\t\t(ISC_DISABLE, \t\t\t ISC_NOOP, \t\t\t ISC_DISCHARGE, \t\t\t ISC_PROGRAM_DONE, \t\t\t ISC_ERASE_DONE, \t\t\t ISC_PROGRAM_SECURITY, \t\t\t LSC_PROGRAM_SECPLUS), BYPASS\t\t(CLAMP, \t\t\t HIGHZ, \t\t\t BYPASS), ISC_CONFIG[8]\t\t(ISC_ENABLE, \t\t\t LSC_ENABLE_X), ISC_PDATA[1136]\t\t(ISC_PROGRAM, \t\t\t ISC_READ, \t\t\t ISC_DATA_SHIFT), BOUNDARY\t\t(EXTEST, \t\t\t PRELOAD, \t\t\t SAMPLE), DEVICE_ID\t\t(IDCODE, \t\t\t USERCODE, \t\t\t ISC_PROGRAM_USERCODE)",
+    "instruction_capture": "0XXXXX01",
+    "usercode_reset_bits": "11111111111111111111111111111111",
+    "source_warning": "preliminary;not_verified_on_silicon;generic_bidirectional_IO_assumption;LVDS_VREF_output_only_require_application_specific_BSDL"
+  },
+  {
+    "package": "CSFBGA285",
+    "register_access": "ISC_ADDRESS[16]\t\t(ISC_ADDRESS_SHIFT), ISC_SECTOR[8]\t\t(ISC_ERASE), ISC_DEFAULT[1]\t\t(ISC_DISABLE, \t\t\t ISC_NOOP, \t\t\t ISC_DISCHARGE, \t\t\t ISC_PROGRAM_DONE, \t\t\t ISC_ERASE_DONE, \t\t\t ISC_PROGRAM_SECURITY, \t\t\t LSC_PROGRAM_SECPLUS), BYPASS\t\t(CLAMP, \t\t\t HIGHZ, \t\t\t BYPASS), ISC_CONFIG[8]\t\t(ISC_ENABLE, \t\t\t LSC_ENABLE_X), ISC_PDATA[1136]\t\t(ISC_PROGRAM, \t\t\t ISC_READ, \t\t\t ISC_DATA_SHIFT), BOUNDARY\t\t(EXTEST, \t\t\t PRELOAD, \t\t\t SAMPLE), DEVICE_ID\t\t(IDCODE, \t\t\t USERCODE, \t\t\t ISC_PROGRAM_USERCODE)",
+    "instruction_capture": "0XXXXX01",
+    "usercode_reset_bits": "11111111111111111111111111111111",
+    "source_warning": "preliminary;not_verified_on_silicon;generic_bidirectional_IO_assumption;LVDS_VREF_output_only_require_application_specific_BSDL"
+  }
+]

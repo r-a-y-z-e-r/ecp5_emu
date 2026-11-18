@@ -1,0 +1,6 @@
+[project]
+name = "sha256_chains"
+top = "top"
+[sources]
+verilog = ["top.v", "sha256_core.v", "io.v"]
+constraints = "top.lpf"

@@ -1,0 +1,50 @@
+HC08 feedback implementation, based on board runs 1 and 2.
+No board/serial/flash access during implementation. No commit created.
+
+Behavioral source changes are limited to the PLL planning/state definitions
+in src/compile/mod.rs and src/kernel/pll.rs. The interned route index and
+parallel decoder are unchanged; no fast.rs or kernel/fast.rs edits.
+The concurrently maintained tests/ebr_r02.rs and tests/alu54_native.rs were
+not edited by this task.
+
+rserv verification through tools/rserv.sh, TMPDIR=$HOME/work/tmp:
+
+PASS cargo test --release -p ecp5_emu --test pll_feedback_native -- --include-ignored --nocapture
+  One native test builds/routes/packs A-H with the HC08 generator, seed 1,
+  85k CABGA381, then loads the actual bitstreams through the native reader.
+  73.56 s. Event and fast traces agree at every 1 ns sample for 3 us.
+  A/B/E: CLKOP period 10000 ps (100 MHz), LOCK=1 from configured startup.
+  C/D/F/G/H: CLKOP period 60000 ps (16.666667 MHz), LOCK=1 likewise.
+  All three other raw-VCO output periods agree with their own dividers:
+  CLKOS/CLKOS2 80000 ps; CLKOS3 80000 ps (C/D), 30000 ps (F/H), 20000 ps (G).
+  Packed refusals: INT_OS2 + JCLKFB1/2/3, unknown selector, different fabric
+  return source, live enabled RST and STDBY. Each diagnostic names
+  FEEDBK_PATH, CLKFB and HC08.
+  Canonical INT_OS3 remains internal output feedback despite its mux bits;
+  the control's CLKOS3_DIV=8 produces CLKOP period 7500 ps, not raw-VCO rate.
+
+PASS cargo test --release -p ecp5_emu --test pll_native --test pll_reset_native -- --include-ignored
+  HC05 board UART report: 1 passed, 9.43 s.
+  HC07/HC07b board replays and live-control fast refusal: 3 passed, 1415.71 s.
+
+PASS cargo test --release -p ecp5_emu pll -- --include-ignored
+  Includes PLL event-kernel phase/divider/reset behavior, the fast PLL
+  comparison and PLL-dependent ECLKSYNC startup/divider regressions.
+
+PASS cargo test --release -p ecp5_emu --test fast_mode -- --include-ignored
+PASS cargo test --release -p ecp5_emu --test automatic_compile -- --include-ignored
+PASS cargo test --release -p ecp5_emu
+  Whole default suite run once; ignored tests remain ignored except for the
+  explicitly requested suites above. No failures.
+PASS cargo fmt --all -- --check
+PASS cargo clippy --release -p ecp5_emu --all-targets -- -D warnings
+
+The native test owns its external temporary build tree and removes it on drop.
+Final rserv cleanup verifies no hc08-pll-feedback-* scratch directories remain.
+Shared rserv setup and pre-existing fixtures are not removed.
+
+Original emulator/ and followup/emulator/ records remain pre-fix evidence.
+README, PLL_EXECUTION and REFUSAL_AUDIT document the implemented rule and the
+historical 100 MHz versus 16.667 MHz misprediction. No personal home paths in
+new/updated files; retained artifact SHA256SUMS refreshed. Supplied board-run
+raw bytes and loader/analyser records are unchanged.

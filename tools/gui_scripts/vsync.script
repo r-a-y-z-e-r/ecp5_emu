@@ -1,0 +1,10 @@
+# Compare frame pacing at several run rates, with wire values off and on.
+0 rate 4
+1 run
+10 values on
+20 rate 100
+30 rate max
+50 values off
+60 values on
+61 rate 1000
+70 quit

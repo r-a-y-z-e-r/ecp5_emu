@@ -1,0 +1,1067 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "date": "2026-10-22",
+  "scope": "primary_material_collection;not_complete_physical_reverse_engineering",
+  "main_runtime_changed_in_this_pass": false,
+  "unresolved_questions": 78,
+  "questions": [
+    {
+      "id": "D01",
+      "question": "Every bit of the shared output storage and its owner in the MULT/ALU/9-bit modes",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D02",
+      "question": "The remaining settings of the pre-adders, OPPRE, SOURCEA_MODE, FB_MUX and SYMMETRY_MODE",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D03",
+      "question": "Selection of the small lanes and MULT9_MODE",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D04",
+      "question": "The full semantics of OP[10:0], flags, rounding, saturation, signed extensions",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D05",
+      "question": "Initialization, reset/CE, bypasses, the order of capturing data and control registers",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D06",
+      "question": "Parameters without a standalone field, including CFB and CAS_MATCH_REG",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D07",
+      "question": "Inputs/outputs and directions of each internal lane across the whole chip",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D08",
+      "question": "Ambiguities of the designations in the guides",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D09",
+      "question": "Conditions for applying the fixed and the programmable views of one DSP node",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "D10",
+      "question": "Continuation and termination of the chains at the boundaries and in the central area",
+      "source": "docs/DSP_INTERNALS.md",
+      "status": "open"
+    },
+    {
+      "id": "I01",
+      "question": "The full network of FFs, latches, muxes, and bypasses; ownership of the pair's registers in 7:1",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I02",
+      "question": "The exact publication of RXDATA, the delay in cycles, resets, GSR/CE, and simultaneous edges",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I03",
+      "question": "ALIGNWD is described as a one-bit shift in the tables on p. 69 and as a two-bit rotation in the IP description, p. 81",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I04",
+      "question": "ALIGNWD is documented for IDDRX2F, but the pinned nextpnr does not carry it into the IOLOGIC; SLIP exists only on A/C",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I05",
+      "question": "R95C18/SIOLOGICA of SPICB0 has ports but not a single named IOLOGIC field",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I06",
+      "question": "WAIT_FOR_EDGE, reaching the delay boundaries, changes of taps, and propagation of control events",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I07",
+      "question": "FIFO and QWL: internal stages, pointers, and the relation to DQSBUFM/DDRDLL",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I08",
+      "question": "56 IOLOGIC references in empty tile fragments remain candidates",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I09",
+      "question": "Shared bits, the treatment of aliases, and input/output/tristate combinations",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "I10",
+      "question": "Physical segments of the dedicated DQS/ECLK and internal wires that are absent among the BEL ports",
+      "source": "docs/IOLOGIC_RESOURCES.md",
+      "status": "open"
+    },
+    {
+      "id": "Q01",
+      "question": "The representation of DDRDEL, the relation to DCNTL, and the function of DIVOSC",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q02",
+      "question": "DLL lock/relock, reset, FORCE_MAX_DELAY, and the conditions for a change of LOCK",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q03",
+      "question": "The limits of the delay counters, saturation/boundary crossing, and CFLAG",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q04",
+      "question": "The encoding, the initial values, and the transitions of the FIFO pointers; the word width and the internal stages",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q05",
+      "question": "The entry/exit phases of PAUSE, the levels of the stopped clocks, and the effect on reads",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q06",
+      "question": "The exact delays READ → DATAVALID/BURSTDET and of data publication",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q07",
+      "question": "FACTORYONLY, the factory values, WRITE_LEVELING, and the disputed LI/LO range",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "Q08",
+      "question": "The start-up/update order of the specific MEM_SYNC circuit in the fabric",
+      "source": "docs/DQS_CONTROL.md",
+      "status": "open"
+    },
+    {
+      "id": "B01",
+      "question": "Physical order of the two halves of the 36-bit output and its match to the conversion paths",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B02",
+      "question": "Priority of CE/OCE/CS/reset for the output latch and the additional register",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B03",
+      "question": "Sequence of ASYNC_RESET_RELEASE, reset of the input state, and write inhibit",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B04",
+      "question": "Output of WRITETHROUGH/READBEFOREWRITE with a partial nine-bit mask",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B05",
+      "question": "Window and granularity of collisions for mixed widths and masks",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B06",
+      "question": "Guarantees for identical simultaneous writes and for non-overlapping subwords",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B07",
+      "question": "Real behavior of undocumented combinations of width and WRITEMODE",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "B08",
+      "question": "Effect of INIT/configuration on the output latches and registers",
+      "source": "docs/EBR_ADDRESSING.md",
+      "status": "open"
+    },
+    {
+      "id": "L01",
+      "question": "Physical structure and independence of the PDPR addresses, disagreement in slice costs",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L02",
+      "question": "FFs and muxes under RAMW/DPRAM, non-standard mixed modes and INIT of C",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L03",
+      "question": "Read during write and operation with undefined addresses/enables",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L04",
+      "question": "Initial state, reset/GSR and retention of the LUTRAM array",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L05",
+      "question": "Shared CLK1/LSR1 and the boundary between hardware constraints and packer rules",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L06",
+      "question": "Activity conditions of the extension muxes/carry, ambiguous MODEs and chain boundaries",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L07",
+      "question": "All 16 initial addresses on the chip; the legacy software error is stored separately",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L08",
+      "question": "INIT, physical pins and live write without double permutation",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "L09",
+      "question": "Configuration of the level-sensitive register mode mentioned in the datasheet",
+      "source": "docs/PLC_LUTRAM.md",
+      "status": "open"
+    },
+    {
+      "id": "S01",
+      "question": "Startup/PUR, user GSR, REGSET/PRLD, disabled GSR and the global synchronizer",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "S02",
+      "question": "Continuous or event-driven preload, compatibility of SD/PRLD and the shared M",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "S03",
+      "question": "Shared control lines, FFs in a pair, DI/M and combination with wide LUTs",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "S04",
+      "question": "Outputs and carries by MODE, partial encodings and physical chain boundaries",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "S05",
+      "question": "Policy for X/conflicts and coinciding events; Verilog branching is not a chip guarantee",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "S06",
+      "question": "Configuration binding of the level-sensitive FF from the datasheet",
+      "source": "docs/FF_CCU2.md",
+      "status": "open"
+    },
+    {
+      "id": "C01",
+      "question": "Validate special segment relationships at perimeter and unavailable TAP positions without flattening the clock network; native metadata alone does not prove all physical endpoint functions.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C02",
+      "question": "DCCA capture and release phase, stopped input behavior, mode bypass and central-DCC control legality; no unchecked latch implementation becomes a silicon oracle.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C03",
+      "question": "DCSC handshakes under POS/NEG, dynamic MODESEL, stopped clocks and invalid selections, including precise transition behavior beyond the steady table.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C04",
+      "question": "ECLKSYNCB/BRGECLKSYNC stop/start state and interpretation of fixed input-to-output bypass arcs when synchronizer mode is selected.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C05",
+      "question": "CLKDIVF divide-by-3.5 event pattern, phase after reset/GSR, ALIGNWD slip and edge-bank sharing.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C06",
+      "question": "PLL lock acquisition/loss, missing or irregular input clock, reset/standby/wake and invalid feedback settings; digital behavior profiles need explicit event policies. Same-guide lock-time conflict: 16 ms on pages 40/42 versus 16 us on page 44.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C07",
+      "question": "Documented phase-step falling edge, PHASESEL mapping and T_VCO/8 step are collected. Resolve wrap, load/register sequencing, output event scheduling, PHASELOADREG formula and glitch behavior; static/dynamic coarse formulas and guide diagrams are not yet a silicon oracle.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C08",
+      "question": "Resolve source inconsistencies in sysCLOCK diagrams (SEL[3:0]/CLK<0-3> in a two-clock DCSC figure) and PLL/public/writer defaults; use actual interface and observed CRAM separately.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C09",
+      "question": "Confirm hardware effect of all DCSMODE and PLL feedback/bypass codes independent of the tool's DCS parameter/attribute mismatch.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "C10",
+      "question": "Input/output clock routes of upper DLLDEL and dedicated PCLK/PLL pins, mode-qualified ECLK paths and limits of conservative nextpnr clock placement rules.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y01",
+      "question": "Resource-specific distinction and ordering of PUR/startup reset versus user GSR, including disabled slice GSR and RAM write protection; related S01/L04/B08.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y02",
+      "question": "Bind START clock selection, wake-up sequence and GOE/GWDIS/DONE controls to bitstream/control-register data; current .config/CRAM bridge loses some command-stream metadata.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y03",
+      "question": "Measure OSC divisor-label aliases, especially 127/128, and parameterize nominal oscillator frequency/calibration instead of inferring a unique divider from ambiguous raw codes.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y04",
+      "question": "SED polynomial/seed/bit order, scan exclusions/progress and PB1384 applicability by physical die revision remain open. The expected reference is retained as native Chip.sed from LSC_PROG_SED_CRC, but is lost in text-config conversion and not exposed by current Python Chip bindings.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y05",
+      "question": "DTR waveform documents 70 us; measure tolerance, trigger reference, start-to-valid/retrigger behavior and exact code/temperature table. Analog temperature is an external model input.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y06",
+      "question": "JTAGG user-register instructions and TAP state timing, TDO edge/tri-state behavior and interactions with configuration and boundary scan; BSDL has private/undocumented opcodes.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y07",
+      "question": "USRMCLK/CCLK and shared configuration-pin ownership through MSPI, reconfiguration and user mode; distinguish package bonding and fabric port existence.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y08",
+      "question": "Complete bitstream transport/control state, CRC/error handling, IDCODE/usercode, security/readback and partial/transparent reconfiguration; preserve unsupported commands explicitly.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "Y09",
+      "question": "CIBTEST/CLKTEST/BREFTEST/PVTTEST remain functionally undocumented. BCINRD/BCLVDSO are documented dynamic bank controls for banks 2/3/6/7 (power guide pages 5-6), but their configuration, endpoint binding and disabled-input output levels remain open; see P05.",
+      "source": "tools/data/clock_system_contract.json",
+      "documents": [
+        "CLOCK_NETWORK.md",
+        "SYSTEM_STARTUP.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P01",
+      "question": "Compose all BASE_TYPE fragments without selecting one of 328 inconsistent fragment defaults. Infer effective direction and buffer paths from joint CRAM constraints, not the original HDL IO_TYPE.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P02",
+      "question": "Resolve input/output/tristate paths and PIO/IOLOGIC shared bits under every buffer mode, including bidirectional readback and GSR/GOE/configuration ownership.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P03",
+      "question": "Validate true differential A/B drivers versus referenced/differential input A/B and C/D pairs; pseudo-differential top/bottom behavior and package bonding remain separate restrictions.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P04",
+      "question": "Define digital resolution of strong/weak drivers, open-drain, pull modes, keeper if supported, undriven inputs and conflicting external drives. Voltage thresholds/hysteresis require explicit environment assumptions.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P05",
+      "question": "Bind BCINRD/BCLVDSO for banks 2/3/6/7 to bank wire endpoints and configuration; verify documented active-high power-down polarity, disabled receiver values and wake behavior. Public function is known but bindings remain open.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P06",
+      "question": "Decode VCCIO aliases NONE/1V2/1V5 and nextpnr's 1V35-to-1V2 mapping while preserving external bank supply voltage, VREF ownership and incompatible IO settings. CRAM does not measure voltage.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P07",
+      "question": "Cover special WRITEN/SPICB0 and other shared configuration pads through startup, user mode and reconfiguration, including package-specific dedicated pins.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "P08",
+      "question": "Distinguish database-encoded DRIVE/SLEW/CLAMP/termination modes from nextpnr limitations and electrical effects outside the digital emulator; retain configuration without inventing delays or currents.",
+      "source": "tools/data/pio_bank_contract.json",
+      "documents": [
+        "PIO_BANKS.md"
+      ],
+      "status": "open"
+    }
+  ],
+  "prepared_hardware_series": 37,
+  "hardware_cases": [
+    {
+      "id": "HB01",
+      "questions": [
+        "B01"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB02",
+      "questions": [
+        "B02"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB03",
+      "questions": [
+        "B02"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB04",
+      "questions": [
+        "B02"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB05",
+      "questions": [
+        "B02",
+        "B03"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB06",
+      "questions": [
+        "B02",
+        "B03"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB07",
+      "questions": [
+        "B04"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB08",
+      "questions": [
+        "B01",
+        "B04"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB09",
+      "questions": [
+        "B05",
+        "B06"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB10",
+      "questions": [
+        "B05",
+        "B06"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB11",
+      "questions": [
+        "B07"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HB12",
+      "questions": [
+        "B08",
+        "B03"
+      ],
+      "source": "tools/data/ebr_control_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL01",
+      "questions": [
+        "L01",
+        "L02"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL02",
+      "questions": [
+        "L07",
+        "L08"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL03",
+      "questions": [
+        "L03",
+        "L05"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL04",
+      "questions": [
+        "L03"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL05",
+      "questions": [
+        "L02",
+        "L04",
+        "L05",
+        "L09"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HL06",
+      "questions": [
+        "L06"
+      ],
+      "source": "tools/data/plc_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HS01",
+      "questions": [
+        "S01"
+      ],
+      "source": "tools/data/logic_state_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HS02",
+      "questions": [
+        "S02",
+        "S03"
+      ],
+      "source": "tools/data/logic_state_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HS03",
+      "questions": [
+        "S01",
+        "S03"
+      ],
+      "source": "tools/data/logic_state_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HS04",
+      "questions": [
+        "S04"
+      ],
+      "source": "tools/data/logic_state_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HS05",
+      "questions": [
+        "S06"
+      ],
+      "source": "tools/data/logic_state_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HC01",
+      "questions": [
+        "C01",
+        "C02"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HC02",
+      "questions": [
+        "C03",
+        "C08",
+        "C09"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HC03",
+      "questions": [
+        "C04",
+        "C10"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HC04",
+      "questions": [
+        "C05"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HC05",
+      "questions": [
+        "C06",
+        "C07",
+        "C09"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HY01",
+      "questions": [
+        "Y01",
+        "Y02"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HY02",
+      "questions": [
+        "Y03"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HY03",
+      "questions": [
+        "Y04"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HY04",
+      "questions": [
+        "Y05"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HY05",
+      "questions": [
+        "Y06",
+        "Y07",
+        "Y08"
+      ],
+      "source": "tools/data/clock_system_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HP01",
+      "questions": [
+        "P01",
+        "P02",
+        "P07"
+      ],
+      "source": "tools/data/pio_bank_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HP02",
+      "questions": [
+        "P03",
+        "P08"
+      ],
+      "source": "tools/data/pio_bank_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HP03",
+      "questions": [
+        "P04",
+        "P06"
+      ],
+      "source": "tools/data/pio_bank_contract.json",
+      "status": "not_run"
+    },
+    {
+      "id": "HP04",
+      "questions": [
+        "P05"
+      ],
+      "source": "tools/data/pio_bank_contract.json",
+      "status": "not_run"
+    }
+  ],
+  "hardware_results": 6,
+  "candidate_site_references": 120,
+  "unbound_service_site_references": 1496,
+  "latest_repeated_artifact_files": 43,
+  "latest_repeated_folders": [
+    "clock_system_research",
+    "package_system_research",
+    "pio_bank_research",
+    "system_metadata_research"
+  ],
+  "family_reports": [
+    {
+      "path": "docs/inventory/LFE5U-85F/clock_system_research/evidence_report.json",
+      "sha256": "13c9b3968bf3451c30f026fe6db8b5d8139021211388111ef40c3837e7aea696",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dqs_research/evidence_report.json",
+      "sha256": "e3ee7119f92a0c69f624090826aa456dda0717e2209d99fcf412aa72eeac9cc4",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_research/evidence_report.json",
+      "sha256": "cf59d017b024903478f9e7a6fc64c4925a403a7467c0f8c978acfbcc168fec79",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_routing_research/routing_report.json",
+      "sha256": "a801510b658946524cdd0e44bc81e8b9972e5c32ebbec45df1aea87a418314ce",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_control_research/evidence_report.json",
+      "sha256": "bdcbbf719bfef9eb7c79740f40fe9345d9265bff4197b64d53f1473d7f70f529",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_research/evidence_report.json",
+      "sha256": "12234b5eeffbd4779f805bf904c2f4a6f307ea7994d153db1b67442b8e0bdeac",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/io_routing_research/routing_report.json",
+      "sha256": "81310f98861e20486e2f4a1e8ef830f1fc97548fd8ad110d226db7508c44620a",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/iologic_research/evidence_report.json",
+      "sha256": "a9f4fa5db5204234f9e35c620e2774dfaf3b0a86cd9258bc95101ca319b4266c",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/logic_state_research/evidence_report.json",
+      "sha256": "9b0a92c77f46fbbb40657baf35065182b3cfde77f6da777861b9ab4685682ca9",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/package_system_research/evidence_report.json",
+      "sha256": "8e06ce37ad8ae11e51dc49edd8995f4ebec2818791c6e5fb383bc005faf2dae0",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/pio_bank_research/evidence_report.json",
+      "sha256": "971b2de25e3c32e2795ab3068d6aaba7f49c9a35f2621ab6d4264414d5cec78d",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/plc_research/evidence_report.json",
+      "sha256": "bfd25ab9acde2edfe8683d94cceb8c08ad08694cfdb2bc28070d8783f07efbb9",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_metadata_research/evidence_report.json",
+      "sha256": "431a50abd6d5db40c8161b8321abb5b4d97566d683f31a15ee7734704e366177",
+      "scope": "family_report;see_its_sources_and_toolchain_update_scope"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "PLAN.md",
+      "sha256": "cc90261a2c40bf1784554d3b4e6ae07d13bdad8b936de6aaa9c86e8d1f9e0605"
+    },
+    {
+      "path": "docs/CLOCK_NETWORK.md",
+      "sha256": "9412877ddb61fd5243e48336fffa342a89fcd328ddf17f4044287ee78452470f"
+    },
+    {
+      "path": "docs/DQS_CONTROL.md",
+      "sha256": "0b724eee15c133b11ab027b0b246bee90d940124e8defd7539dbb621c3ff152b"
+    },
+    {
+      "path": "docs/DSP_INTERNALS.md",
+      "sha256": "d1cdec042269b1ff38263af20be40979b9f81f895bb0193b6de553f70e6a7c30"
+    },
+    {
+      "path": "docs/EBR_ADDRESSING.md",
+      "sha256": "6f20fae0f3907123491b9d6a82675b38ced0e38e9458cc460db7974416794a43"
+    },
+    {
+      "path": "docs/FF_CCU2.md",
+      "sha256": "9f1f08d68c65b01e3c6b56827ad13b82c9f3a85703dd4a905c9c8ba294125632"
+    },
+    {
+      "path": "docs/HARDWARE_VALIDATION.md",
+      "sha256": "cabc0f43dd46ba15edbeac8ef366e7d1be60c3cd8ac4d8f7839d04f4ceae251d"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "0d100a6fc1b853f8d002aef361afba2fdab10fab0c7cd472205022ef84cb21da"
+    },
+    {
+      "path": "docs/IOLOGIC_RESOURCES.md",
+      "sha256": "d0f91ed0757fff895f953160a58c741b925be77e02ee7bf6055467e148944d5a"
+    },
+    {
+      "path": "docs/PACKAGE_JTAG.md",
+      "sha256": "7b34931b074f1ee13aa432b9616cdc055736dfd97a0bf009d894d25485829a1b"
+    },
+    {
+      "path": "docs/PIO_BANKS.md",
+      "sha256": "2b74a47cd35509dbac87ec68699172521f40d9c9b18b86df79daa09a14fa3339"
+    },
+    {
+      "path": "docs/PLC_LUTRAM.md",
+      "sha256": "880038dc69d5c719ed03f349cc7fce1ac94d77ccfbe76dadb625a260465581c9"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "6646ee6bcab222e637ed9dd0ccb54cb44cda67e2c33630538a20482a833e02fa"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "e383d02ccae91c4c5b897b3245b345e19c43be89352a84dc447b2ddac93ca42e"
+    },
+    {
+      "path": "docs/SYSTEM_STARTUP.md",
+      "sha256": "76e2affb5633718d4502e1acf08393bf6583fec98aa0c17f3d81c4fe6b88598c"
+    },
+    {
+      "path": "tools/data/clock_system_contract.json",
+      "sha256": "412b8806e173179107db35977a467725fcf51c4063857bc20b5da29ea03834a1"
+    },
+    {
+      "path": "tools/data/ebr_control_contract.json",
+      "sha256": "7d4d055146ef793dbb558fce6aafd063093b6782382c1cad24455106615fc376"
+    },
+    {
+      "path": "tools/data/logic_state_contract.json",
+      "sha256": "0125c071bfe83055a79c84ec86f9b7345babcfa4d09b6a6978f21b88516aa564"
+    },
+    {
+      "path": "tools/data/pio_bank_contract.json",
+      "sha256": "0a340bf39135f7c02b58cac1a723beefbe24969ae38724d921a278aed357e55d"
+    },
+    {
+      "path": "tools/data/plc_contract.json",
+      "sha256": "ffa4d492f2f80348e4deed2361a0b41e8de822970f437c491db7a13a1571002c"
+    },
+    {
+      "path": "tools/summarize_research.py",
+      "sha256": "c891cf766a70fdcc7ef508e48cc4ec222dd260ce8f86768cf9a2e0cdc7e12dc7"
+    }
+  ]
+}

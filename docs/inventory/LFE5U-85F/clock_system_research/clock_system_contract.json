@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "scope": "Clocks, PLL and system research; configuration evidence and documented behavior remain separate from a runtime or silicon validation",
+  "rules": [
+    {
+      "id": "CS01",
+      "claim": "Four quadrants each select 16 primary channels. The 56 MID DCC paths plus four central fabric-entry DCC paths are source connections, not 60 independent global channels per quadrant.",
+      "evidence": "document_and_database",
+      "source": "clock",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "CS02",
+      "claim": "globals.json maps coordinates to quadrant, tap side/column and spine. nextpnr adds these relationships outside ordinary Trellis wire globalization; preserve raw wire and segment identities.",
+      "evidence": "native_metadata_and_tool_source",
+      "source": "Chip.cpp;trellis_import.py;globals.cc"
+    },
+    {
+      "id": "CS03",
+      "claim": "SPINE and TAP_DRIVE have directed configurable 1:1 buffers. They must not be converted to unconditional bidirectional connections.",
+      "evidence": "database_and_architecture_document",
+      "source": "global_routing.rst"
+    },
+    {
+      "id": "CS04",
+      "claim": "DCCA has glitchless clock enable and a configuration bypass. Its stopped output is low; input and output steady-state levels alone do not define capture/release event ordering.",
+      "evidence": "documented",
+      "source": "clock",
+      "pages": [
+        24,
+        25
+      ]
+    },
+    {
+      "id": "CS05",
+      "claim": "DCSC MODESEL=0 selects the configured handshake/gating mode; MODESEL=1 selects the non-glitchless path. SEL is two bits, and invalid/non-one-hot selections have mode-specific constant outputs.",
+      "evidence": "documented",
+      "source": "clock",
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "CS06",
+      "claim": "The DCS guide requires both clocks to oscillate for glitchless switching; POS/NEG switching waits for respective source-clock edges. A static mux cannot reproduce the documented operation.",
+      "evidence": "documented",
+      "source": "clock",
+      "pages": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "CS07",
+      "claim": "ECLKBRIDGECS is a non-glitchless 2:1 mux and needs ECLKSYNCB after it to reach the ECLK tree. A bridge consumes specific edge-clock resources on both banks of a side.",
+      "evidence": "documented",
+      "source": "clock",
+      "pages": [
+        31,
+        32
+      ]
+    },
+    {
+      "id": "CS08",
+      "claim": "CLKDIVF supports 2 and 3.5, has asynchronous active-high reset, and ALIGNWD shifts alignment. ECLKSYNCB STOP controls a synchronized stop/start, not an immediate Boolean AND.",
+      "evidence": "documented",
+      "source": "clock",
+      "pages": [
+        28,
+        29,
+        33,
+        34
+      ]
+    },
+    {
+      "id": "CS09",
+      "claim": "PLL input/feedback/output divider settings written by nextpnr use logical divisor minus one; coarse and fine phase settings are written directly. Reference bypass, feedback source, output enables and reset/standby/phase controls remain distinct settings.",
+      "evidence": "writer_and_configuration_probes",
+      "source": "bitstream.cc:write_pll;clock"
+    },
+    {
+      "id": "CS10",
+      "claim": "A PLL spans PLL0 plus PLL1 at the upper corners or a BANKREF tile at the lower corners. Config fragments are one PLL state, and the BANKREF bank settings are excluded from PLL ownership.",
+      "evidence": "writer_and_database",
+      "source": "bitstream.cc:get_pll_tiles"
+    },
+    {
+      "id": "CS11",
+      "claim": "OSCG user, configuration and SED clocks originate in the internal oscillator but have different dividers. Nominal frequencies are not a measured per-die oscillator calibration.",
+      "evidence": "documented",
+      "source": "clock;sed",
+      "pages": [
+        26,
+        27,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "CS12",
+      "claim": "nextpnr maps OSCG DIV=128 to database label 127, writes both OSC.DIV fragments, and leaves the overlapping EFB1 CCLK.MODE group unchanged using _NONE_. The bitstream cannot recover distinct original parameters 127 and 128 from these writes.",
+      "evidence": "writer_and_configuration_probes",
+      "source": "bitstream.cc"
+    },
+    {
+      "id": "CS13",
+      "claim": "The writer reads DCSMODE from cell attributes, while the public primitive and clock-constraint derivation use parameters. Current probes preserve the observed parameter-to-POS mismatch rather than treating the requested HDL parameter as the programmed mode.",
+      "evidence": "confirmed_tool_interface_mismatch",
+      "source": "software_probes;bitstream.cc;pack.cc"
+    },
+    {
+      "id": "CS14",
+      "claim": "Wake-up has four phases controlled by an internal or external START clock, sequencing GOE, GSR/GSRN, GWDIS and DONE. External DONE can hold off completion. Inputs, output drivers, register reset and memory write permission are distinct controls.",
+      "evidence": "documented",
+      "source": "config",
+      "pages": [
+        24,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "CS15",
+      "claim": "The sysCONFIG guide gives sequences 4 and 21. It does not specify the exact phase-edge timing relationship; do not invent physical delays from the phase table.",
+      "evidence": "documented",
+      "source": "config",
+      "pages": [
+        49,
+        50
+      ]
+    },
+    {
+      "id": "CS16",
+      "claim": "GSR has active-low/active-high/none configuration and separate sync mode. User GSR, configuration wake-up reset and power-up reset must be tracked separately until their resource-specific effects are established.",
+      "evidence": "database_and_document;open_S01",
+      "source": "config;103-gsr"
+    },
+    {
+      "id": "CS17",
+      "claim": "USRMCLK controls CCLK through its data and tri-state inputs. nextpnr warns about MASTER_SPI_PORT=ENABLE; the configuration controller and user ownership must not drive independently without an ownership model.",
+      "evidence": "writer_and_primitive_interface",
+      "source": "bitstream.cc;config"
+    },
+    {
+      "id": "CS18",
+      "claim": "DTR output bits 5:0 are a temperature code, bit 6 is reserved zero and bit 7 is data-valid. DTR_TEMP is a simulation code parameter, not a CRAM temperature field or a proved linear Celsius conversion.",
+      "evidence": "documented_and_interface",
+      "source": "power",
+      "pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "CS19",
+      "claim": "SED uses a serial configuration-memory scan and a 32-bit reference CRC. Its enable/start/force-error/status interface, clock selection, scan progress and reference data require distinct state.",
+      "evidence": "documented",
+      "source": "sed",
+      "pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "CS20",
+      "claim": "PB1384 says distributed RAM is not excluded from ECP5 SED CRC and can cause false SEDERROR. The 2022 usage guide still says memory contents are ignored; retain the specific erratum and its mitigation as a source conflict.",
+      "evidence": "manufacturer_erratum_conflicting_guide",
+      "source": "sed_errata;sed",
+      "pages": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "CS21",
+      "claim": "START is documented as a macro for external wake-up clock selection. Its unbound site references are not evidence that the function can be omitted from the whole-chip scope.",
+      "evidence": "documented;binding_open",
+      "source": "config",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "id": "CS22",
+      "claim": "Yosys declarations for these clock/system blocks are blackboxes. Parameter and interface checks or a placed configuration do not execute a behavioral clock/system model.",
+      "evidence": "installed_source",
+      "source": "cells_bb_ecp5.v"
+    },
+    {
+      "id": "CS23",
+      "claim": "ECLKSYNCB STOP assertion stops the output low on the fourth falling input edge; release resumes on the fourth rising input edge. Coincident control/clock ordering and initial synchronizer state remain open.",
+      "evidence": "documented_waveform_and_text",
+      "source": "clock",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "id": "CS24",
+      "claim": "The same sysCLOCK revision states about/within 16 ms for PLL lock at pages 40/42 but 16 us after standby at page 44. These values cannot be silently normalized; use an explicit digital lock profile pending device evidence.",
+      "evidence": "manufacturer_document_internal_conflict",
+      "source": "clock",
+      "pages": [
+        40,
+        42,
+        44
+      ]
+    },
+    {
+      "id": "CS25",
+      "claim": "The DTR waveform labels 70 us between start-pulse release and valid data, and the pulse is stretched internally for two clock cycles. This is a documented timing label, not a measured tolerance or calibration.",
+      "evidence": "documented_waveform",
+      "source": "power",
+      "pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "CS26",
+      "claim": "Native Chip retains ctrl0, ctrl1, sed reference and usercode when reading commands, but ChipConfig.from_chip/to_chip drops them; current Python binding exposes usercode but not ctrl0/ctrl1/sed, and the runtime bridge exports none of the four. Preserve the source stream alongside decoded CRAM.",
+      "evidence": "source_and_native_metadata_probe",
+      "source": "Bitstream.cpp;ChipConfig.cpp;PyTrellis.cpp;metadata_research"
+    },
+    {
+      "id": "CS27",
+      "claim": "SED guide page 11 prose for SEDFRCERR conflicts with its 0/1 table; the state table says 1 forces error and 0 takes no action. SEDERR is documented as sticky until SEDENABLE goes low. The ambiguity remains recorded.",
+      "evidence": "manufacturer_document_internal_conflict",
+      "source": "sed",
+      "pages": [
+        11
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "C01",
+      "question": "Validate special segment relationships at perimeter and unavailable TAP positions without flattening the clock network; native metadata alone does not prove all physical endpoint functions."
+    },
+    {
+      "id": "C02",
+      "question": "DCCA capture and release phase, stopped input behavior, mode bypass and central-DCC control legality; no unchecked latch implementation becomes a silicon oracle."
+    },
+    {
+      "id": "C03",
+      "question": "DCSC handshakes under POS/NEG, dynamic MODESEL, stopped clocks and invalid selections, including precise transition behavior beyond the steady table."
+    },
+    {
+      "id": "C04",
+      "question": "ECLKSYNCB/BRGECLKSYNC stop/start state and interpretation of fixed input-to-output bypass arcs when synchronizer mode is selected."
+    },
+    {
+      "id": "C05",
+      "question": "CLKDIVF divide-by-3.5 event pattern, phase after reset/GSR, ALIGNWD slip and edge-bank sharing."
+    },
+    {
+      "id": "C06",
+      "question": "PLL lock acquisition/loss, missing or irregular input clock, reset/standby/wake and invalid feedback settings; digital behavior profiles need explicit event policies. Same-guide lock-time conflict: 16 ms on pages 40/42 versus 16 us on page 44."
+    },
+    {
+      "id": "C07",
+      "question": "Documented phase-step falling edge, PHASESEL mapping and T_VCO/8 step are collected. Resolve wrap, load/register sequencing, output event scheduling, PHASELOADREG formula and glitch behavior; static/dynamic coarse formulas and guide diagrams are not yet a silicon oracle."
+    },
+    {
+      "id": "C08",
+      "question": "Resolve source inconsistencies in sysCLOCK diagrams (SEL[3:0]/CLK<0-3> in a two-clock DCSC figure) and PLL/public/writer defaults; use actual interface and observed CRAM separately."
+    },
+    {
+      "id": "C09",
+      "question": "Confirm hardware effect of all DCSMODE and PLL feedback/bypass codes independent of the tool's DCS parameter/attribute mismatch."
+    },
+    {
+      "id": "C10",
+      "question": "Input/output clock routes of upper DLLDEL and dedicated PCLK/PLL pins, mode-qualified ECLK paths and limits of conservative nextpnr clock placement rules."
+    },
+    {
+      "id": "Y01",
+      "question": "Resource-specific distinction and ordering of PUR/startup reset versus user GSR, including disabled slice GSR and RAM write protection; related S01/L04/B08."
+    },
+    {
+      "id": "Y02",
+      "question": "Bind START clock selection, wake-up sequence and GOE/GWDIS/DONE controls to bitstream/control-register data; current .config/CRAM bridge loses some command-stream metadata."
+    },
+    {
+      "id": "Y03",
+      "question": "Measure OSC divisor-label aliases, especially 127/128, and parameterize nominal oscillator frequency/calibration instead of inferring a unique divider from ambiguous raw codes."
+    },
+    {
+      "id": "Y04",
+      "question": "SED polynomial/seed/bit order, scan exclusions/progress and PB1384 applicability by physical die revision remain open. The expected reference is retained as native Chip.sed from LSC_PROG_SED_CRC, but is lost in text-config conversion and not exposed by current Python Chip bindings."
+    },
+    {
+      "id": "Y05",
+      "question": "HY04 measured the initial/final 0x9E byte, busy restart, high-level hold and variable binary-count intermediates at one room-temperature condition. The Celsius table, other temperatures, width/phase-dependent latency and conversion details below the 40 ns observer resolution remain open. The documented 70 us waveform remains separate evidence.",
+      "status": "partially_measured_HY04"
+    },
+    {
+      "id": "Y06",
+      "question": "JTAGG user-register instructions and TAP state timing, TDO edge/tri-state behavior and interactions with configuration and boundary scan; BSDL has private/undocumented opcodes."
+    },
+    {
+      "id": "Y07",
+      "question": "USRMCLK/CCLK and shared configuration-pin ownership through MSPI, reconfiguration and user mode; distinguish package bonding and fabric port existence."
+    },
+    {
+      "id": "Y08",
+      "question": "Complete bitstream transport/control state, CRC/error handling, IDCODE/usercode, security/readback and partial/transparent reconfiguration; preserve unsupported commands explicitly."
+    },
+    {
+      "id": "Y09",
+      "question": "CIBTEST/CLKTEST/BREFTEST/PVTTEST remain functionally undocumented. BCINRD/BCLVDSO are documented dynamic bank controls for banks 2/3/6/7 (power guide pages 5-6), but their configuration, endpoint binding and disabled-input output levels remain open; see P05."
+    }
+  ],
+  "hardware_cases": [
+    {
+      "id": "HC01",
+      "questions": [
+        "C01",
+        "C02"
+      ],
+      "stimulus": "Route an identifiable clock through each quadrant, tap boundary and DCC mode; change CE in each clock phase and repeat with the input stopped.",
+      "observe": "Per-segment counters, output pulse continuity and held level with saved routes/CRAM."
+    },
+    {
+      "id": "HC02",
+      "questions": [
+        "C03",
+        "C08",
+        "C09"
+      ],
+      "stimulus": "Drive DCS with distinguishable clocks; sweep all SEL values, MODESEL and decoded DCSMODE; stop either source separately.",
+      "observe": "Output selection, high/low hold, transition handshake and restart. Program modes by recorded CRAM, not an unverified HDL parameter."
+    },
+    {
+      "id": "HC03",
+      "questions": [
+        "C04",
+        "C10"
+      ],
+      "stimulus": "Compare ECLKSYNC mode/bypass with STOP transitions and ECLK bridge selection on both sides and bridge synchronizers.",
+      "observe": "Actual bypass activity, start/stop edge counts and bank fanout; preserve the fixed-arc discrepancy."
+    },
+    {
+      "id": "HC04",
+      "questions": [
+        "C05"
+      ],
+      "stimulus": "Sweep CLKDIVF 2/3.5, reset/GSR and ALIGNWD with phase-separated controls, then controlled coincidences.",
+      "observe": "Output periods, phase sequence, slip and resource sharing."
+    },
+    {
+      "id": "HC05",
+      "questions": [
+        "C06",
+        "C07",
+        "C09"
+      ],
+      "stimulus": "Measure PLL outputs for divider/phase/feedback/bypass variants; exercise reset, enable, standby, phase controls and missing input.",
+      "observe": "Frequency/phase relationships and digital LOCK/INTLOCK transitions, separately from analog jitter."
+    },
+    {
+      "id": "HY01",
+      "questions": [
+        "Y01",
+        "Y02"
+      ],
+      "stimulus": "Observe startup and user GSR independently, hold DONE externally, vary START clock and preserve a RAM/FF fingerprint with an observer outside the reset under test.",
+      "observe": "Output enable, register initialization, memory write blocking and wake-up progression."
+    },
+    {
+      "id": "HY02",
+      "questions": [
+        "Y03"
+      ],
+      "stimulus": "Measure OSC output/counter ratios for distinct raw DIV patterns and aliased logical labels, especially 127/128, on the same die.",
+      "observe": "Effective ratios and repeatability under stated conditions; do not assume nominal 310 MHz is calibrated."
+    },
+    {
+      "id": "HY03",
+      "questions": [
+        "Y04"
+      ],
+      "stimulus": "Exercise SED enable/start/force-error with known configuration and distributed-RAM writes; keep the erratum mitigation and unmitigated case separate.",
+      "observe": "Status and scan duration, error persistence and RAM-induced false errors."
+    },
+    {
+      "id": "HY04",
+      "questions": [
+        "Y05"
+      ],
+      "stimulus": "Capture DTR with controlled start widths and repeat requests while observing all eight bits.",
+      "observe": "Data-valid timing, reserved bit and code stability; temperature mapping requires a separate measured condition.",
+      "observation": "Three complete loads, 730 unique windows each; 1995 isolated conversions with pooled fall-to-final median 821 observer ticks. Nominal 2.5-tick correction gives 32.740 us. Initial/final 0x9E; no drift in three 601-reading, 60-second runs; retrigger restarts and holding high prevents completion. Raw intermediate codes/offsets vary.",
+      "evidence": "docs/inventory/LFE5U-85F/hy04_dtr/analysis.txt",
+      "execution": "Event kernel: compile::Board::dtr_code default 0x9E, 00 during high/conversion (nonuniform fall-relative count offsets), latest fall + 32.740 us; fast mode refused. This is not a Celsius or analog model."
+    },
+    {
+      "id": "HY05",
+      "questions": [
+        "Y06",
+        "Y07",
+        "Y08"
+      ],
+      "stimulus": "Exercise documented JTAG user/boundary instructions, CCLK ownership and configuration reset through a controlled external transport.",
+      "observe": "TAP/user chains, TDO enable, shared-pin conflicts and metadata/state transitions; do not probe arbitrary private opcodes."
+    }
+  ],
+  "sources": {
+    "clock": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50465",
+      "path": "target/research/clock_system/sysCLOCK.pdf",
+      "revision": "FPGA-TN-02200-1.4"
+    },
+    "config": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50462",
+      "path": "target/research/clock_system/sysCONFIG.pdf",
+      "revision": "FPGA-TN-02039-2.5"
+    },
+    "sed": {
+      "url": "https://www.latticesemi.com/view_document?document_id=32323",
+      "path": "target/research/clock_system/SED-guide.pdf",
+      "revision": "FPGA-TN-02207-2.0"
+    },
+    "sed_errata": {
+      "url": "https://www.latticesemi.com/view_document?document_id=52087",
+      "path": "target/research/clock_system/SED-errata.pdf",
+      "revision": "PB1384 Rev1.0"
+    },
+    "power": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50468",
+      "path": "target/research/clock_system/power-DTR.pdf",
+      "revision": "FPGA-TN-02210-1.4"
+    }
+  }
+}

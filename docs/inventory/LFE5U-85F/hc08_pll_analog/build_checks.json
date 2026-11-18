@@ -1,0 +1,122 @@
+[
+  {
+    "profile": "A",
+    "feedback": "CLKOP",
+    "words": {
+      "ICP_CURRENT": 12,
+      "LPF_RESISTOR": 8,
+      "MFG_ENABLE_FILTEROPAMP": 1,
+      "MFG_GMCREF_SEL": 2
+    },
+    "return_net": "CLKOP (fabric)",
+    "pll_bel": "X1/Y4/EHXPLL_UL",
+    "config_lines": [
+      "word: LPF_RESISTOR 0001000",
+      "word: ICP_CURRENT 01100",
+      "word: MFG_GMCREF_SEL 10",
+      "word: MFG_ENABLE_FILTEROPAMP 1",
+      "enum: FEEDBK_PATH CLKOP"
+    ],
+    "feedback_arcs": [
+      "arc: E1_CLKFB E1_JCLKFB3"
+    ],
+    "bit_sha256": "9dae2229c1b273da52d56ec049f11d248900d9174ec813e33a31772d74586056",
+    "route_pack": "PASS"
+  },
+  {
+    "profile": "B",
+    "feedback": "CLKOP",
+    "words": {
+      "ICP_CURRENT": 0,
+      "LPF_RESISTOR": 0,
+      "MFG_ENABLE_FILTEROPAMP": 0,
+      "MFG_GMCREF_SEL": 0
+    },
+    "return_net": "CLKOP (fabric)",
+    "pll_bel": "X1/Y4/EHXPLL_UL",
+    "config_lines": [
+      "word: LPF_RESISTOR 0000000",
+      "word: ICP_CURRENT 00000",
+      "word: MFG_GMCREF_SEL 00",
+      "word: MFG_ENABLE_FILTEROPAMP 0",
+      "enum: FEEDBK_PATH CLKOP"
+    ],
+    "feedback_arcs": [
+      "arc: E1_CLKFB E1_JCLKFB3"
+    ],
+    "bit_sha256": "0c983a69adfe1ef96460e31509844d40af9f51b5240f1cd9a7bfed360639de63",
+    "route_pack": "PASS"
+  },
+  {
+    "profile": "C",
+    "feedback": "INT_OP",
+    "words": {
+      "ICP_CURRENT": 12,
+      "LPF_RESISTOR": 8,
+      "MFG_ENABLE_FILTEROPAMP": 1,
+      "MFG_GMCREF_SEL": 2
+    },
+    "return_net": "CLKOP (fabric)",
+    "pll_bel": "X1/Y4/EHXPLL_UL",
+    "config_lines": [
+      "word: LPF_RESISTOR 0001000",
+      "word: ICP_CURRENT 01100",
+      "word: MFG_GMCREF_SEL 10",
+      "word: MFG_ENABLE_FILTEROPAMP 1",
+      "enum: FEEDBK_PATH INT_OP"
+    ],
+    "feedback_arcs": [
+      "arc: E1_CLKFB E1_JCLKFB3"
+    ],
+    "bit_sha256": "2749cac96dea7b221a46c6ac6e617d7e28c1d676deab591b41ffd511cfa83a06",
+    "route_pack": "PASS"
+  },
+  {
+    "profile": "D",
+    "feedback": "INT_OP",
+    "words": {
+      "ICP_CURRENT": 0,
+      "LPF_RESISTOR": 0,
+      "MFG_ENABLE_FILTEROPAMP": 0,
+      "MFG_GMCREF_SEL": 0
+    },
+    "return_net": "CLKOP (fabric)",
+    "pll_bel": "X1/Y4/EHXPLL_UL",
+    "config_lines": [
+      "word: LPF_RESISTOR 0000000",
+      "word: ICP_CURRENT 00000",
+      "word: MFG_GMCREF_SEL 00",
+      "word: MFG_ENABLE_FILTEROPAMP 0",
+      "enum: FEEDBK_PATH INT_OP"
+    ],
+    "feedback_arcs": [
+      "arc: E1_CLKFB E1_JCLKFB3"
+    ],
+    "bit_sha256": "21db615dc3f55edb1fa41d3d868612b6f13a6d3bd192e78a2ba4b81126ef48a3",
+    "route_pack": "PASS"
+  },
+  {
+    "profile": "E",
+    "feedback": "INT_OP",
+    "words": {
+      "ICP_CURRENT": 0,
+      "LPF_RESISTOR": 0,
+      "MFG_ENABLE_FILTEROPAMP": 0,
+      "MFG_GMCREF_SEL": 0
+    },
+    "return_net": "CLKINTFB",
+    "pll_bel": "X1/Y4/EHXPLL_UL",
+    "config_lines": [
+      "word: LPF_RESISTOR 0000000",
+      "word: ICP_CURRENT 00000",
+      "word: MFG_GMCREF_SEL 00",
+      "word: MFG_ENABLE_FILTEROPAMP 0",
+      "enum: FEEDBK_PATH INT_OP"
+    ],
+    "feedback_arcs": [
+      "arc: E1_CLKFB E1_CLKINTFB"
+    ],
+    "bit_sha256": "b5af0c3d2b9789e949092bdfc1e23f2a3f3dfd72d07304437ca1021258effb04",
+    "route_pack": "PASS"
+  }
+]

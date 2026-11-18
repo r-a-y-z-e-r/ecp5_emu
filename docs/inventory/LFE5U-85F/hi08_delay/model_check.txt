@@ -1,0 +1,4 @@
+pass.txt: 2047 samples compared, 0 differ []; 0 samples skipped after DIRECTION changed while MOVE was high
+pass_b.txt: 1939 samples compared, 0 differ []; 108 samples skipped after DIRECTION changed while MOVE was high
+pass_c.txt: 2017 samples compared, 0 differ []; 30 samples skipped after DIRECTION changed while MOVE was high
+model fits

@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+8775f52ee42f6323e04f0252b18fb548cc3a93a1ffebe6fb1a44f6850f5481d3  hd01.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hd01.lpf
+fe4463ccdb9f5f856b264226546a6aa9faec0ab4ad812c98358ef5ec4b43930b  hd01.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+d9422325d1080a19c8eaba375190e476f864e50cf815ab4323aea32be5d06082  hd01_analyse.py
+3cbed85ae5720b895b2da92d500d9395dc72b9eb818026e9afab2eb2765e5b25  observations.log
+7a81d757a52c6b7146696ee49d713d822969a9a4177f168873669e0f22a782bb  analysis.txt
+# Historical digest (artifact unavailable in this record): 5f16411a0afcba8b21a9785886e3ea488306f50d221467616f440a5777b9209a  hd01.bit (ecppack --compress hd01.config; not stored)

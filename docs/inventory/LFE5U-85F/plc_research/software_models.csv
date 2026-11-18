@@ -1,0 +1,10 @@
+model,variant,WCKMUX,WREMUX,word_observations,evidence
+TRELLIS_DPR16X4,0,WCK,WRE,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,1,WCK,INV,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,2,WCK,0,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,3,WCK,1,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,4,INV,WRE,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,5,INV,INV,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,6,INV,0,16400,matched_published_model;not_hardware
+TRELLIS_DPR16X4,7,INV,1,16400,matched_published_model;not_hardware
+DPR16X4C,8,WCK,WRE,16400,confirmed_software_hole_at_INIT_address_15;live_write_fills_it

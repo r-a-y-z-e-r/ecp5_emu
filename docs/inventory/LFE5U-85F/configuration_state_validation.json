@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-22",
+  "phase": "configuration_and_state",
+  "unit_tests_passed": 18,
+  "architecture_portable_tests_passed": 5,
+  "configuration_portable_tests_passed": 8,
+  "local_integration_tests_passed": 4,
+  "total_tests_passed": 35,
+  "native_image_cases": [
+    "plain_bit",
+    "compressed_bit",
+    "text_config",
+    "synthetic_parser_tail_four_registers"
+  ],
+  "native_payload_comparison": "CRAM_and_EBR_INIT_equal;asymmetric_LUT_and_EBR_storage_equal",
+  "configuration_manifest_reproducible": true,
+  "smoke_payload_equal": true,
+  "service_provenance_remains_distinct": true,
+  "composed_fields": 28810,
+  "composed_resource_entries": 1371,
+  "lut_storage": 83640,
+  "ff_storage": 83640,
+  "ebr_storage": 208,
+  "initial_FF_policy": "X;startup_not_executed",
+  "native_EBR_coverage": "decoded_without_write_mask",
+  "clippy": "all_targets_no_warnings",
+  "format": "passed",
+  "hardware": "not_run",
+  "event_kernel": "not_run_or_implemented_here",
+  "not_rerun": [
+    "real_bitstream_matches_text_config_requiring_ECP5_TEST_BIT"
+  ],
+  "image_reader_build": {
+    "schema_version": 1,
+    "reader_source_sha256": "bc0ebceca8f95a78f612470df6256589fd61f1ed9a32a62bca9ce10e2025a1c0",
+    "reader_binary_sha256": "ac3991f533fcca46585a704b361bae1ab7fd86218031e321376b65034b3f290c",
+    "libtrellis_sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06",
+    "hardware": "not_used"
+  },
+  "source_files": [
+    {
+      "path": "src/database.rs",
+      "sha256": "33fc7df2be5b988f0ce97cdb49c43fa97748b9135b8c23c03389e03b3260b4db"
+    },
+    {
+      "path": "src/decode.rs",
+      "sha256": "050b68a9df9ddc6b9979836ec331bc895403fe043f46a7ae19b51553352a762d"
+    },
+    {
+      "path": "src/image.rs",
+      "sha256": "c28f5c1be16dbf3660897d10811da206014c2a2a2ea7ee162a7093b9dbfeefca"
+    },
+    {
+      "path": "src/prepared.rs",
+      "sha256": "8fd5e29dfc1415d378f0faa56de72515505dd76139212ff6f4ce1615177b395c"
+    },
+    {
+      "path": "src/state.rs",
+      "sha256": "6bc8d1ebc73979614eaae5382369fa43a0cedac737b3fa7b60e6b9de42749135"
+    },
+    {
+      "path": "src/model/mod.rs",
+      "sha256": "4b9506dfaabd00bbb004efe5343195eaef23cfd2528cc225bd8b1c0faa18d7be"
+    },
+    {
+      "path": "src/model/catalog.rs",
+      "sha256": "e9fa827256f502a34d1a1847b03171d66b53a8262b8cbafd73bc2ae88c50330e"
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "d1013a78c0b8a9c349170335d8431208b66ec59b0afb3baedaa161dbbb6b5928"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "bb5b2dbde7d37d6830e5c298df1a753dbe1a72eea31b11828539e8d97df47566"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "b4fd94671a419e1899fbd15f4ad7b686678f16d8f84f68f2be7268fb31c0cb61"
+    },
+    {
+      "path": "tests/configuration_state.rs",
+      "sha256": "e46e6747471b773cb24f89466d4ad3bad2b3d3c901de452db522a972c52b7588"
+    },
+    {
+      "path": "tests/device_model.rs",
+      "sha256": "c9c51d5f34cee5adc15000de4709b18cfbb8edd61b75f5e973be115e74209be9"
+    },
+    {
+      "path": "tools/trellis_image_reader.cpp",
+      "sha256": "bc0ebceca8f95a78f612470df6256589fd61f1ed9a32a62bca9ce10e2025a1c0"
+    },
+    {
+      "path": "tools/build_image_reader.py",
+      "sha256": "16d7563f6e852917526aab6e7f44d8a9a5843023a02adf3fbebe8e23551fd1a0"
+    },
+    {
+      "path": "tools/build_configuration_manifest.py",
+      "sha256": "1f5cf98a08569d2f2401440ade398279bef56e2182661cb263c9c89ff55b6af9"
+    },
+    {
+      "path": "docs/CONFIGURATION_STATE.md",
+      "sha256": "c2c4d6d7de0bf5ce5c58836ca3f181a2137b7c75bb30f5cea85d5b31bebf6f90"
+    }
+  ]
+}

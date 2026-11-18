@@ -1,0 +1,9 @@
+# Header J1/J2 on target/reference/header_probe_driven: use only existing
+# script commands. The Header panel opens automatically when first seen.
+# Real time is a rate cap, not a promise the emulator reaches board speed.
+0    board top
+0    rate real
+0    run
+12   rate max
+29   pause
+30   quit

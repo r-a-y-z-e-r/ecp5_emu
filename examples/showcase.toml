@@ -1,0 +1,17 @@
+# Examples shown by default; Dev mode shows every example.
+showcase = [
+    "gallery/chip_synth",     # a four-voice synth on the audio jack with an OLED scope
+    "gallery/clock_domains",  # a clock-domain-crossing lesson
+    "gallery/hdmi_plasma",    # per-pixel demoscene effects on HDMI, no frame buffer
+    "gallery/led_tennis",     # two-button tennis on the LEDs, instantly playable
+    "gallery/mandelbrot",     # a fractal explorer on the DSP multipliers
+    "gallery/oled_bricks",    # a playable original brick-breaker on the OLED
+    "gallery/riscv_oled",     # C code draws a 3D wireframe on the OLED
+    "gallery/riscv_shell",    # a real RISC-V computer with a shell, exact cycles
+    "gallery/riscv_terminal", # the same computer on an HDMI text screen
+    "gallery/sdram_bench",    # why bursts matter, 32 MiB at 93 % of the bus rate
+    "gallery/serv_shell",     # a bit-serial CPU against PicoRV32, area against speed
+    "gallery/video_life",     # the Game of Life on an HDMI monitor, decoded live
+    "ulx3s/blinky_cycle",     # start here, a tiny counter, watch single cycles live
+    "ulx3s/life",             # the whole chip map lights up, a generation every clock
+]

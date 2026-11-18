@@ -1,0 +1,67 @@
+# LPF (Lattice Preference File) maps top-level ports to package pins and sets I/O.
+# LOCATE COMP "port" SITE "ball"; connects a port to a physical package ball.
+# A ball name is a CABGA381 coordinate: row letter plus column number,
+# as seen on the package underside; for example, G2 is row G, column 2.
+# IOBUF PORT "port" IO_TYPE=... PULLMODE=... DRIVE=...;
+# IO_TYPE selects the electrical standard: LVCMOS33 means 3.3 V on ULX3S.
+# PULLMODE selects a weak internal pull: UP to 1, DOWN to 0, NONE disables it.
+# DRIVE sets output drive strength in mA; it does not set an input's level.
+# FREQUENCY PORT "clk_25mhz" 25 MHZ; tells timing analysis the clock rate.
+# Bus bits are separate ports, written in quotes, for example "led[0]".
+# Ball names: Radiona ULX3S, EMARD's doc/constraints/ulx3s_v20.lpf.
+# Pin-constraint licence: assets/ulx3s/LICENSE.md.
+
+# 25 MHz oscillator
+LOCATE COMP "clk_25mhz" SITE "G2";
+IOBUF PORT "clk_25mhz" PULLMODE=NONE IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk_25mhz" 25 MHZ;
+
+# FTDI UART
+LOCATE COMP "ftdi_rxd" SITE "L4";
+IOBUF PORT "ftdi_rxd" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
+
+# LEDs D0..D7
+LOCATE COMP "led[0]" SITE "B2";
+LOCATE COMP "led[1]" SITE "C2";
+LOCATE COMP "led[2]" SITE "C1";
+LOCATE COMP "led[3]" SITE "D2";
+LOCATE COMP "led[4]" SITE "D1";
+LOCATE COMP "led[5]" SITE "E2";
+LOCATE COMP "led[6]" SITE "E1";
+LOCATE COMP "led[7]" SITE "H3";
+IOBUF PORT "led[0]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[4]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[5]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[6]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+IOBUF PORT "led[7]" PULLMODE=NONE IO_TYPE=LVCMOS33 DRIVE=4;
+
+# ADC SPI
+LOCATE COMP "adc_csn" SITE "R17";
+IOBUF PORT "adc_csn" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_sclk" SITE "P17";
+IOBUF PORT "adc_sclk" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_mosi" SITE "R16";
+IOBUF PORT "adc_mosi" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_miso" SITE "U16";
+IOBUF PORT "adc_miso" PULLMODE=UP IO_TYPE=LVCMOS33;
+
+# ADC channel pins
+LOCATE COMP "adc_ain[0]" SITE "U17";
+IOBUF PORT "adc_ain[0]" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[1]" SITE "U18";
+IOBUF PORT "adc_ain[1]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[2]" SITE "P16";
+IOBUF PORT "adc_ain[2]" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[3]" SITE "N17";
+IOBUF PORT "adc_ain[3]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[4]" SITE "M17";
+IOBUF PORT "adc_ain[4]" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[5]" SITE "N16";
+IOBUF PORT "adc_ain[5]" PULLMODE=DOWN IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[6]" SITE "L17";
+IOBUF PORT "adc_ain[6]" PULLMODE=UP IO_TYPE=LVCMOS33;
+LOCATE COMP "adc_ain[7]" SITE "L16";
+IOBUF PORT "adc_ain[7]" PULLMODE=DOWN IO_TYPE=LVCMOS33;

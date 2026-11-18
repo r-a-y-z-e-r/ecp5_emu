@@ -1,0 +1,7 @@
+HS02 selftest: 12 known models, 32 FFs, three synthetic lines each: PASS
+HS02 extended selftest: independent serialized old/new/AND/OR release traces, 32 FFs: PASS
+Python 3.14.7; NumPy 2.5.2
+2 analysis reports reproduce byte-for-byte from the final scripts: PASS
+6 protected board inputs (Verilog/configs/observations) unchanged by SHA256: PASS
+Python syntax and formatting: PASS
+Board-config CLK0 DIV and PRLD enum counts: PASS

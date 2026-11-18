@@ -1,0 +1,35 @@
+HI11 / HI11s, ULX3S LFE5U-85F CABGA381, 2026-11-17.
+Board results and loader logs were supplied by the planning session; no board/serial access
+was performed in the execution session. 3 JTAG SRAM loads per design; flash untouched.
+
+Mac build tools (recorded in the build reports; version-only commands checked locally):
+Yosys 0.70+post, git 0c11ea098be065e585a90a06e7b7da49936cf231,
+  Release, AppleClang clang++ 17.0.0.17000604.
+nextpnr-ecp5 nextpnr-0.11.1-77-g6b438a1c:
+  --85k --package CABGA381 --seed 1.
+Project Trellis / ecppack 1.4-86-ga31ff70:
+  ecppack top.config top.bit (uncompressed build.py output).
+openFPGALoader v1.1.1 (version command: openFPGALoader -V):
+  openFPGALoader -b ulx3s BIT, SRAM only, no flash option.
+  Loader logs report JTAG probe limited to 3 MHz.
+Python 3; pyserial 3.5; UART 115200 8N1.
+  run.py opens serial after the SRAM loader exits successfully.
+  Record lengths: HI11 F/G/B 2063 bytes; HI11s S0..S5 4113 bytes, including CR LF.
+
+Software verification:
+python3 -B -m unittest discover -s docs/inventory/LFE5U-85F/hi11_output_delay -p 'test_*.py'
+Rust event kernel and FastSim on rserv through tools/rserv.sh, release profile.
+TMPDIR=$HOME/work/tmp. Targeted output_delay, io_delay, io_delay_native and fast_mode include
+ignored tests. Full workspace suite, cargo fmt --check, and clippy -D warnings also checked.
+
+Measurement scope: left IOLOGIC output L4 / input A2, bottom SIOLOGIC input R1.
+Startup: IOLOGIC DEL_VALUE & 0x3E; SIOLOGIC 0. Right/top are unmeasured assumptions by kind.
+The stored .config files and raw records are board evidence; older mac_build*.txt reports
+are software/build provenance and may describe pre-fix emulated startup.
+
+Final release verification (2026-11-17):
+output_delay 7 passed; io_delay 2; io_delay_native 2; fast_mode 21, all with --include-ignored.
+Workspace suite once: 473 passed, 0 failed, 238 ignored.
+cargo fmt --check and cargo clippy --release --package ecp5_emu --all-targets -- -D warnings passed.
+11 Python tests passed; all 166 stored UART frames accepted.
+Task-owned remote scratch directories were removed by EXIT traps and checked absent.

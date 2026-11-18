@@ -1,0 +1,12 @@
+# Stereo 440/660 Hz tones on the 4-bit DACs, with UART sample checksums.
+# Build: ecp5_emu build examples/ulx3s/audio_tone (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/audio_tone; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/audio_tone.
+
+[project]
+name = "audio_tone"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

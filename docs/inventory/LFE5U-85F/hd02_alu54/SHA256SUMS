@@ -1,0 +1,11 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+33fb0692009ae52008e57c7e4ec397064cf074b11c527fd0a5c0b701ec5a430f  hd02.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hd02.lpf
+d9e8194c30ca2d7be6ef7f76f6d8cc633d2e50940579706dd26aa2081bd2a08b  hd02.config
+148f1ae3a7c6b40e2ab772bd898b48ba27f06f251d384584ecafab66ebcfa4c4  hd02_gen.py
+5255eec17655368f30a88f09b91365567c59f7b84b246ceb9b434f6dd6b499a1  hd02_model.py
+b8283b93b2284a70c5b73472168e962b06a6c5dba6298fbd704824f251eca2c2  alu54_chain.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+ad48a553a8432033a944d16ad1587a27d0bb5d4cc47c172f6424e4421cc80c5d  observations.log
+6f90ee78a1a2adaf5012eb9554d4bcf9d8794f51029de3ff04b736a91604ddbc  model_check.txt
+# Historical digest (artifact unavailable in this record): 71a581aa2236a3097eb06210391a32b59f6797be906639ecb4b97bec3ae5ec9d  hd02.bit (ecppack hd02.config; not stored)

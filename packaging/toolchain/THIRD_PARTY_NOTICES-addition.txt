@@ -1,0 +1,28 @@
+Bundled toolchain: relinking, source delivery and runtime exceptions
+
+Corresponding sources are delivered beside the binary release, not by written offer. Exact sources are used where known; honest closest-source statements and the recorded distributor patch/recipe sets accompany the reconstructed items in SOURCES.md. Historical build-tool provenance is kept separate from source obligations.
+
+## Dynamic library replacement and relinking
+
+The LGPL libraries are separate dynamic libraries, including Qt frameworks; users may replace them with modified, ABI-compatible builds and relink/debug the combined work for those modifications. Preserve library notices and give recipients these sources and licence texts. This is not permission to remove other applicable file notices.
+
+Linux: replace the corresponding files under share/toolchain/lib (keep a coherent glibc/loader set where replacing glibc). The supplied wrappers load these private libraries.
+
+macOS: work on a writable copy of the app. Replace the library under Contents/Resources/toolchain/lib, or the Qt framework under Contents/Resources/toolchain/Frameworks. Re-sign the replaced nested library/framework and the modified app ad hoc. Rebuilding/replacing a library invalidates the prior code signature; an ad hoc signature is sufficient for this replacement workflow. Original distribution signatures are not required to be preserved for a user's modified copy.
+
+## GCC and GHDL runtime exceptions
+
+libgcc and libgnat retain GPL-3.0-or-later WITH GCC-exception-3.1 as applicable to their source files. COPYING3 and COPYING.RUNTIME are included with the GCC sources. The GCC Runtime Library Exception permits covered runtime code to be combined with Independent Modules under its stated Eligible Compilation conditions; it is not a blanket relicensing of GHDL or its GPL Yosys plugin. GHDL GRT's own linking-exception text is separately retained in src/grt/ghdl_main.adb; it is not the GCC exception.
+
+## File-level licence elections and source headers
+
+- zstd: BSD-3-Clause for library files offering BSD/GPL alternatives; other file licences remain as marked.
+- HIDAPI: BSD-3-Clause for files offering that alternative; other notices remain intact.
+- D-Bus: AFL-2.1 for library files offering AFL/GPL alternatives; BSD/MIT files keep their licences. GPL-only standalone D-Bus tools are not shipped.
+- FreeType: FTL for files offering FTL/GPL alternatives, including its attribution; additional per-file terms are preserved.
+- Graphite: LGPL-2.1-or-later for library files offering LGPL/GPL/MPL alternatives; the separate dynamic library and exact Ubuntu source package are supplied.
+- Eigen: MPL-2.0 applies to covered header files compiled into nextpnr, not to nextpnr's ISC code as a whole. The closest platform source sets and distributor changes are supplied with statements. Other Eigen file licences, including optional LGPL/Apache/BSD/Minpack material, remain in the source tree.
+- Zig Darwin headers: files bearing APSL-2.0 retain APSL-2.0, alongside their applicable BSD or combined notices. The exact Zig-modified retained headers are supplied as source; Zig's root MIT licence does not replace their licences.
+- Zig glibc headers/stubs: the exact retained, modified files are supplied in source form with LGPL-2.1-or-later and other applicable per-file notices. No blanket MIT or GPL claim is made for all libc files. Linux UAPI syscall-exception notices remain in their source headers.
+
+Permissive Python/ISC/Boost/BSD/MIT/Apache inputs, including LLVM with its exception and MacPorts base/PortGroups used as build tooling, may have unknown historical provenance; this is recorded as provenance unknown, not required, rather than an open source-delivery blocker. All source notices and licence exceptions remain retained.

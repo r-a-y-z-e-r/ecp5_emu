@@ -1,0 +1,12 @@
+# Adapted from life_full_v3: ready-relative seconds; leave open for bounded capture.
+0 theme dark
+0 dev off
+0 board 3d
+0 rate 100
+0 values on
+0 run
+10 values off
+11 fit
+12 rate max
+19 zoom 4
+26 fit

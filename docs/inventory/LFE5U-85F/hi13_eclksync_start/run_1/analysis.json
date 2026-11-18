@@ -1,0 +1,114 @@
+{
+  "file": "hi13.load-001.bin",
+  "records": 171,
+  "heartbeats": 0,
+  "distinct": 1,
+  "measurements": [
+    {
+      "snapshots": [
+        {
+          "I": 524288,
+          "A": 524224,
+          "CE_at": 64,
+          "G_in": 524224,
+          "P_r": 262144,
+          "P_f": 262144,
+          "G_r": 262110,
+          "G_f": 262110,
+          "P_deficit": 0,
+          "G_deficit": 4
+        },
+        {
+          "I": 1048576,
+          "A": 1048512,
+          "CE_at": 64,
+          "G_in": 1048512,
+          "P_r": 524288,
+          "P_f": 524288,
+          "G_r": 524254,
+          "G_f": 524254,
+          "P_deficit": 0,
+          "G_deficit": 4
+        }
+      ],
+      "errors": [],
+      "reading": "supports pre-running versus delayed-clock history: P passes from the fabric boundary, G pays startup; does not directly observe configuration-time edges"
+    }
+  ]
+}
+{
+  "file": "hi13.load-002.bin",
+  "records": 172,
+  "heartbeats": 0,
+  "distinct": 1,
+  "measurements": [
+    {
+      "snapshots": [
+        {
+          "I": 524288,
+          "A": 524224,
+          "CE_at": 64,
+          "G_in": 524224,
+          "P_r": 262144,
+          "P_f": 262144,
+          "G_r": 262110,
+          "G_f": 262110,
+          "P_deficit": 0,
+          "G_deficit": 4
+        },
+        {
+          "I": 1048576,
+          "A": 1048512,
+          "CE_at": 64,
+          "G_in": 1048512,
+          "P_r": 524288,
+          "P_f": 524288,
+          "G_r": 524254,
+          "G_f": 524254,
+          "P_deficit": 0,
+          "G_deficit": 4
+        }
+      ],
+      "errors": [],
+      "reading": "supports pre-running versus delayed-clock history: P passes from the fabric boundary, G pays startup; does not directly observe configuration-time edges"
+    }
+  ]
+}
+{
+  "file": "hi13.load-003.bin",
+  "records": 172,
+  "heartbeats": 0,
+  "distinct": 1,
+  "measurements": [
+    {
+      "snapshots": [
+        {
+          "I": 524288,
+          "A": 524224,
+          "CE_at": 64,
+          "G_in": 524224,
+          "P_r": 262144,
+          "P_f": 262144,
+          "G_r": 262110,
+          "G_f": 262110,
+          "P_deficit": 0,
+          "G_deficit": 4
+        },
+        {
+          "I": 1048576,
+          "A": 1048512,
+          "CE_at": 64,
+          "G_in": 1048512,
+          "P_r": 524288,
+          "P_f": 524288,
+          "G_r": 524254,
+          "G_f": 524254,
+          "P_deficit": 0,
+          "G_deficit": 4
+        }
+      ],
+      "errors": [],
+      "reading": "supports pre-running versus delayed-clock history: P passes from the fabric boundary, G pays startup; does not directly observe configuration-time edges"
+    }
+  ]
+}

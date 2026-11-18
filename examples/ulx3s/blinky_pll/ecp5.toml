@@ -1,0 +1,13 @@
+
+# ecppll 25 -> 100 MHz and a 32-bit counter, its top byte on the LEDs.
+# Build: ecp5_emu build examples/ulx3s/blinky_pll (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/blinky_pll; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/blinky_pll.
+
+[project]
+name = "blinky_pll"
+top = "top"
+
+[sources]
+verilog = ["pll.v", "top.v"]
+constraints = "top.lpf"

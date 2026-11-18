@@ -1,0 +1,13 @@
+
+# Four GPDI lanes as in an HDMI transmitter: ODDRX1F into LVCMOS33D pairs.
+# Build: ecp5_emu build examples/ulx3s/ddr_pattern (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/ddr_pattern; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/ddr_pattern.
+
+[project]
+name = "ddr_pattern"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

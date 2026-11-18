@@ -1,0 +1,9 @@
+# clock_domains: content survives independent clock phases.
+# The UART runs without peripherals. At slow rates the one-board-second
+# FREQ measurement can outlast this 60-second window tour.
+0 rate max
+0 run
+1 board 3d
+2 type r
+30 type f
+60 quit

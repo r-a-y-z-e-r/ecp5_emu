@@ -1,0 +1,35 @@
+# Orchard, 90 wall seconds. The OLED view opens when its pads are driven.
+0 rate max
+0 run
+1 board 3d
+2 type r
+# Twenty seconds of deterministic attract, then start a human game.
+22 button 1 down
+23 button 1 up
+26 button 1 down
+27 button 1 up
+30 button 5 down
+31 button 5 up
+34 button 6 down
+35 button 6 up
+38 button 5 down
+39 button 5 up
+42 button 6 down
+43 button 6 up
+46 switch 2 on
+50 button 1 down
+51 button 1 up
+54 button 5 down
+55 button 5 up
+58 switch 1 on
+62 button 6 down
+63 button 6 up
+66 button 1 down
+67 button 1 up
+72 button 5 down
+73 button 5 up
+76 button 6 down
+77 button 6 up
+82 button 1 down
+83 button 1 up
+90 quit

@@ -1,0 +1,520 @@
+family,port,documented_direction,observed_in_database,name_status,source_pages
+PRADD9,C0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C4,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C5,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C6,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C7,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,C8,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CE0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CE1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CE2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CE3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CLK0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CLK1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CLK2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,CLK3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,OPPRE,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA4,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA5,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA6,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA7,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PA8,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB4,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB5,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB6,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB7,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PB8,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO0,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO1,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO2,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO3,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO4,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO5,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO6,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO7,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,PO8,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,RST0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,RST1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,RST2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,RST3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SOURCEA,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA4,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA5,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA6,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA7,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIA8,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB0,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB1,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB2,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB3,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB4,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB5,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB6,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB7,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SRIB8,in,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA0,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA1,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA2,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA3,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA4,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA5,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA6,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA7,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROA8,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB0,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB1,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB2,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB3,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB4,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB5,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB6,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB7,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD9,SROB8,out,True,name_match,sysDSP:21-23;Diamond:747-750
+PRADD18,C0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C10,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C11,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C12,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C13,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C14,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C15,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C16,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C17,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C4,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C5,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C6,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C7,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C8,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,C9,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CE0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CE1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CE2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CE3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CLK0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CLK1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CLK2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,CLK3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,OPPRE,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA10,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA11,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA12,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA13,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA14,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA15,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA16,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA17,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA4,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA5,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA6,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA7,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA8,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PA9,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB10,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB11,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB12,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB13,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB14,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB15,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB16,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB17,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB4,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB5,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB6,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB7,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB8,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PB9,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO0,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO1,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO10,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO11,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO12,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO13,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO14,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO15,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO16,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO17,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO2,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO3,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO4,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO5,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO6,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO7,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO8,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,PO9,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,RST0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,RST1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,RST2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,RST3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SOURCEA,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA10,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA11,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA12,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA13,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA14,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA15,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA16,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA17,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA4,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA5,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA6,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA7,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA8,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIA9,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB0,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB1,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB10,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB11,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB12,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB13,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB14,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB15,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB16,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB17,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB2,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB3,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB4,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB5,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB6,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB7,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB8,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SRIB9,in,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA0,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA1,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA10,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA11,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA12,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA13,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA14,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA15,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA16,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA17,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA2,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA3,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA4,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA5,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA6,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA7,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA8,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROA9,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB0,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB1,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB10,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB11,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB12,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB13,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB14,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB15,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB16,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB17,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB2,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB3,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB4,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB5,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB6,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB7,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB8,out,True,name_match,sysDSP:23-25;Diamond:745-747
+PRADD18,SROB9,out,True,name_match,sysDSP:23-25;Diamond:745-747
+MULT9,A0,in,True,name_match,Diamond:625-629
+MULT9,A1,in,True,name_match,Diamond:625-629
+MULT9,A2,in,True,name_match,Diamond:625-629
+MULT9,A3,in,True,name_match,Diamond:625-629
+MULT9,A4,in,True,name_match,Diamond:625-629
+MULT9,A5,in,True,name_match,Diamond:625-629
+MULT9,A6,in,True,name_match,Diamond:625-629
+MULT9,A7,in,True,name_match,Diamond:625-629
+MULT9,A8,in,True,name_match,Diamond:625-629
+MULT9,B0,in,True,name_match,Diamond:625-629
+MULT9,B1,in,True,name_match,Diamond:625-629
+MULT9,B2,in,True,name_match,Diamond:625-629
+MULT9,B3,in,True,name_match,Diamond:625-629
+MULT9,B4,in,True,name_match,Diamond:625-629
+MULT9,B5,in,True,name_match,Diamond:625-629
+MULT9,B6,in,True,name_match,Diamond:625-629
+MULT9,B7,in,True,name_match,Diamond:625-629
+MULT9,B8,in,True,name_match,Diamond:625-629
+MULT9,C0,in,True,name_match,Diamond:625-629
+MULT9,C1,in,True,name_match,Diamond:625-629
+MULT9,C2,in,True,name_match,Diamond:625-629
+MULT9,C3,in,True,name_match,Diamond:625-629
+MULT9,C4,in,True,name_match,Diamond:625-629
+MULT9,C5,in,True,name_match,Diamond:625-629
+MULT9,C6,in,True,name_match,Diamond:625-629
+MULT9,C7,in,True,name_match,Diamond:625-629
+MULT9,C8,in,True,name_match,Diamond:625-629
+MULT9,CE0,in,True,name_match,Diamond:625-629
+MULT9,CE1,in,True,name_match,Diamond:625-629
+MULT9,CE2,in,True,name_match,Diamond:625-629
+MULT9,CE3,in,True,name_match,Diamond:625-629
+MULT9,CLK0,in,True,name_match,Diamond:625-629
+MULT9,CLK1,in,True,name_match,Diamond:625-629
+MULT9,CLK2,in,True,name_match,Diamond:625-629
+MULT9,CLK3,in,True,name_match,Diamond:625-629
+MULT9,P0,out,True,name_match,Diamond:625-629
+MULT9,P1,out,True,name_match,Diamond:625-629
+MULT9,P10,out,True,name_match,Diamond:625-629
+MULT9,P11,out,True,name_match,Diamond:625-629
+MULT9,P12,out,True,name_match,Diamond:625-629
+MULT9,P13,out,True,name_match,Diamond:625-629
+MULT9,P14,out,True,name_match,Diamond:625-629
+MULT9,P15,out,True,name_match,Diamond:625-629
+MULT9,P16,out,True,name_match,Diamond:625-629
+MULT9,P17,out,True,name_match,Diamond:625-629
+MULT9,P2,out,True,name_match,Diamond:625-629
+MULT9,P3,out,True,name_match,Diamond:625-629
+MULT9,P4,out,True,name_match,Diamond:625-629
+MULT9,P5,out,True,name_match,Diamond:625-629
+MULT9,P6,out,True,name_match,Diamond:625-629
+MULT9,P7,out,True,name_match,Diamond:625-629
+MULT9,P8,out,True,name_match,Diamond:625-629
+MULT9,P9,out,True,name_match,Diamond:625-629
+MULT9,ROA0,out,True,name_match,Diamond:625-629
+MULT9,ROA1,out,True,name_match,Diamond:625-629
+MULT9,ROA2,out,True,name_match,Diamond:625-629
+MULT9,ROA3,out,True,name_match,Diamond:625-629
+MULT9,ROA4,out,True,name_match,Diamond:625-629
+MULT9,ROA5,out,True,name_match,Diamond:625-629
+MULT9,ROA6,out,True,name_match,Diamond:625-629
+MULT9,ROA7,out,True,name_match,Diamond:625-629
+MULT9,ROA8,out,True,name_match,Diamond:625-629
+MULT9,ROB0,out,True,name_match,Diamond:625-629
+MULT9,ROB1,out,True,name_match,Diamond:625-629
+MULT9,ROB2,out,True,name_match,Diamond:625-629
+MULT9,ROB3,out,True,name_match,Diamond:625-629
+MULT9,ROB4,out,True,name_match,Diamond:625-629
+MULT9,ROB5,out,True,name_match,Diamond:625-629
+MULT9,ROB6,out,True,name_match,Diamond:625-629
+MULT9,ROB7,out,True,name_match,Diamond:625-629
+MULT9,ROB8,out,True,name_match,Diamond:625-629
+MULT9,ROC0,out,True,name_match,Diamond:625-629
+MULT9,ROC1,out,True,name_match,Diamond:625-629
+MULT9,ROC2,out,True,name_match,Diamond:625-629
+MULT9,ROC3,out,True,name_match,Diamond:625-629
+MULT9,ROC4,out,True,name_match,Diamond:625-629
+MULT9,ROC5,out,True,name_match,Diamond:625-629
+MULT9,ROC6,out,True,name_match,Diamond:625-629
+MULT9,ROC7,out,True,name_match,Diamond:625-629
+MULT9,ROC8,out,True,name_match,Diamond:625-629
+MULT9,RST0,in,True,name_match,Diamond:625-629
+MULT9,RST1,in,True,name_match,Diamond:625-629
+MULT9,RST2,in,True,name_match,Diamond:625-629
+MULT9,RST3,in,True,name_match,Diamond:625-629
+MULT9,SIGNEDA,in,True,name_match,Diamond:625-629
+MULT9,SIGNEDB,in,True,name_match,Diamond:625-629
+MULT9,SIGNEDP,out,True,name_match,Diamond:625-629
+MULT9,SOURCEA,in,True,name_match,Diamond:625-629
+MULT9,SOURCEB,in,True,name_match,Diamond:625-629
+MULT9,SRIA0,in,True,name_match,Diamond:625-629
+MULT9,SRIA1,in,True,name_match,Diamond:625-629
+MULT9,SRIA2,in,True,name_match,Diamond:625-629
+MULT9,SRIA3,in,True,name_match,Diamond:625-629
+MULT9,SRIA4,in,True,name_match,Diamond:625-629
+MULT9,SRIA5,in,True,name_match,Diamond:625-629
+MULT9,SRIA6,in,True,name_match,Diamond:625-629
+MULT9,SRIA7,in,True,name_match,Diamond:625-629
+MULT9,SRIA8,in,True,name_match,Diamond:625-629
+MULT9,SRIB0,in,True,name_match,Diamond:625-629
+MULT9,SRIB1,in,True,name_match,Diamond:625-629
+MULT9,SRIB2,in,True,name_match,Diamond:625-629
+MULT9,SRIB3,in,True,name_match,Diamond:625-629
+MULT9,SRIB4,in,True,name_match,Diamond:625-629
+MULT9,SRIB5,in,True,name_match,Diamond:625-629
+MULT9,SRIB6,in,True,name_match,Diamond:625-629
+MULT9,SRIB7,in,True,name_match,Diamond:625-629
+MULT9,SRIB8,in,True,name_match,Diamond:625-629
+MULT9,SROA0,out,True,name_match,Diamond:625-629
+MULT9,SROA1,out,True,name_match,Diamond:625-629
+MULT9,SROA2,out,True,name_match,Diamond:625-629
+MULT9,SROA3,out,True,name_match,Diamond:625-629
+MULT9,SROA4,out,True,name_match,Diamond:625-629
+MULT9,SROA5,out,True,name_match,Diamond:625-629
+MULT9,SROA6,out,True,name_match,Diamond:625-629
+MULT9,SROA7,out,True,name_match,Diamond:625-629
+MULT9,SROA8,out,True,name_match,Diamond:625-629
+MULT9,SROB0,out,True,name_match,Diamond:625-629
+MULT9,SROB1,out,True,name_match,Diamond:625-629
+MULT9,SROB2,out,True,name_match,Diamond:625-629
+MULT9,SROB3,out,True,name_match,Diamond:625-629
+MULT9,SROB4,out,True,name_match,Diamond:625-629
+MULT9,SROB5,out,True,name_match,Diamond:625-629
+MULT9,SROB6,out,True,name_match,Diamond:625-629
+MULT9,SROB7,out,True,name_match,Diamond:625-629
+MULT9,SROB8,out,True,name_match,Diamond:625-629
+ALU24,CE0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CE1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CE2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CE3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB10,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB11,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB12,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB13,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB14,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB15,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB16,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB17,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB18,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB19,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB20,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB21,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB22,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB23,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB4,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB5,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB6,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB7,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB8,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CFB9,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN10,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN11,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN12,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN13,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN14,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN15,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN16,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN17,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN18,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN19,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN20,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN21,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN22,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN23,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN4,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN5,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN6,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN7,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN8,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CIN9,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CLK0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CLK1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CLK2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CLK3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO0,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO1,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO10,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO11,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO12,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO13,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO14,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO15,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO16,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO17,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO18,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO19,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO2,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO20,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO21,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO22,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO23,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO3,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO4,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO5,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO6,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO7,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO8,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,CO9,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA10,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA11,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA12,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA13,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA14,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA15,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA16,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA17,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA4,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA5,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA6,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA7,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA8,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MA9,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB10,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB11,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB12,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB13,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB14,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB15,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB16,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB17,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB4,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB5,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB6,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB7,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB8,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,MB9,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,OP5,unknown,True,observed_unmapped_name,Diamond:186-189;CFB name also present in diagram
+ALU24,OP7,unknown,True,observed_unmapped_name,Diamond:186-189;CFB name also present in diagram
+ALU24,OPADDNSUB,in,False,documented_unobserved,Diamond:186-189;CFB name also present in diagram
+ALU24,OPCINSEL,in,False,documented_unobserved,Diamond:186-189;CFB name also present in diagram
+ALU24,R0,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R1,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R10,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R11,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R12,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R13,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R14,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R15,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R16,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R17,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R18,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R19,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R2,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R20,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R21,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R22,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R23,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R3,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R4,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R5,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R6,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R7,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R8,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,R9,out,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,RST0,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,RST1,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,RST2,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,RST3,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,SIGNEDIA,in,True,name_match,Diamond:186-189;CFB name also present in diagram
+ALU24,SIGNEDIB,in,True,name_match,Diamond:186-189;CFB name also present in diagram

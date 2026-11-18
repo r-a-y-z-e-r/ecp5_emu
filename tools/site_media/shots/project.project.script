@@ -1,0 +1,4 @@
+# Adapted from project.script; stay on Project to show the current build toolbar.
+0 open top.v
+1 build
+0 view project

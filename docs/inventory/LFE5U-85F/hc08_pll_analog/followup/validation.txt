@@ -1,0 +1,38 @@
+HC08 run_1 reading and F/G/H follow-up, 2026-11-17.
+No board/serial/flash access by this follow-up. No emulator edit. No commit.
+
+Reparsed all 15 supplied raw run_1 captures: PASS.
+Every capture recovers all 201 startup samples; LOCK=0 only at initialized t=0,
+then LOCK=1 from t=10 ms throughout the captured samples.
+A/B/E: 100 MHz; C/D: 16.666667 MHz, with 166666/166667 edges per 10 ms.
+Per-load numbers are in ../run_1_reading.json. Supplied run_1 files unchanged.
+
+Rebuilt C/D in external scratch: PASS, exact original packed SHA256 reproduced.
+Trellis PLL0_UL FEEDBK_PATH and E1_CLKFB mux rows extracted directly.
+INT_OP set bits {F2B1,F3B1,F4B1} OR JCLKFB3 {F1B1,F2B1}
+equals {F1B1,F2B1,F3B1,F4B1}, not any listed FEEDBK_PATH pattern.
+Packed CRAM and config-to-CRAM independently agree with that union.
+CLKOS_DIV, CLKOS2_DIV and CLKOS3_DIV in routed C/D are all 8 (word 0000111).
+Thus exact INT_OS3 alias and default-divider-1 premises are both disproved.
+
+F: C with CLKOS3_DIV=3. G: C with CLKOS3_DIV=2.
+H: F with FEEDBK_PATH=INT_OS; its union is {F1B1,F2B1,F3B1,F4B1,F5B1},
+also unlisted. Packed/config CRAM checks PASS for F/G/H.
+All three synthesize, route and pack; both 100 MHz and 25 MHz timing targets PASS.
+Actual written dividers, feedback arcs, analog attributes and GSR checked.
+
+Real packed-bitstream emulator CLI: F/G/H all plan, raw LOCK=1 at 0 ns,
+first CLKOP rise=70 ns and subsequent periods=10 ns.
+32 ms fast UART: four valid record bodies per build, steady ratio=4, 100 MHz.
+H's plan exposes FEEDBK_PATH ambiguity [INT_OP,INT_OS]; the planner's catch-all
+match arm treats the setting error as external feedback and traces CLKOP.
+Evidence retained; no planner/kernel modifications made.
+
+Runner/parser mocked regression checks PASS after adding profile selection:
+strict parser; empty/partial capture; load-before-open; exact bytes retained;
+loader/read failures preserve output. No hardware calls made.
+Reporter RTL unchanged; original fault and full startup-replay checks retained.
+
+Exact build, paper-audit, emulator and future SRAM-run commands are in README.
+All Python sources parse. New/current HC08 files scanned for personal home
+paths and session scratch paths; none. SHA256SUMS regenerated for retained files.

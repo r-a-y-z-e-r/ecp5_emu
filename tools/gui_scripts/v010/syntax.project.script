@@ -1,0 +1,21 @@
+# Compare plain/highlighted idle frames, three typing locations in both themes, then lexer samples.
+0 emulate
+0 view project
+0 open ../../../out/records/v010/picorv32_plain.txt
+3 open picorv32.v
+0 open picorv32.v 1489
+3 type picorv32.v 1489 1 /* middle */ 
+2 type picorv32.v 2121 1 // block opener 
+2 type picorv32.v 2978 1 // end typing
+2 edit picorv32.v 2121 /***************************************************************
+20 open ../../../out/records/v010/picorv32_plain.txt
+3 open picorv32.v 1489
+3 type picorv32.v 1489 1 /* light middle */ 
+2 type picorv32.v 2121 1 // light opener 
+2 type picorv32.v 2978 1 // light end
+3 open ../../../tools/gui_scripts/v010/hdl/sample.sv
+2 open ../../../tools/gui_scripts/v010/hdl/sample.vhd
+2 open ../../../tools/gui_scripts/v010/hdl/sample.lpf
+1 open ../../../tools/gui_scripts/v010/hdl/ecp5.toml
+1 open ../../../tools/gui_scripts/v010/hdl/notes.txt
+1 quit

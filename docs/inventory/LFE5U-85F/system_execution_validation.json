@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "device": "LFE5U-85F",
+  "scope": "asynchronous user GSR and explicit post-load wake phases; global strobes for implemented PLC/PIO/LUTRAM behavior, not physical POR/transport validation",
+  "trellis_revision": "a31ff7042e712c0e2ad217054116ce2c4995f5c7",
+  "database_revision": "9754ff473bfaa1e6edfaf57ce13bd447c76a88f6",
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration_manifest_sha256": "a2d6dd35448a8957e85b0dbaf4e99a5394476a8c5b73cbc7354a738fe66a4a8c",
+  "tests": {
+    "regular": {
+      "passed": 73,
+      "log": "target/system-controls/regular-tests.log",
+      "log_sha256": "f6a413fcf97d902208df08226faa422e88b7ae6aedc6c097dce1a2ea852423ae"
+    },
+    "integrations": {
+      "passed": 8,
+      "log": "target/system-controls/integration-tests.log",
+      "log_sha256": "60b727f99af85c392670099bd0921f1d0b7f3d1070c73565942b698e07794e7d"
+    }
+  },
+  "total_passed": 81,
+  "commands": [
+    "cargo test --release --locked",
+    "cargo test --release --locked -- --ignored --skip real_bitstream_matches_text_config --test-threads=1"
+  ],
+  "quality": [
+    {
+      "command": "cargo clippy --all-targets --locked -- -D warnings",
+      "result": "passed",
+      "log_sha256": "42105218cb926b29973d9abcf796caedcb680639ac85ad32f0b0d5941a630e56"
+    },
+    {
+      "command": "cargo fmt --check",
+      "result": "passed"
+    }
+  ],
+  "native_checks": {
+    "variants": 6,
+    "timestamps_per_variant": 1025,
+    "CLI_observations": [
+      9,
+      10
+    ],
+    "user_GSR_modes": [
+      "ACTIVE_LOW",
+      "ACTIVE_HIGH"
+    ],
+    "wake_sequences": [
+      4,
+      21
+    ],
+    "observed_and_all_PLC_match": true,
+    "all_PLC_FF": 83640,
+    "all_PLC_GSR_enabled": 83638,
+    "all_PLC_GSR_disabled": 2,
+    "PIO": 23,
+    "LUTRAM_columns": 4,
+    "inhibited_writes_per_wake_run": 1,
+    "allowed_writes_per_wake_run": 204,
+    "write_during_user_GSR": true,
+    "external_DONE_wait_and_latched_completion": true
+  },
+  "coincidence_policy": "settle fabric and logical system strobes before simultaneous FF/RAM capture; not a physical START/fabric-clock timing assertion",
+  "DONE_policy": "virtual open-drain DONE with environment pullup; advance early phases, hold completion at T3; no wake restart when DONE falls after user mode; early-phase silicon stall remains unvalidated",
+  "not_implemented": [
+    "physical POR and SRAM clear/load",
+    "PUR-specific effects and GSR-disabled power-up state",
+    "physical START/MCLK binding or phase-edge delays",
+    "synchronized GSR state machine",
+    "custom phase schedules and unsupported raw wake combinations",
+    "programming transport, CRC/error/security/partial reconfiguration",
+    "global controls for unimplemented EBR/DSP/IOLOGIC families",
+    "full save/resume of controller/driver/timer history"
+  ],
+  "not_rerun": [
+    "whole_chip::real_bitstream_matches_text_config requiring ECP5_TEST_BIT"
+  ],
+  "unresolved_research_questions": 78,
+  "prepared_hardware_cases": 37,
+  "hardware_results": 0,
+  "source_files": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "415939d78fb9c2be2e93155bca929c2ea2bafd692e6531be2d721a8c0565048a"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "0ebd1b0a1a2e68dbcce7fe35a0d3416415375c638e51483d2543cd6d51434229"
+    },
+    {
+      "path": "src/chip.rs",
+      "sha256": "49dfacefcd91ff3c4f4e805bbd4bdea0bd10cce0d0ab124b4eb069bf413b6f07"
+    },
+    {
+      "path": "src/command_emulate.rs",
+      "sha256": "f21e663e2364845d4ad7368ed981c1ba2d108fd5379c6d1ec643728e56d2701e"
+    },
+    {
+      "path": "src/compile/index.rs",
+      "sha256": "3be54ef2f88ad4f6ed4deed42206bbaf168a56944083a00b24c7138edaa1e0cc"
+    },
+    {
+      "path": "src/compile/lutram.rs",
+      "sha256": "355b1b6c01b8f87a06d4fde98333afa66888497a60237676d4c835d77806081a"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "4cde125c5877e4a77e5dd05e0dc6595cc5a821d7044e59aa12152c84d7012701"
+    },
+    {
+      "path": "src/compile/system.rs",
+      "sha256": "4309b4d4a284c9abb37ad21f01dbd1ebad0b3e0b7182a43e7f0e0f8ef479a4b7"
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "05aef34ea21bc2a088a7712f5f2aab15bd04eebeec808520eeb2134af59580d4"
+    },
+    {
+      "path": "src/database.rs",
+      "sha256": "c371bfb63036298a6efd43019629a04ece4872b215a5e13d2d24c49b6fe3e0ae"
+    },
+    {
+      "path": "src/decode.rs",
+      "sha256": "050b68a9df9ddc6b9979836ec331bc895403fe043f46a7ae19b51553352a762d"
+    },
+    {
+      "path": "src/image.rs",
+      "sha256": "c28f5c1be16dbf3660897d10811da206014c2a2a2ea7ee162a7093b9dbfeefca"
+    },
+    {
+      "path": "src/kernel/lutram.rs",
+      "sha256": "7e7c4e7eb291515bf13dcf2b8e380c5f56fc3d396d6b050129a39eca8c5b5af9"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "cf12eb151aa1cac038f38191e3be8c4396aad32ed8d8a0a7de39ebc4919b1780"
+    },
+    {
+      "path": "src/kernel/system.rs",
+      "sha256": "bb884de5c2875bf7f56ff3c7377ac88cb8127e3bf4321fb3222124dec032afb2"
+    },
+    {
+      "path": "src/kernel/time.rs",
+      "sha256": "b074808e21d9e17a76781c5caceb5725e2d7885733f0f47049d3df420982acb1"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "1e02194491531befec3cc55ea777a611311863a9c1bacea05e4215d464d9ea58"
+    },
+    {
+      "path": "src/logic.rs",
+      "sha256": "fcfb4832f26404cac14fdda000c5fd1c1054f1ccd390878d65692c56f52fe3e9"
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "dca16fa089c5091d33340f94e9bf307355a3c69182301c8b27b0f2492531e033"
+    },
+    {
+      "path": "src/model/catalog.rs",
+      "sha256": "e9fa827256f502a34d1a1847b03171d66b53a8262b8cbafd73bc2ae88c50330e"
+    },
+    {
+      "path": "src/model/mod.rs",
+      "sha256": "3d43ae45781f9993dad9a00127ac8ad271564d239e567602b93c989188e696a4"
+    },
+    {
+      "path": "src/model/topology.rs",
+      "sha256": "e97b9d84ab48f9931f9416dd1c46fde6d1420465237a3115b895fe6485418374"
+    },
+    {
+      "path": "src/prepared.rs",
+      "sha256": "2a0d5a7e9bbf5cb35a57e2a775ef2c8ef234369e5b357cbb3eed41ba3f2f54a8"
+    },
+    {
+      "path": "src/routing.rs",
+      "sha256": "22e145dae8329a824934c6ae1ca5633ca7d4d99105077dec70315b400938d700"
+    },
+    {
+      "path": "src/sim.rs",
+      "sha256": "95418c839ed8bf15ad21ba07ade922bd31356d650c3b024a5a9b9f161e02e142"
+    },
+    {
+      "path": "src/state.rs",
+      "sha256": "c9770a717d53e07744b6bd7d02e0a3be3064a805fc84ccba407e0ca2fc7164d2"
+    },
+    {
+      "path": "tests/automatic_compile.rs",
+      "sha256": "36d0efe600762fa15791b8af6312cf1a3005d197d6189e3e7100024f962a81ef"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "52552075c3007b29c4cd908a4e6e0432aa5173916b04ce3b51a1e971ccf9809c"
+    },
+    {
+      "path": "tests/configuration_state.rs",
+      "sha256": "e46e6747471b773cb24f89466d4ad3bad2b3d3c901de452db522a972c52b7588"
+    },
+    {
+      "path": "tests/device_model.rs",
+      "sha256": "c9c51d5f34cee5adc15000de4709b18cfbb8edd61b75f5e973be115e74209be9"
+    },
+    {
+      "path": "tests/event_kernel.rs",
+      "sha256": "acd263e2560786fc5feaff5c5f00b409a0417b7b60a0cdbb66952c2a90159032"
+    },
+    {
+      "path": "tests/lutram.rs",
+      "sha256": "83c82dbafd629e4e92fb10f45aebc11c1a158e87e928840062cac13209a8ea36"
+    },
+    {
+      "path": "tests/lutram_native.rs",
+      "sha256": "4f7026d8757663c846f52ad6db6d8539e0c324bca32d48a6be7c19a09e095a6b"
+    },
+    {
+      "path": "tests/resource_decode.rs",
+      "sha256": "e67d0a3291244ec874b9f2af7a1d7782d6287e00f20bc42bf022e68d2066d2e8"
+    },
+    {
+      "path": "tests/system_controls.rs",
+      "sha256": "fab525e59c348e40e7e5c2ebe7b850cdbaaa0cfe458376b57be6634618e0ff64"
+    },
+    {
+      "path": "tests/system_native.rs",
+      "sha256": "4001a2cf503e53e094328851a7ebf16647166ff78686f2ba62995dbbcc447463"
+    },
+    {
+      "path": "tests/whole_chip.rs",
+      "sha256": "0c51c12169796314b149f0b5be8b48fc1fa7c1cd5142e365951498de2dd81456"
+    }
+  ],
+  "documents": [
+    {
+      "path": "PLAN.md",
+      "sha256": "0b174fa88c86b1d4a5c48549b3e6788815804fcdcb07615b370f8b92c6bc9523"
+    },
+    {
+      "path": "docs/SYSTEM_EXECUTION.md",
+      "sha256": "0b601409505fecbcc4d8cb801e81af117390cacab24c808386c6ad50274b8da6"
+    },
+    {
+      "path": "docs/SYSTEM_STARTUP.md",
+      "sha256": "8144e1b57106f16fca04bfe8bf979306874a91c497c91f644ab50bdd80f09973"
+    },
+    {
+      "path": "docs/FF_CCU2.md",
+      "sha256": "0301dd419c4bb459ed100f38488450b51c4c50df0604a5343e9383e508cf664b"
+    },
+    {
+      "path": "docs/CORE_STATUS.md",
+      "sha256": "e0d23fc90db863b9d65e6cfe8aa9d89f850f27d91598a29b9e0c78af29eff735"
+    },
+    {
+      "path": "docs/EVENT_KERNEL.md",
+      "sha256": "32d26b9f5d518c2eae72106b7aacd2959a3390a8604b7de9007c6af93375110b"
+    },
+    {
+      "path": "docs/AUTOMATIC_EXECUTION.md",
+      "sha256": "dd248b5180ee225eceef24b0f790912a89f000d27da2bd4c0a86563540e5b6a2"
+    },
+    {
+      "path": "docs/LUTRAM_EXECUTION.md",
+      "sha256": "e757dcbc5b8f235a5ed367ccf014efc8ab29bfd79c09d3c41aa0ebfcfcd7a93f"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "b780beffe1b1c4b669f7d18f00d41c311dd8f7e7df383bef5c99cd54f66e30e2"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "d066809e98c5eed56b1d6f777c929046a425569bc3973aebe7c33b33d2661bf4"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "026ea2cf619dc721b6e3636acfb93eac3c4a4cbec58b260be15b9e0db33f7e32"
+    },
+    {
+      "path": "docs/STRUCTURAL_MODEL.md",
+      "sha256": "a8f668eda478635db04cf379aa27e8dcb6090bc768fc38dc496ab39bc495e3d1"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "target/research/clock_system/sysCONFIG.pdf",
+      "sha256": "6931b2a1733b3530dfe6f8b661f56f6744b0c08b0fa731193dec6fa9d00a341b"
+    },
+    {
+      "path": "target/research/clock_system/sysCONFIG-49.txt",
+      "sha256": "4512ea1d19d3c135a3e4ac1f60c2eadce5bee4d68c0622c84a4f10f019159c37"
+    },
+    {
+      "path": "target/research/clock_system/sysCONFIG-50.txt",
+      "sha256": "72a6bbbb48eb4a6b555971603990feb002d3058c16e243b292dc671a2bfdaad6"
+    },
+    {
+      "path": "target/research/logic_state/libraries-357.txt",
+      "sha256": "cf38a7f56afd95b23d8a51d10762c7874b516304459d6c19ede46aa88dbdba39"
+    },
+    {
+      "path": "target/research/logic_state/libraries-359.txt",
+      "sha256": "b0d3e6a6775dcd253b3b72c95a1d5adb3173159c4e9a8b493ef723679c6d0042"
+    },
+    {
+      "path": "tools/data/clock_system_contract.json",
+      "sha256": "412b8806e173179107db35977a467725fcf51c4063857bc20b5da29ea03834a1"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_native.json",
+      "sha256": "47340b67bc6f26f1fe13d64f44f69617915533ca1785d2f60f8575595c2b8554"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_cli21.json",
+      "sha256": "78acde448447e07ccf6685c515dd596818cb944091cd50f316a098f726da03e5"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_cli4.json",
+      "sha256": "6c42a3192f6254a91031ef9589b6f56ae527d8007275748fb1bc1e3ed8e24731"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_fixture.v",
+      "sha256": "ad38d62ed0b6b2bfe166b93aadeb40643c85145e17a115ade316123b29e855a1"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_fixture.lpf",
+      "sha256": "0887931a1d2af478c55ef1d17654bb0100ab54d2d827053e72bb65cd385c067f"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_events21.json",
+      "sha256": "41dc9630c5c73a2b4f9f28584693a5abf0a5408ce237a48333a6180f27f032e1"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/system_execution_events4.json",
+      "sha256": "4ddf7e0dd64f8d9152e18b3de1c8f87626498d38ec77b7fc78da21805ff98185"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "device": "LFE5U-85F",
+  "scope": "automatic partial behavior plan from CRAM; complete architecture/storage retained, not full FPGA behavioral validation",
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration_manifest_sha256": "a2d6dd35448a8957e85b0dbaf4e99a5394476a8c5b73cbc7354a738fe66a4a8c",
+  "tests": {
+    "regular": {
+      "command": "cargo test --release --locked",
+      "passed": 59,
+      "unit": 18,
+      "portable_architecture": 5,
+      "portable_configuration_state": 8,
+      "portable_kernel": 16,
+      "portable_automatic_compile": 12,
+      "log_sha256": "429fba70e738b2ad5ef0ce44b628ef4a6667fe8f90a586234e1feec8e622f914"
+    },
+    "explicit_integrations": [
+      {
+        "command": "cargo test --release --locked --test automatic_compile -- --ignored",
+        "passed": 1,
+        "scope": "new native two-clock carry/GPIO, config and compressed bit, observed/all-PLC, CLI, GSR/PIO-overlay guards"
+      },
+      {
+        "command": "cargo test --release --locked --test event_kernel -- --ignored",
+        "passed": 1,
+        "scope": "previous explicit native LUT/mux/FF plan"
+      },
+      {
+        "command": "cargo test --release --locked --test configuration_state -- --ignored",
+        "passed": 1,
+        "scope": "native image/INIT/service metadata preservation"
+      },
+      {
+        "command": "cargo test --release --locked --test device_model -- --ignored",
+        "passed": 1,
+        "scope": "full architecture and all 197408 clock-segment relationships"
+      },
+      {
+        "command": "cargo test --release --locked --test resource_decode -- --ignored",
+        "passed": 1,
+        "scope": "legacy native EBR/DSP/INIT decoder"
+      },
+      {
+        "command": "cargo test --release --locked --test whole_chip routed_counter_counts_through_tile_boundaries -- --ignored",
+        "passed": 1,
+        "scope": "legacy counter, 65538 observations"
+      }
+    ],
+    "total_passed": 65,
+    "not_run": [
+      "whole_chip::real_bitstream_matches_text_config requiring ECP5_TEST_BIT"
+    ]
+  },
+  "quality": [
+    {
+      "command": "cargo clippy --all-targets --locked -- -D warnings",
+      "result": "passed"
+    },
+    {
+      "command": "cargo fmt --check",
+      "result": "passed"
+    }
+  ],
+  "native_checks": {
+    "timestamps_per_variant": 2000,
+    "variants": 3,
+    "clocks": 2,
+    "edges": [
+      "rising",
+      "falling"
+    ],
+    "GPIO": 19,
+    "final_counter_values": [
+      244,
+      231
+    ],
+    "observed": {
+      "FF": 16,
+      "LUT4": 3,
+      "carry_halves": 20,
+      "routes": 359,
+      "DCC_bypasses": 2,
+      "clock_aliases": 12,
+      "undriven": 2
+    },
+    "all_PLC": {
+      "FF": 83640,
+      "LUT4": 83616,
+      "carry_halves": 24,
+      "routes": 711110,
+      "DCC_bypasses": 2,
+      "clock_aliases": 12,
+      "undriven": 459880
+    },
+    "CLI": "passed with unsorted time-zero reset and separate simple clock; H1=1 after four cycles",
+    "global_GSR": "active mode rejected before data fan-in planning",
+    "PIO_overlay": "BASE_TYPE declaration OUTPUT_LVCMOS33 plus default PULLMODE=DOWN decodes as NONE; rejected",
+    "hardware_results": 0
+  },
+  "interpretation_rules": [
+    "raw enum defaults never replace observations; aliases/incomparable patterns remain explicit",
+    "CCU2 sum bypasses the overlapping Fn mux interpretation of INJECT1 bits",
+    "fixed/mux duplicates and specified JDI/JINCK delay alternatives are qualified; other overlaps fail",
+    "only validated clock raw/segment identities share runtime signals; real directed SPINE/TAP paths are still required",
+    "PIO direct PADDO/PADDT and DCC MODE=NONE allow unique empty fallbacks with an observed alternative domain",
+    "ready-unknown profile fixes user-mode conditions and leaves FF unknown until actual modeled capture/reset",
+    "CIBTEST access excluded by an explicit ready-profile assumption, retained in the report and architecture"
+  ],
+  "limitations": [
+    "No complete behavior for all FPGA resources",
+    "LUTRAM/RAMW, PRLD, EBR ports, DSP, IOLOGIC/DQS and dynamic PLL/DCC/DCS/ECLK still need models",
+    "No physical POR/configuration/wake-up controller; active user GSR rejected",
+    "PIO BASE_TYPE overlay recovery incomplete; unsupported/ambiguous codes fail",
+    "Binary single-ended IO only; no analog thresholds/current/timing/bank-power simulation",
+    "CIBTEST inactive ready-profile assumption is not hardware-validated",
+    "Observed scope intentionally omits unobserved FF execution; all-PLC scope still does not mean all FPGA families execute",
+    "No full save/resume; new CLI VCD export not connected; event trace is bounded",
+    "78 research questions and 37 future hardware series remain open; no board results"
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/automatic_execution_native.json",
+      "sha256": "c785fda63cda437f29cea34579d5a74e9fe4dbc7274649aee0199fbd84b155bd"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/automatic_pio_overlay.json",
+      "sha256": "380b07f939e5f89c137827d5eac889ad0a4647c883561809d6c91d7d8f5864fa"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/automatic_execution_cli.json",
+      "sha256": "c4e487702c70be67306259d8dc868b7a1e052c937fc38887f95514db7f40221d"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/automatic_execution_fixture.v",
+      "sha256": "821649d3d76739e0479de8ca32b8324f6ca9196b8bd3b441fc42dbbd32c4beb5"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/automatic_execution_fixture.lpf",
+      "sha256": "8cacc1d994c0800004ffc88fff369c70f0bf8bd1458ae4a954e3d3e0e07ea719"
+    }
+  ],
+  "generated_inputs": [
+    {
+      "path": "target/automatic-compile/top.config",
+      "sha256": "f52fd70a5d35fb6cb347724102c43c04c53e6958873eb51201a20e03c8552753"
+    },
+    {
+      "path": "target/automatic-compile/top.bit",
+      "sha256": "63d980256169ec0bedd2ea1812b483e8ba9a085018ad6749ec5533aaf667aee1"
+    },
+    {
+      "path": "target/automatic-compile/top.json",
+      "sha256": "ddad0f9116dac0ce25c14b9e7e1d6a8684668d22c4c21b44bf67ee6c247e87e6"
+    },
+    {
+      "path": "target/automatic-compile/yosys.log",
+      "sha256": "813768cb4465d4cc114e95918a227f776f4ab6c49f64061ab14d9c6b97ba773c"
+    },
+    {
+      "path": "target/automatic-compile/nextpnr-ecp5.log",
+      "sha256": "27844df70e291d925f29a000898eb2e61da0ed85b2473830667188541bcab759"
+    },
+    {
+      "path": "target/automatic-compile/ecppack.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "415939d78fb9c2be2e93155bca929c2ea2bafd692e6531be2d721a8c0565048a"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "0ebd1b0a1a2e68dbcce7fe35a0d3416415375c638e51483d2543cd6d51434229"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "1e02194491531befec3cc55ea777a611311863a9c1bacea05e4215d464d9ea58"
+    },
+    {
+      "path": "src/database.rs",
+      "sha256": "c371bfb63036298a6efd43019629a04ece4872b215a5e13d2d24c49b6fe3e0ae"
+    },
+    {
+      "path": "src/prepared.rs",
+      "sha256": "2a0d5a7e9bbf5cb35a57e2a775ef2c8ef234369e5b357cbb3eed41ba3f2f54a8"
+    },
+    {
+      "path": "src/model/mod.rs",
+      "sha256": "3d43ae45781f9993dad9a00127ac8ad271564d239e567602b93c989188e696a4"
+    },
+    {
+      "path": "src/model/topology.rs",
+      "sha256": "e97b9d84ab48f9931f9416dd1c46fde6d1420465237a3115b895fe6485418374"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "e3d24207135f7c8e0cded690653ac1a74b2c43e85a2a4a8f8ee997d8b2d28268"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "02bc4bb2d62474428a63cca8df4e288a61b04a134ceac0b1b4757a8028159c11"
+    },
+    {
+      "path": "src/compile/index.rs",
+      "sha256": "3be54ef2f88ad4f6ed4deed42206bbaf168a56944083a00b24c7138edaa1e0cc"
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "2c1ae5dc5bc1276232a61d0f4142791c8a631bb6e5ab5502bb28d8619e179bcd"
+    },
+    {
+      "path": "src/command_emulate.rs",
+      "sha256": "76e91a48eb9a97dfe8afff88b73a62b527c9935b43782e7478d2042e990c295c"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "c8e414a926eb00a5afbabbe6a2366579419ba7a0b3679c732fab17eeed5169d2"
+    },
+    {
+      "path": "tests/automatic_compile.rs",
+      "sha256": "7c2dc7ebd4dac3f806ce7d3ecc5ef8eaae9def7a68fadc20ebacb47fb916ace1"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "6e635d52abbb43bf983e844905ed77efd91838a6766c075253c3b39db89a17d1"
+    },
+    {
+      "path": "docs/AUTOMATIC_EXECUTION.md",
+      "sha256": "155c5840a2900fe3b1e1ac6f5ec8e217cb724b03210d3fe81f44ab37f5c50a94"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "bbf0655c20de9d725df7f985d33734b2fb3ac51400190f0a85d271f2900326c0"
+    },
+    {
+      "path": "docs/EVENT_KERNEL.md",
+      "sha256": "636955eeca352dd2af291671ecdf7657cc06f0b1b3c92719effc14caa955d60f"
+    },
+    {
+      "path": "docs/CORE_STATUS.md",
+      "sha256": "a070a8a7d7fe522b5beb1ae80c5312b32c33e138e76133499d8c30f3da8600dc"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "352ed78531e29b52297c3e2803b5753495cae534c5c86562685d9899297017f6"
+    },
+    {
+      "path": "docs/STRUCTURAL_MODEL.md",
+      "sha256": "f1fccc7acd73f6155aeb4525907b63a80f57582dd0edc400399b5915b157ddbc"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "8b8495f81c39b958d3724205244af23f80dc74793a643154a95ec126bc0a8ed5"
+    },
+    {
+      "path": "docs/PIO_BANKS.md",
+      "sha256": "0a3528ab83e06346bf30f80f842fcac4730a6421279b1dee13d5597a2c1c544e"
+    }
+  ]
+}

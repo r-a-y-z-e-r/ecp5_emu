@@ -1,0 +1,12 @@
+data,native,text_config,runtime_bridge,scope
+CRAM,Chip.cram,tile/tilegroup encoding,exported,exact_configuration_bits
+EBR init,Chip.bram_data,.bram_init,exported,not_runtime_RAM_contents
+IDCODE,Chip.info,device/variant identification,device_name_only,original_verify_commands_not_retained
+ctrl0,Chip.ctrl0,not_serialized,not_exported,Python_Chip_field_not_bound
+ctrl1,Chip.ctrl1,not_serialized,not_exported,Python_Chip_field_not_bound
+SED reference,Chip.sed,not_serialized,not_exported,Python_Chip_field_not_bound
+USERCODE,Chip.usercode,not_serialized,not_exported,bound_in_Python_but_bridge_omits
+security,not_retained,not_serialized,not_exported,command_consumed
+command sequence/timing,not_retained_as_controller_state,not_serialized,not_exported,preserve_original_bitstream
+metadata comments,Chip.metadata,.comment,not_in_CRAM_JSON,not_equivalent_to_control_registers
+sysconfig directives,ChipConfig.sysconfig,parsed/text_serialized,not_applied_by_to_chip,nextpnr_writer_also_sets_relevant_CRAM_fields

@@ -1,0 +1,5 @@
+# Paused and running counter publications while the project editor remains visible.
+0 size 1500 950
+0 pause
+0 rate 4
+8 run

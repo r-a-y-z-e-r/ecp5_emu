@@ -1,0 +1,13 @@
+# A 512x32 ROM and RAM in block RAM as yosys infers them, checked over the UART.
+# Build: ecp5_emu build examples/ulx3s/ram32 (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/ram32; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/ram32.
+
+[project]
+name = "ram32"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"
+files = ["rom.hex"]   # read by $readmemh

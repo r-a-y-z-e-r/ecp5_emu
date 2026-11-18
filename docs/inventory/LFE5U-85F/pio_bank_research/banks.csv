@@ -1,0 +1,9 @@
+resource,bank,tile,GPIO_count,field_fragments,dynamic_control_status
+LFE5U-85F/BANK0,0,MIB_R0C3:BANKREF0,56,1,no_documented_dynamic_BCINRD_BCLVDSO
+LFE5U-85F/BANK1,1,MIB_R0C123:BANKREF1,48,1,no_documented_dynamic_BCINRD_BCLVDSO
+LFE5U-85F/BANK2,2,MIB_R10C126:BANKREF2,48,4,documented_dynamic_bank_controls_binding_open
+LFE5U-85F/BANK3,3,MIB_R95C125:BANKREF3,64,4,documented_dynamic_bank_controls_binding_open
+LFE5U-85F/BANK4,4,MIB_R95C123:BANKREF4,24,1,no_documented_dynamic_BCINRD_BCLVDSO
+LFE5U-85F/BANK6,6,MIB_R95C1:BANKREF6,64,4,documented_dynamic_bank_controls_binding_open
+LFE5U-85F/BANK7,7,MIB_R10C0:BANKREF7,48,4,documented_dynamic_bank_controls_binding_open
+LFE5U-85F/BANK8,8,MIB_R95C3:BANKREF8,13,1,no_documented_dynamic_BCINRD_BCLVDSO

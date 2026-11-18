@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "core_resources": {
+    "DDRDLL": 4,
+    "DQSBUFM": 14
+  },
+  "core_ports": 592,
+  "native_only_ports": 4,
+  "whole_fields": 166,
+  "fragments": 194,
+  "mode_masks": 464,
+  "force_max_delay_masks": 16,
+  "word_bit_positions": 224,
+  "delay_conversion_rows": 512,
+  "control_rules": 19,
+  "fifo_views": 224,
+  "delay_source_paths": 52,
+  "reference_clock_options": 12,
+  "routing_control_bits": 34,
+  "routing_tile_types": 14,
+  "routing_edge_records": 3946,
+  "routing_bits_in_prior_IO_catalogue": 0,
+  "routing_bits_in_named_fields": 0,
+  "native_wire_check": {
+    "status": "matched",
+    "requests": 5843,
+    "scope": "wire_names_and_coordinates_only"
+  },
+  "native_mux_bits_check": {
+    "status": "matched",
+    "patterns": 251,
+    "catalogue": {
+      "tile_types_checked": 14,
+      "checks": [
+        "mux_sinks",
+        "mux_sources",
+        "fixed_connections",
+        "word_names",
+        "word_widths",
+        "word_defaults",
+        "enum_names",
+        "enum_defaults",
+        "enum_options"
+      ]
+    }
+  },
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "b9217cbe26e36836a2d0ff3813c744196b1cd72521ed25973841eb6e0fbed532"
+    },
+    {
+      "source": "contract",
+      "sha256": "bac68a6ea2586c023ecf4ac04abdb70733a2524d38f1de4f7c71d8603aa6b1e3"
+    },
+    {
+      "source": "normalization_rules",
+      "sha256": "19f39eb477f11602739327055841c52316c95e823b0381df72251f6c10c6f789"
+    },
+    {
+      "source": "native_check",
+      "sha256": "63f65a20f1d6d1c6976518b13cecb0bcb8fa1db118d9854d24fc8917820ebe26"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "4f53b06ea33c5a8b4a004aa2d45908dd0b76b578d2dae7f8553989979883cb7f"
+    },
+    {
+      "source": "Yosys_blackboxes",
+      "sha256": "a698fe41f333531be7a622b0410ed1ffcfddf730f4e0cf2009dd88e3751ceeed"
+    },
+    {
+      "source": "nextpnr_writer",
+      "sha256": "416e2405fa185c70dcf0f2c2793fbb32c1d12123d567424e91e59e329d996105"
+    },
+    {
+      "source": "nextpnr_packer",
+      "sha256": "3c6842deafc1d62c1fa8c5530ad7ad68e50877599cb38d6aba7a88ef2f89f03d"
+    },
+    {
+      "source": "DQS_fuzzer",
+      "sha256": "2c7f3c526cb0cd3ec296d8c6a6d607794457bc0ec6afd35f271f76ec8f204125"
+    },
+    {
+      "source": "DDRDLL_fuzzer",
+      "sha256": "81071601aae59a906a4d5d594671b2412761d78f2fcfdffdf21a22ba55dceb46"
+    },
+    {
+      "source": "device_inventory.json",
+      "sha256": "aae1fc16d0bec9b56b2e5890aad3c725a53cf849ff46bc6ccdc924883789b145"
+    },
+    {
+      "source": "resource_instances.csv",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "clock_ports.csv",
+      "sha256": "ee5a891931b2544ca4d5c3ae7cff356234049f819935d2193d7a31772bc2c9f9"
+    },
+    {
+      "source": "decode_catalog.json",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "source": "tile_instances.csv",
+      "sha256": "0da09e09bcefb49f0ef1e1998888b2a2f7199e4f326469b555e046d65be55101"
+    },
+    {
+      "source": "iologic_research/instances.csv",
+      "sha256": "a8e5ed1d40ec47169b073cfc72f19fa3ba06bd7a6d914dfb666c98bd834e1c1a"
+    },
+    {
+      "source": "io_routing_research/route_controls.csv",
+      "sha256": "5162b724aaf0f7df211989e5cd861f9c0a50da929c1eda784bf18c943f051961"
+    },
+    {
+      "source": "highspeed",
+      "sha256": "a7f8017226158f78309344149e5ae756b2e76124533dbfedd761133f9d7422cd"
+    },
+    {
+      "source": "library",
+      "sha256": "339c0d511bf6b576f775118f47f3bda6235e24fcc8633b17e87c661ff6f263fd"
+    },
+    {
+      "source": "datasheet",
+      "sha256": "26570f8bb2b800123120829cacd75d818d7a985d573797610521b5bda2e293c3"
+    },
+    {
+      "source": "native_probe_binary",
+      "sha256": "e486a7f11253e97a8ea79e368960ec7fb2ce288882680473729c580fd96803b4"
+    },
+    {
+      "source": "native_library",
+      "sha256": "d3ecc36231525beac047ab8f29769b0284b81f05c87d6f10c37e75f9f5d75835"
+    },
+    {
+      "source": "pytrellis_module",
+      "sha256": "8e72bbf0a180fbde98bad8778197376fa5f7b19f94433faffb7c21dd3b0deba4"
+    }
+  ],
+  "limitations": [
+    "FIFO pointer encoding, reset values, increment conditions and wrap sequence",
+    "FIFO word width, staging registers and simultaneous DQS/ECLK behavior",
+    "DATAVALID and BURSTDET exact cycle latency and READ window gate internals",
+    "PAUSE entry/exit phase, held clock levels and read-path effects",
+    "Delay counter bounds, wrap/saturation and CFLAG behavior at both limits",
+    "DDRDLL acquisition/relock timing, code calibration and FORCE_MAX_DELAY LOCK behavior",
+    "DDRDEL transport representation and its relationship to DCNTL[7:0]",
+    "DIVOSC function and its internal division/state",
+    "Hardware mapping of WRITE_LEVELING attribute and FACTORYONLY parameter defaults",
+    "Exact MEM_SYNC release/update sequence must follow the loaded fabric implementation"
+  ]
+}

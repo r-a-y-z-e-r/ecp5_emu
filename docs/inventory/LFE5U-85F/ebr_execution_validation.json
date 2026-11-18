@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "scope": "EBR execution kernel and composed native configuration plan",
+  "hardware_results": 0,
+  "regular_tests_passed": 85,
+  "native_integration_tests_passed": 9,
+  "total_tests_passed": 94,
+  "new_portable_ebr_tests": 12,
+  "native_ebr_runs": [
+    {
+      "source": "config",
+      "scope": "observed",
+      "startup": "ready_unknown",
+      "samples": 513,
+      "reads": [
+        78,
+        35
+      ],
+      "write_attempts": [
+        39,
+        13
+      ],
+      "startup_blocked_writes": 0,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 37,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 1,
+        "ebr_read_ports": 2,
+        "flip_flops": 1,
+        "lut4": 0,
+        "lutram_columns": 0,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 1998,
+        "wide_muxes": 0
+      },
+      "statistics": {
+        "combinational_evaluations": 188603,
+        "discarded_timer_events": 0,
+        "driver_changes": 197218,
+        "ebr_access_edges": 165,
+        "ebr_bit_changes": 245,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 45,
+        "ebr_evaluations": 514,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "possible_clock_edges": 0,
+        "register_evaluations": 325,
+        "signal_changes": 199523,
+        "system_evaluations": 1,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      }
+    },
+    {
+      "source": "bit",
+      "scope": "observed",
+      "startup": "ready_unknown",
+      "samples": 513,
+      "reads": [
+        78,
+        35
+      ],
+      "write_attempts": [
+        39,
+        13
+      ],
+      "startup_blocked_writes": 0,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 37,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 1,
+        "ebr_read_ports": 2,
+        "flip_flops": 1,
+        "lut4": 0,
+        "lutram_columns": 0,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 1998,
+        "wide_muxes": 0
+      },
+      "statistics": {
+        "combinational_evaluations": 188603,
+        "discarded_timer_events": 0,
+        "driver_changes": 197218,
+        "ebr_access_edges": 165,
+        "ebr_bit_changes": 245,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 45,
+        "ebr_evaluations": 514,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "possible_clock_edges": 0,
+        "register_evaluations": 325,
+        "signal_changes": 199523,
+        "system_evaluations": 1,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      }
+    },
+    {
+      "source": "config",
+      "scope": "observed",
+      "startup": "wake_phases",
+      "samples": 513,
+      "reads": [
+        78,
+        35
+      ],
+      "write_attempts": [
+        39,
+        13
+      ],
+      "startup_blocked_writes": 1,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 37,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 1,
+        "ebr_read_ports": 2,
+        "flip_flops": 1,
+        "lut4": 0,
+        "lutram_columns": 0,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 1998,
+        "wide_muxes": 0
+      },
+      "statistics": {
+        "combinational_evaluations": 189044,
+        "discarded_timer_events": 0,
+        "driver_changes": 197694,
+        "ebr_access_edges": 166,
+        "ebr_bit_changes": 245,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 46,
+        "ebr_evaluations": 517,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "possible_clock_edges": 0,
+        "register_evaluations": 329,
+        "signal_changes": 200000,
+        "system_evaluations": 9,
+        "time_batches": 521,
+        "trace_overwrites": 0
+      }
+    },
+    {
+      "source": "bit",
+      "scope": "all_plc_registers",
+      "startup": "wake_phases",
+      "samples": 513,
+      "reads": [
+        78,
+        35
+      ],
+      "write_attempts": [
+        39,
+        13
+      ],
+      "startup_blocked_writes": 1,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 37,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 1,
+        "ebr_read_ports": 2,
+        "flip_flops": 83640,
+        "lut4": 83639,
+        "lutram_columns": 0,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 712920,
+        "wide_muxes": 0
+      },
+      "statistics": {
+        "combinational_evaluations": 1318159,
+        "discarded_timer_events": 0,
+        "driver_changes": 1075894,
+        "ebr_access_edges": 166,
+        "ebr_bit_changes": 245,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 46,
+        "ebr_evaluations": 517,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "possible_clock_edges": 0,
+        "register_evaluations": 167867,
+        "signal_changes": 1956400,
+        "system_evaluations": 9,
+        "time_batches": 521,
+        "trace_overwrites": 0
+      }
+    }
+  ],
+  "native_ebr_oracle": "all 18 output bits per port, downstream FF, and all 18432 final memory bits; corresponding input formats/scopes agree",
+  "CLI": {
+    "observations": 514,
+    "working_samples_compared": 513,
+    "probes": 7,
+    "statistics": {
+      "combinational_evaluations": 163609,
+      "discarded_timer_events": 0,
+      "driver_changes": 172872,
+      "ebr_access_edges": 165,
+      "ebr_bit_changes": 245,
+      "ebr_collision_rows": 0,
+      "ebr_control_ambiguities": 45,
+      "ebr_evaluations": 513,
+      "ebr_notice_overwrites": 0,
+      "lut_bit_changes": 0,
+      "lut_write_edges": 0,
+      "lut_write_evaluations": 0,
+      "possible_clock_edges": 0,
+      "register_evaluations": 325,
+      "signal_changes": 174506,
+      "system_evaluations": 1,
+      "time_batches": 513,
+      "trace_overwrites": 0
+    }
+  },
+  "validation_commands": [
+    {
+      "command": "cargo test --locked",
+      "status": "passed",
+      "log": "target/ebr-tests.log"
+    },
+    {
+      "command": "cargo test --release --locked -- --ignored --skip real_bitstream_matches_text_config --test-threads=1",
+      "status": "passed"
+    },
+    {
+      "command": "cargo test --release --locked --test ebr_native -- --ignored",
+      "status": "passed",
+      "log": "target/ebr-native-tests.log"
+    },
+    {
+      "command": "cargo clippy --all-targets -- -D warnings",
+      "status": "passed"
+    },
+    {
+      "command": "cargo fmt --check",
+      "status": "passed"
+    }
+  ],
+  "not_run": [
+    "external blink fixture requiring ECP5_TEST_BIT",
+    "all physical board cases; no Lattice Diamond model used"
+  ],
+  "limitations": [
+    "MODE must compose uniquely; MODE/WEAMUX overlap can reject valid DP with inverted WEA",
+    "PDP36 read order and narrow READBEFOREWRITE are rejected",
+    "active/unknown local ASYNC reset with SYNC release faults",
+    "INIT9-row collisions, partial-write output, reset/write and OCE gating use an explicit conservative policy",
+    "not timing-aware; no invented collision window, POR, transport, or analog startup",
+    "PDP execution validated by portable tests; native fixture is DP18x18 only"
+  ],
+  "source_files": [
+    {
+      "path": "src/state.rs",
+      "sha256": "b81ccb2d1cb7fa8a25d6d79e07de6d62a47a5295f6d806af78e7dda06acb06a7"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "e854737903db87c44ae07946311a95eb5faec75a886327f856cc2d271a3d8211"
+    },
+    {
+      "path": "src/kernel/ebr.rs",
+      "sha256": "e32d85571cee61a7b15621464f3b8d9d3fa3d393f9059ca3c8f8b7d064949f8e"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "a7af831fbbd9776be1162d667f9fc9ea68c8d1df9b128fea0f398242e2a6e2d6"
+    },
+    {
+      "path": "src/compile/ebr.rs",
+      "sha256": "aa1d870834ef2adceda447a6a62612c9350ccff1783a5ffe4a9d62a5ad03d82a"
+    },
+    {
+      "path": "src/compile/system.rs",
+      "sha256": "d207e1960604c069861e51e4420de8c2977935ed0cbaba311e1e77d4b1d660fd"
+    },
+    {
+      "path": "src/command_emulate.rs",
+      "sha256": "827852acb78a0c9cbe39e59dbe8b7a8eaa2e08e2c6895bfc9aacfc2819ffda9a"
+    },
+    {
+      "path": "tests/ebr.rs",
+      "sha256": "2d3b833d9deb86deb82255f7c5ddef9230048bc4de042836f896e79f44c6a628"
+    },
+    {
+      "path": "tests/ebr_native.rs",
+      "sha256": "28379c3e62da3112c9d60e09b57d5dea09a55cf210178cc7bce900d00b9e231a"
+    },
+    {
+      "path": "docs/EBR_EXECUTION.md",
+      "sha256": "7ac7d8c8a1c92407eb1e2115c8bfb0fd8447a2018e3d7f1736c110fc756caaf0"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "7f418621270bb346acecc3a11fc3867656c729085c3c6dfd246448aa8f9f214c"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "ce5c9b7932b3f0b1c0fcbeded41eadcb0427e609732e179a24586966eb8fe899"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_execution_fixture.v",
+      "sha256": "e14a9b7635a5d92beb3c689abfec264abd8d8ed3b36c53311e0b5b8a8bfeeadf"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_execution_fixture.lpf",
+      "sha256": "665c298492492be76e5a704b52908e5b93b31856eb36d86ef67aa9da1a9714b3"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_execution_native.json",
+      "sha256": "e1efeb41de79fd43cf5e7d26f5028167b0070635b75822e338ed9e0c11fd56c6"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_execution_cli.json",
+      "sha256": "b103a575b2dbf6fa79d747f9d12d6d25bb26f79f5f5cb51522a8f8a1ed19de24"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_execution_events.json",
+      "sha256": "716fa5d97524d50720b7ea1be4962d536822d1d957e503ef5e5f165831c5d344"
+    }
+  ],
+  "material_validation": {
+    "byte_identical_repeated_files": 43,
+    "bit_constraints_checked": 149725,
+    "open_questions": 78,
+    "prepared_hardware_series": 37,
+    "hardware_results": 0,
+    "document_links_checked": 396,
+    "status": "passed"
+  }
+}

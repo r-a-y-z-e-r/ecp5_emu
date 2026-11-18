@@ -1,0 +1,117 @@
+Emulator implementation validation, 2026-11-17
+
+Build/test host: rserv through tools/rserv.sh; edited Rust files touched before sync.
+Mac: cargo check --tests passed. No commit, branch switch, stash or reset.
+No board, serial port or board transport was used. Board-tested HDL/config inputs
+were not regenerated. The pre-existing native counter test built its own remote
+fixture with Yosys/nextpnr/ecppack.
+
+Targeted command:
+  tools/rserv.sh cargo test --release --test hd09_hs02_native --test dsp --test alu54 --test event_kernel -- --include-ignored --nocapture
+Result: 53 passed, including the five board replays, two fast refusals, random
+DISABLED traffic models, and existing ENABLED kernel/fast equivalence tests.
+The old DSP test expecting disabled dividers to fail was updated to acceptance;
+mixed clock modes and ALU/MULT disagreement now have explicit refusal checks.
+
+Additional final checks:
+  tools/rserv.sh cargo test --release --test automatic_compile --test hd09_hs02_native -- --include-ignored --nocapture
+Result: 23 passed (16 planner/automatic tests and all 7 new native tests).
+This includes the existing two-clock native counter build/replay, a replacement
+for the old PRLD refusal assertion, and PRLD startup with a feedback M source
+that must remain X instead of acquiring REGSET.
+
+Workspace validation:
+  tools/rserv.sh cargo test --release --workspace
+Invoked exactly once. It passed the library, binary and preceding integration
+targets, then stopped at the obsolete automatic_compile PRLD-refusal assertion.
+That assertion was replaced with a preload execution check; the corrected
+planner binary subsequently passed. The 64 integration binaries not reached by
+the stopped invocation were selected explicitly with cargo test --release
+-p ecp5_emu --test <each remaining tests/*.rs stem>: all 64 passed (116 enabled
+tests, 151 ignored). The remaining package and documentation were completed by:
+  tools/rserv.sh cargo test --release -p ecp5_gui
+  tools/rserv.sh cargo test --release --doc --workspace
+GUI: 75 passed, 6 ignored. Documentation: 0 tests, success. Thus workspace coverage
+was completed without a second full-suite invocation. Ignored hardware/reference
+checks stayed ignored except the explicitly selected targets above and below.
+
+  tools/rserv.sh cargo fmt --all -- --check
+Passed. Rust formatting was performed on rserv and copied back only for the
+edited files after checking for concurrent local edits. fast.rs was not formatted
+or otherwise rewritten: its only session change is the single PRLD ensure.
+  tools/rserv.sh cargo clippy --release --workspace --all-targets -- -D warnings
+Passed after fixing an ALU documentation paragraph and a sliced-string byte view.
+
+Existing native board regression:
+  tools/rserv.sh cargo test --release --test alu54_native hd08bs_first_window -- --ignored --nocapture
+Passed: the HD08 startup pin replay remains the board's.
+HD08c full UART regression: stopped after more than 20 minutes of active CPU
+execution, without a completed result. The test process was interrupted (SIGINT);
+no board mismatch assertion was reported. This optional long regression is not
+claimed as passed. The existing DSP/ALU ENABLED unit/fast comparisons and HD08
+startup replay passed.
+
+Implementation/refusal details:
+  MultiplierPipeline.both_edges and Alu54.both_edges select the HD09 uniform
+  disabled-divider profile. Event captures use both clock polarities for non-C
+  stages; C uses every rising edge. Enabled C keeps its old divider. GSR active
+  at a rise holds non-C stages through the following fall. The planner refuses
+  mixed active divider modes and ALU/MULT disagreement; standalone INPUTC remains
+  outside the measured executable profile.
+  Fast DSP refuses CLK_DIV=DISABLED from fast_dsp.rs. fast.rs currently constructs
+  DSP groups with group(c.clock, true, false), schedules Edge::Rising and emits
+  rise{g} guards. It needs per-capture edge selection, both requested group
+  polarities, and rising/falling capture guards. C must remain rising-only and
+  omit its divider in DISABLED. Free HD09m/p UART and random fast/kernel DISABLED
+  comparisons cannot run until that work is done; tests assert the clear refusal.
+  FlipFlop.preload: Option<Input> is the HS02 source. None retains LSR/REGSET;
+  Some(M) means PRLD even when M is constant. register.config.reset supplies the
+  LSR input and sync/async kind. The fast.rs register-update loop contains only
+  the agreed ensure against Some(preload), with the register's driver label.
+  Event PRLD uses M over CE, follows it at level for ASYNC, and returns X on a
+  same-instant M change and LSR release (tracked across capture waves). Configured
+  initialization samples settled M, otherwise X; the board startup rule is one
+  observation. REGSET does not seed PRLD startup or choose its preload value.
+  CEMUX behavior is unchanged.
+
+HS02 board FF output replays:
+  hs02s: actual routed fabric from configuration, 1,992 / 1,992 bits equal;
+    2,048 CEMUX=1 bits excluded, 56 race/X bits excluded, 0 mismatches.
+  hs02: earliest complete free-running window, header P721C4B458E5EC737,
+    window 1. The log is sorted by distinct strings; header order is recovered
+    using GF(2) LFSR exponentiation and 128 + 1043*2171 clocks per window.
+    Regenerated pin stimulus at the placed FFs gives 1,980 / 1,980 predicted
+    bits equal; 2,048 CEMUX=1 bits, 52 race/X bits and 16 Q seed bits excluded.
+    Sample zero seeds the free replay; the intervening UART cycles are not run.
+    0 mismatches. The startup replay checks actual routed M decode separately.
+Placements come from saved routed JSON with byte-identical board configs;
+*_probes.json stores the config hashes, which the tests verify before replay.
+Race/X exclusions include hold samples after a release race while CE is low.
+analysis_inputs.sha256: all 6 original HDL/config/log files still match.
+
+Session changes (other sessions' existing edits are not included):
+  src/compile/cache.rs (cache schema version; concurrent timing edits preserved)
+  src/compile/dsp.rs
+  src/compile/mod.rs
+  src/kernel/dsp.rs
+  src/kernel/alu.rs
+  src/kernel/mod.rs
+  src/kernel/fast_dsp.rs
+  src/kernel/fast.rs (only the agreed PRLD ensure statement)
+  tests/hd09_hs02_native.rs (new)
+  tests/alu54.rs
+  tests/dsp.rs
+  tests/event_kernel.rs
+  tests/automatic_compile.rs
+  tests/fast_reset_order.rs (existing FF constructors: preload None)
+  tests/lutram.rs (existing FF constructors: preload None)
+  tests/system_controls.rs (existing FF constructor: preload None)
+  docs/DSP_REGISTERS.md
+  docs/DSP_ALU.md
+  docs/DSP_OUTPUT.md
+  docs/FF_CCU2.md
+  docs/HARDWARE_VALIDATION.md
+  docs/SETTINGS_COVERAGE.md
+  docs/inventory/LFE5U-85F/settings_coverage.csv
+  Both series: README.md, TOOLS.txt, emulator_checks.txt, SHA256SUMS
+  HS02 only: hs02_probes.json, hs02s_probes.json (new)

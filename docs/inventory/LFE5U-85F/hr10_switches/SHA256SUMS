@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+19af625213b5368adc3e9944b43a1a56cf066a7f7689d65910ed87c91a0bdd06  README.md
+9bdfb362a33077ada305ae2101937ba033da8b31fa95693e3cd8822bfc1ca5a9  TOOLS.txt
+41ebaed3b45fcef93cd19dbeca407dc52b56102fd461704a97beafff494a600c  observations.log
+2bdb8e91a0fe0aa4cceb8490d02aa0a9f96f6b9e096fc55d4371dc0f0fd5608a  switches.config
+22d2135ad0a30abfbd0d71db1239b173c04415ef138f278e7e98fa5a6f8d66ab  switches_pullup.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 00ff0327960242602922c4e1aa8e7d6e8c1510523d816a06372851b30d3f00a6  switches top.bit (target/reference/switches, built on the Mac; not stored)
+# Historical digest (artifact unavailable in this record): d8244c13bb60fc94e82ab2f7ddfa950b201d56a0e2be8d96154a9a0931d3fbc8  switches_pullup top.bit (target/reference/switches_pullup, built on the Mac; not stored)

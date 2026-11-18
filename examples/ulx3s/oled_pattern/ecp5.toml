@@ -1,0 +1,12 @@
+# SSD1331 OLED colour patterns over SPI, with UART frame checksums.
+# Build: ecp5_emu build examples/ulx3s/oled_pattern (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/oled_pattern; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/oled_pattern.
+
+[project]
+name = "oled_pattern"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

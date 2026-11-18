@@ -1,0 +1,2 @@
+load 1 at 2026-10-29T18:40:26Z: loader_done=True lines=926 windows=573 E=[2] S=[102228] F min=102139 max=102363 mean=102234.12 sd=38.18 first=[(14, 102184), (15, 102187), (16, 102196)]
+load 2 at 2026-10-29T18:40:34Z: loader_done=True lines=927 windows=573 E=[2] S=[102193] F min=102109 max=102277 mean=102184.12 sd=29.17 first=[(15, 102185), (16, 102206), (17, 102224)]

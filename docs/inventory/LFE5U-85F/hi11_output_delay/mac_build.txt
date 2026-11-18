@@ -1,0 +1,70 @@
+HI11 Mac build verification (software only; no board/serial access)
+2026-11-17T14:47:52.538332+00:00
+
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+
+Project Trellis - Open Source Tools for ECP5 FPGAs
+Version 1.4-86-ga31ff70
+ecppack: ECP5 bitstream packer
+
+
+hi11: /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11/top.bit
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 0001010
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  enum: PIOC.DATAMUX_OREG IOLDO
+  bit SHA256=bbb83b8c9334752b7a6da3c9bc2178d6ef7acc8d2098d353dd8a9f3ad2a3b9f8
+hi11g: /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11g/top.bit
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 1111111
+  enum: PIOC.DATAMUX_OREG IOLDO
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  bit SHA256=27b753032e0dd661277bedb67a1614712830100d7bbb08a51c51bd57eb088fca
+hi11b: /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11b/top.bit
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 1111111
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE NONE
+  bit SHA256=122004b0ee31ed5efaa0488f51a58745779ac83344f5ae0f07e2d721aca840d9
+
+810246925e101711aab2017aef9d6a331005e8993ad0cfb19e11d122940edc4e  docs/inventory/LFE5U-85F/hi11_output_delay/hi11.v
+a492b47491d266d581b857aa7739def1d4f25b21b54570b0ceecd9c897037d68  /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11/top.config
+hi11: yosys, nextpnr-ecp5 and ecppack exit status 0; WAIT_FOR_EDGE DISABLED
+f4036c54dbe030bd683300c7877be830d37d9f1b4cccd7fb5a859a28f399546f  docs/inventory/LFE5U-85F/hi11_output_delay/hi11g.v
+ecbc4bdf001c05a5fd0e59dd2309113a180844ec2e9aa56156471b9c514fc7ed  /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11g/top.config
+hi11g: yosys, nextpnr-ecp5 and ecppack exit status 0; WAIT_FOR_EDGE DISABLED
+fb66cdf05e2a5215432b17fd1ba7c76e7800178351be179d4ca10eac7d628756  docs/inventory/LFE5U-85F/hi11_output_delay/hi11b.v
+098a4db4bb3e2ed491c68698232fdd946618410a25ba6c9c25dd592454dd7333  /private/tmp/ecp5-r08.EFxyOv/hi11-final/hi11b/top.config
+hi11b: yosys, nextpnr-ecp5 and ecppack exit status 0; WAIT_FOR_EDGE DISABLED
+
+Reproduction X12 and control variants, built in /private/tmp/ecp5-r08.EFxyOv:
+x12: Q=A2, OFS1P3BX -> DELAYG(1), IOLOGICA MODE IREG_OREG, OUTDEL ENABLED, PIOA.DATAMUX_OREG IOLDO
+delayf: Q=A2, OFS1P3BX -> DELAYF(10), IOLOGICA MODE IREG_OREG, OUTDEL ENABLED, PIOA.DATAMUX_OREG IOLDO; CFLAG routed
+fabric: Q=A2, fabric FF -> DELAYG(127), IOLOGICA MODE NONE, OUTDEL ENABLED, default PIO fabric mux
+Baseline pre-change emulator: x12 and delayf refused IOLDOD; fabric passed and executed one fabric FF.
+HI11 hardware observations: PENDING.
+
+Software UART smoke check of the final routed configurations:
+Each variant ran 5,000,000 cycles in fast mode; hi11_model.py accepted one complete
+sequence-0 frame of 2048 samples for F, G and B. F reused hi08_model.py, with zero
+skipped samples. Records/logs remain in the scratch directory (emulated-hi11*.txt/.log).
+This is emulator output, not a board observation.

@@ -1,0 +1,6 @@
+load 1 at 2026-11-11T14:35:07Z: loader_done=True lines=16 distinct=['ROM C9083F00 RAM 0000']
+load 2 at 2026-11-11T14:35:15Z: loader_done=True lines=16 distinct=['ROM C9083F00 RAM 0000']
+load 3 at 2026-11-11T14:35:22Z: loader_done=True lines=16 distinct=['ROM C9083F00 RAM 0000']
+load 1 at 2026-11-11T14:35:39Z: loader_done=True lines=597 distinct=['MAC 003D163', 'MAC 003D16367D MIX CE196146']
+load 2 at 2026-11-11T14:35:46Z: loader_done=True lines=597 distinct=['MAC 003D16367D MIX CE196146']
+load 3 at 2026-11-11T14:35:53Z: loader_done=True lines=599 distinct=['MAC 003D1636', 'MAC 003D16367D MIX CE196146']

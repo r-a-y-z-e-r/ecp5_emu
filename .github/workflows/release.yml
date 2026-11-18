@@ -1,0 +1,176 @@
+name: Release packages
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  TRELLIS_DB_COMMIT: 9754ff473bfaa1e6edfaf57ce13bd447c76a88f6
+
+jobs:
+  check-release:
+    runs-on: ubuntu-24.04
+    outputs:
+      package: ${{ steps.release.outputs.package }}
+    steps:
+      - name: Skip existing releases before packaging
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          TAG_PUSH: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') }}
+        run: |
+          if [[ "$TAG_PUSH" != true ]]; then
+            echo "package=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          lookup_error="$RUNNER_TEMP/release-check.err"
+          if gh release view "$RELEASE_TAG" > /dev/null 2> "$lookup_error"; then
+            echo "Release $RELEASE_TAG already exists; leaving it and its assets untouched and skipping packaging."
+            echo "package=false" >> "$GITHUB_OUTPUT"
+          elif grep -Fxq 'release not found' "$lookup_error"; then
+            echo "package=true" >> "$GITHUB_OUTPUT"
+          else
+            cat "$lookup_error" >&2
+            exit 1
+          fi
+
+  package:
+    needs: check-release
+    if: needs.check-release.outputs.package == 'true'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-15]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          lfs: true
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: 1.92.0
+      - name: Install Linux build dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang binutils cmake ninja-build libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev patchelf libx11-dev libxext-dev libxrandr-dev libxi-dev libxcursor-dev libxinerama-dev libxfixes-dev libxkbcommon-dev libxkbcommon-x11-dev libwayland-dev wayland-protocols libegl1-mesa-dev libgl1-mesa-dev libvulkan-dev
+      - name: Install macOS build dependencies
+        if: runner.os == 'macOS'
+        run: brew install cmake ninja boost
+      - name: Prepare a release workspace outside HOME
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, shlex, subprocess, tempfile
+          home = pathlib.Path(os.environ['HOME']).resolve()
+          parent = pathlib.Path(os.environ['RUNNER_TEMP']).resolve()
+          if parent.is_relative_to(home):
+              parent = pathlib.Path('/tmp').resolve()
+          root = pathlib.Path(tempfile.mkdtemp(prefix='ecp5-release-', dir=parent))
+          subprocess.run(['git', 'worktree', 'add', '--detach', str(root), 'HEAD'], check=True)
+          (root / 'inputs').mkdir()
+          flags = (os.environ['CARGO_ENCODED_RUSTFLAGS'].split('\x1f')
+                   if os.environ.get('CARGO_ENCODED_RUSTFLAGS') else shlex.split(os.environ.get('RUSTFLAGS', '')))
+          flags.append(f'--remap-path-prefix={home}=home')
+          values = {'ECP5_RELEASE_ROOT': str(root),
+                    'ECP5_TOOLCHAIN_INPUTS': str(root / 'inputs'),
+                    'ECP5_DB': str(root / 'target/packaging/database'),
+                    'CARGO_ENCODED_RUSTFLAGS': '\x1f'.join(flags)}
+          for name in ['CFLAGS', 'CXXFLAGS']:
+              values[name] = os.environ.get(name, '') + ' ' + shlex.quote(f'-ffile-prefix-map={home}=home')
+          with open(os.environ['GITHUB_ENV'], 'a') as stream:
+              for name, value in values.items():
+                  stream.write(f'{name}={value}\n')
+          PY
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: ${{ env.ECP5_RELEASE_ROOT }} -> target
+      - name: Fetch the pinned database
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          git init -q "$ECP5_DB"
+          git -C "$ECP5_DB" fetch -q --depth 1 https://github.com/YosysHQ/prjtrellis-db "$TRELLIS_DB_COMMIT"
+          git -C "$ECP5_DB" checkout -q FETCH_HEAD
+      - name: Build pinned libtrellis
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          bash packaging/build_trellis.sh
+      - name: Install the pinned fixture synthesis tools
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          case "$RUNNER_OS" in
+            Linux) platform=linux-x64 ;;
+            macOS) platform=darwin-arm64 ;;
+            *) exit 1 ;;
+          esac
+          curl --fail --location --retry 3 "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-10-22/oss-cad-suite-${platform}-20261022.tgz" -o "$ECP5_TOOLCHAIN_INPUTS/oss-cad-suite.tgz"
+          tar -xzf "$ECP5_TOOLCHAIN_INPUTS/oss-cad-suite.tgz" -C "$ECP5_TOOLCHAIN_INPUTS"
+          echo "$ECP5_TOOLCHAIN_INPUTS/oss-cad-suite/bin" >> "$GITHUB_PATH"
+          echo "OSS_CAD_SUITE_ROOT=$ECP5_TOOLCHAIN_INPUTS/oss-cad-suite" >> "$GITHUB_ENV"
+      - name: Build the guided tour fixture
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          examples/ulx3s/build.sh examples/ulx3s/blinky_cycle target/reference/blinky_cycle
+      - name: Package macOS arm64 app
+        if: runner.os == 'macOS'
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          bash packaging/macos/make_app.sh
+      - name: Package Linux x86_64 tarball
+        if: runner.os == 'Linux'
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          bash packaging/linux/make_tarball.sh
+      - name: Smoke test the relocated package
+        run: |
+          cd "$ECP5_RELEASE_ROOT"
+          case "$RUNNER_OS" in
+            macOS) packaging/toolchain/smoke.sh 'target/dist/ECP5 Emu.app' ;;
+            Linux) packaging/toolchain/smoke.sh target/dist/ecp5_emu-*-linux-x86_64 ;;
+            *) exit 1 ;;
+          esac
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-${{ matrix.os }}
+          path: |
+            ${{ env.ECP5_RELEASE_ROOT }}/target/dist/*.zip
+            ${{ env.ECP5_RELEASE_ROOT }}/target/dist/*.tar.gz
+          if-no-files-found: error
+
+  draft-release:
+    if: >-
+      github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') &&
+      needs.check-release.outputs.package == 'true'
+    needs: [check-release, package]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: release-*
+          path: artifacts
+          merge-multiple: true
+      - name: Create draft release and attach packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          # The owner may have created a release while the packages were building.
+          lookup_error="$RUNNER_TEMP/release-create-check.err"
+          if gh release view "$RELEASE_TAG" > /dev/null 2> "$lookup_error"; then
+            echo "Release $RELEASE_TAG already exists; leaving it and its assets untouched."
+            exit 0
+          fi
+          if ! grep -Fxq 'release not found' "$lookup_error"; then
+            cat "$lookup_error" >&2
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" artifacts/* --verify-tag --draft --title "$RELEASE_TAG" --notes 'Unsigned development packages. See the bundled README and third-party notices.'

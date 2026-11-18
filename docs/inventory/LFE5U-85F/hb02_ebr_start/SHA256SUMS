@@ -1,0 +1,11 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+cf335a63736f2eb796d2dd5ac4c3806b6e9bd10c6636bc9c7f4787fba5a15a16  hb02.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hb02.lpf
+335a71916bbd3dbd12596665e12a574a6b002ebadaed1668409ad11f384a651a  hb02.config
+a72ffda7ce59e116d5473aac262dd5a3ee378938160f91ff101fe24ad746b681  hb02_gen.py
+02ec1e5693bda47fadda567db4faf146aa2ce4f7941b0b2068dc47a6fd292b2a  hb02_check.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+8eb67a70b84507d4f2eacfadc9aa364a79efced08efc2d6a72cc35fb6ec24304  observations.log
+75ce1c7552bf34d4266d1f9d5d0e58ec3bc656992dabfac32cccadb07becc373  observations_2.log
+0fe0b106b02a0e176ce8431e90c3fa98b5d48f8880a26fe1090b85b812714ff9  check.txt
+# Historical digest (artifact unavailable in this record): c55ea4377e43f88a74c3c4df3b12e375d1ae45b4cb8571acdcf6c6306cab5c7f  hb02.bit (ecppack hb02.config; not stored)

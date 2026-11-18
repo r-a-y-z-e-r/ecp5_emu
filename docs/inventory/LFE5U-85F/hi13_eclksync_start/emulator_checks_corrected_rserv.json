@@ -1,0 +1,37 @@
+{
+  "startup": "configured",
+  "scope": "observed",
+  "simulated_pin_cycles": 1600000,
+  "complete_records": 1,
+  "heartbeats": 29,
+  "bitstream_sha256": "80b47d301bc8d045adac764822c9472489a2892e954f878a84cfcb706047d0a3",
+  "emulator_sha256": "690a8436d7a028cf3dab8d5e49cfc7c669b4c0d1a8c2758d36a75f07aa3692bb",
+  "snapshots": [
+    {
+      "I": 524288,
+      "A": 524224,
+      "CE_at": 64,
+      "G_in": 524224,
+      "P_r": 262144,
+      "P_f": 262144,
+      "G_r": 262110,
+      "G_f": 262110,
+      "P_deficit": 0,
+      "G_deficit": 4
+    },
+    {
+      "I": 1048576,
+      "A": 1048512,
+      "CE_at": 64,
+      "G_in": 1048512,
+      "P_r": 524288,
+      "P_f": 524288,
+      "G_r": 524254,
+      "G_f": 524254,
+      "P_deficit": 0,
+      "G_deficit": 4
+    }
+  ],
+  "errors": [],
+  "reading": "supports pre-running versus delayed-clock history: P passes from the fabric boundary, G pays startup; does not directly observe configuration-time edges"
+}

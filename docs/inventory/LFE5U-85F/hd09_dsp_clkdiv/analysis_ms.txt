@@ -1,0 +1,538 @@
+distinct windows=1, ignored incomplete/invalid lines=3
+loads=3; full windows/load=[1, 1, 1]; identical=True
+Unique windows=1, samples=256, transitions per bit=255
+Controls follow HD07/HD09p; mismatch counts condition on observed preceding Q.
+Search: rising/falling/rise+fall, /2 and /4 with every phase, D latency 0..8,
+       frozen/constants, combinational/CE-level latch, GSR-only changes.
+Divided phases are selected per window, shared by all bits of a cell.
+First observed output nibbles: {'ea': '0000', 'eb': '0000', 'ec': '0000', 'ed': '0000', 'ma': '0000', 'mb': '0000', 'mc': '0000', 'md': '0000'}
+
+ea ALU OUTPUT
+ea bit 50: changes away from GSR=65
+  rising, D latency 0: 65/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 65/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 30/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 47/255 mismatches
+  frozen (hold observed Q): 66/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 65/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 65/255 mismatches
+  capture D only on GSR assertion: 69/255 mismatches
+  capture D only on GSR release: 71/255 mismatches
+  measured rise+fall model: 0/255
+ea bit 30: changes away from GSR=61
+  rising, D latency 0: 53/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 54/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 26/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 39/255 mismatches
+  frozen (hold observed Q): 62/255 mismatches
+  constant zero: 82/255 mismatches
+  constant one: 173/255 mismatches
+  combinational D (ignore controls): 73/255 mismatches
+  CE level latch using current inputs: 1/255 mismatches
+  GSR clears, otherwise frozen: 61/255 mismatches
+  capture D only on GSR assertion: 64/255 mismatches
+  capture D only on GSR release: 65/255 mismatches
+  measured rise+fall model: 0/255
+ea bit 20: changes away from GSR=75
+  rising, D latency 3: 69/252 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 75/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 37/255 mismatches
+  falling /4 free phase, D latency 0: 46/255 mismatches
+  frozen (hold observed Q): 75/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 70/255 mismatches
+  CE level latch using current inputs: 0/255 mismatches
+  GSR clears, otherwise frozen: 75/255 mismatches
+  capture D only on GSR assertion: 77/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+ea bit 0: changes away from GSR=62
+  rising, D latency 0: 56/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 58/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 24/255 mismatches
+  falling /4 free phase, D latency 0: 35/255 mismatches
+  frozen (hold observed Q): 64/255 mismatches
+  constant zero: 88/255 mismatches
+  constant one: 167/255 mismatches
+  combinational D (ignore controls): 77/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 62/255 mismatches
+  capture D only on GSR assertion: 66/255 mismatches
+  capture D only on GSR release: 67/255 mismatches
+  measured rise+fall model: 0/255
+
+eb ALU OUTPUT
+eb bit 50: changes away from GSR=65
+  rising, D latency 0: 55/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 56/255 mismatches
+  falling /2 free phase, D latency 0: 25/255 mismatches
+  falling /4 free phase, D latency 0: 39/255 mismatches
+  frozen (hold observed Q): 66/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 65/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 65/255 mismatches
+  capture D only on GSR assertion: 69/255 mismatches
+  capture D only on GSR release: 71/255 mismatches
+  measured rise+fall model: 0/255
+eb bit 30: changes away from GSR=61
+  rising, D latency 0: 60/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 61/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 29/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 62/255 mismatches
+  constant zero: 82/255 mismatches
+  constant one: 173/255 mismatches
+  combinational D (ignore controls): 73/255 mismatches
+  CE level latch using current inputs: 1/255 mismatches
+  GSR clears, otherwise frozen: 61/255 mismatches
+  capture D only on GSR assertion: 64/255 mismatches
+  capture D only on GSR release: 65/255 mismatches
+  measured rise+fall model: 0/255
+eb bit 20: changes away from GSR=75
+  rising, D latency 3: 59/252 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 67/255 mismatches
+  falling /2 free phase, D latency 0: 31/255 mismatches
+  falling /4 free phase, D latency 0: 39/255 mismatches
+  frozen (hold observed Q): 75/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 70/255 mismatches
+  CE level latch using current inputs: 0/255 mismatches
+  GSR clears, otherwise frozen: 75/255 mismatches
+  capture D only on GSR assertion: 77/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+eb bit 0: changes away from GSR=62
+  rising, D latency 0: 60/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 62/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 27/255 mismatches
+  falling /4 free phase, D latency 0: 39/255 mismatches
+  frozen (hold observed Q): 64/255 mismatches
+  constant zero: 88/255 mismatches
+  constant one: 167/255 mismatches
+  combinational D (ignore controls): 77/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 62/255 mismatches
+  capture D only on GSR assertion: 66/255 mismatches
+  capture D only on GSR release: 67/255 mismatches
+  measured rise+fall model: 0/255
+
+ec ALU OUTPUT
+ec bit 50: changes away from GSR=66
+  rising, D latency 0: 65/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 66/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 33/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 66/255 mismatches
+  constant zero: 72/255 mismatches
+  constant one: 183/255 mismatches
+  combinational D (ignore controls): 66/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 66/255 mismatches
+  capture D only on GSR assertion: 70/255 mismatches
+  capture D only on GSR release: 71/255 mismatches
+  measured rise+fall model: 0/255
+ec bit 30: changes away from GSR=69
+  rising, D latency 0: 70/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 69/255 mismatches
+  falling /2 free phase, D latency 0: 30/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 48/255 mismatches
+  frozen (hold observed Q): 70/255 mismatches
+  constant zero: 82/255 mismatches
+  constant one: 173/255 mismatches
+  combinational D (ignore controls): 73/255 mismatches
+  CE level latch using current inputs: 1/255 mismatches
+  GSR clears, otherwise frozen: 69/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 73/255 mismatches
+  measured rise+fall model: 0/255
+ec bit 20: changes away from GSR=68
+  rising, D latency 0: 68/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 68/255 mismatches
+  falling /2 free phase, D latency 0: 28/255 mismatches
+  falling /4 free phase, D latency 0: 46/255 mismatches
+  frozen (hold observed Q): 68/255 mismatches
+  constant zero: 78/255 mismatches
+  constant one: 177/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 0/255 mismatches
+  GSR clears, otherwise frozen: 68/255 mismatches
+  capture D only on GSR assertion: 70/255 mismatches
+  capture D only on GSR release: 69/255 mismatches
+  measured rise+fall model: 0/255
+ec bit 0: changes away from GSR=67
+  rising, D latency 0: 65/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 67/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 30/255 mismatches
+  falling /4 free phase, D latency 0: 50/255 mismatches
+  frozen (hold observed Q): 68/255 mismatches
+  constant zero: 94/255 mismatches
+  constant one: 161/255 mismatches
+  combinational D (ignore controls): 71/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 67/255 mismatches
+  capture D only on GSR assertion: 71/255 mismatches
+  capture D only on GSR release: 71/255 mismatches
+  measured rise+fall model: 0/255
+
+ed ALU OUTPUT
+ed bit 50: changes away from GSR=66
+  rising, D latency 0: 58/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 59/255 mismatches
+  falling /2 free phase, D latency 0: 29/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 39/255 mismatches
+  frozen (hold observed Q): 66/255 mismatches
+  constant zero: 72/255 mismatches
+  constant one: 183/255 mismatches
+  combinational D (ignore controls): 66/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 66/255 mismatches
+  capture D only on GSR assertion: 70/255 mismatches
+  capture D only on GSR release: 71/255 mismatches
+  measured rise+fall model: 0/255
+ed bit 30: changes away from GSR=61
+  rising, D latency 0: 54/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 54/255 mismatches
+  falling /2 free phase, D latency 0: 23/255 mismatches
+  falling /4 GSR resets phase, D latency 0: 40/255 mismatches
+  frozen (hold observed Q): 62/255 mismatches
+  constant zero: 90/255 mismatches
+  constant one: 165/255 mismatches
+  combinational D (ignore controls): 65/255 mismatches
+  CE level latch using current inputs: 0/255 mismatches
+  GSR clears, otherwise frozen: 61/255 mismatches
+  capture D only on GSR assertion: 64/255 mismatches
+  capture D only on GSR release: 65/255 mismatches
+  measured rise+fall model: 0/255
+ed bit 20: changes away from GSR=68
+  rising, D latency 0: 63/255 mismatches
+  falling, D latency 0: 0/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 63/255 mismatches
+  falling /2 free phase, D latency 0: 26/255 mismatches
+  falling /4 free phase, D latency 0: 41/255 mismatches
+  frozen (hold observed Q): 68/255 mismatches
+  constant zero: 78/255 mismatches
+  constant one: 177/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 0/255 mismatches
+  GSR clears, otherwise frozen: 68/255 mismatches
+  capture D only on GSR assertion: 70/255 mismatches
+  capture D only on GSR release: 69/255 mismatches
+  measured rise+fall model: 0/255
+ed bit 0: changes away from GSR=57
+  rising, D latency 0: 51/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 52/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 22/255 mismatches
+  falling /4 free phase, D latency 0: 37/255 mismatches
+  frozen (hold observed Q): 58/255 mismatches
+  constant zero: 76/255 mismatches
+  constant one: 179/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 57/255 mismatches
+  capture D only on GSR assertion: 61/255 mismatches
+  capture D only on GSR release: 61/255 mismatches
+  measured rise+fall model: 0/255
+
+ma MULT18 OUTPUT
+ma bit 33: changes away from GSR=73
+  rising, D latency 0: 66/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 67/255 mismatches
+  falling /2 free phase, D latency 0: 31/255 mismatches
+  falling /4 free phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 75/255 mismatches
+  constant zero: 77/255 mismatches
+  constant one: 178/255 mismatches
+  combinational D (ignore controls): 73/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 73/255 mismatches
+  capture D only on GSR assertion: 75/255 mismatches
+  capture D only on GSR release: 79/255 mismatches
+  measured rise+fall model: 0/255
+ma bit 18: changes away from GSR=60
+  rising, D latency 0: 53/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 54/255 mismatches
+  falling /2 free phase, D latency 0: 29/255 mismatches
+  falling /4 free phase, D latency 0: 37/255 mismatches
+  frozen (hold observed Q): 62/255 mismatches
+  constant zero: 74/255 mismatches
+  constant one: 181/255 mismatches
+  combinational D (ignore controls): 66/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 60/255 mismatches
+  capture D only on GSR assertion: 62/255 mismatches
+  capture D only on GSR release: 66/255 mismatches
+  measured rise+fall model: 0/255
+ma bit 16: changes away from GSR=73
+  rising, D latency 0: 66/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 67/255 mismatches
+  falling /2 free phase, D latency 0: 31/255 mismatches
+  falling /4 free phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 75/255 mismatches
+  constant zero: 77/255 mismatches
+  constant one: 178/255 mismatches
+  combinational D (ignore controls): 73/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 73/255 mismatches
+  capture D only on GSR assertion: 75/255 mismatches
+  capture D only on GSR release: 79/255 mismatches
+  measured rise+fall model: 0/255
+ma bit 1: changes away from GSR=60
+  rising, D latency 0: 53/255 mismatches
+  falling, D latency 0: 1/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 54/255 mismatches
+  falling /2 free phase, D latency 0: 29/255 mismatches
+  falling /4 free phase, D latency 0: 37/255 mismatches
+  frozen (hold observed Q): 62/255 mismatches
+  constant zero: 74/255 mismatches
+  constant one: 181/255 mismatches
+  combinational D (ignore controls): 66/255 mismatches
+  CE level latch using current inputs: 2/255 mismatches
+  GSR clears, otherwise frozen: 60/255 mismatches
+  capture D only on GSR assertion: 62/255 mismatches
+  capture D only on GSR release: 66/255 mismatches
+  measured rise+fall model: 0/255
+
+mb MULT18 OUTPUT
+mb bit 33: changes away from GSR=78
+  rising, D latency 7: 71/248 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 78/255 mismatches
+  falling /2 free phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 50/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+mb bit 18: changes away from GSR=70
+  rising, D latency 3: 63/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 48/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+mb bit 16: changes away from GSR=78
+  rising, D latency 7: 71/248 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 78/255 mismatches
+  falling /2 free phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 50/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+mb bit 1: changes away from GSR=70
+  rising, D latency 3: 63/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 48/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+
+mc MULT18 OUTPUT
+mc bit 33: changes away from GSR=78
+  rising, D latency 7: 71/248 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 78/255 mismatches
+  falling /2 free phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 50/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+mc bit 18: changes away from GSR=70
+  rising, D latency 3: 63/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 48/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+mc bit 16: changes away from GSR=78
+  rising, D latency 7: 71/248 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 78/255 mismatches
+  falling /2 free phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 50/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+mc bit 1: changes away from GSR=70
+  rising, D latency 3: 63/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 GSR resets phase, D latency 0: 36/255 mismatches
+  falling /4 free phase, D latency 0: 48/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+
+md MULT18 OUTPUT
+md bit 33: changes away from GSR=78
+  rising, D latency 0: 67/255 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 free phase, D latency 0: 31/255 mismatches
+  falling /4 free phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+md bit 18: changes away from GSR=70
+  rising, D latency 3: 56/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 61/255 mismatches
+  falling /2 free phase, D latency 0: 30/255 mismatches
+  falling /4 free phase, D latency 0: 41/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+md bit 16: changes away from GSR=78
+  rising, D latency 0: 67/255 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 70/255 mismatches
+  falling /2 free phase, D latency 0: 31/255 mismatches
+  falling /4 free phase, D latency 0: 45/255 mismatches
+  frozen (hold observed Q): 79/255 mismatches
+  constant zero: 83/255 mismatches
+  constant one: 172/255 mismatches
+  combinational D (ignore controls): 67/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 78/255 mismatches
+  capture D only on GSR assertion: 80/255 mismatches
+  capture D only on GSR release: 83/255 mismatches
+  measured rise+fall model: 0/255
+md bit 1: changes away from GSR=70
+  rising, D latency 3: 56/252 mismatches
+  falling, D latency 0: 2/255 mismatches
+  rise+fall, D latency 0: 0/255 mismatches
+  never captures, D latency 0: 61/255 mismatches
+  falling /2 free phase, D latency 0: 30/255 mismatches
+  falling /4 free phase, D latency 0: 41/255 mismatches
+  frozen (hold observed Q): 72/255 mismatches
+  constant zero: 87/255 mismatches
+  constant one: 168/255 mismatches
+  combinational D (ignore controls): 53/255 mismatches
+  CE level latch using current inputs: 4/255 mismatches
+  GSR clears, otherwise frozen: 70/255 mismatches
+  capture D only on GSR assertion: 72/255 mismatches
+  capture D only on GSR release: 76/255 mismatches
+  measured rise+fall model: 0/255
+
+Inference: rise+fall is a sample-level model; high-phase transparency cannot be excluded by pre-rising-edge observations.

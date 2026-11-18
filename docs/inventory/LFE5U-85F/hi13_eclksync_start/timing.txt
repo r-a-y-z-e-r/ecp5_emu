@@ -1,0 +1,21 @@
+Final routed timing summaries (nextpnr estimates):
+Info: Max frequency for clock '$glbnet$qp': 247.77 MHz (PASS at 12.50 MHz)
+Info: Max frequency for clock '$glbnet$qg': 250.82 MHz (PASS at 12.50 MHz)
+Info: Max frequency for clock      'gated': 264.55 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock     'refclk': 76.77 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$qg -> posedge refclk    : 1.51 ns
+Info: Max delay posedge $glbnet$qg -> negedge refclk    : 1.81 ns
+Info: Max delay negedge $glbnet$qg -> posedge refclk    : 1.54 ns
+Info: Max delay negedge $glbnet$qg -> negedge refclk    : 1.78 ns
+Info: Max delay posedge $glbnet$qp -> posedge refclk    : 1.57 ns
+Info: Max delay posedge $glbnet$qp -> negedge refclk    : 1.80 ns
+Info: Max delay negedge $glbnet$qp -> posedge refclk    : 1.48 ns
+Info: Max delay negedge $glbnet$qp -> negedge refclk    : 1.54 ns
+Info: Max delay posedge gated      -> posedge refclk    : 1.83 ns
+Info: Max delay posedge gated      -> negedge refclk    : 1.88 ns
+Info: Max delay posedge refclk     -> <async>           : 3.62 ns
+Info: Max delay negedge refclk     -> posedge $glbnet$qg: 2.11 ns
+Info: Max delay negedge refclk     -> negedge $glbnet$qg: 2.05 ns
+Info: Max delay negedge refclk     -> posedge $glbnet$qp: 1.85 ns
+Info: Max delay negedge refclk     -> negedge $glbnet$qp: 2.45 ns
+Info: Max delay negedge refclk     -> posedge gated     : 2.17 ns

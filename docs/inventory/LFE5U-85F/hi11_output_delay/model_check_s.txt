@@ -1,0 +1,24 @@
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S0-load-1.txt: 4 frames OK, variant=S0, sequences=2..5; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S0-load-2.txt: 4 frames OK, variant=S0, sequences=2..5; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S0-load-3.txt: 4 frames OK, variant=S0, sequences=2..5; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 54, after 10 down steps; initial counter=10 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S1-load-1.txt: 4 frames OK, variant=S1, sequences=2..5; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S1-load-2.txt: 4 frames OK, variant=S1, sequences=2..5; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11S1-load-3.txt: 5 frames OK, variant=S1, sequences=2..6; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=0; 140 down steps before load; first down endpoint sample 158, after 36 down steps; initial counter=36 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped

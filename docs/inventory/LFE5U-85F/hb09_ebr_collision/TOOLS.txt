@@ -1,0 +1,19 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+  python3 hb09_gen.py > hb09.v; python3 hb09_gen.py s > hb09s.v
+  yosys -p 'read_verilog hb09.v; synth_ecp5 -top top -json hb09.json'
+  yosys -p 'read_verilog hb09s.v; synth_ecp5 -top top -json hb09s.json'
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c), --85k --package CABGA381 --seed 1
+  nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json hb09.json --lpf hb09.lpf --textcfg hb09.config
+  nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json hb09s.json --lpf hb09.lpf --textcfg hb09s.config
+ecppack: prjtrellis a31ff7042e712c0e2ad217054116ce2c4995f5c7
+  ecppack hb09.config hb09.bit; ecppack hb09s.config hb09s.bit
+openFPGALoader v1.1.1
+pyserial 3.5, /dev/cu.usbserial-<FTDI-serial> at 115200 8N1
+  python3 run.py hb09.bit R 3 30; python3 run.py hb09s.bit R 3 8
+Python 3 (hb09_gen.py, hb09_analyse.py)
+  python3 hb09_analyse.py observations.log; python3 hb09_analyse.py observations_s.log s
+ecp5_emu event kernel, 2026-11-17 working tree (tests/ebr_collision_native.rs)
+  tools/rserv.sh cargo test --release --test ebr_collision_native -- --ignored --nocapture
+  tools/rserv.sh cargo test --release --test ebr_native --test ebr_start_native --test ebr_narrow_rbw_native -- --ignored
+  tools/rserv.sh cargo fmt --check
+  tools/rserv.sh cargo clippy --release --all-targets -- -D warnings

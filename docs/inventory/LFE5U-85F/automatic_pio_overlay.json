@@ -1,0 +1,145 @@
+{
+  "base_declaration": "OUTPUT_LVCMOS33",
+  "decoded_base": {
+    "applicable": null,
+    "candidates": [
+      "NONE"
+    ],
+    "conflicting_word_bits": [],
+    "fragments": [
+      {
+        "default": "INPUT_HSUL12",
+        "source": "ECP5/tiledata/PICL0/bits.db:394",
+        "tile": "MIB_R47C0:PICL0"
+      },
+      {
+        "default": "NONE",
+        "source": "ECP5/tiledata/PICL1/bits.db:135",
+        "tile": "MIB_R48C0:PICL1"
+      }
+    ],
+    "kind": "enum",
+    "matching_values": [
+      "NONE"
+    ],
+    "name": "PIOB.BASE_TYPE",
+    "observed_bits": [
+      [
+        0,
+        572,
+        false
+      ],
+      [
+        0,
+        573,
+        true
+      ],
+      [
+        1,
+        572,
+        false
+      ],
+      [
+        1,
+        573,
+        false
+      ],
+      [
+        3,
+        566,
+        true
+      ],
+      [
+        3,
+        572,
+        true
+      ],
+      [
+        4,
+        566,
+        true
+      ],
+      [
+        6,
+        571,
+        true
+      ],
+      [
+        7,
+        571,
+        false
+      ],
+      [
+        7,
+        572,
+        false
+      ],
+      [
+        8,
+        571,
+        false
+      ],
+      [
+        8,
+        572,
+        true
+      ],
+      [
+        9,
+        571,
+        false
+      ],
+      [
+        9,
+        572,
+        true
+      ]
+    ],
+    "specificity": 1,
+    "status": "resolved",
+    "value": "NONE",
+    "word_bits_lsb0": []
+  },
+  "decoded_pull": {
+    "applicable": null,
+    "candidates": [
+      "DOWN"
+    ],
+    "conflicting_word_bits": [],
+    "fragments": [
+      {
+        "default": "DOWN",
+        "source": "ECP5/tiledata/PICL1/bits.db:191",
+        "tile": "MIB_R48C0:PICL1"
+      }
+    ],
+    "kind": "enum",
+    "matching_values": [
+      "DOWN"
+    ],
+    "name": "PIOB.PULLMODE",
+    "observed_bits": [
+      [
+        1,
+        572,
+        false
+      ],
+      [
+        2,
+        572,
+        false
+      ]
+    ],
+    "specificity": 2,
+    "status": "resolved",
+    "value": "DOWN",
+    "word_bits_lsb0": []
+  },
+  "hardware_results": 0,
+  "questions": [
+    "P01",
+    "P04"
+  ],
+  "resource": "LFE5U-85F/R47C0/PIOB",
+  "scope": "native software writer/decoder overlap; physical direction not established"
+}

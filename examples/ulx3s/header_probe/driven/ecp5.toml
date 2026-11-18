@@ -1,0 +1,12 @@
+# Four PWM outputs on GP0..GP3 with pad readback and UART counts; empty J1/J2 only.
+# Build: ecp5_emu build examples/ulx3s/header_probe/driven (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/header_probe/driven; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/header_probe/driven.
+
+[project]
+name = "header_probe_driven"
+top = "top"
+
+[sources]
+verilog = ["header_logic.v", "top.v", "uart_tx.v"]
+constraints = "top.lpf"

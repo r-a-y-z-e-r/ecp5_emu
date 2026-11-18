@@ -1,0 +1,10 @@
+family,parameter,public_default,writer_fallback,named_field,enum_options,fragment_defaults,declared_default_status,evidence_status
+DDRDLL,FORCE_MAX_DELAY,"""NO""","""NO""",DDRDLL.FORCE_MAX_DELAY,"[""NO"",""YES""]",[null],present,blackbox_declaration;not_behaviour
+DDRDLL,GSR,"""ENABLED""","""DISABLED""",DDRDLL.GSR,"[""DISABLED"",""ENABLED""]","[""ENABLED""]",present,blackbox_declaration;not_behaviour
+DQSBUFM,DQS_LI_DEL_VAL,4,0,DQS.DQS_LI_DEL_VAL,[],"[""00000000""]",word_or_unmapped,blackbox_declaration;not_behaviour
+DQSBUFM,DQS_LI_DEL_ADJ,"""FACTORYONLY""","""PLUS""",DQS.DQS_LI_DEL_ADJ,"[""MINUS"",""PLUS""]","[""PLUS""]",not_named_option,blackbox_declaration;not_behaviour
+DQSBUFM,DQS_LO_DEL_VAL,0,0,DQS.DQS_LO_DEL_VAL,[],"[""00000000""]",word_or_unmapped,blackbox_declaration;not_behaviour
+DQSBUFM,DQS_LO_DEL_ADJ,"""FACTORYONLY""","""PLUS""",DQS.DQS_LO_DEL_ADJ,"[""MINUS"",""PLUS""]","[""PLUS""]",not_named_option,blackbox_declaration;not_behaviour
+DQSBUFM,GSR,"""ENABLED""","""DISABLED""",DQS.GSR,"[""DISABLED"",""ENABLED""]","[""ENABLED""]",present,blackbox_declaration;not_behaviour
+DDRDLL,LOCK_CYC,unspecified,,,[],[],not_in_Yosys,library_p251;simulation_only;no_cram_expected
+DQSBUFM,WRITE_LEVELING,"""0T""",,,"[""0T"",""1T""]",[],not_in_Yosys,library_p295;hardware_mapping_unresolved

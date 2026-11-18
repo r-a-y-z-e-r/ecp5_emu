@@ -1,0 +1,18 @@
+loads: 3 full windows per load: [158, 158, 158] distinct: 158
+EBR.P  W  REGMODE  CONF             K_WR  K_RD |  RBW(wr/rd)    NORM(wr/rd)      WT(wr/rd)
+e0.A   1  NOREG    READBEFOREWRITE 8756  8784 |     0/0        4064/0        4432/0    
+e0.B   1  NOREG    READBEFOREWRITE 8774  8764 |     0/0        4016/0        4479/0    
+e1.A   2  NOREG    READBEFOREWRITE 8756  8784 |     0/0        8190/0        8800/0    
+e1.B   2  NOREG    READBEFOREWRITE 8774  8764 |     0/0        8175/0        8928/0    
+e2.A   4  NOREG    READBEFOREWRITE 8756  8784 |     0/0       16284/0       17548/0    
+e2.B   4  NOREG    READBEFOREWRITE 8774  8764 |     0/0       16314/0       17719/0    
+e3.A   2  OUTREG   READBEFOREWRITE 8680  8702 |     0/0        8118/0        8716/0    
+e3.B   2  OUTREG   READBEFOREWRITE 8692  8688 |     0/0        8096/0        8844/0    
+e4.A   1  NOREG    READBEFOREWRITE 8756  8784 |     0/0        4064/0        4432/0    
+e4.B   4  NOREG    READBEFOREWRITE 8774  8764 |     0/0       16314/0       17719/0    
+e5.A   4  OUTREG   READBEFOREWRITE 8680  8702 |     0/0       16143/0       17389/0    
+e5.B   4  OUTREG   READBEFOREWRITE 8692  8688 |     0/0       16163/0       17543/0    
+e6.A   2  NOREG    NORMAL          8756  8784 |  8194/0           0/0        8686/0    
+e6.B   2  NOREG    WRITETHROUGH    8774  8764 |  8928/0        8653/0           0/0    
+e7.A   9  NOREG    READBEFOREWRITE 8756  8784 |     0/0       36712/0       39499/0    
+e7.B   9  NOREG    READBEFOREWRITE 8774  8764 |     0/0       36646/0       39661/0    

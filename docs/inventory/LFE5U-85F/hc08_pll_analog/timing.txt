@@ -1,0 +1,30 @@
+A: final post-route timing
+Info: Max frequency for clock                   '$glbnet$clkop': 219.11 MHz (PASS at 100.00 MHz)
+Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 91.07 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$clk_25mhz$TRELLIS_IO_IN -> <async>                                : 3.36 ns
+Info: Max delay posedge $glbnet$clkop                   -> posedge $glbnet$clk_25mhz$TRELLIS_IO_IN: 1.52 ns
+
+B: final post-route timing
+Info: Max frequency for clock                   '$glbnet$clkop': 219.11 MHz (PASS at 100.00 MHz)
+Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 91.07 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$clk_25mhz$TRELLIS_IO_IN -> <async>                                : 3.36 ns
+Info: Max delay posedge $glbnet$clkop                   -> posedge $glbnet$clk_25mhz$TRELLIS_IO_IN: 1.52 ns
+
+C: final post-route timing
+Info: Max frequency for clock                   '$glbnet$clkop': 219.11 MHz (PASS at 100.00 MHz)
+Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 91.07 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$clk_25mhz$TRELLIS_IO_IN -> <async>                                : 3.36 ns
+Info: Max delay posedge $glbnet$clkop                   -> posedge $glbnet$clk_25mhz$TRELLIS_IO_IN: 1.52 ns
+
+D: final post-route timing
+Info: Max frequency for clock                   '$glbnet$clkop': 219.11 MHz (PASS at 100.00 MHz)
+Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 91.07 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$clk_25mhz$TRELLIS_IO_IN -> <async>                                : 3.36 ns
+Info: Max delay posedge $glbnet$clkop                   -> posedge $glbnet$clk_25mhz$TRELLIS_IO_IN: 1.52 ns
+
+E: final post-route timing
+Info: Max frequency for clock                   '$glbnet$clkop': 200.60 MHz (PASS at 100.00 MHz)
+Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 92.67 MHz (PASS at 25.00 MHz)
+Info: Max delay posedge $glbnet$clk_25mhz$TRELLIS_IO_IN -> <async>                                : 4.28 ns
+Info: Max delay posedge $glbnet$clkop                   -> posedge $glbnet$clk_25mhz$TRELLIS_IO_IN: 1.49 ns
+

@@ -1,0 +1,146 @@
+[
+  {
+    "profile": "F",
+    "load": 1,
+    "bytes": 34215,
+    "records": 1425,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666748466255
+  },
+  {
+    "profile": "F",
+    "load": 2,
+    "bytes": 34252,
+    "records": 1427,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666666666664
+  },
+  {
+    "profile": "F",
+    "load": 3,
+    "bytes": 33926,
+    "records": 1413,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.66666674907293
+  },
+  {
+    "profile": "G",
+    "load": 1,
+    "bytes": 33888,
+    "records": 1412,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666584158417
+  },
+  {
+    "profile": "G",
+    "load": 2,
+    "bytes": 34038,
+    "records": 1417,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666748768474
+  },
+  {
+    "profile": "G",
+    "load": 3,
+    "bytes": 34025,
+    "records": 1417,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666707768186
+  },
+  {
+    "profile": "H",
+    "load": 1,
+    "bytes": 34115,
+    "records": 1421,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666666666664
+  },
+  {
+    "profile": "H",
+    "load": 2,
+    "bytes": 34013,
+    "records": 1417,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666707768186
+  },
+  {
+    "profile": "H",
+    "load": 3,
+    "bytes": 34008,
+    "records": 1417,
+    "startup_samples": 201,
+    "first_high_lock_ms": 10.0,
+    "low_lock_ms": [
+      0.0
+    ],
+    "steady_10ms_deltas": [
+      166666,
+      166667
+    ],
+    "steady_mean_mhz": 16.666666584463623
+  }
+]

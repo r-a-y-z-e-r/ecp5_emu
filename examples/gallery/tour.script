@@ -1,0 +1,76 @@
+# A tour of the gallery in one window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# Run it with `python3 examples/gallery/gui_run.py tour` from the repository's
+# root, after `python3 examples/gallery/check.py all --build`: the window opens
+# with no design, then each `open` loads a demo's built configuration. The
+# times after an `open` count from when that demo is ready. Buttons are held
+# for two seconds: the designs debounce them for 10 ms of board time, and the
+# slowest demos run at about 0.3 MHz in the window. Eight demos, about seven minutes.
+
+# riscv_terminal: the shell prints on the UART console and on the HDMI monitor.
+0 open target/gallery/riscv_terminal/top.config
+0 rate max
+0 run
+1 board 3d
+2 type help\r
+8 type mandel\r
+40 type screen\r
+50 button 1 down     # FIRE1: an event line on both screens
+52 button 1 up
+
+# video_life: Life on the HDMI monitor, the start pattern, then a soup.
+60 open target/gallery/video_life/top.config
+0 rate max
+0 run
+15 button 1 down     # FIRE1: random soup
+17 button 1 up
+25 button 3 down     # UP: faster
+27 button 3 up
+
+# mandelbrot: three DSP multipliers; zoom in, then the typed tour.
+40 open target/gallery/mandelbrot/top.config
+0 rate max
+0 run
+4 button 1 down      # FIRE1: zoom in
+5 button 1 up
+10 type t            # the 8-view tour into the seahorse valley
+
+# fir_scope: one filter built twice; noise, then higher tones.
+45 open target/gallery/fir_scope/top.config
+0 rate max
+0 run
+2 button 2 down      # FIRE2: noise high
+4 button 2 up
+6 button 3 down      # UP: 8 Hz
+8 button 3 up
+10 button 3 down     # UP: 16 Hz
+12 button 3 up
+
+# ebr_life: Life swept through block RAM; a soup after the start pattern.
+60 open target/gallery/ebr_life/top.config
+0 rate max
+0 run
+12 button 1 down     # FIRE1: random soup
+13 button 1 up
+
+# led_tennis: attract mode, then a game against the computer.
+30 open target/gallery/led_tennis/top.config
+0 rate max
+0 run
+15 button 1 down     # FIRE1: start a game
+16 button 1 up
+
+# riscv_shell: the shell alone, with exact cycle counts; compare SERV next.
+30 open target/gallery/riscv_shell/top.config
+0 rate max
+0 run
+2 type calc (7+5)*3-10/4\r
+4 type knight 2\r
+20 type primes 2000\r
+
+# serv_shell: the same C shell on a smaller bit-serial core, about 16 times the cycles.
+40 open target/gallery/serv_shell/top.config
+0 rate max
+0 run
+2 type primes 2000\r
+10 type calc 6*7\r
+40 quit

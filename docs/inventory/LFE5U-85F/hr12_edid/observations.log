@@ -1,0 +1,12 @@
+load 1 at 2026-11-17T18:41:16Z: loader_done=True lines=3
+  EDID nack
+  EDID nack
+  EDID nack
+load 2 at 2026-11-17T18:41:25Z: loader_done=True lines=3
+  EDID nack
+  EDID nack
+  EDID nack
+load 3 at 2026-11-17T18:41:34Z: loader_done=True lines=3
+  EDID nack
+  EDID nack
+  EDID nack

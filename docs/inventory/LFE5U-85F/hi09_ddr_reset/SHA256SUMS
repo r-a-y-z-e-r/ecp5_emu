@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+6c3ec227af016bbc2991d6835ead25eccfa9f56a09d7516898afbbff2e99d34b  hi09.v
+d8992eb0659e54d2ebf4d737e29aee87b108e13a64652ece56622f0151a9578d  hi09.lpf
+7656364ad93408969932a3a4ebf2c7533649c2c36546e52984777b2ea55db43e  hi09.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+434f9fbde619b250c2bb576bfd0a97407cc150753fa4bc6c634a23ea2eb6670d  hi09_model.py
+3da07fa94ceea11d258a39dfd6ff8317455904d1ed2c0918cda236a6bb4951b6  observations.log
+805e3858f4473eb795842d7911987b9ddfe329fbf454dbc4592fbf1a1ff38d4f  model_check.txt
+# Historical digest (artifact unavailable in this record): 4b785c2542c570d09262e971f1472997d9ef9531a7f2d7a923d0b76e854b53f6  hi09.bit (ecppack hi09.config; not stored)

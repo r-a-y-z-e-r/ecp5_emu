@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "native_global_coordinates": 12192,
+  "implicit_aliases": 197408,
+  "spine_buffers": 192,
+  "tap_buffers": 18048,
+  "resources": 108,
+  "resource_counts": {
+    "BRGECLKSYNC": 2,
+    "CLKDIVF": 4,
+    "DCC_CENTRE": 4,
+    "DCC_MID": 56,
+    "DCS": 2,
+    "DLLDELD": 12,
+    "DTR": 1,
+    "ECLKBRIDGECS": 2,
+    "ECLKSYNCB": 8,
+    "GSR": 1,
+    "JTAGG": 1,
+    "OSCG": 1,
+    "PLL": 4,
+    "SEDGA": 1,
+    "TRELLIS_ECLKBUF": 8,
+    "USRMCLK": 1
+  },
+  "ports": 384,
+  "config_resources": 96,
+  "composed_fields": 337,
+  "fragments": 343,
+  "native_field_bit_groups": 1331,
+  "native_route_bit_groups": 7007,
+  "OSC_labels": 126,
+  "OSC_distinct_patterns": 63,
+  "DCS_steady_rows": 80,
+  "software_configuration_probes": 9,
+  "hardware": "not_run",
+  "runtime_changed": false,
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "5ee2e94d62f05084679bf48114a67d280358b2f25009542d26f2d9215974dc49"
+    },
+    {
+      "source": "probe_helper",
+      "sha256": "4b3fc7d29aaa0b391df25175286f41d1a2216da53dab83926307972bff599821"
+    },
+    {
+      "source": "inventory",
+      "sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6"
+    },
+    {
+      "source": "base_bindings",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "base_decode",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "source": "pytrellis",
+      "sha256": "7da85afab08068e0aabcdd04858309f2bedfe678583f17c0136363b48f998654"
+    },
+    {
+      "source": "globals",
+      "sha256": "13b220856a69a1b6e53a2e2cadfb1461720c56a6686e42466c40d966026de61e"
+    },
+    {
+      "source": "trellis:libtrellis/src/Chip.cpp",
+      "sha256": "4846ae613fb9b9507371a808f4b8e018f6c7585f493673c4bd794bd8f3a0ae52"
+    },
+    {
+      "source": "trellis:libtrellis/src/RoutingGraph.cpp",
+      "sha256": "5ea1e15451ab188a97ce601ee58e53a48b922ffead40e1950206007bc7061294"
+    },
+    {
+      "source": "trellis:libtrellis/src/Bels.cpp",
+      "sha256": "574e04b6cfa113c9cd8c6aa18c203f884d89d6c4a194c4b73297d1ece840b58d"
+    },
+    {
+      "source": "trellis:docs/architecture/global_routing.rst",
+      "sha256": "d1522c93d66e108e30d8a5d44e041449f1d7ae4ae3601274ed15c5822674d590"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/020-tap_drive/fuzzer.py",
+      "sha256": "b4c5c167afd1c95a0499b287eaa45077289f7e58d13cf11ba52a6bba5ba57278"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/021-spine/fuzzer.py",
+      "sha256": "afbab912d311788eb7c732de08cc3fb96f47f4aaa48705925e20f16863a471bb"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/026-dcc/fuzzer.py",
+      "sha256": "67b6fd9bb9c1fde42485b27843841dc6375f5d9847c90cc885c461cd71afaac4"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/027-dcs/fuzzer.py",
+      "sha256": "e8b35aaf7ff6884acb9957bde9c0da2d5b4cf7edb0c60671fecc9d339aff2442"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/091-pll_config/fuzzer.py",
+      "sha256": "4b00aa047040a94a6d84745b00fc9e779d9c87946771121a862d39959a214291"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/103-gsr/fuzzer.py",
+      "sha256": "7052ed4456670aa0acdcf9b1f4ae40ad4399e85c396b4065e845ba664befc4b0"
+    },
+    {
+      "source": "trellis:fuzzers/ECP5/102-oscg/fuzzer.py",
+      "sha256": "85c51a853828ee57c10793e4e60035d3d166f892a82b25afc2163543a6fdc233"
+    },
+    {
+      "source": "nextpnr:globals.cc",
+      "sha256": "97209ee23b5894dbf49db524c1a883d169027e9b509b72d7ca010eeb37a58f60"
+    },
+    {
+      "source": "nextpnr:trellis_import.py",
+      "sha256": "2e27a2df04bab22f5d190ff2209bc0dabbc4627c87b54cded6a5aa35cb14f6e6"
+    },
+    {
+      "source": "nextpnr:bitstream.cc",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    },
+    {
+      "source": "nextpnr:pack.cc",
+      "sha256": "8877eaf3154bad794a2ca23888c571f1969b5320ec5b99b6de6939c7428fba7b"
+    },
+    {
+      "source": "binary:yosys",
+      "sha256": "9ed8ea21a37acb95305366fd1c9131e64fc3a5096147cb4beba1d3fade32a1a4"
+    },
+    {
+      "source": "binary:nextpnr-ecp5",
+      "sha256": "f865374016294145d9c773a51a4d93bf830d4c0c656a2bd8226c499235c2a885"
+    },
+    {
+      "source": "binary:ecppll",
+      "sha256": "b451c0e971ab979b969f2bc6808d9c333e93fdaa9220401ef04e02b1af8c4d78"
+    },
+    {
+      "source": "probe:dcs_parameter_NEG:v",
+      "sha256": "accfc84f2cefad2b190b1ae7b1e83e3138ee12c9d8634ada83731cd10c43e414"
+    },
+    {
+      "source": "probe:dcs_parameter_NEG:json",
+      "sha256": "d81ba6f5f114b3cbff086cb6a69b862f39299350fd8fdb300993ad132aafa601"
+    },
+    {
+      "source": "probe:dcs_parameter_NEG:config",
+      "sha256": "d92f8b9e5a9022c21e32fbcbfc5ec404cd975b39fb9e5e96d90e1d453a944b80"
+    },
+    {
+      "source": "probe:dcs_attribute_NEG:v",
+      "sha256": "3558c9eb27c3ac29822a8a151b3a225a8ddf453ceceeae6c345f1d808daaab56"
+    },
+    {
+      "source": "probe:dcs_attribute_NEG:json",
+      "sha256": "eac633bf63943622298a0548d641161a05fa3ed0ae09253fc7abaf0dd7dda843"
+    },
+    {
+      "source": "probe:dcs_attribute_NEG:config",
+      "sha256": "68c0a4cc4c8746765ec764f5206b65db93497291e2e812c1a446dae08e3830b6"
+    },
+    {
+      "source": "probe:dcs_parameter_CLK0_LOW:v",
+      "sha256": "62ee60b40aa6ab9e689b7fe31564d25af8b0f40f2617edbe0e54499878fcb6fb"
+    },
+    {
+      "source": "probe:dcs_parameter_CLK0_LOW:json",
+      "sha256": "7b4e18f9fed0f922b0309f97abdffd0df7fcf791f67b75b956ce843316a88bed"
+    },
+    {
+      "source": "probe:dcs_parameter_CLK0_LOW:config",
+      "sha256": "d92f8b9e5a9022c21e32fbcbfc5ec404cd975b39fb9e5e96d90e1d453a944b80"
+    },
+    {
+      "source": "probe:osc_2:v",
+      "sha256": "3d1a02ba1f9c14938a680e40b6523c5c320f6d1e5f6e25025604aaadd3a39083"
+    },
+    {
+      "source": "probe:osc_2:json",
+      "sha256": "49bf0753f9dda5d9226ddb4d773eb2ad7fb69b2c303eee19a8143a6aa30441e6"
+    },
+    {
+      "source": "probe:osc_2:config",
+      "sha256": "aa7fc5c9057825c3091a597c04acb7807f95548da4ae4195f2bb319f06e7d44e"
+    },
+    {
+      "source": "probe:osc_3:v",
+      "sha256": "8f4404ee6001c092a3a91ee9f18d2534704720e7dce628cd8c20daf907d5cdfb"
+    },
+    {
+      "source": "probe:osc_3:json",
+      "sha256": "106d242cd529a2eb7ddda7d799f663636c975dc2d52a32f0463f05e4529f2585"
+    },
+    {
+      "source": "probe:osc_3:config",
+      "sha256": "30bf1bc532bb4cb9d9be38c5effca25fdce41d834af48b0bff47f370bdc77fb9"
+    },
+    {
+      "source": "probe:osc_127:v",
+      "sha256": "e6657c25ebdd45f7b4c62f5480dfef0dec0788f15cf921b13e0527232d48dc76"
+    },
+    {
+      "source": "probe:osc_127:json",
+      "sha256": "115c263414fe2c62af997143773c4b4f3dfeeebc1dc21b7c51c75ee2d1e0f503"
+    },
+    {
+      "source": "probe:osc_127:config",
+      "sha256": "43d83ec1a7d5a484e18c33f47c0a1a7ba8f8fc7cfcac345017580fa7c0f453d2"
+    },
+    {
+      "source": "probe:osc_128:v",
+      "sha256": "899c3b1eecb5ece31fb05c6e81f58f7a83e3f704ffd7007b11fe1b4e241e61e6"
+    },
+    {
+      "source": "probe:osc_128:json",
+      "sha256": "187bd6f37aefda9667e6b0a9c38baa5d82c8097574cba6b3aec9a78c136e5753"
+    },
+    {
+      "source": "probe:osc_128:config",
+      "sha256": "43d83ec1a7d5a484e18c33f47c0a1a7ba8f8fc7cfcac345017580fa7c0f453d2"
+    },
+    {
+      "source": "probe:pll_external:v",
+      "sha256": "c8ff248d0e71474f587259675ac96a58a0c081df65129f1a02d62a0cc340ba3a"
+    },
+    {
+      "source": "probe:pll_external:json",
+      "sha256": "474d33cdddfa7e88c21641c86dba328a5e07ec7db9a9ebd548119ed802b7726a"
+    },
+    {
+      "source": "probe:pll_external:config",
+      "sha256": "80745560bc4015721c70dee59fd11900a7e1dc47980139a86c9b5a79fb370024"
+    },
+    {
+      "source": "probe:pll_internal:v",
+      "sha256": "b438b2d7b4475b722a55f67eca88aea72663e299a7c1f9cbaf431c0563b6a62d"
+    },
+    {
+      "source": "probe:pll_internal:json",
+      "sha256": "f5794abec7722ce222bbbeaf123c35ca47aad5d87c99bba34ac2d8fbbdc8201a"
+    },
+    {
+      "source": "probe:pll_internal:config",
+      "sha256": "befc30e959fe08ad480bd6a0078971aa8879f0cabf1cb02f849de46d8bfc61d9"
+    },
+    {
+      "source": "contract",
+      "sha256": "412b8806e173179107db35977a467725fcf51c4063857bc20b5da29ea03834a1"
+    },
+    {
+      "source": "clock",
+      "sha256": "382c36a2676c135441b2faaae15c710629cc81789b07b5cd7117068e0f6c248d"
+    },
+    {
+      "source": "config",
+      "sha256": "6931b2a1733b3530dfe6f8b661f56f6744b0c08b0fa731193dec6fa9d00a341b"
+    },
+    {
+      "source": "sed",
+      "sha256": "f56cd8bb87efb691b323ea4c05d79dff37507630099415fd8c6a4e4942ecb6ac"
+    },
+    {
+      "source": "sed_errata",
+      "sha256": "3e64c720300fb0a32598d81791aa44588c5fda594f42613a9929d0282ab0fdf8"
+    },
+    {
+      "source": "power",
+      "sha256": "dda61d1f808612a9be30f6724791f52ee2361a5c25905ffd78913dded9c844cb"
+    }
+  ]
+}

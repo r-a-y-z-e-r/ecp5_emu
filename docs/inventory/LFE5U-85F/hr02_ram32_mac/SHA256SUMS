@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+8c5b956dfa9bf2ed7dde5bbd306ee83b9b96bae2d8282e77976432632dd51416  observations.log
+ec624354c967a1f5cbdfc4863faca19d9c38fa7ce8dbf5f1c884133ad8e6ce45  ram32.config
+21858e7760eab079cd46f664e335739189c0b131d062af8fadda10b920bfe7db  mac.config
+# Historical digest (artifact unavailable in this record): 1bfe4a07451576e690eda6707d0ea0fe72400f5bf843260dacf63e8f4c49b5ff  ram32 top.bit (target/reference/ram32, examples/ulx3s/build.sh; not stored)
+# Historical digest (artifact unavailable in this record): efd77ab109e0b98a8172f2a76297c715bf0729d025f939a18b57f749bfadeec7  mac top.bit (target/reference/mac, examples/ulx3s/build.sh; not stored)

@@ -1,0 +1,84 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+85de422cde70148fd570ae0f8b57f86cb85fd0ade7f67ed9d21a90990679fe47  check.py
+0207663dd3f3d92d895be55777b670f8aef60a8e95727c4e4e710e2dff2a8c78  observations.log
+e737fa9b50ff77f944cce180dc5d52de390c29ef24163d0ff0221440d4d3b734  emulator_board_configs.log
+9d6470decd341ad301a093ee106dcb0b91da2d6d89b6d823f647e7b8c05ae24c  riscv_terminal.window_monitor.txt
+aabba0ec44a5df6fb5ac61f21088903763ced3fbe0571e78e1da66800e517b65  video_life.window_monitor.txt
+8de3ebbf2e59022a1830a83b8847cc67da98f98bafcc2d1e8fc9ca02309d2086  chip_synth.window_audio.txt
+bc4c11f898ee2c44a6010a4c4834e5c0bed7632451101f4344cf32a7f34de9ae  chip_synth.window_oled.txt
+df81fcc198fb85a0fc622f0be74ecca22b0b5bb5cadede5b317518a0d7ffedc3  hdmi_plasma.window_monitor.txt
+af3b3cd48d77b66924e03a3063217f62eb84d35aa4772dc5ff4ea2ce661002a9  oled_bricks_p28.window_oled.txt
+944cdcfe0f478231485b48e35b6d8d19dee548b0fc9354ac0605c8022497ecd9  riscv_oled.window_oled.txt
+dd5722de5be67a75801d4b257d93b31ab081a34069315064a23f9d8e645363c3  oled_bricks.window_oled.txt
+d96d701d70d0d30fc7d5074be1758f3abba619380a97af8355e50d116cc53927  chip_synth.board_uart_1.txt.gz
+023ecf456a867830cda715a842758dd159a4014608058bc5673dddeda1825de7  chip_synth.config.gz
+d1be341a61757d7bde51925ea2ae6861f913006bda8399d45703c74a255addfa  clock_domains.board_freq.txt.gz
+4285561b897d79968e553d613d429055fa5b346cda89ef40656f610b889d0d88  clock_domains.board_uart_1.txt.gz
+7504e38ba4c129a046be2f3020350db37a945b81cab5203e69585a3221a6a7f7  clock_domains.config.gz
+1b7419a82d7c393f9473de55f40ba25b2e2e70b5185c21186861a6e5d2ef04ef  ebr_life.board_uart_1.txt.gz
+bdc232634f30a82f01eab28f7596e5e0372d8a5735bd46d7e1b082f28c144e61  ebr_life.config.gz
+4f0aa2493cd4c388a8115f9d93187ce3ab3feebd3d4f2f43349f83c10af87f0b  fir_scope.board_uart_1.txt.gz
+b92ab41b7241687c7b0bcc8a24bca18bbd3d89f7ef13d245e3926083294663c1  fir_scope.config.gz
+f264a8c99ea2b1e5d75d02ac0a42f10879a694e6f74d30d197b6c4a0ed69a40c  hdmi_plasma.board_uart_1.txt.gz
+020d276bbbe3fea79ea0f55dc970bda03122e6c223934fa0e74e77661bda1ba2  hdmi_plasma.config.gz
+862329cefc23e94eb0632505f941ec2f9d698c716d97c6369cdf54226be34a55  led_tennis.board_uart_1.txt.gz
+773f12b50df5eaa4bd6258c7f72de7a61f17e76f0fad4274169437e33dd12500  led_tennis.config.gz
+2e2db8a288275b3b88cad7752456735e93ee6b7a683f55ed6a1d4402a28f2140  mandelbrot.board_uart_1.txt.gz
+06713ca9c24d8c3f20a2f0a3b43dac1ff0bf388e26620cb0fd18c00f6b61bde5  mandelbrot.config.gz
+0b15c1afc5381873651d11821b7b30808b6a89437d59e4eaca97dcfef2538be2  riscv_oled.board_uart_1.txt.gz
+155f10906afe2ba4cf0ab375da8713984f327b77322a90c195eeb944495dd21b  riscv_oled.config.gz
+a5221edd5e5012f661e9e00d46cf11411a04fce204379caa8b732c3203f85931  oled_bricks.board_uart_1.txt.gz
+057066d9b10d73b95ffe53225c732b0b71925136e1f2def78ac7472705df7b41  oled_bricks.config.gz
+2785ea9a79b5e0e94682e182a86239d8c53a8b1c20bc95d9ced78d6418780bd1  oled_bricks_p18.board_uart_1.txt.gz
+7217de5d1378b974e06cb09d5fe21f0be74e495b08007f4e57198eb8f7580f07  oled_bricks_p18.config.gz
+210346d83ed5b40f6c6ca894613ad62835266f709455e1429f4c5a1793a332fb  oled_bricks_p28.board_uart_1.txt.gz
+8a956ea7d79ef9994eb7945ba10d68a7b03370b56be82d027268984b7371e7e2  oled_bricks_p28.config.gz
+213c075f5fa18d9c70b90a22c5a302efcbbdab38678919d1fec02060b9d9a064  riscv_shell.board_uart_1.txt.gz
+d52180bb52d76f564c37e8c3e6b1666be6ae3d4c61d8cd66a67545df9685b61c  riscv_shell.config.gz
+96e3138be010ec7bcd752a48c3579a15cff3351827d94c1b71d2fa862fc95e4f  riscv_terminal.board_uart_1.txt.gz
+6b7140d100160c095a4dbde1acc9bcc29fa16434f90a6b20ceef3e5c0d1de8a6  riscv_terminal.config.gz
+88804e82625aece050feaa5a93cb200ef6b20fe107a32d621b6a99652049ce8c  sdram_bench.board_uart_1.txt.gz
+3349ae64dcac98ab15bdd0192693d494401096dbfa3361209461230ddfc75179  sdram_bench.config.gz
+8cd879ef0543ef18cfdbf931e542605180d119d17f809f1d303a301ea8b1bbe8  serv_shell.board_uart_1.txt.gz
+078b2142658e311b29afedd8ccce2c1b3ed63d0631a6910177686c50f8daa13a  serv_shell.config.gz
+bb6f89b54c1993202b702440a87a3451fe9939fe828026cabb96315fc0b3d8bb  serv_shell_stock_rf.board_uart_1.txt.gz
+1ef311ebcf85f3bd24638e979b49efe9998b89be618841bd698b0fb2d8b7519d  serv_shell_stock_rf.config.gz
+4eea1abf9c4b400b9c93e792dc1b213e0f1ec992fb3b859f05a23e5c3260abbf  sha256_chains.board_uart_1.txt.gz
+d465f7b7e3f979503d93f1a005a1d943179cceb2f1eeb867e9c627427668bc5a  sha256_chains.config.gz
+7fbd1f89ebb617573b8d3a78d90f0f644bb677e1441f94d5beb957b0a51326e6  video_life.board_uart_1.txt.gz
+ec514b5dfa4e191336842cd06c64d077e349baa43622c0208172b610ee39a652  video_life.config.gz
+# Historical digest (artifact unavailable in this record): 91ec07b5369a26a85462148bdb245767ae9995cd6c9b8ad0c765722b73ef5ac7  riscv_shell top.bit (target/gallery/riscv_shell, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 65f18ec9b7fb4309a0f2786283cea622ddf4eafcc3aa95083bd745402188ee45  riscv_shell/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 15455aabc52928d684b608f263ba86cb751ac22adeb7bf6271bba9eee29c399c  ebr_life top.bit (target/gallery/ebr_life, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 150ae2b5399b6185832ed1e4e636e317b1543dfd1c9f9279f76dbf96eabae665  ebr_life/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 53a2a1cb9574d3173d6a1744d84e9163e7fa1cf171952df0f088d18725b4ab3c  led_tennis top.bit (target/gallery/led_tennis, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 6726a8d453422699735892f30f3e95a610d7ffbdb448a4d7370ff9c66a6ab8a0  led_tennis/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 180ffa8267859b2e819e2b9e54f481155a8fbfc1c4c1452ffb7e82fc0ee0a8d0  mandelbrot top.bit (target/gallery/mandelbrot, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): ec63cc8b1ffda3ac560b0c645ba210a44c33ac3f7396f05b56c6e4dc41e7cd94  mandelbrot/expected/uart.txt
+# Historical digest (artifact unavailable in this record): d6a1d528803c5e1eb2e7068e77ffc750cf2901035603a1883e9c4ecc225e2da2  fir_scope top.bit (target/gallery/fir_scope, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 38ff7206ea9bbf00786dfa5f8ede55200cbe3b3593172efa734a3dd35ee3547e  fir_scope/expected/uart.txt
+# Historical digest (artifact unavailable in this record): aaaca1061a177d4a864dc99251a0c6e452fdedb7da520bd18bc1ca0939210c9f  video_life top.bit (target/gallery/video_life, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): aed30ad01aec64d82bf0e614c3637b365c071e2c09af97a5115df055a89000a8  video_life/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 4e7ac406e150e4f449705bcb8c100a36b1385a4592043a8fb926dc6e56458c8f  riscv_terminal top.bit (target/gallery/riscv_terminal, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 041b3b6de2b538e5462d6fc682e79caf561e607cf77dda4e46db360d46f8d85d  riscv_terminal/expected/uart.txt
+# Historical digest (artifact unavailable in this record): f85fa3803c945a871d3a128868291a7c1a5768081343dd44d85628b4c415d1da  serv_shell top.bit (target/gallery/serv_shell, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): bab9c5d40483b8c13f377843d1f50650a654df7bbc6c98094114b872ede401c6  serv_shell/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b  serv_shell top.bit, stock register file (target/gallery/serv_shell, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 3bd5038b40c85393c52d387187c5ca47d58950323f9014cbacd52c14331fb1bd  sdram_bench top.bit (target/gallery/sdram_bench, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 53e94010a345d046337dc0883524f059adf7952a3d3787bf09a3fe633d3abc43  sdram_bench/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 990f23674325b2c1057766552c79c257092ed1a1940d14e81e079636c7765ee3  oled_bricks top.bit (target/gallery/oled_bricks, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): bb9e824f9fabf37a5e587da73a9d6a0b8aa01a30f2e4ecf2382d8ef94e78b1f9  oled_bricks/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 6beb96be32d0c8af5b4b83df84552a0ed7978bedb1b4fb1503b879ede81c1c81  clock_domains top.bit (target/gallery/clock_domains, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 18668aa7f6485e390d3922889e7fa5f6ff4266564c9228181858d54fc34ca489  clock_domains/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 565fc42c7a9d6025a00925f00261b886c2e8d5edcc5abb0149fa481781872807  sha256_chains top.bit (target/gallery/sha256_chains, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): af87bb6f35fcc953daa63d4310db492db4b8818b4c0864dd35f6319926105107  sha256_chains/expected/uart.txt
+# Historical digest (artifact unavailable in this record): c9793c55ad76e9ee1159e4c0477baa702af9f6c3b296aca8b099ac3a05015266  riscv_oled top.bit (target/gallery/riscv_oled, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 9781e093b912884257cf59b842777210c9d85c65c25a17c9619bf59045480eeb  riscv_oled/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 1e9c4db7c520e28a99308408acf0810d63b31f716de1d0acec35d88b54feaff0  oled_bricks_p18 top.bit (target/gallery/oled_bricks, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): bb9e824f9fabf37a5e587da73a9d6a0b8aa01a30f2e4ecf2382d8ef94e78b1f9  oled_bricks/expected/uart.txt
+# Historical digest (artifact unavailable in this record): 2b91d6d64b138a9bd781a5c058709f00dc87e9f3c1320cd198559cde6eb5904e  hdmi_plasma top.bit (target/gallery/hdmi_plasma, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 64780ba8810fb9eae36bec3db248ca73bca2847eabe0466fdc4ab502ee09ed1a  hdmi_plasma/expected/uart.txt
+# Historical digest (artifact unavailable in this record): a848efb0bc0e2a42f608d274b17d983ba446fb3c756114dfc68c481b0b98158f  chip_synth top.bit (target/gallery/chip_synth, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 0c0360737f34c685e13184abb208098326ce375cf76b4614410ff8fe3dffed5d  chip_synth/expected/uart.txt
+# Historical digest (artifact unavailable in this record): d402a6128bb5fb840c0ea9ea9e1f82256d319022efbc32c29fea4b2b48c988ef  oled_bricks_p28 top.bit (target/gallery/oled_bricks, examples/ulx3s/build.sh, nextpnr seed 1; not stored)
+# Historical digest (artifact unavailable in this record): add0d5f8247678fcedfc1aa8f488457bb52e4473d2f6977783d0138c971fe43f  oled_bricks/expected/uart.txt (P27/P28)

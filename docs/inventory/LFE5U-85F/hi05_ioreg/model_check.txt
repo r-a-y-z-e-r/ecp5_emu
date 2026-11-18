@@ -1,0 +1,43 @@
+E00 sample 0 (t = 0): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+E00 fits
+E00 sample 0 (t = 0): [0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1]
+E00 fits
+E01 fits
+E01 fits
+E01 fits
+E01 fits
+E01 fits
+E02 fits
+E02 fits
+E02 fits
+E02 fits
+E02 fits
+E02 fits
+E03 fits
+E03 fits
+E03 fits
+E03 fits
+E03 fits
+E03 fits
+E04 fits
+E04 fits
+E04 fits
+E04 fits
+E04 fits
+E04 fits
+E05 fits
+E05 fits
+E05 fits
+E05 fits
+E05 fits
+E06 fits
+E06 fits
+E06 fits
+E06 fits
+E06 fits
+E07 fits
+E07 fits
+E07 fits
+E07 fits
+E07 fits
+lines: 40 without a fit: 0 | exercised: {'sr while ce=0': 298, 'gsr pulses': 147}

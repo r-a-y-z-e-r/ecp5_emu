@@ -1,0 +1,17 @@
+INJECT1,p_LUT4,g_LUT2,carry_in,sum,carry_out,evidence
+NO,0,0,0,0,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,0,0,1,1,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,0,1,0,0,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,0,1,1,1,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,1,0,0,1,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,1,0,1,0,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,1,1,0,1,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+NO,1,1,1,0,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,0,0,0,0,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,0,0,1,0,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,0,1,0,0,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,0,1,1,0,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,1,0,0,1,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,1,0,1,1,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,1,1,0,1,0,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware
+YES,1,1,1,1,1,abstract_half_functions;p_and_g_share_INIT;public_model_not_hardware

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#203247"/>
+      <stop offset="1" stop-color="#101b2a"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-50%" width="160%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <path id="route" d="M76 324H206V224H306V154H436"/>
+  </defs>
+  <rect x="12" y="12" width="488" height="488" rx="104" fill="url(#plate)" stroke="#61768b" stroke-width="8"/>
+  <path d="M160 80V108M256 80V108M352 80V108M160 404V432M256 404V432M352 404V432M80 160H108M80 256H108M404 256H432M404 352H432" fill="none" stroke="#71879b" stroke-width="16" stroke-linecap="round"/>
+  <rect x="108" y="108" width="296" height="296" rx="28" fill="#293d50" stroke="#8399ac" stroke-width="12"/>
+  <rect x="136" y="136" width="240" height="240" rx="8" fill="#1c2d3e"/>
+  <path d="M216 136V376M296 136V376M136 216H376M136 296H376" fill="none" stroke="#465e72" stroke-width="7"/>
+  <use href="#route" fill="none" stroke="#47ffd2" stroke-width="36" stroke-linejoin="round" filter="url(#glow)" opacity=".65"/>
+  <use href="#route" fill="none" stroke="#60ffdc" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

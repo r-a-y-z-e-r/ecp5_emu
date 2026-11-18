@@ -1,0 +1,1 @@
+../picorv32_console/picorv32.v

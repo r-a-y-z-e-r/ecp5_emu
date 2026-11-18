@@ -1,0 +1,13 @@
+
+# Conway's Game of Life on a 27x27 torus, every cell a flip-flop (13% of the chip).
+# Build: ecp5_emu build examples/ulx3s/life (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/life; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/life.
+
+[project]
+name = "life"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

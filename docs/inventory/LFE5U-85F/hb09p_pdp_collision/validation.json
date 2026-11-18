@@ -1,0 +1,167 @@
+{
+  "tools": [
+    "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+    "\"nextpnr-ecp5\" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)",
+    "Project Trellis ecppack Version 1.4-86-ga31ff70"
+  ],
+  "boards": {
+    "hb09p": {
+      "ebr_count": 8,
+      "profiles_verified": [
+        "p32_128",
+        "p32_256",
+        "p32_512",
+        "p32_64",
+        "p36_128",
+        "p36_256",
+        "p36_512",
+        "p36_64"
+      ],
+      "timing_mhz": [
+        69.65,
+        90.46
+      ],
+      "artifacts_sha256": {
+        "hb09p.v": "2019cf828d1a058d2a86e7c555e52bfcba97004efd33e40b771e38d1a58b2d78",
+        "hb09p.config": "29eed6db6023bb307b892e6c1295a9a56060bf93075982ccb059209ad285f012",
+        "hb09p.bit": "bb2f2ebfbc4df23ac5615a10eb1193fb3522eb9df0f061ecdeee544695a2de77"
+      }
+    },
+    "hb09ps": {
+      "ebr_count": 8,
+      "profiles_verified": [
+        "p32_128",
+        "p32_256",
+        "p32_512",
+        "p32_64",
+        "p36_128",
+        "p36_256",
+        "p36_512",
+        "p36_64"
+      ],
+      "timing_mhz": [
+        71.61,
+        90.79
+      ],
+      "artifacts_sha256": {
+        "hb09ps.v": "15c45d1973bc6836dc122a4dea245839294a43acbf01a5fbe8bbd45d48dc5373",
+        "hb09ps.config": "f7e3e17563dffb2ae591c283a58b75d8dbde664765452358f08fb670d46d089b",
+        "hb09ps.bit": "620012ea57bd98fd0cc885cbcbaf13da6c9ddb93f27da92174a4d2c5b0bb4c96"
+      }
+    }
+  },
+  "checks": [
+    "analysis --selftest",
+    "32-case plain inferred RAM matrix",
+    "exact X03 event/fast replay and WE=0 equal trace",
+    "both variants synth_ecp5, nextpnr seed 1, 25 MHz timing, ecppack",
+    "eight inferred PDP profiles and static controls verified in synthesized JSON; eight physical PDP blocks in each config"
+  ],
+  "hardware_observations": {
+    "source": "provided planning-session SRAM/UART records; recomputed analysis matches stored reports",
+    "raw_primitive_outputs": true,
+    "hdl_matches_generator": true,
+    "inferred_q_board_trace": false,
+    "free": {
+      "loads": 3,
+      "seconds_per_load": 30,
+      "complete_windows_per_load": 78,
+      "identical_load_sets": true,
+      "distinct_windows": 78,
+      "per_case_known_collisions": 1299,
+      "per_case_new": 1299,
+      "bits_outside_old_new": 0,
+      "per_case_clean_reads": 2965,
+      "per_case_clean_after_collision": 1853
+    },
+    "configuration": {
+      "loads": 3,
+      "seconds_per_load": 8,
+      "distinct_windows": 1,
+      "per_case_known_collisions": 23,
+      "per_case_new": 23,
+      "per_case_clean_reads": 40,
+      "per_case_clean_after_collision": 19
+    },
+    "case_count": 8,
+    "physical_widths": [
+      36,
+      36
+    ],
+    "logical_widths": [
+      32,
+      36
+    ],
+    "depths": [
+      64,
+      128,
+      256,
+      512
+    ]
+  },
+  "implementation_task_board_or_serial_access": false,
+  "emulator": {
+    "kernel_rule": "HB09P PDP36/NORMAL/NOREG ASYNC release/reset, GSR disabled, full masks and known shared edges/controls; other PDP cases retain previous handling",
+    "board_replay_bits": 17408,
+    "physical_words_swept": 512,
+    "x03_rows_swept": 512,
+    "x03_changes_current_D_to_check_logical_read_old": true,
+    "fast_files_modified": false,
+    "fast_patches": [
+      "fast_a_hb09p.patch",
+      "fast_b_selected_demand.patch"
+    ],
+    "legacy_hb09_test": "permits conservative rejection on first raw X; requires rejection by first FF capture of X; width-18 array X policy unchanged",
+    "pending_fast_tests": [
+      "fast_pdp36_new_word_equal_trace",
+      "fast_unselected_mux_collision_x_equal_trace_then_selected_x_refuses"
+    ],
+    "native_tests_environment_ignored": true,
+    "working_tree_reproduction": "reproduction_after.json",
+    "preview_exact_x03": {
+      "event_we0": 0,
+      "fast_we0": 0,
+      "event_we1": 0,
+      "fast_we1_one_cycle": 0,
+      "fast_we1_two_cycles": 0,
+      "q_at_60_ns": "0x00000001"
+    }
+  },
+  "rserv": {
+    "whole_suite_once": {
+      "command": "cargo test --release",
+      "passed": 323,
+      "failed": 0,
+      "ignored": 198,
+      "note": "Targeted checks were repeated after final test refinements; native kernel replays were also run explicitly."
+    },
+    "working_tree_targeted_include_ignored": {
+      "ebr": 19,
+      "ebr_native": 3,
+      "ebr_collision_native": 3,
+      "ebr_r02_kernel": 5,
+      "ebr_r02_fast_expected_pending_failures": 2,
+      "ebr_narrow_rbw_native_fast_only": 2
+    },
+    "patched_isolated_preview_include_ignored": {
+      "ebr": 19,
+      "ebr_native": 3,
+      "ebr_collision_native": 3,
+      "ebr_r02": 7,
+      "ebr_narrow_rbw_native_fast_only": 2,
+      "failed": 0
+    },
+    "fmt_check": "PASS, working tree and patched preview",
+    "clippy_release_all_targets_D_warnings": "PASS, working tree and patched preview",
+    "sync": "tools/rserv.sh; task files touched before every call",
+    "board_or_serial_access": false
+  },
+  "source_sha256": {
+    "src/kernel/ebr.rs": "dd602287fe5adac4abd721c2eb07e61ead68f1e3daee816a882ec4072c63e8cb",
+    "src/compile/ebr.rs": "7f0e5e73d59c0c91fbd30ecf6fb7cb996d4189161d3f9dd63f86e54ebfe040c4",
+    "src/kernel/fast.rs": "8049c0dcc8d07e866ec2c74c87f1df2a68f08466ceacd3e3a9948f501d4276fc",
+    "src/fast.rs": "a0146b22fce61fab4c78bb47746cb78ff5287aeeb4f36860103050a6129686e0",
+    "tests/ebr_r02.rs": "2cc7bccd4e9bebbe0b6d8029630fdc3b14ee0260b55df9b33a61a0b618ab21b2",
+    "tests/ebr_collision_native.rs": "3e97a24500d2f0dc7f69a03138bc8679543a7ffcec8bd733b391b3f6aac3c599"
+  }
+}

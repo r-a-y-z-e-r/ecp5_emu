@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "tile_types": 34,
+  "template_records": 2086,
+  "instantiated_edge_records": 16619,
+  "native_wire_check": {
+    "status": "matched",
+    "scope": "wire-name normalization; not a full RoutingGraph",
+    "requests": 25471
+  },
+  "native_mux_bits_check": {
+    "status": "matched",
+    "mux_option_patterns": 361,
+    "catalogue_checks": {
+      "tile_types_checked": 34,
+      "checks": [
+        "mux_sinks",
+        "mux_sources",
+        "fixed_connections",
+        "word_names",
+        "word_widths",
+        "word_defaults",
+        "enum_names",
+        "enum_defaults",
+        "enum_options"
+      ]
+    }
+  },
+  "rejected_name_requests": 74,
+  "ports_with_directed_adjacency": 13269,
+  "input_delay_paths": 365,
+  "raw_fixed_input_bypasses": 235,
+  "output_boundary_paths": 1460,
+  "shared_output_sinks": 701,
+  "shared_input_terminals": 840,
+  "fixed_mux_overlaps": 385,
+  "shared_output_roles": {
+    "direct_delayed_output_views": 365,
+    "paired_gearbox_output_views": 336
+  },
+  "shared_input_roles": {
+    "dedicated_dqs_fanout": 504,
+    "paired_gearbox_input_alias": 336
+  },
+  "route_controls": 603,
+  "route_bits": 603,
+  "route_controls_without_named_field": 603,
+  "selector_bits_checked_against_all_named_fields": 603,
+  "selector_bits_with_any_named_field": 0,
+  "dqs_links": 2016,
+  "dqs_link_states": {
+    "group_relation_without_raw_path": 1512,
+    "raw_path": 504
+  },
+  "edge_clock_links": 476,
+  "edge_clock_link_states": {
+    "bank_relation_without_raw_path": 476
+  },
+  "edge_clock_targets_by_family": {
+    "DQSBUF": 14,
+    "IOLOGIC": 224
+  },
+  "dedicated_aliases_without_raw_driver": {
+    "DQS": 378,
+    "ECLK": 182
+  },
+  "unnamed_primitive_wire_nodes": 560,
+  "limitations": [
+    "A fixed record can describe a mode-specific view; sources must not all be unioned.",
+    "Paths do not traverse internal BEL logic or the full general fabric.",
+    "Dedicated bank/lane relations use metadata and nextpnr rules; missing physical segments are not invented.",
+    "Delay and edge-clock selector patterns do not establish all mode compatibility conditions.",
+    "The raw named-field audit includes all inventoried settings; routing mux choices remain separate."
+  ],
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "fa6a712a4a39c80677c1b90aab0cc7502afbd3af98f24bd8fe36a1a7ced43269"
+    },
+    {
+      "source": "normalization_and_bit_rules",
+      "sha256": "19f39eb477f11602739327055841c52316c95e823b0381df72251f6c10c6f789"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "4f53b06ea33c5a8b4a004aa2d45908dd0b76b578d2dae7f8553989979883cb7f"
+    },
+    {
+      "source": "native_catalogue_check",
+      "sha256": "63f65a20f1d6d1c6976518b13cecb0bcb8fa1db118d9854d24fc8917820ebe26"
+    },
+    {
+      "source": "device_inventory.json",
+      "sha256": "aae1fc16d0bec9b56b2e5890aad3c725a53cf849ff46bc6ccdc924883789b145"
+    },
+    {
+      "source": "tile_instances.csv",
+      "sha256": "0da09e09bcefb49f0ef1e1998888b2a2f7199e4f326469b555e046d65be55101"
+    },
+    {
+      "source": "clock_ports.csv",
+      "sha256": "ee5a891931b2544ca4d5c3ae7cff356234049f819935d2193d7a31772bc2c9f9"
+    },
+    {
+      "source": "config_field_bits.csv",
+      "sha256": "4a30592b07ccc6230280be752f8b1b214bd508dd10ab6a79e9367a173ecabf41"
+    },
+    {
+      "source": "iologic_research/instances.csv",
+      "sha256": "a8e5ed1d40ec47169b073cfc72f19fa3ba06bd7a6d914dfb666c98bd834e1c1a"
+    },
+    {
+      "source": "iologic_research/resource_ports.csv",
+      "sha256": "078cd961515c0a11a4969b2154ac57f6812a66622f0cb0d84ef54a59820fa2a1"
+    },
+    {
+      "source": "iologic_research/config_field_bits.csv",
+      "sha256": "2cce8189b790b59cbc991a03ece47ce29e26e0b2716b39da55b9d74412c24630"
+    },
+    {
+      "source": "iologic_research/config_catalogue.json",
+      "sha256": "5c4f32b4fbeaf3532d47546d05aaf152e2a9a1f332641e7aa05a7c5e1c75bb7e"
+    },
+    {
+      "source": "Trellis:libtrellis/src/RoutingGraph.cpp",
+      "sha256": "5ea1e15451ab188a97ce601ee58e53a48b922ffead40e1950206007bc7061294"
+    },
+    {
+      "source": "Trellis:libtrellis/src/Bels.cpp",
+      "sha256": "574e04b6cfa113c9cd8c6aa18c203f884d89d6c4a194c4b73297d1ece840b58d"
+    },
+    {
+      "source": "nextpnr:ecp5/pack.cc",
+      "sha256": "3c6842deafc1d62c1fa8c5530ad7ad68e50877599cb38d6aba7a88ef2f89f03d"
+    },
+    {
+      "source": "pytrellis_module",
+      "sha256": "8e72bbf0a180fbde98bad8778197376fa5f7b19f94433faffb7c21dd3b0deba4"
+    },
+    {
+      "source": "native_probe_binary",
+      "sha256": "e486a7f11253e97a8ea79e368960ec7fb2ce288882680473729c580fd96803b4"
+    },
+    {
+      "source": "native_library",
+      "sha256": "d3ecc36231525beac047ab8f29769b0284b81f05c87d6f10c37e75f9f5d75835"
+    }
+  ]
+}

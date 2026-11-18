@@ -1,0 +1,86 @@
+HY01 provenance and tools, 2026-11-17
+
+Board session (reported by the planning session; no hardware accessed in this follow-up):
+  ULX3S, LFE5U-85, CABGA381, JTAG SRAM loads; flash untouched.
+  hy01: three 20-second collections, 313 valid frames / 310 unique payloads.
+  hy01s: three 8-second collections; 43/43/0 candidate lines by load.
+  hy01s load 3: loader_done=True, 755 discarded fragments, no valid frames.
+  hy01b/c: ten SRAM loads each; 10,497 B / 10,505 C valid frames.
+  B rising deficits: 2 in every load; falling: 1 in 1,2,4,10; 2 in 3,5,6,7,8,9.
+  C rising/falling deficits: 0 in every load. One frozen snapshot per load.
+  Raw discarded bytes and a cause of the load-3 serial failure were not recorded.
+  Logs retain UTC load timestamps and loader DONE results, not per-load tool versions.
+
+Original board bitstream build:
+  build.py, --85k --package CABGA381 --seed 1, 25 MHz pin constraint,
+  PLL constraints derived by nextpnr, no timing-allow-fail option.
+  Yosys 0.70+post, git 0c11ea098be065e585a90a06e7b7da49936cf231,
+    Release, AppleClang clang++ 17.0.0.17000604.
+  nextpnr-ecp5 nextpnr-0.11.1-77-g6b438a1c.
+  Project Trellis ecppack 1.4-86-ga31ff70, uncompressed .bit output.
+  validation.txt is the initial pre-board local build/simulation record.
+  Supplied hy01.config SHA256 equals that record:
+    11c619fc12b374217036c85a0e8c518ac27f008623689d7b20c122c62f0a43f3
+  Supplied hy01s.config SHA256 equals that record:
+    6d2874e593c83be956a6d27bebec7b13b40249be9aaeddd04041347fe311a344
+  The planning session reports loading the .bit files build.py produced.
+  The original bitstream hashes are preserved in validation.txt; .bit files
+  were not copied into this directory and were not reloaded for this analysis.
+
+Current local follow-up environment (version queries only):
+  macOS /opt/homebrew/bin tools; same Yosys/nextpnr/ecppack versions as above.
+  Python 3.14.7, Clang 17.0.0 (clang-1700.6.4.2).
+  Python standard library for hy01_analyse.py and hy01_residuals.py.
+  Icarus Verilog 13.0 stable (v13_0), iverilog/vvp.
+  openFPGALoader v1.1.1 (--Version query, no load operation).
+  pyserial 3.5 (package metadata query; no port opened).
+  Handoff serial settings: /dev/cu.usbserial-<FTDI-serial>, 115200 8N1;
+    the actual device path is not embedded in the supplied collection logs.
+  run.py loads SRAM and checks DONE before opening the selected serial port.
+  The follow-up only extended accepted prefixes to include Y1B/Y1C.
+  Original R/S collector run.py SHA256, from validation.txt:
+    746f42a87f1b39d079e6580d6f3de9d1824b0fa2f305029c6092b01348136b1b
+
+Follow-up builds and checks:
+  python3 -B build_boot.py /private/tmp/hy01-boot-build
+  python3 -B check_boot_capture.py /private/tmp/hy01-boot-build
+  python3 -B hy01_residuals.py observations.log observations_s.log > residuals.txt
+  See README.md for repository-relative commands and the completed board collections.
+  validation_boot.txt records successful b/c synthesis, routing, packing,
+  all counter GSR/REGSET placement checks, final clock frequencies, simulation,
+  and hashes of generated .v/.config/.bit files retained in external scratch.
+  The simulation's two-edge hold is artificial, not a silicon startup result.
+
+Preserved board evidence: observations.log, observations_s.log, observations_b.log,
+observations_c.log, hy01.config, hy01s.config, hy01b.config, hy01c.config,
+analysis.txt, analysis_s.txt. These files were not rewritten.
+
+Accepted model / emulator implementation follow-up:
+  Plain stages s1=s2=1 at configuration, sampling raw active on rising SGSR CLK;
+  user GSR = raw active OR s2. No local/global reset or asynchronous stage preset.
+  candidate_residuals.txt: --selftest --candidate on all four supplied logs;
+    R: 120 residual channel-bins, all at most 2 observer ticks after a transition:
+      71 at s2 rise; 15 at raw release (8/6/1 bins at +0/+1/+2 ticks);
+      34 at s2 fall (17/17 at +1/+2 ticks).
+    S: zero residuals / 5,844 channel-bins; B/C: zero startup offset residuals.
+  Boundary captures are reset-network propagation-delay hazards within 20 ns;
+  the emulator's propagation delays have zero duration.
+  tests/sgsr_native.rs uses the same FPGA tool flow in removable TMPDIR scratch,
+  explicit native FFs, Yosys's public SGSR, and .config/.bit X20 validation.
+  rserv runs use TMPDIR=$HOME/work/tmp; see validation_execution.txt for commands,
+  counts, compiler/tool versions, and the final verification results.
+  src/kernel/mod.rs adds reset-free internal resource FF binding on the existing
+  capture path; src/kernel/cache.rs serializes optional physical node ownership.
+  No changes to either fast-mode implementation; equal settled traces are tested.
+  No board, serial-port, flash access or commits during emulator implementation.
+
+SHA256SUMS covers all files in this directory other than SHA256SUMS itself;
+verify from this directory with: shasum -a 256 -c SHA256SUMS
+
+SGSR shared-document/ignored-test follow-up:
+  validation_followup.txt records 50/50 targeted passes and the full workspace
+  499 passed/245 ignored, split emulator 358/235 and GUI 141/10.
+  workspace_tests.tsv retains per-binary counts; four nested child summaries
+  are excluded. The earlier 343/233 was package-only raw-summary accounting.
+  Only the SGSR clause in src/compile/mod.rs changed, with explicit permission.
+  No commit or hardware access.

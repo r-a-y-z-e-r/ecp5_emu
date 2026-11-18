@@ -1,0 +1,1693 @@
+{
+  "image": {
+    "bits_per_frame": 1136,
+    "cram_fingerprint": "fnv1a64:a44f089426edf3c9",
+    "decoded_sha256": "e0e7812336b547ae045151464cef6cb8432cfb37fc2fcdf5996478809c851146",
+    "ebr_init_images": 0,
+    "frames": 13294,
+    "service": {
+      "native_comments": [
+        [
+          80,
+          97,
+          114,
+          116,
+          58,
+          32,
+          76,
+          70,
+          69,
+          53,
+          85,
+          45,
+          56,
+          53,
+          70,
+          45,
+          54,
+          67,
+          65,
+          66,
+          71,
+          65,
+          51,
+          56,
+          49
+        ]
+      ],
+      "native_registers": {
+        "ctrl0": 1073741824,
+        "ctrl1": 1157627904,
+        "sed_reference": 4294967295,
+        "usercode": 0
+      },
+      "parser_defaults_may_apply": true,
+      "sysconfig_directives": {},
+      "text_comments": [],
+      "text_variant": null
+    },
+    "source_bytes": 280478,
+    "source_kind": "bitstream",
+    "source_sha256": "63d980256169ec0bedd2ea1812b483e8ba9a085018ad6749ec5533aaf667aee1"
+  },
+  "observations": [
+    {
+      "time_ns": 0,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 1,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 2,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 3,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 4,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 5,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 6,
+      "values": {
+        "pin:H1": "zero"
+      }
+    },
+    {
+      "time_ns": 7,
+      "values": {
+        "pin:H1": "one"
+      }
+    },
+    {
+      "time_ns": 8,
+      "values": {
+        "pin:H1": "one"
+      }
+    }
+  ],
+  "plan": {
+    "clock_aliases": [
+      {
+        "raw": {
+          "location": {
+            "col": 2,
+            "row": 50
+          },
+          "name": "G_HPBX0100"
+        },
+        "segment": {
+          "location": {
+            "col": 13,
+            "row": 50
+          },
+          "name": "L_HPBX0100"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 13,
+            "row": 50
+          },
+          "name": "G_VPTX0100"
+        },
+        "segment": {
+          "location": {
+            "col": 12,
+            "row": 70
+          },
+          "name": "G_VPTX0100"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 2,
+            "row": 51
+          },
+          "name": "G_HPBX0100"
+        },
+        "segment": {
+          "location": {
+            "col": 13,
+            "row": 51
+          },
+          "name": "L_HPBX0100"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 13,
+            "row": 51
+          },
+          "name": "G_VPTX0100"
+        },
+        "segment": {
+          "location": {
+            "col": 12,
+            "row": 70
+          },
+          "name": "G_VPTX0100"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 12,
+            "row": 70
+          },
+          "name": "G_HPRX0100"
+        },
+        "segment": {
+          "location": {
+            "col": 0,
+            "row": 0
+          },
+          "name": "G_LLPCLK1"
+        }
+      }
+    ],
+    "configuration_sha256": "61e49880b76f2f90d9ef901216acfac07dc4368c8bec98c56d33795c178bc630",
+    "counts": {
+      "carry_halves": 5,
+      "constants": 1,
+      "dcc_bypasses": 1,
+      "flip_flops": 3,
+      "lut4": 2,
+      "pio": 4,
+      "routes": 71,
+      "wide_muxes": 0
+    },
+    "excluded_routes": [
+      {
+        "rule": "ready profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JF5",
+        "source": "JF5_CIBTEST",
+        "source_line": 2718,
+        "tile": "CIB_R49C1:CIB_LR"
+      }
+    ],
+    "fields": [
+      {
+        "candidates": [
+          "JA0"
+        ],
+        "name": "CIB.JA0MUX",
+        "tile": "CIB_R55C1:CIB_LR"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "name": "CIB.JB0MUX",
+        "tile": "CIB_R55C1:CIB_LR"
+      },
+      {
+        "candidates": [
+          "CLK"
+        ],
+        "name": "CLK0.CLKMUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "LSR0.LSRMUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "ASYNC"
+        ],
+        "name": "LSR0.SRMODE",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.A0MUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.B0MUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.C0MUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.CEMUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "D0"
+        ],
+        "name": "SLICEA.D0MUX",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "DISABLED"
+        ],
+        "name": "SLICEA.GSR",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LOGIC"
+        ],
+        "name": "SLICEA.MODE",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "SLICEA.REG0.LSRMODE",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "RESET"
+        ],
+        "name": "SLICEA.REG0.REGSET",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.REG0.SD",
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "candidates": [
+          "CLK"
+        ],
+        "name": "CLK0.CLKMUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "LSR0.LSRMUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "ASYNC"
+        ],
+        "name": "LSR0.SRMODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.A0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.A1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "B0"
+        ],
+        "name": "SLICEA.B0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.B1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.C0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.C1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "NO"
+        ],
+        "name": "SLICEA.CCU2.INJECT1_0",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "YES"
+        ],
+        "name": "SLICEA.CCU2.INJECT1_1",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.D0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEA.D1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "CCU2"
+        ],
+        "name": "SLICEA.MODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "A0"
+        ],
+        "name": "SLICEB.A0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.A1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.B0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "B1"
+        ],
+        "name": "SLICEB.B1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.C0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.C1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "NO"
+        ],
+        "name": "SLICEB.CCU2.INJECT1_0",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "NO"
+        ],
+        "name": "SLICEB.CCU2.INJECT1_1",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.CEMUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.D0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.D1MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "DISABLED"
+        ],
+        "name": "SLICEB.GSR",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "CCU2"
+        ],
+        "name": "SLICEB.MODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "SLICEB.REG1.LSRMODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "RESET"
+        ],
+        "name": "SLICEB.REG1.REGSET",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEB.REG1.SD",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.A0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "B0"
+        ],
+        "name": "SLICEC.B0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.C0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "NO"
+        ],
+        "name": "SLICEC.CCU2.INJECT1_0",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.CEMUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.D0MUX",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "DISABLED"
+        ],
+        "name": "SLICEC.GSR",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "CCU2"
+        ],
+        "name": "SLICEC.MODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "SLICEC.REG0.LSRMODE",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "RESET"
+        ],
+        "name": "SLICEC.REG0.REGSET",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.REG0.SD",
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.A0MUX",
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.B0MUX",
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.C0MUX",
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "candidates": [
+          "1"
+        ],
+        "name": "SLICEC.D0MUX",
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "candidates": [
+          "LOGIC"
+        ],
+        "name": "SLICEC.MODE",
+        "tile": "R53C2:PLC2"
+      }
+    ],
+    "limitations": [
+      "ready user-mode environment; no physical POR/wake-up sequence or dynamic user GSR",
+      "unsupported reachable modes fail; full behavioral coverage is not claimed",
+      "observed scope does not execute unobserved sequential state; all storage remains present",
+      "undriven controls remain unknown, without inferred pulldowns",
+      "basic binary single-ended PIO; no electrical timing, thresholds or bank-power model",
+      "ready profile treats unmodelled CIBTEST access as inactive; retained separately, not hardware-validated"
+    ],
+    "resources": [
+      {
+        "family": "DCC_MID",
+        "fields": [
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "DCC_L1.MODE",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R46C3/LDCC1",
+        "rule": "MODE=NONE static bypass; unique empty NONE fallback is qualified by DCC mode contract"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R47C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOC.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOC.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOC.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOC.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOC.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R47C0/PIOC",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R50C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOC.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OUTPUT_LVCMOS33",
+              "OUTPUT_LVTTL33"
+            ],
+            "name": "PIOC.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "8"
+            ],
+            "name": "PIOC.DRIVE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.OPENDRAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOC.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOC.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R53C0/PIOC",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      }
+    ],
+    "roots": [
+      "pin:H1"
+    ],
+    "routes": [
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDOC_PIO",
+        "source": "JPADDOC",
+        "source_line": 848,
+        "tile": "MIB_R53C0:PICL0_DQS2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDTC_PIO",
+        "source": "JPADDTC",
+        "source_line": 856,
+        "tile": "MIB_R53C0:PICL0_DQS2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDOC",
+        "source": "S2E1_JA0",
+        "source_line": 708,
+        "tile": "MIB_R53C0:PICL0_DQS2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDTC",
+        "source": "S2E1_JB0",
+        "source_line": 716,
+        "tile": "MIB_R53C0:PICL0_DQS2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA0",
+        "source": "N1_V02S0501",
+        "source_line": 440,
+        "tile": "CIB_R55C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0501",
+        "source": "N1_V02S0501",
+        "source_line": 1937,
+        "tile": "CIB_R53C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0501",
+        "source": "E1_H01W0100",
+        "source_line": 1923,
+        "tile": "CIB_R51C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0100",
+        "source": "Q4",
+        "source_line": 1420,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "Q4",
+        "source": "Q4_SLICE",
+        "source_line": 3217,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI4_SLICE",
+        "source": "DI4",
+        "source_line": 3123,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "CLK2_SLICE",
+        "source": "MUXCLK2",
+        "source_line": 3085,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "LSR2_SLICE",
+        "source": "MUXLSR2",
+        "source_line": 3189,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI4",
+        "source": "F4",
+        "source_line": 3121,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXCLK2",
+        "source": "CLK0",
+        "source_line": 1565,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXLSR2",
+        "source": "LSR0",
+        "source_line": 1581,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "CCU2 sum; overlapping INJECT/F bits",
+        "sink": "F4",
+        "source": "F4_SLICE",
+        "source_line": 1275,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "CLK0",
+        "source": "G_HPBX0100",
+        "source_line": 712,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "LSR0",
+        "source": "H02E0501",
+        "source_line": 1437,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "L_HPBX0100",
+        "source": "G_VPTX0100",
+        "source_line": 6,
+        "tile": "TAP_R51C13:TAP_DRIVE"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0501",
+        "source": "N1_V02S0501",
+        "source_line": 165,
+        "tile": "CIB_R51C1:CIB_LR"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B4_SLICE",
+        "source": "B4",
+        "source_line": 3049,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "FCIC_SLICE",
+        "source": "FCOB_SLICE",
+        "source_line": 3143,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_VPTX0100",
+        "source": "G_HPRX0100",
+        "source_line": 6,
+        "tile": "MIB_R70C12:EBR_SPINE_LL2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0501",
+        "source": "JF5",
+        "source_line": 1931,
+        "tile": "CIB_R49C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B4",
+        "source": "H00R0000",
+        "source_line": 320,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_LLPCLK1",
+        "source": "G_HPFE0100",
+        "source_line": 132,
+        "tile": "MIB_R70C67:CMUX_LL_0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S2E1_JF5",
+        "source": "JDIC",
+        "source_line": 782,
+        "tile": "MIB_R47C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H00R0000",
+        "source": "Q4",
+        "source_line": 1348,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B3_SLICE",
+        "source": "B3",
+        "source_line": 3047,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_HPFE0100",
+        "source": "G_CLKO_LDCC1",
+        "source_line": 190,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIC",
+        "source": "JPADDIC_PIO",
+        "source_line": 596,
+        "tile": "MIB_R47C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B3",
+        "source": "Q3",
+        "source_line": 303,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A2_SLICE",
+        "source": "A2",
+        "source_line": 3029,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "FCIB_SLICE",
+        "source": "FCOA_SLICE",
+        "source_line": 3141,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "Q3",
+        "source": "Q3_SLICE",
+        "source_line": 3215,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A2",
+        "source": "V00B0000",
+        "source_line": 70,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_CLKI_LDCC1",
+        "source": "G_LDCC1CLKI",
+        "source_line": 162,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "V00B0000",
+        "source": "V02S0001",
+        "source_line": 2138,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_LDCC1CLKI",
+        "source": "G_JPCLKT61",
+        "source_line": 40,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI3_SLICE",
+        "source": "DI3",
+        "source_line": 3119,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "CLK1_SLICE",
+        "source": "MUXCLK1",
+        "source_line": 3083,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "LSR1_SLICE",
+        "source": "MUXLSR1",
+        "source_line": 3187,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0001",
+        "source": "Q0",
+        "source_line": 1891,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B0_SLICE",
+        "source": "B0",
+        "source_line": 3041,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "FCI_SLICE",
+        "source": "FCI",
+        "source_line": 3147,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_JPCLKT61",
+        "source": "S2W2_JINCK",
+        "source_line": 233,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI3",
+        "source": "F3",
+        "source_line": 3117,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXCLK1",
+        "source": "CLK0",
+        "source_line": 1561,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXLSR1",
+        "source": "LSR0",
+        "source_line": 1577,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "Q0",
+        "source": "Q0_SLICE",
+        "source_line": 3209,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B0",
+        "source": "V00T0000",
+        "source_line": 227,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "FCI",
+        "source": "HFIE0000",
+        "source_line": 3139,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S2W2_JINCK",
+        "source": "S2W2_JPADDI",
+        "source_line": 61,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "CCU2 sum; overlapping INJECT/F bits",
+        "sink": "F3",
+        "source": "F3_SLICE",
+        "source_line": 1271,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "V00T0000",
+        "source": "S1_V02N0401",
+        "source_line": 2180,
+        "tile": "R51C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S2W2_JPADDI",
+        "source": "S1W2_JPADDIA_PIO",
+        "source_line": 329,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI0_SLICE",
+        "source": "DI0",
+        "source_line": 3107,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "CLK0_SLICE",
+        "source": "MUXCLK0",
+        "source_line": 3081,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "LSR0_SLICE",
+        "source": "MUXLSR0",
+        "source_line": 3185,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N1_V02N0401",
+        "source": "F4",
+        "source_line": 1724,
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "DI0",
+        "source": "F0",
+        "source_line": 3105,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXCLK0",
+        "source": "CLK0",
+        "source_line": 1557,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "MUXLSR0",
+        "source": "LSR0",
+        "source_line": 1573,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F4",
+        "source": "F4_SLICE",
+        "source_line": 1275,
+        "tile": "R53C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F0",
+        "source": "F0_SLICE",
+        "source_line": 1259,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "CLK0",
+        "source": "G_HPBX0100",
+        "source_line": 712,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "LSR0",
+        "source": "H02E0501",
+        "source_line": 1437,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "L_HPBX0100",
+        "source": "G_VPTX0100",
+        "source_line": 6,
+        "tile": "TAP_R50C13:TAP_DRIVE"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0501",
+        "source": "V02S0501",
+        "source_line": 171,
+        "tile": "CIB_R50C1:CIB_LR"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D0_SLICE",
+        "source": "D0",
+        "source_line": 3089,
+        "tile": "R50C2:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D0",
+        "source": "Q0",
+        "source_line": 775,
+        "tile": "R50C2:PLC2"
+      }
+    ],
+    "schema_version": 1,
+    "scope": "observed",
+    "startup": "ready_unknown",
+    "undriven": [
+      {
+        "location": {
+          "col": 2,
+          "row": 51
+        },
+        "name": "HFIE0000"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "state": {
+    "configuration_sha256": "61e49880b76f2f90d9ef901216acfac07dc4368c8bec98c56d33795c178bc630",
+    "ebr_arrays": 208,
+    "ebr_initialization": {
+      "inactive": 208
+    },
+    "execution": "event_kernel;explicit_execution_plan",
+    "flip_flops": 83640,
+    "known_ebr_bits": 0,
+    "known_flip_flops": 3,
+    "known_lut_bits": 1338240,
+    "lut_arrays": 83640,
+    "lut_bits": 1338240,
+    "observed_wire_values": 96
+  },
+  "statistics": {
+    "combinational_evaluations": 481,
+    "discarded_timer_events": 0,
+    "driver_changes": 403,
+    "possible_clock_edges": 0,
+    "register_evaluations": 41,
+    "signal_changes": 498,
+    "time_batches": 8,
+    "trace_overwrites": 0
+  },
+  "trace": [
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "external:LFE5U-85F/R53C0/PIOC"
+        },
+        {
+          "reason": "initial driver",
+          "source": "output:LFE5U-85F/R53C0/PIOC"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 53
+        },
+        "name": "PAD_C"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "output:LFE5U-85F/R53C0/PIOC"
+        }
+      ],
+      "delta": 23,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 53
+        },
+        "name": "PAD_C"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "output:LFE5U-85F/R53C0/PIOC"
+        }
+      ],
+      "delta": 23,
+      "phase": "combinational",
+      "previous": "zero",
+      "time": {
+        "denominator": 1,
+        "numerator": 7000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 53
+        },
+        "name": "PAD_C"
+      }
+    }
+  ]
+}

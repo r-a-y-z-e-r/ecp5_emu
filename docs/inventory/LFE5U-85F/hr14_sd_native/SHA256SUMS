@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+334f92af878d0068e120bde9cee5bd068b491d15cf4becf0950000747d02d9ba  README.md
+d87897a8297a46e9c908cdea12cdc49a52f3ed6f7021cd69fab696b83e1b7c56  TOOLS.txt
+80e5071d6921e30945197e5dfdf1148d96af68a69acb441de2e77ba617cbea74  observations.log
+6e2baed02e6a93a77a4729e2b1ff0248f2b1adb84386ad999d349f731412bc7e  sd_native_read.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 93264a46c680a3523f0276f9ce9a9bf74255f13c50ec280bc221f890132d25d1  sd_native_read top.bit (target/reference/sd_native_read, built on the Mac; not stored)

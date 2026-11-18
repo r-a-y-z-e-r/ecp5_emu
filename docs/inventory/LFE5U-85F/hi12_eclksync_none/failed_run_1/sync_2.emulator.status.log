@@ -1,0 +1,8 @@
+New event kernel; scope: Observed; startup: Configured
+Executed FF: 1556; LUT4: 784; LUTRAM columns: 0; RAMW: 0; carry halves: 198; PIO: 2; routes: 20604
+Undriven wires: 4; inactive test-access descriptions: 3
+0 ns: finished=0 locked=1
+Fast mode: 1123 gates (1048 on demand), 1556 FF, 0 LUTRAM columns, 3 IOLOGIC, 0 EBR, 1 PLL, 0 OSC; compiled in 0.01 s
+
+64000000 ns: finished=1 locked=1
+Fast mode ran 1600000 cycles (0.064000 s of board time) in 3.269 s: 0.49 MHz

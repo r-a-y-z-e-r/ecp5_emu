@@ -1,0 +1,7 @@
+[project]
+name = "riscv_shell"
+top = "top"
+[sources]
+# picorv32.v is a symlink to ../../ulx3s/picorv32_console/picorv32.v.
+verilog = ["top.v", "picorv32.v"]
+constraints = "top.lpf"

@@ -1,0 +1,7 @@
+{
+  "cycles": 6000000,
+  "input": "r",
+  "marker": "RESTART",
+  "board_seconds": 3.3,
+  "needs": "peripherals"
+}

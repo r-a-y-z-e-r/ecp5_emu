@@ -1,0 +1,84 @@
+{
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration": {
+    "composed_fields": 28810,
+    "ebr_binding_statuses": {
+      "inactive": 208
+    },
+    "field_statuses": {
+      "ambiguous": 387,
+      "partial": 312,
+      "resolved": 8698,
+      "unmatched": 1346,
+      "unobserved": 18067
+    },
+    "init_image_count": 0,
+    "plc_words_from_tile_bit_patterns": 83640,
+    "resources_with_composed_fields": 1371,
+    "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+  },
+  "image": {
+    "bits_per_frame": 1136,
+    "cram_fingerprint": "fnv1a64:0b1648dc760140da",
+    "decoded_sha256": "8bb7a02804ad8c9af3bb94350d496ac85d18f98d298bea2b3f157762f062fb69",
+    "ebr_init_images": 0,
+    "frames": 13294,
+    "service": {
+      "native_comments": [
+        [
+          80,
+          97,
+          114,
+          116,
+          58,
+          32,
+          76,
+          70,
+          69,
+          53,
+          85,
+          45,
+          56,
+          53,
+          70,
+          45,
+          54,
+          67,
+          65,
+          66,
+          71,
+          65,
+          51,
+          56,
+          49
+        ]
+      ],
+      "native_registers": null,
+      "parser_defaults_may_apply": false,
+      "sysconfig_directives": {},
+      "text_comments": [
+        "Part: LFE5U-85F-6CABGA381"
+      ],
+      "text_variant": null
+    },
+    "source_bytes": 26431,
+    "source_kind": "text_config",
+    "source_sha256": "d1a6bf24846c2ca9b476d03dfe731923c45d54c61b15922e51e48e2c291f7467"
+  },
+  "schema_version": 1,
+  "state": {
+    "configuration_sha256": "13d10a5022b1373d10d8e29b3592dfc4fe3e962811274b20274666c363c14270",
+    "ebr_arrays": 208,
+    "ebr_initialization": {
+      "inactive": 208
+    },
+    "execution": "storage_snapshot;event_kernel_not_run",
+    "flip_flops": 83640,
+    "known_ebr_bits": 0,
+    "known_flip_flops": 0,
+    "known_lut_bits": 1338240,
+    "lut_arrays": 83640,
+    "lut_bits": 1338240,
+    "observed_wire_values": 0
+  }
+}

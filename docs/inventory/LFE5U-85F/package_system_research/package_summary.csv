@@ -1,0 +1,5 @@
+package,physical_balls,instruction_bits,boundary_cells,IDCODE,named_opcode_entries,private_opcode_entries,status
+CABGA381,381,8,750,0x41113043,23,76,official_archive_1.2;contained_file_1.13_2016;not_verified_on_silicon
+CABGA554,554,8,750,0x41113043,23,76,official_archive_1.2;contained_file_1.13_2016;not_verified_on_silicon
+CABGA756,756,8,750,0x41113043,23,76,official_archive_1.2;contained_file_1.13_2016;not_verified_on_silicon
+CSFBGA285,285,8,750,0x41113043,23,76,official_archive_1.2;contained_file_1.13_2016;not_verified_on_silicon

@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "ebr_instances": 208,
+  "addressing_profiles": 6,
+  "lane_template_bits": 204,
+  "configuration_fields": 6240,
+  "configuration_fragments": 7384,
+  "address_pin_roles": 238,
+  "write_mode_rows": 15,
+  "documented_mode_rows": 12,
+  "overlap_examples": 454,
+  "public_PDP_ports": 111,
+  "PDP_lowering_connections": 112,
+  "output_comparison_rows": 70,
+  "differing_PDP36_output_bits": 36,
+  "init_payload_positions": 18432,
+  "csdecode_transformations": 64,
+  "yosys_probe": {
+    "status": "matched",
+    "cases": 6,
+    "version": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+    "init_words_compared": 12288
+  },
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "6ea6ac9f84b2c4b3e079ecee3f5746d134e027525be974e4495070e04d68acc9"
+    },
+    {
+      "source": "contract",
+      "sha256": "39f54f9c1dfa69820838b5a503adc76ba03105bc93aafa73353420f967bbbbc0"
+    },
+    {
+      "source": "csv_reader",
+      "sha256": "b9217cbe26e36836a2d0ff3813c744196b1cd72521ed25973841eb6e0fbed532"
+    },
+    {
+      "source": "inventory_helpers",
+      "sha256": "b0837badfbd7d1db7126840c2d4fd8398da472035c0d831a10aae7c487c29af8"
+    },
+    {
+      "source": "json_helper",
+      "sha256": "407151ca2abd62e19081ca6a385f5decb637a0364ee64741bacf008d70e0e92b"
+    },
+    {
+      "source": "nextpnr_pack",
+      "sha256": "8877eaf3154bad794a2ca23888c571f1969b5320ec5b99b6de6939c7428fba7b"
+    },
+    {
+      "source": "nextpnr_writer",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    },
+    {
+      "source": "nextpnr_clock_domains",
+      "sha256": "aa905b858f7905366c065160366dda11e7a210f7c9df0ab6aba8aec87e4dd6d6"
+    },
+    {
+      "source": "EBR_fuzzer",
+      "sha256": "edf979d299fc41d67a7a28691af9b93eec7b01c3d98f31da7919b6e0b66a0a27"
+    },
+    {
+      "source": "brams_map_16kd.v",
+      "sha256": "a18f1fba714c81c8e469a20fc0fae0dcd93cfb56cf27037e3d0a11573f3595b4"
+    },
+    {
+      "source": "brams_16kd.txt",
+      "sha256": "faf42a66c03a939808f09e1ef580d647133d8c81863eb625c3cb65268f98ecb5"
+    },
+    {
+      "source": "cells_sim_ecp5.v",
+      "sha256": "c1ddb9de055c6c2a2225215ffd6ded48c884d12d5c7321eaf1a2f417d4f23ce0"
+    },
+    {
+      "source": "cells_bb_ecp5.v",
+      "sha256": "7631d36505f84d9a353ba7042e98999abcf4fe1f4f4041f0404255d4606e0680"
+    },
+    {
+      "source": "device_inventory.json",
+      "sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6"
+    },
+    {
+      "source": "decode_catalog.json",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "source": "resource_instances.csv",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "memory",
+      "sha256": "29ff320f103c096da8d2576052b6a321c94c14e98aa1af34727f4edb3ff189b4"
+    },
+    {
+      "source": "datasheet",
+      "sha256": "26570f8bb2b800123120829cacd75d818d7a985d573797610521b5bda2e293c3"
+    },
+    {
+      "source": "library",
+      "sha256": "339c0d511bf6b576f775118f47f3bda6235e24fcc8633b17e87c661ff6f263fd"
+    },
+    {
+      "source": "probe_source:dp1",
+      "sha256": "ee2d5a77fd82ad2f0c586272157ce55f05051d7e958b967bab4ecabf1c6aeebb"
+    },
+    {
+      "source": "probe_netlist:dp1",
+      "sha256": "e5465350d93b60538a36a5de6234ba176d0650ca681e0fd06beedbf0e5416a07"
+    },
+    {
+      "source": "probe_source:dp2",
+      "sha256": "805b2590666e1c1cbf3d1dba4a7f95b82008d1321a37c415c90a2baceb259694"
+    },
+    {
+      "source": "probe_netlist:dp2",
+      "sha256": "8d1cf9ab28c89741f15b6a21ae798d26a219e61c1d681bea3b7435a8cad0133b"
+    },
+    {
+      "source": "probe_source:dp4",
+      "sha256": "b705487757809be76d7688708d33daebd9e62e7ce38c8de109f5c9b303ec9560"
+    },
+    {
+      "source": "probe_netlist:dp4",
+      "sha256": "39efa9100509e8ad0776ab7803a25f14ad1a9c17aa01c79e0a952ccc3649e2c3"
+    },
+    {
+      "source": "probe_source:dp9",
+      "sha256": "fb9ea19e0bd6f8919de273413f579eb9632012eef7c7a1ae2aedb5ce6ad33973"
+    },
+    {
+      "source": "probe_netlist:dp9",
+      "sha256": "fce0f502ec0b63a0c414b672d173709f4ef08e4802b80857af631d56eb25c0ea"
+    },
+    {
+      "source": "probe_source:dp18",
+      "sha256": "95652a477fe87c184827dfd4eed19032d7e756f0425e6044808df3efe433d771"
+    },
+    {
+      "source": "probe_netlist:dp18",
+      "sha256": "e2b5065aafbe32e3554dc065f6e01438aac852e106ed50b4eb17177403bf1817"
+    },
+    {
+      "source": "probe_source:pdp36",
+      "sha256": "d77bedb202a9115722eb57e31e57fb1217092df52716f9c1b757bce11c27738e"
+    },
+    {
+      "source": "probe_netlist:pdp36",
+      "sha256": "25ce7eb205cd095ea1f16ca89954368a9d6db09cb34b3d79740254f418afd688"
+    },
+    {
+      "source": "yosys_binary",
+      "sha256": "9ed8ea21a37acb95305366fd1c9131e64fc3a5096147cb4beba1d3fade32a1a4"
+    }
+  ],
+  "limitations": [
+    "PDP36 physical output half order and primitive-specific mapping",
+    "CE/OCE/CS/reset priority for core output latch and optional register",
+    "ASYNC_RESET_RELEASE exact deassertion sequence and write gating",
+    "Partial-byte WRITETHROUGH and READBEFOREWRITE output granularity",
+    "Collision aperture and uncertainty granularity for mixed widths and masks",
+    "Guarantee for simultaneous same-value writes and nonoverlapping subword accesses",
+    "Defined behavior of undocumented width/write-mode combinations",
+    "Exact INIT/configuration effect on output latches and registers"
+  ]
+}

@@ -1,0 +1,8 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+10754bd0564a7eb8edc4ed6bb67f33480b90cd8680fae8a10a8b4cbaf2c7f3fb  flash_dump.config
+22033f1be199b7837aec69c129c8b3049d670db5f8db9f3c8a477873e9f11ee3  picorv32_flash.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): ef3b86629700add4759e97d71b75a84c07a1203c49be555c20af676a2149408a  board_dump.log (out/flash/, the board's UART output of flash_dump; not stored: it holds the flash's content)
+# Historical digest (artifact unavailable in this record): e0a0e9a158a240588ea0d7afefe7bdb246274d71669f7911d4adce36d5b9d889  board_picorv32_flash.log (out/flash/; not stored: it holds 16 bytes of flash content)
+# Historical digest (artifact unavailable in this record): 659ef779fae023dc5ecd927ef12bb456f4091237941c023de0d61692861b2bb8  flash_dump top.bit (target/reference/flash_dump, examples/ulx3s/build.sh; not stored)
+# Historical digest (artifact unavailable in this record): 864b42b8faaeb8bc319142a973984cb438f3b92f44323b0b02f42a53f4453be7  picorv32_flash top.bit (target/reference/picorv32_flash, examples/ulx3s/build.sh; not stored)

@@ -1,0 +1,1056 @@
+[
+  {
+    "profile": "F",
+    "plans": true,
+    "startup": "configured",
+    "scope": "observed",
+    "pll_resources": [
+      {
+        "family": "PLL",
+        "fields": [
+          {
+            "candidates": [
+              "INT_OP"
+            ],
+            "name": "FEEDBK_PATH",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "INTFB_WAKE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "INT_LOCK_STICKY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "EHXPLLL"
+            ],
+            "name": "MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "PLLRST_ENA",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "REFIN_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "STDBY_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKFB_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKI_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "FREQ_LOCK_ACCURACY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "ICP_CURRENT",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "KVCO",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_CAPACITOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_RESISTOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ENABLE_FILTEROPAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_EN_UP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FLOAT_ICP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FORCE_VFILTER",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMCREF_SEL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_GAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ICP_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESGRND",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PLL_LOCK_MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOP_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOP_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOP_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS2_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS3_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOS_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOS_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "DPHASE_SOURCE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DIVA"
+            ],
+            "name": "OUTDIVIDER_MUXA",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVB"
+            ],
+            "name": "OUTDIVIDER_MUXB",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVC"
+            ],
+            "name": "OUTDIVIDER_MUXC",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVD"
+            ],
+            "name": "OUTDIVIDER_MUXD",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "SYNC_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG1_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG2_TEST",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R4C1/EHXPLL_UL",
+        "rule": "EHXPLLL static settings: dividers minus one and CPHASE/FPHASE as nextpnr writes them; internal FEEDBK_PATH selects CLKINTFB, external feedback output found by tracing the CLKFB route; outputs follow Fout = Fin x CLKFB_DIV x Dfb / (CLKI_DIV x Dout) with phase relative to the feedback output and an assumed 50% duty; LOCK high from the start and static output enables override ENCLK (HC05 on the board); reference period learnt from two rising edges; RST/STDBY act only where enabled and hold outputs and LOCK low, outputs restart on their phase grid and LOCK rises 98 304 phase-detector periods plus feedback latency and an acquisition time after the fall (HC07; the board's slow restart ramp is not modelled); dynamic phase and REFCLK bypass not executed"
+      }
+    ],
+    "lock_transitions_ns": [
+      [
+        0,
+        "1"
+      ]
+    ],
+    "clkop_periods_ns": [
+      10
+    ],
+    "first_clkop_rise_ns": 70,
+    "uart_returncode": 0,
+    "uart_records": 4,
+    "uart_cycles": 800000,
+    "uart_parse_ok": true
+  },
+  {
+    "profile": "G",
+    "plans": true,
+    "startup": "configured",
+    "scope": "observed",
+    "pll_resources": [
+      {
+        "family": "PLL",
+        "fields": [
+          {
+            "candidates": [
+              "INT_OP"
+            ],
+            "name": "FEEDBK_PATH",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "INTFB_WAKE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "INT_LOCK_STICKY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "EHXPLLL"
+            ],
+            "name": "MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "PLLRST_ENA",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "REFIN_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "STDBY_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKFB_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKI_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "FREQ_LOCK_ACCURACY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "ICP_CURRENT",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "KVCO",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_CAPACITOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_RESISTOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ENABLE_FILTEROPAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_EN_UP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FLOAT_ICP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FORCE_VFILTER",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMCREF_SEL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_GAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ICP_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESGRND",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PLL_LOCK_MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOP_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOP_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOP_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS2_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS3_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOS_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOS_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "DPHASE_SOURCE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DIVA"
+            ],
+            "name": "OUTDIVIDER_MUXA",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVB"
+            ],
+            "name": "OUTDIVIDER_MUXB",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVC"
+            ],
+            "name": "OUTDIVIDER_MUXC",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVD"
+            ],
+            "name": "OUTDIVIDER_MUXD",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "SYNC_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG1_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG2_TEST",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R4C1/EHXPLL_UL",
+        "rule": "EHXPLLL static settings: dividers minus one and CPHASE/FPHASE as nextpnr writes them; internal FEEDBK_PATH selects CLKINTFB, external feedback output found by tracing the CLKFB route; outputs follow Fout = Fin x CLKFB_DIV x Dfb / (CLKI_DIV x Dout) with phase relative to the feedback output and an assumed 50% duty; LOCK high from the start and static output enables override ENCLK (HC05 on the board); reference period learnt from two rising edges; RST/STDBY act only where enabled and hold outputs and LOCK low, outputs restart on their phase grid and LOCK rises 98 304 phase-detector periods plus feedback latency and an acquisition time after the fall (HC07; the board's slow restart ramp is not modelled); dynamic phase and REFCLK bypass not executed"
+      }
+    ],
+    "lock_transitions_ns": [
+      [
+        0,
+        "1"
+      ]
+    ],
+    "clkop_periods_ns": [
+      10
+    ],
+    "first_clkop_rise_ns": 70,
+    "uart_returncode": 0,
+    "uart_records": 4,
+    "uart_cycles": 800000,
+    "uart_parse_ok": true
+  },
+  {
+    "profile": "H",
+    "plans": true,
+    "startup": "configured",
+    "scope": "observed",
+    "pll_resources": [
+      {
+        "family": "PLL",
+        "fields": [
+          {
+            "candidates": [
+              "INT_OP",
+              "INT_OS"
+            ],
+            "name": "FEEDBK_PATH",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "INTFB_WAKE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "INT_LOCK_STICKY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "EHXPLLL"
+            ],
+            "name": "MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "PLLRST_ENA",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "REFIN_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "STDBY_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKFB_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKI_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_FPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "FREQ_LOCK_ACCURACY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "ICP_CURRENT",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "KVCO",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_CAPACITOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "LPF_RESISTOR",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ENABLE_FILTEROPAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_EN_UP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FLOAT_ICP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_FORCE_VFILTER",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMCREF_SEL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_GAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_GMC_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_ICP_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_PRESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESET",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG_LF_RESGRND",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PLL_LOCK_MODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOP_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOP_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOP_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS2_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS3_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ENABLED"
+            ],
+            "name": "CLKOS_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "0"
+            ],
+            "name": "CLKOS_TRIM_DELAY",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "RISING"
+            ],
+            "name": "CLKOS_TRIM_POL",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "DPHASE_SOURCE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "DIVA"
+            ],
+            "name": "OUTDIVIDER_MUXA",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVB"
+            ],
+            "name": "OUTDIVIDER_MUXB",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVC"
+            ],
+            "name": "OUTDIVIDER_MUXC",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DIVD"
+            ],
+            "name": "OUTDIVIDER_MUXD",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "DISABLED"
+            ],
+            "name": "SYNC_ENABLE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOP_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS2_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_CPHASE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS3_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "CLKOS_DIV",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG1_TEST",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "MFG2_TEST",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R4C1/EHXPLL_UL",
+        "rule": "EHXPLLL static settings: dividers minus one and CPHASE/FPHASE as nextpnr writes them; internal FEEDBK_PATH selects CLKINTFB, external feedback output found by tracing the CLKFB route; outputs follow Fout = Fin x CLKFB_DIV x Dfb / (CLKI_DIV x Dout) with phase relative to the feedback output and an assumed 50% duty; LOCK high from the start and static output enables override ENCLK (HC05 on the board); reference period learnt from two rising edges; RST/STDBY act only where enabled and hold outputs and LOCK low, outputs restart on their phase grid and LOCK rises 98 304 phase-detector periods plus feedback latency and an acquisition time after the fall (HC07; the board's slow restart ramp is not modelled); dynamic phase and REFCLK bypass not executed"
+      }
+    ],
+    "lock_transitions_ns": [
+      [
+        0,
+        "1"
+      ]
+    ],
+    "clkop_periods_ns": [
+      10
+    ],
+    "first_clkop_rise_ns": 70,
+    "uart_returncode": 0,
+    "uart_records": 4,
+    "uart_cycles": 800000,
+    "uart_parse_ok": true
+  }
+]

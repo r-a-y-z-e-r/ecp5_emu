@@ -1,0 +1,20 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+218ec06f790bed41eec928f04e8abf3ee427404841ad7ff3d1f38b655daccc85  hi08.v
+ae4b5844a697ba24cbd4cd659d18741b0da1fbed38ec329dbd436916038e2a4a  hi08b.v
+a654e31631706c1e9716d3a3320a2941e6dfa4d8c75b9de27695ee3c74b2691f  hi08c.v
+e1cecd6fe7798b690d87795d3e8e4ddbc7ba16b23cfa35a74c0d8f94e0b531db  hi08.lpf
+a4277b49c0b95b6b498545d22f621689b5f771169c1cb684dda4598674a55984  hi08.config
+1eda0e91ab1bf64b8565e04151a7858d86649fef2103786d396b192af0c7654c  hi08b.config
+f432d9a8679b11678f80618c55f4b723061ec10a56270a4bf0a46159071b4d1b  hi08c.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+a9bfbfd042265842db38317723dda1483334243b55d72613d854db39f4c8f7b9  hi08_model.py
+6678990fce6709c2b7e6a4b2902111c24cd05034a643122be7745d7e4f5571d7  observations.log
+1a282dfdf7a63758b5fd9131741e091861006e59c5b4e05bd9c547a921fb6101  observations_b.log
+55ee337d0b1ece6392f945b2b89358a23651bce824713778e8730269859c7e1e  observations_c.log
+2fd647e85394eb346116675fa88d2c8a50af7379fcd2894e896a7ff52aca5b04  pass.txt
+f7325336d2943fea4523a0934debd34ccbd78c63fd497f87708b7f002275c34d  pass_b.txt
+b3d097227ddb566803338b250894f3b5fe7215b549a074c135200bdd111ef577  pass_c.txt
+269ba98e5a73c90a6288bc7a419c6b296f24cae99a13efa1fc4ab489bdf57ee8  model_check.txt
+# Historical digest (artifact unavailable in this record): 30df0ed0977d1f3afb947a5829e61cfbcbeaac3abffdc8f3ffc60485ef65c42d  hi08.bit (ecppack --compress hi08.config; not stored)
+# Historical digest (artifact unavailable in this record): f8c8aecc982639b7497589125fc87bc605ca1a0bba7c7b534ad00fdc73a101b4  hi08b.bit (ecppack --compress hi08b.config; not stored)
+# Historical digest (artifact unavailable in this record): ace537a20c7bab1e7ac94b11385ec30c6d7e906a0aa07c4064aa6293acc70c92  hi08c.bit (ecppack --compress hi08c.config; not stored)

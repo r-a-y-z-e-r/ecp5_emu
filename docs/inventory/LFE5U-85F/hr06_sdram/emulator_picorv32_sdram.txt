@@ -1,0 +1,9 @@
+PicoRV32 from SDRAM
+pass 0: primes below 2000: 303, 855498 cycles
+pass 0: memtest 256 KB: 0 errors
+pass 1: primes below 2000: 303, 854997 cycles
+pass 1: memtest 256 KB: 0 errors
+pass 2: primes below 2000: 303, 855452 cycles
+pass 2: memtest 256 KB: 0 errors
+pass 3: primes below 2000: 303, 855452 cycles
+pass 3: memtest 256 KB: 0 errors

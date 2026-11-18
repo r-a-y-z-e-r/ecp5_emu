@@ -1,0 +1,6 @@
+[project]
+name = "video_life"
+top = "top"
+[sources]
+verilog = ["top.v", "io.v", "pll.v", "tmds.v", "video_out.v"]
+constraints = "top.lpf"

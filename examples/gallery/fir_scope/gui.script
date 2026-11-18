@@ -1,0 +1,23 @@
+# fir_scope in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# The window runs this DSP-dense design at about 0.5 MHz, so a frame of two
+# 4 Hz periods (12.5 million clocks) takes some 23 s here, and a 64 Hz frame
+# about 1.5 s. Keys and buttons queue in the design's FIFO and act one per
+# frame, so the presses come early and the script then lets the frames walk
+# up the tone ladder. Buttons are held for a second: the design debounces
+# them for 10 ms of board time.
+0 rate max
+0 run
+1 board 3d
+2 button 2 down    # FIRE2: noise high, a band of '.' around the clean '#'
+3 button 2 up
+5 button 3 down    # UP: 8 Hz
+6 button 3 up
+8 button 3 down    # UP: 16 Hz
+9 button 3 up
+11 button 3 down   # UP: 32 Hz
+12 button 3 up
+14 button 3 down   # UP: 64 Hz, the output shrinks
+15 button 3 up
+17 button 6 down   # RIGHT: filter 2, the ALU54B one, the same trace
+18 button 6 up
+85 quit

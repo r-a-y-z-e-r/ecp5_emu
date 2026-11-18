@@ -1,0 +1,10 @@
+# Full-width closed map, timing shelf with 8 px gap, stable zoomed centre, Waves resize, then fit.
+0 size 1500 950
+0 pause
+0 view 0.85 0.5 19
+2 critical on
+4 critical off
+6 waves open
+8 waves close
+10 fit
+12 quit

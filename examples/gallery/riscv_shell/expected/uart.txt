@@ -1,0 +1,86 @@
+RISC-V shell on ULX3S
+PicoRV32 RV32IMC | 25000000 Hz | 32768 bytes RAM
+firmware: 11328 bytes
+> reboot
+RISC-V shell on ULX3S
+PicoRV32 RV32IMC | 25000000 Hz | 32768 bytes RAM
+firmware: 11328 bytes
+> help
+help                 list commands
+info                 CPU and firmware details
+led [hex]            read/set eight LEDs
+buttons              debounced button levels
+knight [n]           LED sweeps (default 3)
+primes [n]           sieve below n (default 10000)
+mandel               64x24 fixed-point Mandelbrot
+calc <expr>          signed integer + - * / % ()
+peek <addr>          read a mapped word
+poke <addr> <value>  write a mapped word
+dump <addr> [len]    RAM bytes (default 64)
+memtest              test free RAM, destroys contents
+uptime               seconds.milliseconds since reset
+reboot               reset CPU and peripherals
+> info
+CPU: PicoRV32
+ISA: RV32IMC
+clock: 25000000 Hz
+RAM: 32768 bytes
+firmware: 11328 bytes
+stack pointer: 0x00007f70
+build: 2026-11-16
+> led a5
+led: a5
+> led
+led: a5
+> buttons
+PWR=0 FIRE1=0 FIRE2=0 UP=0 DOWN=0 LEFT=0 RIGHT=0
+> knight 1
+done
+> primes 10000
+primes below 10000: 1229, 1305904 cycles
+> calc (7+5)*3-10/4
+34
+> calc 1/0
+division by zero
+> calc -17%5
+-2
+> mandel
+                    .........................                   
+                ......................*-.........               
+             ........................::=--+.........            
+          ..........................::-@%=-:...........         
+         ........................:::-+@@@@*-:...........        
+       ......................::------+@@@@=--::::*........      
+      .....................:::=@@*@@@@@@@@@@@#=++*+........     
+     ....................:::-==@@@@@@@@@@@@@@@@@@#::........    
+    ............:+:::::::::-=#@@@@@@@@@@@@@@@@@@@*-@.........   
+   ............::-+%==@==--=@@@@@@@@@@@@@@@@@@@@@@+-:.........  
+   ...........::-=#@@@@@@@+*@@@@@@@@@@@@@@@@@@@@@@@:..........  
+   .....:::::-==+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:..........  
+   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@=-::..........  
+   .....:::::-==+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-:..........  
+   ...........::-=#@@@@@@@**@@@@@@@@@@@@@@@@@@@@@@@:..........  
+   ............::-+%==@==--=@@@@@@@@@@@@@@@@@@@@@@+-:.........  
+    ............:+:::::::::-=#@@@@@@@@@@@@@@@@@@@*-@.........   
+     ....................:::-==@@@@@@@@@@@@@@@@@@#::........    
+      .....................:::=@@*@@@@@@@@@@@#=++*+........     
+       ......................::------+@@@@=--::::*........      
+         ........................:::-+@@@@*-:...........        
+          ..........................::-@%=-:...........         
+             ........................::=--+.........            
+                ......................*-.........               
+mandel: 1025262 cycles
+> memtest
+memtest [0x000032cc, 0x00007b70): OK, 902055 cycles
+> dump 0 64
+00000000: 17 81 00 00 13 01 01 00 97 32 00 00 93 82 82 c3
+00000010: 17 33 00 00 13 03 c3 2b 63 f6 62 00 23 a0 02 00
+00000020: 91 02 dd bf 97 00 00 00 e7 80 a0 00 01 a0 75 71
+00000030: 06 c7 22 c5 26 c3 4a c1 ce de d2 dc d6 da da d8
+> poke 0x7000 0x12345678
+00007000: 12345678
+> peek 0x7000
+00007000: 12345678
+> bogus
+unknown command: bogus (try help)
+> 

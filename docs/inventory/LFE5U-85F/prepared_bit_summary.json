@@ -1,0 +1,87 @@
+{
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration": {
+    "composed_fields": 28810,
+    "ebr_binding_statuses": {
+      "inactive": 208
+    },
+    "field_statuses": {
+      "ambiguous": 387,
+      "partial": 312,
+      "resolved": 8698,
+      "unmatched": 1346,
+      "unobserved": 18067
+    },
+    "init_image_count": 0,
+    "plc_words_from_tile_bit_patterns": 83640,
+    "resources_with_composed_fields": 1371,
+    "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+  },
+  "image": {
+    "bits_per_frame": 1136,
+    "cram_fingerprint": "fnv1a64:0b1648dc760140da",
+    "decoded_sha256": "f3a5d5fefa9fa32c0b3c7c9acec8a26216681ce815f72482b69ce5bae936818d",
+    "ebr_init_images": 0,
+    "frames": 13294,
+    "service": {
+      "native_comments": [
+        [
+          80,
+          97,
+          114,
+          116,
+          58,
+          32,
+          76,
+          70,
+          69,
+          53,
+          85,
+          45,
+          56,
+          53,
+          70,
+          45,
+          54,
+          67,
+          65,
+          66,
+          71,
+          65,
+          51,
+          56,
+          49
+        ]
+      ],
+      "native_registers": {
+        "ctrl0": 1073741824,
+        "ctrl1": 1157627904,
+        "sed_reference": 4294967295,
+        "usercode": 0
+      },
+      "parser_defaults_may_apply": true,
+      "sysconfig_directives": {},
+      "text_comments": [],
+      "text_variant": null
+    },
+    "source_bytes": 1927725,
+    "source_kind": "bitstream",
+    "source_sha256": "11569c46ad9bd36dfbd5d2e252e7d3bef888fdfd3d2e8db21f9febca46d438be"
+  },
+  "schema_version": 1,
+  "state": {
+    "configuration_sha256": "845e62d8e4673d29683677569ec0ca20493f2fe8c38c5c885fc238b9ee63838c",
+    "ebr_arrays": 208,
+    "ebr_initialization": {
+      "inactive": 208
+    },
+    "execution": "storage_snapshot;event_kernel_not_run",
+    "flip_flops": 83640,
+    "known_ebr_bits": 0,
+    "known_flip_flops": 0,
+    "known_lut_bits": 1338240,
+    "lut_arrays": 83640,
+    "lut_bits": 1338240,
+    "observed_wire_values": 0
+  }
+}

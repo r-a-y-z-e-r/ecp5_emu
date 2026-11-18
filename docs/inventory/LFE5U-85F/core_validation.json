@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-22",
+  "phase": "architecture_foundation",
+  "runtime_changed": true,
+  "data_manifest_reproducible": true,
+  "rust_unit_tests_passed": 18,
+  "new_portable_tests_passed": 5,
+  "local_integration_tests_passed": 2,
+  "native_clock_segment_relationships_matched": 197408,
+  "legacy_counter_observations": 65538,
+  "clippy": "all_targets;no_warnings",
+  "format": "passed",
+  "not_rerun": [
+    "real_bitstream_matches_text_config",
+    "native_bitstream_and_text_decode_the_same_ebr_dsp_and_init"
+  ],
+  "hardware": "not_run",
+  "event_kernel": "not_implemented_by_DeviceModel",
+  "summary": {
+    "device": "LFE5U-85F",
+    "manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+    "database_revision": "9754ff473bfaa1e6edfaf57ce13bd447c76a88f6",
+    "trellis_revision": "a31ff7042e712c0e2ad217054116ce2c4995f5c7",
+    "tiles": 14231,
+    "tile_types": 148,
+    "resources": 53690,
+    "resource_families": {
+      "ALU54": 78,
+      "BRGECLKSYNC": 2,
+      "CLKDIVF": 4,
+      "DCC_CENTRE": 4,
+      "DCC_MID": 56,
+      "DCS": 2,
+      "DDRDLL": 4,
+      "DLLDELD": 12,
+      "DQSBUFM": 14,
+      "DSP_BLOCK": 39,
+      "DSP_SLICE": 78,
+      "DTR": 1,
+      "EBR": 208,
+      "ECLKBRIDGECS": 2,
+      "ECLKSYNCB": 8,
+      "GSR": 1,
+      "IOLOGIC": 224,
+      "JTAGG": 1,
+      "MULT18": 156,
+      "OSCG": 1,
+      "PIO": 365,
+      "PLC2": 10455,
+      "PLL": 4,
+      "SEDGA": 1,
+      "SIOLOGIC": 141,
+      "SLICE": 41820,
+      "TRELLIS_ECLKBUF": 8,
+      "USRMCLK": 1
+    },
+    "site_references": 54721,
+    "site_bindings": {
+      "GroupMember": 5733,
+      "Instance": 47372,
+      "InstanceCandidate": 120,
+      "Unresolved": 1496
+    },
+    "package_balls": {
+      "CABGA381": 381,
+      "CABGA554": 554,
+      "CABGA756": 756,
+      "CSFBGA285": 285
+    },
+    "bonded_pio_references": 947,
+    "resource_ports": 1406163,
+    "plc_internal_node_views": 177735,
+    "plc_internal_ports": 1840080,
+    "route_templates": 69287,
+    "placed_route_descriptions": 28013216,
+    "behavioral_models": "not_executed_by_architecture_layer"
+  },
+  "source_files": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "415939d78fb9c2be2e93155bca929c2ea2bafd692e6531be2d721a8c0565048a"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "0ebd1b0a1a2e68dbcce7fe35a0d3416415375c638e51483d2543cd6d51434229"
+    },
+    {
+      "path": "src/database.rs",
+      "sha256": "53a31dd6bcdb23854608cff2ed25193a96900388bc0f9bb8b868c9fd7b796cbd"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "97742ef55b48c8352ae8ec1feaecdbeb3d7b399f4bfee7bf2fbdb4aa1c91288f"
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "8be2fcf39e9e8e05eef2dcca32f9d52a711c28b0eebb0290cc05dc9a6a1d880b"
+    },
+    {
+      "path": "src/model/mod.rs",
+      "sha256": "33ae10c74c53e4d45838a3704fbfc05915c20abfaabec552ee096102343cd3ab"
+    },
+    {
+      "path": "src/model/catalog.rs",
+      "sha256": "92dd7c62677a1c888f65b7a5e349f8e64ba8d702498463de0efc3794acc1798c"
+    },
+    {
+      "path": "src/model/topology.rs",
+      "sha256": "cf38f9a34e412f464e0e6fd61961c8c65f681919be492896e7943b7930781e44"
+    },
+    {
+      "path": "tests/device_model.rs",
+      "sha256": "4c588eba864bab6253c8f1a67d078d448ed19f8b241964e834364154ea0584ac"
+    },
+    {
+      "path": "tools/build_model_manifest.py",
+      "sha256": "e2dd432a5db6a76a531052041f902204b1cac2ce5e51cf2d156a539911aa2da6"
+    },
+    {
+      "path": "docs/CORE_STATUS.md",
+      "sha256": "c68e332984cf9f90a0649667532ca084ef411bf817899a4cbfcac470351fdd49"
+    }
+  ]
+}

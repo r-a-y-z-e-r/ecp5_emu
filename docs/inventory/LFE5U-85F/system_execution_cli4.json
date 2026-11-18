@@ -1,0 +1,5336 @@
+{
+  "image": {
+    "bits_per_frame": 1136,
+    "cram_fingerprint": "fnv1a64:f36f81844903a21c",
+    "decoded_sha256": "fca945b83813af506f6dbc46e04f6219d3ba4b06b157a33fe717004dda67ca98",
+    "ebr_init_images": 0,
+    "frames": 13294,
+    "service": {
+      "native_comments": [
+        [
+          80,
+          97,
+          114,
+          116,
+          58,
+          32,
+          76,
+          70,
+          69,
+          53,
+          85,
+          45,
+          56,
+          53,
+          70,
+          45,
+          54,
+          67,
+          65,
+          66,
+          71,
+          65,
+          51,
+          56,
+          49
+        ]
+      ],
+      "native_registers": {
+        "ctrl0": 1073741824,
+        "ctrl1": 1157627904,
+        "sed_reference": 4294967295,
+        "usercode": 0
+      },
+      "parser_defaults_may_apply": true,
+      "sysconfig_directives": {},
+      "text_comments": [],
+      "text_variant": null
+    },
+    "source_bytes": 280506,
+    "source_kind": "bitstream",
+    "source_sha256": "582ef465168dbbfeb93604ca20ae0ced3125df9017182a3e99ace8dbaa2cfa65"
+  },
+  "observations": [
+    {
+      "time_ns": 0,
+      "values": {
+        "pin:A5": "z",
+        "pin:A6": "z",
+        "pin:A7": "z",
+        "pin:A8": "z",
+        "sys:done": "zero",
+        "sys:goe": "zero",
+        "sys:gsr": "one",
+        "sys:gwdis": "one",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 1,
+      "values": {
+        "pin:A5": "z",
+        "pin:A6": "z",
+        "pin:A7": "z",
+        "pin:A8": "z",
+        "sys:done": "zero",
+        "sys:goe": "zero",
+        "sys:gsr": "one",
+        "sys:gwdis": "one",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 2,
+      "values": {
+        "pin:A5": "z",
+        "pin:A6": "z",
+        "pin:A7": "z",
+        "pin:A8": "z",
+        "sys:done": "zero",
+        "sys:goe": "zero",
+        "sys:gsr": "one",
+        "sys:gwdis": "one",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 3,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "one",
+        "pin:A8": "zero",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "one",
+        "sys:gwdis": "one",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 4,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "one",
+        "pin:A8": "zero",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "one",
+        "sys:gwdis": "one",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 5,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "zero",
+        "pin:A8": "one",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "zero",
+        "sys:gwdis": "zero",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 6,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "zero",
+        "pin:A8": "one",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "zero",
+        "sys:gwdis": "zero",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 7,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "zero",
+        "pin:A8": "one",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "zero",
+        "sys:gwdis": "zero",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 8,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "zero",
+        "pin:A8": "one",
+        "sys:done": "zero",
+        "sys:goe": "one",
+        "sys:gsr": "zero",
+        "sys:gwdis": "zero",
+        "sys:ready": "zero"
+      }
+    },
+    {
+      "time_ns": 9,
+      "values": {
+        "pin:A5": "one",
+        "pin:A6": "zero",
+        "pin:A7": "zero",
+        "pin:A8": "one",
+        "sys:done": "one",
+        "sys:goe": "one",
+        "sys:gsr": "zero",
+        "sys:gwdis": "zero",
+        "sys:ready": "one"
+      }
+    }
+  ],
+  "plan": {
+    "clock_aliases": [
+      {
+        "raw": {
+          "location": {
+            "col": 71,
+            "row": 2
+          },
+          "name": "G_HPBX0000"
+        },
+        "segment": {
+          "location": {
+            "col": 78,
+            "row": 2
+          },
+          "name": "L_HPBX0000"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 78,
+            "row": 2
+          },
+          "name": "G_VPTX0000"
+        },
+        "segment": {
+          "location": {
+            "col": 77,
+            "row": 22
+          },
+          "name": "G_VPTX0000"
+        }
+      },
+      {
+        "raw": {
+          "location": {
+            "col": 77,
+            "row": 22
+          },
+          "name": "G_HPRX0000"
+        },
+        "segment": {
+          "location": {
+            "col": 0,
+            "row": 0
+          },
+          "name": "G_URPCLK0"
+        }
+      }
+    ],
+    "configuration_sha256": "f679657c6930cf563d52e1a7e2fddfd13c868f50ca62eea0ec7f769e6a213186",
+    "counts": {
+      "carry_halves": 0,
+      "constants": 4,
+      "dcc_bypasses": 1,
+      "flip_flops": 0,
+      "lut4": 0,
+      "lutram_columns": 4,
+      "pio": 20,
+      "ramw": 1,
+      "routes": 309,
+      "wide_muxes": 0
+    },
+    "excluded_routes": [
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JF5",
+        "source": "JF5_CIBTEST",
+        "source_line": 2718,
+        "tile": "CIB_R50C1:CIB_LR"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C76:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C77:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C64:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C63:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C83:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C103:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C110:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C116:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C119:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JQ0",
+        "source": "JQ0_CIBTEST",
+        "source_line": 2744,
+        "tile": "CIB_R1C121:CIB"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JF5",
+        "source": "JF5_CIBTEST",
+        "source_line": 2718,
+        "tile": "CIB_R11C1:CIB_LR"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JF5",
+        "source": "JF5_CIBTEST",
+        "source_line": 2718,
+        "tile": "CIB_R16C1:CIB_LR"
+      },
+      {
+        "rule": "post-load profile: CIBTEST access inactive (not hardware-validated)",
+        "sink": "JF5",
+        "source": "JF5_CIBTEST",
+        "source_line": 2718,
+        "tile": "CIB_R35C1:CIB_LR"
+      }
+    ],
+    "fields": [
+      {
+        "candidates": [
+          "JA3"
+        ],
+        "name": "CIB.JA3MUX",
+        "tile": "CIB_R11C1:CIB_LR"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "name": "CIB.JB3MUX",
+        "tile": "CIB_R11C1:CIB_LR"
+      },
+      {
+        "candidates": [
+          "JA0"
+        ],
+        "name": "CIB.JA0MUX",
+        "tile": "CIB_R1C18:CIB"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "name": "CIB.JB0MUX",
+        "tile": "CIB_R1C18:CIB"
+      },
+      {
+        "candidates": [
+          "JA0"
+        ],
+        "name": "CIB.JA0MUX",
+        "tile": "CIB_R1C19:CIB"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "name": "CIB.JB0MUX",
+        "tile": "CIB_R1C19:CIB"
+      },
+      {
+        "candidates": [
+          "JA0"
+        ],
+        "name": "CIB.JA0MUX",
+        "tile": "CIB_R1C4:CIB"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "name": "CIB.JB0MUX",
+        "tile": "CIB_R1C4:CIB"
+      },
+      {
+        "candidates": [
+          "JA5"
+        ],
+        "name": "CIB.JA5MUX",
+        "tile": "CIB_R94C4:CIB"
+      },
+      {
+        "candidates": [
+          "T0"
+        ],
+        "name": "SYSCONFIG.DONEPHASE",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "ON"
+        ],
+        "name": "SYSCONFIG.DONE_EX",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "T1"
+        ],
+        "name": "SYSCONFIG.GOEPHASE",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "T2"
+        ],
+        "name": "SYSCONFIG.GSRPHASE",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "T2"
+        ],
+        "name": "SYSCONFIG.GWEPHASE",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "4"
+        ],
+        "name": "SYSCONFIG.WAKE_UP",
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "candidates": [
+          "ON"
+        ],
+        "name": "SYSCONFIG.DONE_EX",
+        "tile": "MIB_R95C6:EFB2_PICB0"
+      },
+      {
+        "candidates": [
+          "CLK"
+        ],
+        "name": "CLK1.CLKMUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "LSR"
+        ],
+        "name": "LSR1.LSRMUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A0"
+        ],
+        "name": "SLICEA.A0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A1"
+        ],
+        "name": "SLICEA.A1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B0"
+        ],
+        "name": "SLICEA.B0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B1"
+        ],
+        "name": "SLICEA.B1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C0"
+        ],
+        "name": "SLICEA.C0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C1"
+        ],
+        "name": "SLICEA.C1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D0"
+        ],
+        "name": "SLICEA.D0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D1"
+        ],
+        "name": "SLICEA.D1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "DPRAM"
+        ],
+        "name": "SLICEA.MODE",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "WRE"
+        ],
+        "name": "SLICEA.WREMUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A0"
+        ],
+        "name": "SLICEB.A0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A1"
+        ],
+        "name": "SLICEB.A1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B0"
+        ],
+        "name": "SLICEB.B0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B1"
+        ],
+        "name": "SLICEB.B1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C0"
+        ],
+        "name": "SLICEB.C0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C1"
+        ],
+        "name": "SLICEB.C1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D0"
+        ],
+        "name": "SLICEB.D0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D1"
+        ],
+        "name": "SLICEB.D1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "DPRAM"
+        ],
+        "name": "SLICEB.MODE",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A0"
+        ],
+        "name": "SLICEC.A0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "A1"
+        ],
+        "name": "SLICEC.A1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B0"
+        ],
+        "name": "SLICEC.B0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "B1"
+        ],
+        "name": "SLICEC.B1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C0"
+        ],
+        "name": "SLICEC.C0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "C1"
+        ],
+        "name": "SLICEC.C1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D0"
+        ],
+        "name": "SLICEC.D0MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "D1"
+        ],
+        "name": "SLICEC.D1MUX",
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "candidates": [
+          "RAMW"
+        ],
+        "name": "SLICEC.MODE",
+        "tile": "R2C71:PLC2"
+      }
+    ],
+    "limitations": [
+      "image already loaded; no physical POR, transport, START binding or inferred wake-clock timing; user GSR ASYNC only",
+      "unsupported reachable modes fail; full behavioral coverage is not claimed",
+      "observed scope does not execute unobserved sequential state; all storage remains present",
+      "undriven controls remain unknown, without inferred pulldowns",
+      "basic binary single-ended PIO; no electrical timing, thresholds or bank-power model",
+      "LUTRAM: standard A/B DPRAM + C RAMW with zero C INIT; atomic writes, conservative X/Z policy; no hardware collision validation; C FF SD=1 data explicitly X/unmodelled",
+      "post-load profiles treat unmodelled CIBTEST access as inactive; retained separately, not hardware-validated"
+    ],
+    "lutram": [
+      {
+        "columns": [
+          "SLICEA.K0",
+          "SLICEA.K1",
+          "SLICEB.K0",
+          "SLICEB.K1"
+        ],
+        "plc": "R2C71:PLC2",
+        "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+        "unmodelled_c_ff_di": [],
+        "write_clock_mux": "CLK",
+        "write_enable_mux": "WRE"
+      }
+    ],
+    "resources": [
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C103/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C110/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C116/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C119/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C121/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OUTPUT_LVCMOS33",
+              "OUTPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "8"
+            ],
+            "name": "PIOA.DRIVE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.OPENDRAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C18/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOB.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OUTPUT_LVCMOS33",
+              "OUTPUT_LVTTL33"
+            ],
+            "name": "PIOB.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOB.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "8"
+            ],
+            "name": "PIOB.DRIVE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.OPENDRAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOB.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOB.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C18/PIOB",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OUTPUT_LVCMOS33",
+              "OUTPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "8"
+            ],
+            "name": "PIOA.DRIVE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.OPENDRAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C4/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C63/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOB.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOB.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOB.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOB.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOB.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOB.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOB.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOB.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C63/PIOB",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C76/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOB.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOB.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOB.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOB.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOB.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOB.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOB.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOB.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C76/PIOB",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.CLAMP",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          }
+        ],
+        "id": "LFE5U-85F/R0C83/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R11C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOB.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOB.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OUTPUT_LVCMOS33",
+              "OUTPUT_LVTTL33"
+            ],
+            "name": "PIOB.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "8"
+            ],
+            "name": "PIOB.DRIVE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.OPENDRAIN",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOB.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOB.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOB.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R11C0/PIOB",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOC.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOC.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOC.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOC.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOC.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R14C0/PIOC",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R35C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "DCC_MID",
+        "fields": [
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "DCC_L1.MODE",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R46C3/LDCC1",
+        "rule": "MODE=NONE static bypass; unique empty NONE fallback is qualified by DCC mode contract"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R47C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOC.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOC.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOC.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOC.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOC.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOC.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOC.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOC.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R47C0/PIOC",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "PIO",
+        "fields": [
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_MDDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_ODDR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDO"
+            ],
+            "name": "PIOA.DATAMUX_OREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "PADDT"
+            ],
+            "name": "PIOA.TRIMUX_TSREG",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "INPUT_LVCMOS33",
+              "INPUT_LVTTL33"
+            ],
+            "name": "PIOA.BASE_TYPE",
+            "status": "ambiguous"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.DIFFRESISTOR",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.DRIVE",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "ON"
+            ],
+            "name": "PIOA.HYSTERESIS",
+            "status": "resolved"
+          },
+          {
+            "candidates": [],
+            "name": "PIOA.OPENDRAIN",
+            "status": "unmatched"
+          },
+          {
+            "candidates": [
+              "NONE"
+            ],
+            "name": "PIOA.PULLMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "SLOW"
+            ],
+            "name": "PIOA.SLEWRATE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V35",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V5",
+            "status": "unobserved"
+          },
+          {
+            "candidates": [
+              "OFF"
+            ],
+            "name": "PIOA.TERMINATION_1V8",
+            "status": "unobserved"
+          }
+        ],
+        "id": "LFE5U-85F/R50C0/PIOA",
+        "rule": "binary single-ended PIO; unique PADDO/PADDT empty fallbacks are qualified by mode; raw field statuses retained"
+      },
+      {
+        "family": "GSR",
+        "fields": [
+          {
+            "candidates": [
+              "ACTIVE_LOW"
+            ],
+            "name": "GSR.GSRMODE",
+            "status": "resolved"
+          },
+          {
+            "candidates": [
+              "ASYNC",
+              "NONE"
+            ],
+            "name": "GSR.SYNCMODE",
+            "status": "ambiguous"
+          }
+        ],
+        "id": "LFE5U-85F/R94C4/GSR",
+        "rule": "GSRMODE polarity; ASYNC/NONE share no-sync pattern; selected global input is an execution root; SYNC rejected"
+      }
+    ],
+    "roots": [
+      "LFE5U-85F/R94C4/GSR:GSR",
+      "sys:goe",
+      "sys:gwdis",
+      "sys:gsr",
+      "sys:done",
+      "sys:ready",
+      "pin:A5",
+      "pin:A6",
+      "pin:A7",
+      "pin:A8"
+    ],
+    "routes": [
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "N1_JGSR_GSR",
+        "source": "N1_JA5",
+        "source_line": 470,
+        "tile": "MIB_R95C4:EFB0_PICB0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDOB_PIO",
+        "source": "JPADDOB",
+        "source_line": 734,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDTB_PIO",
+        "source": "JPADDTB",
+        "source_line": 742,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDOA_PIO",
+        "source": "JPADDOA",
+        "source_line": 151,
+        "tile": "MIB_R0C4:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDTA_PIO",
+        "source": "JPADDTA",
+        "source_line": 155,
+        "tile": "MIB_R0C4:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDOA_PIO",
+        "source": "JPADDOA",
+        "source_line": 151,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDTA_PIO",
+        "source": "JPADDTA",
+        "source_line": 155,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDOB_PIO",
+        "source": "JPADDOB",
+        "source_line": 153,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "PADDTB_PIO",
+        "source": "JPADDTB",
+        "source_line": 157,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA5",
+        "source": "V00T0000",
+        "source_line": 573,
+        "tile": "CIB_R94C4:CIB"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDOB",
+        "source": "E1_JA3",
+        "source_line": 634,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDTB",
+        "source": "E1_JB3",
+        "source_line": 642,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDOA",
+        "source": "S1_JA0",
+        "source_line": 127,
+        "tile": "MIB_R0C4:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDTA",
+        "source": "S1_JB0",
+        "source_line": 131,
+        "tile": "MIB_R0C4:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDOA",
+        "source": "S1_JA0",
+        "source_line": 127,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDTA",
+        "source": "S1_JB0",
+        "source_line": 131,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDOB",
+        "source": "S1E1_JA0",
+        "source_line": 129,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JPADDTB",
+        "source": "S1E1_JB0",
+        "source_line": 133,
+        "tile": "MIB_R0C18:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "V00T0000",
+        "source": "N1_V02S0401",
+        "source_line": 2113,
+        "tile": "CIB_R94C4:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA3",
+        "source": "V02S0501",
+        "source_line": 525,
+        "tile": "CIB_R11C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA0",
+        "source": "V02N0701",
+        "source_line": 446,
+        "tile": "CIB_R1C4:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA0",
+        "source": "V02N0701",
+        "source_line": 446,
+        "tile": "CIB_R1C18:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JA0",
+        "source": "V02N0501",
+        "source_line": 445,
+        "tile": "CIB_R1C19:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0401",
+        "source": "N3_V06S0203",
+        "source_line": 1978,
+        "tile": "R92C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0501",
+        "source": "N1_V02S0401",
+        "source_line": 1936,
+        "tile": "CIB_R10C1:CIB_LR_S"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N1_V02N0701",
+        "source": "E3_H06W0203",
+        "source_line": 1789,
+        "tile": "R2C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N1_V02N0701",
+        "source": "H06W0203",
+        "source_line": 1796,
+        "tile": "R2C18:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N1_V02N0501",
+        "source": "H06W0303",
+        "source_line": 1752,
+        "tile": "R2C19:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0203",
+        "source": "N3_V06S0203",
+        "source_line": 2098,
+        "tile": "R86C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0401",
+        "source": "N3_V06S0203",
+        "source_line": 1916,
+        "tile": "CIB_R8C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E1_H01W0000",
+        "source_line": 2467,
+        "tile": "R2C10:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E1_H01W0000",
+        "source_line": 2467,
+        "tile": "R2C21:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E1_H01W0100",
+        "source_line": 2484,
+        "tile": "R2C22:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0203",
+        "source": "N3_V06S0103",
+        "source_line": 2097,
+        "tile": "R80C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0203",
+        "source": "H06W0203",
+        "source_line": 2027,
+        "tile": "CIB_R2C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0000",
+        "source": "E3_H06W0103",
+        "source_line": 1383,
+        "tile": "R2C11:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0000",
+        "source": "E3_H06W0103",
+        "source_line": 1383,
+        "tile": "R2C22:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0100",
+        "source": "E3_H06W0303",
+        "source_line": 1405,
+        "tile": "R2C23:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0103",
+        "source": "N3_V06S0003",
+        "source_line": 2080,
+        "tile": "R74C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2470,
+        "tile": "R2C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C17:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C28:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2488,
+        "tile": "R2C29:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0003",
+        "source": "N3_V06S0303",
+        "source_line": 2064,
+        "tile": "R68C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2453,
+        "tile": "R2C10:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C23:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C34:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2488,
+        "tile": "R2C35:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0303",
+        "source": "N3_V06S0303",
+        "source_line": 2115,
+        "tile": "R62C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2436,
+        "tile": "R2C16:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C29:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2453,
+        "tile": "R2C40:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2488,
+        "tile": "R2C41:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0303",
+        "source": "H06E0303",
+        "source_line": 2109,
+        "tile": "R56C4:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2436,
+        "tile": "R2C22:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C35:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2436,
+        "tile": "R2C46:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2487,
+        "tile": "R2C47:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "N3_V06S0303",
+        "source_line": 280,
+        "tile": "CIB_R56C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2436,
+        "tile": "R2C28:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2454,
+        "tile": "R2C41:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2436,
+        "tile": "R2C52:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0203",
+        "source_line": 2471,
+        "tile": "R2C53:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S3_V06S0303",
+        "source": "JF5",
+        "source_line": 2045,
+        "tile": "CIB_R50C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0303",
+        "source_line": 2437,
+        "tile": "R2C34:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2453,
+        "tile": "R2C47:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0303",
+        "source_line": 2437,
+        "tile": "R2C58:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2470,
+        "tile": "R2C59:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "E1_JF5",
+        "source": "JDIA",
+        "source_line": 496,
+        "tile": "MIB_R50C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2488,
+        "tile": "R2C40:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0303",
+        "source_line": 2437,
+        "tile": "R2C53:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2487,
+        "tile": "R2C64:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2453,
+        "tile": "R2C65:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 12,
+        "tile": "MIB_R50C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2488,
+        "tile": "R2C46:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2487,
+        "tile": "R2C59:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E1_H01W0000",
+        "source_line": 2467,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "F3",
+        "source_line": 2439,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2487,
+        "tile": "R2C52:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2470,
+        "tile": "R2C65:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0000",
+        "source": "F2",
+        "source_line": 1386,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F3",
+        "source": "F3_SLICE",
+        "source_line": 1271,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0203",
+        "source_line": 2471,
+        "tile": "R2C58:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "F1",
+        "source_line": 2455,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F2",
+        "source": "F2_SLICE",
+        "source_line": 1267,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2470,
+        "tile": "R2C64:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F1",
+        "source": "F1_SLICE",
+        "source_line": 1263,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D4_SLICE",
+        "source": "D4",
+        "source_line": 3097,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B4_SLICE",
+        "source": "B4",
+        "source_line": 3049,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C4_SLICE",
+        "source": "C4",
+        "source_line": 3065,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A4_SLICE",
+        "source": "A4",
+        "source_line": 3033,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C5_SLICE",
+        "source": "C5",
+        "source_line": 3067,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A5_SLICE",
+        "source": "A5",
+        "source_line": 3035,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D5_SLICE",
+        "source": "D5",
+        "source_line": 3099,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B5_SLICE",
+        "source": "B5",
+        "source_line": 3051,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A0_SLICE",
+        "source": "A0",
+        "source_line": 3025,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B0_SLICE",
+        "source": "B0",
+        "source_line": 3041,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C0_SLICE",
+        "source": "C0",
+        "source_line": 3057,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D0_SLICE",
+        "source": "D0",
+        "source_line": 3089,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD3A_SLICE",
+        "source": "WAD3",
+        "source_line": 3245,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD1A_SLICE",
+        "source": "WAD1",
+        "source_line": 3233,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD2A_SLICE",
+        "source": "WAD2",
+        "source_line": 3239,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD0A_SLICE",
+        "source": "WAD0",
+        "source_line": 3227,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WCK0_SLICE",
+        "source": "CLK1",
+        "source_line": 3249,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WRE0_SLICE",
+        "source": "LSR1",
+        "source_line": 3269,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD0A_SLICE",
+        "source": "WD0",
+        "source_line": 3255,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A1_SLICE",
+        "source": "A1",
+        "source_line": 3027,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B1_SLICE",
+        "source": "B1",
+        "source_line": 3043,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C1_SLICE",
+        "source": "C1",
+        "source_line": 3059,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D1_SLICE",
+        "source": "D1",
+        "source_line": 3091,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD1A_SLICE",
+        "source": "WD1",
+        "source_line": 3261,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A2_SLICE",
+        "source": "A2",
+        "source_line": 3029,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B2_SLICE",
+        "source": "B2",
+        "source_line": 3045,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C2_SLICE",
+        "source": "C2",
+        "source_line": 3061,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D2_SLICE",
+        "source": "D2",
+        "source_line": 3093,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD3B_SLICE",
+        "source": "WAD3",
+        "source_line": 3247,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD1B_SLICE",
+        "source": "WAD1",
+        "source_line": 3235,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD2B_SLICE",
+        "source": "WAD2",
+        "source_line": 3241,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD0B_SLICE",
+        "source": "WAD0",
+        "source_line": 3229,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WCK1_SLICE",
+        "source": "CLK1",
+        "source_line": 3251,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WRE1_SLICE",
+        "source": "LSR1",
+        "source_line": 3271,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD0B_SLICE",
+        "source": "WD2",
+        "source_line": 3257,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "A3_SLICE",
+        "source": "A3",
+        "source_line": 3031,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "B3_SLICE",
+        "source": "B3",
+        "source_line": 3047,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "C3_SLICE",
+        "source": "C3",
+        "source_line": 3063,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "D3_SLICE",
+        "source": "D3",
+        "source_line": 3095,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD1B_SLICE",
+        "source": "WD3",
+        "source_line": 3263,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E1_H01W0100",
+        "source_line": 2450,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D4",
+        "source": "V02S0401",
+        "source_line": 887,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B4",
+        "source": "V02S0701",
+        "source_line": 336,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C4",
+        "source": "V02S0001",
+        "source_line": 543,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A4",
+        "source": "V02S0101",
+        "source_line": 127,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C5",
+        "source": "E1_H02W0601",
+        "source_line": 551,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A5",
+        "source": "H02E0501",
+        "source_line": 137,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D5",
+        "source": "E1_H02W0001",
+        "source_line": 894,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B5",
+        "source": "E1_H02W0301",
+        "source_line": 342,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A0",
+        "source": "H02E0701",
+        "source_line": 13,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B0",
+        "source": "H02E0301",
+        "source_line": 219,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C0",
+        "source": "H00L0100",
+        "source_line": 425,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D0",
+        "source": "H02E0001",
+        "source_line": 768,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD3",
+        "source": "WADO3C_SLICE",
+        "source_line": 3243,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD1",
+        "source": "WADO1C_SLICE",
+        "source_line": 3231,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD2",
+        "source": "WADO2C_SLICE",
+        "source_line": 3237,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WAD0",
+        "source": "WADO0C_SLICE",
+        "source_line": 3225,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "CLK1",
+        "source": "G_HPBX0000",
+        "source_line": 737,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "LSR1",
+        "source": "W1_H02E0301",
+        "source_line": 1465,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD0",
+        "source": "WDO0C_SLICE",
+        "source_line": 3253,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A1",
+        "source": "H02E0701",
+        "source_line": 39,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B1",
+        "source": "H02E0301",
+        "source_line": 244,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C1",
+        "source": "H00L0100",
+        "source_line": 451,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D1",
+        "source": "H02E0001",
+        "source_line": 795,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD1",
+        "source": "WDO1C_SLICE",
+        "source_line": 3259,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A2",
+        "source": "H02E0701",
+        "source_line": 63,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B2",
+        "source": "H02E0301",
+        "source_line": 273,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C2",
+        "source": "H00L0100",
+        "source_line": 477,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D2",
+        "source": "H02E0001",
+        "source_line": 820,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD2",
+        "source": "WDO2C_SLICE",
+        "source_line": 3265,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "A3",
+        "source": "H02E0701",
+        "source_line": 89,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "B3",
+        "source": "H02E0301",
+        "source_line": 298,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "C3",
+        "source": "H00L0100",
+        "source_line": 503,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "D3",
+        "source": "H02E0001",
+        "source_line": 847,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "WD3",
+        "source": "WDO3C_SLICE",
+        "source_line": 3267,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0100",
+        "source": "F0",
+        "source_line": 1406,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0401",
+        "source": "E1_H02W0401",
+        "source_line": 1902,
+        "tile": "CIB_R1C71:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0701",
+        "source": "H06W0203",
+        "source_line": 1974,
+        "tile": "CIB_R1C71:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0001",
+        "source": "H06W0003",
+        "source_line": 1820,
+        "tile": "CIB_R1C71:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0101",
+        "source": "E3_H06W0103",
+        "source_line": 1837,
+        "tile": "CIB_R1C71:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W1_H02W0601",
+        "source": "V02S0601",
+        "source_line": 2405,
+        "tile": "R2C73:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0501",
+        "source": "V06N0303",
+        "source_line": 1140,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W1_H02W0001",
+        "source": "S1_V02N0001",
+        "source_line": 2269,
+        "tile": "R2C73:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W1_H02W0301",
+        "source": "V06N0003",
+        "source_line": 2340,
+        "tile": "R2C73:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0701",
+        "source": "V02S0701",
+        "source_line": 1183,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0301",
+        "source": "V02S0301",
+        "source_line": 1095,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H00L0100",
+        "source": "V02S0301",
+        "source_line": 1331,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0001",
+        "source": "V02S0001",
+        "source_line": 1029,
+        "tile": "R2C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "L_HPBX0000",
+        "source": "G_VPTX0000",
+        "source_line": 3,
+        "tile": "TAP_R2C78:TAP_DRIVE"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E1_H02E0301",
+        "source": "V02S0301",
+        "source_line": 1095,
+        "tile": "R2C69:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "F0",
+        "source": "F0_SLICE",
+        "source_line": 1259,
+        "tile": "R2C71:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W1_H02W0401",
+        "source": "E3_H06W0203",
+        "source_line": 2284,
+        "tile": "CIB_R1C73:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C74:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0303",
+        "source_line": 2373,
+        "tile": "CIB_R1C74:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C77:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0601",
+        "source": "E3_H06W0303",
+        "source_line": 1947,
+        "tile": "CIB_R1C73:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0303",
+        "source": "S3_V06N0303",
+        "source_line": 1872,
+        "tile": "R5C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N1_V02N0001",
+        "source": "W3_H06E0003",
+        "source_line": 1652,
+        "tile": "R4C73:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0003",
+        "source": "W3_H06E0003",
+        "source_line": 1823,
+        "tile": "R5C73:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0701",
+        "source": "E3_H06W0203",
+        "source_line": 1969,
+        "tile": "CIB_R1C70:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0301",
+        "source": "E3_H06W0003",
+        "source_line": 1881,
+        "tile": "CIB_R1C70:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0301",
+        "source": "E3_H06W0003",
+        "source_line": 1881,
+        "tile": "CIB_R1C71:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0001",
+        "source": "W3_H06E0003",
+        "source_line": 1832,
+        "tile": "CIB_R1C70:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_VPTX0000",
+        "source": "G_HPRX0000",
+        "source_line": 3,
+        "tile": "MIB_R22C77:EBR_SPINE_UR0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S1_V02S0301",
+        "source": "W3_H06E0003",
+        "source_line": 1898,
+        "tile": "CIB_R1C69:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C79:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C80:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2423,
+        "tile": "CIB_R1C80:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0303",
+        "source_line": 2373,
+        "tile": "CIB_R1C83:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2424,
+        "tile": "CIB_R1C79:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0303",
+        "source": "S3_V06N0203",
+        "source_line": 1871,
+        "tile": "R11C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0303",
+        "source_line": 1205,
+        "tile": "R4C67:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0303",
+        "source_line": 1205,
+        "tile": "R5C67:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C76:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C76:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C77:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "JQ0",
+        "source_line": 226,
+        "tile": "CIB_R1C64:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_URPCLK0",
+        "source": "G_HPFE0100",
+        "source_line": 68,
+        "tile": "MIB_R22C68:CMUX_UR_0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "JQ0",
+        "source_line": 226,
+        "tile": "CIB_R1C63:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C85:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C86:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0203",
+        "source_line": 2407,
+        "tile": "CIB_R1C86:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2424,
+        "tile": "CIB_R1C89:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2424,
+        "tile": "CIB_R1C85:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0203",
+        "source": "S3_V06N0103",
+        "source_line": 1854,
+        "tile": "R17C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0303",
+        "source_line": 1256,
+        "tile": "R4C61:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0203",
+        "source_line": 1255,
+        "tile": "R5C61:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E1_H01W0100",
+        "source_line": 2386,
+        "tile": "CIB_R1C82:CIB"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C76:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1E1_JQ0",
+        "source": "JDIB",
+        "source_line": 167,
+        "tile": "MIB_R0C76:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1E1_JQ0",
+        "source": "JDIB",
+        "source_line": 167,
+        "tile": "MIB_R0C63:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_HPFE0100",
+        "source": "G_CLKO_LDCC1",
+        "source_line": 190,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C63:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C91:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C92:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C92:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2423,
+        "tile": "CIB_R1C95:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0303",
+        "source_line": 2424,
+        "tile": "CIB_R1C91:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0103",
+        "source": "S3_V06N0103",
+        "source_line": 1838,
+        "tile": "R23C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0303",
+        "source_line": 1256,
+        "tile": "R4C55:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0203",
+        "source_line": 1239,
+        "tile": "R5C55:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "H01W0100",
+        "source": "JQ0",
+        "source_line": 416,
+        "tile": "CIB_R1C83:CIB"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C76:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIB",
+        "source": "JPADDIB_PIO",
+        "source_line": 109,
+        "tile": "MIB_R0C76:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIB",
+        "source": "JPADDIB_PIO",
+        "source_line": 109,
+        "tile": "MIB_R0C63:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C63:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2372,
+        "tile": "CIB_R1C97:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2372,
+        "tile": "CIB_R1C98:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C98:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C101:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0303",
+        "source": "E3_H06W0203",
+        "source_line": 2423,
+        "tile": "CIB_R1C97:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0103",
+        "source": "H06E0103",
+        "source_line": 1831,
+        "tile": "R29C70:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0203",
+        "source_line": 1255,
+        "tile": "R4C49:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0203",
+        "source_line": 1239,
+        "tile": "R5C49:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C83:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_CLKI_LDCC1",
+        "source": "G_LDCC1CLKI",
+        "source_line": 162,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C103:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "E3_H06W0003",
+        "source_line": 2372,
+        "tile": "CIB_R1C104:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C104:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0103",
+        "source_line": 2390,
+        "tile": "CIB_R1C107:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0203",
+        "source_line": 2407,
+        "tile": "CIB_R1C103:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R29C67:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0203",
+        "source_line": 1239,
+        "tile": "R4C43:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0203",
+        "source_line": 1239,
+        "tile": "R5C43:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C83:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "G_LDCC1CLKI",
+        "source": "G_JPCLKT61",
+        "source_line": 40,
+        "tile": "MIB_R46C3:LMID_0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C103:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C110:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C110:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C113:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0203",
+        "source": "E3_H06W0103",
+        "source_line": 2406,
+        "tile": "CIB_R1C109:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R29C61:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0103",
+        "source_line": 1238,
+        "tile": "R4C37:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0103",
+        "source_line": 1238,
+        "tile": "R5C37:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "G_JPCLKT61",
+        "source": "S2W2_JINCK",
+        "source_line": 233,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C103:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C110:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C116:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C119:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0103",
+        "source": "E3_H06W0003",
+        "source_line": 2389,
+        "tile": "CIB_R1C115:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R29C55:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R4C31:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0003",
+        "source_line": 1221,
+        "tile": "R5C31:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "S2W2_JINCK",
+        "source": "S2W2_JPADDI",
+        "source_line": 61,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C110:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C116:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C119:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "W3_H06W0003",
+        "source": "JQ0",
+        "source_line": 2376,
+        "tile": "CIB_R1C121:CIB"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R29C49:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R4C25:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0003",
+        "source_line": 1204,
+        "tile": "R5C25:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S2W2_JPADDI",
+        "source": "S1W2_JPADDIA_PIO",
+        "source_line": 329,
+        "tile": "CIB_R46C2:ECLK_L"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C116:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C119:PIOT0"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S1_JQ0",
+        "source": "JDIA",
+        "source_line": 177,
+        "tile": "MIB_R0C121:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0003",
+        "source_line": 1221,
+        "tile": "R29C43:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0003",
+        "source_line": 1221,
+        "tile": "R4C19:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0303",
+        "source_line": 1205,
+        "tile": "R5C19:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 107,
+        "tile": "MIB_R0C121:PIOT0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0303",
+        "source_line": 1205,
+        "tile": "R29C37:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0003",
+        "source_line": 1204,
+        "tile": "R4C13:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0303",
+        "source_line": 1256,
+        "tile": "R5C13:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0203",
+        "source_line": 1255,
+        "tile": "R29C31:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0003",
+        "source_line": 1204,
+        "tile": "R4C7:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "W3_H06E0303",
+        "source_line": 1256,
+        "tile": "R5C7:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0203",
+        "source": "W3_H06E0103",
+        "source_line": 1238,
+        "tile": "R29C25:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "S3_V06N0003",
+        "source_line": 230,
+        "tile": "CIB_R4C1:CIB_PLL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "S3_V06N0303",
+        "source_line": 281,
+        "tile": "CIB_R5C1:CIB_PLL1"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0103",
+        "source_line": 1222,
+        "tile": "R29C19:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0003",
+        "source": "S3_V06N0303",
+        "source_line": 1757,
+        "tile": "CIB_R10C1:CIB_LR_S"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0303",
+        "source": "JF5",
+        "source_line": 1801,
+        "tile": "CIB_R11C1:CIB_LR"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0103",
+        "source": "W3_H06E0003",
+        "source_line": 1221,
+        "tile": "R29C13:PLC2"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0303",
+        "source": "JF5",
+        "source_line": 1801,
+        "tile": "CIB_R16C1:CIB_LR"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "E1_JF5",
+        "source": "JDIA",
+        "source_line": 496,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0003",
+        "source": "W3_H06E0303",
+        "source_line": 1205,
+        "tile": "R29C7:PLC2"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "S2E1_JF5",
+        "source": "JDIC",
+        "source_line": 782,
+        "tile": "MIB_R14C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 12,
+        "tile": "MIB_R11C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "E3_H06E0303",
+        "source": "S3_V06N0303",
+        "source_line": 281,
+        "tile": "CIB_R29C1:CIB_LR"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "JDIC",
+        "source": "JPADDIC_PIO",
+        "source_line": 596,
+        "tile": "MIB_R14C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "N3_V06N0303",
+        "source": "JF5",
+        "source_line": 1801,
+        "tile": "CIB_R35C1:CIB_LR"
+      },
+      {
+        "rule": "fixed; qualified reachable path",
+        "sink": "E1_JF5",
+        "source": "JDIA",
+        "source_line": 496,
+        "tile": "MIB_R35C0:PICL0"
+      },
+      {
+        "rule": "maximal matching mux pattern",
+        "sink": "JDIA",
+        "source": "JPADDIA_PIO",
+        "source_line": 12,
+        "tile": "MIB_R35C0:PICL0"
+      }
+    ],
+    "schema_version": 1,
+    "scope": "observed",
+    "startup": "wake_phases",
+    "system": {
+      "gsr_disabled_ff": 0,
+      "gsr_enabled_ff": 0,
+      "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+      "sync_candidates": [
+        "ASYNC",
+        "NONE"
+      ],
+      "user_gsr_mode": "ACTIVE_LOW",
+      "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+      "wake_sequence": "Sequence4"
+    },
+    "undriven": []
+  },
+  "schema_version": 1,
+  "state": {
+    "configuration_sha256": "f679657c6930cf563d52e1a7e2fddfd13c868f50ca62eea0ec7f769e6a213186",
+    "ebr_arrays": 208,
+    "ebr_initialization": {
+      "inactive": 208
+    },
+    "execution": "event_kernel;explicit_execution_plan",
+    "flip_flops": 83640,
+    "known_ebr_bits": 0,
+    "known_flip_flops": 0,
+    "known_lut_bits": 1338240,
+    "lut_arrays": 83640,
+    "lut_bits": 1338240,
+    "observed_wire_values": 374,
+    "system": {
+      "done": "one",
+      "goe": "one",
+      "gsr": "zero",
+      "gwdis": "zero",
+      "phase": 3,
+      "power_on_reset": "unmodelled; image already loaded",
+      "profile": "wake-phases",
+      "ready": "one",
+      "startup_gsr": "zero",
+      "user_gsr": "zero"
+    }
+  },
+  "statistics": {
+    "combinational_evaluations": 768,
+    "discarded_timer_events": 0,
+    "driver_changes": 455,
+    "lut_bit_changes": 2,
+    "lut_write_edges": 4,
+    "lut_write_evaluations": 16,
+    "possible_clock_edges": 0,
+    "register_evaluations": 0,
+    "signal_changes": 828,
+    "system_evaluations": 10,
+    "time_batches": 9,
+    "trace_overwrites": 0
+  },
+  "trace": [
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "system:DONE-pullup"
+        },
+        {
+          "reason": "initial driver",
+          "source": "system:done"
+        },
+        {
+          "reason": "initial driver",
+          "source": "system:external-DONE"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.done"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "system:goe"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.goe"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "system:gsr"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gsr"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "system:gwdis"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gwdis"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "system:ready"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.ready"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "external:LFE5U-85F/R0C4/PIOA"
+        },
+        {
+          "reason": "initial driver",
+          "source": "goe:LFE5U-85F/R0C4/PIOA"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 4,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "external:LFE5U-85F/R0C18/PIOA"
+        },
+        {
+          "reason": "initial driver",
+          "source": "goe:LFE5U-85F/R0C18/PIOA"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "external:LFE5U-85F/R0C18/PIOB"
+        },
+        {
+          "reason": "initial driver",
+          "source": "goe:LFE5U-85F/R0C18/PIOB"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "initial driver",
+          "source": "external:LFE5U-85F/R11C0/PIOB"
+        },
+        {
+          "reason": "initial driver",
+          "source": "goe:LFE5U-85F/R11C0/PIOB"
+        }
+      ],
+      "delta": 0,
+      "phase": "initial",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "x",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 11
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:goe"
+        }
+      ],
+      "delta": 32,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.goe"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:gsr"
+        }
+      ],
+      "delta": 32,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gsr"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:gwdis"
+        }
+      ],
+      "delta": 32,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gwdis"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:ready"
+        }
+      ],
+      "delta": 32,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.ready"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C4/PIOA"
+        }
+      ],
+      "delta": 33,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "z",
+      "wire": {
+        "location": {
+          "col": 4,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOA"
+        }
+      ],
+      "delta": 33,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "z",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOB"
+        }
+      ],
+      "delta": 33,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "z",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R11C0/PIOB"
+        }
+      ],
+      "delta": 33,
+      "phase": "combinational",
+      "previous": "x",
+      "time": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "value": "z",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 11
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:goe"
+        }
+      ],
+      "delta": 1,
+      "phase": "combinational",
+      "previous": "zero",
+      "time": {
+        "denominator": 1,
+        "numerator": 3000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.goe"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C4/PIOA"
+        }
+      ],
+      "delta": 2,
+      "phase": "combinational",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 3000
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 4,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOA"
+        }
+      ],
+      "delta": 2,
+      "phase": "combinational",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 3000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOB"
+        }
+      ],
+      "delta": 2,
+      "phase": "combinational",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 3000
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R11C0/PIOB"
+        }
+      ],
+      "delta": 2,
+      "phase": "combinational",
+      "previous": "z",
+      "time": {
+        "denominator": 1,
+        "numerator": 3000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 11
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:gsr"
+        }
+      ],
+      "delta": 14,
+      "phase": "combinational",
+      "previous": "one",
+      "time": {
+        "denominator": 1,
+        "numerator": 5000
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gsr"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:gwdis"
+        }
+      ],
+      "delta": 14,
+      "phase": "combinational",
+      "previous": "one",
+      "time": {
+        "denominator": 1,
+        "numerator": 5000
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.gwdis"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOB"
+        }
+      ],
+      "delta": 33,
+      "phase": "combinational",
+      "previous": "zero",
+      "time": {
+        "denominator": 1,
+        "numerator": 5000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_B"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "combinational evaluation",
+          "source": "goe:LFE5U-85F/R0C18/PIOA"
+        }
+      ],
+      "delta": 34,
+      "phase": "combinational",
+      "previous": "one",
+      "time": {
+        "denominator": 1,
+        "numerator": 5000
+      },
+      "value": "zero",
+      "wire": {
+        "location": {
+          "col": 18,
+          "row": 0
+        },
+        "name": "PAD_A"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "external stimulus",
+          "source": "system:external-DONE"
+        }
+      ],
+      "delta": 0,
+      "phase": "stimulus",
+      "previous": "zero",
+      "time": {
+        "denominator": 1,
+        "numerator": 9000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.done"
+      }
+    },
+    {
+      "causes": [
+        {
+          "reason": "logical system strobes before resource capture",
+          "source": "system:ready"
+        }
+      ],
+      "delta": 1,
+      "phase": "combinational",
+      "previous": "zero",
+      "time": {
+        "denominator": 1,
+        "numerator": 9000
+      },
+      "value": "one",
+      "wire": {
+        "location": {
+          "col": 0,
+          "row": 0
+        },
+        "name": "$SYS.ready"
+      }
+    }
+  ]
+}

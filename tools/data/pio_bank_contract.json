@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scope": "Digital PIO and bank research; no analog buffer solver or runtime implementation",
+  "sources": {
+    "sysio": "https://www.latticesemi.com/view_document?document_id=50464",
+    "power": "https://www.latticesemi.com/view_document?document_id=50468"
+  },
+  "open_questions": [
+    {"id":"P01","question":"Compose all BASE_TYPE fragments without selecting one of 328 inconsistent fragment defaults. Infer effective direction and buffer paths from joint CRAM constraints, not the original HDL IO_TYPE."},
+    {"id":"P02","question":"Resolve input/output/tristate paths and PIO/IOLOGIC shared bits under every buffer mode, including bidirectional readback and GSR/GOE/configuration ownership."},
+    {"id":"P03","question":"Validate true differential A/B drivers versus referenced/differential input A/B and C/D pairs; pseudo-differential top/bottom behavior and package bonding remain separate restrictions."},
+    {"id":"P04","question":"Define digital resolution of strong/weak drivers, open-drain, pull modes, keeper if supported, undriven inputs and conflicting external drives. Voltage thresholds/hysteresis require explicit environment assumptions."},
+    {"id":"P05","question":"Bind BCINRD/BCLVDSO for banks 2/3/6/7 to bank wire endpoints and configuration; verify documented active-high power-down polarity, disabled receiver values and wake behavior. Public function is known but bindings remain open."},
+    {"id":"P06","question":"Decode VCCIO aliases NONE/1V2/1V5 and nextpnr's 1V35-to-1V2 mapping while preserving external bank supply voltage, VREF ownership and incompatible IO settings. CRAM does not measure voltage."},
+    {"id":"P07","question":"Cover special WRITEN/SPICB0 and other shared configuration pads through startup, user mode and reconfiguration, including package-specific dedicated pins."},
+    {"id":"P08","question":"Distinguish database-encoded DRIVE/SLEW/CLAMP/termination modes from nextpnr limitations and electrical effects outside the digital emulator; retain configuration without inventing delays or currents."}
+  ],
+  "hardware_cases": [
+    {"id":"HP01","questions":["P01","P02","P07"],"stimulus":"Exercise input/output/bidir and IOLOGIC selectors with external drive changes and startup GOE; preserve decoded CRAM and both pad and fabric observations."},
+    {"id":"HP02","questions":["P03","P08"],"stimulus":"Compare legal A/B and C/D differential input/output cases with known bank supplies, board connections and package limits; do not drive a rail conflict."},
+    {"id":"HP03","questions":["P04","P06"],"stimulus":"Observe undriven, pulled and open-drain pins using controlled external resistors and known supply/reference values; record digital samples separately from electrical measurements."},
+    {"id":"HP04","questions":["P05"],"stimulus":"Exercise each documented bank controller using externally observable differential/reference inputs and LVDS outputs; verify enable polarity, disabled state and release sequence."}
+  ]
+}

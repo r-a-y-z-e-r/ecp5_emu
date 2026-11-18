@@ -1,0 +1,639 @@
+{
+  "loads": 15,
+  "bytes": 347010,
+  "complete": 1885,
+  "metadata_files_checked": 10,
+  "metadata_files_requiring_normalization": 0,
+  "raw_bytes_unchanged": true,
+  "captures": [
+    {
+      "file": "hi12-none_default.load-001.bin",
+      "sha256": "c0cabdff68208c4e738cb8d471338cf7ea6c742e8f5e53f86cbd5d310e866e03",
+      "bytes": 23104,
+      "complete": 125,
+      "heartbeats": 0,
+      "variant": 0,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_default.load-002.bin",
+      "sha256": "a71d992f2dea4b1a41c6ec36054da0e0cf5274813fa24ad879b1bf9afb56d1eb",
+      "bytes": 23136,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 0,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_default.load-003.bin",
+      "sha256": "3c69816980b7a1474ab7e794e3d52e0a8ca7ac62a1dc0640fce443650dac91be",
+      "bytes": 23137,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 0,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_2.load-001.bin",
+      "sha256": "54ed9a757d520a9ce0103c3d47a1b3b2039b9d0523df72c7001f7be8e3e93ea2",
+      "bytes": 23124,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 1,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_2.load-002.bin",
+      "sha256": "da4068a4cc3f62d838ce374d484142f8d16391121e56520015b4074a8a65ee54",
+      "bytes": 23166,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 1,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_2.load-003.bin",
+      "sha256": "80dbc5919083cb1d17f2be729ae598deba4e688ca733028661466d4450d21000",
+      "bytes": 23066,
+      "complete": 125,
+      "heartbeats": 0,
+      "variant": 1,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_35.load-001.bin",
+      "sha256": "28a0462896e21a0ddc704c033023740acc171582f250c672d35cf592430aa0dc",
+      "bytes": 23147,
+      "complete": 125,
+      "heartbeats": 0,
+      "variant": 2,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149796,
+          149797
+        ],
+        [
+          1048576,
+          299593,
+          299593
+        ]
+      ],
+      "candidates": {
+        "0": [
+          0,
+          1,
+          2
+        ],
+        "1": [
+          2,
+          3
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_35.load-002.bin",
+      "sha256": "17c1fa2aafc15824cadb87b2b8e83a8ec9fa57f1c2230fb09599eb4491509298",
+      "bytes": 23133,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 2,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149796,
+          149797
+        ],
+        [
+          1048576,
+          299593,
+          299593
+        ]
+      ],
+      "candidates": {
+        "0": [
+          0,
+          1,
+          2
+        ],
+        "1": [
+          2,
+          3
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    },
+    {
+      "file": "hi12-none_35.load-003.bin",
+      "sha256": "74c0463bfdbfd0bdf0d5c94c1537b16ca0354d6bb4db333a39eaae6f2f0ecd95",
+      "bytes": 23136,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 2,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149796,
+          149797
+        ],
+        [
+          1048576,
+          299593,
+          299593
+        ]
+      ],
+      "candidates": {
+        "0": [
+          0,
+          1,
+          2
+        ],
+        "1": [
+          2,
+          3
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_2.load-001.bin",
+      "sha256": "9e56ab4625e95c177a5ab5c045bb3bea7e95199e3c1e8209020ae3cf1a5ddea5",
+      "bytes": 23136,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 3,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_2.load-002.bin",
+      "sha256": "0d3d9d24ed5aa1e7eee3f858c90e42ac102b9b383981e55d49d5d5a7eef53dfb",
+      "bytes": 23136,
+      "complete": 125,
+      "heartbeats": 0,
+      "variant": 3,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_2.load-003.bin",
+      "sha256": "0d77d64e334b9729a4263a75be02ff8210f31ae0aea1cf10ddeab90ae691f280",
+      "bytes": 23170,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 3,
+      "seven": false,
+      "snapshots": [
+        [
+          524288,
+          262144,
+          262144
+        ],
+        [
+          1048576,
+          524288,
+          524288
+        ]
+      ],
+      "candidates": {
+        "0": [
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        8
+      ],
+      "widths": {
+        "0": [
+          4
+        ],
+        "1": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_35.load-001.bin",
+      "sha256": "3a1b0d755df6983ade650c05ac1c135c7643ff3b58619ab936c62863be0119c0",
+      "bytes": 23143,
+      "complete": 125,
+      "heartbeats": 0,
+      "variant": 4,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149796,
+          149797
+        ],
+        [
+          1048576,
+          299593,
+          299593
+        ]
+      ],
+      "candidates": {
+        "0": [
+          0,
+          1,
+          2
+        ],
+        "1": [
+          2,
+          3
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_35.load-002.bin",
+      "sha256": "23f7ca03ef0f963c4b3f45435e0b210f78556b5b41d377b23a78d01a3bc4e9b8",
+      "bytes": 23135,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 4,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149797,
+          149797
+        ],
+        [
+          1048576,
+          299593,
+          299594
+        ]
+      ],
+      "candidates": {
+        "0": [
+          3
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    },
+    {
+      "file": "hi12-sync_35.load-003.bin",
+      "sha256": "0db3e0bfeacd8b0556a7208e1d34964de6868ce60774d9ea77f9b41a0befe001",
+      "bytes": 23141,
+      "complete": 126,
+      "heartbeats": 0,
+      "variant": 4,
+      "seven": true,
+      "snapshots": [
+        [
+          524288,
+          149797,
+          149796
+        ],
+        [
+          1048576,
+          299593,
+          299593
+        ]
+      ],
+      "candidates": {
+        "0": [
+          4,
+          5
+        ],
+        "1": [
+          5,
+          6
+        ]
+      },
+      "offsets": [
+        0
+      ],
+      "intervals": [
+        14
+      ],
+      "widths": {
+        "0": [
+          6
+        ],
+        "1": [
+          8
+        ]
+      }
+    }
+  ]
+}

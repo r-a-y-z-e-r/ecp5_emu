@@ -1,0 +1,6 @@
+# Memory images that ecpbram swaps in after place and route (../build.sh,
+# ../swap.sh): the firmware's four byte lanes, one EBR each.
+fw0.hex
+fw1.hex
+fw2.hex
+fw3.hex

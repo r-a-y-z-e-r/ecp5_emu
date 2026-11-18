@@ -1,0 +1,13 @@
+# Start from the packaged CLI's build; await Chip before the timed walkthrough.
+0 emulate
+0 open top.v
+1 view project
+1 build
+2 view chip
+6 view project
+1 source top.v 7 32
+3 view chip
+8 view project
+3 open top.lpf
+3 open top.v
+3 view chip

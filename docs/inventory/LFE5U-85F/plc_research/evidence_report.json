@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "yosys_version": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+  "plcs": 10455,
+  "slices": 41820,
+  "lut4": 83640,
+  "fabric_ff": 83640,
+  "native_ports": {
+    "template": 300,
+    "split_per_PLC": 176,
+    "coarse_per_PLC": 124,
+    "compared": 3136500,
+    "all_PLCs_matched": true
+  },
+  "configuration": {
+    "enum_fields": 91,
+    "enum_options": 195,
+    "word_fields": 8,
+    "INIT_bit_positions": 128,
+    "mux_descriptors": 128,
+    "mux_options": 2242,
+    "fixed_connections": 124,
+    "shared_bit_positions": 100,
+    "mode_bit_positions": 9,
+    "mode_patterns": 512,
+    "native_bit_groups_checked": 2565
+  },
+  "native_catalogue": {
+    "tile_types_checked": 1,
+    "checks": [
+      "mux_sinks",
+      "mux_sources",
+      "fixed_connections",
+      "word_names",
+      "word_widths",
+      "word_defaults",
+      "enum_names",
+      "enum_defaults",
+      "enum_options"
+    ]
+  },
+  "synthesis_cases": 6,
+  "software_model_cases": 9,
+  "software_word_observations": 147600,
+  "model_limitation_observations": 4,
+  "hardware": "not_run",
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "31473cdd9f9db9993aa9f438dee4b5832b3f7899e8e1e7ef9884b1bd192fcb60"
+    },
+    {
+      "source": "probe_helper",
+      "sha256": "dd7352f870ac505607fa47edce41077f975f9da9d33c98d3e0866194708e3e44"
+    },
+    {
+      "source": "contract",
+      "sha256": "ffa4d492f2f80348e4deed2361a0b41e8de822970f437c491db7a13a1571002c"
+    },
+    {
+      "source": "inventory_helpers",
+      "sha256": "b0837badfbd7d1db7126840c2d4fd8398da472035c0d831a10aae7c487c29af8"
+    },
+    {
+      "source": "json_helper",
+      "sha256": "407151ca2abd62e19081ca6a385f5decb637a0364ee64741bacf008d70e0e92b"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "8c8dd0c8367b940c5335afa03182bfc885202c104c71f0423bf736feaa289a0a"
+    },
+    {
+      "source": "native_probe",
+      "sha256": "632a10ffb5d8325d1aaeb24437a7ebc64eba2b9d05bb854a76395a428de97172"
+    },
+    {
+      "source": "libtrellis",
+      "sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06"
+    },
+    {
+      "source": "pytrellis",
+      "sha256": "7da85afab08068e0aabcdd04858309f2bedfe678583f17c0136363b48f998654"
+    },
+    {
+      "source": "inventory",
+      "sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6"
+    },
+    {
+      "source": "tile_instances",
+      "sha256": "0da09e09bcefb49f0ef1e1998888b2a2f7199e4f326469b555e046d65be55101"
+    },
+    {
+      "source": "resources",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "PLC2_database",
+      "sha256": "22f6120c97d793a40b3dd06d700be0befe1686d24ac67af4fb0f9aa5287ff621"
+    },
+    {
+      "source": "native-requests.txt",
+      "sha256": "2c39d73a4ddbb8cb911f84fdde0c605c214d98f879922be4351943f950178fef"
+    },
+    {
+      "source": "native-ports.tsv",
+      "sha256": "3d1a463b3bcaac5c2c12ef1cac0296d275c26dd0d9a830a20de248e0ca3c338c"
+    },
+    {
+      "source": "native-probe.log",
+      "sha256": "025fc5135a15427ef4220d562afac6547658cbdfce4ce8063bc02e588d745256"
+    },
+    {
+      "source": "cells.cc",
+      "sha256": "2ce5bd6b820a57d0ab5d4b1820bce3e2af74479859fbacb5ee88f66cc3ac31b9"
+    },
+    {
+      "source": "pack.cc",
+      "sha256": "8877eaf3154bad794a2ca23888c571f1969b5320ec5b99b6de6939c7428fba7b"
+    },
+    {
+      "source": "bitstream.cc",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    },
+    {
+      "source": "arch_place.cc",
+      "sha256": "c02c90bd4cc62e2b63d544ce97913c080afcd679ed053d3de4773f9fcc5f4764"
+    },
+    {
+      "source": "arch.h",
+      "sha256": "9849ec8a5230366b0cdaddb9d2576ca4d61ba610ce267c30e40befa42e48f43b"
+    },
+    {
+      "source": "libtrellis/src/Bels.cpp",
+      "sha256": "574e04b6cfa113c9cd8c6aa18c203f884d89d6c4a194c4b73297d1ece840b58d"
+    },
+    {
+      "source": "libtrellis/src/Chip.cpp",
+      "sha256": "4846ae613fb9b9507371a808f4b8e018f6c7585f493673c4bd794bd8f3a0ae52"
+    },
+    {
+      "source": "libtrellis/src/BitDatabase.cpp",
+      "sha256": "93993c7ebc0797d40ab95b306743154a6e1fd7de3d0df8e7c5714f67d1d9e55e"
+    },
+    {
+      "source": "fuzzers/ECP5/003-lut_init/fuzzer.py",
+      "sha256": "98229265902d4c6a60f84f6f92b68b6ca6a4855e59ba29d5befaf3cf0f76c894"
+    },
+    {
+      "source": "fuzzers/ECP5/010-plc2_modes/fuzzer.py",
+      "sha256": "57364e500c1b8672b2d43424f7f3bc3d979efbefcf4ddb167ba131bd53cf2fa9"
+    },
+    {
+      "source": "common_sim.vh",
+      "sha256": "3d55fcb1b659f9a99e081d0e8cd3e0a74fb8d659644103db9ad10b04a64ce75d"
+    },
+    {
+      "source": "lutrams_trellis.txt",
+      "sha256": "60bc6b886d5323b7ba3e54508287b129d55afbd34a5b84ff15a65222b927730b"
+    },
+    {
+      "source": "lutrams_map_trellis.v",
+      "sha256": "0e36e11b61bbca96d424c83d991745bee2422453645431c3f72a370517984b3c"
+    },
+    {
+      "source": "memory",
+      "sha256": "29ff320f103c096da8d2576052b6a321c94c14e98aa1af34727f4edb3ff189b4"
+    },
+    {
+      "source": "datasheet",
+      "sha256": "26570f8bb2b800123120829cacd75d818d7a985d573797610521b5bda2e293c3"
+    },
+    {
+      "source": "yosys",
+      "sha256": "9ed8ea21a37acb95305366fd1c9131e64fc3a5096147cb4beba1d3fade32a1a4"
+    },
+    {
+      "source": "iverilog",
+      "sha256": "bb74f0404b78011746cf7057448c669757f1afa733428abdce79e8aaeaabbac1"
+    },
+    {
+      "source": "vvp",
+      "sha256": "d169f6dce8bb2203e1503c5aecd4ea5d7cc35f69d4a38f07525e7c3e34a1a893"
+    },
+    {
+      "source": "synthesis_source:ram16x1",
+      "sha256": "67451c2c4603fc392dc7225c39d6ce0b555173672cbab0c271eaefccbeccacb6"
+    },
+    {
+      "source": "synthesis_netlist:ram16x1",
+      "sha256": "dc3d9ebe48cd0c30827f5d94c3ed5cff1dd398f99279cf50656eed5a8df0bc5b"
+    },
+    {
+      "source": "synthesis_source:ram16x2",
+      "sha256": "d0fc04b17070b627b423fecc0b23a0b94df10334fb6784f8f29e575db07a312d"
+    },
+    {
+      "source": "synthesis_netlist:ram16x2",
+      "sha256": "32498b73bf857f5fcc9d01107449cd4487a5432f46b201b1dd71a4c1c26f9e42"
+    },
+    {
+      "source": "synthesis_source:ram16x4",
+      "sha256": "07cd7ca4d53136389d3f46a9e09528e44632b4172d86cfe83afc5319a915df99"
+    },
+    {
+      "source": "synthesis_netlist:ram16x4",
+      "sha256": "2458fb7d5cf1bee131c789bb8345d1758004564d9d6d96e752e32e4a135c8cd4"
+    },
+    {
+      "source": "synthesis_source:ram16x8",
+      "sha256": "ffaa09eb72794ede1e61df9b3269e69f20c38cb3a6df93c33a549efc56133d65"
+    },
+    {
+      "source": "synthesis_netlist:ram16x8",
+      "sha256": "7e28a70ed97c3698e3468e09c7996e7085e431d9f8c0a7e3d936297fc10c52b6"
+    },
+    {
+      "source": "synthesis_source:ram32x4",
+      "sha256": "2f65cacafbb6dd4941a8688c0cba7cdc0ef7d89e71a63d610a592bb646dbc8b8"
+    },
+    {
+      "source": "synthesis_netlist:ram32x4",
+      "sha256": "33d958a8a057a87463f000281ff6e3f9e384526692298dfbb223b652f143596d"
+    },
+    {
+      "source": "synthesis_source:ram16x4_falling",
+      "sha256": "559568689cff12b6891dfb7720dea84a7c9bd451e7cc63655bfcea883890d4c0"
+    },
+    {
+      "source": "synthesis_netlist:ram16x4_falling",
+      "sha256": "6fcb3f11618dbf1dd7e63710c7770138ee0ff24841a5c41b76265dedf1a84121"
+    },
+    {
+      "source": "model_testbench",
+      "sha256": "b154c96ff98515c4beb6e85ecaafc8536f2abc0213574a3c0bc91eda32f4cd4c"
+    },
+    {
+      "source": "model_trace",
+      "sha256": "8dd90351070f47206b677a8dd873854ed4723d84342b9af42be90de74fefa3ac"
+    },
+    {
+      "source": "comb_model_audit",
+      "sha256": "bba14eda2a6d8104a409eb1f53abd8e837e2e24447c116c434f358b5742ee4c0"
+    },
+    {
+      "source": "comb_model_trace",
+      "sha256": "6287b901f913fa942beacf2322a1dcda75ddb4181516174061351e2918f4afc3"
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "L01",
+      "question": "Datasheet PDPR16x4 requires six slices, while nextpnr packs independent read/write addresses into one three-slice PLC memory structure; measure the actual construction and distinguish primitive/IP semantics."
+    },
+    {
+      "id": "L02",
+      "question": "Available FF and extended-mux functions during RAMW/DPRAM, and behavior of nonstandard mixed mode settings."
+    },
+    {
+      "id": "L03",
+      "question": "Physical read-during-write, simultaneous observation and unknown-address/enable behavior; public models alone are not a silicon oracle."
+    },
+    {
+      "id": "L04",
+      "question": "INIT, configuration startup, GSR/local reset and retention of the LUTRAM array versus surrounding FF."
+    },
+    {
+      "id": "L05",
+      "question": "Physical constraints of shared CLK1/LSR1, inversion and separate FF clock/reset selections versus conservative packing rules."
+    },
+    {
+      "id": "L06",
+      "question": "Mode-qualified output mux and carry/LUT-extension behavior for overlapping control patterns, including chain boundaries."
+    },
+    {
+      "id": "L07",
+      "question": "Confirm all 16 initialized addresses on hardware while retaining the known legacy software initialization hole as a separate issue."
+    },
+    {
+      "id": "L08",
+      "question": "Confirm logical address, INIT permutation and live-write correspondence on native LUT contacts without applying routing-tool permutations twice."
+    },
+    {
+      "id": "L09",
+      "question": "The datasheet mentions level-sensitive registers, but the current PLC2 settings and inspected TRELLIS_FF model do not establish their configuration; investigate before excluding latch behavior."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+905aaa4eb5db3a1053a2ecba09fd381c58af6d31049104eb1b2be56181ac2295  README.md
+e75d2885ea14f3a64f4c95e9b8e30bea9b95e9f90f54a759f8ded2ec33ef90a1  TOOLS.txt
+e54899724e1b52617555e628d50a9903b2b3df40176bf75b03a8ef122a1cb19d  rtc_read.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 27b834c592f2266da527f186ae8adacd54d5437f864a309da44cc37d55bfa7c9  rtc_read top.bit (target/reference/rtc_read, built on the Mac; not stored)

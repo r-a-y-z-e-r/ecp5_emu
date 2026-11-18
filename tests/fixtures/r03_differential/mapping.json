@@ -1,0 +1,872 @@
+[
+  {
+    "base_type": "BIDIR_BLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_BLVDS25",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_BLVDS25"
+  },
+  {
+    "base_type": "BIDIR_BLVDS25E",
+    "ball": "A2",
+    "routed": false,
+    "error": "what():  Assertion failure: unknown IO type, unable to determine VccIO (~/src/nextpnr/ecp5/pio.cc:129)"
+  },
+  {
+    "base_type": "BIDIR_HSUL12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_HSUL12D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_HSUL12",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_LVCMOS12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVCMOS12D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_LVCMOS12D"
+  },
+  {
+    "base_type": "BIDIR_LVCMOS15D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVCMOS15D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_LVCMOS15D"
+  },
+  {
+    "base_type": "BIDIR_LVCMOS18D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVCMOS18D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_LVCMOS25D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVCMOS25D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_LVCMOS33D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVCMOS33D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_LVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVDS",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_LVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVDS25E",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_LVDS25E"
+  },
+  {
+    "base_type": "BIDIR_LVPECL33",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVPECL33",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_LVPECL33"
+  },
+  {
+    "base_type": "BIDIR_LVPECL33E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_LVPECL33E",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_LVPECL33E"
+  },
+  {
+    "base_type": "BIDIR_MLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_MLVDS25",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_MLVDS25"
+  },
+  {
+    "base_type": "BIDIR_MLVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_MLVDS25E",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SLVS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SLVS",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_SLVS"
+  },
+  {
+    "base_type": "BIDIR_SSTL135D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL135D_I",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SSTL135D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL135D_II",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SSTL15D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL15D_I",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SSTL15D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL15D_II",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SSTL18D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL18D_I",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SSTL18D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SSTL18D_II",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "BIDIR_SUBLVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "BIDIR_SUBLVDS",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set BIDIR_SUBLVDS"
+  },
+  {
+    "base_type": "INPUT_BLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_BLVDS25",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_BLVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_BLVDS25E",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_BLVDS25E"
+  },
+  {
+    "base_type": "INPUT_HSUL12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_HSUL12D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_HSUL12",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVCMOS12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS12D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_LVCMOS12D"
+  },
+  {
+    "base_type": "INPUT_LVCMOS15D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS15D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_LVCMOS15D"
+  },
+  {
+    "base_type": "INPUT_LVCMOS18D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS18D",
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVCMOS25D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVCMOS25D",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVCMOS33D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVCMOS33D",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "A10",
+    "routed": false,
+    "error": "ERROR: Pseudo-differential IO 'd$tr_io' must be output"
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "A12",
+    "routed": false,
+    "error": "ERROR: Pseudo-differential IO 'd$tr_io' must be output"
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "B2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "C18",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "K2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS",
+    "ball": "L16",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVDS25E",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_LVDS25E"
+  },
+  {
+    "base_type": "INPUT_LVPECL33",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVPECL33",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_LVPECL33E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_LVPECL33E",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_LVPECL33E"
+  },
+  {
+    "base_type": "INPUT_MLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_MLVDS25",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_MLVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_MLVDS25E",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set INPUT_MLVDS25E"
+  },
+  {
+    "base_type": "INPUT_SLVS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SLVS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL135D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL135D_I",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL135D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL135D_II",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL15D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL15D_I",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL15D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL15D_II",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL18D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL18D_I",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SSTL18D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SSTL18D_II",
+      "OUTPUT_LVCMOS25",
+      "OUTPUT_SSTL18_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "INPUT_SUBLVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "INPUT_SUBLVDS",
+      "OUTPUT_LVCMOS25"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_BLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_BLVDS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_BLVDS25"
+  },
+  {
+    "base_type": "OUTPUT_BLVDS25E",
+    "ball": "A2",
+    "routed": false,
+    "error": "what():  Assertion failure: unknown IO type, unable to determine VccIO (~/src/nextpnr/ecp5/pio.cc:129)"
+  },
+  {
+    "base_type": "OUTPUT_HSUL12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_HSUL12D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS12D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS12D"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_LVCMOS12D"
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS12D",
+    "ball": "B9",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS12D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS15D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS15D"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_LVCMOS15D"
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS15D",
+    "ball": "B9",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS15D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS18D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS18D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS25D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS25D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVCMOS33D",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVCMOS33D"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "A10",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": false,
+    "pack_error": "what():  no enum named 'BANK.DIFF_REF'"
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "A12",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": false,
+    "pack_error": "what():  no enum named 'BANK.DIFF_REF'"
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "B2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_LVDS"
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "C18",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "K2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVDS",
+    "ball": "L16",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVDS25E"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_LVPECL33",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVPECL33"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_LVPECL33"
+  },
+  {
+    "base_type": "OUTPUT_LVPECL33E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_LVPECL33E"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_MLVDS25",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_MLVDS25"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_MLVDS25"
+  },
+  {
+    "base_type": "OUTPUT_MLVDS25E",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_MLVDS25E"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SLVS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SLVS"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_SLVS"
+  },
+  {
+    "base_type": "OUTPUT_SSTL135D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL135D_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SSTL135D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL135D_II"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SSTL15D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL15D_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SSTL15D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL15D_II"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SSTL18D_I",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL18D_I"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SSTL18D_II",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SSTL18D_II"
+    ],
+    "packed": true
+  },
+  {
+    "base_type": "OUTPUT_SUBLVDS",
+    "ball": "A2",
+    "routed": true,
+    "written_base_types": [
+      "INPUT_LVCMOS25",
+      "OUTPUT_SUBLVDS"
+    ],
+    "packed": false,
+    "pack_error": "EnumSettingBits::set_value: cannot set OUTPUT_SUBLVDS"
+  }
+]

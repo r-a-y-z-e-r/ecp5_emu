@@ -1,0 +1,5 @@
+issue,stimulus,observed,interpretation
+COMB_DPRAM_INIT_order,packed INIT=0x0100; logical RAD=1,0,model RAM read order differs from physical-LUT INIT order used by packer
+COMB_DPRAM_INIT_order,packed INIT=0x0100; logical RAD=8,1,do not use this model unchanged as a post-packing INIT oracle
+COMB_WREMUX_unused,MODE=DPRAM; WREMUX=0; raw WRE=1; write one,1,apply effective enable externally or correct model; declared WREMUX is not used in this branch
+COMB_CCU2_FCO_shadow,MODE=CCU2; INIT=0xffff; INJECT1=NO; FCI=1,z,"generate-local FCO shadows the output; software-model issue, not a floating silicon carry"

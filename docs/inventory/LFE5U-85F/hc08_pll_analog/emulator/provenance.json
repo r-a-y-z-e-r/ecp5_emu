@@ -1,0 +1,14 @@
+{
+  "reference_head": "09b1ff699fc629c2d4ef3a2ae1e38baeae52b48b",
+  "emulator_binary_sha256": "90167e5d11e2c049374136ace9248afb9ea0821e6f74439aa8be1abaa3854a42",
+  "note": "Emulator compiled in external scratch from the existing working tree, including pre-existing edits. No emulator source changed for HC08.",
+  "source_status_at_evidence_collection": [
+    " M src/compile/mod.rs",
+    " M src/compile/system.rs",
+    " M src/kernel/cache.rs",
+    " M src/kernel/mod.rs",
+    " M tests/automatic_compile.rs",
+    " M tests/system_controls.rs",
+    "?? tests/sgsr_native.rs"
+  ]
+}

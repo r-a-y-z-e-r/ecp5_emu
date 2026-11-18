@@ -1,0 +1,18 @@
+distinct windows: 53
+samples: 13568 GSR low in 416 reset bits high in 13286
+ea R[0]: ['CE0, RST0 async, GSR ignored']
+ea R[20]: ['CE0, RST0 sync, GSR ignored']
+ea R[30]: ['CE0, RST0 async, GSR ignored']
+ea R[50]: ['CE0, RST0 sync, GSR ignored']
+eb R[0]: ['CE0, RST0 sync, GSR ignored']
+eb R[20]: ['CE0, RST0 sync, GSR ignored']
+eb R[30]: ['CE0, RST0 sync, GSR ignored']
+eb R[50]: ['CE0, RST0 sync, GSR ignored']
+ec R[0]: ['CE0, RST0 async, GSR ignored']
+ec R[20]: ['CE0, RST0 async, GSR ignored']
+ec R[30]: ['CE0, RST0 async, GSR ignored']
+ec R[50]: ['CE0, RST0 async, GSR ignored']
+ed R[0]: ['CE0, RST0 async, GSR ignored']
+ed R[20]: ['CE0, RST0 async, GSR ignored']
+ed R[30]: ['CE0, RST0 async, GSR ignored']
+ed R[50]: ['CE0, RST0 async, GSR ignored']

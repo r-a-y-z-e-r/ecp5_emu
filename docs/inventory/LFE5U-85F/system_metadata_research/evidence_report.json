@@ -1,0 +1,60 @@
+{
+  "device": "LFE5U-85F",
+  "command_descriptors": 22,
+  "native_sentinels_checked": 4,
+  "text_config_losses": 4,
+  "wake_phase_rows": 8,
+  "synthetic_tail": "parser_only;not_a_hardware_programming_stream",
+  "hardware": "not_run",
+  "runtime_changed": false,
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "602ff2b89074e0df5fbcd5c693466999410e7ccf58b88bc1cbfff3ec76667549"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "94fe9ea78356fd6ea5499e4c58414cd35c68976ab97351a347bfba6ea78dc699"
+    },
+    {
+      "source": "native_probe_binary",
+      "sha256": "b149ff6cef5355564bb3a0996b6aec360e88b915b88a0f0191c0c01972b885ee"
+    },
+    {
+      "source": "input_bit",
+      "sha256": "11569c46ad9bd36dfbd5d2e252e7d3bef888fdfd3d2e8db21f9febca46d438be"
+    },
+    {
+      "source": "libtrellis",
+      "sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06"
+    },
+    {
+      "source": "bridge",
+      "sha256": "913211a6cbf4672faca372282221af717101f935f0ecc44da6a722291886011a"
+    },
+    {
+      "source": "src/Bitstream.cpp",
+      "sha256": "bb85d85ac70b7b5044285fe83f8606c3398a64147121053f45a6b5b290f68421"
+    },
+    {
+      "source": "src/ChipConfig.cpp",
+      "sha256": "483c86b6de6c6d44138265c2bb03bc0705e211aad7a9f63ec86e9228c6ae0252"
+    },
+    {
+      "source": "src/PyTrellis.cpp",
+      "sha256": "865e71e44d3e7ec32d0be6ca1362a81280f4ba9bd26c619c9c46bbf78cf3a605"
+    },
+    {
+      "source": "include/Bitstream.hpp",
+      "sha256": "4daa2a49cb4271173c22cfc596d000e1a293b5efb0e4a81045a7817b1da6da1a"
+    },
+    {
+      "source": "include/Chip.hpp",
+      "sha256": "44be2be5cfbb0f305e025b92c08258f13c9c45c7d9df5bdd683dfe902295a7d9"
+    },
+    {
+      "source": "sysCONFIG",
+      "sha256": "6931b2a1733b3530dfe6f8b661f56f6744b0c08b0fa731193dec6fa9d00a341b"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "explanation": "CEMUX=1 is a tie implemented with CE routing-mux bits. The random CE route remains present and sets additional bits. Some selections gain extra arcs; others retain the routed CE. These are conflicting configuration requests, not a clean constant-enable experiment.",
+  "database": "/opt/homebrew/share/trellis/database/ECP5/tiledata/PLC2/bits.db",
+  "configurations": {
+    "hs02": {
+      "sha256": "1b8454309cb5066e7632ddea2142ee49db45ac0e8866ec77f3574410dba131b3",
+      "placement_provenance": "Existing routed JSON from the previous verification run; its config was checked byte-for-byte identical to the board config. No synthesis or routing was rerun.",
+      "probes": {
+        "ff01": {
+          "bel": "X24/Y31/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "S1_V02N0201",
+          "route_bits": [
+            "F48B1",
+            "F52B1"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff03": {
+          "bel": "X23/Y35/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "V02N0201",
+          "route_bits": [
+            "F50B0",
+            "F50B1"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "H00R0000",
+              "intended_routing_net": "lfsr_TRELLIS_FF_Q_28_DI_LUT4_Z_B_LUT4_Z_C_LUT4_C_Z_LUT4_Z_3_D_LUT4_C_D_LUT4_D_Z[4]"
+            },
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff05": {
+          "bel": "X18/Y30/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "E1_H02W0101",
+          "route_bits": [
+            "F49B1",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff07": {
+          "bel": "X19/Y25/SLICEC.FF0",
+          "ce_port": "CE2",
+          "routed_source": "H02W0101",
+          "route_bits": [
+            "F61B0",
+            "F64B1"
+          ],
+          "constant_one_bits": [
+            "F59B0",
+            "F65B1"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "E1_H02W0101",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0601",
+              "intended_routing_net": "ci[0]"
+            }
+          ]
+        },
+        "ff09": {
+          "bel": "X22/Y31/SLICEC.FF0",
+          "ce_port": "CE2",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F61B0",
+            "F63B1"
+          ],
+          "constant_one_bits": [
+            "F59B0",
+            "F65B1"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0601",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0601",
+              "intended_routing_net": "t_TRELLIS_FF_Q_34_DI[0]"
+            }
+          ]
+        },
+        "ff11": {
+          "bel": "X18/Y38/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "E1_H02W0101",
+          "route_bits": [
+            "F49B1",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff13": {
+          "bel": "X22/Y41/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "N1_V02S0201",
+          "route_bits": [
+            "F50B1",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff15": {
+          "bel": "X19/Y31/SLICEB.FF0",
+          "ce_port": "CE1",
+          "routed_source": "V02S0201",
+          "route_bits": [
+            "F53B0",
+            "F56B1"
+          ],
+          "constant_one_bits": [
+            "F53B1",
+            "F56B1"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff17": {
+          "bel": "X21/Y27/SLICEB.FF0",
+          "ce_port": "CE1",
+          "routed_source": "V02N0201",
+          "route_bits": [
+            "F51B0",
+            "F54B1"
+          ],
+          "constant_one_bits": [
+            "F53B1",
+            "F56B1"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "H00R0000",
+              "intended_routing_net": "t_TRELLIS_FF_Q_31_DI_LUT4_D_Z_LUT4_C_Z[0]"
+            },
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff19": {
+          "bel": "X17/Y36/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff21": {
+          "bel": "X21/Y42/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00R0000",
+          "route_bits": [
+            "F48B1",
+            "F50B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff23": {
+          "bel": "X18/Y32/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H02W0101",
+          "route_bits": [
+            "F49B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "E1_H02W0101",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff25": {
+          "bel": "X19/Y27/SLICEC.FF0",
+          "ce_port": "CE2",
+          "routed_source": "E1_H02W0101",
+          "route_bits": [
+            "F59B0",
+            "F64B1"
+          ],
+          "constant_one_bits": [
+            "F59B0",
+            "F65B1"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff27": {
+          "bel": "X18/Y33/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H02W0101",
+          "route_bits": [
+            "F49B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "E1_H02W0101",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "ci_TRELLIS_FF_Q_4_DI_CCU2C_S1_CIN_CCU2C_COUT_S1_CCU2C_A1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_CCU2C_S1_S0_CCU2C_S0_COUT_CCU2C_CIN_S0_L6MUX21_Z_1_SD_L6MUX21_Z_2_SD_LUT4_Z_D[2]"
+            }
+          ]
+        },
+        "ff29": {
+          "bel": "X19/Y42/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "N1_V02S0201",
+          "route_bits": [
+            "F50B1",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff31": {
+          "bel": "X19/Y35/SLICEB.FF0",
+          "ce_port": "CE1",
+          "routed_source": "H02W0101",
+          "route_bits": [
+            "F53B0",
+            "F55B1"
+          ],
+          "constant_one_bits": [
+            "F53B1",
+            "F56B1"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "E1_H02W0101",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "t[125]"
+            }
+          ]
+        }
+      }
+    },
+    "hs02s": {
+      "sha256": "b7df30bdaafe56c884d643cdca30ca7ec7d38b1b981e52682336b9da7c1b59d3",
+      "placement_provenance": "Existing routed JSON from the previous verification run; its config was checked byte-for-byte identical to the board config. No synthesis or routing was rerun.",
+      "probes": {
+        "ff01": {
+          "bel": "X25/Y45/SLICED.FF0",
+          "ce_port": "CE3",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F59B1",
+            "F60B0"
+          ],
+          "constant_one_bits": [
+            "F57B1",
+            "F60B1"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0601",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0601",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff03": {
+          "bel": "X20/Y41/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "N1_V02S0201",
+          "route_bits": [
+            "F50B1",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff05": {
+          "bel": "X19/Y53/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00R0000",
+          "route_bits": [
+            "F48B1",
+            "F50B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff07": {
+          "bel": "X22/Y55/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "lfsr_TRELLIS_FF_Q_30_DI_LUT4_Z_D_LUT4_Z_D_LUT4_Z_C_LUT4_D_C_LUT4_C_D_LUT4_C_D_LUT4_D_Z_LUT4_Z_1_C_LUT4_C_D_LUT4_C_D_LUT4_Z_D_LUT4_Z_C_LUT4_C_Z[0]"
+            }
+          ]
+        },
+        "ff09": {
+          "bel": "X25/Y47/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H02W0101",
+          "route_bits": [
+            "F49B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "E1_H02W0101",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "shift_TRELLIS_FF_Q_5_DI_PFUMX_Z_C0_LUT4_Z_1_D_LUT4_D_Z_CCU2C_S1_A0_LUT4_Z_D[2]"
+            }
+          ]
+        },
+        "ff11": {
+          "bel": "X21/Y41/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "S1_V02N0201",
+          "route_bits": [
+            "F48B1",
+            "F52B1"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff13": {
+          "bel": "X17/Y48/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff15": {
+          "bel": "X19/Y56/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff17": {
+          "bel": "X21/Y49/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "V02S0201",
+          "route_bits": [
+            "F48B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff19": {
+          "bel": "X22/Y40/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0100",
+          "route_bits": [
+            "F50B1",
+            "F52B1"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "S1_V02N0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff21": {
+          "bel": "X18/Y43/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00R0100",
+          "route_bits": [
+            "F48B0",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff23": {
+          "bel": "X19/Y52/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00R0100",
+          "route_bits": [
+            "F48B0",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff25": {
+          "bel": "X19/Y51/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "V02S0201",
+          "route_bits": [
+            "F48B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff27": {
+          "bel": "X21/Y40/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00R0100",
+          "route_bits": [
+            "F48B0",
+            "F54B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": []
+        },
+        "ff29": {
+          "bel": "X17/Y43/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            }
+          ]
+        },
+        "ff31": {
+          "bel": "X17/Y49/SLICEA.FF0",
+          "ce_port": "CE0",
+          "routed_source": "H00L0000",
+          "route_bits": [
+            "F50B1",
+            "F52B0"
+          ],
+          "constant_one_bits": [
+            "F48B1",
+            "F54B0"
+          ],
+          "extra_mux_arcs_after_union": [
+            {
+              "source": "N1_V02S0201",
+              "intended_routing_net": "not resolved from saved routing JSON"
+            },
+            {
+              "source": "V02S0201",
+              "intended_routing_net": "rec[1734]"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

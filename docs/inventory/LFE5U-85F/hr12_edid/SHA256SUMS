@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+f458482c9c233a6e0503399a80e610aa21c2b8c9b714aee8f9679b8d04968689  README.md
+837767b25696163317496313f395fa9d73c78a2a235f16c8770bebf85818c5d4  TOOLS.txt
+1b8fd793b05303f9be4ac7d8e1d63d8eead6cb91e04bf3eebfdfcb35eea2faee  observations.log
+4166e128ecd23768751c1d2602153afdd6430ab8c10c643d16a4f2933b3e81a0  edid_read.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 7a4a0dd28c18a0c36eab63dae5cb8f426f7b643ab7c4e84f36234d1b1ab5db5a  edid_read top.bit (target/reference/edid_read, built on the Mac; not stored)

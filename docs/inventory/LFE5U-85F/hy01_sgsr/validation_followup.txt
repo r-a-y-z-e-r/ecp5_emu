@@ -1,0 +1,76 @@
+HY01 SGSR shared-document and ignored-test follow-up
+
+Scope:
+  No commit, branch switch, stash, reset, board, serial-port or flash access.
+  tests/automatic_compile.rs now explicitly refuses its hand-edited SYNC plus
+  ACTIVE_HIGH profile using the HY01-measured ACTIVE_LOW diagnostic. Ordinary
+  ACTIVE_LOW SGSR/X20 plans and executes in tests/sgsr_native.rs.
+  system_controls names/checks its ACTIVE_HIGH and NONE SYNC profiles explicitly.
+  Only the authorized SGSR limitation clause changed in src/compile/mod.rs.
+
+Rserv environment for every check:
+  tools/rserv.sh; TMPDIR=$HOME/work/tmp
+
+Targeted command:
+  cargo test --release -p ecp5_emu --test sgsr_native --test automatic_compile --test system_controls --test system_native --test fast_mode -- --include-ignored --test-threads=2
+  PASS: 50 passed, 0 failed, 0 ignored:
+    automatic_compile 16; fast_mode 21; sgsr_native 4;
+    system_controls 8; system_native 1.
+
+Complete workspace command:
+  cargo test --release --workspace -- --test-threads=2
+  PASS: 499 passed, 0 failed, 245 ignored.
+    ecp5_emu: 358 passed, 0 failed, 235 ignored (83 test executables).
+    ecp5_gui: 141 passed, 0 failed, 10 ignored (1 test executable).
+    Emulator doc-tests: 0 tests.
+  workspace_tests.tsv retains every top-level test-binary/doc-test result (85 rows).
+  The run emitted four extra successful child-process summaries with nonzero
+  filtered-out counts. These nested re-executions are excluded from the totals;
+  the corrected top-level result counts match the --list/--list --ignored
+  inventories of the corresponding 84 executables: 744 total, 245 ignored,
+  499 active. No failed top-level or nested result occurred.
+
+Suite-count reconciliation:
+  The earlier 343/233 was a package-only (-p ecp5_emu) snapshot, not --workspace;
+  it did not cover the GUI. It was also summed from raw test-result lines rather
+  than per-binary results, so it was not a reliable unique-test census. Other
+  sessions committed additional tests between runs (HEAD advanced during this
+  follow-up). The current measured emulator/GUI split above and per-binary TSV
+  identify this run without treating the old source snapshot as identical.
+
+Final checks:
+  cargo fmt --check
+  PASS.
+  cargo clippy --release --workspace --all-targets -- -D warnings
+  PASS; no warnings.
+  python3 -B tools/check_home_paths.py
+  PASS locally and on rserv. rserv.sh excludes .git, so its first direct attempt
+  could not enumerate tracked files. The successful unmodified-script run used
+  a disposable Git directory/index populated from the local tracked-file index
+  plus new HY01 files, with GIT_WORK_TREE pointing to the copied source. No real
+  index or worktree metadata was changed. Temporary Git metadata and the uploaded
+  index-info file were removed. The same exact two-prefix regex also checks all
+  untracked HY01 text artifacts before the final checksum verification.
+
+SGSR-only document audit:
+  Grepped every file under tests/, docs/ and tools/ for the old blanket diagnostic,
+  SYNCMODE/SGSR expectations and ASYNC-only/SYNC-rejected current-support claims.
+  Current test expectations and support descriptions use the qualified HY01 rule.
+  Physical catalogues and actual ASYNC/NONE decoded fixture values remain valid.
+  Archived execution reports and the historical R09 validation record remain
+  as originally generated.
+  REFUSAL_AUDIT marks R15 fixed, updates X20's config/bit event/fast outcomes,
+  retains the original config hash, and lists the remaining polarity/clock guards.
+  SYSTEM_STARTUP documents initial 11, two held rising edges, one/two falling,
+  raw-active OR s2, reset-free stages and <=20 ns propagation-delay hazards.
+  CSV change is limited to its two GSR rows. Recount (322 rows):
+    executed 209; partly 28; refused 21; resource-not-executed 23;
+    ignored-no-effect 41; ignored-RISK 0.
+  There are 35 non-refused/non-partly rows with a nonempty refused_values cell:
+  the original 31, the three qualified R09 MODE rows and qualified GSR.SYNCMODE.
+
+Follow-up source SHA256:
+  85a1f56efe02073cdd8e7f27e45c6c27e513f0428b5cfbc7e49cf3ca4e5c7c8c  src/compile/mod.rs
+  62d1e8755fe127ae8b5de3daa88c261678e066a65d9b2370a9ede13ad6d93c74  tests/automatic_compile.rs
+  478937c6c20f78820dba5d416db35ee3f8280f73cd94d179f25c54128e189d3b  tests/system_controls.rs
+  858a9b3064de9cb78e3095266ab6620b86bad0bc02fe30289b52e3671f785c62  tests/sgsr_native.rs

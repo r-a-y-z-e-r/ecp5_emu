@@ -1,0 +1,187 @@
+--- a/src/kernel/fast.rs
++++ b/src/kernel/fast.rs
+@@ -760,6 +760,13 @@
+         // only probes may see (`floating`, checked against `observed`).
+         let mut tris: HashMap<usize, Tri> = HashMap::new();
+         let mut floating: Vec<(usize, usize)> = Vec::new();
++        let mut ebr_slots = HashMap::new();
++        for (b, block) in self.ebr.iter().enumerate() {
++            for &d in block.outputs.iter().flatten().flatten() {
++                ebr_slots.insert(slot[root[self.drivers[d].signal]], b);
++            }
++        }
++        let mut checked_ebr_lines = HashSet::new();
+         for &g in &order {
+             let out = gate_net(g);
+             if g < gates_n {
+@@ -962,6 +969,20 @@
+                         Term::Lit(_) => h?,
+                         _ => {
+                             let (l, h) = (l?, h?);
++                            if reads(&[s, l, h]).iter().any(|s| ebr_slots.contains_key(s)) {
++                                checked_ebr_lines.insert(lines.len());
++                                funcs.push(LineFn::Opaque); // Preserve the lazy reads through folding.
++                                lines.push((
++                                    format!(
++                                        "  v[{}] = {};",
++                                        slot[out],
++                                        ebr_lut(0xe4e4, &[s, l, h, Term::Lit(0)], &ebr_slots)
++                                    ),
++                                    slot[out],
++                                    reads(&[s, l, h]),
++                                ));
++                                continue;
++                            }
+                             funcs.push(LineFn::Mux(s, l, h));
+                             lines.push((
+                                 format!("  v[{}] = {} ? {} : {};", slot[out], s.c(), h.c(), l.c()),
+@@ -1015,6 +1036,16 @@
+                         r
+                     } else {
+                         let (init, t) = specialize(init, &t);
++                        if reads(&t).iter().any(|s| ebr_slots.contains_key(s)) {
++                            checked_ebr_lines.insert(lines.len());
++                            funcs.push(LineFn::Opaque);
++                            lines.push((
++                                format!("  v[{}] = {};", slot[out], ebr_lut(init, &t, &ebr_slots)),
++                                slot[out],
++                                reads(&t),
++                            ));
++                            continue;
++                        }
+                         let index: Vec<String> = t
+                             .iter()
+                             .filter(|x| matches!(x, Term::Net { .. }))
+@@ -2086,6 +2117,28 @@
+                 net_name(net)
+             );
+         }
++        // Defer only outputs whose EVERY consumer is one of the lazy,
++        // checked lines above. Stateful/opaque/control reads keep the old guard.
++        let non_line: HashSet<usize> = always
++            .iter()
++            .copied()
++            .chain(updates.iter().flat_map(|u| u.3.iter().copied()))
++            .chain(demand.iter().flat_map(|d| d.3.iter().copied()))
++            .collect();
++        let deferred_ebr: HashSet<usize> = ebr_slots
++            .keys()
++            .copied()
++            .filter(|s| {
++                observed.contains(s)
++                    && !non_line.contains(s)
++                    && lines
++                        .iter()
++                        .enumerate()
++                        .all(|(i, l)| !l.2.contains(s) || checked_ebr_lines.contains(&i))
++            })
++            .collect();
++        let capture_observed: HashSet<usize> =
++            observed.difference(&deferred_ebr).copied().collect();
+         let mut needed = observed.clone();
+         for s in (0..n).filter(|&s| self.signals[s].watched) {
+             let watched = match constant[root[s]] {
+@@ -2269,7 +2322,7 @@
+                 block,
+                 outputs,
+                 Readers {
+-                    logic: &observed,
++                    logic: &capture_observed,
+                     any: &needed,
+                 },
+                 &mut initial,
+@@ -2901,6 +2954,22 @@
+   return 1;
+ }}{tri_helper}
+ 
++/* Called only by a branch actually evaluated; never index a LUT with X. */
++static inline u8 fast_ebr_read(u8 *v, uint32_t slot, uint32_t unit) {{
++  if (v[slot] > 1) {{
++    u8 expected = 0;
++    /* One winning reporter; the caller reads after the settle pool joins. */
++    if (__atomic_compare_exchange_n(&v[{error_slot}], &expected, 255, 0,
++                                   __ATOMIC_RELAXED, __ATOMIC_RELAXED)) {{
++      v[{error_unit_lo}] = (u8)unit;
++      v[{error_unit_hi}] = (u8)(unit >> 8);
++      __atomic_store_n(&v[{error_slot}], 2, __ATOMIC_RELEASE);
++    }}
++    return 0;
++  }}
++  return v[slot];
++}}
++
+ /* Inside an EBR capture, 2 stands for unknown. */
+ #define MERGE(a, b) ((a) == (b) ? (a) : 2)
+ static int row_in(const uint32_t *cells, int n, uint32_t row) {{
+@@ -2943,9 +3012,11 @@
+ static int converge(u8 *restrict v) {{
+ {ebr_scratch}{preload_scratch}  u8 n[{registers}];
+   for (int iteration = 0; iteration < 10000; iteration++) {{
++    if (fast_error(v)) return 1;
+ {dtr_capture}{preload_wave}{edges}    int edge = {any};
+     if (edge) {{
+ {dispatch}{dispatch_check}    }}
++    if (fast_error(v)) return 1;
+     int reset = asynchronous(v);
+     if (reset < 0) return 1;
+ {dtr_return}{reset_settle}
+@@ -3795,6 +3866,59 @@
+     }
+ }
+ 
++// Checked reads stay inside C conditional branches. Unknown EBR values
++// never become Boolean truth or a LUT shift/index before the diagnostic.
++fn ebr_read(t: Term, ebr: &HashMap<usize, usize>) -> String {
++    match t {
++        Term::Net { slot, inverted } if ebr.contains_key(&slot) => format!(
++            "(fast_ebr_read(v, {slot}, {}) ^ {})",
++            ebr[&slot],
++            u8::from(inverted)
++        ),
++        _ => t.c(),
++    }
++}
++
++fn ebr_lut(init: u16, t: &[Term; 4], ebr: &HashMap<usize, usize>) -> String {
++    let mut leaves: Vec<usize> = t
++        .iter()
++        .filter_map(|t| match t {
++            Term::Net { slot, .. } => Some(*slot),
++            _ => None,
++        })
++        .collect();
++    leaves.sort_unstable_by_key(|s| (ebr.contains_key(s), *s));
++    leaves.dedup();
++    fn branch(
++        f: &LineFn,
++        leaves: &[usize],
++        depth: usize,
++        bits: usize,
++        ebr: &HashMap<usize, usize>,
++    ) -> String {
++        if depth == leaves.len() {
++            return u8::from(
++                f.eval(&|s| bits & (1 << leaves.iter().position(|&x| x == s).unwrap()) != 0),
++            )
++            .to_string();
++        }
++        let low = branch(f, leaves, depth + 1, bits, ebr);
++        let high = branch(f, leaves, depth + 1, bits | (1 << depth), ebr);
++        if low == high {
++            return low;
++        }
++        let read = ebr_read(
++            Term::Net {
++                slot: leaves[depth],
++                inverted: false,
++            },
++            ebr,
++        );
++        format!("({read} ? {high} : {low})")
++    }
++    branch(&LineFn::Lut(init, *t), &leaves, 0, 0, ebr)
++}
++
+ /// A LUT over `inputs` as the same function of only the nets it depends on,
+ /// each read as it is: literal inputs and inversions go into the INIT word,
+ /// which saves the line an operation each (the line's machine code is what

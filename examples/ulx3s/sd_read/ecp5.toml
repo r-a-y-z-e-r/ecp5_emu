@@ -1,0 +1,12 @@
+# Read-only SDHC block zero over SPI, reported on the UART.
+# Build: ecp5_emu build examples/ulx3s/sd_read (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/sd_read; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/sd_read.
+
+[project]
+name = "sd_read"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

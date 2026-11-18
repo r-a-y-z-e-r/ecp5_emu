@@ -1,0 +1,102 @@
+Routing validation 2026-11-17T05:57:14.702844+00:00
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis ecppack Version 1.4-86-ga31ff70
+Scratch artifacts: /private/tmp/ecp5-hd09-hs02-routed.Gsj8MA
+Commands: supplied build.sh flow, CABGA381, --85k --seed 1; added --write DESIGN.routed.json.
+Synthesis, routing and packing artifacts are in scratch space; checked-in Verilog is in the series directory.
+No config patch; no nextpnr/library source modification; no board/serial/cargo/commit.
+Timing target matches supplied build.sh: default 12 MHz. Actual board clock: 25 MHz.
+For HD09 board measurement, retain documented fabric GSR=DISABLED synthesis step.
+
+hd09: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: dcc0443c62114037f869346be9df48a43e177f17685ce06c76ab85e75d20e83a
+  Synthesis cells: {'ALU54B': 11, 'CCU2C': 38, 'GSR': 1, 'L6MUX21': 22, 'LUT4': 17599, 'MULT18X18D': 22, 'PFUMX': 3401, 'TRELLIS_FF': 20094}
+  Routed cells: {'ALU54B': 11, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 22, 'TRELLIS_COMB': 17705, 'TRELLIS_FF': 20094, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 41.44 MHz (PASS at 12.00 MHz)
+hd09.config: 33 DSP cells; all 58 active register selectors use CLK0
+  CLK0_DIV DISABLED=33 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=33
+  CLK2_DIV DISABLED=0 ENABLED=33
+  CLK3_DIV DISABLED=0 ENABLED=33
+  active physical clock divider: PASS
+
+hd09s: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: 07af77a8e2cb7d352335deb16ad5855729ecb0d2987b4297599ba1abfa71752f
+  Synthesis cells: {'ALU54B': 11, 'CCU2C': 38, 'GSR': 1, 'L6MUX21': 357, 'LUT4': 18501, 'MULT18X18D': 22, 'PFUMX': 4150, 'TRELLIS_FF': 20094}
+  Routed cells: {'ALU54B': 11, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 22, 'TRELLIS_COMB': 18607, 'TRELLIS_FF': 20094, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 43.56 MHz (PASS at 12.00 MHz)
+hd09s.config: 33 DSP cells; all 58 active register selectors use CLK0
+  CLK0_DIV DISABLED=33 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=33
+  CLK2_DIV DISABLED=0 ENABLED=33
+  CLK3_DIV DISABLED=0 ENABLED=33
+  active physical clock divider: PASS
+
+hd09m: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: 8a99e470b180396c9cac4b085d4019db499760bd9769b1d5b4faae639971ad0a
+  Synthesis cells: {'ALU54B': 4, 'CCU2C': 36, 'GSR': 1, 'L6MUX21': 893, 'LUT4': 14287, 'MULT18X18D': 12, 'PFUMX': 4382, 'TRELLIS_FF': 14270}
+  Routed cells: {'ALU54B': 4, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 12, 'TRELLIS_COMB': 14389, 'TRELLIS_FF': 14270, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 42.50 MHz (PASS at 12.00 MHz)
+hd09m.config: 16 DSP cells; all 16 active register selectors use CLK0
+  CLK0_DIV DISABLED=16 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=16
+  CLK2_DIV DISABLED=0 ENABLED=16
+  CLK3_DIV DISABLED=0 ENABLED=16
+  active physical clock divider: PASS
+
+hd09ms: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: 6b365e0f9c7e5a06b24406b51efab9add454d57a0ab1b534cb3e5065af22ce0d
+  Synthesis cells: {'ALU54B': 4, 'CCU2C': 36, 'GSR': 1, 'L6MUX21': 1714, 'LUT4': 15824, 'MULT18X18D': 12, 'PFUMX': 5785, 'TRELLIS_FF': 14270}
+  Routed cells: {'ALU54B': 4, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 12, 'TRELLIS_COMB': 15926, 'TRELLIS_FF': 14270, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 45.45 MHz (PASS at 12.00 MHz)
+hd09ms.config: 16 DSP cells; all 16 active register selectors use CLK0
+  CLK0_DIV DISABLED=16 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=16
+  CLK2_DIV DISABLED=0 ENABLED=16
+  CLK3_DIV DISABLED=0 ENABLED=16
+  active physical clock divider: PASS
+
+hd09p: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: 37ca8d0a9419a5239603405b42a10af9774a910329cb5fb367dc619c71edbf5f
+  Synthesis cells: {'ALU54B': 4, 'CCU2C': 36, 'GSR': 1, 'L6MUX21': 893, 'LUT4': 14287, 'MULT18X18D': 12, 'PFUMX': 4382, 'TRELLIS_FF': 14270}
+  Routed cells: {'ALU54B': 4, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 12, 'TRELLIS_COMB': 14389, 'TRELLIS_FF': 14270, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 41.91 MHz (PASS at 12.00 MHz)
+isolated multiplier stages and CE/RST parameters in routed JSON: PASS
+hd09p.config: 16 DSP cells; all 16 active register selectors use CLK0
+  CLK0_DIV DISABLED=16 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=16
+  CLK2_DIV DISABLED=0 ENABLED=16
+  CLK3_DIV DISABLED=0 ENABLED=16
+  active physical clock divider: PASS
+
+hd09ps: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: c89f53755f0b6b8868b4ee2a21459de33a152a01f6d8df012fbad41747fb5a4d
+  Synthesis cells: {'ALU54B': 4, 'CCU2C': 36, 'GSR': 1, 'L6MUX21': 1714, 'LUT4': 15824, 'MULT18X18D': 12, 'PFUMX': 5785, 'TRELLIS_FF': 14270}
+  Routed cells: {'ALU54B': 4, 'DCCA': 1, 'GSR': 1, 'MULT18X18D': 12, 'TRELLIS_COMB': 15926, 'TRELLIS_FF': 14270, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 49.12 MHz (PASS at 12.00 MHz)
+isolated multiplier stages and CE/RST parameters in routed JSON: PASS
+hd09ps.config: 16 DSP cells; all 16 active register selectors use CLK0
+  CLK0_DIV DISABLED=16 ENABLED=0
+  CLK1_DIV DISABLED=0 ENABLED=16
+  CLK2_DIV DISABLED=0 ENABLED=16
+  CLK3_DIV DISABLED=0 ENABLED=16
+  active physical clock divider: PASS
+
+HD09 selftest: full synthetic C/opcode lines, every edge, both divided phases, GSR divider reset, never, composite stages: PASS
+HD09m/p selftest: every edge, both divided phases, GSR divider reset, never; full synthetic lines: PASS
+Regression: checker rejects original planning-session hd09m.config with active CLK0_DIV ENABLED: PASS
+
+Actual grep -Ec counts from routed .config files:
+hd09: CLK0_DIV DISABLED=33; ENABLED=0; active REG_*_CLK CLK1..3=0
+hd09s: CLK0_DIV DISABLED=33; ENABLED=0; active REG_*_CLK CLK1..3=0
+hd09m: CLK0_DIV DISABLED=16; ENABLED=0; active REG_*_CLK CLK1..3=0
+hd09ms: CLK0_DIV DISABLED=16; ENABLED=0; active REG_*_CLK CLK1..3=0
+hd09p: CLK0_DIV DISABLED=16; ENABLED=0; active REG_*_CLK CLK1..3=0
+hd09ps: CLK0_DIV DISABLED=16; ENABLED=0; active REG_*_CLK CLK1..3=0

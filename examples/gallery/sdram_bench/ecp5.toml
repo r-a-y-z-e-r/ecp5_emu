@@ -1,0 +1,6 @@
+[project]
+name = "sdram_bench"
+top = "top"
+[sources]
+verilog = ["top.v", "controller.v", "io.v", "report.v"]
+constraints = "top.lpf"

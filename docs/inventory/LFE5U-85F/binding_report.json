@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "device": "LFE5U-85F",
+  "database_revision": "9754ff473bfaa1e6edfaf57ce13bd447c76a88f6",
+  "trellis_revision": "a31ff7042e712c0e2ad217054116ce2c4995f5c7",
+  "input_inventory_sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6",
+  "generator_source_files": [
+    {
+      "path": "tools/bind_trellis_sites.py",
+      "sha256": "41fe101218de7b78d2116fbb11178baf640072f67ab7add2356449b81525cf75"
+    },
+    {
+      "path": "tools/resource_audit.py",
+      "sha256": "407151ca2abd62e19081ca6a385f5decb637a0364ee64741bacf008d70e0e92b"
+    },
+    {
+      "path": "tools/inventory_trellis.py",
+      "sha256": "b0837badfbd7d1db7126840c2d4fd8398da472035c0d831a10aae7c487c29af8"
+    }
+  ],
+  "resource_counts": {
+    "ALU54": 78,
+    "BRGECLKSYNC": 2,
+    "CLKDIVF": 4,
+    "DCC_CENTRE": 4,
+    "DCC_MID": 56,
+    "DCS": 2,
+    "DDRDLL": 4,
+    "DLLDELD": 12,
+    "DQSBUFM": 14,
+    "DSP_BLOCK": 39,
+    "DSP_SLICE": 78,
+    "DTR": 1,
+    "EBR": 208,
+    "ECLKBRIDGECS": 2,
+    "ECLKSYNCB": 8,
+    "GSR": 1,
+    "IOLOGIC": 224,
+    "JTAGG": 1,
+    "MULT18": 156,
+    "OSCG": 1,
+    "PIO": 365,
+    "PLC2": 10455,
+    "PLL": 4,
+    "SEDGA": 1,
+    "SIOLOGIC": 141,
+    "SLICE": 41820,
+    "TRELLIS_ECLKBUF": 8,
+    "USRMCLK": 1
+  },
+  "site_binding_counts": {
+    "group_member": 5733,
+    "instance": 47372,
+    "instance_candidate": 120,
+    "unresolved": 1496
+  },
+  "unresolved_by_family": {
+    "BCINRD": 4,
+    "BCLVDSO": 4,
+    "BREFTEST": 8,
+    "CIBTEST": 1463,
+    "CLKTEST": 12,
+    "PVTTEST": 1,
+    "START": 4
+  },
+  "reference_sources": [
+    {
+      "path": "libtrellis/src/Chip.cpp",
+      "sha256": "4846ae613fb9b9507371a808f4b8e018f6c7585f493673c4bd794bd8f3a0ae52"
+    },
+    {
+      "path": "libtrellis/src/Bels.cpp",
+      "sha256": "574e04b6cfa113c9cd8c6aa18c203f884d89d6c4a194c4b73297d1ece840b58d"
+    },
+    {
+      "path": "tools/extract_tilegrid.py",
+      "sha256": "ae6d3a7b00804475fccea1fa8e59586a6baa9ba5a0cb6a095f6e7f6f0f8fb954"
+    },
+    {
+      "path": "docs/architecture/global_routing.rst",
+      "sha256": "d1522c93d66e108e30d8a5d44e041449f1d7ae4ae3601274ed15c5822674d590"
+    },
+    {
+      "path": "fuzzers/ECP5/023-cmux/fuzzer.py",
+      "sha256": "b4e11582c1a1bc618236d50025bf1bc32c64c7453cd45ced84b5bac6ba34b8b8"
+    },
+    {
+      "path": "fuzzers/ECP5/026-dcc/fuzzer.py",
+      "sha256": "67b6fd9bb9c1fde42485b27843841dc6375f5d9847c90cc885c461cd71afaac4"
+    },
+    {
+      "path": "fuzzers/ECP5/070-dsp_routing/fuzzer.py",
+      "sha256": "9dff77ecaed57d4d09bbecc3db95af6428afd6175e743059830c2293aa82cd8a"
+    },
+    {
+      "path": "fuzzers/ECP5/121-eclk/fuzzer.py",
+      "sha256": "a155615b07db9c3cf0df40a6e932b89b6882635e90a60aed8b9e8dff98cea117"
+    },
+    {
+      "path": "fuzzers/ECP5/122-eclksync/fuzzer.py",
+      "sha256": "9c90898e312f2c0bfd990e8f94503f132eba55b97881ed47946f86e65d6ffb53"
+    },
+    {
+      "path": "fuzzers/ECP5/125-brgeclk/fuzzer.py",
+      "sha256": "f9c3c0bce6f0f8c7cbf0d0f0d3e3165980e34509709d659bf09da5d5e5012b62"
+    },
+    {
+      "path": "fuzzers/ECP5/126-eclkbridgecs/fuzzer.py",
+      "sha256": "79f7fecbf3e09aaff7b309928e270fcbc755324a980ef402ddef3d69e7aeba41"
+    },
+    {
+      "path": "fuzzers/ECP5/130-dqsbuf/fuzzer.py",
+      "sha256": "2c7f3c526cb0cd3ec296d8c6a6d607794457bc0ec6afd35f271f76ec8f204125"
+    },
+    {
+      "path": "fuzzers/ECP5/132-dlldel/fuzzer.py",
+      "sha256": "acb9ace2c1632bbd244e30159828ce72d52623fd9bd3da0e0fc6014d4d41b7be"
+    },
+    {
+      "path": "fuzzers/ECP5/133-ddrdll/fuzzer.py",
+      "sha256": "81071601aae59a906a4d5d594671b2412761d78f2fcfdffdf21a22ba55dceb46"
+    },
+    {
+      "path": "fuzzers/ECP5/101-dtr/fuzzer.py",
+      "sha256": "4b2c394613d29a81c94c7d202ab140378965e56b4b3a7721081aae9d47476587"
+    },
+    {
+      "path": "fuzzers/ECP5/102-oscg/fuzzer.py",
+      "sha256": "85c51a853828ee57c10793e4e60035d3d166f892a82b25afc2163543a6fdc233"
+    },
+    {
+      "path": "fuzzers/ECP5/103-gsr/fuzzer.py",
+      "sha256": "7052ed4456670aa0acdcf9b1f4ae40ad4399e85c396b4065e845ba664befc4b0"
+    },
+    {
+      "path": "fuzzers/ECP5/104-jtagg/fuzzer.py",
+      "sha256": "1bc3436cae648a25586a5b02ae30359aabb63acbd9df6194971906d4bd0aef68"
+    },
+    {
+      "path": "fuzzers/ECP5/105-sedga/fuzzer.py",
+      "sha256": "096cea6024c9ce218ed3b9e829da80820f611220295ea4532fe2b77cd988105c"
+    },
+    {
+      "path": "fuzzers/ECP5/041-ebr_config/fuzzer.py",
+      "sha256": "edf979d299fc41d67a7a28691af9b93eec7b01c3d98f31da7919b6e0b66a0a27"
+    },
+    {
+      "path": "fuzzers/ECP5/042-ebr_mux/fuzzer.py",
+      "sha256": "d06e43c47c1419b60f92757b4a39215fcf7c8aa9d4fa926d1a7c755dbab9141c"
+    },
+    {
+      "path": "fuzzers/ECP5/047-copy_ebr_config/fuzzer.py",
+      "sha256": "01e32adf22c854609c01946ce6175615fea91b9c88dd125c4cccb8ce97766d1a"
+    },
+    {
+      "path": "fuzzers/ECP5/073-mult18_config/fuzzer.py",
+      "sha256": "a8091f3d3ff683f861c63109c2598cc85b2f112c95caa60e9d0ac18be6976757"
+    },
+    {
+      "path": "fuzzers/ECP5/075-alu54b_config/fuzzer.py",
+      "sha256": "56ddd2bd445a5aaea65386fad0d4b8ea513c050ee5b8a7f43e20c999ca00956f"
+    },
+    {
+      "path": "fuzzers/ECP5/077-copy_dsp_config/fuzzer.py",
+      "sha256": "d5187ec39eda6cdbd8f3c5ea7ec8bc0847f87b5c2fc93d00de1f1002bb5161ee"
+    },
+    {
+      "path": "docs/architecture/tiles.rst",
+      "sha256": "15f67096b71c9396e673f931e16db0d1755c6592e771b1b063fa430e275eec8b"
+    },
+    {
+      "path": "libtrellis/src/Bitstream.cpp",
+      "sha256": "bb85d85ac70b7b5044285fe83f8606c3398a64147121053f45a6b5b290f68421"
+    }
+  ],
+  "additional_reference": {
+    "url": "https://www.latticesemi.com/view_document?document_id=50469",
+    "revision": "FPGA-TN-02205-1.3",
+    "pages": [
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "native_constructor_verification": {
+    "constructors": 506,
+    "ports": 96370,
+    "exact_port_match": true,
+    "probe_sha256": "847891538a003162f06b1acbc894ee05a1e0ae738514aff92d4ecdd737d22361",
+    "helper_source_sha256": "6671b03d85d47566ec54cbb1724f90a5fd087a5b17d5cdf90bee7ce3fd70559a",
+    "loaded_library_path": "/opt/homebrew/lib/trellis/libtrellis.dylib",
+    "loaded_library_sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06",
+    "scope": "Native constructor interfaces only; placement, full routing and behaviour are not verified."
+  },
+  "port_count": 96562,
+  "port_symbols_absent_from_database": 0,
+  "config_field_count": 21987,
+  "config_field_bit_references": 65634,
+  "config_unique_cram_bits": 54297,
+  "config_field_groups": 14417,
+  "config_groups_with_differing_defaults": 1742,
+  "fragment_enum_alias_classes": 7015,
+  "cross_resource_config_bits": 6475,
+  "config_options_with_conflicting_bit_constraints": 0,
+  "config_word_layout_rows": 36668,
+  "config_fields_by_family": {
+    "ALU54": 5187,
+    "BRGECLKSYNC": 2,
+    "CLKDIVF": 8,
+    "DDRDLL": 12,
+    "DLLDELD": 24,
+    "DQSBUFM": 182,
+    "DSP_SLICE": 78,
+    "DTR": 1,
+    "EBR": 7384,
+    "ECLKBRIDGECS": 2,
+    "ECLKSYNCB": 8,
+    "GSR": 2,
+    "JTAGG": 2,
+    "MULT18": 9087,
+    "OSCG": 3,
+    "SEDGA": 3,
+    "USRMCLK": 2
+  },
+  "routing_interpretation_issues": 8,
+  "validation": {
+    "exact_pio_metadata_set": true,
+    "all_package_pins_bound": true,
+    "all_site_records_preserved": true,
+    "all_target_objects_exist": true,
+    "all_exported_port_wire_names_in_database": true,
+    "all_config_bits_within_owning_tiles": true
+  },
+  "limitations": [
+    "Partial structural catalogue; omitted families remain unresolved.",
+    "DSP group membership does not establish internal lane or register ownership.",
+    "No full native RoutingGraph or silicon comparison was performed.",
+    "Exported ports cover EBR/MULT18/ALU54, DCC/DCS and selected IO-clock/system constructors only.",
+    "Database symbol presence does not establish correct location or a physical route.",
+    "Raw ECLKSYNC site indices have candidate bank/index bindings.",
+    "Configuration field bindings preserve bit provenance, not effective mode decoding."
+  ],
+  "io_configuration_reference": {
+    "path": "~/FPGA/nextpnr/ecp5/bitstream.cc",
+    "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6",
+    "revision": "6b438a1c9ab83cfb872fea21d9545d7d0bb8573f",
+    "functions": [
+      "get_pio_tile",
+      "get_pic_tile",
+      "write_dqsbuf",
+      "get_bram_tiles",
+      "get_dsp_tiles",
+      "write_bram",
+      "write_mult18",
+      "write_alu54",
+      "run"
+    ]
+  }
+}

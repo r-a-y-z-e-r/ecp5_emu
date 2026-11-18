@@ -1,0 +1,9 @@
+New event kernel; scope: Observed; startup: Configured
+Executed FF: 434; LUT4: 427; LUTRAM columns: 0; RAMW: 0; carry halves: 148; PIO: 2; routes: 8975
+Undriven wires: 1; inactive test-access descriptions: 69
+0 ns: clkop=0 locked=1
+Fast mode: 750 gates (410 on demand), 434 FF, 0 LUTRAM columns, 0 IOLOGIC, 2 EBR, 1 PLL, 0 OSC; compiled in 0.01 s
+
+32000000 ns: clkop=1 locked=1
+Fast mode ran 800000 cycles (0.032000 s of board time) in 0.686 s: 1.17 MHz
+Fast mode tuning: skipped (run too short)

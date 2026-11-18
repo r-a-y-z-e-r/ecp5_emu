@@ -1,0 +1,7 @@
+[project]
+name = "riscv_oled"
+top = "top"
+[sources]
+# The same PicoRV32 symlink as riscv_shell.
+verilog = ["top.v", "picorv32.v", "oled_dma.v"]
+constraints = "top.lpf"

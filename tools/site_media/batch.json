@@ -1,0 +1,450 @@
+{
+  "records": [
+    {
+      "label": "life",
+      "script": "tools/site_media/shots/life.window.script",
+      "window_size": [
+        1680,
+        960
+      ],
+      "still": "hero-life-full.webp",
+      "still_size": [
+        1680,
+        960
+      ],
+      "clip": "window-life-full.mp4",
+      "clip_seconds": 30,
+      "still_at": 5,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+run"
+      },
+      "args": [
+        "--focus",
+        "R44C60",
+        "--cell",
+        "120"
+      ],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/life_full",
+      "project_script": "tools/site_media/shots/emulate.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "oled",
+      "script": "tools/site_media/shots/oled.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "oled-bricks.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": "oled-bricks.mp4",
+      "clip_seconds": 18,
+      "still_at": 8,
+      "gate": {
+        "kind": "oled"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/gallery/oled_bricks",
+      "project_script": "tools/site_media/shots/emulate.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "cross-probe",
+      "script": "tools/site_media/shots/cross-probe.window.script",
+      "window_size": [
+        1500,
+        898
+      ],
+      "still": "window-cross-probe.webp",
+      "still_size": [
+        1500,
+        898
+      ],
+      "clip": "window-cross-probe.mp4",
+      "clip_seconds": 15,
+      "still_at": 12,
+      "gate": {
+        "kind": "project",
+        "pattern": "chip ready "
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/blinky_cycle",
+      "project_script": "tools/site_media/shots/cross-probe.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "start",
+      "script": "tools/site_media/shots/start.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-start.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": null,
+      "clip_seconds": 0,
+      "still_at": 3,
+      "gate": {
+        "kind": "delay"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "design": "blinky_cycle"
+    },
+    {
+      "label": "new-project",
+      "script": "tools/site_media/shots/new-project.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-new-project.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": null,
+      "clip_seconds": 0,
+      "still_at": 3,
+      "gate": {
+        "kind": "project",
+        "pattern": "new-project dialog"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "design": "blinky_cycle"
+    },
+    {
+      "label": "project",
+      "script": "tools/site_media/shots/project.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-project.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": "window-project-build.mp4",
+      "clip_seconds": 28,
+      "still_at": 27,
+      "gate": {
+        "kind": "project",
+        "pattern": "build start"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/gallery/riscv_shell",
+      "project_script": "tools/site_media/shots/project.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "critical",
+      "script": "tools/site_media/shots/critical.window.script",
+      "window_size": [
+        1500,
+        898
+      ],
+      "still": "window-critical-path.webp",
+      "still_size": [
+        1500,
+        898
+      ],
+      "clip": null,
+      "clip_seconds": 0,
+      "still_at": 6,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+critical on"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/picorv32_console",
+      "project_script": "tools/site_media/shots/emulate.project.script"
+    },
+    {
+      "label": "waves",
+      "script": "tools/site_media/shots/waves.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-waves.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": "window-waves.mp4",
+      "clip_seconds": 18,
+      "still_at": 10,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+rate 20000"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/picorv32_console",
+      "project_script": "tools/site_media/shots/emulate.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "terminal",
+      "script": "tools/site_media/shots/terminal.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-riscv-terminal.webp",
+      "still_size": [
+        1500,
+        978
+      ],
+      "clip": "window-riscv-terminal.mp4",
+      "clip_seconds": 60,
+      "still_at": 48,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+run"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/gallery/riscv_terminal",
+      "project_script": "tools/site_media/shots/emulate.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "label": "life-zoom",
+      "script": "tools/site_media/shots/life-zoom.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "window-life-full-zoom.webp",
+      "still_size": [
+        760,
+        634
+      ],
+      "clip": null,
+      "clip_seconds": 0,
+      "still_at": 6,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+run"
+      },
+      "args": [
+        "--focus",
+        "R44C60",
+        "--cell",
+        "120"
+      ],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/life_full",
+      "crop": {
+        "layout": "die map",
+        "rect": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "project_script": "tools/site_media/shots/emulate.project.script"
+    },
+    {
+      "label": "board",
+      "script": "tools/site_media/shots/board.window.script",
+      "window_size": [
+        1500,
+        978
+      ],
+      "still": "board-closeup.webp",
+      "still_size": [
+        1000,
+        690
+      ],
+      "clip": null,
+      "clip_seconds": 0,
+      "still_at": 12,
+      "gate": {
+        "kind": "script",
+        "pattern": "script\\s+[\\d.]+\\s+run"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/gallery/riscv_terminal",
+      "crop": {
+        "layout": "board",
+        "rect": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "project_script": "tools/site_media/shots/emulate.project.script"
+    },
+    {
+      "label": "tour",
+      "script": "tools/site_media/shots/tour.window.script",
+      "window_size": [
+        1500,
+        898
+      ],
+      "still": null,
+      "still_size": [
+        1500,
+        898
+      ],
+      "clip": "window-tour.mp4",
+      "clip_seconds": 43,
+      "still_at": 0,
+      "gate": {
+        "kind": "project",
+        "pattern": "build ok"
+      },
+      "args": [],
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "project": "examples/ulx3s/blinky_cycle",
+      "project_script": "tools/site_media/shots/tour.project.script",
+      "clip_encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    }
+  ],
+  "build_timeouts": {
+    "ulx3s/life_full": 3600
+  }
+}

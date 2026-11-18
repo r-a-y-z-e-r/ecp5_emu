@@ -1,0 +1,56 @@
+{
+  "schema_version":1,
+  "scope":"PLC/LUTRAM structural research; not a runtime model or completed hardware validation",
+  "rules":[
+    {"id":"PL01","claim":"Each PLC2 has four slice views, eight LUT4 and eight fabric FF. Split BELs and coarse SLICE BELs are alternative interfaces, not additive capacity.","evidence":"Trellis_constructor","source":"Bels.cpp"},
+    {"id":"PL02","claim":"Local F50B11 belongs to SLICEA.MODE DPRAM, SLICEB.MODE DPRAM and SLICEC.MODE RAMW. These settings are coupled.","evidence":"database_bits","source":"PLC2/bits.db"},
+    {"id":"PL03","claim":"Physical LUT INIT addresses use A as bit 0, B bit 1, C bit 2 and D bit 3.","evidence":"fuzzer_and_public_model","source":"003-lut_init;common_sim.vh"},
+    {"id":"PL04","claim":"nextpnr distributed-RAM read address connects RAD0 to D, RAD1 to B, RAD2 to C and RAD3 to A; INIT indices swap address bits 0 and 3.","evidence":"tool_source","source":"cells.cc:dram_to_comb"},
+    {"id":"PL05","claim":"RAMW uses the eight A/B/C/D input contacts of slice C; its eight outputs feed four shared write-address lines and four data lanes for A/B.","evidence":"constructor_and_tool_source","source":"Bels.cpp;cells.cc"},
+    {"id":"PL06","claim":"Both A/B LUTRAM slices share WCK from CLK1 and WRE from LSR1. WREMUX and LSR1.LSRMUX share a CRAM bit.","evidence":"database_and_writer","source":"PLC2/bits.db;bitstream.cc"},
+    {"id":"PL07","claim":"The nextpnr packing view uses four LUT storage columns, two C placement blockers and one RAMW descriptor for a 16x4 memory in one PLC.","evidence":"tool_source","source":"pack.cc:pack_dram"},
+    {"id":"PL08","claim":"RAMW excludes normal C combinational functions in nextpnr; RAMW_BLOCK is a placement marker and the writer skips it. FF compatibility is checked separately.","evidence":"tool_source","source":"arch_place.cc;bitstream.cc"},
+    {"id":"PL09","claim":"There are two raw CLK and two LSR routes with per-slice selections. nextpnr imposes additional tile-wide FF compatibility restrictions; those are not a silicon legality proof.","evidence":"database_and_tool_source","source":"PLC2/bits.db;arch_place.cc"},
+    {"id":"PL10","claim":"The optional 96 LUT permutation arcs per PLC are routing-tool metadata. The writer changes INIT accordingly; they must not become 96 extra physical shorts in bitstream emulation.","evidence":"tool_source","source":"Chip.cpp;bitstream.cc:permute_lut"},
+    {"id":"PL11","claim":"Eight CCU2.INJECT1 positions also encode F-output route choices; interpret routing with mode context.","evidence":"database_bits","source":"PLC2/bits.db"},
+    {"id":"PL12","claim":"All 128 LUT INIT logical positions use inverted CRAM bits in the current PLC2 database. CRAM zero is not an all-zero LUT table.","evidence":"database_bits","source":"PLC2/bits.db"},
+    {"id":"PL13","claim":"The installed DPR16X4C legacy software model initializes addresses 0 through 14 only; address 15 is unknown until written. TRELLIS_DPR16X4 initializes all 16.","evidence":"confirmed_software_model_issue","source":"common_sim.vh"},
+    {"id":"PL14","claim":"Distributed-memory read clocks, read enables and reset of generated output registers are fabric logic around the primitive.","evidence":"documented","source":"memory","pages":[52,53]}
+  ],
+  "ramw_inputs":[
+    {"logical":"WAD0","native":"D0"},{"logical":"WAD1","native":"B0"},
+    {"logical":"WAD2","native":"C0"},{"logical":"WAD3","native":"A0"},
+    {"logical":"DI0","native":"C1"},{"logical":"DI1","native":"A1"},
+    {"logical":"DI2","native":"D1"},{"logical":"DI3","native":"B1"}
+  ],
+  "ram_read_inputs":[{"logical":"RAD0","native":"D"},{"logical":"RAD1","native":"B"},{"logical":"RAD2","native":"C"},{"logical":"RAD3","native":"A"}],
+  "open_questions":[
+    {"id":"L01","question":"Datasheet PDPR16x4 requires six slices, while nextpnr packs independent read/write addresses into one three-slice PLC memory structure; measure the actual construction and distinguish primitive/IP semantics."},
+    {"id":"L02","question":"Available FF and extended-mux functions during RAMW/DPRAM, and behavior of nonstandard mixed mode settings."},
+    {"id":"L03","question":"Physical read-during-write, simultaneous observation and unknown-address/enable behavior; public models alone are not a silicon oracle."},
+    {"id":"L04","question":"INIT, configuration startup, GSR/local reset and retention of the LUTRAM array versus surrounding FF."},
+    {"id":"L05","question":"Physical constraints of shared CLK1/LSR1, inversion and separate FF clock/reset selections versus conservative packing rules."},
+    {"id":"L06","question":"Mode-qualified output mux and carry/LUT-extension behavior for overlapping control patterns, including chain boundaries."},
+    {"id":"L07","question":"Confirm all 16 initialized addresses on hardware while retaining the known legacy software initialization hole as a separate issue."},
+    {"id":"L08","question":"Confirm logical address, INIT permutation and live-write correspondence on native LUT contacts without applying routing-tool permutations twice."},
+    {"id":"L09","question":"The datasheet mentions level-sensitive registers, but the current PLC2 settings and inspected TRELLIS_FF model do not establish their configuration; investigate before excluding latch behavior."}
+  ],
+  "hardware_cases":[
+    {"id":"HL01","questions":["L01","L02"],"stimulus":"Constrain independent RAD/WAD16x4 to one PLC with A/B DPRAM and C RAMW; change RAD while writing a different WAD, preserve routed-net and CRAM manifests.","observe":"All four data lanes, independent address behavior and occupied native resources."},
+    {"id":"HL02","questions":["L07","L08"],"stimulus":"Use asymmetric INIT and walking address bits at all 16 addresses; repeat with live writes and independent reads, including address 15.","observe":"Native A/B/C/D contact values, physical INIT index, logical data and the distinction from the legacy software-model hole."},
+    {"id":"HL03","questions":["L03","L05"],"stimulus":"Sweep both write-clock polarities, WREMUX passthrough/inverted/constants and shared FF reset/clock settings; vary inputs away from and then around edges separately.","observe":"Written location/data, inactive-edge retention and effects on FF sharing controls."},
+    {"id":"HL04","questions":["L03"],"stimulus":"Read the written address and a different address during controlled write phases, repeating identical trials.","observe":"Observed output transition ordering and collision variability; do not infer universal guarantees from one stable result."},
+    {"id":"HL05","questions":["L02","L04","L05","L09"],"stimulus":"Pair LUTRAM with FF in A/B/C/D; independently apply local LSR, GSR and startup sequences while retaining a memory fingerprint. Test any level-sensitive candidate only after its configuration binding has been identified.","observe":"Which array/FF states change, resource compatibility and shared-control interactions."},
+    {"id":"HL06","questions":["L06"],"stimulus":"Use explicit LOGIC/CCU2/DPRAM/RAMW patterns and identifiable LUT/carry outputs; check LUT5/6/7/8 and next-PLC boundaries in separate builds.","observe":"Active outputs and paths for each recorded CRAM pattern, with uncertain combinations retained as undocumented."}
+  ],
+  "source_disagreements":[
+    {"subject":"PDPR_slice_cost","source":"datasheet","page":19,"detail":"SPR16x4=3 slices, PDPR16x4=6; conflicts with one-PLC packing view for TRELLIS_DPR16X4","status":"hardware_queue_L01"},
+    {"subject":"legacy_initialization_loop","source":"common_sim.vh","detail":"DPR16X4C for(i=0;i<15;i=i+1) omits address 15","status":"confirmed_software_issue;hardware_L07_separate"},
+    {"subject":"memory_guide_primitive_labels","source":"memory","pages":[52,53],"detail":"Figure says SPR16X4C for DPRAM and table has WAD[23:0]/two-bit data; use actual public/native interfaces","status":"do_not_copy_inconsistent_labels"},
+    {"subject":"TRELLIS_COMB_model_limits","source":"common_sim.vh","detail":"DPRAM INIT read order differs from packer physical-LUT ordering; WREMUX is unused in DPRAM; CCU2 branch declares a local FCO that shadows the output","status":"confirmed_software_observations;not_silicon_claims"}
+  ],
+  "sources":{
+    "memory":{"url":"https://www.latticesemi.com/view_document?document_id=50466","path":"target/research/ebr/ECP5-Memory-Usage-Guide.pdf","revision":"FPGA-TN-02204-1.6"},
+    "datasheet":{"url":"https://www.latticesemi.com/view_document?document_id=50461","path":"target/research/dqs/ECP5-Family-Data-Sheet.pdf","revision":"FPGA-DS-02012-3.4"}
+  }
+}

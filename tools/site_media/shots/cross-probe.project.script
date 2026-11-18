@@ -1,0 +1,6 @@
+# Built offline by the packaged CLI; delays count from command completion.
+0 emulate
+0 open top.v
+1 view project
+3 source top.v 7 32
+3 view chip

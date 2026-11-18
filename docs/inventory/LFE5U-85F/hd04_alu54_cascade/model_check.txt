@@ -1,0 +1,44 @@
+3 loads, distinct lines [8223, 8221, 8222], in all loads 7043
+load 1:
+before the first pulse: R and flags differ in none
+pa: R equal 8192, differ 0, not predicted 0; flags differ 0
+pb: R equal 8192, differ 0, not predicted 0; flags differ 0
+qa: R equal 8192, differ 0, not predicted 0; flags differ 0
+qb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ra: R equal 8192, differ 0, not predicted 0; flags differ 0
+rb: R equal 8192, differ 0, not predicted 0; flags differ 0
+sa: R equal 8192, differ 0, not predicted 0; flags differ 0
+sb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ta: R equal 5376, differ 0, not predicted 2816; flags differ 0
+tb: R equal 5376, differ 0, not predicted 2816; flags differ 0
+ua: R equal 8192, differ 0, not predicted 0; flags differ 0
+ub: R equal 5376, differ 0, not predicted 2816; flags differ 0
+load 2:
+before the first pulse: R and flags differ in none
+pa: R equal 8192, differ 0, not predicted 0; flags differ 0
+pb: R equal 8192, differ 0, not predicted 0; flags differ 0
+qa: R equal 8192, differ 0, not predicted 0; flags differ 0
+qb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ra: R equal 8192, differ 0, not predicted 0; flags differ 0
+rb: R equal 8192, differ 0, not predicted 0; flags differ 0
+sa: R equal 8192, differ 0, not predicted 0; flags differ 0
+sb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ta: R equal 5376, differ 0, not predicted 2816; flags differ 0
+tb: R equal 5376, differ 0, not predicted 2816; flags differ 0
+ua: R equal 8192, differ 0, not predicted 0; flags differ 0
+ub: R equal 5376, differ 0, not predicted 2816; flags differ 0
+load 3:
+before the first pulse: R and flags differ in none
+pa: R equal 8192, differ 0, not predicted 0; flags differ 0
+pb: R equal 8192, differ 0, not predicted 0; flags differ 0
+qa: R equal 8192, differ 0, not predicted 0; flags differ 0
+qb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ra: R equal 8192, differ 0, not predicted 0; flags differ 0
+rb: R equal 8192, differ 0, not predicted 0; flags differ 0
+sa: R equal 8192, differ 0, not predicted 0; flags differ 0
+sb: R equal 8192, differ 0, not predicted 0; flags differ 0
+ta: R equal 5376, differ 0, not predicted 2816; flags differ 0
+tb: R equal 5376, differ 0, not predicted 2816; flags differ 0
+ua: R equal 8192, differ 0, not predicted 0; flags differ 0
+ub: R equal 5376, differ 0, not predicted 2816; flags differ 0
+model fits

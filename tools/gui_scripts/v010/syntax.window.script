@@ -1,0 +1,5 @@
+# Dark typing phases, followed by the same unsaved buffer in light theme; no build or save.
+0 pause
+0 size 1500 950
+0 theme dark
+25 theme light

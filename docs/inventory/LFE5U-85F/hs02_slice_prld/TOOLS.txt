@@ -1,0 +1,10 @@
+Board toolchain: Yosys 0.70+post, git 0c11ea098be065e585a90a06e7b7da49936cf231; nextpnr-ecp5 0.11.1-77-g6b438a1c; ecppack prjtrellis a31ff7042e712c0e2ad217054116ce2c4995f5c7.
+Build source: planning session scratchpad/hd09_hs02b/build.sh. Run in its scratch directory with the checked-in inputs. Commands below are the exact board build loop; no added frequency constraint or GSR override for HS02.
+
+for v in hs02 hs02s; do
+  yosys -q -l yosys_$v.log -p "read_verilog $v.v; synth_ecp5 -top top -run begin:map_luts; delete =TRELLIS_FF; read_verilog -lib hs02_ff_bb.vh; synth_ecp5 -top top -run map_luts: -json $v.json" && \
+  nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json $v.json --lpf hs02.lpf --textcfg $v.config -l nextpnr_$v.log --quiet && \
+  ecppack $v.config $v.bit && echo "BUILT $v" || echo "FAIL $v"
+done
+
+Emulator validation: 2026-11-17 working tree, tools/rserv.sh; see emulator_checks.txt. Mac: cargo check --tests only. No board access; the HD09/HS02 designs were not regenerated. The existing native counter test built its own fixture with Yosys/nextpnr/ecppack on rserv.

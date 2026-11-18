@@ -1,0 +1,3190 @@
+{
+  "hardware_results": 0,
+  "schema_version": 1,
+  "scope": "native image LUT/FF execution with explicit partial plan; not whole-chip behavioral validation",
+  "variants": [
+    {
+      "address_count": 16,
+      "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+      "configuration_sha256": "99adc55e1135cfdb0b556329054d1d7780fcdc78ce4efedf0f65762edcfdc2c8",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:21af0eb011c75f41",
+        "decoded_sha256": "dd1b52643bca731dbb7db06de417b67aba74f3a0d040e674e6d69ff46382d77e",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [],
+          "native_registers": null,
+          "parser_defaults_may_apply": false,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 115,
+        "source_kind": "text_config",
+        "source_sha256": "64cfebf48d48a053618781035b52c10c71117bd80650e16294edd17bcbe4d8d2"
+      },
+      "lut_mask": "a15c",
+      "manual_FF_profile": {
+        "CE": "constant 1",
+        "clock": "native CLK port, external stimulus",
+        "data": "DI",
+        "edge": "rising",
+        "local_reset": "none",
+        "startup": "X; no PUR/GSR applied"
+      },
+      "route_evidence": [
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/mux/F0_SLICE->F0",
+          "qualification": "explicit LOGIC fixture and unique raw mux selection",
+          "source_line": 1259
+        },
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/fixed/F0->DI0",
+          "qualification": "explicit fixture fixed route",
+          "source_line": 3105
+        },
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/fixed/DI0->DI0_SLICE",
+          "qualification": "explicit fixture fixed route",
+          "source_line": 3107
+        }
+      ],
+      "samples": [
+        "zero",
+        "zero",
+        "one",
+        "one",
+        "one",
+        "zero",
+        "one",
+        "zero",
+        "one",
+        "zero",
+        "zero",
+        "zero",
+        "zero",
+        "one",
+        "zero",
+        "one"
+      ],
+      "state": {
+        "configuration_sha256": "99adc55e1135cfdb0b556329054d1d7780fcdc78ce4efedf0f65762edcfdc2c8",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 1,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 10
+      },
+      "statistics": {
+        "combinational_evaluations": 49,
+        "discarded_timer_events": 0,
+        "driver_changes": 107,
+        "possible_clock_edges": 0,
+        "register_evaluations": 32,
+        "signal_changes": 117,
+        "time_batches": 32,
+        "trace_overwrites": 0
+      },
+      "transitions": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 3
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 7
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 9
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 10
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 14
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 14
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 18
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 18
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 20
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 20
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 21
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 22
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 23
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 24
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 25
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 26
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 28
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 28
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 30
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 30
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        }
+      ]
+    },
+    {
+      "address_count": 16,
+      "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+      "configuration_sha256": "21c7d7ffa89743ffce42790a757490bed6667c9bf9bdb8eef895b845704e8882",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:21af0eb011c75f41",
+        "decoded_sha256": "ef61462dcb8f4fb61b0bdddc8c6e0fe0aa39f449cf686fe24bb8315bd008bd92",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 279516,
+        "source_kind": "bitstream",
+        "source_sha256": "59ae882cc968fd03fcf71f7cfd15224ad5d46cfe371e348ffd63bf1fc2a9f399"
+      },
+      "lut_mask": "a15c",
+      "manual_FF_profile": {
+        "CE": "constant 1",
+        "clock": "native CLK port, external stimulus",
+        "data": "DI",
+        "edge": "rising",
+        "local_reset": "none",
+        "startup": "X; no PUR/GSR applied"
+      },
+      "route_evidence": [
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/mux/F0_SLICE->F0",
+          "qualification": "explicit LOGIC fixture and unique raw mux selection",
+          "source_line": 1259
+        },
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/fixed/F0->DI0",
+          "qualification": "explicit fixture fixed route",
+          "source_line": 3105
+        },
+        {
+          "key": "LFE5U-85F/R11C10:PLC2/route/fixed/DI0->DI0_SLICE",
+          "qualification": "explicit fixture fixed route",
+          "source_line": 3107
+        }
+      ],
+      "samples": [
+        "zero",
+        "zero",
+        "one",
+        "one",
+        "one",
+        "zero",
+        "one",
+        "zero",
+        "one",
+        "zero",
+        "zero",
+        "zero",
+        "zero",
+        "one",
+        "zero",
+        "one"
+      ],
+      "state": {
+        "configuration_sha256": "21c7d7ffa89743ffce42790a757490bed6667c9bf9bdb8eef895b845704e8882",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 1,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 10
+      },
+      "statistics": {
+        "combinational_evaluations": 49,
+        "discarded_timer_events": 0,
+        "driver_changes": 107,
+        "possible_clock_edges": 0,
+        "register_evaluations": 32,
+        "signal_changes": 117,
+        "time_batches": 32,
+        "trace_overwrites": 0
+      },
+      "transitions": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 3
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 5
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 7
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 8
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 9
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 10
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 11
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 12
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 13
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 14
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 14
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 15
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 16
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 17
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 18
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 18
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 19
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 20
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 20
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 21
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 22
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 23
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 24
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 25
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 26
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 27
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 28
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 28
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 29
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 30
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 30
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "lut:R11C10:F0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "F0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "native fixed:DI0_SLICE"
+            }
+          ],
+          "delta": 4,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 31
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "DI0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "external stimulus",
+              "source": "external test clock"
+            }
+          ],
+          "delta": 0,
+          "phase": "stimulus",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "CLK0_SLICE"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "simultaneous register capture",
+              "source": "ff:R11C10:Q0_SLICE"
+            }
+          ],
+          "delta": 1,
+          "phase": "capture",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 32
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 10,
+              "row": 11
+            },
+            "name": "Q0_SLICE"
+          }
+        }
+      ]
+    }
+  ]
+}

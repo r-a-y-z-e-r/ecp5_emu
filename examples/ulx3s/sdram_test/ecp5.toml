@@ -1,0 +1,12 @@
+# A 64 KB SDRAM write/read test, with errors reported on the UART.
+# Build: ecp5_emu build examples/ulx3s/sdram_test (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/sdram_test; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/sdram_test.
+
+[project]
+name = "sdram_test"
+top = "top"
+
+[sources]
+verilog = ["controller.v", "top.v"]
+constraints = "top.lpf"

@@ -1,0 +1,15 @@
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11B-load-1.txt: 10 frames OK, variant=B, sequences=1..10; framing, controls and XOR OK
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11B-load-2.txt: 10 frames OK, variant=B, sequences=1..10; framing, controls and XOR OK
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11B-load-3.txt: 10 frames OK, variant=B, sequences=1..10; framing, controls and XOR OK
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11F-load-1.txt: 10 frames OK, variant=F, sequences=1..10; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 8 down steps before load; first down endpoint not reached before load; initial counter=9..127 (HI08-compatible)
+  HI08 check from first load sample 57: 1991 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11F-load-2.txt: 10 frames OK, variant=F, sequences=1..10; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 8 down steps before load; first down endpoint not reached before load; initial counter=9..127 (HI08-compatible)
+  HI08 check from first load sample 57: 1991 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11F-load-3.txt: 10 frames OK, variant=F, sequences=1..10; framing, controls and XOR OK
+  startup output: CFLAG[0]=0; 8 down steps before load; first down endpoint not reached before load; initial counter=9..127 (HI08-compatible)
+  HI08 check from first load sample 57: 1991 real samples/path, 0 differ, 0 skipped
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11G-load-1.txt: 10 frames OK, variant=G, sequences=1..10; framing, controls and XOR OK
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11G-load-2.txt: 10 frames OK, variant=G, sequences=1..10; framing, controls and XOR OK
+docs/inventory/LFE5U-85F/hi11_output_delay/records/H11G-load-3.txt: 10 frames OK, variant=G, sequences=1..10; framing, controls and XOR OK

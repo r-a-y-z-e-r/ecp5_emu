@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "hardware_results": 0,
+  "scope": "limited MULT INPUTA/B operand observation with active ALU54; no product/ALU execution",
+  "user_board": {
+    "model": "ULX3S",
+    "source": "user_reply_2026-10-23",
+    "revision": null,
+    "FPGA_marking_and_package": "not_verified"
+  },
+  "native_runs": 4,
+  "samples_per_run": 257,
+  "forwarding_bits_per_sample": 144,
+  "forwarding_bit_comparisons": 148032,
+  "equal_traces_per_mode": true,
+  "cli_runs": 2,
+  "cli_observations": 258,
+  "cli_probes": 16,
+  "rust_tests": {
+    "regular": 107,
+    "native_new": 1,
+    "native_regression": 14,
+    "total_unique": 122,
+    "external_ECP5_TEST_BIT": "not_run"
+  },
+  "test_logs": {
+    "dsp-alu-operands-tests.log": {
+      "passed": 107,
+      "sha256": "2dfdf691211ab2cb3878c9bdfb0922cd6a4f0946289b06a47b0ff7e5dddfd00e"
+    },
+    "dsp-alu-operands-native.log": {
+      "passed": 1,
+      "sha256": "af7d6b0b95b124cf6a43c1db538cbd595c2fdf338591816ee4e0b85ed525411f"
+    },
+    "dsp-alu-operands-regression.log": {
+      "passed": 14,
+      "sha256": "9069f1159954dc29bd78900e802384c65b9f8ef07e630e13a074b36d9d9a8094"
+    }
+  },
+  "unresolved_questions": 78,
+  "prepared_hardware_series": 37,
+  "source_files": [
+    {
+      "path": "src/kernel/dsp.rs",
+      "sha256": "1ebc175cd8c9b64ad81a8e3e7ddbfa98a34e64cd6d221025405d0671f38fa38f"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "a72d5f6637909de55ea78be7e89c840190a46aa2eded0dee744954b55d497e84"
+    },
+    {
+      "path": "src/compile/dsp.rs",
+      "sha256": "7f4bc12e2139d7c21c9d275cf4a70f86fb8e552e8c35b85731fb9bfdfcc7d28b"
+    },
+    {
+      "path": "tests/dsp.rs",
+      "sha256": "44e6ba72dcae87ec48b781b87e53dad973b09d0b2e27cbdde2c8674a18bf2ea3"
+    },
+    {
+      "path": "tests/dsp_alu_operands_native.rs",
+      "sha256": "909634f52f7fd5a8811f4390eea04d30147627ed6dfc95c2b6e8c9e83c4a52a6"
+    },
+    {
+      "path": "tools/summarize_dsp_alu_inputs.py",
+      "sha256": "203fd8835d7544ae8049fa7572abc68ffb230784a71cd4bf2ed4166955196966"
+    },
+    {
+      "path": "docs/DSP_ALU_INPUTS.md",
+      "sha256": "ad828944a3baf4a512c0ab7dee97caf6b43d043c8ed1efe52e31901aa5c828f8"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "bc3812e8094d905b19d234c2f56d7d6c9cc957ba06cf661740cd41273d63afe6"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "122e2a74e8a99c6bd29e7dbde9a02097b706e944f04b759020d7d2590138563f"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "c879cb5595093e15581a4d2d4f5cbe57a60e9a49c846634b025c69d296351fa1"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "8ecb3f7f23ca4b18ff374a10cc032c2c09c06073e5f8b868d5af34a99b95cde8"
+    },
+    {
+      "path": "docs/DSP_FORWARDING.md",
+      "sha256": "eeee15d7e19860a7948bf4ad92fc2aa8a3709d1a4a4659c6673afbff1470f6b8"
+    },
+    {
+      "path": "docs/HARDWARE_VALIDATION.md",
+      "sha256": "68c1583e6f71e551301a321fa1ad2c9f011fcc087005eca15f936717a7e7a5c2"
+    },
+    {
+      "path": "docs/DEVICE_PASSPORT.md",
+      "sha256": "65a358a85f1a377165435042875ca494a99891dda1c1f8bf08f5289dcc6bc66e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_alu_inputs_native.json",
+      "sha256": "afb14eb4a4b2be8bcd8fae5beb33420a4c50d7684dd47e382fe4794356d3f5dd"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_alu_inputs_sync_fixture.v",
+      "sha256": "27536eb8fa2584a974b22a170b77702f174ba74b792687827a10ed64cdc87c12"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_alu_inputs_async_fixture.v",
+      "sha256": "a7425c0056b46a2510e446fde851422f25caa5588e82693cc2b875fed3c22d07"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_alu_inputs_fixture.lpf",
+      "sha256": "c4e0d054686caef3e5350544e4a956a9a77f3bc753da60c831b9b2e9ab252380"
+    }
+  ],
+  "generated_inputs": [
+    {
+      "path": "target/dsp-alu-operands-sync/native.json",
+      "sha256": "215075b6c9647807a1b6141886c967ebe46e735b47474fc06ab37c9c9170fecd"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/cli.json",
+      "sha256": "60a6f967d8af4121716145a3b5d08f2aa7468a417cd3867b5c2784117d5a0ba5"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/top.bit",
+      "sha256": "8539913f52e1bfa293f7154c3cd709a297e6b8ce7e77373b278cddf29fd3fab8"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/top.config",
+      "sha256": "f4809064794a51c02a7fff991252b7fc7215603a58b39f07db30d8290b0af861"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/top.v",
+      "sha256": "27536eb8fa2584a974b22a170b77702f174ba74b792687827a10ed64cdc87c12"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/top.lpf",
+      "sha256": "c4e0d054686caef3e5350544e4a956a9a77f3bc753da60c831b9b2e9ab252380"
+    },
+    {
+      "path": "target/dsp-alu-operands-sync/events.json",
+      "sha256": "915fd1d5f8b9be4079ccbdd115add6c721b5b9321b58aa8ad3eaafa8e679953d"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/native.json",
+      "sha256": "8b1fd62bad1ff0153158902934afd2ecffd7f46813c53416ec04e7aaf301a29a"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/cli.json",
+      "sha256": "840eed3fd8297e4841c9b0a21f533b5d3da8767119830655e68341270a70457a"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/top.bit",
+      "sha256": "b4bb9d70e3bca3f9b2c43799b843d69f9fe761c5c36dc6a1018ff22d09a03ab5"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/top.config",
+      "sha256": "4cdfbe76a2e0a5b86e6e2d2a61680289a8f4a49400f3e172c7ab12c23cd54c09"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/top.v",
+      "sha256": "a7425c0056b46a2510e446fde851422f25caa5588e82693cc2b875fed3c22d07"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/top.lpf",
+      "sha256": "c4e0d054686caef3e5350544e4a956a9a77f3bc753da60c831b9b2e9ab252380"
+    },
+    {
+      "path": "target/dsp-alu-operands-async/events.json",
+      "sha256": "915fd1d5f8b9be4079ccbdd115add6c721b5b9321b58aa8ad3eaafa8e679953d"
+    }
+  ],
+  "limits": [
+    "ALU OP table and arithmetic remain D04",
+    "no P/SIGNEDP or ALU result/flag drivers",
+    "all-plc with active ALU rejected",
+    "D05 input register contract is not silicon validation",
+    "fixture leaves unused dedicated CIN/CFB/SIGNEDCIN unconnected; no ALU result oracle"
+  ]
+}

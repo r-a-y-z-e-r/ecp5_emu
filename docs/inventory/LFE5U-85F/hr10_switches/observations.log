@@ -1,0 +1,18 @@
+# design switches (PULLMODE=DOWN)
+load 1 at 2026-11-17T09:36:13Z: loader_done=True lines=3
+  SW 1111
+  SW 1111
+  SW 1111
+load 2 at 2026-11-17T09:36:22Z: loader_done=True lines=3
+  SW 1111
+  SW 1111
+  SW 1111
+# design switches/pullup (PULLMODE=UP)
+load 1 at 2026-11-17T09:36:30Z: loader_done=True lines=3
+  SW 1111
+  SW 1111
+  SW 1111
+load 2 at 2026-11-17T09:36:39Z: loader_done=True lines=3
+  SW 1111
+  SW 1111
+  SW 1111

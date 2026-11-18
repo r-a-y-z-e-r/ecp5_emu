@@ -1,0 +1,17 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+38bda3b09d181bcb87d921fad952aebb7d9117ecb6c8812248a88846246fccc2  hi07.v
+98455022b7a0a812880ccf52c5cb94fe69f716e3f5972bef48345679f6dc726d  hi07b.v
+da8b3510651d80823dfab2bd967c8216d84997f0dd42b05273f8c6080ec0c343  hi07.lpf
+71c1fb4a3ee60e8e9c6c24da015f813b52f1c13b464f4ac32a805a6dc506051e  hi07.config
+e5eee8887481bd2ddfca85344640ec58da171b803fcef2b03eb2b2cef67d193a  hi07b.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+04208d32c9522bf9a4dbf8a1f9f66b3d168d2c5ed0e8c539da4278957b3d362f  hi07_analyse.py
+6fbbec310b75d1caa15833b9fadf702a2ea6c9035164eb41c6ca29e51d70b486  hi07b_check.py
+5ffe3ca1f11f454e530cc2435a6f241ecbbb2bd6dc6804817db315327efa5a0b  observations.log
+fe60173dd8149cc9992b089d391e82e6a98ef94aa7ebcd278d2723e174cfbe75  observations_b.log
+005b9e11c7658f370614b8bbff2f709b18778370bdef0025ce9f0d312797158d  pass.txt
+9714102c8d94592cba55eb0589f14f05e2a6fde08cf614a48e554f66fa4f908f  pass_b.txt
+2d0fe34b9017ec8d1393b9daee59770225467a7589196c2e75be97545c479c4a  analysis.txt
+20101bd8313b987dab4197c04b7bed025c6e9e99fa620a35faf577b2e1dad6ba  check_b.txt
+# Historical digest (artifact unavailable in this record): 75aca2a3292250049125822e095e18f9164d6d2ed1fb0cee9d8492fa11287f31  hi07.bit (ecppack --compress hi07.config; not stored)
+# Historical digest (artifact unavailable in this record): a5fa10767ff1bb113b649faf8ca6d4cbd316498d6c85c67f23d95f201b58bb8d  hi07b.bit (ecppack --compress hi07b.config; not stored)

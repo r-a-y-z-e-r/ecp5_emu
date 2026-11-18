@@ -1,0 +1,9 @@
+# Adapted from picorv32.script and packaged riscv_terminal/gui.script.
+0 theme dark
+0 board 3d
+0 rate max
+0 run
+2 type help\r
+12 type led 5a\r
+17 type mandel\r
+55 type screen\r

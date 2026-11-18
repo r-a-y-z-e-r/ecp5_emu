@@ -1,0 +1,50 @@
+RISC-V shell on ULX3S
+SERV RV32I | 25000000 Hz | 32768 bytes RAM
+firmware: 16828 bytes
+> reboot
+RISC-V shell on ULX3S
+SERV RV32I | 25000000 Hz | 32768 bytes RAM
+firmware: 16828 bytes
+> help
+help                 list commands
+info                 CPU and firmware details
+led [hex]            read/set eight LEDs
+buttons              debounced button levels
+knight [n]           LED sweeps (default 3)
+primes [n]           sieve below n (default 10000)
+mandel               64x24 fixed-point Mandelbrot
+calc <expr>          signed integer + - * / % ()
+peek <addr>          read a mapped word
+poke <addr> <value>  write a mapped word
+dump <addr> [len]    RAM bytes (default 64)
+memtest              test free RAM, destroys contents
+uptime               seconds.milliseconds since reset
+reboot               reset CPU and peripherals
+> info
+CPU: SERV
+ISA: RV32I
+clock: 25000000 Hz
+RAM: 32768 bytes
+firmware: 16828 bytes
+stack pointer: 0x00007f60
+build: 2026-11-16
+> led a5
+led: a5
+> calc (7+5)*3-10/4
+34
+> calc -17%5
+-2
+> calc 1/0
+division by zero
+> primes 2000
+primes below 2000: 303, 3957776 cycles
+> dump 0 32
+00000000: 17 81 00 00 13 01 01 00 97 42 00 00 93 82 42 1b
+00000010: 17 53 00 00 13 03 83 83 63 f8 62 00 23 a0 02 00
+> poke 0x7000 0x12345678
+00007000: 12345678
+> peek 0x7000
+00007000: 12345678
+> bogus
+unknown command: bogus (try help)
+> 

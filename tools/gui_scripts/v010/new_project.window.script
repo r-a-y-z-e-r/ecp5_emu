@@ -1,0 +1,10 @@
+# One same-window creation record. Destinations must be absent or empty.
+0 new-project {"dir":"out/records/v010/cancelled-project","name":"Cancelled"}
+0 cancel-project
+0 new-project {"dir":"out/records/v010/new-project","name":"My counter #1"}
+0 project-options {"resources":["clock","leds","buttons","switches"]}
+0 create-project
+# Creation opens the project and its top source without building.
+0.5 start-demo {"dir":"out/records/v010/demo-copy","name":"My UART","demo":"ulx3s/uart_hello"}
+0.5 create-project
+0 quit

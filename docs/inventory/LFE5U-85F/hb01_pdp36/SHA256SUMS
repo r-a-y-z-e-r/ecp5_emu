@@ -1,0 +1,11 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+67b751d025fcb5fa81f663a9696f24bdb4fc664b857720a578c06bfb31bea643  gen.py
+c4e85ea15d845363d27cc01cbdfef29c5576c8b45774183a7ed586ad983737e5  hb01.v
+43eba4e3508bea162c2f9fa5c468029f6f126acb5c91fa8c3b09355caaddc941  program.json
+1e701a6cea4b4947bca4be9f310122434fc3e3eb2f2295df33fc42c7984114ba  hb01.lpf
+8619a3a975c04ae674778889cf7cdb2e9792b4442b897c943cc0c68c350cb0f5  hb01.config
+3abbfa3c59884638253069d5557248e5802423a84314be8435380799bd621bda  expect.py
+cd3239c5518e6b85e4387823a4562096334af70b38c3c8d478d2d55e80260d00  run.py
+d5370cb4aa79eadf4217e4e8c158290460eccd9e4dabdbb9ebf1ef708197a14b  observations.log
+09b6d1bc5fe5496a13dbeb907768677562764217cf80bee4e56a22f879ab9b5e  pass.txt
+# Historical digest (artifact unavailable in this record): 7b547eb540ae71d87bd52027c1e80265a46d0984d9e85fce5b5fa23ea0b8ef22  hb01.bit (ecppack --compress hb01.config; not stored)

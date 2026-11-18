@@ -1,0 +1,21 @@
+# riscv_shell in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# The window runs it at about 0.85 MHz, so the Mandelbrot calculation plus its
+# UART output takes about 5 s. Typed text waits in the design's FIFO.
+# Buttons are held for a second: the design debounces them for 10 ms
+# (250 000 clocks), which the window takes about 0.3 s to run.
+0 rate max
+0 run
+1 board 3d
+2 type help\r
+5 type led 5a\r
+7 type calc 6*7\r
+9 type mandel\r
+18 type calc 1+
+19 button 1 down   # FIRE1: an event line in the middle of a typed line
+20 button 1 up
+21 button 6 down   # RIGHT: another
+22 button 6 up
+24 type 2\r
+26 type knight 2\r
+43 type primes 2000\r
+60 quit

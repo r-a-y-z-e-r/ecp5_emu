@@ -1,0 +1,40 @@
+{
+  "raw_captures": 9,
+  "loads_per_profile": 3,
+  "profiles": [
+    "F",
+    "G",
+    "H"
+  ],
+  "all_startup_samples_recovered": true,
+  "all_locks_high_from_10ms": true,
+  "all_steady_10ms_deltas": [
+    166666,
+    166667
+  ],
+  "personal_paths_found": 0,
+  "normalization_edits": 0,
+  "raw_bytes_unchanged": true,
+  "input_sha256": {
+    "F.load-001.bin": "85e32841340e94759ee01364b67e04c0382656e267929037e23fcf5793c77b5c",
+    "F.load-001.loader.log": "9fad739c57c2f3f6367051e429919b4fb7b6b44c09b108bd9992784658b27dfc",
+    "F.load-002.bin": "1443a4908910ba27577036a0bcecc99d380b2594dd8075827db30f0a26a91fe3",
+    "F.load-002.loader.log": "4f02c378e92727fefeb983a8e524416531c116439049725c4fc8bbc2a8aaa589",
+    "F.load-003.bin": "8b4480fb7faa34f4d26047fc12a2a62b2602d7fea006cc2cf313dfa5878d489a",
+    "F.load-003.loader.log": "e92ca6af79efb9a18cb2c87a3d77f107940795bd9f0f4265cb86b9150642a7f0",
+    "G.load-001.bin": "4c45a0518a8318c838a025da52326d5dde0c3aaa91bbd0281f36fc031823271f",
+    "G.load-001.loader.log": "8e20b9318de67560ee29e0002f6a81826a32ea2b8fa2940053d8dbdda09e482b",
+    "G.load-002.bin": "7fa343feae9adc91c08e5013b75bd63b2811439cf9e711277418b5a3b8ee5e58",
+    "G.load-002.loader.log": "c49ea6ad4efe39ef7d896eebc9057a0db4c4ac2903dcecfcfb55ee20037cac8b",
+    "G.load-003.bin": "6fbdb8761b03092aaab4497dd193ca71133c4a920b9abac26fba33f2ec351241",
+    "G.load-003.loader.log": "145e2b02cad3f0f90b5a913654e585df1faa9ae3abc8b20ad9b22f3fdbed192b",
+    "H.load-001.bin": "f9f2094323de123238dddec5fa10a8346bef45005c55a5013fa3c04373c69b49",
+    "H.load-001.loader.log": "8785d0935e0efab56ca9e2fd5e554eba1d055ed29999106b05089748f9e5103c",
+    "H.load-002.bin": "58a008d89f8bc948cc16b0a10152c610cf960257c0e1c9277abd0badda312378",
+    "H.load-002.loader.log": "36b4e92b64be9309483c48a220b9512bb55886a8265aa3a28092cc0c8dd7ac73",
+    "H.load-003.bin": "e5cc628012eef69ee3b7d2a5ec3622f59f7e4c3c8d0b84dabd2d32abda592ca0",
+    "H.load-003.loader.log": "913c9bb56d8edf3329f806d6e616dff46d9f1456e7c776cff6e8691542890c87",
+    "analysis.txt": "e13a3962687f21c8ec30670d69e0538f5baf8173685105a5c6b93a69eec1e6b4",
+    "run_output.txt": "e13a3962687f21c8ec30670d69e0538f5baf8173685105a5c6b93a69eec1e6b4"
+  }
+}

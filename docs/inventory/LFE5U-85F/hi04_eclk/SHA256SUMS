@@ -1,0 +1,20 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+d4b9301a056991d32e81923a1317066e23fd82399a1e0734eb001ea36e5f5771  hi04.v
+c684f163be840fbdf3ccb8b13894cc4d7ea45b8186c77b4d9280443bf3ecfd6f  hi04b.v
+56aacdd0f859c6f0ea198fe36feb3e2fff373aafca57843ab3c03dd697841d0a  hi04.lpf
+56aacdd0f859c6f0ea198fe36feb3e2fff373aafca57843ab3c03dd697841d0a  hi04b.lpf
+47433c03460c093cb7601827ca9802c004eb96c138c434d9d27eaac0ff380c88  hi04.config
+54999c08c7982f6a09399b228eb4def6042228b7f5e428d4f16e4940a92fb339  hi04b.config
+2f3ad7daed6c1de227a4fa5a37c863002f2fe7942085a2388dca861d193ec6db  hi04b_seed3.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+5bfc6887eb62db072cc9c83b14a4c1a2d8b0141f8d4c38b7bfc8a650aebec0a2  hi04_show.py
+7925610943a578ae1f5287686757e3fd63422f63379e52f54d5c9517134988ab  hi04_model.py
+ddff704350ca10cc71c4ceb11a9f4dff613b5d5e984828c231eb2fe6ce4f33c9  observations_hi04.log
+86b2bcf6aceab79fb7c2febb13650e9becddfb0ad9e9f526040cc49a6fca2031  observations_hi04b_seed1.log
+90010a83c64212fd9d38c22ae80d13d9a256305ef1c69b379841d10f993759c4  observations_hi04b_seed2.log
+c74917b7ad150203a9ae3807084d894eb248e10cf6576e5264b9e3637d1cd26c  observations_hi04b_seed3.log
+4de882daac409ef77603a8f6b3ad27620214c2d580a476ad0e236fe1bb4c8875  model_check.txt
+# Historical digest (artifact unavailable in this record): 1a756eb990565f876d0856f6962e8748cedfdfa4a5753c154513521e8c5ea279  hi04.bit (ecppack --compress hi04.config; not stored)
+# Historical digest (artifact unavailable in this record): b6b043181aa8ce30d51cf81d185c62ebfca845a58144cc63d84fa9071ab19d9b  hi04b_seed1.bit (seed 1; not stored)
+# Historical digest (artifact unavailable in this record): 6d13b3e19d772fa01aa2ec175f5a9d575f2c12b87bcfe50d3eba48eef8bc1d1e  hi04b_seed2.bit (seed 2; not stored)
+# Historical digest (artifact unavailable in this record): 8e42406922f622dcd2f87fe2afb26a4de930de401e41084a63db4bf0c5084b00  hi04b_seed3.bit (seed 3; not stored)

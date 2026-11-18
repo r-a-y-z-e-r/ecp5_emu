@@ -1,0 +1,7251 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "origin": "bitstream",
+  "cram_fingerprint": "fnv1a64:4c7c323c62510210",
+  "resources": [
+    {
+      "id": "LFE5U-85F/R10C105/MULT18_0",
+      "family": "MULT18",
+      "enabled": true,
+      "fields": [
+        {
+          "name": "MULT18_0.CE0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:62",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11538,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CE1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE1",
+          "candidates": [
+            "CE1"
+          ],
+          "matching_values": [
+            "CE1",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:66",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11539,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CE2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE2",
+          "candidates": [
+            "CE2"
+          ],
+          "matching_values": [
+            "CE2",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:70",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11540,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CE3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE3",
+          "candidates": [
+            "CE3"
+          ],
+          "matching_values": [
+            "CE3",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:74",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11541,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CIBOUT_BYP",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "OFF",
+          "candidates": [
+            "OFF"
+          ],
+          "matching_values": [
+            "OFF"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:200",
+              "default": "OFF"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:157",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:197",
+              "default": "ON"
+            }
+          ],
+          "observed_bits": [
+            [
+              11188,
+              122,
+              false
+            ],
+            [
+              11190,
+              122,
+              false
+            ],
+            [
+              11288,
+              122,
+              true
+            ],
+            [
+              11289,
+              122,
+              true
+            ],
+            [
+              11291,
+              122,
+              true
+            ],
+            [
+              11292,
+              122,
+              true
+            ],
+            [
+              11502,
+              122,
+              true
+            ],
+            [
+              11503,
+              122,
+              true
+            ],
+            [
+              11530,
+              122,
+              true
+            ],
+            [
+              11531,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK0MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:344",
+              "default": "CLK0"
+            }
+          ],
+          "observed_bits": [
+            [
+              11341,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK0_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:348",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11345,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK1MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:352",
+              "default": "CLK1"
+            }
+          ],
+          "observed_bits": [
+            [
+              11342,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK1_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:356",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11346,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK2MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:360",
+              "default": "CLK2"
+            }
+          ],
+          "observed_bits": [
+            [
+              11343,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK2_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:364",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11347,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK3MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK3"
+          ],
+          "matching_values": [
+            "CLK3"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:368",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11344,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.CLK3_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:372",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11348,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.GSR",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "DISABLED",
+          "candidates": [
+            "DISABLED"
+          ],
+          "matching_values": [
+            "DISABLED",
+            "ENABLED"
+          ],
+          "specificity": 2,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB_DSP1",
+              "source": "ECP5/tiledata/MIB_DSP1/bits.db:15",
+              "default": "ENABLED"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:376",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11235,
+              120,
+              true
+            ],
+            [
+              11340,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "MULT18X18D",
+          "candidates": [
+            "MULT18X18D"
+          ],
+          "matching_values": [
+            "MULT18X18D",
+            "NONE"
+          ],
+          "specificity": 13,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:255",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C105:MIB_DSP0",
+              "source": "ECP5/tiledata/MIB_DSP0/bits.db:80",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:204",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C106:MIB_DSP1",
+              "source": "ECP5/tiledata/MIB_DSP1/bits.db:19",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:161",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:380",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:461",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11130,
+              120,
+              true
+            ],
+            [
+              11133,
+              120,
+              true
+            ],
+            [
+              11225,
+              120,
+              true
+            ],
+            [
+              11246,
+              121,
+              true
+            ],
+            [
+              11264,
+              121,
+              true
+            ],
+            [
+              11275,
+              121,
+              true
+            ],
+            [
+              11281,
+              121,
+              true
+            ],
+            [
+              11294,
+              121,
+              true
+            ],
+            [
+              11362,
+              121,
+              true
+            ],
+            [
+              11363,
+              121,
+              true
+            ],
+            [
+              11366,
+              121,
+              true
+            ],
+            [
+              11416,
+              121,
+              true
+            ],
+            [
+              11420,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTA_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:201",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11494,
+              122,
+              true
+            ],
+            [
+              11495,
+              122,
+              true
+            ],
+            [
+              11509,
+              122,
+              true
+            ],
+            [
+              11510,
+              122,
+              true
+            ],
+            [
+              11534,
+              122,
+              true
+            ],
+            [
+              11535,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTA_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB_DSP0",
+              "source": "ECP5/tiledata/MIB_DSP0/bits.db:84",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:208",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:165",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:384",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11129,
+              120,
+              true
+            ],
+            [
+              11135,
+              120,
+              true
+            ],
+            [
+              11250,
+              122,
+              false
+            ],
+            [
+              11251,
+              122,
+              false
+            ],
+            [
+              11262,
+              122,
+              false
+            ],
+            [
+              11263,
+              122,
+              false
+            ],
+            [
+              11296,
+              122,
+              false
+            ],
+            [
+              11297,
+              122,
+              false
+            ],
+            [
+              11335,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTA_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:215",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:172",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11202,
+              122,
+              true
+            ],
+            [
+              11205,
+              122,
+              true
+            ],
+            [
+              11238,
+              122,
+              true
+            ],
+            [
+              11239,
+              122,
+              true
+            ],
+            [
+              11326,
+              122,
+              true
+            ],
+            [
+              11327,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTB_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:207",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11498,
+              122,
+              true
+            ],
+            [
+              11499,
+              122,
+              true
+            ],
+            [
+              11526,
+              122,
+              true
+            ],
+            [
+              11527,
+              122,
+              true
+            ],
+            [
+              11532,
+              122,
+              true
+            ],
+            [
+              11533,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTB_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB_DSP0",
+              "source": "ECP5/tiledata/MIB_DSP0/bits.db:91",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:221",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:178",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:391",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11132,
+              120,
+              true
+            ],
+            [
+              11136,
+              120,
+              true
+            ],
+            [
+              11258,
+              122,
+              false
+            ],
+            [
+              11259,
+              122,
+              false
+            ],
+            [
+              11264,
+              122,
+              false
+            ],
+            [
+              11265,
+              122,
+              false
+            ],
+            [
+              11300,
+              122,
+              false
+            ],
+            [
+              11301,
+              122,
+              false
+            ],
+            [
+              11314,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTB_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:228",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:185",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11230,
+              122,
+              true
+            ],
+            [
+              11231,
+              122,
+              true
+            ],
+            [
+              11252,
+              122,
+              true
+            ],
+            [
+              11253,
+              122,
+              true
+            ],
+            [
+              11336,
+              122,
+              true
+            ],
+            [
+              11337,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_INPUTC_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "NONE"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:234",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:398",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:213",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11266,
+              122,
+              false
+            ],
+            [
+              11267,
+              122,
+              false
+            ],
+            [
+              11270,
+              122,
+              false
+            ],
+            [
+              11271,
+              122,
+              false
+            ],
+            [
+              11338,
+              120,
+              true
+            ],
+            [
+              11504,
+              122,
+              false
+            ],
+            [
+              11505,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_OUTPUT_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK0",
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0",
+            "CLK1",
+            "CLK2",
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:191",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:220",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11288,
+              122,
+              true
+            ],
+            [
+              11289,
+              122,
+              true
+            ],
+            [
+              11291,
+              122,
+              true
+            ],
+            [
+              11292,
+              122,
+              true
+            ],
+            [
+              11502,
+              122,
+              true
+            ],
+            [
+              11503,
+              122,
+              true
+            ],
+            [
+              11530,
+              122,
+              true
+            ],
+            [
+              11531,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_OUTPUT_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:198",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11304,
+              122,
+              true
+            ],
+            [
+              11305,
+              122,
+              true
+            ],
+            [
+              11316,
+              122,
+              true
+            ],
+            [
+              11317,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_PIPELINE_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:227",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11500,
+              122,
+              true
+            ],
+            [
+              11501,
+              122,
+              true
+            ],
+            [
+              11518,
+              122,
+              true
+            ],
+            [
+              11519,
+              122,
+              true
+            ],
+            [
+              11522,
+              122,
+              true
+            ],
+            [
+              11523,
+              122,
+              true
+            ],
+            [
+              11528,
+              122,
+              true
+            ],
+            [
+              11529,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_PIPELINE_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:259",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:241",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:204",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11095,
+              122,
+              true
+            ],
+            [
+              11096,
+              122,
+              true
+            ],
+            [
+              11147,
+              122,
+              true
+            ],
+            [
+              11151,
+              122,
+              true
+            ],
+            [
+              11278,
+              122,
+              false
+            ],
+            [
+              11279,
+              122,
+              false
+            ],
+            [
+              11286,
+              122,
+              false
+            ],
+            [
+              11287,
+              122,
+              false
+            ],
+            [
+              11302,
+              122,
+              false
+            ],
+            [
+              11303,
+              122,
+              false
+            ],
+            [
+              11310,
+              122,
+              false
+            ],
+            [
+              11311,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.REG_PIPELINE_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:248",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:211",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11268,
+              122,
+              true
+            ],
+            [
+              11269,
+              122,
+              true
+            ],
+            [
+              11280,
+              122,
+              true
+            ],
+            [
+              11281,
+              122,
+              true
+            ],
+            [
+              11340,
+              122,
+              true
+            ],
+            [
+              11341,
+              122,
+              true
+            ],
+            [
+              11350,
+              122,
+              true
+            ],
+            [
+              11351,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.RESETMODE",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "SYNC"
+          ],
+          "matching_values": [
+            "SYNC"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:254",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:217",
+              "default": "SYNC"
+            }
+          ],
+          "observed_bits": [
+            [
+              11214,
+              122,
+              false
+            ],
+            [
+              11224,
+              122,
+              false
+            ],
+            [
+              11235,
+              122,
+              false
+            ],
+            [
+              11244,
+              122,
+              false
+            ],
+            [
+              11256,
+              122,
+              false
+            ],
+            [
+              11276,
+              122,
+              false
+            ],
+            [
+              11284,
+              122,
+              false
+            ],
+            [
+              11298,
+              122,
+              false
+            ],
+            [
+              11308,
+              122,
+              false
+            ],
+            [
+              11320,
+              122,
+              false
+            ],
+            [
+              11330,
+              122,
+              false
+            ],
+            [
+              11334,
+              122,
+              false
+            ],
+            [
+              11344,
+              122,
+              false
+            ],
+            [
+              11369,
+              122,
+              false
+            ],
+            [
+              11376,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.RST0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "INV",
+            "RST0"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:78",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11542,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.RST1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST1",
+          "candidates": [
+            "RST1"
+          ],
+          "matching_values": [
+            "INV",
+            "RST1"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:82",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11543,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.RST2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST2",
+          "candidates": [
+            "RST2"
+          ],
+          "matching_values": [
+            "INV",
+            "RST2"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:86",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11546,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.RST3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST3",
+          "candidates": [
+            "RST3"
+          ],
+          "matching_values": [
+            "INV",
+            "RST3"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:90",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11547,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_0.SOURCEB_MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "B_SHIFT",
+          "candidates": [
+            "B_SHIFT"
+          ],
+          "matching_values": [
+            "B_SHIFT"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB_DSP0",
+              "source": "ECP5/tiledata/MIB_DSP0/bits.db:98",
+              "default": null
+            }
+          ],
+          "observed_bits": [
+            [
+              11106,
+              120,
+              false
+            ],
+            [
+              11107,
+              120,
+              false
+            ],
+            [
+              11108,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        }
+      ],
+      "memory": null,
+      "ebr_mode": null,
+      "dsp_output_path": {
+        "status": "qualified_registered",
+        "value": "OFF",
+        "raw_status": "resolved",
+        "output_clock_candidates": [
+          "CLK0"
+        ],
+        "selector_bits": [
+          [
+            11188,
+            122,
+            false
+          ],
+          [
+            11190,
+            122,
+            false
+          ]
+        ],
+        "clock_overrides": [],
+        "rule": "both bypass bits clear; complete output-clock pattern overrides only verified OFF=CLK0 constraints; raw field retained"
+      }
+    },
+    {
+      "id": "LFE5U-85F/R10C106/MULT18_1",
+      "family": "MULT18",
+      "enabled": true,
+      "fields": [
+        {
+          "name": "MULT18_1.CE0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:94",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11538,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CE1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE1",
+          "candidates": [
+            "CE1"
+          ],
+          "matching_values": [
+            "CE1",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:98",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11539,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CE2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE2",
+          "candidates": [
+            "CE2"
+          ],
+          "matching_values": [
+            "CE2",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:102",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11540,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CE3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE3",
+          "candidates": [
+            "CE3"
+          ],
+          "matching_values": [
+            "CE3",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:106",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11541,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CIBOUT_BYP",
+          "kind": "enum",
+          "status": "unmatched",
+          "value": null,
+          "candidates": [],
+          "matching_values": [],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:266",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:221",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:465",
+              "default": null
+            }
+          ],
+          "observed_bits": [
+            [
+              11102,
+              122,
+              true
+            ],
+            [
+              11103,
+              122,
+              true
+            ],
+            [
+              11104,
+              122,
+              true
+            ],
+            [
+              11105,
+              122,
+              true
+            ],
+            [
+              11328,
+              122,
+              true
+            ],
+            [
+              11329,
+              122,
+              true
+            ],
+            [
+              11338,
+              122,
+              true
+            ],
+            [
+              11339,
+              122,
+              true
+            ],
+            [
+              11389,
+              122,
+              true
+            ],
+            [
+              11390,
+              122,
+              false
+            ],
+            [
+              11391,
+              122,
+              true
+            ],
+            [
+              11392,
+              122,
+              false
+            ],
+            [
+              11463,
+              122,
+              false
+            ],
+            [
+              11464,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK0MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:405",
+              "default": "CLK0"
+            }
+          ],
+          "observed_bits": [
+            [
+              11341,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK0_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:409",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11345,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK1MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:413",
+              "default": "CLK1"
+            }
+          ],
+          "observed_bits": [
+            [
+              11342,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK1_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:417",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11346,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK2MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:421",
+              "default": "CLK2"
+            }
+          ],
+          "observed_bits": [
+            [
+              11343,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK2_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:425",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11347,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK3MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK3"
+          ],
+          "matching_values": [
+            "CLK3"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:429",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11344,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.CLK3_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:433",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11348,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.GSR",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "DISABLED",
+          "candidates": [
+            "DISABLED"
+          ],
+          "matching_values": [
+            "DISABLED",
+            "ENABLED"
+          ],
+          "specificity": 2,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB_DSP1",
+              "source": "ECP5/tiledata/MIB_DSP1/bits.db:23",
+              "default": "ENABLED"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:437",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11235,
+              120,
+              true
+            ],
+            [
+              11340,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "MULT18X18D",
+          "candidates": [
+            "MULT18X18D"
+          ],
+          "matching_values": [
+            "MULT18X18D",
+            "NONE"
+          ],
+          "specificity": 14,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:270",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:258",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:225",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:441",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:469",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:233",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:110",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11246,
+              121,
+              true
+            ],
+            [
+              11264,
+              121,
+              true
+            ],
+            [
+              11275,
+              121,
+              true
+            ],
+            [
+              11281,
+              121,
+              true
+            ],
+            [
+              11294,
+              121,
+              true
+            ],
+            [
+              11306,
+              120,
+              true
+            ],
+            [
+              11362,
+              121,
+              true
+            ],
+            [
+              11363,
+              121,
+              true
+            ],
+            [
+              11366,
+              121,
+              true
+            ],
+            [
+              11414,
+              122,
+              true
+            ],
+            [
+              11416,
+              121,
+              true
+            ],
+            [
+              11496,
+              122,
+              true
+            ],
+            [
+              11527,
+              120,
+              true
+            ],
+            [
+              11528,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTA_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:274",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11072,
+              122,
+              true
+            ],
+            [
+              11073,
+              122,
+              true
+            ],
+            [
+              11085,
+              122,
+              true
+            ],
+            [
+              11086,
+              122,
+              true
+            ],
+            [
+              11091,
+              122,
+              true
+            ],
+            [
+              11092,
+              122,
+              true
+            ],
+            [
+              11093,
+              122,
+              true
+            ],
+            [
+              11097,
+              122,
+              true
+            ],
+            [
+              11109,
+              122,
+              true
+            ],
+            [
+              11110,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTA_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK0",
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0",
+            "CLK1",
+            "CLK2",
+            "CLK3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:229",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:445",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:473",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11307,
+              120,
+              false
+            ],
+            [
+              11308,
+              120,
+              false
+            ],
+            [
+              11315,
+              120,
+              false
+            ],
+            [
+              11382,
+              122,
+              true
+            ],
+            [
+              11383,
+              122,
+              true
+            ],
+            [
+              11406,
+              122,
+              true
+            ],
+            [
+              11407,
+              122,
+              true
+            ],
+            [
+              11410,
+              122,
+              true
+            ],
+            [
+              11411,
+              122,
+              true
+            ],
+            [
+              11422,
+              122,
+              true
+            ],
+            [
+              11423,
+              122,
+              true
+            ],
+            [
+              11434,
+              122,
+              true
+            ],
+            [
+              11435,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTA_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:262",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:236",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11206,
+              122,
+              true
+            ],
+            [
+              11207,
+              122,
+              true
+            ],
+            [
+              11242,
+              122,
+              true
+            ],
+            [
+              11243,
+              122,
+              true
+            ],
+            [
+              11273,
+              122,
+              true
+            ],
+            [
+              11274,
+              122,
+              true
+            ],
+            [
+              11282,
+              122,
+              true
+            ],
+            [
+              11283,
+              122,
+              true
+            ],
+            [
+              11342,
+              122,
+              true
+            ],
+            [
+              11343,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTB_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:280",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11083,
+              122,
+              true
+            ],
+            [
+              11084,
+              122,
+              true
+            ],
+            [
+              11087,
+              122,
+              true
+            ],
+            [
+              11088,
+              122,
+              true
+            ],
+            [
+              11111,
+              122,
+              true
+            ],
+            [
+              11112,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTB_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK1",
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1",
+            "CLK3"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:242",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:452",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:480",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:114",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11300,
+              120,
+              false
+            ],
+            [
+              11380,
+              122,
+              true
+            ],
+            [
+              11381,
+              122,
+              false
+            ],
+            [
+              11418,
+              122,
+              true
+            ],
+            [
+              11419,
+              122,
+              false
+            ],
+            [
+              11428,
+              122,
+              true
+            ],
+            [
+              11429,
+              122,
+              false
+            ],
+            [
+              11526,
+              120,
+              false
+            ],
+            [
+              11533,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTB_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:268",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:249",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11232,
+              122,
+              true
+            ],
+            [
+              11233,
+              122,
+              true
+            ],
+            [
+              11254,
+              122,
+              true
+            ],
+            [
+              11255,
+              122,
+              true
+            ],
+            [
+              11348,
+              122,
+              true
+            ],
+            [
+              11349,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_INPUTC_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "NONE"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:286",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:274",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB_DSP2",
+              "source": "ECP5/tiledata/MIB_DSP2/bits.db:459",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:487",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11089,
+              122,
+              false
+            ],
+            [
+              11090,
+              122,
+              false
+            ],
+            [
+              11272,
+              122,
+              false
+            ],
+            [
+              11275,
+              122,
+              false
+            ],
+            [
+              11339,
+              120,
+              true
+            ],
+            [
+              11416,
+              122,
+              false
+            ],
+            [
+              11417,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_OUTPUT_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK1",
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1",
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:293",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:255",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:494",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11102,
+              122,
+              true
+            ],
+            [
+              11103,
+              122,
+              true
+            ],
+            [
+              11104,
+              122,
+              true
+            ],
+            [
+              11105,
+              122,
+              true
+            ],
+            [
+              11328,
+              122,
+              true
+            ],
+            [
+              11329,
+              122,
+              true
+            ],
+            [
+              11338,
+              122,
+              true
+            ],
+            [
+              11339,
+              122,
+              true
+            ],
+            [
+              11389,
+              122,
+              true
+            ],
+            [
+              11390,
+              122,
+              false
+            ],
+            [
+              11391,
+              122,
+              true
+            ],
+            [
+              11392,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_PIPELINE_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:300",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11098,
+              122,
+              true
+            ],
+            [
+              11099,
+              122,
+              true
+            ],
+            [
+              11100,
+              122,
+              true
+            ],
+            [
+              11101,
+              122,
+              true
+            ],
+            [
+              11113,
+              122,
+              true
+            ],
+            [
+              11114,
+              122,
+              true
+            ],
+            [
+              11115,
+              122,
+              true
+            ],
+            [
+              11116,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_PIPELINE_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C105:MIB2_DSP0",
+              "source": "ECP5/tiledata/MIB2_DSP0/bits.db:306",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:262",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:501",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:237",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11154,
+              122,
+              true
+            ],
+            [
+              11156,
+              122,
+              true
+            ],
+            [
+              11367,
+              122,
+              false
+            ],
+            [
+              11368,
+              122,
+              false
+            ],
+            [
+              11370,
+              122,
+              false
+            ],
+            [
+              11371,
+              122,
+              false
+            ],
+            [
+              11399,
+              122,
+              false
+            ],
+            [
+              11400,
+              122,
+              false
+            ],
+            [
+              11402,
+              122,
+              false
+            ],
+            [
+              11403,
+              122,
+              false
+            ],
+            [
+              11492,
+              122,
+              true
+            ],
+            [
+              11497,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.REG_PIPELINE_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:269",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11306,
+              122,
+              true
+            ],
+            [
+              11307,
+              122,
+              true
+            ],
+            [
+              11318,
+              122,
+              true
+            ],
+            [
+              11319,
+              122,
+              true
+            ],
+            [
+              11364,
+              122,
+              true
+            ],
+            [
+              11365,
+              122,
+              true
+            ],
+            [
+              11374,
+              122,
+              true
+            ],
+            [
+              11375,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.RESETMODE",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "SYNC"
+          ],
+          "matching_values": [
+            "SYNC"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C106:MIB2_DSP1",
+              "source": "ECP5/tiledata/MIB2_DSP1/bits.db:281",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C107:MIB2_DSP2",
+              "source": "ECP5/tiledata/MIB2_DSP2/bits.db:275",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C108:MIB2_DSP3",
+              "source": "ECP5/tiledata/MIB2_DSP3/bits.db:508",
+              "default": "SYNC"
+            }
+          ],
+          "observed_bits": [
+            [
+              11215,
+              122,
+              false
+            ],
+            [
+              11225,
+              122,
+              false
+            ],
+            [
+              11234,
+              122,
+              false
+            ],
+            [
+              11245,
+              122,
+              false
+            ],
+            [
+              11257,
+              122,
+              false
+            ],
+            [
+              11277,
+              122,
+              false
+            ],
+            [
+              11285,
+              122,
+              false
+            ],
+            [
+              11299,
+              122,
+              false
+            ],
+            [
+              11309,
+              122,
+              false
+            ],
+            [
+              11321,
+              122,
+              false
+            ],
+            [
+              11331,
+              122,
+              false
+            ],
+            [
+              11335,
+              122,
+              false
+            ],
+            [
+              11345,
+              122,
+              false
+            ],
+            [
+              11357,
+              122,
+              false
+            ],
+            [
+              11366,
+              122,
+              false
+            ],
+            [
+              11388,
+              122,
+              false
+            ],
+            [
+              11398,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.RST0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "INV",
+            "RST0"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:121",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11542,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.RST1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST1",
+          "candidates": [
+            "RST1"
+          ],
+          "matching_values": [
+            "INV",
+            "RST1"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:125",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11543,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.RST2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST2",
+          "candidates": [
+            "RST2"
+          ],
+          "matching_values": [
+            "INV",
+            "RST2"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:129",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11546,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.RST3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST3",
+          "candidates": [
+            "RST3"
+          ],
+          "matching_values": [
+            "INV",
+            "RST3"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:133",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11547,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_1.SOURCEB_MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "B_SHIFT",
+          "candidates": [
+            "B_SHIFT"
+          ],
+          "matching_values": [
+            "B_SHIFT"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:137",
+              "default": null
+            }
+          ],
+          "observed_bits": [
+            [
+              11520,
+              120,
+              false
+            ],
+            [
+              11521,
+              120,
+              true
+            ],
+            [
+              11524,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        }
+      ],
+      "memory": null,
+      "ebr_mode": null,
+      "dsp_output_path": {
+        "status": "qualified_registered",
+        "value": "OFF",
+        "raw_status": "unmatched",
+        "output_clock_candidates": [
+          "CLK1"
+        ],
+        "selector_bits": [
+          [
+            11463,
+            122,
+            false
+          ],
+          [
+            11464,
+            122,
+            false
+          ]
+        ],
+        "clock_overrides": [
+          {
+            "selector": "MULT18_1.REG_OUTPUT_CLK",
+            "frame": 11390,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          },
+          {
+            "selector": "MULT18_1.REG_OUTPUT_CLK",
+            "frame": 11392,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          }
+        ],
+        "rule": "both bypass bits clear; complete output-clock pattern overrides only verified OFF=CLK0 constraints; raw field retained"
+      }
+    },
+    {
+      "id": "LFE5U-85F/R10C109/MULT18_4",
+      "family": "MULT18",
+      "enabled": true,
+      "fields": [
+        {
+          "name": "MULT18_4.CE0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:143",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11550,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CE1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE1",
+          "candidates": [
+            "CE1"
+          ],
+          "matching_values": [
+            "CE1",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:147",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11551,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CE2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE2",
+          "candidates": [
+            "CE2"
+          ],
+          "matching_values": [
+            "CE2",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:151",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11552,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CE3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE3",
+          "candidates": [
+            "CE3"
+          ],
+          "matching_values": [
+            "CE3",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:155",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11553,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CIBOUT_BYP",
+          "kind": "enum",
+          "status": "unmatched",
+          "value": null,
+          "candidates": [],
+          "matching_values": [],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:244",
+              "default": "OFF"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:371",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:207",
+              "default": "ON"
+            }
+          ],
+          "observed_bits": [
+            [
+              11561,
+              122,
+              false
+            ],
+            [
+              11562,
+              122,
+              false
+            ],
+            [
+              11766,
+              122,
+              true
+            ],
+            [
+              11767,
+              122,
+              false
+            ],
+            [
+              11768,
+              122,
+              true
+            ],
+            [
+              11769,
+              122,
+              false
+            ],
+            [
+              11965,
+              122,
+              true
+            ],
+            [
+              11982,
+              122,
+              true
+            ],
+            [
+              12003,
+              122,
+              true
+            ],
+            [
+              12004,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK0MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:35",
+              "default": "CLK0"
+            }
+          ],
+          "observed_bits": [
+            [
+              11815,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK0_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:39",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11819,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK1MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:43",
+              "default": "CLK1"
+            }
+          ],
+          "observed_bits": [
+            [
+              11816,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK1_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:47",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11820,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK2MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:51",
+              "default": "CLK2"
+            }
+          ],
+          "observed_bits": [
+            [
+              11817,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK2_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:55",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11821,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK3MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK3"
+          ],
+          "matching_values": [
+            "CLK3"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:59",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11818,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.CLK3_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:63",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11822,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.GSR",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "DISABLED",
+          "candidates": [
+            "DISABLED"
+          ],
+          "matching_values": [
+            "DISABLED",
+            "ENABLED"
+          ],
+          "specificity": 2,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:152",
+              "default": "ENABLED"
+            },
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:67",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11750,
+              120,
+              true
+            ],
+            [
+              11814,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "MULT18X18D",
+          "candidates": [
+            "MULT18X18D"
+          ],
+          "matching_values": [
+            "MULT18X18D",
+            "NONE"
+          ],
+          "specificity": 13,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:248",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:159",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:269",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:76",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:375",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:156",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:150",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:71",
+              "default": "MULT18X18D"
+            }
+          ],
+          "observed_bits": [
+            [
+              11604,
+              120,
+              true
+            ],
+            [
+              11607,
+              120,
+              true
+            ],
+            [
+              11702,
+              120,
+              true
+            ],
+            [
+              11722,
+              121,
+              true
+            ],
+            [
+              11737,
+              122,
+              true
+            ],
+            [
+              11741,
+              121,
+              true
+            ],
+            [
+              11752,
+              121,
+              true
+            ],
+            [
+              11759,
+              121,
+              true
+            ],
+            [
+              11771,
+              121,
+              true
+            ],
+            [
+              11839,
+              121,
+              true
+            ],
+            [
+              11840,
+              121,
+              true
+            ],
+            [
+              11842,
+              121,
+              true
+            ],
+            [
+              11893,
+              121,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTA_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:211",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11970,
+              122,
+              true
+            ],
+            [
+              11971,
+              122,
+              true
+            ],
+            [
+              11984,
+              122,
+              true
+            ],
+            [
+              11985,
+              122,
+              true
+            ],
+            [
+              12007,
+              122,
+              true
+            ],
+            [
+              12008,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTA_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:80",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:379",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:75",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11608,
+              120,
+              true
+            ],
+            [
+              11609,
+              120,
+              true
+            ],
+            [
+              11728,
+              122,
+              false
+            ],
+            [
+              11729,
+              122,
+              false
+            ],
+            [
+              11738,
+              122,
+              false
+            ],
+            [
+              11739,
+              122,
+              false
+            ],
+            [
+              11776,
+              122,
+              false
+            ],
+            [
+              11777,
+              122,
+              false
+            ],
+            [
+              11811,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTA_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:273",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:386",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11698,
+              122,
+              true
+            ],
+            [
+              11699,
+              122,
+              true
+            ],
+            [
+              11718,
+              122,
+              true
+            ],
+            [
+              11726,
+              122,
+              true
+            ],
+            [
+              11804,
+              122,
+              true
+            ],
+            [
+              11805,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTB_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:217",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11967,
+              122,
+              true
+            ],
+            [
+              11981,
+              122,
+              true
+            ],
+            [
+              11999,
+              122,
+              true
+            ],
+            [
+              12000,
+              122,
+              true
+            ],
+            [
+              12005,
+              122,
+              true
+            ],
+            [
+              12006,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTB_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:87",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:392",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:160",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11605,
+              120,
+              true
+            ],
+            [
+              11661,
+              120,
+              true
+            ],
+            [
+              11740,
+              122,
+              false
+            ],
+            [
+              11741,
+              122,
+              false
+            ],
+            [
+              11742,
+              122,
+              false
+            ],
+            [
+              11743,
+              122,
+              false
+            ],
+            [
+              11778,
+              122,
+              false
+            ],
+            [
+              11779,
+              122,
+              false
+            ],
+            [
+              11791,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTB_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:399",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:154",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11706,
+              122,
+              true
+            ],
+            [
+              11707,
+              122,
+              true
+            ],
+            [
+              11730,
+              122,
+              true
+            ],
+            [
+              11731,
+              122,
+              true
+            ],
+            [
+              11812,
+              122,
+              true
+            ],
+            [
+              11813,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_INPUTC_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "NONE"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:94",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:405",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:223",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11655,
+              120,
+              true
+            ],
+            [
+              11744,
+              122,
+              false
+            ],
+            [
+              11746,
+              122,
+              false
+            ],
+            [
+              11750,
+              122,
+              false
+            ],
+            [
+              11751,
+              122,
+              false
+            ],
+            [
+              11979,
+              122,
+              false
+            ],
+            [
+              11980,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_OUTPUT_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK2",
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2",
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:412",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:230",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11766,
+              122,
+              true
+            ],
+            [
+              11767,
+              122,
+              false
+            ],
+            [
+              11768,
+              122,
+              true
+            ],
+            [
+              11769,
+              122,
+              false
+            ],
+            [
+              11965,
+              122,
+              true
+            ],
+            [
+              11982,
+              122,
+              true
+            ],
+            [
+              12003,
+              122,
+              true
+            ],
+            [
+              12004,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_OUTPUT_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:419",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11782,
+              122,
+              true
+            ],
+            [
+              11783,
+              122,
+              true
+            ],
+            [
+              11792,
+              122,
+              true
+            ],
+            [
+              11793,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_PIPELINE_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:237",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11977,
+              122,
+              true
+            ],
+            [
+              11978,
+              122,
+              true
+            ],
+            [
+              11993,
+              122,
+              true
+            ],
+            [
+              11994,
+              122,
+              true
+            ],
+            [
+              11997,
+              122,
+              true
+            ],
+            [
+              11998,
+              122,
+              true
+            ],
+            [
+              12001,
+              122,
+              true
+            ],
+            [
+              12002,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_PIPELINE_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK2",
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2",
+            "CLK3"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:252",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:279",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:425",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11572,
+              122,
+              false
+            ],
+            [
+              11575,
+              122,
+              false
+            ],
+            [
+              11620,
+              122,
+              false
+            ],
+            [
+              11625,
+              122,
+              false
+            ],
+            [
+              11748,
+              122,
+              true
+            ],
+            [
+              11749,
+              122,
+              false
+            ],
+            [
+              11764,
+              122,
+              true
+            ],
+            [
+              11765,
+              122,
+              false
+            ],
+            [
+              11780,
+              122,
+              true
+            ],
+            [
+              11781,
+              122,
+              false
+            ],
+            [
+              11788,
+              122,
+              true
+            ],
+            [
+              11789,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.REG_PIPELINE_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:432",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:160",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11758,
+              122,
+              true
+            ],
+            [
+              11759,
+              122,
+              true
+            ],
+            [
+              11770,
+              122,
+              true
+            ],
+            [
+              11771,
+              122,
+              true
+            ],
+            [
+              11816,
+              122,
+              true
+            ],
+            [
+              11817,
+              122,
+              true
+            ],
+            [
+              11828,
+              122,
+              true
+            ],
+            [
+              11829,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.RESETMODE",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "SYNC"
+          ],
+          "matching_values": [
+            "SYNC"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:286",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:438",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:166",
+              "default": "SYNC"
+            }
+          ],
+          "observed_bits": [
+            [
+              11691,
+              122,
+              false
+            ],
+            [
+              11710,
+              122,
+              false
+            ],
+            [
+              11722,
+              122,
+              false
+            ],
+            [
+              11734,
+              122,
+              false
+            ],
+            [
+              11747,
+              122,
+              false
+            ],
+            [
+              11754,
+              122,
+              false
+            ],
+            [
+              11762,
+              122,
+              false
+            ],
+            [
+              11774,
+              122,
+              false
+            ],
+            [
+              11786,
+              122,
+              false
+            ],
+            [
+              11796,
+              122,
+              false
+            ],
+            [
+              11808,
+              122,
+              false
+            ],
+            [
+              11810,
+              122,
+              false
+            ],
+            [
+              11820,
+              122,
+              false
+            ],
+            [
+              11844,
+              122,
+              false
+            ],
+            [
+              11856,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.RST0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "INV",
+            "RST0"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:163",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11542,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.RST1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST1",
+          "candidates": [
+            "RST1"
+          ],
+          "matching_values": [
+            "INV",
+            "RST1"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:167",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11543,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.RST2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST2",
+          "candidates": [
+            "RST2"
+          ],
+          "matching_values": [
+            "INV",
+            "RST2"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:171",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11546,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.RST3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST3",
+          "candidates": [
+            "RST3"
+          ],
+          "matching_values": [
+            "INV",
+            "RST3"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:175",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11547,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_4.SOURCEB_MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "B_SHIFT",
+          "candidates": [
+            "B_SHIFT"
+          ],
+          "matching_values": [
+            "B_SHIFT"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:179",
+              "default": null
+            }
+          ],
+          "observed_bits": [
+            [
+              11582,
+              120,
+              false
+            ],
+            [
+              11583,
+              120,
+              false
+            ],
+            [
+              11584,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        }
+      ],
+      "memory": null,
+      "ebr_mode": null,
+      "dsp_output_path": {
+        "status": "qualified_registered",
+        "value": "OFF",
+        "raw_status": "unmatched",
+        "output_clock_candidates": [
+          "CLK2"
+        ],
+        "selector_bits": [
+          [
+            11561,
+            122,
+            false
+          ],
+          [
+            11562,
+            122,
+            false
+          ]
+        ],
+        "clock_overrides": [
+          {
+            "selector": "MULT18_4.REG_OUTPUT_CLK",
+            "frame": 11767,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          },
+          {
+            "selector": "MULT18_4.REG_OUTPUT_CLK",
+            "frame": 11769,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          }
+        ],
+        "rule": "both bypass bits clear; complete output-clock pattern overrides only verified OFF=CLK0 constraints; raw field retained"
+      }
+    },
+    {
+      "id": "LFE5U-85F/R10C110/MULT18_5",
+      "family": "MULT18",
+      "enabled": true,
+      "fields": [
+        {
+          "name": "MULT18_5.CE0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:185",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11550,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CE1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE1",
+          "candidates": [
+            "CE1"
+          ],
+          "matching_values": [
+            "CE1",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:189",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11551,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CE2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE2",
+          "candidates": [
+            "CE2"
+          ],
+          "matching_values": [
+            "CE2",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:193",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11552,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CE3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE3",
+          "candidates": [
+            "CE3"
+          ],
+          "matching_values": [
+            "CE3",
+            "INV"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:197",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11553,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CIBOUT_BYP",
+          "kind": "enum",
+          "status": "unmatched",
+          "value": null,
+          "candidates": [],
+          "matching_values": [],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:259",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:442",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:170",
+              "default": "ON"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:243",
+              "default": "OFF"
+            }
+          ],
+          "observed_bits": [
+            [
+              11584,
+              122,
+              true
+            ],
+            [
+              11586,
+              122,
+              true
+            ],
+            [
+              11587,
+              122,
+              true
+            ],
+            [
+              11588,
+              122,
+              true
+            ],
+            [
+              11806,
+              122,
+              true
+            ],
+            [
+              11807,
+              122,
+              true
+            ],
+            [
+              11814,
+              122,
+              true
+            ],
+            [
+              11815,
+              122,
+              true
+            ],
+            [
+              11859,
+              122,
+              false
+            ],
+            [
+              11867,
+              122,
+              false
+            ],
+            [
+              11868,
+              122,
+              false
+            ],
+            [
+              11869,
+              122,
+              false
+            ],
+            [
+              11934,
+              122,
+              false
+            ],
+            [
+              11935,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK0MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:82",
+              "default": "CLK0"
+            }
+          ],
+          "observed_bits": [
+            [
+              11815,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK0_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:86",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11819,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK1MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:90",
+              "default": "CLK1"
+            }
+          ],
+          "observed_bits": [
+            [
+              11816,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK1_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:94",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11820,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK2MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:98",
+              "default": "CLK2"
+            }
+          ],
+          "observed_bits": [
+            [
+              11817,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK2_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:102",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11821,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK3MUX",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "CLK3"
+          ],
+          "matching_values": [
+            "CLK3"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:106",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11818,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.CLK3_DIV",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "ENABLED"
+          ],
+          "matching_values": [
+            "ENABLED"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:110",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11822,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.GSR",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "DISABLED",
+          "candidates": [
+            "DISABLED"
+          ],
+          "matching_values": [
+            "DISABLED",
+            "ENABLED"
+          ],
+          "specificity": 2,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:167",
+              "default": "ENABLED"
+            },
+            {
+              "tile": "MIB_R10C112:MIB_DSP7",
+              "source": "ECP5/tiledata/MIB_DSP7/bits.db:114",
+              "default": "ENABLED"
+            }
+          ],
+          "observed_bits": [
+            [
+              11750,
+              120,
+              true
+            ],
+            [
+              11814,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "MULT18X18D",
+          "candidates": [
+            "MULT18X18D"
+          ],
+          "matching_values": [
+            "MULT18X18D",
+            "NONE"
+          ],
+          "specificity": 14,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:290",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:101",
+              "default": "MULT18X18D"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:446",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:171",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:174",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:247",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C113:MIB_DSP8",
+              "source": "ECP5/tiledata/MIB_DSP8/bits.db:62",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11722,
+              121,
+              true
+            ],
+            [
+              11727,
+              122,
+              true
+            ],
+            [
+              11741,
+              121,
+              true
+            ],
+            [
+              11752,
+              121,
+              true
+            ],
+            [
+              11759,
+              121,
+              true
+            ],
+            [
+              11771,
+              121,
+              true
+            ],
+            [
+              11783,
+              120,
+              true
+            ],
+            [
+              11839,
+              121,
+              true
+            ],
+            [
+              11840,
+              121,
+              true
+            ],
+            [
+              11842,
+              121,
+              true
+            ],
+            [
+              11893,
+              121,
+              true
+            ],
+            [
+              11972,
+              120,
+              true
+            ],
+            [
+              11972,
+              122,
+              true
+            ],
+            [
+              11973,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTA_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:263",
+              "default": "CE3"
+            },
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:294",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11548,
+              122,
+              true
+            ],
+            [
+              11549,
+              122,
+              true
+            ],
+            [
+              11573,
+              122,
+              true
+            ],
+            [
+              11574,
+              122,
+              true
+            ],
+            [
+              11576,
+              122,
+              true
+            ],
+            [
+              11577,
+              122,
+              true
+            ],
+            [
+              11582,
+              122,
+              true
+            ],
+            [
+              11583,
+              122,
+              true
+            ],
+            [
+              11589,
+              122,
+              true
+            ],
+            [
+              11637,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTA_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK0",
+          "candidates": [
+            "CLK0"
+          ],
+          "matching_values": [
+            "CLK0",
+            "CLK1",
+            "CLK2",
+            "CLK3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:175",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:178",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11784,
+              120,
+              false
+            ],
+            [
+              11785,
+              120,
+              false
+            ],
+            [
+              11792,
+              120,
+              false
+            ],
+            [
+              11851,
+              122,
+              true
+            ],
+            [
+              11858,
+              122,
+              true
+            ],
+            [
+              11878,
+              122,
+              true
+            ],
+            [
+              11879,
+              122,
+              true
+            ],
+            [
+              11884,
+              122,
+              true
+            ],
+            [
+              11885,
+              122,
+              true
+            ],
+            [
+              11898,
+              122,
+              true
+            ],
+            [
+              11899,
+              122,
+              true
+            ],
+            [
+              11910,
+              122,
+              true
+            ],
+            [
+              11911,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTA_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 10,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:300",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:450",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:185",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11700,
+              122,
+              true
+            ],
+            [
+              11701,
+              122,
+              true
+            ],
+            [
+              11720,
+              122,
+              true
+            ],
+            [
+              11721,
+              122,
+              true
+            ],
+            [
+              11760,
+              122,
+              true
+            ],
+            [
+              11761,
+              122,
+              true
+            ],
+            [
+              11772,
+              122,
+              true
+            ],
+            [
+              11773,
+              122,
+              true
+            ],
+            [
+              11818,
+              122,
+              true
+            ],
+            [
+              11819,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTB_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:269",
+              "default": "CE3"
+            },
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:306",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11547,
+              122,
+              true
+            ],
+            [
+              11550,
+              122,
+              true
+            ],
+            [
+              11551,
+              122,
+              true
+            ],
+            [
+              11554,
+              122,
+              true
+            ],
+            [
+              11555,
+              122,
+              true
+            ],
+            [
+              11662,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTB_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK1",
+          "candidates": [
+            "CLK1"
+          ],
+          "matching_values": [
+            "CLK1",
+            "CLK3"
+          ],
+          "specificity": 3,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB_DSP6",
+              "source": "ECP5/tiledata/MIB_DSP6/bits.db:182",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:191",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C113:MIB_DSP8",
+              "source": "ECP5/tiledata/MIB_DSP8/bits.db:66",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11777,
+              120,
+              false
+            ],
+            [
+              11848,
+              122,
+              true
+            ],
+            [
+              11850,
+              122,
+              false
+            ],
+            [
+              11894,
+              122,
+              true
+            ],
+            [
+              11895,
+              122,
+              false
+            ],
+            [
+              11904,
+              122,
+              true
+            ],
+            [
+              11905,
+              122,
+              false
+            ],
+            [
+              11971,
+              120,
+              false
+            ],
+            [
+              11977,
+              120,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTB_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 6,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:456",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:198",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11708,
+              122,
+              true
+            ],
+            [
+              11709,
+              122,
+              true
+            ],
+            [
+              11732,
+              122,
+              true
+            ],
+            [
+              11733,
+              122,
+              true
+            ],
+            [
+              11830,
+              122,
+              true
+            ],
+            [
+              11831,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_INPUTC_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "NONE",
+          "candidates": [
+            "NONE"
+          ],
+          "matching_values": [
+            "NONE"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:275",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C110:MIB_DSP5",
+              "source": "ECP5/tiledata/MIB_DSP5/bits.db:105",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:462",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:204",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11552,
+              122,
+              false
+            ],
+            [
+              11553,
+              122,
+              false
+            ],
+            [
+              11654,
+              120,
+              true
+            ],
+            [
+              11752,
+              122,
+              false
+            ],
+            [
+              11753,
+              122,
+              false
+            ],
+            [
+              11890,
+              122,
+              false
+            ],
+            [
+              11891,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_OUTPUT_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK3",
+          "candidates": [
+            "CLK3"
+          ],
+          "matching_values": [
+            "CLK3",
+            "NONE"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:282",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:469",
+              "default": "NONE"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:211",
+              "default": "NONE"
+            }
+          ],
+          "observed_bits": [
+            [
+              11584,
+              122,
+              true
+            ],
+            [
+              11586,
+              122,
+              true
+            ],
+            [
+              11587,
+              122,
+              true
+            ],
+            [
+              11588,
+              122,
+              true
+            ],
+            [
+              11806,
+              122,
+              true
+            ],
+            [
+              11807,
+              122,
+              true
+            ],
+            [
+              11814,
+              122,
+              true
+            ],
+            [
+              11815,
+              122,
+              true
+            ],
+            [
+              11859,
+              122,
+              false
+            ],
+            [
+              11867,
+              122,
+              false
+            ],
+            [
+              11868,
+              122,
+              false
+            ],
+            [
+              11869,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_PIPELINE_CE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CE0",
+          "candidates": [
+            "CE0"
+          ],
+          "matching_values": [
+            "CE0",
+            "CE1",
+            "CE2",
+            "CE3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB2_DSP4",
+              "source": "ECP5/tiledata/MIB2_DSP4/bits.db:289",
+              "default": "CE3"
+            },
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:312",
+              "default": "CE3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11578,
+              122,
+              true
+            ],
+            [
+              11579,
+              122,
+              true
+            ],
+            [
+              11580,
+              122,
+              true
+            ],
+            [
+              11581,
+              122,
+              true
+            ],
+            [
+              11645,
+              122,
+              true
+            ],
+            [
+              11663,
+              122,
+              true
+            ],
+            [
+              11665,
+              122,
+              true
+            ],
+            [
+              11666,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_PIPELINE_CLK",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "CLK2",
+          "candidates": [
+            "CLK2"
+          ],
+          "matching_values": [
+            "CLK2",
+            "CLK3"
+          ],
+          "specificity": 4,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:318",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:218",
+              "default": "CLK3"
+            },
+            {
+              "tile": "MIB_R10C113:MIB2_DSP8",
+              "source": "ECP5/tiledata/MIB2_DSP8/bits.db:251",
+              "default": "CLK3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11628,
+              122,
+              false
+            ],
+            [
+              11630,
+              122,
+              false
+            ],
+            [
+              11838,
+              122,
+              false
+            ],
+            [
+              11839,
+              122,
+              true
+            ],
+            [
+              11846,
+              122,
+              false
+            ],
+            [
+              11847,
+              122,
+              true
+            ],
+            [
+              11870,
+              122,
+              false
+            ],
+            [
+              11871,
+              122,
+              true
+            ],
+            [
+              11873,
+              122,
+              true
+            ],
+            [
+              11877,
+              122,
+              false
+            ],
+            [
+              11966,
+              122,
+              false
+            ],
+            [
+              11974,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.REG_PIPELINE_RST",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "RST0",
+            "RST1",
+            "RST2",
+            "RST3"
+          ],
+          "specificity": 8,
+          "fragments": [
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:476",
+              "default": "RST3"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:225",
+              "default": "RST3"
+            }
+          ],
+          "observed_bits": [
+            [
+              11784,
+              122,
+              true
+            ],
+            [
+              11785,
+              122,
+              true
+            ],
+            [
+              11794,
+              122,
+              true
+            ],
+            [
+              11795,
+              122,
+              true
+            ],
+            [
+              11842,
+              122,
+              true
+            ],
+            [
+              11843,
+              122,
+              true
+            ],
+            [
+              11854,
+              122,
+              true
+            ],
+            [
+              11855,
+              122,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.RESETMODE",
+          "kind": "enum",
+          "status": "unobserved",
+          "value": null,
+          "candidates": [
+            "SYNC"
+          ],
+          "matching_values": [
+            "SYNC"
+          ],
+          "specificity": 0,
+          "fragments": [
+            {
+              "tile": "MIB_R10C110:MIB2_DSP5",
+              "source": "ECP5/tiledata/MIB2_DSP5/bits.db:325",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C111:MIB2_DSP6",
+              "source": "ECP5/tiledata/MIB2_DSP6/bits.db:482",
+              "default": "SYNC"
+            },
+            {
+              "tile": "MIB_R10C112:MIB2_DSP7",
+              "source": "ECP5/tiledata/MIB2_DSP7/bits.db:231",
+              "default": "SYNC"
+            }
+          ],
+          "observed_bits": [
+            [
+              11684,
+              122,
+              false
+            ],
+            [
+              11702,
+              122,
+              false
+            ],
+            [
+              11711,
+              122,
+              false
+            ],
+            [
+              11723,
+              122,
+              false
+            ],
+            [
+              11735,
+              122,
+              false
+            ],
+            [
+              11755,
+              122,
+              false
+            ],
+            [
+              11763,
+              122,
+              false
+            ],
+            [
+              11775,
+              122,
+              false
+            ],
+            [
+              11787,
+              122,
+              false
+            ],
+            [
+              11797,
+              122,
+              false
+            ],
+            [
+              11809,
+              122,
+              false
+            ],
+            [
+              11811,
+              122,
+              false
+            ],
+            [
+              11821,
+              122,
+              false
+            ],
+            [
+              11833,
+              122,
+              false
+            ],
+            [
+              11845,
+              122,
+              false
+            ],
+            [
+              11849,
+              122,
+              false
+            ],
+            [
+              11876,
+              122,
+              false
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.RST0MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST0",
+          "candidates": [
+            "RST0"
+          ],
+          "matching_values": [
+            "INV",
+            "RST0"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:201",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11542,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.RST1MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST1",
+          "candidates": [
+            "RST1"
+          ],
+          "matching_values": [
+            "INV",
+            "RST1"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:205",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11543,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.RST2MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST2",
+          "candidates": [
+            "RST2"
+          ],
+          "matching_values": [
+            "INV",
+            "RST2"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:209",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11546,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.RST3MUX",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "RST3",
+          "candidates": [
+            "RST3"
+          ],
+          "matching_values": [
+            "INV",
+            "RST3"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C109:MIB_DSP4",
+              "source": "ECP5/tiledata/MIB_DSP4/bits.db:213",
+              "default": "INV"
+            }
+          ],
+          "observed_bits": [
+            [
+              11547,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        },
+        {
+          "name": "MULT18_5.SOURCEB_MODE",
+          "kind": "enum",
+          "status": "resolved",
+          "value": "B_SHIFT",
+          "candidates": [
+            "B_SHIFT"
+          ],
+          "matching_values": [
+            "B_SHIFT"
+          ],
+          "specificity": 1,
+          "fragments": [
+            {
+              "tile": "MIB_R10C113:MIB_DSP8",
+              "source": "ECP5/tiledata/MIB_DSP8/bits.db:73",
+              "default": null
+            }
+          ],
+          "observed_bits": [
+            [
+              11967,
+              120,
+              false
+            ],
+            [
+              11975,
+              120,
+              false
+            ],
+            [
+              11976,
+              120,
+              true
+            ]
+          ],
+          "word_bits_lsb0": [],
+          "conflicting_word_bits": [],
+          "applicable": null
+        }
+      ],
+      "memory": null,
+      "ebr_mode": null,
+      "dsp_output_path": {
+        "status": "qualified_registered",
+        "value": "OFF",
+        "raw_status": "unmatched",
+        "output_clock_candidates": [
+          "CLK3"
+        ],
+        "selector_bits": [
+          [
+            11934,
+            122,
+            false
+          ],
+          [
+            11935,
+            122,
+            false
+          ]
+        ],
+        "clock_overrides": [
+          {
+            "selector": "MULT18_5.REG_OUTPUT_CLK",
+            "frame": 11859,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          },
+          {
+            "selector": "MULT18_5.REG_OUTPUT_CLK",
+            "frame": 11867,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          },
+          {
+            "selector": "MULT18_5.REG_OUTPUT_CLK",
+            "frame": 11868,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          },
+          {
+            "selector": "MULT18_5.REG_OUTPUT_CLK",
+            "frame": 11869,
+            "bit": 122,
+            "base_value": true,
+            "observed_value": false
+          }
+        ],
+        "rule": "both bypass bits clear; complete output-clock pattern overrides only verified OFF=CLK0 constraints; raw field retained"
+      }
+    }
+  ],
+  "images": {},
+  "field_status_counts": {
+    "resolved": 91,
+    "unmatched": 3,
+    "unobserved": 36
+  },
+  "limitations": [
+    "Decoded fields are bit-pattern interpretations, not executable resource behaviour.",
+    "Enum candidates discard only strict subsets of matching constraints; aliases and incomparable patterns remain explicit.",
+    "EBR effective mode may qualify the single verified WEAMUX override for DP/NONE; raw MODE observations and status remain unchanged.",
+    "Partial configuration streams and dynamic reconfiguration are not validated.",
+    "libtrellis does not expose an EBR write-coverage mask; decoded bitstream images retain that limitation.",
+    "Missing or invalid INIT does not imply zero-filled physical memory."
+  ]
+}

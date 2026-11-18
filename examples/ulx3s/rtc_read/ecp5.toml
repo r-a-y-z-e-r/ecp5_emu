@@ -1,0 +1,12 @@
+# Read-only MCP7940N RTC registers and SRAM, reported on the UART.
+# Build: ecp5_emu build examples/ulx3s/rtc_read (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/rtc_read; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/rtc_read.
+
+[project]
+name = "rtc_read"
+top = "top"
+
+[sources]
+verilog = ["rtc_reader.v", "top.v", "uart_tx.v"]
+constraints = "top.lpf"

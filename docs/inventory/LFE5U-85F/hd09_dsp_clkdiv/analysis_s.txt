@@ -1,0 +1,288 @@
+distinct windows=1, ignored incomplete/invalid lines=3
+loads=3; full windows/load=[1, 1, 1]; identical=True
+Unique windows=1; samples=128; available transitions=127
+Output R: measured rise+fall from HD09m, CE0/RST0/GSR, RESETMODE respected.
+Internal stages: HD08c masks/controls; rising/falling/rise+fall, /2,/4 all phases; never; bypass.
+Hidden state starts unknown each window. Unknown predictions are excluded and counted, never treated as matches.
+Multi-stage opcode tests apply the same candidate clock to all active opcode stages.
+First observed outputs: {'o1': '0000', 'o2': '0000', 'o3': '0000', 'o4': '0000', 'o5': '0000', 'o6': '0000', 'o7': '0000'}
+
+c1 R[50] from c[50]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 5/126 mismatches; unknown=1
+  rise+fall: 5/126 mismatches; unknown=1
+  never captures: 39/126 mismatches; unknown=1
+  rising /2 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 10/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 16/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 20/126 mismatches; unknown=1; phase per sorted window=[3]
+  rising /4 GSR resets phase: 22/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 20/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 GSR resets phase: 23/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 36/127; unknown=0
+
+c1 R[30] from c[30]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 4/126 mismatches; unknown=1
+  rise+fall: 4/126 mismatches; unknown=1
+  never captures: 36/126 mismatches; unknown=1
+  rising /2 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 13/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 13/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 12/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 19/126 mismatches; unknown=1; phase per sorted window=[3]
+  rising /4 GSR resets phase: 26/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 19/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 GSR resets phase: 21/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 29/127; unknown=0
+
+c1 R[20] from c[20]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 7/126 mismatches; unknown=1
+  rise+fall: 7/126 mismatches; unknown=1
+  never captures: 25/126 mismatches; unknown=1
+  rising /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 21/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 GSR resets phase: 24/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 22/126 mismatches; unknown=1; phase per sorted window=[1]
+  falling /4 GSR resets phase: 29/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 38/127; unknown=0
+
+c1 R[0] from c[0]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 6/126 mismatches; unknown=1
+  rise+fall: 6/126 mismatches; unknown=1
+  never captures: 34/126 mismatches; unknown=1
+  rising /2 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 20/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /4 GSR resets phase: 26/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 22/126 mismatches; unknown=1; phase per sorted window=[2]
+  falling /4 GSR resets phase: 21/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 36/127; unknown=0
+
+c2 R[50] from c[14]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 3/126 mismatches; unknown=1
+  rise+fall: 3/126 mismatches; unknown=1
+  never captures: 23/126 mismatches; unknown=1
+  rising /2 free phase: 9/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 12/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 9/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 11/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /4 GSR resets phase: 20/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[2]
+  falling /4 GSR resets phase: 15/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 29/127; unknown=0
+
+c2 R[44] from c[8]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 6/126 mismatches; unknown=1
+  rise+fall: 6/126 mismatches; unknown=1
+  never captures: 37/126 mismatches; unknown=1
+  rising /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 9/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 15/126 mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 12/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 15/126 mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 18/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 38/127; unknown=0
+
+c2 R[40] from c[4]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 5/126 mismatches; unknown=1
+  rise+fall: 5/126 mismatches; unknown=1
+  never captures: 27/126 mismatches; unknown=1
+  rising /2 free phase: 10/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 11/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 9/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 13/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 16/126 mismatches; unknown=1; phase per sorted window=[3]
+  rising /4 GSR resets phase: 18/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 GSR resets phase: 22/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 31/127; unknown=0
+
+c2 R[36] from c[0]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 6/126 mismatches; unknown=1
+  rise+fall: 6/126 mismatches; unknown=1
+  never captures: 34/126 mismatches; unknown=1
+  rising /2 free phase: 11/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 15/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 13/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 17/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /4 GSR resets phase: 23/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 19/126 mismatches; unknown=1; phase per sorted window=[2]
+  falling /4 GSR resets phase: 20/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 36/127; unknown=0
+
+c3 R[50] from c[50]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+c3 R[30] from c[30]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+c3 R[20] from c[20]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 7/126 mismatches; unknown=1
+  rise+fall: 7/126 mismatches; unknown=1
+  never captures: 25/126 mismatches; unknown=1
+  rising /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 21/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 GSR resets phase: 24/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 22/126 mismatches; unknown=1; phase per sorted window=[1]
+  falling /4 GSR resets phase: 29/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 38/127; unknown=0
+
+c3 R[0] from c[0]: C register
+  rising: 0/126 mismatches; unknown=1
+  falling: 6/126 mismatches; unknown=1
+  rise+fall: 6/126 mismatches; unknown=1
+  never captures: 34/126 mismatches; unknown=1
+  rising /2 free phase: 12/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 14/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 17/126 mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 20/126 mismatches; unknown=1; phase per sorted window=[1]
+  rising /4 GSR resets phase: 26/126 mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 22/126 mismatches; unknown=1; phase per sorted window=[2]
+  falling /4 GSR resets phase: 21/126 mismatches; unknown=1; phase per sorted window=[0]
+  combinational bypass ahead of R: 36/127; unknown=0
+
+c4 R[50] from c[50]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+c4 R[30] from c[30]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+c4 R[20] from c[20]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+c4 R[0] from c[0]: configured bypass
+  bypass: 0/127 mismatches; unknown=0
+
+o1 opcode register(s):
+  rising: 3/126 word mismatches; unknown=1
+  falling: 2/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 24/126 word mismatches; unknown=1
+  rising /2 free phase: 21/126 word mismatches; unknown=1; phase per sorted window=[1]
+  rising /2 GSR resets phase: 20/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 20/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 GSR resets phase: 20/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 25/126 word mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 24/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 25/126 word mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 24/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 45/127; unknown=0
+
+o2 opcode register(s):
+  rising: 0/126 word mismatches; unknown=1
+  falling: 1/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 11/126 word mismatches; unknown=1
+  rising /2 free phase: 8/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 13/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 7/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 9/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 8/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 GSR resets phase: 15/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 7/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /4 GSR resets phase: 19/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 19/127; unknown=0
+
+o3 opcode register(s):
+  rising: 3/126 word mismatches; unknown=1
+  falling: 0/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 36/126 word mismatches; unknown=1
+  rising /2 free phase: 18/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 20/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 17/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 21/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 30/126 word mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 31/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 29/126 word mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 37/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 43/127; unknown=0
+
+o4 opcode register(s):
+  rising: 5/126 word mismatches; unknown=1
+  falling: 0/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 40/126 word mismatches; unknown=1
+  rising /2 free phase: 22/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 27/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 18/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 23/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 32/126 word mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 33/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 31/126 word mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 33/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 46/127; unknown=0
+
+o5 opcode register(s):
+  rising: 2/126 word mismatches; unknown=1
+  falling: 2/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 20/126 word mismatches; unknown=1
+  rising /2 free phase: 11/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 9/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 11/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 14/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 15/126 word mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 14/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 15/126 word mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 18/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 24/127; unknown=0
+
+o6 opcode register(s):
+  rising: 3/126 word mismatches; unknown=1
+  falling: 0/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 31/126 word mismatches; unknown=1
+  rising /2 free phase: 15/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 24/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 11/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 15/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 23/126 word mismatches; unknown=1; phase per sorted window=[2]
+  rising /4 GSR resets phase: 26/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 21/126 word mismatches; unknown=1; phase per sorted window=[3]
+  falling /4 GSR resets phase: 22/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 37/127; unknown=0
+
+o7 opcode register(s):
+  rising: 18/126 word mismatches; unknown=1
+  falling: 15/126 word mismatches; unknown=1
+  rise+fall: 0/126 word mismatches; unknown=1
+  never captures: 32/126 word mismatches; unknown=1
+  rising /2 free phase: 30/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /2 GSR resets phase: 26/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /2 free phase: 30/126 word mismatches; unknown=1; phase per sorted window=[1]
+  falling /2 GSR resets phase: 38/126 word mismatches; unknown=1; phase per sorted window=[0]
+  rising /4 free phase: 37/126 word mismatches; unknown=1; phase per sorted window=[1]
+  rising /4 GSR resets phase: 36/126 word mismatches; unknown=1; phase per sorted window=[0]
+  falling /4 free phase: 37/126 word mismatches; unknown=1; phase per sorted window=[2]
+  falling /4 GSR resets phase: 42/126 word mismatches; unknown=1; phase per sorted window=[0]
+  opcode bypass ahead of R: 45/127; unknown=0
+
+Preferred timing summaries:
+  C: 0/1260; unknown=10; EXACT ON PREDICTED SAMPLES
+  bypass: 0/762; unknown=0; EXACT ON PREDICTED SAMPLES
+  opcode: 0/882; unknown=7; EXACT ON PREDICTED SAMPLES
+  Single-window zero-hidden-state hypothesis: C/bypass 0/2032; opcode 0/889; no unknown predictions
+Physical edge sensitivity versus phase transparency is not uniquely identified. Flags and IN_1 remain unmeasured.

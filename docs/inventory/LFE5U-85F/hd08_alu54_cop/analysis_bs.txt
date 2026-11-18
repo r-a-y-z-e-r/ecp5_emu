@@ -1,0 +1,32 @@
+loads: 3 full windows per load: [1, 1, 1] in all loads: 1 distinct: 1
+samples: 128 GSR low in 19
+c1 R[50] (c[50]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c1 R[30] (c[30]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c1 R[20] (c[20]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c1 R[0] (c[0]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c2 R[50] (c[14]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears', 'every other edge, GSR resets the divider, CE0, RST0 async, GSR clears']
+c2 R[44] (c[8]): ['every other edge, GSR resets the divider, CE0, RST0 async, GSR ignored', 'every other edge, GSR resets the divider, CE0, RST0 async, GSR clears']
+c2 R[40] (c[4]): ['every other edge, GSR resets the divider, CE0, RST0 async, GSR clears']
+c2 R[36] (c[0]): ['every other edge, GSR resets the divider, CE0, RST0 async, GSR clears']
+c3 R[50] (c[50]): ['no register']
+c3 R[30] (c[30]): ['no register']
+c3 R[20] (c[20]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c3 R[0] (c[0]): ['every other edge, GSR resets the divider, CE0, RST0 sync, GSR clears']
+c4 R[50] (c[50]): ['no register']
+c4 R[30] (c[30]): ['no register']
+c4 R[20] (c[20]): ['no register']
+c4 R[0] (c[0]): ['no register']
+o1:
+  X+Y+OP4: ['CE1, RST2 sync, GSR clears', 'CE1, RST2 async, GSR clears']
+  X+Y+OP4+OP5+OP6: ['CE1, RST2 sync, GSR clears', 'CE1, RST2 async, GSR clears']
+o2:
+  OP7: ['CE2, RST1 async, GSR ignored', 'CE2, RST1 async, GSR clears']
+  OP5+OP6+OP7: ['CE2, RST1 async, GSR ignored', 'CE2, RST1 async, GSR clears']
+o3:
+  OP8+OP9+OP10: ['CE3, RST3 sync, GSR clears']
+o5:
+  OP7: ['CE1, RST3 sync, GSR ignored', 'CE1, RST3 sync, GSR clears']
+o6:
+  OP8+OP9+OP10: ['CE2, RST2 async, GSR clears']
+o4 with the found stages: fits; clocks not given: 0 of 120
+o7 with the found stages: fits; clocks not given: 0 of 119

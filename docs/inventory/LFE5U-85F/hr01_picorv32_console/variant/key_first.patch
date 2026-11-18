@@ -1,0 +1,12 @@
+--- examples/ulx3s/picorv32_console/firmware/main.c
++++ main.c (board run: a key first)
+@@ -66,6 +66,9 @@
+     uint32_t start = cycles();
+     uint32_t primes = count_primes();
+     uint32_t spent = cycles() - start;
++    // Board run only: wait for a key, since the serial port cannot be open
++    // while the FTDI loads the FPGA.
++    get_char();
+     put_string("PicoRV32 on ECP5\r\nprimes below ");
+     put_decimal(LIMIT);
+     put_string(": ");

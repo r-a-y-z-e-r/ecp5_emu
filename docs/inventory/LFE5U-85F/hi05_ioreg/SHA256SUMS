@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+4d318d7853f42c42a81515545f09ceb6fb81a271f8c8b529c47468cef02cbcaf  hi05.v
+d8992eb0659e54d2ebf4d737e29aee87b108e13a64652ece56622f0151a9578d  hi05.lpf
+52ec5b9b98fcbe0f53720afd90daf02e8e2f87bcbdc935a556bf124d918a7a80  hi05.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+e83184666a78c0c937830fce9a51dac0de54c7bd558f84c5add14302d138e42f  hi05_model.py
+15e3ab8e552f2882abef728274b60f3966ddd81eae8843506542a275da0e9bf5  observations.log
+2d9de8d92d5888e52dc2f3b85e1b4bdda15bcba84a3da1664e2d1a7a298b4ea2  model_check.txt
+# Historical digest (artifact unavailable in this record): 723a91c4b8bfab4e59123831433ab31533d980642d268fd191e110093ccf82e5  hi05.bit (ecppack --compress hi05.config; not stored)

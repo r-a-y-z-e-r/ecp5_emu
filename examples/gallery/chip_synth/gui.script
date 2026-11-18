@@ -1,0 +1,25 @@
+# Glass Orchard: 120 wall seconds. Audio (jack) visualizes; no window playback.
+0 rate max
+0 run
+1 board 3d
+2 type r
+# Let the new tune and scope run before playing the spare sine voice.
+30 type a
+34 type d
+38 type g
+42 button 1 down
+43 button 1 up
+48 button 2 down
+49 button 2 up
+54 button 3 down
+55 button 3 up
+60 button 4 down
+61 button 4 up
+66 button 5 down
+67 button 5 up
+72 button 6 down
+73 button 6 up
+80 type p
+84 type h
+90 type p
+120 quit

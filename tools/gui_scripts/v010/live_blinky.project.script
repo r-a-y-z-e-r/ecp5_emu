@@ -1,0 +1,13 @@
+# Clean-source counter hovers at declaration and increment, then its LED alias and inline values.
+0 emulate
+2 view project
+0 open top.v
+0 hover top.v 6 13
+1 hover top.v 7 40
+1 hover top.v 8 10
+8 hover top.v 6 13
+1 hover top.v 7 40
+1 hover top.v 8 10
+0 inline on
+5 inline off
+0 quit

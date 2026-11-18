@@ -1,0 +1,43 @@
+windows=310 duplicate_payloads=3 rejected={}
+10 ns nominal tick; common observation latency cancels in differences; CDC/skew adds bin uncertainty. k counts the first sampling edge as 1.
+measured pulse widths (100 MHz bins): {4: 35, 8: 46, 12: 36, 20: 42, 80: 151}
+edge phase (bins since CLK rise marker): {('assert', 0): 87, ('assert', 1): 75, ('assert', 2): 73, ('assert', 3): 75, ('release', 0): 87, ('release', 1): 75, ('release', 2): 73, ('release', 3): 75}
+same/RESET: exact=19/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=3,ref=same,new-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=19: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=3,ref=same,new-reset,new-input)
+  async: min_exact=1075 min_tolerant=1603
+  sync: min_exact=233 min_tolerant=237
+  async-assert/sync-release: min_exact=19 min_tolerant=19
+  ignored: min_exact=8383 min_tolerant=12462
+same/SET: exact=16/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=3,ref=same,new-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=16: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=3,ref=same,new-reset,new-input)
+  async: min_exact=1034 min_tolerant=1543
+  sync: min_exact=248 min_tolerant=244
+  async-assert/sync-release: min_exact=16 min_tolerant=16
+  ignored: min_exact=8368 min_tolerant=12424
+inverted/RESET: exact=21/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=2,ref=same,new-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=28: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=2,ref=same,new-reset,new-input)
+  async: min_exact=795 min_tolerant=1186
+  sync: min_exact=253 min_tolerant=178
+  async-assert/sync-release: min_exact=21 min_tolerant=28
+  ignored: min_exact=8081 min_tolerant=11992
+inverted/SET: exact=33/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=2,ref=same,new-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=44: async-assert/sync-release(kr=2,ref=same,old-reset,new-input), async-assert/sync-release(kr=2,ref=same,new-reset,new-input)
+  async: min_exact=751 min_tolerant=1116
+  sync: min_exact=247 min_tolerant=190
+  async-assert/sync-release: min_exact=33 min_tolerant=44
+  ignored: min_exact=8031 min_tolerant=11912
+other/RESET: exact=39/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=39: async-assert/sync-release(kr=2,ref=same,old-reset,new-input)
+  async: min_exact=855 min_tolerant=1080
+  sync: min_exact=237 min_tolerant=194
+  async-assert/sync-release: min_exact=39 min_tolerant=39
+  ignored: min_exact=7928 min_tolerant=10054
+other/SET: exact=26/151590: async-assert/sync-release(kr=2,ref=same,old-reset,new-input)
+  tolerance=+/-1 tick symmetric_errors=28: async-assert/sync-release(kr=2,ref=same,old-reset,new-input)
+  async: min_exact=848 min_tolerant=1098
+  sync: min_exact=274 min_tolerant=236
+  async-assert/sync-release: min_exact=26 min_tolerant=28
+  ignored: min_exact=8230 min_tolerant=10634
+joint exact=154: async-assert/sync-release(kr=2,ref=same,old-reset,new-input)
+event details: events.csv (3720 rows)
+Fits are hypotheses: retain tied models, inspect nonzero residuals and missing width/phase coverage; pair release is first capture, not the invisible reset release.

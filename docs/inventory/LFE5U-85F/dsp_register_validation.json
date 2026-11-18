@@ -1,0 +1,1863 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "scope": "logical parallel MULT18 input/pipeline stages; output CIB bypass only; D05 assumptions remain open",
+  "regular_tests_passed": 98,
+  "native_integration_tests_passed": 13,
+  "total_tests_passed": 111,
+  "new_regular_tests": 3,
+  "new_native_tests": 1,
+  "hardware_results": 0,
+  "vendor_model_runs": 0,
+  "portable_matrix": {
+    "profiles": 8,
+    "reset_modes": 2,
+    "samples_per_profile": 257,
+    "additional_cases": [
+      "simultaneous DSP/FF capture and initial clock level",
+      "X/Z data, CE, reset, possible clock edge and GSR",
+      "reset over CE",
+      "compiler input/pipeline matrix and CLK/CE/RST inversions",
+      "unsupported C/output stages, divider and ambiguous active controls rejected"
+    ]
+  },
+  "native_runs": [
+    {
+      "mode": "sync",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 5363,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "observed",
+      "source": "config",
+      "state": {
+        "configuration_sha256": "4d8a9ad715b91531372a563d5ddb930394326a32996298eeae29d583d3cecaac",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 6063,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 919202,
+        "discarded_timer_events": 0,
+        "driver_changes": 948390,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2702,
+        "multiplier_register_bit_changes": 7956,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4152,
+        "possible_clock_edges": 0,
+        "register_evaluations": 985,
+        "signal_changes": 954453,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "e2fba78e730b589dad2bf8dfed0ff31f11d1e82e4b10b83a523b5999fabe6066",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ]
+    },
+    {
+      "mode": "sync",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 5363,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "observed",
+      "source": "bit",
+      "state": {
+        "configuration_sha256": "7ea8e6b07632c1d0a8aaf3e0553b0d599cae922da2c413a089b9b1b2cd38fa24",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 6063,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 919202,
+        "discarded_timer_events": 0,
+        "driver_changes": 948390,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2702,
+        "multiplier_register_bit_changes": 7956,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4152,
+        "possible_clock_edges": 0,
+        "register_evaluations": 985,
+        "signal_changes": 954453,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "e2fba78e730b589dad2bf8dfed0ff31f11d1e82e4b10b83a523b5999fabe6066",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ],
+      "samples_equal_run": 0
+    },
+    {
+      "mode": "sync",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 83640,
+        "lut4": 83636,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 716254,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "SYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "SYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "SYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "all_plc_registers",
+      "source": "bit",
+      "state": {
+        "configuration_sha256": "7ea8e6b07632c1d0a8aaf3e0553b0d599cae922da2c413a089b9b1b2cd38fa24",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 83640,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 1344209,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 2048269,
+        "discarded_timer_events": 0,
+        "driver_changes": 1826552,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2702,
+        "multiplier_register_bit_changes": 7956,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4152,
+        "possible_clock_edges": 0,
+        "register_evaluations": 1925037,
+        "signal_changes": 2710777,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "e2fba78e730b589dad2bf8dfed0ff31f11d1e82e4b10b83a523b5999fabe6066",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ],
+      "samples_equal_run": 0
+    },
+    {
+      "mode": "async",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 5363,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "observed",
+      "source": "config",
+      "state": {
+        "configuration_sha256": "d4321016871ecc5e682e101a8c0fbf21ca675be8f0d55f82e60d33703f3a0a28",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 6063,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 913856,
+        "discarded_timer_events": 0,
+        "driver_changes": 942774,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2768,
+        "multiplier_register_bit_changes": 8868,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4272,
+        "possible_clock_edges": 0,
+        "register_evaluations": 973,
+        "signal_changes": 948837,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "1cc57be9d98e54d732c74a6e57089954659ce2637134e293395096e76720e2fb",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ]
+    },
+    {
+      "mode": "async",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 5363,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "observed",
+      "source": "bit",
+      "state": {
+        "configuration_sha256": "a9384f8ec2c508cdc55d7a2ad84d18e3157ffebc2296556446d5c6a71a67a1a5",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 6063,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 913856,
+        "discarded_timer_events": 0,
+        "driver_changes": 942774,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2768,
+        "multiplier_register_bit_changes": 8868,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4272,
+        "possible_clock_edges": 0,
+        "register_evaluations": 973,
+        "signal_changes": 948837,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "1cc57be9d98e54d732c74a6e57089954659ce2637134e293395096e76720e2fb",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ],
+      "samples_equal_run": 0
+    },
+    {
+      "mode": "async",
+      "counts": {
+        "carry_halves": 0,
+        "constants": 148,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 83640,
+        "lut4": 83636,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 196,
+        "ramw": 0,
+        "routes": 716254,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": true,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT",
+          "stages": [
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C109/MULT18_4",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        },
+        {
+          "behavioural_assumptions": [
+            "D05: input SIGNEDA/B share their operand's clock/CE/reset; pipeline SIGNEDP shares product controls",
+            "D05: reset clears data/sign to zero and precedes CE; effective GSR clears enabled stages asynchronously",
+            "D05: parallel mode with standard ENABLED CLK_DIV uses selected rising clock without a highspeed divider"
+          ],
+          "cibout_bypass": "ON",
+          "gsr_enabled": false,
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "CLK0"
+            ],
+            "REG_INPUTB_CLK": [
+              "CLK1"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "CLK2"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C110/MULT18_5",
+          "rule": "parallel A/B, SOURCEA/B=0 required; optional INPUTA/B and PIPELINE logical stages, simultaneous capture; output bypass; OR/FR reserved X; registered semantics qualified by explicit D05 assumptions",
+          "slice": "LFE5U-85F/R10C109/DSP_SLICE_RIGHT",
+          "stages": [
+            {
+              "clock": "CLK0",
+              "enable": "CE0",
+              "reset": "RST0",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTA"
+            },
+            {
+              "clock": "CLK1",
+              "enable": "CE1",
+              "reset": "RST1",
+              "reset_mode": "ASYNC",
+              "stage": "INPUTB"
+            },
+            {
+              "clock": "CLK2",
+              "enable": "CE2",
+              "reset": "RST2",
+              "reset_mode": "ASYNC",
+              "stage": "PIPELINE"
+            }
+          ]
+        }
+      ],
+      "scope": "all_plc_registers",
+      "source": "bit",
+      "state": {
+        "configuration_sha256": "a9384f8ec2c508cdc55d7a2ad84d18e3157ffebc2296556446d5c6a71a67a1a5",
+        "dsp_multiplier_views": 156,
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; logical parallel MULT18 input/pipeline views, physical mapping remains D01/D05",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_multiplier_bits": 150,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 83640,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 1344209,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 2042923,
+        "discarded_timer_events": 0,
+        "driver_changes": 1820936,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 2768,
+        "multiplier_register_bit_changes": 8868,
+        "multiplier_register_edges": 784,
+        "multiplier_register_evaluations": 4272,
+        "possible_clock_edges": 0,
+        "register_evaluations": 1925025,
+        "signal_changes": 2705161,
+        "system_evaluations": 23,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      },
+      "samples_sha256": "1cc57be9d98e54d732c74a6e57089954659ce2637134e293395096e76720e2fb",
+      "samples_count": 513,
+      "fully_known_oracle_samples_per_product": [
+        510,
+        510,
+        508,
+        508
+      ],
+      "samples_equal_run": 0
+    }
+  ],
+  "CLI": [
+    {
+      "mode": "sync",
+      "observations": 514,
+      "working_observations_compared": 513,
+      "probes": 12,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 12,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 60,
+        "ramw": 0,
+        "routes": 2110,
+        "wide_muxes": 0
+      },
+      "passed": true
+    },
+    {
+      "mode": "async",
+      "observations": 514,
+      "working_observations_compared": 513,
+      "probes": 12,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 12,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 4,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 4,
+        "pio": 60,
+        "ramw": 0,
+        "routes": 2110,
+        "wide_muxes": 0
+      },
+      "passed": true
+    }
+  ],
+  "validation_commands": [
+    {
+      "command": "cargo test --locked",
+      "status": "passed",
+      "log": "target/dsp-register-all-tests.log"
+    },
+    {
+      "command": "cargo test --locked --test dsp",
+      "status": "passed",
+      "log": "target/dsp-register-tests.log"
+    },
+    {
+      "command": "cargo test --release --locked --test dsp_register_native -- --ignored",
+      "status": "passed",
+      "log": "target/dsp-register-native.log"
+    },
+    {
+      "command": "cargo test --release --locked -- --ignored --skip real_bitstream_matches_text_config --test-threads=1",
+      "status": "passed",
+      "log": "target/dsp-register-native-regression.log"
+    },
+    {
+      "command": "cargo clippy --all-targets -- -D warnings",
+      "status": "passed",
+      "log": "target/dsp-register-clippy.log"
+    },
+    {
+      "command": "cargo fmt --check",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "D05: sign controls share operand/pipeline controls; reset-to-zero priority over CE and asynchronous effective GSR are explicit execution assumptions awaiting physical/vendor-model checks",
+    "D05: standard parallel CLK_DIV=ENABLED treated as selected rising clock; other divider/highspeed settings rejected",
+    "75 logical input/sign/product bits per MULT18 are not a physical FF census or ownership mapping for other modes",
+    "78 shared OR/FR output banks remain reserved X; D01 unresolved",
+    "registered INPUTC/output, forwarding outputs, ALU, PRADD, small modes and cascades remain unimplemented",
+    "MULT_BYPASS/CAS_MATCH_REG/HIGHSPEED_CLK retain explicit standard-nextpnr assumptions; arbitrary Diamond configurations uncertified",
+    "raw coincident reset/data/clock silicon behaviour and startup/PUR remain unresolved",
+    "no physical board or Diamond behavioural-model results; external ECP5_TEST_BIT test not run"
+  ],
+  "source_files": [
+    {
+      "path": "src/state.rs",
+      "sha256": "da715958b08a731cb3aad4b99683401173012443a023368287cbeb36f1f99501"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "a8c10fcefb46607cc28597a3c70b0267dd61d51b6bf61b1da0fee000f20e2abd"
+    },
+    {
+      "path": "src/kernel/dsp.rs",
+      "sha256": "4fd38e402d0e5e9abef5ab05e98b5a9e68cb0eeea9b4f475c535a7424125cf9b"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "2e96c26bd1e4626ff48b840ce335f86d1eeb2061e5791b42ffd5df4b8cc43171"
+    },
+    {
+      "path": "src/compile/dsp.rs",
+      "sha256": "858c757ebc853e305cfb0ac9c7eed350753b9770fc253bf2cb3591966076cf94"
+    },
+    {
+      "path": "tests/dsp.rs",
+      "sha256": "9271a6ca1c10becc37146d9ff233ea1083d5c4995c4cd9b036e355273ae65de9"
+    },
+    {
+      "path": "tests/dsp_register_native.rs",
+      "sha256": "815847388b62689016a6645ecb49b6dc944c4506ea90f4f0633c524a11ffe6b6"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "bf8434a2b33c92fed3ea8729e3710fb3913b6a6c609c616ca32675a0ccbb4893"
+    },
+    {
+      "path": "docs/DSP_REGISTERS.md",
+      "sha256": "3c0845b7c364b3189f67cb9c7b0020fcc700b94772d5839b3ed86c148432676c"
+    },
+    {
+      "path": "docs/DSP_EXECUTION.md",
+      "sha256": "ce5cb392a21a2513d757182b7ef7b20dfef8d97a3723656c2f87d1747955f235"
+    },
+    {
+      "path": "docs/DSP_INTERNALS.md",
+      "sha256": "38743233a65146fde74ec8cd77dcb8449e9ea0d79e90d412e46d480ad85bba08"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "ce331c71a96e331c1a75292a799cb23db023c738bf8ecdc13c7c45cee5663068"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "88b1d95dbab38dbfe5ec5f52c3873a9ced641129571849e8bfd82902a577345b"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "1fe0d0020e9ae09aba94b6b8dd08ef6a92fbb4a5f31d85386aa34ffc940a9673"
+    },
+    {
+      "path": "docs/HARDWARE_VALIDATION.md",
+      "sha256": "7982facefb12cb7d42d2c42fddc2f4ff9b64035ce59320c30b3a5a30477e218e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_async_cli.json",
+      "sha256": "9cf4fdf0b5d995243fd3a9498fe350e9c614b2d210280d917636707654ffab1a"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_async_fixture.v",
+      "sha256": "1ff29c37ebcda8ee19d933653343229dd4aa322d88023ce0e75c0a1b9f1f59b0"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_async_native.json",
+      "sha256": "7247a2f2a8dc3acdb0b101215f4016ea5098e2491d23a5e1b2090c99fdca0a85"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_events.json",
+      "sha256": "f44f181ca8ae914028e237973dcea243a21f2a9d19524a1796475960a8738abc"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_fixture.lpf",
+      "sha256": "813fdb2f2e863a392b5e4678c0a87fb0a663774a99d6e08f0d55f658c5d69b8d"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_sync_cli.json",
+      "sha256": "1da1969ac5f6188565ec40f6ce8c1bb6375135eeec364e9c37c61e179d3b5649"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_sync_fixture.v",
+      "sha256": "7cc26db656d1306bcebf02fcf66d5d631657bb1f3da7e5d9944d7ad213ad8f04"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_register_sync_native.json",
+      "sha256": "ce76965e83e0fa71bf5b38cf54aee9568bc83cdc50d5c4f26122c42fdd28e68a"
+    }
+  ]
+}

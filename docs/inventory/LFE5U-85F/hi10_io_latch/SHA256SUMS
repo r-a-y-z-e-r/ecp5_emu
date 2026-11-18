@@ -1,0 +1,13 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+1fae18347ed5202e8fc77a6371ee1925dda404bb81cb33086109f57300d5d855  hi10.v
+d8992eb0659e54d2ebf4d737e29aee87b108e13a64652ece56622f0151a9578d  hi10.lpf
+40b826444180cf8e3d8a59b9cade3f990ccc81825295744e59bcdfc6b9b94d6a  hi10_ff.config
+2999b1c590f64369b61a90582a5f6b98fec55366135b68301e32e266888c7f07  hi10.config
+e6e530d289161ffa508c001b645ab351684f9387040fbbf3939bbf81741daacd  hi10_latch.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+8e83207556d579d2eda6821158b40af7092764821bf4d266ea6de10bf7a40d82  hi10_model.py
+c425bdbeff3a7fb8f89bca541e07c7296ecae677f988ded86fe66c3bfeb47b41  observations_ff.log
+0e56ae9f7469a850222c4cf458bd80b5b99e4d886aa12149fda4e34bdfd6f6c2  observations.log
+0cb1a0850f1059c6624b79a91314df580d6dd26ed7ce05be5a0a2577bff6ba4b  model_check.txt
+# Historical digest (artifact unavailable in this record): 16862f917d00af65829cba01b707365fe8cc98b7c743a94f5764f5d9783c56d6  hi10_ff.bit (ecppack; not stored)
+# Historical digest (artifact unavailable in this record): a3fa83d91c2da8fd94cdc01752ef646575a654b71e62ace9a3868d00f97b19f5  hi10.bit (ecppack; not stored)

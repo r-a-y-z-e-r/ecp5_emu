@@ -1,0 +1,2747 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "hardware_results": 0,
+  "scope": "pinned configuration encodings and writer/fuzzer semantics; no silicon measurements",
+  "resource_count": 208,
+  "mode_fragment_counts": {
+    "3": 104,
+    "2": 104
+  },
+  "valid_encoding_cases": 1040,
+  "rejected_bit_flips": 1872,
+  "rule": "retain all MODE fragments; DP/NONE may override exactly the WEAMUX bit; PDP must match strictly",
+  "cib_constant_rule": "CLK/LSR label 0 comes from the EBR pin-level fuzzer; nextpnr tie_cib_signal drives raw high, then inverts the consuming input",
+  "resources": [
+    {
+      "resource": "LFE5U-85F/R22C10/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        1087,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C100/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        10600,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C102/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        10839,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C105/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        11076,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C107/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        11315,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C109/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        11554,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C111/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        11793,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C114/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        12030,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C116/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        12269,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C118/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        12508,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C120/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        12747,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C13/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        1324,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C15/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        1563,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C17/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        1802,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C19/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2041,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C22/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        2278,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C24/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        2517,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C26/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        2756,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C28/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2995,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C31/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        3232,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C33/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        3471,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C35/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        3710,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C37/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        3949,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C4/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        370,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C40/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        4186,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C42/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        4425,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C44/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        4664,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C46/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        4903,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C49/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        5140,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C51/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        5379,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C53/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        5618,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C55/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        5857,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C58/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        6094,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C6/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        609,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C60/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        6333,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C62/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        6572,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C64/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        6811,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C69/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        7260,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C71/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        7499,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C73/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        7738,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C75/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        7977,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C78/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        8214,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C8/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        848,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C80/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        8453,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C82/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        8692,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C84/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        8931,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C87/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        9168,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C89/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        9407,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C91/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        9646,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C93/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        9885,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C96/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        10122,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R22C98/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        10361,
+        266
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C10/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        1087,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C100/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        10600,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C102/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        10839,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C105/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        11076,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C107/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        11315,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C109/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        11554,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C111/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        11793,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C114/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        12030,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C116/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        12269,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C118/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        12508,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C120/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        12747,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C13/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        1324,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C15/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        1563,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C17/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        1802,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C19/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2041,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C22/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        2278,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C24/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        2517,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C26/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        2756,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C28/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2995,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C31/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        3232,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C33/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        3471,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C35/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        3710,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C37/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        3949,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C4/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        370,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C40/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        4186,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C42/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        4425,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C44/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        4664,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C46/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        4903,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C49/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        5140,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C51/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        5379,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C53/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        5618,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C55/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        5857,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C58/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        6094,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C6/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        609,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C60/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        6333,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C62/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        6572,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C64/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        6811,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C69/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        7260,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C71/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        7499,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C73/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        7738,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C75/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        7977,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C78/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        8214,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C8/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        848,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C80/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        8453,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C82/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        8692,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C84/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        8931,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C87/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        9168,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C89/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        9407,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C91/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        9646,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C93/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        9885,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C96/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        10122,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R46C98/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        10361,
+        556
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C10/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        1087,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C100/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        10600,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C102/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        10839,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C105/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        11076,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C107/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        11315,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C109/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        11554,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C111/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        11793,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C114/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        12030,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C116/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        12269,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C118/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        12508,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C120/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        12747,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C13/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        1324,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C15/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        1563,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C17/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        1802,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C19/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2041,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C22/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        2278,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C24/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        2517,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C26/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        2756,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C28/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2995,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C31/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        3232,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C33/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        3471,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C35/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        3710,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C37/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        3949,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C4/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        370,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C40/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        4186,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C42/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        4425,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C44/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        4664,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C46/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        4903,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C49/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        5140,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C51/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        5379,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C53/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        5618,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C55/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        5857,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C58/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        6094,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C6/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        609,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C60/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        6333,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C62/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        6572,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C64/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        6811,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C69/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        7260,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C71/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        7499,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C73/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        7738,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C75/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        7977,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C78/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        8214,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C8/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        848,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C80/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        8453,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C82/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        8692,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C84/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        8931,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C87/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        9168,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C89/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        9407,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C91/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        9646,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C93/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        9885,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C96/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        10122,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R70C98/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        10361,
+        846
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C10/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        1087,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C100/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        10600,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C102/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        10839,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C105/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        11076,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C107/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        11315,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C109/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        11554,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C111/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        11793,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C114/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        12030,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C116/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        12269,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C118/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        12508,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C120/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        12747,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C13/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        1324,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C15/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        1563,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C17/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        1802,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C19/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2041,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C22/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        2278,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C24/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        2517,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C26/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        2756,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C28/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        2995,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C31/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        3232,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C33/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        3471,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C35/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        3710,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C37/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        3949,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C4/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        370,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C40/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        4186,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C42/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        4425,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C44/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        4664,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C46/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        4903,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C49/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        5140,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C51/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        5379,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C53/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        5618,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C55/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        5857,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C58/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        6094,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C6/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        609,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C60/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        6333,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C62/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        6572,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C64/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        6811,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C69/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        7260,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C71/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        7499,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C73/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        7738,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C75/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        7977,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C78/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        8214,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C8/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        848,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C80/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        8453,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C82/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        8692,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C84/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        8931,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C87/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        9168,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C89/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        9407,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C91/EBR2",
+      "mode_field": "EBR2.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR2.WEAMUX",
+      "overlap": [
+        9646,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C93/EBR3",
+      "mode_field": "EBR3.MODE",
+      "mode_fragments": 3,
+      "mode_bits": 10,
+      "overlap_field": "EBR3.WEAMUX",
+      "overlap": [
+        9885,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C96/EBR0",
+      "mode_field": "EBR0.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR0.WEAMUX",
+      "overlap": [
+        10122,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    },
+    {
+      "resource": "LFE5U-85F/R82C98/EBR1",
+      "mode_field": "EBR1.MODE",
+      "mode_fragments": 2,
+      "mode_bits": 10,
+      "overlap_field": "EBR1.WEAMUX",
+      "overlap": [
+        10361,
+        990
+      ],
+      "valid_cases": 5,
+      "rejected_non_overlay_bit_flips": 9
+    }
+  ],
+  "source_files": [
+    {
+      "path": "docs/inventory/LFE5U-85F/decode_catalog.json",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "path": "tools/audit_ebr_mode_overlay.py",
+      "sha256": "e070b1230c17b09630e692f7dea4fb2aa48cf20011d883a8b874bb7622ec5afb"
+    },
+    {
+      "path": "~/FPGA/prjtrellis/libtrellis/src/BitDatabase.cpp",
+      "sha256": "93993c7ebc0797d40ab95b306743154a6e1fd7de3d0df8e7c5714f67d1d9e55e"
+    },
+    {
+      "path": "~/FPGA/prjtrellis/fuzzers/ECP5/043-cib_constmux/fuzzer.py",
+      "sha256": "02484364c55f56c843857b26a7d6a7e6cec5b9146d76a921b257491336aeaddd"
+    },
+    {
+      "path": "~/FPGA/prjtrellis/fuzzers/ECP5/043-cib_constmux/cibconst.ncl",
+      "sha256": "65761f2b3111e94924bd3e5a468e4c9dd494b4b0e3e019254cf05e31b05ab69d"
+    },
+    {
+      "path": "~/FPGA/nextpnr/ecp5/bitstream.cc",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    }
+  ]
+}

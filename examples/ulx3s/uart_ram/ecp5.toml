@@ -1,0 +1,14 @@
+
+# The message in block RAM: a ROM copied into a RAM at start and sent from there.
+# Build: ecp5_emu build examples/ulx3s/uart_ram (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/uart_ram; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/uart_ram.
+
+[project]
+name = "uart_ram"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"
+files = ["message.hex"]   # read by $readmemh

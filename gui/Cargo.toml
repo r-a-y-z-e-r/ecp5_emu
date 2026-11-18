@@ -1,0 +1,20 @@
+[package]
+name = "ecp5_gui"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+# eframe 0.36 needs rustc 1.95; CI and this machine run 1.92.
+rust-version = "1.92"
+description = "Chip view and board panel for the ECP5 emulator"
+
+[dependencies]
+ecp5_emu = { path = ".." }
+anyhow = "1.0"
+eframe = "0.35"
+bytemuck = { version = "1", features = ["derive"] }
+# The 3D board (src/board_model.rs): the glTF's JSON and its PNG images.
+serde_json = "1.0"
+image = { version = "0.25", default-features = false, features = ["png"] }
+# `--board-picture`: the board drawn without a window.
+pollster = "0.4"
+rfd = "0.17"

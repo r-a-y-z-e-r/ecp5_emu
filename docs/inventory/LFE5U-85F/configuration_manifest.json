@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "architecture_manifest_sha256": "2c396cae9c0b29f99a3db420304ce61d62e3e957093868d55669f5f31403069e",
+  "files": [
+    {
+      "path": "decode_catalog.json",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "path": "iologic_research/config_catalogue.json",
+      "sha256": "5c4f32b4fbeaf3532d47546d05aaf152e2a9a1f332641e7aa05a7c5e1c75bb7e"
+    },
+    {
+      "path": "pio_bank_research/config_catalogue.json",
+      "sha256": "2100e5682da673eb186a3c85099ac9ccc4ccb9ec61621d3bbf767c732cb1772c"
+    },
+    {
+      "path": "clock_system_research/config_catalogue.json",
+      "sha256": "05b65cae0f5b41f6662e3b312ce865fd3ee793b18d9b5c70967f818eb68a5a29"
+    },
+    {
+      "path": "dqs_research/config_catalogue.json",
+      "sha256": "9e9cc02450ad54a7e06b3db0cd9727bbb3f11b58d7dce1e431b53b4041fbb92f"
+    }
+  ],
+  "generator_sha256": "1f5cf98a08569d2f2401440ade398279bef56e2182661cb263c9c89ff55b6af9"
+}

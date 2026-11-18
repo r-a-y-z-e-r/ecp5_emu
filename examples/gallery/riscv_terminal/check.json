@@ -1,0 +1,6 @@
+{
+  "cycles": 11000000,
+  "input": "reboot\rhelp\rled a5\rcalc (7+5)*3-10/4\rmandel\rscreen\rcls\rscreen\rinfo\rprimes 2000\rcalc 6*7\r",
+  "marker": "reboot",
+  "board_seconds": 2.5
+}

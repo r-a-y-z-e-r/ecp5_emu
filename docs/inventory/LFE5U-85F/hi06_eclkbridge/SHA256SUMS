@@ -1,0 +1,13 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+c4267c3492fad8e23dd56946d0f94b4137e0034461766717fbb417241d857eff  hi06.v
+56aacdd0f859c6f0ea198fe36feb3e2fff373aafca57843ab3c03dd697841d0a  hi06.lpf
+7f84331c63e368d5ebec72ad08dd859a3c3bd47e824902d9c65dc54f5711bf04  hi06.config
+e940c897a90c060c98e4d80b8acc0c759ed8c110cac1240a74bd1f00047a3eb7  hi06_mode.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+2b5f43b4f2c4f983cfcb5b7a6e8b6efc6294a216ac4494e2267bfbda909e46af  hi06_show.py
+b6a4d100803b28f2cc3aba2f89bcf3e5a99c386cb72f06723e8e8271767c50ae  hi06_model.py
+6c731d2c98f8c5b682c918f5c1461827592d1d933d15cc783c9002249db66b52  observations_nextpnr.log
+99932254ff0edf46805db0397e226187328008b7577b9d82764c61af2ee2566c  observations_mode.log
+4666f26760c5a158e6552145712e69a00563c679bfd5f4a28894f83061b0a088  model_check.txt
+# Historical digest (artifact unavailable in this record): 3ed547827adf32d0dd3f001f477d37f6b09270951e9cce20e823ab60d27b1a25  hi06.bit (ecppack --compress hi06.config; not stored)
+# Historical digest (artifact unavailable in this record): 682b0b077110cf2da6f6a35df5d955a111c3eb7a3eed4c7a30b1aa23017272fb  hi06_mode.bit (ecppack --compress hi06_mode.config; not stored)

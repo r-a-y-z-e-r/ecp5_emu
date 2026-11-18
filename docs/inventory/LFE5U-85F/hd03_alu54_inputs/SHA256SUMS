@@ -1,0 +1,10 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+1c6f729694893f0369379cf9580908cd60cf08ed08dd8a12dbf5dccc97386ec2  hd03.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hd03.lpf
+484fe0475d3927855d49d8960d16ba57b0e2e0b78b1c93d7f4e139610c4bfa40  hd03.config
+3a6ac80a3f6b14898d498514505a1d8379d0d30352322de0c5280edf2a9f0394  hd03_gen.py
+000b672a39d3b9cea6686b9dc2fa0ea4d47299399ae2bef19c03275886eeb134  hd03_model.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+97130262e4d3a14737f1e3057694d9472e9b29adbdc2229b1a449c37cf6dafc8  observations.log
+07e85bed466e8248bd18b25c15cffabc5ea762813b2fc5961f22a13255494efd  model_check.txt
+# Historical digest (artifact unavailable in this record): 7ef59866babb2e51fef8a3e422a818017384bfe50410c6795a5030a18635877e  hd03.bit (ecppack hd03.config; not stored)

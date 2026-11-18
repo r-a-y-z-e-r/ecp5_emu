@@ -1,0 +1,7 @@
+width,depth,address_shift,address_contacts,visible_bits,mode_scope,evidence_status
+1,16384,0,"[0,1,2,3,4,5,6,7,8,9,10,11,12,13]",16384,DP_and_PDP_read,verified_by_local_synthesis_when_enabled
+2,8192,1,"[1,2,3,4,5,6,7,8,9,10,11,12,13]",16384,DP_and_PDP_read,verified_by_local_synthesis_when_enabled
+4,4096,2,"[2,3,4,5,6,7,8,9,10,11,12,13]",16384,DP_and_PDP_read,verified_by_local_synthesis_when_enabled
+9,2048,3,"[3,4,5,6,7,8,9,10,11,12,13]",18432,DP_and_PDP_read,verified_by_local_synthesis_when_enabled
+18,1024,4,"[4,5,6,7,8,9,10,11,12,13]",18432,DP_and_PDP_read,verified_by_local_synthesis_when_enabled
+36,512,5,"[5,6,7,8,9,10,11,12,13]",18432,PDP_only,INIT_word_layout;PDP36_output_pin_order_unresolved

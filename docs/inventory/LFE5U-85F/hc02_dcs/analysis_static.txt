@@ -1,0 +1,910 @@
+observations_static.log:1: line length 956; expected 6178 before CR/LF
+observations_static.log:2: line length 841; expected 6178 before CR/LF
+observations_static.log load-row=1 static Q=00000001 seed=5128F4CA SEL 01->10 MODESEL 0->0 T=202 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-2.5t, first post-write edge fall@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+88.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-194.5t fall@-178.5t rise@-162.5t fall@-146.5t rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t rise@+29.5t fall@+45.5t rise@+61.5t fall@+77.5t rise@+93.5t fall@+109.5t rise@+125.5t fall@+141.5t rise@+157.5t fall@+173.5t rise@+189.5t fall@+205.5t rise@+221.5t fall@+237.5t rise@+253.5t fall@+269.5t rise@+285.5t fall@+301.5t
+  CLK1: rise@-189.5t fall@-167.5t rise@-146.5t fall@-125.5t rise@-103.5t fall@-82.5t rise@-61.5t fall@-39.5t rise@-18.5t fall@+2.5t rise@+24.5t fall@+45.5t rise@+66.5t fall@+88.5t rise@+109.5t fall@+130.5t rise@+152.5t fall@+173.5t rise@+194.5t fall@+216.5t rise@+237.5t fall@+258.5t rise@+280.5t fall@+301.5t
+  DCS0: rise@-194.5t fall@-178.5t rise@-162.5t fall@-146.5t rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t
+  DCS1: fall@+88.5t rise@+109.5t fall@+130.5t rise@+152.5t fall@+173.5t rise@+194.5t fall@+216.5t rise@+237.5t fall@+258.5t rise@+280.5t fall@+301.5t
+observations_static.log load-row=1 static Q=00000002 seed=FC9244A8 SEL 10->01 MODESEL 0->0 T=168 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+51.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-17.5t, first post-write edge rise@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-156.5t rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t rise@+19.5t fall@+35.5t rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t rise@+307.5t fall@+323.5t rise@+339.5t
+  CLK1: rise@-167.5t fall@-145.5t rise@-124.5t fall@-103.5t rise@-81.5t fall@-60.5t rise@-39.5t fall@-17.5t rise@+3.5t fall@+24.5t rise@+46.5t fall@+67.5t rise@+88.5t fall@+110.5t rise@+131.5t fall@+152.5t rise@+174.5t fall@+195.5t rise@+216.5t fall@+238.5t rise@+259.5t fall@+280.5t rise@+302.5t fall@+323.5t
+  DCS0: rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t rise@+307.5t fall@+323.5t rise@+339.5t
+  DCS1: rise@-167.5t fall@-145.5t rise@-124.5t fall@-103.5t rise@-81.5t fall@-60.5t rise@-39.5t fall@-17.5t rise@+3.5t
+observations_static.log load-row=1 static Q=00000003 seed=D6B0C31D SEL 01->01 MODESEL 0->1 T=157 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge rise@-8.5t, first post-write edge fall@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t rise@+343.5t
+  CLK1: rise@-152.5t fall@-131.5t rise@-109.5t fall@-88.5t rise@-67.5t fall@-45.5t rise@-24.5t fall@-3.5t rise@+18.5t fall@+39.5t rise@+60.5t fall@+82.5t rise@+103.5t fall@+124.5t rise@+146.5t fall@+167.5t rise@+188.5t fall@+210.5t rise@+231.5t fall@+252.5t rise@+274.5t fall@+295.5t rise@+316.5t fall@+338.5t
+  DCS0: fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t rise@+343.5t
+  DCS1: fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t rise@+343.5t
+observations_static.log load-row=1 static Q=00000004 seed=0E01AC55 SEL 01->10 MODESEL 1->0 T=213 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-3.5t, first post-write edge fall@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK0->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge rise@-3.5t, first post-write edge fall@+97.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-211.5t rise@-195.5t fall@-179.5t rise@-163.5t fall@-147.5t rise@-131.5t fall@-115.5t rise@-99.5t fall@-83.5t rise@-67.5t fall@-51.5t rise@-35.5t fall@-19.5t rise@-3.5t fall@+12.5t rise@+28.5t fall@+44.5t rise@+60.5t fall@+76.5t rise@+92.5t fall@+108.5t rise@+124.5t fall@+140.5t rise@+156.5t fall@+172.5t rise@+188.5t fall@+204.5t rise@+220.5t fall@+236.5t rise@+252.5t fall@+268.5t rise@+284.5t
+  CLK1: fall@-200.5t rise@-179.5t fall@-158.5t rise@-136.5t fall@-115.5t rise@-94.5t fall@-72.5t rise@-51.5t fall@-30.5t rise@-8.5t fall@+12.5t rise@+33.5t fall@+55.5t rise@+76.5t fall@+97.5t rise@+119.5t fall@+140.5t rise@+161.5t fall@+183.5t rise@+204.5t fall@+225.5t rise@+247.5t fall@+268.5t rise@+289.5t
+  DCS0: fall@-211.5t rise@-195.5t fall@-179.5t rise@-163.5t fall@-147.5t rise@-131.5t fall@-115.5t rise@-99.5t fall@-83.5t rise@-67.5t fall@-51.5t rise@-35.5t fall@-19.5t rise@-3.5t fall@+12.5t
+  DCS1: fall@-211.5t rise@-195.5t fall@-179.5t rise@-163.5t fall@-147.5t rise@-131.5t fall@-115.5t rise@-99.5t fall@-83.5t rise@-67.5t fall@-51.5t rise@-35.5t fall@-19.5t rise@-3.5t fall@+97.5t rise@+119.5t fall@+140.5t rise@+161.5t fall@+183.5t rise@+204.5t fall@+225.5t rise@+247.5t fall@+268.5t rise@+289.5t
+observations_static.log load-row=1 static Q=00000005 seed=03390EC8 SEL 10->01 MODESEL 0->0 T=200 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+49.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-9.5t, first post-write edge fall@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-190.5t rise@-174.5t fall@-158.5t rise@-142.5t fall@-126.5t rise@-110.5t fall@-94.5t rise@-78.5t fall@-62.5t rise@-46.5t fall@-30.5t rise@-14.5t fall@+1.5t rise@+17.5t fall@+33.5t rise@+49.5t fall@+65.5t rise@+81.5t fall@+97.5t rise@+113.5t fall@+129.5t rise@+145.5t fall@+161.5t rise@+177.5t fall@+193.5t rise@+209.5t fall@+225.5t rise@+241.5t fall@+257.5t rise@+273.5t fall@+289.5t rise@+305.5t
+  CLK1: fall@-201.5t rise@-179.5t fall@-158.5t rise@-137.5t fall@-115.5t rise@-94.5t fall@-73.5t rise@-51.5t fall@-30.5t rise@-9.5t fall@+12.5t rise@+33.5t fall@+54.5t rise@+76.5t fall@+97.5t rise@+118.5t fall@+140.5t rise@+161.5t fall@+182.5t rise@+204.5t fall@+225.5t rise@+246.5t fall@+268.5t rise@+289.5t
+  DCS0: rise@+49.5t fall@+65.5t rise@+81.5t fall@+97.5t rise@+113.5t fall@+129.5t rise@+145.5t fall@+161.5t rise@+177.5t fall@+193.5t rise@+209.5t fall@+225.5t rise@+241.5t fall@+257.5t rise@+273.5t fall@+289.5t rise@+305.5t
+  DCS1: fall@-201.5t rise@-179.5t fall@-158.5t rise@-137.5t fall@-115.5t rise@-94.5t fall@-73.5t rise@-51.5t fall@-30.5t rise@-9.5t fall@+12.5t rise@+33.5t
+observations_static.log load-row=1 static Q=00000006 seed=DF313B64 SEL 01->10 MODESEL 0->0 T=228 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-13.5t, first post-write edge fall@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+87.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t rise@+18.5t fall@+34.5t rise@+50.5t fall@+66.5t rise@+82.5t fall@+98.5t rise@+114.5t fall@+130.5t rise@+146.5t fall@+162.5t rise@+178.5t fall@+194.5t rise@+210.5t fall@+226.5t rise@+242.5t fall@+258.5t rise@+274.5t
+  CLK1: fall@-210.5t rise@-189.5t fall@-168.5t rise@-146.5t fall@-125.5t rise@-104.5t fall@-82.5t rise@-61.5t fall@-40.5t rise@-18.5t fall@+2.5t rise@+23.5t fall@+45.5t rise@+66.5t fall@+87.5t rise@+109.5t fall@+130.5t rise@+151.5t fall@+173.5t rise@+194.5t fall@+215.5t rise@+237.5t fall@+258.5t rise@+279.5t
+  DCS0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t
+  DCS1: fall@+87.5t rise@+109.5t fall@+130.5t rise@+151.5t fall@+173.5t rise@+194.5t fall@+215.5t rise@+237.5t fall@+258.5t rise@+279.5t
+observations_static.log load-row=1 static Q=00000007 seed=529A639A SEL 10->10 MODESEL 0->1 T=154 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+0.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge rise@-5.5t, first post-write edge fall@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t rise@+42.5t fall@+58.5t rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t fall@+314.5t rise@+330.5t fall@+346.5t
+  CLK1: fall@-154.5t rise@-133.5t fall@-112.5t rise@-90.5t fall@-69.5t rise@-48.5t fall@-26.5t rise@-5.5t fall@+15.5t rise@+37.5t fall@+58.5t rise@+79.5t fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t fall@+271.5t rise@+293.5t fall@+314.5t rise@+335.5t
+  DCS0: rise@+0.5t fall@+15.5t rise@+37.5t fall@+58.5t rise@+79.5t fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t fall@+271.5t rise@+293.5t fall@+314.5t rise@+335.5t
+  DCS1: fall@-154.5t rise@-133.5t fall@-112.5t rise@-90.5t fall@-69.5t rise@-48.5t fall@-26.5t rise@-5.5t fall@+15.5t rise@+37.5t fall@+58.5t rise@+79.5t fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t fall@+271.5t rise@+293.5t fall@+314.5t rise@+335.5t
+observations_static.log load-row=1 static Q=00000008 seed=46BD8C1B SEL 10->11 MODESEL 1->0 T=155 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK1->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-12.5t, first post-write edge fall@+0.5t
+    missing=0 extra=0 runts=1 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=1 legacy-repeated-count=0
+    short phase level=1 start=-12.5t width=13t/65ns (separate single-edge bins; nominal width uncertainty +/-5ns, conservative +/-10ns)
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-12.5t, first post-write edge fall@+9.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-145.5t fall@-129.5t rise@-113.5t fall@-97.5t rise@-81.5t fall@-65.5t rise@-49.5t fall@-33.5t rise@-17.5t fall@-1.5t rise@+14.5t fall@+30.5t rise@+46.5t fall@+62.5t rise@+78.5t fall@+94.5t rise@+110.5t fall@+126.5t rise@+142.5t fall@+158.5t rise@+174.5t fall@+190.5t rise@+206.5t fall@+222.5t rise@+238.5t fall@+254.5t rise@+270.5t fall@+286.5t rise@+302.5t fall@+318.5t rise@+334.5t fall@+350.5t
+  CLK1: rise@-140.5t fall@-118.5t rise@-97.5t fall@-76.5t rise@-54.5t fall@-33.5t rise@-12.5t fall@+9.5t rise@+30.5t fall@+51.5t rise@+73.5t fall@+94.5t rise@+115.5t fall@+137.5t rise@+158.5t fall@+179.5t rise@+201.5t fall@+222.5t rise@+243.5t fall@+265.5t rise@+286.5t fall@+307.5t rise@+329.5t fall@+350.5t
+  DCS0: rise@-140.5t fall@-118.5t rise@-97.5t fall@-76.5t rise@-54.5t fall@-33.5t rise@-12.5t fall@+0.5t
+  DCS1: rise@-140.5t fall@-118.5t rise@-97.5t fall@-76.5t rise@-54.5t fall@-33.5t rise@-12.5t fall@+9.5t rise@+30.5t
+observations_static.log load-row=1 static Q=00000009 seed=7AD5D155 SEL 11->01 MODESEL 0->0 T=213 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+75.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge unresolved
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-212.5t fall@-196.5t rise@-180.5t fall@-164.5t rise@-148.5t fall@-132.5t rise@-116.5t fall@-100.5t rise@-84.5t fall@-68.5t rise@-52.5t fall@-36.5t rise@-20.5t fall@-4.5t rise@+11.5t fall@+27.5t rise@+43.5t fall@+59.5t rise@+75.5t fall@+91.5t rise@+107.5t fall@+123.5t rise@+139.5t fall@+155.5t rise@+171.5t fall@+187.5t rise@+203.5t fall@+219.5t rise@+235.5t fall@+251.5t rise@+267.5t fall@+283.5t
+  CLK1: fall@-196.5t rise@-175.5t fall@-153.5t rise@-132.5t fall@-111.5t rise@-89.5t fall@-68.5t rise@-47.5t fall@-25.5t rise@-4.5t fall@+16.5t rise@+38.5t fall@+59.5t rise@+80.5t fall@+102.5t rise@+123.5t fall@+144.5t rise@+166.5t fall@+187.5t rise@+208.5t fall@+230.5t rise@+251.5t fall@+272.5t rise@+294.5t
+  DCS0: rise@+75.5t fall@+91.5t rise@+107.5t fall@+123.5t rise@+139.5t fall@+155.5t rise@+171.5t fall@+187.5t rise@+203.5t fall@+219.5t rise@+235.5t fall@+251.5t rise@+267.5t fall@+283.5t
+  DCS1: (no edges)
+observations_static.log load-row=1 static Q=0000000A seed=98F8E8CB SEL 01->10 MODESEL 0->0 T=203 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-8.5t, first post-write edge rise@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-200.5t rise@-184.5t fall@-168.5t rise@-152.5t fall@-136.5t rise@-120.5t fall@-104.5t rise@-88.5t fall@-72.5t rise@-56.5t fall@-40.5t rise@-24.5t fall@-8.5t rise@+7.5t fall@+23.5t rise@+39.5t fall@+55.5t rise@+71.5t fall@+87.5t rise@+103.5t fall@+119.5t rise@+135.5t fall@+151.5t rise@+167.5t fall@+183.5t rise@+199.5t fall@+215.5t rise@+231.5t fall@+247.5t rise@+263.5t fall@+279.5t rise@+295.5t
+  CLK1: fall@-189.5t rise@-168.5t fall@-147.5t rise@-125.5t fall@-104.5t rise@-83.5t fall@-61.5t rise@-40.5t fall@-19.5t rise@+2.5t fall@+23.5t rise@+44.5t fall@+66.5t rise@+87.5t fall@+108.5t rise@+130.5t fall@+151.5t rise@+172.5t fall@+194.5t rise@+215.5t fall@+236.5t rise@+258.5t fall@+279.5t rise@+300.5t
+  DCS0: fall@-200.5t rise@-184.5t fall@-168.5t rise@-152.5t fall@-136.5t rise@-120.5t fall@-104.5t rise@-88.5t fall@-72.5t rise@-56.5t fall@-40.5t rise@-24.5t fall@-8.5t rise@+7.5t fall@+23.5t
+  DCS1: fall@+66.5t rise@+87.5t fall@+108.5t rise@+130.5t fall@+151.5t rise@+172.5t fall@+194.5t rise@+215.5t fall@+236.5t rise@+258.5t fall@+279.5t rise@+300.5t
+observations_static.log load-row=1 static Q=0000000B seed=4EF49CD3 SEL 10->01 MODESEL 0->0 T=211 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-13.5t, first post-write edge rise@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-205.5t rise@-189.5t fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t
+  CLK1: rise@-205.5t fall@-184.5t rise@-162.5t fall@-141.5t rise@-120.5t fall@-98.5t rise@-77.5t fall@-56.5t rise@-34.5t fall@-13.5t rise@+7.5t fall@+29.5t rise@+50.5t fall@+71.5t rise@+93.5t fall@+114.5t rise@+135.5t fall@+157.5t rise@+178.5t fall@+199.5t rise@+221.5t fall@+242.5t rise@+263.5t fall@+285.5t
+  DCS0: rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t
+  DCS1: rise@-205.5t fall@-184.5t rise@-162.5t fall@-141.5t rise@-120.5t fall@-98.5t rise@-77.5t fall@-56.5t rise@-34.5t fall@-13.5t rise@+7.5t
+observations_static.log load-row=1 static Q=0000000C seed=B0FCC15A SEL 01->10 MODESEL 0->0 T=218 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-13.5t, first post-write edge fall@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t rise@+18.5t fall@+34.5t rise@+50.5t fall@+66.5t rise@+82.5t fall@+98.5t rise@+114.5t fall@+130.5t rise@+146.5t fall@+162.5t rise@+178.5t fall@+194.5t rise@+210.5t fall@+226.5t rise@+242.5t fall@+258.5t rise@+274.5t
+  CLK1: rise@-210.5t fall@-189.5t rise@-168.5t fall@-146.5t rise@-125.5t fall@-104.5t rise@-82.5t fall@-61.5t rise@-40.5t fall@-18.5t rise@+2.5t fall@+23.5t rise@+45.5t fall@+66.5t rise@+87.5t fall@+109.5t rise@+130.5t fall@+151.5t rise@+173.5t fall@+194.5t rise@+215.5t fall@+237.5t rise@+258.5t fall@+279.5t
+  DCS0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t
+  DCS1: fall@+66.5t rise@+87.5t fall@+109.5t rise@+130.5t fall@+151.5t rise@+173.5t fall@+194.5t rise@+215.5t fall@+237.5t rise@+258.5t fall@+279.5t
+observations_static.log load-row=1 static Q=0000000D seed=F4101549 SEL 10->01 MODESEL 0->0 T=201 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+70.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-20.5t, first post-write edge fall@+1.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-201.5t rise@-185.5t fall@-169.5t rise@-153.5t fall@-137.5t rise@-121.5t fall@-105.5t rise@-89.5t fall@-73.5t rise@-57.5t fall@-41.5t rise@-25.5t fall@-9.5t rise@+6.5t fall@+22.5t rise@+38.5t fall@+54.5t rise@+70.5t fall@+86.5t rise@+102.5t fall@+118.5t rise@+134.5t fall@+150.5t rise@+166.5t fall@+182.5t rise@+198.5t fall@+214.5t rise@+230.5t fall@+246.5t rise@+262.5t fall@+278.5t rise@+294.5t
+  CLK1: rise@-190.5t fall@-169.5t rise@-148.5t fall@-126.5t rise@-105.5t fall@-84.5t rise@-62.5t fall@-41.5t rise@-20.5t fall@+1.5t rise@+22.5t fall@+43.5t rise@+65.5t fall@+86.5t rise@+107.5t fall@+129.5t rise@+150.5t fall@+171.5t rise@+193.5t fall@+214.5t rise@+235.5t fall@+257.5t rise@+278.5t fall@+299.5t
+  DCS0: rise@+70.5t fall@+86.5t rise@+102.5t fall@+118.5t rise@+134.5t fall@+150.5t rise@+166.5t fall@+182.5t rise@+198.5t fall@+214.5t rise@+230.5t fall@+246.5t rise@+262.5t fall@+278.5t rise@+294.5t
+  DCS1: rise@-190.5t fall@-169.5t rise@-148.5t fall@-126.5t rise@-105.5t fall@-84.5t rise@-62.5t fall@-41.5t rise@-20.5t fall@+1.5t rise@+22.5t
+observations_static.log load-row=1 static Q=0000000E seed=4CD36CBD SEL 01->01 MODESEL 0->1 T=189 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge rise@-3.5t, first post-write edge fall@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-179.5t rise@-163.5t fall@-147.5t rise@-131.5t fall@-115.5t rise@-99.5t fall@-83.5t rise@-67.5t fall@-51.5t rise@-35.5t fall@-19.5t rise@-3.5t fall@+12.5t rise@+28.5t fall@+44.5t rise@+60.5t fall@+76.5t rise@+92.5t fall@+108.5t rise@+124.5t fall@+140.5t rise@+156.5t fall@+172.5t rise@+188.5t fall@+204.5t rise@+220.5t fall@+236.5t rise@+252.5t fall@+268.5t rise@+284.5t fall@+300.5t rise@+316.5t
+  CLK1: rise@-179.5t fall@-158.5t rise@-136.5t fall@-115.5t rise@-94.5t fall@-72.5t rise@-51.5t fall@-30.5t rise@-8.5t fall@+12.5t rise@+33.5t fall@+55.5t rise@+76.5t fall@+97.5t rise@+119.5t fall@+140.5t rise@+161.5t fall@+183.5t rise@+204.5t fall@+225.5t rise@+247.5t fall@+268.5t rise@+289.5t fall@+311.5t
+  DCS0: fall@-179.5t rise@-163.5t fall@-147.5t rise@-131.5t fall@-115.5t rise@-99.5t fall@-83.5t rise@-67.5t fall@-51.5t rise@-35.5t fall@-19.5t rise@-3.5t fall@+12.5t rise@+28.5t fall@+44.5t rise@+60.5t fall@+76.5t rise@+92.5t fall@+108.5t rise@+124.5t fall@+140.5t rise@+156.5t fall@+172.5t rise@+188.5t fall@+204.5t rise@+220.5t fall@+236.5t rise@+252.5t fall@+268.5t rise@+284.5t fall@+300.5t rise@+316.5t
+  DCS1: fall@+12.5t rise@+28.5t fall@+44.5t rise@+60.5t fall@+76.5t rise@+92.5t fall@+108.5t rise@+124.5t fall@+140.5t rise@+156.5t fall@+172.5t rise@+188.5t fall@+204.5t rise@+220.5t fall@+236.5t rise@+252.5t fall@+268.5t rise@+284.5t fall@+300.5t rise@+316.5t
+observations_static.log load-row=1 static Q=0000000F seed=FC47A98E SEL 01->10 MODESEL 1->0 T=142 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-3.5t, first post-write edge rise@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK0->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge fall@-3.5t, first post-write edge rise@+1.5t
+    missing=0 extra=0 runts=1 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=1 legacy-repeated-count=0
+    short phase level=0 start=-3.5t width=5t/25ns (separate single-edge bins; nominal width uncertainty +/-5ns, conservative +/-10ns)
+  CLK0: fall@-131.5t rise@-115.5t fall@-99.5t rise@-83.5t fall@-67.5t rise@-51.5t fall@-35.5t rise@-19.5t fall@-3.5t rise@+12.5t fall@+28.5t rise@+44.5t fall@+60.5t rise@+76.5t fall@+92.5t rise@+108.5t fall@+124.5t rise@+140.5t fall@+156.5t rise@+172.5t fall@+188.5t rise@+204.5t fall@+220.5t rise@+236.5t fall@+252.5t rise@+268.5t fall@+284.5t rise@+300.5t fall@+316.5t rise@+332.5t fall@+348.5t rise@+364.5t
+  CLK1: rise@-142.5t fall@-120.5t rise@-99.5t fall@-78.5t rise@-56.5t fall@-35.5t rise@-14.5t fall@+7.5t rise@+28.5t fall@+49.5t rise@+71.5t fall@+92.5t rise@+113.5t fall@+135.5t rise@+156.5t fall@+177.5t rise@+199.5t fall@+220.5t rise@+241.5t fall@+263.5t rise@+284.5t fall@+305.5t rise@+327.5t fall@+348.5t
+  DCS0: fall@-131.5t rise@-115.5t fall@-99.5t rise@-83.5t fall@-67.5t rise@-51.5t fall@-35.5t rise@-19.5t fall@-3.5t rise@+12.5t fall@+28.5t
+  DCS1: fall@-131.5t rise@-115.5t fall@-99.5t rise@-83.5t fall@-67.5t rise@-51.5t fall@-35.5t rise@-19.5t fall@-3.5t rise@+1.5t fall@+92.5t rise@+113.5t fall@+135.5t rise@+156.5t fall@+177.5t rise@+199.5t fall@+220.5t rise@+241.5t fall@+263.5t rise@+284.5t fall@+305.5t rise@+327.5t fall@+348.5t
+observations_static.log load-row=1 static Q=00000010 seed=1CE4BCA4 SEL 10->01 MODESEL 0->0 T=164 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+49.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-9.5t, first post-write edge rise@+12.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-158.5t rise@-142.5t fall@-126.5t rise@-110.5t fall@-94.5t rise@-78.5t fall@-62.5t rise@-46.5t fall@-30.5t rise@-14.5t fall@+1.5t rise@+17.5t fall@+33.5t rise@+49.5t fall@+65.5t rise@+81.5t fall@+97.5t rise@+113.5t fall@+129.5t rise@+145.5t fall@+161.5t rise@+177.5t fall@+193.5t rise@+209.5t fall@+225.5t rise@+241.5t fall@+257.5t rise@+273.5t fall@+289.5t rise@+305.5t fall@+321.5t rise@+337.5t
+  CLK1: rise@-158.5t fall@-137.5t rise@-115.5t fall@-94.5t rise@-73.5t fall@-51.5t rise@-30.5t fall@-9.5t rise@+12.5t fall@+33.5t rise@+54.5t fall@+76.5t rise@+97.5t fall@+118.5t rise@+140.5t fall@+161.5t rise@+182.5t fall@+204.5t rise@+225.5t fall@+246.5t rise@+268.5t fall@+289.5t rise@+310.5t fall@+332.5t
+  DCS0: rise@+49.5t fall@+65.5t rise@+81.5t fall@+97.5t rise@+113.5t fall@+129.5t rise@+145.5t fall@+161.5t rise@+177.5t fall@+193.5t rise@+209.5t fall@+225.5t rise@+241.5t fall@+257.5t rise@+273.5t fall@+289.5t rise@+305.5t fall@+321.5t rise@+337.5t
+  DCS1: rise@-158.5t fall@-137.5t rise@-115.5t fall@-94.5t rise@-73.5t fall@-51.5t rise@-30.5t fall@-9.5t rise@+12.5t
+observations_static.log load-row=1 static Q=00000011 seed=64688808 SEL 01->10 MODESEL 0->0 T=136 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-13.5t, first post-write edge fall@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+77.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t rise@+18.5t fall@+34.5t rise@+50.5t fall@+66.5t rise@+82.5t fall@+98.5t rise@+114.5t fall@+130.5t rise@+146.5t fall@+162.5t rise@+178.5t fall@+194.5t rise@+210.5t fall@+226.5t rise@+242.5t fall@+258.5t rise@+274.5t fall@+290.5t rise@+306.5t fall@+322.5t rise@+338.5t fall@+354.5t rise@+370.5t
+  CLK1: fall@-136.5t rise@-114.5t fall@-93.5t rise@-72.5t fall@-50.5t rise@-29.5t fall@-8.5t rise@+13.5t fall@+34.5t rise@+55.5t fall@+77.5t rise@+98.5t fall@+119.5t rise@+141.5t fall@+162.5t rise@+183.5t fall@+205.5t rise@+226.5t fall@+247.5t rise@+269.5t fall@+290.5t rise@+311.5t fall@+333.5t rise@+354.5t
+  DCS0: fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t
+  DCS1: fall@+77.5t rise@+98.5t fall@+119.5t rise@+141.5t fall@+162.5t rise@+183.5t fall@+205.5t rise@+226.5t fall@+247.5t rise@+269.5t fall@+290.5t rise@+311.5t fall@+333.5t rise@+354.5t
+observations_static.log load-row=1 static Q=00000012 seed=B3906128 SEL 10->01 MODESEL 0->0 T=168 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+68.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-11.5t, first post-write edge rise@+9.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-171.5t rise@-155.5t fall@-139.5t rise@-123.5t fall@-107.5t rise@-91.5t fall@-75.5t rise@-59.5t fall@-43.5t rise@-27.5t fall@-11.5t rise@+4.5t fall@+20.5t rise@+36.5t fall@+52.5t rise@+68.5t fall@+84.5t rise@+100.5t fall@+116.5t rise@+132.5t fall@+148.5t rise@+164.5t fall@+180.5t rise@+196.5t fall@+212.5t rise@+228.5t fall@+244.5t rise@+260.5t fall@+276.5t rise@+292.5t fall@+308.5t rise@+324.5t
+  CLK1: rise@-160.5t fall@-139.5t rise@-118.5t fall@-96.5t rise@-75.5t fall@-54.5t rise@-32.5t fall@-11.5t rise@+9.5t fall@+31.5t rise@+52.5t fall@+73.5t rise@+95.5t fall@+116.5t rise@+137.5t fall@+159.5t rise@+180.5t fall@+201.5t rise@+223.5t fall@+244.5t rise@+265.5t fall@+287.5t rise@+308.5t fall@+329.5t
+  DCS0: rise@+68.5t fall@+84.5t rise@+100.5t fall@+116.5t rise@+132.5t fall@+148.5t rise@+164.5t fall@+180.5t rise@+196.5t fall@+212.5t rise@+228.5t fall@+244.5t rise@+260.5t fall@+276.5t rise@+292.5t fall@+308.5t rise@+324.5t
+  DCS1: rise@-160.5t fall@-139.5t rise@-118.5t fall@-96.5t rise@-75.5t fall@-54.5t rise@-32.5t fall@-11.5t rise@+9.5t
+observations_static.log load-row=1 static Q=00000013 seed=8655456E SEL 01->10 MODESEL 0->0 T=238 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-10.5t, first post-write edge fall@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/3
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+101.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-234.5t fall@-218.5t rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t rise@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t
+  CLK1: fall@-239.5t rise@-218.5t fall@-197.5t rise@-175.5t fall@-154.5t rise@-133.5t fall@-111.5t rise@-90.5t fall@-69.5t rise@-47.5t fall@-26.5t rise@-5.5t fall@+16.5t rise@+37.5t fall@+58.5t rise@+80.5t fall@+101.5t rise@+122.5t fall@+144.5t rise@+165.5t fall@+186.5t rise@+208.5t fall@+229.5t rise@+250.5t
+  DCS0: rise@-234.5t fall@-218.5t rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t
+  DCS1: fall@+101.5t rise@+122.5t fall@+144.5t rise@+165.5t fall@+186.5t rise@+208.5t fall@+229.5t rise@+250.5t
+observations_static.log load-row=1 static Q=00000014 seed=543C03C2 SEL 10->01 MODESEL 0->0 T=194 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+74.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-16.5t, first post-write edge rise@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-197.5t rise@-181.5t fall@-165.5t rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t rise@+42.5t fall@+58.5t rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t
+  CLK1: fall@-186.5t rise@-165.5t fall@-144.5t rise@-122.5t fall@-101.5t rise@-80.5t fall@-58.5t rise@-37.5t fall@-16.5t rise@+5.5t fall@+26.5t rise@+47.5t fall@+69.5t rise@+90.5t fall@+111.5t rise@+133.5t fall@+154.5t rise@+175.5t fall@+197.5t rise@+218.5t fall@+239.5t rise@+261.5t fall@+282.5t rise@+303.5t
+  DCS0: rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t
+  DCS1: fall@-186.5t rise@-165.5t fall@-144.5t rise@-122.5t fall@-101.5t rise@-80.5t fall@-58.5t rise@-37.5t fall@-16.5t rise@+5.5t
+observations_static.log load-row=1 static Q=00000015 seed=B0D0B871 SEL 01->10 MODESEL 0->0 T=241 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-10.5t, first post-write edge fall@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/3
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+69.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-234.5t fall@-218.5t rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t rise@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t
+  CLK1: fall@-229.5t rise@-207.5t fall@-186.5t rise@-165.5t fall@-143.5t rise@-122.5t fall@-101.5t rise@-79.5t fall@-58.5t rise@-37.5t fall@-15.5t rise@+5.5t fall@+26.5t rise@+48.5t fall@+69.5t rise@+90.5t fall@+112.5t rise@+133.5t fall@+154.5t rise@+176.5t fall@+197.5t rise@+218.5t fall@+240.5t rise@+261.5t
+  DCS0: rise@-234.5t fall@-218.5t rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t
+  DCS1: fall@+69.5t rise@+90.5t fall@+112.5t rise@+133.5t fall@+154.5t rise@+176.5t fall@+197.5t rise@+218.5t fall@+240.5t rise@+261.5t
+observations_static.log load-row=1 static Q=00000016 seed=6393D837 SEL 10->01 MODESEL 0->0 T=183 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+63.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-5.5t, first post-write edge fall@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-176.5t rise@-160.5t fall@-144.5t rise@-128.5t fall@-112.5t rise@-96.5t fall@-80.5t rise@-64.5t fall@-48.5t rise@-32.5t fall@-16.5t rise@-0.5t fall@+15.5t rise@+31.5t fall@+47.5t rise@+63.5t fall@+79.5t rise@+95.5t fall@+111.5t rise@+127.5t fall@+143.5t rise@+159.5t fall@+175.5t rise@+191.5t fall@+207.5t rise@+223.5t fall@+239.5t rise@+255.5t fall@+271.5t rise@+287.5t fall@+303.5t rise@+319.5t
+  CLK1: rise@-176.5t fall@-155.5t rise@-133.5t fall@-112.5t rise@-91.5t fall@-69.5t rise@-48.5t fall@-27.5t rise@-5.5t fall@+15.5t rise@+36.5t fall@+58.5t rise@+79.5t fall@+100.5t rise@+122.5t fall@+143.5t rise@+164.5t fall@+186.5t rise@+207.5t fall@+228.5t rise@+250.5t fall@+271.5t rise@+292.5t fall@+314.5t
+  DCS0: rise@+63.5t fall@+79.5t rise@+95.5t fall@+111.5t rise@+127.5t fall@+143.5t rise@+159.5t fall@+175.5t rise@+191.5t fall@+207.5t rise@+223.5t fall@+239.5t rise@+255.5t fall@+271.5t rise@+287.5t fall@+303.5t rise@+319.5t
+  DCS1: rise@-176.5t fall@-155.5t rise@-133.5t fall@-112.5t rise@-91.5t fall@-69.5t rise@-48.5t fall@-27.5t rise@-5.5t fall@+15.5t rise@+36.5t
+observations_static.log load-row=1 static Q=00000017 seed=8A3564EC SEL 01->10 MODESEL 0->0 T=236 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-8.5t, first post-write edge fall@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+92.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-232.5t fall@-216.5t rise@-200.5t fall@-184.5t rise@-168.5t fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t
+  CLK1: rise@-227.5t fall@-205.5t rise@-184.5t fall@-163.5t rise@-141.5t fall@-120.5t rise@-99.5t fall@-77.5t rise@-56.5t fall@-35.5t rise@-13.5t fall@+7.5t rise@+28.5t fall@+50.5t rise@+71.5t fall@+92.5t rise@+114.5t fall@+135.5t rise@+156.5t fall@+178.5t rise@+199.5t fall@+220.5t rise@+242.5t fall@+263.5t
+  DCS0: rise@-232.5t fall@-216.5t rise@-200.5t fall@-184.5t rise@-168.5t fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t
+  DCS1: fall@+92.5t rise@+114.5t fall@+135.5t rise@+156.5t fall@+178.5t rise@+199.5t fall@+220.5t rise@+242.5t fall@+263.5t
+observations_static.log load-row=1 static Q=00000018 seed=EA4DC9D4 SEL 10->01 MODESEL 0->0 T=212 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+70.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-9.5t, first post-write edge fall@+11.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-201.5t rise@-185.5t fall@-169.5t rise@-153.5t fall@-137.5t rise@-121.5t fall@-105.5t rise@-89.5t fall@-73.5t rise@-57.5t fall@-41.5t rise@-25.5t fall@-9.5t rise@+6.5t fall@+22.5t rise@+38.5t fall@+54.5t rise@+70.5t fall@+86.5t rise@+102.5t fall@+118.5t rise@+134.5t fall@+150.5t rise@+166.5t fall@+182.5t rise@+198.5t fall@+214.5t rise@+230.5t fall@+246.5t rise@+262.5t fall@+278.5t rise@+294.5t
+  CLK1: fall@-201.5t rise@-180.5t fall@-158.5t rise@-137.5t fall@-116.5t rise@-94.5t fall@-73.5t rise@-52.5t fall@-30.5t rise@-9.5t fall@+11.5t rise@+33.5t fall@+54.5t rise@+75.5t fall@+97.5t rise@+118.5t fall@+139.5t rise@+161.5t fall@+182.5t rise@+203.5t fall@+225.5t rise@+246.5t fall@+267.5t rise@+289.5t
+  DCS0: rise@+70.5t fall@+86.5t rise@+102.5t fall@+118.5t rise@+134.5t fall@+150.5t rise@+166.5t fall@+182.5t rise@+198.5t fall@+214.5t rise@+230.5t fall@+246.5t rise@+262.5t fall@+278.5t rise@+294.5t
+  DCS1: fall@-201.5t rise@-180.5t fall@-158.5t rise@-137.5t fall@-116.5t rise@-94.5t fall@-73.5t rise@-52.5t fall@-30.5t rise@-9.5t fall@+11.5t rise@+33.5t
+observations_static.log load-row=1 static Q=00000019 seed=613108B5 SEL 01->10 MODESEL 0->0 T=181 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+72.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t
+  CLK1: fall@-183.5t rise@-162.5t fall@-141.5t rise@-119.5t fall@-98.5t rise@-77.5t fall@-55.5t rise@-34.5t fall@-13.5t rise@+8.5t fall@+29.5t rise@+50.5t fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t rise@+264.5t fall@+285.5t rise@+306.5t
+  DCS0: rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t
+  DCS1: fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t rise@+264.5t fall@+285.5t rise@+306.5t
+observations_static.log load-row=1 static Q=0000001A seed=10E5DDAA SEL 10->01 MODESEL 0->0 T=170 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+75.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-4.5t, first post-write edge fall@+16.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-164.5t rise@-148.5t fall@-132.5t rise@-116.5t fall@-100.5t rise@-84.5t fall@-68.5t rise@-52.5t fall@-36.5t rise@-20.5t fall@-4.5t rise@+11.5t fall@+27.5t rise@+43.5t fall@+59.5t rise@+75.5t fall@+91.5t rise@+107.5t fall@+123.5t rise@+139.5t fall@+155.5t rise@+171.5t fall@+187.5t rise@+203.5t fall@+219.5t rise@+235.5t fall@+251.5t rise@+267.5t fall@+283.5t rise@+299.5t fall@+315.5t rise@+331.5t
+  CLK1: fall@-153.5t rise@-132.5t fall@-111.5t rise@-89.5t fall@-68.5t rise@-47.5t fall@-25.5t rise@-4.5t fall@+16.5t rise@+38.5t fall@+59.5t rise@+80.5t fall@+102.5t rise@+123.5t fall@+144.5t rise@+166.5t fall@+187.5t rise@+208.5t fall@+230.5t rise@+251.5t fall@+272.5t rise@+294.5t fall@+315.5t rise@+336.5t
+  DCS0: rise@+75.5t fall@+91.5t rise@+107.5t fall@+123.5t rise@+139.5t fall@+155.5t rise@+171.5t fall@+187.5t rise@+203.5t fall@+219.5t rise@+235.5t fall@+251.5t rise@+267.5t fall@+283.5t rise@+299.5t fall@+315.5t rise@+331.5t
+  DCS1: fall@-153.5t rise@-132.5t fall@-111.5t rise@-89.5t fall@-68.5t rise@-47.5t fall@-25.5t rise@-4.5t fall@+16.5t rise@+38.5t
+observations_static.log load-row=1 static Q=0000001B seed=F7B6EA69 SEL 01->10 MODESEL 0->0 T=233 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-6.5t, first post-write edge fall@+9.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/3
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+73.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-230.5t fall@-214.5t rise@-198.5t fall@-182.5t rise@-166.5t fall@-150.5t rise@-134.5t fall@-118.5t rise@-102.5t fall@-86.5t rise@-70.5t fall@-54.5t rise@-38.5t fall@-22.5t rise@-6.5t fall@+9.5t rise@+25.5t fall@+41.5t rise@+57.5t fall@+73.5t rise@+89.5t fall@+105.5t rise@+121.5t fall@+137.5t rise@+153.5t fall@+169.5t rise@+185.5t fall@+201.5t rise@+217.5t fall@+233.5t rise@+249.5t fall@+265.5t
+  CLK1: fall@-225.5t rise@-203.5t fall@-182.5t rise@-161.5t fall@-139.5t rise@-118.5t fall@-97.5t rise@-75.5t fall@-54.5t rise@-33.5t fall@-11.5t rise@+9.5t fall@+30.5t rise@+52.5t fall@+73.5t rise@+94.5t fall@+116.5t rise@+137.5t fall@+158.5t rise@+180.5t fall@+201.5t rise@+222.5t fall@+244.5t rise@+265.5t
+  DCS0: rise@-230.5t fall@-214.5t rise@-198.5t fall@-182.5t rise@-166.5t fall@-150.5t rise@-134.5t fall@-118.5t rise@-102.5t fall@-86.5t rise@-70.5t fall@-54.5t rise@-38.5t fall@-22.5t rise@-6.5t fall@+9.5t
+  DCS1: fall@+73.5t rise@+94.5t fall@+116.5t rise@+137.5t fall@+158.5t rise@+180.5t fall@+201.5t rise@+222.5t fall@+244.5t rise@+265.5t
+observations_static.log load-row=2 static Q=00000001 seed=128F4CA4 SEL 01->10 MODESEL 0->0 T=164 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-2.5t, first post-write edge fall@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+77.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-162.5t fall@-146.5t rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t rise@+29.5t fall@+45.5t rise@+61.5t fall@+77.5t rise@+93.5t fall@+109.5t rise@+125.5t fall@+141.5t rise@+157.5t fall@+173.5t rise@+189.5t fall@+205.5t rise@+221.5t fall@+237.5t rise@+253.5t fall@+269.5t rise@+285.5t fall@+301.5t rise@+317.5t fall@+333.5t
+  CLK1: rise@-157.5t fall@-135.5t rise@-114.5t fall@-93.5t rise@-71.5t fall@-50.5t rise@-29.5t fall@-7.5t rise@+13.5t fall@+34.5t rise@+56.5t fall@+77.5t rise@+98.5t fall@+120.5t rise@+141.5t fall@+162.5t rise@+184.5t fall@+205.5t rise@+226.5t fall@+248.5t rise@+269.5t fall@+290.5t rise@+312.5t fall@+333.5t
+  DCS0: rise@-162.5t fall@-146.5t rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t
+  DCS1: fall@+77.5t rise@+98.5t fall@+120.5t rise@+141.5t fall@+162.5t rise@+184.5t fall@+205.5t rise@+226.5t fall@+248.5t rise@+269.5t fall@+290.5t rise@+312.5t fall@+333.5t
+observations_static.log load-row=2 static Q=00000002 seed=D04E4B91 SEL 10->01 MODESEL 0->0 T=145 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=8/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+73.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-17.5t, first post-write edge fall@+4.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-134.5t rise@-118.5t fall@-102.5t rise@-86.5t fall@-70.5t rise@-54.5t fall@-38.5t rise@-22.5t fall@-6.5t rise@+9.5t fall@+25.5t rise@+41.5t fall@+57.5t rise@+73.5t fall@+89.5t rise@+105.5t fall@+121.5t rise@+137.5t fall@+153.5t rise@+169.5t fall@+185.5t rise@+201.5t fall@+217.5t rise@+233.5t fall@+249.5t rise@+265.5t fall@+281.5t rise@+297.5t fall@+313.5t rise@+329.5t fall@+345.5t rise@+361.5t
+  CLK1: rise@-145.5t fall@-123.5t rise@-102.5t fall@-81.5t rise@-59.5t fall@-38.5t rise@-17.5t fall@+4.5t rise@+25.5t fall@+46.5t rise@+68.5t fall@+89.5t rise@+110.5t fall@+132.5t rise@+153.5t fall@+174.5t rise@+196.5t fall@+217.5t rise@+238.5t fall@+260.5t rise@+281.5t fall@+302.5t rise@+324.5t fall@+345.5t
+  DCS0: rise@+73.5t fall@+89.5t rise@+105.5t fall@+121.5t rise@+137.5t fall@+153.5t rise@+169.5t fall@+185.5t rise@+201.5t fall@+217.5t rise@+233.5t fall@+249.5t rise@+265.5t fall@+281.5t rise@+297.5t fall@+313.5t rise@+329.5t fall@+345.5t rise@+361.5t
+  DCS1: rise@-145.5t fall@-123.5t rise@-102.5t fall@-81.5t rise@-59.5t fall@-38.5t rise@-17.5t fall@+4.5t rise@+25.5t
+observations_static.log load-row=2 static Q=00000003 seed=8AAC9128 SEL 01->10 MODESEL 0->0 T=168 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-7.5t, first post-write edge fall@+8.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+83.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-167.5t fall@-151.5t rise@-135.5t fall@-119.5t rise@-103.5t fall@-87.5t rise@-71.5t fall@-55.5t rise@-39.5t fall@-23.5t rise@-7.5t fall@+8.5t rise@+24.5t fall@+40.5t rise@+56.5t fall@+72.5t rise@+88.5t fall@+104.5t rise@+120.5t fall@+136.5t rise@+152.5t fall@+168.5t rise@+184.5t fall@+200.5t rise@+216.5t fall@+232.5t rise@+248.5t fall@+264.5t rise@+280.5t fall@+296.5t rise@+312.5t fall@+328.5t
+  CLK1: rise@-151.5t fall@-130.5t rise@-108.5t fall@-87.5t rise@-66.5t fall@-44.5t rise@-23.5t fall@-2.5t rise@+19.5t fall@+40.5t rise@+61.5t fall@+83.5t rise@+104.5t fall@+125.5t rise@+147.5t fall@+168.5t rise@+189.5t fall@+211.5t rise@+232.5t fall@+253.5t rise@+275.5t fall@+296.5t rise@+317.5t fall@+339.5t
+  DCS0: rise@-167.5t fall@-151.5t rise@-135.5t fall@-119.5t rise@-103.5t fall@-87.5t rise@-71.5t fall@-55.5t rise@-39.5t fall@-23.5t rise@-7.5t fall@+8.5t
+  DCS1: fall@+83.5t rise@+104.5t fall@+125.5t rise@+147.5t fall@+168.5t rise@+189.5t fall@+211.5t rise@+232.5t fall@+253.5t rise@+275.5t fall@+296.5t rise@+317.5t fall@+339.5t
+observations_static.log load-row=2 static Q=00000004 seed=081C8004 SEL 10->01 MODESEL 0->0 T=132 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=8/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+72.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-7.5t, first post-write edge fall@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-135.5t rise@-119.5t fall@-103.5t rise@-87.5t fall@-71.5t rise@-55.5t fall@-39.5t rise@-23.5t fall@-7.5t rise@+8.5t fall@+24.5t rise@+40.5t fall@+56.5t rise@+72.5t fall@+88.5t rise@+104.5t fall@+120.5t rise@+136.5t fall@+152.5t rise@+168.5t fall@+184.5t rise@+200.5t fall@+216.5t rise@+232.5t fall@+248.5t rise@+264.5t fall@+280.5t rise@+296.5t fall@+312.5t rise@+328.5t fall@+344.5t rise@+360.5t
+  CLK1: rise@-135.5t fall@-114.5t rise@-92.5t fall@-71.5t rise@-50.5t fall@-28.5t rise@-7.5t fall@+13.5t rise@+35.5t fall@+56.5t rise@+77.5t fall@+99.5t rise@+120.5t fall@+141.5t rise@+163.5t fall@+184.5t rise@+205.5t fall@+227.5t rise@+248.5t fall@+269.5t rise@+291.5t fall@+312.5t rise@+333.5t fall@+355.5t
+  DCS0: rise@+72.5t fall@+88.5t rise@+104.5t fall@+120.5t rise@+136.5t fall@+152.5t rise@+168.5t fall@+184.5t rise@+200.5t fall@+216.5t rise@+232.5t fall@+248.5t rise@+264.5t fall@+280.5t rise@+296.5t fall@+312.5t rise@+328.5t fall@+344.5t rise@+360.5t
+  DCS1: rise@-135.5t fall@-114.5t rise@-92.5t fall@-71.5t rise@-50.5t fall@-28.5t rise@-7.5t fall@+13.5t rise@+35.5t
+observations_static.log load-row=2 static Q=00000005 seed=0D701192 SEL 01->10 MODESEL 0->0 T=146 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-1.5t, first post-write edge fall@+14.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+89.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t rise@+30.5t fall@+46.5t rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t fall@+270.5t rise@+286.5t fall@+302.5t rise@+318.5t fall@+334.5t rise@+350.5t
+  CLK1: rise@-145.5t fall@-124.5t rise@-102.5t fall@-81.5t rise@-60.5t fall@-38.5t rise@-17.5t fall@+3.5t rise@+25.5t fall@+46.5t rise@+67.5t fall@+89.5t rise@+110.5t fall@+131.5t rise@+153.5t fall@+174.5t rise@+195.5t fall@+217.5t rise@+238.5t fall@+259.5t rise@+281.5t fall@+302.5t rise@+323.5t fall@+345.5t
+  DCS0: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t
+  DCS1: fall@+89.5t rise@+110.5t fall@+131.5t rise@+153.5t fall@+174.5t rise@+195.5t fall@+217.5t rise@+238.5t fall@+259.5t rise@+281.5t fall@+302.5t rise@+323.5t fall@+345.5t
+observations_static.log load-row=2 static Q=00000006 seed=3DF313B6 SEL 10->01 MODESEL 0->0 T=182 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+18.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t rise@+322.5t
+  CLK1: fall@-173.5t rise@-152.5t fall@-130.5t rise@-109.5t fall@-88.5t rise@-66.5t fall@-45.5t rise@-24.5t fall@-2.5t rise@+18.5t fall@+39.5t rise@+61.5t fall@+82.5t rise@+103.5t fall@+125.5t rise@+146.5t fall@+167.5t rise@+189.5t fall@+210.5t rise@+231.5t fall@+253.5t rise@+274.5t fall@+295.5t rise@+317.5t
+  DCS0: rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t rise@+322.5t
+  DCS1: fall@-173.5t rise@-152.5t fall@-130.5t rise@-109.5t fall@-88.5t rise@-66.5t fall@-45.5t rise@-24.5t fall@-2.5t rise@+18.5t
+observations_static.log load-row=2 static Q=00000007 seed=D2200F66 SEL 01->10 MODESEL 0->0 T=230 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-4.5t, first post-write edge fall@+11.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+86.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-228.5t fall@-212.5t rise@-196.5t fall@-180.5t rise@-164.5t fall@-148.5t rise@-132.5t fall@-116.5t rise@-100.5t fall@-84.5t rise@-68.5t fall@-52.5t rise@-36.5t fall@-20.5t rise@-4.5t fall@+11.5t rise@+27.5t fall@+43.5t rise@+59.5t fall@+75.5t rise@+91.5t fall@+107.5t rise@+123.5t fall@+139.5t rise@+155.5t fall@+171.5t rise@+187.5t fall@+203.5t rise@+219.5t fall@+235.5t rise@+251.5t fall@+267.5t
+  CLK1: rise@-233.5t fall@-212.5t rise@-191.5t fall@-169.5t rise@-148.5t fall@-127.5t rise@-105.5t fall@-84.5t rise@-63.5t fall@-41.5t rise@-20.5t fall@+0.5t rise@+22.5t fall@+43.5t rise@+64.5t fall@+86.5t rise@+107.5t fall@+128.5t rise@+150.5t fall@+171.5t rise@+192.5t fall@+214.5t rise@+235.5t fall@+256.5t
+  DCS0: rise@-228.5t fall@-212.5t rise@-196.5t fall@-180.5t rise@-164.5t fall@-148.5t rise@-132.5t fall@-116.5t rise@-100.5t fall@-84.5t rise@-68.5t fall@-52.5t rise@-36.5t fall@-20.5t rise@-4.5t fall@+11.5t
+  DCS1: fall@+86.5t rise@+107.5t fall@+128.5t rise@+150.5t fall@+171.5t rise@+192.5t fall@+214.5t rise@+235.5t fall@+256.5t
+observations_static.log load-row=2 static Q=00000008 seed=31CC44C0 SEL 10->01 MODESEL 0->0 T=192 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+59.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-9.5t, first post-write edge rise@+11.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-180.5t rise@-164.5t fall@-148.5t rise@-132.5t fall@-116.5t rise@-100.5t fall@-84.5t rise@-68.5t fall@-52.5t rise@-36.5t fall@-20.5t rise@-4.5t fall@+11.5t rise@+27.5t fall@+43.5t rise@+59.5t fall@+75.5t rise@+91.5t fall@+107.5t rise@+123.5t fall@+139.5t rise@+155.5t fall@+171.5t rise@+187.5t fall@+203.5t rise@+219.5t fall@+235.5t rise@+251.5t fall@+267.5t rise@+283.5t fall@+299.5t rise@+315.5t
+  CLK1: fall@-180.5t rise@-159.5t fall@-137.5t rise@-116.5t fall@-95.5t rise@-73.5t fall@-52.5t rise@-31.5t fall@-9.5t rise@+11.5t fall@+32.5t rise@+54.5t fall@+75.5t rise@+96.5t fall@+118.5t rise@+139.5t fall@+160.5t rise@+182.5t fall@+203.5t rise@+224.5t fall@+246.5t rise@+267.5t fall@+288.5t rise@+310.5t
+  DCS0: rise@+59.5t fall@+75.5t rise@+91.5t fall@+107.5t rise@+123.5t fall@+139.5t rise@+155.5t fall@+171.5t rise@+187.5t fall@+203.5t rise@+219.5t fall@+235.5t rise@+251.5t fall@+267.5t rise@+283.5t fall@+299.5t rise@+315.5t
+  DCS1: fall@-180.5t rise@-159.5t fall@-137.5t rise@-116.5t fall@-95.5t rise@-73.5t fall@-52.5t rise@-31.5t fall@-9.5t rise@+11.5t
+observations_static.log load-row=2 static Q=00000009 seed=6B167085 SEL 01->10 MODESEL 0->0 T=133 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-12.5t, first post-write edge rise@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+72.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-124.5t fall@-108.5t rise@-92.5t fall@-76.5t rise@-60.5t fall@-44.5t rise@-28.5t fall@-12.5t rise@+3.5t fall@+19.5t rise@+35.5t fall@+51.5t rise@+67.5t fall@+83.5t rise@+99.5t fall@+115.5t rise@+131.5t fall@+147.5t rise@+163.5t fall@+179.5t rise@+195.5t fall@+211.5t rise@+227.5t fall@+243.5t rise@+259.5t fall@+275.5t rise@+291.5t fall@+307.5t rise@+323.5t fall@+339.5t rise@+355.5t fall@+371.5t
+  CLK1: rise@-119.5t fall@-97.5t rise@-76.5t fall@-55.5t rise@-33.5t fall@-12.5t rise@+8.5t fall@+30.5t rise@+51.5t fall@+72.5t rise@+94.5t fall@+115.5t rise@+136.5t fall@+158.5t rise@+179.5t fall@+200.5t rise@+222.5t fall@+243.5t rise@+264.5t fall@+286.5t rise@+307.5t fall@+328.5t rise@+350.5t fall@+371.5t
+  DCS0: rise@-124.5t fall@-108.5t rise@-92.5t fall@-76.5t rise@-60.5t fall@-44.5t rise@-28.5t fall@-12.5t rise@+3.5t fall@+19.5t
+  DCS1: fall@+72.5t rise@+94.5t fall@+115.5t rise@+136.5t fall@+158.5t rise@+179.5t fall@+200.5t rise@+222.5t fall@+243.5t rise@+264.5t fall@+286.5t rise@+307.5t fall@+328.5t rise@+350.5t fall@+371.5t
+observations_static.log load-row=2 static Q=0000000A seed=B0F0D994 SEL 10->01 MODESEL 0->0 T=148 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+74.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-5.5t, first post-write edge fall@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t rise@+42.5t fall@+58.5t rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t fall@+314.5t rise@+330.5t fall@+346.5t
+  CLK1: rise@-133.5t fall@-112.5t rise@-90.5t fall@-69.5t rise@-48.5t fall@-26.5t rise@-5.5t fall@+15.5t rise@+37.5t fall@+58.5t rise@+79.5t fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t fall@+271.5t rise@+293.5t fall@+314.5t rise@+335.5t fall@+357.5t
+  DCS0: rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t fall@+314.5t rise@+330.5t fall@+346.5t
+  DCS1: rise@-133.5t fall@-112.5t rise@-90.5t fall@-69.5t rise@-48.5t fall@-26.5t rise@-5.5t fall@+15.5t rise@+37.5t
+observations_static.log load-row=2 static Q=0000000B seed=BD882DA2 SEL 01->10 MODESEL 0->0 T=162 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-8.5t, first post-write edge fall@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+82.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t rise@+343.5t
+  CLK1: rise@-152.5t fall@-131.5t rise@-109.5t fall@-88.5t rise@-67.5t fall@-45.5t rise@-24.5t fall@-3.5t rise@+18.5t fall@+39.5t rise@+60.5t fall@+82.5t rise@+103.5t fall@+124.5t rise@+146.5t fall@+167.5t rise@+188.5t fall@+210.5t rise@+231.5t fall@+252.5t rise@+274.5t fall@+295.5t rise@+316.5t fall@+338.5t
+  DCS0: fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t
+  DCS1: fall@+82.5t rise@+103.5t fall@+124.5t rise@+146.5t fall@+167.5t rise@+188.5t fall@+210.5t rise@+231.5t fall@+252.5t rise@+274.5t fall@+295.5t rise@+316.5t fall@+338.5t
+observations_static.log load-row=2 static Q=0000000C seed=B3AB8091 SEL 10->01 MODESEL 0->0 T=145 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/8
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+51.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-7.5t, first post-write edge fall@+14.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t rise@+19.5t fall@+35.5t rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t rise@+307.5t fall@+323.5t rise@+339.5t fall@+355.5t
+  CLK1: rise@-135.5t fall@-113.5t rise@-92.5t fall@-71.5t rise@-49.5t fall@-28.5t rise@-7.5t fall@+14.5t rise@+35.5t fall@+56.5t rise@+78.5t fall@+99.5t rise@+120.5t fall@+142.5t rise@+163.5t fall@+184.5t rise@+206.5t fall@+227.5t rise@+248.5t fall@+270.5t rise@+291.5t fall@+312.5t rise@+334.5t fall@+355.5t
+  DCS0: rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t rise@+307.5t fall@+323.5t rise@+339.5t fall@+355.5t
+  DCS1: rise@-135.5t fall@-113.5t rise@-92.5t fall@-71.5t rise@-49.5t fall@-28.5t rise@-7.5t fall@+14.5t rise@+35.5t
+observations_static.log load-row=2 static Q=0000000D seed=96D11255 SEL 01->10 MODESEL 0->0 T=213 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-12.5t, first post-write edge fall@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+99.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-204.5t fall@-188.5t rise@-172.5t fall@-156.5t rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t rise@+19.5t fall@+35.5t rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t
+  CLK1: fall@-199.5t rise@-177.5t fall@-156.5t rise@-135.5t fall@-113.5t rise@-92.5t fall@-71.5t rise@-49.5t fall@-28.5t rise@-7.5t fall@+14.5t rise@+35.5t fall@+56.5t rise@+78.5t fall@+99.5t rise@+120.5t fall@+142.5t rise@+163.5t fall@+184.5t rise@+206.5t fall@+227.5t rise@+248.5t fall@+270.5t rise@+291.5t
+  DCS0: rise@-204.5t fall@-188.5t rise@-172.5t fall@-156.5t rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t
+  DCS1: fall@+99.5t rise@+120.5t fall@+142.5t rise@+163.5t fall@+184.5t rise@+206.5t fall@+227.5t rise@+248.5t fall@+270.5t rise@+291.5t
+observations_static.log load-row=2 static Q=0000000E seed=6C290EE5 SEL 10->01 MODESEL 0->0 T=229 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+76.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-14.5t, first post-write edge rise@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-227.5t rise@-211.5t fall@-195.5t rise@-179.5t fall@-163.5t rise@-147.5t fall@-131.5t rise@-115.5t fall@-99.5t rise@-83.5t fall@-67.5t rise@-51.5t fall@-35.5t rise@-19.5t fall@-3.5t rise@+12.5t fall@+28.5t rise@+44.5t fall@+60.5t rise@+76.5t fall@+92.5t rise@+108.5t fall@+124.5t rise@+140.5t fall@+156.5t rise@+172.5t fall@+188.5t rise@+204.5t fall@+220.5t rise@+236.5t fall@+252.5t rise@+268.5t
+  CLK1: fall@-227.5t rise@-206.5t fall@-184.5t rise@-163.5t fall@-142.5t rise@-120.5t fall@-99.5t rise@-78.5t fall@-56.5t rise@-35.5t fall@-14.5t rise@+7.5t fall@+28.5t rise@+49.5t fall@+71.5t rise@+92.5t fall@+113.5t rise@+135.5t fall@+156.5t rise@+177.5t fall@+199.5t rise@+220.5t fall@+241.5t rise@+263.5t
+  DCS0: rise@+76.5t fall@+92.5t rise@+108.5t fall@+124.5t rise@+140.5t fall@+156.5t rise@+172.5t fall@+188.5t rise@+204.5t fall@+220.5t rise@+236.5t fall@+252.5t rise@+268.5t
+  DCS1: fall@-227.5t rise@-206.5t fall@-184.5t rise@-163.5t fall@-142.5t rise@-120.5t fall@-99.5t rise@-78.5t fall@-56.5t rise@-35.5t fall@-14.5t rise@+7.5t
+observations_static.log load-row=2 static Q=0000000F seed=AA696F8D SEL 01->10 MODESEL 0->0 T=141 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-11.5t, first post-write edge fall@+4.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+79.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-139.5t fall@-123.5t rise@-107.5t fall@-91.5t rise@-75.5t fall@-59.5t rise@-43.5t fall@-27.5t rise@-11.5t fall@+4.5t rise@+20.5t fall@+36.5t rise@+52.5t fall@+68.5t rise@+84.5t fall@+100.5t rise@+116.5t fall@+132.5t rise@+148.5t fall@+164.5t rise@+180.5t fall@+196.5t rise@+212.5t fall@+228.5t rise@+244.5t fall@+260.5t rise@+276.5t fall@+292.5t rise@+308.5t fall@+324.5t rise@+340.5t fall@+356.5t
+  CLK1: fall@-134.5t rise@-112.5t fall@-91.5t rise@-70.5t fall@-48.5t rise@-27.5t fall@-6.5t rise@+15.5t fall@+36.5t rise@+57.5t fall@+79.5t rise@+100.5t fall@+121.5t rise@+143.5t fall@+164.5t rise@+185.5t fall@+207.5t rise@+228.5t fall@+249.5t rise@+271.5t fall@+292.5t rise@+313.5t fall@+335.5t rise@+356.5t
+  DCS0: rise@-139.5t fall@-123.5t rise@-107.5t fall@-91.5t rise@-75.5t fall@-59.5t rise@-43.5t fall@-27.5t rise@-11.5t fall@+4.5t
+  DCS1: fall@+79.5t rise@+100.5t fall@+121.5t rise@+143.5t fall@+164.5t rise@+185.5t fall@+207.5t rise@+228.5t fall@+249.5t rise@+271.5t fall@+292.5t rise@+313.5t fall@+335.5t rise@+356.5t
+observations_static.log load-row=2 static Q=00000010 seed=4A1EB556 SEL 10->01 MODESEL 0->0 T=214 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+73.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-6.5t, first post-write edge fall@+14.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-214.5t fall@-198.5t rise@-182.5t fall@-166.5t rise@-150.5t fall@-134.5t rise@-118.5t fall@-102.5t rise@-86.5t fall@-70.5t rise@-54.5t fall@-38.5t rise@-22.5t fall@-6.5t rise@+9.5t fall@+25.5t rise@+41.5t fall@+57.5t rise@+73.5t fall@+89.5t rise@+105.5t fall@+121.5t rise@+137.5t fall@+153.5t rise@+169.5t fall@+185.5t rise@+201.5t fall@+217.5t rise@+233.5t fall@+249.5t rise@+265.5t fall@+281.5t
+  CLK1: fall@-198.5t rise@-177.5t fall@-155.5t rise@-134.5t fall@-113.5t rise@-91.5t fall@-70.5t rise@-49.5t fall@-27.5t rise@-6.5t fall@+14.5t rise@+36.5t fall@+57.5t rise@+78.5t fall@+100.5t rise@+121.5t fall@+142.5t rise@+164.5t fall@+185.5t rise@+206.5t fall@+228.5t rise@+249.5t fall@+270.5t rise@+292.5t
+  DCS0: rise@+73.5t fall@+89.5t rise@+105.5t fall@+121.5t rise@+137.5t fall@+153.5t rise@+169.5t fall@+185.5t rise@+201.5t fall@+217.5t rise@+233.5t fall@+249.5t rise@+265.5t fall@+281.5t
+  DCS1: fall@-198.5t rise@-177.5t fall@-155.5t rise@-134.5t fall@-113.5t rise@-91.5t fall@-70.5t rise@-49.5t fall@-27.5t rise@-6.5t fall@+14.5t rise@+36.5t
+observations_static.log load-row=2 static Q=00000011 seed=6F2032D0 SEL 01->10 MODESEL 0->0 T=208 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-7.5t, first post-write edge rise@+8.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+99.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-199.5t rise@-183.5t fall@-167.5t rise@-151.5t fall@-135.5t rise@-119.5t fall@-103.5t rise@-87.5t fall@-71.5t rise@-55.5t fall@-39.5t rise@-23.5t fall@-7.5t rise@+8.5t fall@+24.5t rise@+40.5t fall@+56.5t rise@+72.5t fall@+88.5t rise@+104.5t fall@+120.5t rise@+136.5t fall@+152.5t rise@+168.5t fall@+184.5t rise@+200.5t fall@+216.5t rise@+232.5t fall@+248.5t rise@+264.5t fall@+280.5t rise@+296.5t
+  CLK1: fall@-199.5t rise@-178.5t fall@-156.5t rise@-135.5t fall@-114.5t rise@-92.5t fall@-71.5t rise@-50.5t fall@-28.5t rise@-7.5t fall@+13.5t rise@+35.5t fall@+56.5t rise@+77.5t fall@+99.5t rise@+120.5t fall@+141.5t rise@+163.5t fall@+184.5t rise@+205.5t fall@+227.5t rise@+248.5t fall@+269.5t rise@+291.5t
+  DCS0: fall@-199.5t rise@-183.5t fall@-167.5t rise@-151.5t fall@-135.5t rise@-119.5t fall@-103.5t rise@-87.5t fall@-71.5t rise@-55.5t fall@-39.5t rise@-23.5t fall@-7.5t rise@+8.5t fall@+24.5t
+  DCS1: fall@+99.5t rise@+120.5t fall@+141.5t rise@+163.5t fall@+184.5t rise@+205.5t fall@+227.5t rise@+248.5t fall@+269.5t rise@+291.5t
+observations_static.log load-row=2 static Q=00000012 seed=516F3E53 SEL 10->01 MODESEL 0->0 T=211 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-13.5t, first post-write edge rise@+7.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-205.5t rise@-189.5t fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t
+  CLK1: rise@-205.5t fall@-184.5t rise@-162.5t fall@-141.5t rise@-120.5t fall@-98.5t rise@-77.5t fall@-56.5t rise@-34.5t fall@-13.5t rise@+7.5t fall@+29.5t rise@+50.5t fall@+71.5t rise@+93.5t fall@+114.5t rise@+135.5t fall@+157.5t rise@+178.5t fall@+199.5t rise@+221.5t fall@+242.5t rise@+263.5t fall@+285.5t
+  DCS0: rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t
+  DCS1: rise@-205.5t fall@-184.5t rise@-162.5t fall@-141.5t rise@-120.5t fall@-98.5t rise@-77.5t fall@-56.5t rise@-34.5t fall@-13.5t rise@+7.5t
+observations_static.log load-row=2 static Q=00000013 seed=9B41A546 SEL 01->10 MODESEL 0->0 T=198 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+72.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t
+  CLK1: fall@-183.5t rise@-162.5t fall@-141.5t rise@-119.5t fall@-98.5t rise@-77.5t fall@-55.5t rise@-34.5t fall@-13.5t rise@+8.5t fall@+29.5t rise@+50.5t fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t rise@+264.5t fall@+285.5t rise@+306.5t
+  DCS0: fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t
+  DCS1: fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t rise@+264.5t fall@+285.5t rise@+306.5t
+observations_static.log load-row=2 static Q=00000014 seed=3E30892D SEL 10->01 MODESEL 0->0 T=173 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+77.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-13.5t, first post-write edge rise@+8.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t rise@+333.5t
+  CLK1: rise@-162.5t fall@-141.5t rise@-119.5t fall@-98.5t rise@-77.5t fall@-55.5t rise@-34.5t fall@-13.5t rise@+8.5t fall@+29.5t rise@+50.5t fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t rise@+264.5t fall@+285.5t rise@+306.5t fall@+328.5t
+  DCS0: rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t rise@+333.5t
+  DCS1: rise@-162.5t fall@-141.5t rise@-119.5t fall@-98.5t rise@-77.5t fall@-55.5t rise@-34.5t fall@-13.5t rise@+8.5t
+observations_static.log load-row=2 static Q=00000015 seed=A0A10975 SEL 01->10 MODESEL 0->0 T=245 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/3
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+72.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-242.5t fall@-226.5t rise@-210.5t fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t
+  CLK1: rise@-247.5t fall@-226.5t rise@-205.5t fall@-183.5t rise@-162.5t fall@-141.5t rise@-119.5t fall@-98.5t rise@-77.5t fall@-55.5t rise@-34.5t fall@-13.5t rise@+8.5t fall@+29.5t rise@+50.5t fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t
+  DCS0: rise@-242.5t fall@-226.5t rise@-210.5t fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t
+  DCS1: fall@+72.5t rise@+93.5t fall@+114.5t rise@+136.5t fall@+157.5t rise@+178.5t fall@+200.5t rise@+221.5t fall@+242.5t
+observations_static.log load-row=2 static Q=00000016 seed=0227CC74 SEL 10->01 MODESEL 0->0 T=244 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+69.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-10.5t, first post-write edge fall@+10.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-234.5t rise@-218.5t fall@-202.5t rise@-186.5t fall@-170.5t rise@-154.5t fall@-138.5t rise@-122.5t fall@-106.5t rise@-90.5t fall@-74.5t rise@-58.5t fall@-42.5t rise@-26.5t fall@-10.5t rise@+5.5t fall@+21.5t rise@+37.5t fall@+53.5t rise@+69.5t fall@+85.5t rise@+101.5t fall@+117.5t rise@+133.5t fall@+149.5t rise@+165.5t fall@+181.5t rise@+197.5t fall@+213.5t rise@+229.5t fall@+245.5t rise@+261.5t
+  CLK1: fall@-245.5t rise@-223.5t fall@-202.5t rise@-181.5t fall@-159.5t rise@-138.5t fall@-117.5t rise@-95.5t fall@-74.5t rise@-53.5t fall@-31.5t rise@-10.5t fall@+10.5t rise@+32.5t fall@+53.5t rise@+74.5t fall@+96.5t rise@+117.5t fall@+138.5t rise@+160.5t fall@+181.5t rise@+202.5t fall@+224.5t rise@+245.5t
+  DCS0: rise@+69.5t fall@+85.5t rise@+101.5t fall@+117.5t rise@+133.5t fall@+149.5t rise@+165.5t fall@+181.5t rise@+197.5t fall@+213.5t rise@+229.5t fall@+245.5t rise@+261.5t
+  DCS1: fall@-245.5t rise@-223.5t fall@-202.5t rise@-181.5t fall@-159.5t rise@-138.5t fall@-117.5t rise@-95.5t fall@-74.5t rise@-53.5t fall@-31.5t rise@-10.5t fall@+10.5t rise@+32.5t
+observations_static.log load-row=2 static Q=00000017 seed=F7C9C491 SEL 01->10 MODESEL 0->0 T=145 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-13.5t, first post-write edge rise@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+93.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t rise@+322.5t fall@+338.5t rise@+354.5t
+  CLK1: rise@-141.5t fall@-120.5t rise@-98.5t fall@-77.5t rise@-56.5t fall@-34.5t rise@-13.5t fall@+7.5t rise@+29.5t fall@+50.5t rise@+71.5t fall@+93.5t rise@+114.5t fall@+135.5t rise@+157.5t fall@+178.5t rise@+199.5t fall@+221.5t rise@+242.5t fall@+263.5t rise@+285.5t fall@+306.5t rise@+327.5t fall@+349.5t
+  DCS0: fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t
+  DCS1: fall@+93.5t rise@+114.5t fall@+135.5t rise@+157.5t fall@+178.5t rise@+199.5t fall@+221.5t rise@+242.5t fall@+263.5t rise@+285.5t fall@+306.5t rise@+327.5t fall@+349.5t
+observations_static.log load-row=2 static Q=00000018 seed=5338C06C SEL 10->01 MODESEL 0->0 T=236 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+64.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-15.5t, first post-write edge fall@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-239.5t rise@-223.5t fall@-207.5t rise@-191.5t fall@-175.5t rise@-159.5t fall@-143.5t rise@-127.5t fall@-111.5t rise@-95.5t fall@-79.5t rise@-63.5t fall@-47.5t rise@-31.5t fall@-15.5t rise@+0.5t fall@+16.5t rise@+32.5t fall@+48.5t rise@+64.5t fall@+80.5t rise@+96.5t fall@+112.5t rise@+128.5t fall@+144.5t rise@+160.5t fall@+176.5t rise@+192.5t fall@+208.5t rise@+224.5t fall@+240.5t rise@+256.5t
+  CLK1: rise@-228.5t fall@-207.5t rise@-186.5t fall@-164.5t rise@-143.5t fall@-122.5t rise@-100.5t fall@-79.5t rise@-58.5t fall@-36.5t rise@-15.5t fall@+5.5t rise@+27.5t fall@+48.5t rise@+69.5t fall@+91.5t rise@+112.5t fall@+133.5t rise@+155.5t fall@+176.5t rise@+197.5t fall@+219.5t rise@+240.5t fall@+261.5t
+  DCS0: rise@+64.5t fall@+80.5t rise@+96.5t fall@+112.5t rise@+128.5t fall@+144.5t rise@+160.5t fall@+176.5t rise@+192.5t fall@+208.5t rise@+224.5t fall@+240.5t rise@+256.5t
+  DCS1: rise@-228.5t fall@-207.5t rise@-186.5t fall@-164.5t rise@-143.5t fall@-122.5t rise@-100.5t fall@-79.5t rise@-58.5t fall@-36.5t rise@-15.5t fall@+5.5t rise@+27.5t
+observations_static.log load-row=2 static Q=00000019 seed=9F6906E1 SEL 01->10 MODESEL 0->0 T=225 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-13.5t, first post-write edge fall@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+87.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t rise@+18.5t fall@+34.5t rise@+50.5t fall@+66.5t rise@+82.5t fall@+98.5t rise@+114.5t fall@+130.5t rise@+146.5t fall@+162.5t rise@+178.5t fall@+194.5t rise@+210.5t fall@+226.5t rise@+242.5t fall@+258.5t rise@+274.5t
+  CLK1: fall@-210.5t rise@-189.5t fall@-168.5t rise@-146.5t fall@-125.5t rise@-104.5t fall@-82.5t rise@-61.5t fall@-40.5t rise@-18.5t fall@+2.5t rise@+23.5t fall@+45.5t rise@+66.5t fall@+87.5t rise@+109.5t fall@+130.5t rise@+151.5t fall@+173.5t rise@+194.5t fall@+215.5t rise@+237.5t fall@+258.5t rise@+279.5t
+  DCS0: fall@-221.5t rise@-205.5t fall@-189.5t rise@-173.5t fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t
+  DCS1: fall@+87.5t rise@+109.5t fall@+130.5t rise@+151.5t fall@+173.5t rise@+194.5t fall@+215.5t rise@+237.5t fall@+258.5t rise@+279.5t
+observations_static.log load-row=2 static Q=0000001A seed=A74124F2 SEL 10->01 MODESEL 0->0 T=242 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+65.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-14.5t, first post-write edge fall@+6.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-238.5t rise@-222.5t fall@-206.5t rise@-190.5t fall@-174.5t rise@-158.5t fall@-142.5t rise@-126.5t fall@-110.5t rise@-94.5t fall@-78.5t rise@-62.5t fall@-46.5t rise@-30.5t fall@-14.5t rise@+1.5t fall@+17.5t rise@+33.5t fall@+49.5t rise@+65.5t fall@+81.5t rise@+97.5t fall@+113.5t rise@+129.5t fall@+145.5t rise@+161.5t fall@+177.5t rise@+193.5t fall@+209.5t rise@+225.5t fall@+241.5t rise@+257.5t
+  CLK1: rise@-227.5t fall@-206.5t rise@-185.5t fall@-163.5t rise@-142.5t fall@-121.5t rise@-99.5t fall@-78.5t rise@-57.5t fall@-35.5t rise@-14.5t fall@+6.5t rise@+28.5t fall@+49.5t rise@+70.5t fall@+92.5t rise@+113.5t fall@+134.5t rise@+156.5t fall@+177.5t rise@+198.5t fall@+220.5t rise@+241.5t fall@+262.5t
+  DCS0: rise@+65.5t fall@+81.5t rise@+97.5t fall@+113.5t rise@+129.5t fall@+145.5t rise@+161.5t fall@+177.5t rise@+193.5t fall@+209.5t rise@+225.5t fall@+241.5t rise@+257.5t
+  DCS1: rise@-227.5t fall@-206.5t rise@-185.5t fall@-163.5t rise@-142.5t fall@-121.5t rise@-99.5t fall@-78.5t rise@-57.5t fall@-35.5t rise@-14.5t fall@+6.5t rise@+28.5t
+observations_static.log load-row=2 static Q=0000001B seed=C4E4CE0C SEL 01->10 MODESEL 0->0 T=140 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-2.5t, first post-write edge fall@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t rise@+29.5t fall@+45.5t rise@+61.5t fall@+77.5t rise@+93.5t fall@+109.5t rise@+125.5t fall@+141.5t rise@+157.5t fall@+173.5t rise@+189.5t fall@+205.5t rise@+221.5t fall@+237.5t rise@+253.5t fall@+269.5t rise@+285.5t fall@+301.5t rise@+317.5t fall@+333.5t rise@+349.5t fall@+365.5t
+  CLK1: rise@-125.5t fall@-103.5t rise@-82.5t fall@-61.5t rise@-39.5t fall@-18.5t rise@+2.5t fall@+24.5t rise@+45.5t fall@+66.5t rise@+88.5t fall@+109.5t rise@+130.5t fall@+152.5t rise@+173.5t fall@+194.5t rise@+216.5t fall@+237.5t rise@+258.5t fall@+280.5t rise@+301.5t fall@+322.5t rise@+344.5t fall@+365.5t
+  DCS0: rise@-130.5t fall@-114.5t rise@-98.5t fall@-82.5t rise@-66.5t fall@-50.5t rise@-34.5t fall@-18.5t rise@-2.5t fall@+13.5t
+  DCS1: fall@+66.5t rise@+88.5t fall@+109.5t rise@+130.5t fall@+152.5t rise@+173.5t fall@+194.5t rise@+216.5t fall@+237.5t rise@+258.5t fall@+280.5t rise@+301.5t fall@+322.5t rise@+344.5t fall@+365.5t
+observations_static.log load-row=3 static Q=00000002 seed=9591D0AE SEL 10->01 MODESEL 0->0 T=174 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+74.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-16.5t, first post-write edge fall@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-165.5t rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t rise@+42.5t fall@+58.5t rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t fall@+314.5t rise@+330.5t
+  CLK1: fall@-165.5t rise@-144.5t fall@-122.5t rise@-101.5t fall@-80.5t rise@-58.5t fall@-37.5t rise@-16.5t fall@+5.5t rise@+26.5t fall@+47.5t rise@+69.5t fall@+90.5t rise@+111.5t fall@+133.5t rise@+154.5t fall@+175.5t rise@+197.5t fall@+218.5t rise@+239.5t fall@+261.5t rise@+282.5t fall@+303.5t rise@+325.5t
+  DCS0: rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t rise@+266.5t fall@+282.5t rise@+298.5t fall@+314.5t rise@+330.5t
+  DCS1: fall@-165.5t rise@-144.5t fall@-122.5t rise@-101.5t fall@-80.5t rise@-58.5t fall@-37.5t rise@-16.5t fall@+5.5t rise@+26.5t
+observations_static.log load-row=3 static Q=00000003 seed=057646DA SEL 01->10 MODESEL 0->0 T=218 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-6.5t, first post-write edge fall@+9.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+84.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-214.5t rise@-198.5t fall@-182.5t rise@-166.5t fall@-150.5t rise@-134.5t fall@-118.5t rise@-102.5t fall@-86.5t rise@-70.5t fall@-54.5t rise@-38.5t fall@-22.5t rise@-6.5t fall@+9.5t rise@+25.5t fall@+41.5t rise@+57.5t fall@+73.5t rise@+89.5t fall@+105.5t rise@+121.5t fall@+137.5t rise@+153.5t fall@+169.5t rise@+185.5t fall@+201.5t rise@+217.5t fall@+233.5t rise@+249.5t fall@+265.5t rise@+281.5t
+  CLK1: fall@-214.5t rise@-193.5t fall@-171.5t rise@-150.5t fall@-129.5t rise@-107.5t fall@-86.5t rise@-65.5t fall@-43.5t rise@-22.5t fall@-1.5t rise@+20.5t fall@+41.5t rise@+62.5t fall@+84.5t rise@+105.5t fall@+126.5t rise@+148.5t fall@+169.5t rise@+190.5t fall@+212.5t rise@+233.5t fall@+254.5t rise@+276.5t
+  DCS0: fall@-214.5t rise@-198.5t fall@-182.5t rise@-166.5t fall@-150.5t rise@-134.5t fall@-118.5t rise@-102.5t fall@-86.5t rise@-70.5t fall@-54.5t rise@-38.5t fall@-22.5t rise@-6.5t fall@+9.5t
+  DCS1: fall@+84.5t rise@+105.5t fall@+126.5t rise@+148.5t fall@+169.5t rise@+190.5t fall@+212.5t rise@+233.5t fall@+254.5t rise@+276.5t
+observations_static.log load-row=3 static Q=00000004 seed=B0063012 SEL 10->01 MODESEL 0->0 T=146 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=8/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+62.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-17.5t, first post-write edge rise@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t rise@+30.5t fall@+46.5t rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t fall@+270.5t rise@+286.5t fall@+302.5t rise@+318.5t fall@+334.5t rise@+350.5t
+  CLK1: fall@-145.5t rise@-124.5t fall@-102.5t rise@-81.5t fall@-60.5t rise@-38.5t fall@-17.5t rise@+3.5t fall@+25.5t rise@+46.5t fall@+67.5t rise@+89.5t fall@+110.5t rise@+131.5t fall@+153.5t rise@+174.5t fall@+195.5t rise@+217.5t fall@+238.5t rise@+259.5t fall@+281.5t rise@+302.5t fall@+323.5t rise@+345.5t
+  DCS0: rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t fall@+270.5t rise@+286.5t fall@+302.5t rise@+318.5t fall@+334.5t rise@+350.5t
+  DCS1: fall@-145.5t rise@-124.5t fall@-102.5t rise@-81.5t fall@-60.5t rise@-38.5t fall@-17.5t rise@+3.5t
+observations_static.log load-row=3 static Q=00000005 seed=1B155A60 SEL 01->10 MODESEL 0->0 T=224 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-9.5t, first post-write edge rise@+6.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+86.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-217.5t fall@-201.5t rise@-185.5t fall@-169.5t rise@-153.5t fall@-137.5t rise@-121.5t fall@-105.5t rise@-89.5t fall@-73.5t rise@-57.5t fall@-41.5t rise@-25.5t fall@-9.5t rise@+6.5t fall@+22.5t rise@+38.5t fall@+54.5t rise@+70.5t fall@+86.5t rise@+102.5t fall@+118.5t rise@+134.5t fall@+150.5t rise@+166.5t fall@+182.5t rise@+198.5t fall@+214.5t rise@+230.5t fall@+246.5t rise@+262.5t fall@+278.5t
+  CLK1: fall@-212.5t rise@-190.5t fall@-169.5t rise@-148.5t fall@-126.5t rise@-105.5t fall@-84.5t rise@-62.5t fall@-41.5t rise@-20.5t fall@+1.5t rise@+22.5t fall@+43.5t rise@+65.5t fall@+86.5t rise@+107.5t fall@+129.5t rise@+150.5t fall@+171.5t rise@+193.5t fall@+214.5t rise@+235.5t fall@+257.5t rise@+278.5t
+  DCS0: rise@-217.5t fall@-201.5t rise@-185.5t fall@-169.5t rise@-153.5t fall@-137.5t rise@-121.5t fall@-105.5t rise@-89.5t fall@-73.5t rise@-57.5t fall@-41.5t rise@-25.5t fall@-9.5t rise@+6.5t fall@+22.5t
+  DCS1: fall@+86.5t rise@+107.5t fall@+129.5t rise@+150.5t fall@+171.5t rise@+193.5t fall@+214.5t rise@+235.5t fall@+257.5t rise@+278.5t
+observations_static.log load-row=3 static Q=00000006 seed=03E9E8DD SEL 10->01 MODESEL 0->1 T=221 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: UNRESOLVED observer; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+1.5t
+    missing=0 extra=0 runts=0 same-bin=1 multi-count=1 repeated-polarity=0 unordered-packets=2 legacy-runt-count=1 legacy-repeated-count=2
+    UNRESOLVED packet @+1.5t: rise=1 fall=1; no within-bin order or pulse width inferred
+    UNRESOLVED packet @+21.5t: rise=2 fall=0; no within-bin order or pulse width inferred
+    OBSERVER INCONSISTENT: cumulative rises-minus-falls implies level -1..-1 over 16 samples, +5.5..+20.5t; this cannot be a faithful binary-clock edge timeline
+  DCS1 CLK1_HIGH steady-only: UNRESOLVED observer; steady CLK1->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/5
+    transition rule unspecified; last pre-write edge rise@-5.5t, first post-write edge rise@+1.5t
+    missing=0 extra=0 runts=0 same-bin=1 multi-count=0 repeated-polarity=0 unordered-packets=1 legacy-runt-count=1 legacy-repeated-count=2
+    UNRESOLVED packet @+1.5t: rise=1 fall=1; no within-bin order or pulse width inferred
+  CLK0: fall@-218.5t rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t rise@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t rise@+277.5t
+  CLK1: rise@-218.5t fall@-197.5t rise@-175.5t fall@-154.5t rise@-133.5t fall@-111.5t rise@-90.5t fall@-69.5t rise@-47.5t fall@-26.5t rise@-5.5t fall@+16.5t rise@+37.5t fall@+58.5t rise@+80.5t fall@+101.5t rise@+122.5t fall@+144.5t rise@+165.5t fall@+186.5t rise@+208.5t fall@+229.5t rise@+250.5t fall@+272.5t
+  DCS0: {rise=1,fall=1,unordered}@+1.5t fall@+5.5t {rise=2,fall=0,unordered}@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t rise@+277.5t
+  DCS1: rise@-218.5t fall@-197.5t rise@-175.5t fall@-154.5t rise@-133.5t fall@-111.5t rise@-90.5t fall@-69.5t rise@-47.5t fall@-26.5t rise@-5.5t {rise=1,fall=1,unordered}@+1.5t fall@+5.5t rise@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t rise@+277.5t
+observations_static.log load-row=3 static Q=00000007 seed=F24D3791 SEL 01->10 MODESEL 1->0 T=145 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-1.5t, first post-write edge fall@+14.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK0->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/5
+    transition rule unspecified; last pre-write edge rise@-1.5t, first post-write edge fall@+67.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t rise@+30.5t fall@+46.5t rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t fall@+270.5t rise@+286.5t fall@+302.5t rise@+318.5t fall@+334.5t rise@+350.5t
+  CLK1: fall@-145.5t rise@-124.5t fall@-102.5t rise@-81.5t fall@-60.5t rise@-38.5t fall@-17.5t rise@+3.5t fall@+25.5t rise@+46.5t fall@+67.5t rise@+89.5t fall@+110.5t rise@+131.5t fall@+153.5t rise@+174.5t fall@+195.5t rise@+217.5t fall@+238.5t rise@+259.5t fall@+281.5t rise@+302.5t fall@+323.5t rise@+345.5t
+  DCS0: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t
+  DCS1: fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+67.5t rise@+89.5t fall@+110.5t rise@+131.5t fall@+153.5t rise@+174.5t fall@+195.5t rise@+217.5t fall@+238.5t rise@+259.5t fall@+281.5t rise@+302.5t fall@+323.5t rise@+345.5t
+observations_static.log load-row=3 static Q=00000008 seed=2D64E0A8 SEL 10->01 MODESEL 0->0 T=168 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+52.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-6.5t, first post-write edge rise@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-171.5t fall@-155.5t rise@-139.5t fall@-123.5t rise@-107.5t fall@-91.5t rise@-75.5t fall@-59.5t rise@-43.5t fall@-27.5t rise@-11.5t fall@+4.5t rise@+20.5t fall@+36.5t rise@+52.5t fall@+68.5t rise@+84.5t fall@+100.5t rise@+116.5t fall@+132.5t rise@+148.5t fall@+164.5t rise@+180.5t fall@+196.5t rise@+212.5t fall@+228.5t rise@+244.5t fall@+260.5t rise@+276.5t fall@+292.5t rise@+308.5t fall@+324.5t
+  CLK1: rise@-155.5t fall@-134.5t rise@-112.5t fall@-91.5t rise@-70.5t fall@-48.5t rise@-27.5t fall@-6.5t rise@+15.5t fall@+36.5t rise@+57.5t fall@+79.5t rise@+100.5t fall@+121.5t rise@+143.5t fall@+164.5t rise@+185.5t fall@+207.5t rise@+228.5t fall@+249.5t rise@+271.5t fall@+292.5t rise@+313.5t fall@+335.5t
+  DCS0: rise@+52.5t fall@+68.5t rise@+84.5t fall@+100.5t rise@+116.5t fall@+132.5t rise@+148.5t fall@+164.5t rise@+180.5t fall@+196.5t rise@+212.5t fall@+228.5t rise@+244.5t fall@+260.5t rise@+276.5t fall@+292.5t rise@+308.5t fall@+324.5t
+  DCS1: rise@-155.5t fall@-134.5t rise@-112.5t fall@-91.5t rise@-70.5t fall@-48.5t rise@-27.5t fall@-6.5t rise@+15.5t
+observations_static.log load-row=3 static Q=00000009 seed=388F54EC SEL 01->10 MODESEL 0->0 T=236 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-12.5t, first post-write edge rise@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=4/3
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+104.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-236.5t rise@-220.5t fall@-204.5t rise@-188.5t fall@-172.5t rise@-156.5t fall@-140.5t rise@-124.5t fall@-108.5t rise@-92.5t fall@-76.5t rise@-60.5t fall@-44.5t rise@-28.5t fall@-12.5t rise@+3.5t fall@+19.5t rise@+35.5t fall@+51.5t rise@+67.5t fall@+83.5t rise@+99.5t fall@+115.5t rise@+131.5t fall@+147.5t rise@+163.5t fall@+179.5t rise@+195.5t fall@+211.5t rise@+227.5t fall@+243.5t rise@+259.5t
+  CLK1: fall@-236.5t rise@-215.5t fall@-193.5t rise@-172.5t fall@-151.5t rise@-129.5t fall@-108.5t rise@-87.5t fall@-65.5t rise@-44.5t fall@-23.5t rise@-1.5t fall@+19.5t rise@+40.5t fall@+62.5t rise@+83.5t fall@+104.5t rise@+126.5t fall@+147.5t rise@+168.5t fall@+190.5t rise@+211.5t fall@+232.5t rise@+254.5t
+  DCS0: fall@-236.5t rise@-220.5t fall@-204.5t rise@-188.5t fall@-172.5t rise@-156.5t fall@-140.5t rise@-124.5t fall@-108.5t rise@-92.5t fall@-76.5t rise@-60.5t fall@-44.5t rise@-28.5t fall@-12.5t rise@+3.5t fall@+19.5t
+  DCS1: fall@+104.5t rise@+126.5t fall@+147.5t rise@+168.5t fall@+190.5t rise@+211.5t fall@+232.5t rise@+254.5t
+observations_static.log load-row=3 static Q=0000000A seed=5564156F SEL 10->01 MODESEL 0->0 T=239 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+64.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-4.5t, first post-write edge fall@+16.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-239.5t rise@-223.5t fall@-207.5t rise@-191.5t fall@-175.5t rise@-159.5t fall@-143.5t rise@-127.5t fall@-111.5t rise@-95.5t fall@-79.5t rise@-63.5t fall@-47.5t rise@-31.5t fall@-15.5t rise@+0.5t fall@+16.5t rise@+32.5t fall@+48.5t rise@+64.5t fall@+80.5t rise@+96.5t fall@+112.5t rise@+128.5t fall@+144.5t rise@+160.5t fall@+176.5t rise@+192.5t fall@+208.5t rise@+224.5t fall@+240.5t rise@+256.5t
+  CLK1: fall@-239.5t rise@-218.5t fall@-196.5t rise@-175.5t fall@-154.5t rise@-132.5t fall@-111.5t rise@-90.5t fall@-68.5t rise@-47.5t fall@-26.5t rise@-4.5t fall@+16.5t rise@+37.5t fall@+59.5t rise@+80.5t fall@+101.5t rise@+123.5t fall@+144.5t rise@+165.5t fall@+187.5t rise@+208.5t fall@+229.5t rise@+251.5t
+  DCS0: rise@+64.5t fall@+80.5t rise@+96.5t fall@+112.5t rise@+128.5t fall@+144.5t rise@+160.5t fall@+176.5t rise@+192.5t fall@+208.5t rise@+224.5t fall@+240.5t rise@+256.5t
+  DCS1: fall@-239.5t rise@-218.5t fall@-196.5t rise@-175.5t fall@-154.5t rise@-132.5t fall@-111.5t rise@-90.5t fall@-68.5t rise@-47.5t fall@-26.5t rise@-4.5t fall@+16.5t rise@+37.5t
+observations_static.log load-row=3 static Q=0000000B seed=83F84630 SEL 01->10 MODESEL 0->0 T=176 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-12.5t, first post-write edge fall@+3.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+67.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-172.5t fall@-156.5t rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t rise@+19.5t fall@+35.5t rise@+51.5t fall@+67.5t rise@+83.5t fall@+99.5t rise@+115.5t fall@+131.5t rise@+147.5t fall@+163.5t rise@+179.5t fall@+195.5t rise@+211.5t fall@+227.5t rise@+243.5t fall@+259.5t rise@+275.5t fall@+291.5t rise@+307.5t fall@+323.5t
+  CLK1: rise@-167.5t fall@-145.5t rise@-124.5t fall@-103.5t rise@-81.5t fall@-60.5t rise@-39.5t fall@-17.5t rise@+3.5t fall@+24.5t rise@+46.5t fall@+67.5t rise@+88.5t fall@+110.5t rise@+131.5t fall@+152.5t rise@+174.5t fall@+195.5t rise@+216.5t fall@+238.5t rise@+259.5t fall@+280.5t rise@+302.5t fall@+323.5t
+  DCS0: rise@-172.5t fall@-156.5t rise@-140.5t fall@-124.5t rise@-108.5t fall@-92.5t rise@-76.5t fall@-60.5t rise@-44.5t fall@-28.5t rise@-12.5t fall@+3.5t
+  DCS1: fall@+67.5t rise@+88.5t fall@+110.5t rise@+131.5t fall@+152.5t rise@+174.5t fall@+195.5t rise@+216.5t fall@+238.5t rise@+259.5t fall@+280.5t rise@+302.5t fall@+323.5t
+observations_static.log load-row=3 static Q=0000000C seed=7CC99D16 SEL 10->01 MODESEL 0->0 T=150 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/8
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+79.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-0.5t, first post-write edge rise@+20.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-144.5t fall@-128.5t rise@-112.5t fall@-96.5t rise@-80.5t fall@-64.5t rise@-48.5t fall@-32.5t rise@-16.5t fall@-0.5t rise@+15.5t fall@+31.5t rise@+47.5t fall@+63.5t rise@+79.5t fall@+95.5t rise@+111.5t fall@+127.5t rise@+143.5t fall@+159.5t rise@+175.5t fall@+191.5t rise@+207.5t fall@+223.5t rise@+239.5t fall@+255.5t rise@+271.5t fall@+287.5t rise@+303.5t fall@+319.5t rise@+335.5t fall@+351.5t
+  CLK1: rise@-149.5t fall@-128.5t rise@-107.5t fall@-85.5t rise@-64.5t fall@-43.5t rise@-21.5t fall@-0.5t rise@+20.5t fall@+42.5t rise@+63.5t fall@+84.5t rise@+106.5t fall@+127.5t rise@+148.5t fall@+170.5t rise@+191.5t fall@+212.5t rise@+234.5t fall@+255.5t rise@+276.5t fall@+298.5t rise@+319.5t fall@+340.5t
+  DCS0: rise@+79.5t fall@+95.5t rise@+111.5t fall@+127.5t rise@+143.5t fall@+159.5t rise@+175.5t fall@+191.5t rise@+207.5t fall@+223.5t rise@+239.5t fall@+255.5t rise@+271.5t fall@+287.5t rise@+303.5t fall@+319.5t rise@+335.5t fall@+351.5t
+  DCS1: rise@-149.5t fall@-128.5t rise@-107.5t fall@-85.5t rise@-64.5t fall@-43.5t rise@-21.5t fall@-0.5t rise@+20.5t
+observations_static.log load-row=3 static Q=0000000D seed=1AA1C1F2 SEL 01->10 MODESEL 0->0 T=242 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-5.5t, first post-write edge rise@+10.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/3observations_static.log:3: line length 850; expected 6178 before CR/LF
+
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+101.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-245.5t fall@-229.5t rise@-213.5t fall@-197.5t rise@-181.5t fall@-165.5t rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t rise@+42.5t fall@+58.5t rise@+74.5t fall@+90.5t rise@+106.5t fall@+122.5t rise@+138.5t fall@+154.5t rise@+170.5t fall@+186.5t rise@+202.5t fall@+218.5t rise@+234.5t fall@+250.5t
+  CLK1: fall@-240.5t rise@-218.5t fall@-197.5t rise@-176.5t fall@-154.5t rise@-133.5t fall@-112.5t rise@-90.5t fall@-69.5t rise@-48.5t fall@-26.5t rise@-5.5t fall@+15.5t rise@+37.5t fall@+58.5t rise@+79.5t fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t
+  DCS0: rise@-245.5t fall@-229.5t rise@-213.5t fall@-197.5t rise@-181.5t fall@-165.5t rise@-149.5t fall@-133.5t rise@-117.5t fall@-101.5t rise@-85.5t fall@-69.5t rise@-53.5t fall@-37.5t rise@-21.5t fall@-5.5t rise@+10.5t fall@+26.5t
+  DCS1: fall@+101.5t rise@+122.5t fall@+143.5t rise@+165.5t fall@+186.5t rise@+207.5t fall@+229.5t rise@+250.5t
+observations_static.log load-row=3 static Q=0000000E seed=C3F9D75B SEL 10->11 MODESEL 0->0 T=219 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge unresolved
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-6.5t, first post-write edge fall@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-219.5t rise@-203.5t fall@-187.5t rise@-171.5t fall@-155.5t rise@-139.5t fall@-123.5t rise@-107.5t fall@-91.5t rise@-75.5t fall@-59.5t rise@-43.5t fall@-27.5t rise@-11.5t fall@+4.5t rise@+20.5t fall@+36.5t rise@+52.5t fall@+68.5t rise@+84.5t fall@+100.5t rise@+116.5t fall@+132.5t rise@+148.5t fall@+164.5t rise@+180.5t fall@+196.5t rise@+212.5t fall@+228.5t rise@+244.5t fall@+260.5t rise@+276.5t
+  CLK1: rise@-219.5t fall@-198.5t rise@-176.5t fall@-155.5t rise@-134.5t fall@-112.5t rise@-91.5t fall@-70.5t rise@-48.5t fall@-27.5t rise@-6.5t fall@+15.5t rise@+36.5t fall@+57.5t rise@+79.5t fall@+100.5t rise@+121.5t fall@+143.5t rise@+164.5t fall@+185.5t rise@+207.5t fall@+228.5t rise@+249.5t fall@+271.5t
+  DCS0: (no edges)
+  DCS1: rise@-219.5t fall@-198.5t rise@-176.5t fall@-155.5t rise@-134.5t fall@-112.5t rise@-91.5t fall@-70.5t rise@-48.5t fall@-27.5t rise@-6.5t fall@+15.5t rise@+36.5t
+observations_static.log load-row=3 static Q=0000000F seed=33EC8E9F SEL 11->11 MODESEL 0->1 T=159 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge unresolved
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+1.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-157.5t rise@-141.5t fall@-125.5t rise@-109.5t fall@-93.5t rise@-77.5t fall@-61.5t rise@-45.5t fall@-29.5t rise@-13.5t fall@+2.5t rise@+18.5t fall@+34.5t rise@+50.5t fall@+66.5t rise@+82.5t fall@+98.5t rise@+114.5t fall@+130.5t rise@+146.5t fall@+162.5t rise@+178.5t fall@+194.5t rise@+210.5t fall@+226.5t rise@+242.5t fall@+258.5t rise@+274.5t fall@+290.5t rise@+306.5t fall@+322.5t rise@+338.5t
+  CLK1: rise@-146.5t fall@-125.5t rise@-104.5t fall@-82.5t rise@-61.5t fall@-40.5t rise@-18.5t fall@+2.5t rise@+23.5t fall@+45.5t rise@+66.5t fall@+87.5t rise@+109.5t fall@+130.5t rise@+151.5t fall@+173.5t rise@+194.5t fall@+215.5t rise@+237.5t fall@+258.5t rise@+279.5t fall@+301.5t rise@+322.5t fall@+343.5t
+  DCS0: (no edges)
+  DCS1: fall@+1.5t
+observations_static.log load-row=3 static Q=00000010 seed=66F85241 SEL 11->01 MODESEL 1->0 T=193 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+71.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 0->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+1.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-184.5t fall@-168.5t rise@-152.5t fall@-136.5t rise@-120.5t fall@-104.5t rise@-88.5t fall@-72.5t rise@-56.5t fall@-40.5t rise@-24.5t fall@-8.5t rise@+7.5t fall@+23.5t rise@+39.5t fall@+55.5t rise@+71.5t fall@+87.5t rise@+103.5t fall@+119.5t rise@+135.5t fall@+151.5t rise@+167.5t fall@+183.5t rise@+199.5t fall@+215.5t rise@+231.5t fall@+247.5t rise@+263.5t fall@+279.5t rise@+295.5t fall@+311.5t
+  CLK1: rise@-189.5t fall@-168.5t rise@-147.5t fall@-125.5t rise@-104.5t fall@-83.5t rise@-61.5t fall@-40.5t rise@-19.5t fall@+2.5t rise@+23.5t fall@+44.5t rise@+66.5t fall@+87.5t rise@+108.5t fall@+130.5t rise@+151.5t fall@+172.5t rise@+194.5t fall@+215.5t rise@+236.5t fall@+258.5t rise@+279.5t fall@+300.5t
+  DCS0: rise@+71.5t fall@+87.5t rise@+103.5t fall@+119.5t rise@+135.5t fall@+151.5t rise@+167.5t fall@+183.5t rise@+199.5t fall@+215.5t rise@+231.5t fall@+247.5t rise@+263.5t fall@+279.5t rise@+295.5t fall@+311.5t
+  DCS1: rise@+1.5t
+observations_static.log load-row=3 static Q=00000011 seed=469D162D SEL 01->10 MODESEL 0->0 T=173 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-13.5t, first post-write edge rise@+2.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+93.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t rise@+322.5t
+  CLK1: fall@-162.5t rise@-141.5t fall@-120.5t rise@-98.5t fall@-77.5t rise@-56.5t fall@-34.5t rise@-13.5t fall@+7.5t rise@+29.5t fall@+50.5t rise@+71.5t fall@+93.5t rise@+114.5t fall@+135.5t rise@+157.5t fall@+178.5t rise@+199.5t fall@+221.5t rise@+242.5t fall@+263.5t rise@+285.5t fall@+306.5t rise@+327.5t
+  DCS0: fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t
+  DCS1: fall@+93.5t rise@+114.5t fall@+135.5t rise@+157.5t fall@+178.5t rise@+199.5t fall@+221.5t rise@+242.5t fall@+263.5t rise@+285.5t fall@+306.5t rise@+327.5t
+observations_static.log load-row=3 static Q=00000012 seed=229532C6 SEL 10->01 MODESEL 0->0 T=198 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+66.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+18.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-189.5t fall@-173.5t rise@-157.5t fall@-141.5t rise@-125.5t fall@-109.5t rise@-93.5t fall@-77.5t rise@-61.5t fall@-45.5t rise@-29.5t fall@-13.5t rise@+2.5t fall@+18.5t rise@+34.5t fall@+50.5t rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t
+  CLK1: rise@-194.5t fall@-173.5t rise@-152.5t fall@-130.5t rise@-109.5t fall@-88.5t rise@-66.5t fall@-45.5t rise@-24.5t fall@-2.5t rise@+18.5t fall@+39.5t rise@+61.5t fall@+82.5t rise@+103.5t fall@+125.5t rise@+146.5t fall@+167.5t rise@+189.5t fall@+210.5t rise@+231.5t fall@+253.5t rise@+274.5t fall@+295.5t
+  DCS0: rise@+66.5t fall@+82.5t rise@+98.5t fall@+114.5t rise@+130.5t fall@+146.5t rise@+162.5t fall@+178.5t rise@+194.5t fall@+210.5t rise@+226.5t fall@+242.5t rise@+258.5t fall@+274.5t rise@+290.5t fall@+306.5t
+  DCS1: rise@-194.5t fall@-173.5t rise@-152.5t fall@-130.5t rise@-109.5t fall@-88.5t rise@-66.5t fall@-45.5t rise@-24.5t fall@-2.5t rise@+18.5t
+observations_static.log load-row=3 static Q=00000013 seed=8C344A03 SEL 01->10 MODESEL 0->0 T=131 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-0.5t, first post-write edge fall@+15.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+100.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-128.5t fall@-112.5t rise@-96.5t fall@-80.5t rise@-64.5t fall@-48.5t rise@-32.5t fall@-16.5t rise@-0.5t fall@+15.5t rise@+31.5t fall@+47.5t rise@+63.5t fall@+79.5t rise@+95.5t fall@+111.5t rise@+127.5t fall@+143.5t rise@+159.5t fall@+175.5t rise@+191.5t fall@+207.5t rise@+223.5t fall@+239.5t rise@+255.5t fall@+271.5t rise@+287.5t fall@+303.5t rise@+319.5t fall@+335.5t rise@+351.5t fall@+367.5t
+  CLK1: rise@-133.5t fall@-112.5t rise@-91.5t fall@-69.5t rise@-48.5t fall@-27.5t rise@-5.5t fall@+15.5t rise@+36.5t fall@+58.5t rise@+79.5t fall@+100.5t rise@+122.5t fall@+143.5t rise@+164.5t fall@+186.5t rise@+207.5t fall@+228.5t rise@+250.5t fall@+271.5t rise@+292.5t fall@+314.5t rise@+335.5t fall@+356.5t
+  DCS0: rise@-128.5t fall@-112.5t rise@-96.5t fall@-80.5t rise@-64.5t fall@-48.5t rise@-32.5t fall@-16.5t rise@-0.5t fall@+15.5t
+  DCS1: fall@+100.5t rise@+122.5t fall@+143.5t rise@+164.5t fall@+186.5t rise@+207.5t fall@+228.5t rise@+250.5t fall@+271.5t rise@+292.5t fall@+314.5t rise@+335.5t fall@+356.5t
+observations_static.log load-row=3 static Q=00000014 seed=A3D82317 SEL 10->01 MODESEL 0->0 T=151 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=7/8
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+77.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+18.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t rise@+333.5t fall@+349.5t
+  CLK1: rise@-151.5t fall@-130.5t rise@-109.5t fall@-87.5t rise@-66.5t fall@-45.5t rise@-23.5t fall@-2.5t rise@+18.5t fall@+40.5t rise@+61.5t fall@+82.5t rise@+104.5t fall@+125.5t rise@+146.5t fall@+168.5t rise@+189.5t fall@+210.5t rise@+232.5t fall@+253.5t rise@+274.5t fall@+296.5t rise@+317.5t fall@+338.5t
+  DCS0: rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t rise@+333.5t fall@+349.5t
+  DCS1: rise@-151.5t fall@-130.5t rise@-109.5t fall@-87.5t rise@-66.5t fall@-45.5t rise@-23.5t fall@-2.5t rise@+18.5t
+observations_static.log load-row=3 static Q=00000015 seed=B0E0EDA0 SEL 01->10 MODESEL 0->0 T=160 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-14.5t, first post-write edge fall@+1.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=6/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+65.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-158.5t rise@-142.5t fall@-126.5t rise@-110.5t fall@-94.5t rise@-78.5t fall@-62.5t rise@-46.5t fall@-30.5t rise@-14.5t fall@+1.5t rise@+17.5t fall@+33.5t rise@+49.5t fall@+65.5t rise@+81.5t fall@+97.5t rise@+113.5t fall@+129.5t rise@+145.5t fall@+161.5t rise@+177.5t fall@+193.5t rise@+209.5t fall@+225.5t rise@+241.5t fall@+257.5t rise@+273.5t fall@+289.5t rise@+305.5t fall@+321.5t rise@+337.5t
+  CLK1: fall@-147.5t rise@-126.5t fall@-105.5t rise@-83.5t fall@-62.5t rise@-41.5t fall@-19.5t rise@+1.5t fall@+22.5t rise@+44.5t fall@+65.5t rise@+86.5t fall@+108.5t rise@+129.5t fall@+150.5t rise@+172.5t fall@+193.5t rise@+214.5t fall@+236.5t rise@+257.5t fall@+278.5t rise@+300.5t fall@+321.5t rise@+342.5t
+  DCS0: fall@-158.5t rise@-142.5t fall@-126.5t rise@-110.5t fall@-94.5t rise@-78.5t fall@-62.5t rise@-46.5t fall@-30.5t rise@-14.5t fall@+1.5t
+  DCS1: fall@+65.5t rise@+86.5t fall@+108.5t rise@+129.5t fall@+150.5t rise@+172.5t fall@+193.5t rise@+214.5t fall@+236.5t rise@+257.5t fall@+278.5t rise@+300.5t fall@+321.5t rise@+342.5t
+observations_static.log load-row=3 static Q=00000016 seed=9CC7BA70 SEL 10->01 MODESEL 0->0 T=240 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+62.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-6.5t, first post-write edge fall@+14.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: fall@-241.5t rise@-225.5t fall@-209.5t rise@-193.5t fall@-177.5t rise@-161.5t fall@-145.5t rise@-129.5t fall@-113.5t rise@-97.5t fall@-81.5t rise@-65.5t fall@-49.5t rise@-33.5t fall@-17.5t rise@-1.5t fall@+14.5t rise@+30.5t fall@+46.5t rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t
+  CLK1: fall@-241.5t rise@-220.5t fall@-198.5t rise@-177.5t fall@-156.5t rise@-134.5t fall@-113.5t rise@-92.5t fall@-70.5t rise@-49.5t fall@-28.5t rise@-6.5t fall@+14.5t rise@+35.5t fall@+57.5t rise@+78.5t fall@+99.5t rise@+121.5t fall@+142.5t rise@+163.5t fall@+185.5t rise@+206.5t fall@+227.5t rise@+249.5t
+  DCS0: rise@+62.5t fall@+78.5t rise@+94.5t fall@+110.5t rise@+126.5t fall@+142.5t rise@+158.5t fall@+174.5t rise@+190.5t fall@+206.5t rise@+222.5t fall@+238.5t rise@+254.5t
+  DCS1: fall@-241.5t rise@-220.5t fall@-198.5t rise@-177.5t fall@-156.5t rise@-134.5t fall@-113.5t rise@-92.5t fall@-70.5t rise@-49.5t fall@-28.5t rise@-6.5t fall@+14.5t rise@+35.5t
+observations_static.log load-row=3 static Q=00000017 seed=9057D5CF SEL 01->10 MODESEL 0->0 T=207 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-15.5t, first post-write edge fall@+0.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+107.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-207.5t fall@-191.5t rise@-175.5t fall@-159.5t rise@-143.5t fall@-127.5t rise@-111.5t fall@-95.5t rise@-79.5t fall@-63.5t rise@-47.5t fall@-31.5t rise@-15.5t fall@+0.5t rise@+16.5t fall@+32.5t rise@+48.5t fall@+64.5t rise@+80.5t fall@+96.5t rise@+112.5t fall@+128.5t rise@+144.5t fall@+160.5t rise@+176.5t fall@+192.5t rise@+208.5t fall@+224.5t rise@+240.5t fall@+256.5t rise@+272.5t fall@+288.5t
+  CLK1: fall@-191.5t rise@-170.5t fall@-148.5t rise@-127.5t fall@-106.5t rise@-84.5t fall@-63.5t rise@-42.5t fall@-20.5t rise@+0.5t fall@+21.5t rise@+43.5t fall@+64.5t rise@+85.5t fall@+107.5t rise@+128.5t fall@+149.5t rise@+171.5t fall@+192.5t rise@+213.5t fall@+235.5t rise@+256.5t fall@+277.5t rise@+299.5t
+  DCS0: rise@-207.5t fall@-191.5t rise@-175.5t fall@-159.5t rise@-143.5t fall@-127.5t rise@-111.5t fall@-95.5t rise@-79.5t fall@-63.5t rise@-47.5t fall@-31.5t rise@-15.5t fall@+0.5t rise@+16.5t fall@+32.5t
+  DCS1: fall@+107.5t rise@+128.5t fall@+149.5t rise@+171.5t fall@+192.5t rise@+213.5t fall@+235.5t rise@+256.5t fall@+277.5t rise@+299.5t
+observations_static.log load-row=3 static Q=00000018 seed=A831E4B4 SEL 10->01 MODESEL 0->0 T=180 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=6/7
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+55.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-3.5t, first post-write edge fall@+18.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-168.5t fall@-152.5t rise@-136.5t fall@-120.5t rise@-104.5t fall@-88.5t rise@-72.5t fall@-56.5t rise@-40.5t fall@-24.5t rise@-8.5t fall@+7.5t rise@+23.5t fall@+39.5t rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t
+  CLK1: rise@-173.5t fall@-152.5t rise@-131.5t fall@-109.5t rise@-88.5t fall@-67.5t rise@-45.5t fall@-24.5t rise@-3.5t fall@+18.5t rise@+39.5t fall@+60.5t rise@+82.5t fall@+103.5t rise@+124.5t fall@+146.5t rise@+167.5t fall@+188.5t rise@+210.5t fall@+231.5t rise@+252.5t fall@+274.5t rise@+295.5t fall@+316.5t
+  DCS0: rise@+55.5t fall@+71.5t rise@+87.5t fall@+103.5t rise@+119.5t fall@+135.5t rise@+151.5t fall@+167.5t rise@+183.5t fall@+199.5t rise@+215.5t fall@+231.5t rise@+247.5t fall@+263.5t rise@+279.5t fall@+295.5t rise@+311.5t fall@+327.5t
+  DCS1: rise@-173.5t fall@-152.5t rise@-131.5t fall@-109.5t rise@-88.5t fall@-67.5t rise@-45.5t fall@-24.5t rise@-3.5t fall@+18.5t rise@+39.5t
+observations_static.log load-row=3 static Q=00000019 seed=181651B3 SEL 01->10 MODESEL 0->0 T=179 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=5/5
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+93.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t rise@+269.5t fall@+285.5t rise@+301.5t fall@+317.5t
+  CLK1: fall@-162.5t rise@-141.5t fall@-119.5t rise@-98.5t fall@-77.5t rise@-55.5t fall@-34.5t rise@-13.5t fall@+8.5t rise@+29.5t fall@+50.5t rise@+72.5t fall@+93.5t rise@+114.5t fall@+136.5t rise@+157.5t fall@+178.5t rise@+200.5t fall@+221.5t rise@+242.5t fall@+264.5t rise@+285.5t fall@+306.5t rise@+328.5t
+  DCS0: rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t
+  DCS1: fall@+93.5t rise@+114.5t fall@+136.5t rise@+157.5t fall@+178.5t rise@+200.5t fall@+221.5t rise@+242.5t fall@+264.5t rise@+285.5t fall@+306.5t rise@+328.5t
+observations_static.log load-row=3 static Q=0000001A seed=2DCF354A SEL 10->01 MODESEL 0->0 T=202 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady 0->CLK0 pre=fit post=fit; observed tail=CLK0 rises/falls=5/6
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge rise@+53.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady CLK1->1 pre=fit post=fit; observed tail=1 rises/falls=0/0
+    transition rule unspecified; last pre-write edge rise@-15.5t, first post-write edge fall@+5.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-202.5t fall@-186.5t rise@-170.5t fall@-154.5t rise@-138.5t fall@-122.5t rise@-106.5t fall@-90.5t rise@-74.5t fall@-58.5t rise@-42.5t fall@-26.5t rise@-10.5t fall@+5.5t rise@+21.5t fall@+37.5t rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t rise@+277.5t fall@+293.5t
+  CLK1: rise@-186.5t fall@-165.5t rise@-143.5t fall@-122.5t rise@-101.5t fall@-79.5t rise@-58.5t fall@-37.5t rise@-15.5t fall@+5.5t rise@+26.5t fall@+48.5t rise@+69.5t fall@+90.5t rise@+112.5t fall@+133.5t rise@+154.5t fall@+176.5t rise@+197.5t fall@+218.5t rise@+240.5t fall@+261.5t rise@+282.5t fall@+304.5t
+  DCS0: rise@+53.5t fall@+69.5t rise@+85.5t fall@+101.5t rise@+117.5t fall@+133.5t rise@+149.5t fall@+165.5t rise@+181.5t fall@+197.5t rise@+213.5t fall@+229.5t rise@+245.5t fall@+261.5t rise@+277.5t fall@+293.5t
+  DCS1: rise@-186.5t fall@-165.5t rise@-143.5t fall@-122.5t rise@-101.5t fall@-79.5t rise@-58.5t fall@-37.5t rise@-15.5t fall@+5.5t rise@+26.5t
+observations_static.log load-row=3 static Q=0000001B seed=8B9F9F70 SEL 01->10 MODESEL 0->0 T=240 (times relative to control write, 1t=5ns)
+  DCS0 CLK0_LOW steady-only: OK; steady CLK0->0 pre=fit post=fit; observed tail=0 rises/falls=0/0
+    transition rule unspecified; last pre-write edge fall@-2.5t, first post-write edge rise@+13.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  DCS1 CLK1_HIGH steady-only: OK; steady 1->CLK1 pre=fit post=fit; observed tail=CLK1 rises/falls=3/4
+    transition rule unspecified; last pre-write edge unresolved, first post-write edge fall@+82.5t
+    missing=0 extra=0 runts=0 same-bin=0 multi-count=0 repeated-polarity=0 unordered-packets=0 legacy-runt-count=0 legacy-repeated-count=0
+  CLK0: rise@-242.5t fall@-226.5t rise@-210.5t fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t rise@+45.5t fall@+61.5t rise@+77.5t fall@+93.5t rise@+109.5t fall@+125.5t rise@+141.5t fall@+157.5t rise@+173.5t fall@+189.5t rise@+205.5t fall@+221.5t rise@+237.5t fall@+253.5t
+  CLK1: rise@-237.5t fall@-215.5t rise@-194.5t fall@-173.5t rise@-151.5t fall@-130.5t rise@-109.5t fall@-87.5t rise@-66.5t fall@-45.5t rise@-23.5t fall@-2.5t rise@+18.5t fall@+40.5t rise@+61.5t fall@+82.5t rise@+104.5t fall@+125.5t rise@+146.5t fall@+168.5t rise@+189.5t fall@+210.5t rise@+232.5t fall@+253.5t
+  DCS0: rise@-242.5t fall@-226.5t rise@-210.5t fall@-194.5t rise@-178.5t fall@-162.5t rise@-146.5t fall@-130.5t rise@-114.5t fall@-98.5t rise@-82.5t fall@-66.5t rise@-50.5t fall@-34.5t rise@-18.5t fall@-2.5t rise@+13.5t fall@+29.5t
+  DCS1: fall@+82.5t rise@+104.5t fall@+125.5t rise@+146.5t fall@+168.5t rise@+189.5t fall@+210.5t rise@+232.5t fall@+253.5t
+Summary: {"bad_records": 3, "departures": 0, "records": 80, "unqualified": 0, "unresolved_records": 1}
+Switch rule=measured, relative edge tolerance=1t
+Records by input/load row: {"observations_static.log:row1": 27, "observations_static.log:row2": 27, "observations_static.log:row3": 26}
+  DCS0/CLK0_LOW/steady-only: {"counter_inconsistent_events": 1, "departures": 0, "events": 80, "extra": 0, "missing": 0, "multiple": 1, "raw_repeated_polarity": 2, "raw_runts": 2, "repeated_polarity": 0, "runts": 1, "same_bin": 1, "unordered_packets": 2, "unqualified": 0}
+  DCS1/CLK1_HIGH/steady-only: {"counter_inconsistent_events": 0, "departures": 0, "events": 80, "extra": 0, "missing": 0, "multiple": 0, "raw_repeated_polarity": 2, "raw_runts": 2, "repeated_polarity": 0, "runts": 1, "same_bin": 1, "unordered_packets": 1, "unqualified": 0}
+Settled outputs by MODESEL/SEL (only observed combinations):
+  DCS0/CLK0_LOW/MODESEL=0/SEL=01: {"events": 35, "expected=CLK0": 35, "fit": 35, "observed=CLK0": 35}
+  DCS0/CLK0_LOW/MODESEL=0/SEL=10: {"events": 38, "expected=0": 38, "fit": 38, "observed=0": 38}
+  DCS0/CLK0_LOW/MODESEL=0/SEL=11: {"events": 2, "expected=0": 2, "fit": 2, "observed=0": 2}
+  DCS0/CLK0_LOW/MODESEL=1/SEL=01: {"events": 3, "expected=CLK0": 3, "fit": 3, "observed=CLK0": 3}
+  DCS0/CLK0_LOW/MODESEL=1/SEL=10: {"events": 1, "expected=CLK1": 1, "fit": 1, "observed=CLK1": 1}
+  DCS0/CLK0_LOW/MODESEL=1/SEL=11: {"events": 1, "expected=0": 1, "fit": 1, "observed=0": 1}
+  DCS1/CLK1_HIGH/MODESEL=0/SEL=01: {"events": 35, "expected=1": 35, "fit": 35, "observed=1": 35}
+  DCS1/CLK1_HIGH/MODESEL=0/SEL=10: {"events": 38, "expected=CLK1": 38, "fit": 38, "observed=CLK1": 38}
+  DCS1/CLK1_HIGH/MODESEL=0/SEL=11: {"events": 2, "expected=1": 2, "fit": 2, "observed=1": 2}
+  DCS1/CLK1_HIGH/MODESEL=1/SEL=01: {"events": 3, "expected=CLK0": 3, "fit": 3, "observed=CLK0": 3}
+  DCS1/CLK1_HIGH/MODESEL=1/SEL=10: {"events": 1, "expected=CLK1": 1, "fit": 1, "observed=CLK1": 1}
+  DCS1/CLK1_HIGH/MODESEL=1/SEL=11: {"events": 1, "expected=0": 1, "fit": 1, "observed=0": 1}
+Pulse counts use separate single-edge bins. Unordered packets have no inferred width/order;
+legacy counts flatten rises before falls and can manufacture zero-width runts/repeated polarities.
+MODESEL/static transients outside the source-switch rule remain steady-only checks.

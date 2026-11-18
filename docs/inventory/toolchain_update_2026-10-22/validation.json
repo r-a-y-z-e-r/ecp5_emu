@@ -1,0 +1,41 @@
+{
+  "rust_unit_tests": {
+    "passed": 18
+  },
+  "portable_catalogue_tests": {
+    "passed": 15
+  },
+  "native_integration_tests": {
+    "passed": 3
+  },
+  "fresh_toolchain_flow": {
+    "device": "LFE5U-85F",
+    "config_bit_unpacked_CRAM_equal": true,
+    "EBR_INIT_equal": true,
+    "frames": 13294,
+    "bits_per_frame": 1136,
+    "hardware_programmed": false,
+    "artifact_hashes": {
+      "top.json": "dd02c2d7457370d9e4fcbde7df2eb42a5ba9afc79bb88c087c260212375d5d1d",
+      "top.config": "d1a6bf24846c2ca9b476d03dfe731923c45d54c61b15922e51e48e2c291f7467",
+      "top.bit": "11569c46ad9bd36dfbd5d2e252e7d3bef888fdfd3d2e8db21f9febca46d438be",
+      "unpacked.config": "27607e823c5de682b9a5c451204f3cbd95c5f4b4c9ffae079e04f37fcfc3e031"
+    }
+  },
+  "base_inventory": "148_tile_types_matched_native_catalogue",
+  "resource_constructors": "502_constructors_96282_ports_exact_match",
+  "runtime_model_changes": false,
+  "compatibility_edits": [
+    "prefer_new_opt_homebrew_pytrellis_in_bridge_inventory_and_integration_test",
+    "classify_new_Yosys_preload_failure_and_latch_policy_in_research_probes"
+  ],
+  "no_hardware_programming": true,
+  "default_inventory_logic_collector": {
+    "status": "matched",
+    "byte_identical_files": 18
+  },
+  "new_logic_repeat": {
+    "status": "matched",
+    "byte_identical_files": 18
+  }
+}

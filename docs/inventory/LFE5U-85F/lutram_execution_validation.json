@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "device": "LFE5U-85F",
+  "scope": "standard A/B distributed RAM + C RAMW on the automatic CRAM plan; complete architecture/storage retained, not full physical FPGA validation",
+  "trellis_revision": "a31ff7042e712c0e2ad217054116ce2c4995f5c7",
+  "database_revision": "9754ff473bfaa1e6edfaf57ce13bd447c76a88f6",
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration_manifest_sha256": "a2d6dd35448a8957e85b0dbaf4e99a5394476a8c5b73cbc7354a738fe66a4a8c",
+  "tests": {
+    "regular": {
+      "passed": 66,
+      "log": "target/lutram/regular-tests.log",
+      "log_sha256": "da24fcabbda46c61f9ed15c2b469bef9fdb9aaabe4450e127bd2b62c868dc3ef"
+    },
+    "lutram_native": {
+      "passed": 1,
+      "log": "target/lutram/native-test.log",
+      "log_sha256": "9e8f88342023e2320b65cec4eef391efabbcea708b9c90829f083018b60d00b9"
+    },
+    "previous_integrations": {
+      "passed": 6,
+      "log": "target/lutram/integration-tests.log",
+      "log_sha256": "1e2ff951bb6880b4d6e78f631b97402d339d8fc5910e7c65d0bb6e10c2ff2d54"
+    }
+  },
+  "total_passed": 73,
+  "commands": [
+    "cargo test --release --locked",
+    "cargo test --release --locked --test lutram_native -- --ignored",
+    "cargo test --release --locked --test automatic_compile --test event_kernel --test device_model --test configuration_state --test resource_decode --test whole_chip -- --ignored --skip real_bitstream_matches_text_config --test-threads=1"
+  ],
+  "quality": [
+    {
+      "command": "cargo clippy --all-targets --locked -- -D warnings",
+      "result": "passed",
+      "log_sha256": "511818aeb88b63d354dcc7d788cd97c7d5341ec69aee4190dacb028a46eee09c"
+    },
+    {
+      "command": "cargo fmt --check",
+      "result": "passed"
+    }
+  ],
+  "native_checks": {
+    "timestamps_per_variant": 2048,
+    "variants": 3,
+    "logical_memories": 2,
+    "bits_per_memory": 64,
+    "write_edges_per_memory": [
+      436,
+      289
+    ],
+    "prewrite_collision_captures": 108,
+    "all_initial_and_written_addresses": true,
+    "CLI_observations": 7,
+    "local_reset_preserves_memory": true
+  },
+  "coverage_boundaries": [
+    "ready-unknown user-mode profile only; no physical startup or user GSR",
+    "C INIT must be zero; shared A/B/C mode must be unambiguous",
+    "RAMW C FF with SD=1 retains clock/reset/CE but receives explicitly unmodelled X data; four such FF in full native test",
+    "direct C F/OFX and DPRAM OFX are unsupported",
+    "same-time FF/RAM prewrite policy and conservative X/Z are digital policies, not hardware timing validation",
+    "no SED/CRC integration, no partial reconfiguration or full save/resume",
+    "ECP5_TEST_BIT external blink not rerun"
+  ],
+  "unresolved_research_questions": 78,
+  "prepared_hardware_cases": 37,
+  "hardware_results": 0,
+  "source_files": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "415939d78fb9c2be2e93155bca929c2ea2bafd692e6531be2d721a8c0565048a"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "0ebd1b0a1a2e68dbcce7fe35a0d3416415375c638e51483d2543cd6d51434229"
+    },
+    {
+      "path": "src/chip.rs",
+      "sha256": "49dfacefcd91ff3c4f4e805bbd4bdea0bd10cce0d0ab124b4eb069bf413b6f07"
+    },
+    {
+      "path": "src/command_emulate.rs",
+      "sha256": "8f438e95040592637ec47278ffb0fbc06cb7915c5f3c629428d1198ba5180473"
+    },
+    {
+      "path": "src/compile/index.rs",
+      "sha256": "3be54ef2f88ad4f6ed4deed42206bbaf168a56944083a00b24c7138edaa1e0cc"
+    },
+    {
+      "path": "src/compile/lutram.rs",
+      "sha256": "2f7e81d58b6f91fb6c8497c3bfe0bdef5a4c0b6ba54f8861d094f0548584cd8d"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "5d4684a196164920d8a5b705721d8e13824bf32ec46c8ec52e74b87700f3de65"
+    },
+    {
+      "path": "src/config.rs",
+      "sha256": "05aef34ea21bc2a088a7712f5f2aab15bd04eebeec808520eeb2134af59580d4"
+    },
+    {
+      "path": "src/database.rs",
+      "sha256": "c371bfb63036298a6efd43019629a04ece4872b215a5e13d2d24c49b6fe3e0ae"
+    },
+    {
+      "path": "src/decode.rs",
+      "sha256": "050b68a9df9ddc6b9979836ec331bc895403fe043f46a7ae19b51553352a762d"
+    },
+    {
+      "path": "src/image.rs",
+      "sha256": "c28f5c1be16dbf3660897d10811da206014c2a2a2ea7ee162a7093b9dbfeefca"
+    },
+    {
+      "path": "src/kernel/lutram.rs",
+      "sha256": "061e77be4f951ba203e58a2edb524d08900fbc5675317449cf43614c0c00726e"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "d871d36161c0b79e2994458f40cd7de4d56e8fd94c60f3f01b387a5ee8f2fc0b"
+    },
+    {
+      "path": "src/kernel/time.rs",
+      "sha256": "b074808e21d9e17a76781c5caceb5725e2d7885733f0f47049d3df420982acb1"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "1e02194491531befec3cc55ea777a611311863a9c1bacea05e4215d464d9ea58"
+    },
+    {
+      "path": "src/logic.rs",
+      "sha256": "fcfb4832f26404cac14fdda000c5fd1c1054f1ccd390878d65692c56f52fe3e9"
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "2c1ae5dc5bc1276232a61d0f4142791c8a631bb6e5ab5502bb28d8619e179bcd"
+    },
+    {
+      "path": "src/model/catalog.rs",
+      "sha256": "e9fa827256f502a34d1a1847b03171d66b53a8262b8cbafd73bc2ae88c50330e"
+    },
+    {
+      "path": "src/model/mod.rs",
+      "sha256": "3d43ae45781f9993dad9a00127ac8ad271564d239e567602b93c989188e696a4"
+    },
+    {
+      "path": "src/model/topology.rs",
+      "sha256": "e97b9d84ab48f9931f9416dd1c46fde6d1420465237a3115b895fe6485418374"
+    },
+    {
+      "path": "src/prepared.rs",
+      "sha256": "2a0d5a7e9bbf5cb35a57e2a775ef2c8ef234369e5b357cbb3eed41ba3f2f54a8"
+    },
+    {
+      "path": "src/routing.rs",
+      "sha256": "22e145dae8329a824934c6ae1ca5633ca7d4d99105077dec70315b400938d700"
+    },
+    {
+      "path": "src/sim.rs",
+      "sha256": "95418c839ed8bf15ad21ba07ade922bd31356d650c3b024a5a9b9f161e02e142"
+    },
+    {
+      "path": "src/state.rs",
+      "sha256": "d16853c4b956f7d57f2036464ea0854604dfa565f7711e3aea9cab07ece58c37"
+    },
+    {
+      "path": "tests/automatic_compile.rs",
+      "sha256": "7c2dc7ebd4dac3f806ce7d3ecc5ef8eaae9def7a68fadc20ebacb47fb916ace1"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "93bc37ca835f630b4bd9bb1ec5fcb4e42849fb58abd2aee063fe1d681d7f563a"
+    },
+    {
+      "path": "tests/configuration_state.rs",
+      "sha256": "e46e6747471b773cb24f89466d4ad3bad2b3d3c901de452db522a972c52b7588"
+    },
+    {
+      "path": "tests/device_model.rs",
+      "sha256": "c9c51d5f34cee5adc15000de4709b18cfbb8edd61b75f5e973be115e74209be9"
+    },
+    {
+      "path": "tests/event_kernel.rs",
+      "sha256": "acd263e2560786fc5feaff5c5f00b409a0417b7b60a0cdbb66952c2a90159032"
+    },
+    {
+      "path": "tests/lutram.rs",
+      "sha256": "83c82dbafd629e4e92fb10f45aebc11c1a158e87e928840062cac13209a8ea36"
+    },
+    {
+      "path": "tests/lutram_native.rs",
+      "sha256": "4f7026d8757663c846f52ad6db6d8539e0c324bca32d48a6be7c19a09e095a6b"
+    },
+    {
+      "path": "tests/resource_decode.rs",
+      "sha256": "e67d0a3291244ec874b9f2af7a1d7782d6287e00f20bc42bf022e68d2066d2e8"
+    },
+    {
+      "path": "tests/whole_chip.rs",
+      "sha256": "0c51c12169796314b149f0b5be8b48fc1fa7c1cd5142e365951498de2dd81456"
+    }
+  ],
+  "documents": [
+    {
+      "path": "PLAN.md",
+      "sha256": "3653b5a7a7165ef856b90f5f7d2c19612dd213ff929ecf049f2160aacba46c2d"
+    },
+    {
+      "path": "docs/LUTRAM_EXECUTION.md",
+      "sha256": "0beb285855d9ea1ee702ec1d718ed0af3d6e9c8f786c23e136402a266c71a10c"
+    },
+    {
+      "path": "docs/AUTOMATIC_EXECUTION.md",
+      "sha256": "c2182022c25e2673b7e65fb3d523c6ae10db69dea9a40a888d0c0b893daa8f76"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "1a4bd058faa81dba08bea177146927447365d3cb4d3f0a5778490419c2979d9b"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "41c17b3a978ae4748db25e354971c52fe6c59f8e8849224d4f7a61acc0ecbf7e"
+    },
+    {
+      "path": "docs/PLC_LUTRAM.md",
+      "sha256": "09a232eacded46c9bf6d2cdd22b140ec1d5b18deb1aaba77f1a7b0de628f03e6"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "b875de56f30240f9a3070784284b3f70f2ea054bc0a93602149aba5ff9f848e0"
+    },
+    {
+      "path": "docs/CORE_STATUS.md",
+      "sha256": "515e263bb144c554f506d2104853db2c3961a559ca8d37b1bdacbc6c84b9696a"
+    },
+    {
+      "path": "docs/EVENT_KERNEL.md",
+      "sha256": "6b95b0135c0dd382b183133730273b4cba39e7ffb7686e25c1d74563d1b41f29"
+    },
+    {
+      "path": "docs/STRUCTURAL_MODEL.md",
+      "sha256": "83d298688140e0fc790ec4c0fb97092100f3f1ebc805ebeb53aa892278325af9"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/lutram_execution_native.json",
+      "sha256": "17950dc416fa2a3bf5edeb0874876c7699f83b7c01f73a84ad4cacfb9e19b6e6"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/lutram_execution_cli.json",
+      "sha256": "c397d969c2c40fbd54ebda658f5431e6507413e66ef228c79cbe70fe8c1ae2f6"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/lutram_execution_fixture.v",
+      "sha256": "332d2fbaf61124adae548e52fe3bb761454fde14782278e5e0f0c16b98a7c9e9"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/lutram_execution_fixture.lpf",
+      "sha256": "b07a8b2bb72803428de5fd66fcb4fab34dfbf57727b0ee87c1e7020fb2fe09e8"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/lutram_execution_events.json",
+      "sha256": "5ca5d927c594b3b637aad0396d455e7ed771d80717d168dd80ee909d1202b646"
+    }
+  ]
+}

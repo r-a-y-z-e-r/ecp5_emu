@@ -1,0 +1,8 @@
+# 60 s of wall time; the first 2 MiB pass precedes UP.
+# Each button is held for 1 s to pass the 10 ms debounce.
+0 rate max
+0 run
+1 board 3d
+12 button 3 down   # UP: full 32 MiB passes
+13 button 3 up
+60 quit

@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "status": "not_run",
+  "cases": [
+    {
+      "id": "HB01",
+      "questions": [
+        "B01"
+      ],
+      "subject": "PDP36 output half order",
+      "factors": {
+        "path": [
+          "direct_DP_width_A36",
+          "public_PDPW16KD"
+        ],
+        "pattern": [
+          "asymmetric_half_words",
+          "walking_one_across_36_bits"
+        ],
+        "data_origin": [
+          "INIT",
+          "live_write_then_separate_read"
+        ]
+      },
+      "prepare": "Use unequal 18-bit halves, including 0x15555/0x2aaaa; hold writes inactive while reading. Preserve the native DOA/DOB routing and INIT manifest.",
+      "stimulus": "Read both raw 18-bit output groups at several addresses through each construction path; include a narrow-read reference build.",
+      "observe": "Native output halves and logical DO[35:0], before and after public-port interpretation.",
+      "decision": "Determine the array-to-native-pin order first, then locate any tool-path permutation; keep INIT and live-write results separate."
+    },
+    {
+      "id": "HB02",
+      "questions": [
+        "B02"
+      ],
+      "subject": "Core CE gating",
+      "factors": {
+        "port": [
+          "A",
+          "B"
+        ],
+        "ce": [
+          0,
+          1
+        ],
+        "operation": [
+          "read",
+          "write"
+        ]
+      },
+      "prepare": "NOREG, matching CS, reset inactive, OCE high; initialize address X to M and seed output from different address Y.",
+      "stimulus": "Change address/data at an inactive edge, pulse the active edge with each CE value, then inspect X through the other port at a separate time.",
+      "observe": "Port output and stored word X; record disabled-read and disabled-write cases independently.",
+      "decision": "Establish which core state holds with CE low, using the other port to distinguish output holding from suppressed writing."
+    },
+    {
+      "id": "HB03",
+      "questions": [
+        "B02"
+      ],
+      "subject": "OCE and pipeline drain",
+      "factors": {
+        "port": [
+          "A",
+          "B"
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "ce": [
+          0,
+          1
+        ],
+        "oce": [
+          0,
+          1
+        ]
+      },
+      "prepare": "Matching CS, reset inactive; place distinct known values in core output and optional output stage using a preceding read sequence.",
+      "stimulus": "Apply all CE/OCE combinations for one edge and then several edges, including CE=0/OCE=1 to drain a pending read.",
+      "observe": "Output after every edge, with a separate build exposing the NOREG reference.",
+      "decision": "Distinguish an independently clock-enabled output stage from CE-qualified OCE; test OCE in NOREG without assuming it is ignored."
+    },
+    {
+      "id": "HB04",
+      "questions": [
+        "B02"
+      ],
+      "subject": "CS comparison and pipeline gating",
+      "factors": {
+        "decode": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "cs_match": [
+          false,
+          true
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "operation": [
+          "read",
+          "write"
+        ]
+      },
+      "prepare": "Seed different core/output values and initialize target memory; preserve decoded CSDECODE and raw CS in the build manifest.",
+      "stimulus": "For each configured decode sweep all eight raw CS codes; use CE=OCE=1 and include draining an already pending read after CS becomes nonmatching.",
+      "observe": "Read capture, pending-stage output and a later noncolliding read of attempted write locations.",
+      "decision": "Separate comparator polarity from the effects of CS on core access and the optional output register."
+    },
+    {
+      "id": "HB05",
+      "questions": [
+        "B02",
+        "B03"
+      ],
+      "subject": "Synchronous reset priority and writing",
+      "factors": {
+        "port": [
+          "A",
+          "B"
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "ce": [
+          0,
+          1
+        ],
+        "oce": [
+          0,
+          1
+        ],
+        "cs_match": [
+          false,
+          true
+        ],
+        "we": [
+          0,
+          1
+        ]
+      },
+      "prepare": "RESETMODE=SYNC; nonzero memory and output values, both write groups enabled; keep the other port idle at the tested edge.",
+      "stimulus": "Assert reset across one active edge for every enable combination, then release and read target memory through the other port at a separate time.",
+      "observe": "Output at the reset edge, after release, and array contents after the attempted simultaneous write.",
+      "decision": "Measure reset versus CE/OCE/CS and distinguish resetting output from suppressing the write."
+    },
+    {
+      "id": "HB06",
+      "questions": [
+        "B02",
+        "B03"
+      ],
+      "subject": "Asynchronous reset assertion and release",
+      "factors": {
+        "port": [
+          "A",
+          "B"
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "release": [
+          "SYNC",
+          "ASYNC"
+        ],
+        "ce": [
+          0,
+          1
+        ],
+        "oce": [
+          0,
+          1
+        ],
+        "cs_match": [
+          false,
+          true
+        ]
+      },
+      "prepare": "RESETMODE=ASYNC; seed nonzero outputs and memory, stop both EBR clocks away from an edge; use a separate running observation clock.",
+      "stimulus": "Assert and deassert reset without EBR edges, then supply four separately recorded EBR edges; repeat with an attempted write while reset is active.",
+      "observe": "Reset response without a clock, output at each release edge and later array contents; capture both write-domain and read-domain behavior in PDP separately.",
+      "decision": "Establish release edge count and enable dependence; do not infer hidden synchronizer stages solely from the parameter name."
+    },
+    {
+      "id": "HB07",
+      "questions": [
+        "B04"
+      ],
+      "subject": "DP18 partial-write outputs",
+      "factors": {
+        "port": [
+          "A",
+          "B"
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "write_mode": [
+          "NORMAL",
+          "WRITETHROUGH",
+          "READBEFOREWRITE"
+        ],
+        "be": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "prepare": "Use three distinct words: memory M, held output Q and input D; toggle the ninth bit of each group too. Reset inactive, CE/OCE high and matching CS.",
+      "stimulus": "Apply each mask during a single WE-high edge; capture immediately after the core cycle and after the output stage, then read the array without a collision.",
+      "observe": "Each output bit and stored bit; include BE=00 while WE remains high.",
+      "decision": "Distinguish held output, whole DIN, old word and merged word, including behavior of the zero-mask write cycle."
+    },
+    {
+      "id": "HB08",
+      "questions": [
+        "B01",
+        "B04"
+      ],
+      "subject": "PDP36 masks and read views",
+      "factors": {
+        "read_width": [
+          1,
+          2,
+          4,
+          9,
+          18,
+          36
+        ],
+        "be": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "cew": [
+          0,
+          1
+        ]
+      },
+      "prepare": "Initialize all four nine-bit groups with different values; log native BE-to-ADA routing and keep read/write edges separate.",
+      "stimulus": "Attempt one write per mask and CEW value, then read all affected subwords using each width in separate builds.",
+      "observe": "Stored groups, ninth bits, address matching and 36-bit output order.",
+      "decision": "Verify each native write group, CEW gating and narrow/wide views without imposing a DP-style WEA rule on PDP."
+    },
+    {
+      "id": "HB09",
+      "questions": [
+        "B05",
+        "B06"
+      ],
+      "subject": "Cross-port collisions",
+      "factors": {
+        "operation": [
+          "read_A_write_B",
+          "write_A_read_B",
+          "write_A_write_B"
+        ],
+        "relation": [
+          "same_word",
+          "disjoint_words",
+          "overlap_group",
+          "disjoint_group_same_wide_word"
+        ],
+        "data": [
+          "opposite_values",
+          "same_values"
+        ],
+        "phase": [
+          "coincident",
+          "A_before_B",
+          "B_before_A"
+        ]
+      },
+      "prepare": "Reinitialize between repetitions, use declared clock constraints and a repeat counter, and first establish baseline results with widely separated edges.",
+      "stimulus": "Repeat each access pair with controlled phase steps; capture local clock observations and returned data rather than choosing a port priority.",
+      "observe": "Read corruption, written contents, masks and variability across repetitions and phases.",
+      "decision": "Document the observed collision region and affected bits under measured conditions; deterministic results do not override vendor-undefined behavior."
+    },
+    {
+      "id": "HB10",
+      "questions": [
+        "B05",
+        "B06"
+      ],
+      "subject": "Mixed-width overlap",
+      "factors": {
+        "width_A": [
+          1,
+          2,
+          4,
+          9,
+          18
+        ],
+        "width_B": [
+          1,
+          2,
+          4,
+          9,
+          18
+        ],
+        "relation": [
+          "shared_INIT_bits",
+          "disjoint_bits_same_INIT_word",
+          "disjoint_INIT_words"
+        ]
+      },
+      "prepare": "Select addresses from the canonical INIT mapping and mark structurally inapplicable relations; preserve raw address contacts and masks.",
+      "stimulus": "Run noncolliding reads/writes first, then overlap experiments using separate builds for every port-width pair.",
+      "observe": "All affected canonical INIT bits, including ninth bits invisible through narrow ports.",
+      "decision": "Validate view matching separately from collision granularity; equal numerical addresses are not a collision oracle."
+    },
+    {
+      "id": "HB11",
+      "questions": [
+        "B07"
+      ],
+      "subject": "Undocumented narrow READBEFOREWRITE",
+      "factors": {
+        "width": [
+          1,
+          2,
+          4
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "write_mode": [
+          "NORMAL",
+          "WRITETHROUGH",
+          "READBEFOREWRITE"
+        ]
+      },
+      "prepare": "Use explicit primitive/configuration settings and confirm resulting CRAM, to avoid a synthesizer rewriting the requested mode.",
+      "stimulus": "Alternate writes and reads at the same address with distinct old, new and held-output values.",
+      "observe": "Output and stored data for each mode, including the documented-mode controls.",
+      "decision": "Record measured behavior for the actual device and configuration; retain the undocumented status."
+    },
+    {
+      "id": "HB12",
+      "questions": [
+        "B08",
+        "B03"
+      ],
+      "subject": "Configuration, INIT and GSR effects",
+      "factors": {
+        "mode": [
+          "DP",
+          "PDP"
+        ],
+        "regmode": [
+          "NOREG",
+          "OUTREG"
+        ],
+        "gsr": [
+          "ENABLED",
+          "DISABLED"
+        ],
+        "init": [
+          "zeros",
+          "ones",
+          "asymmetric_fingerprint"
+        ]
+      },
+      "prepare": "Use a free-running observer and a manifest of configuration completion, INIT, GSR and first EBR clock; avoid resetting the observer with the signal being measured.",
+      "stimulus": "Capture after configuration before the first EBR edge, then first reads, local reset and a separately controlled GSR pulse.",
+      "observe": "Startup output, first-read latency and preservation of initialized/stored memory; do not merge POR, local reset and user GSR into one event.",
+      "decision": "Separate initialized array contents from core-latch/output-register state and configuration startup."
+    }
+  ]
+}

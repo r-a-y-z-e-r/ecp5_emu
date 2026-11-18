@@ -1,0 +1,95 @@
+HY04 DTR two-valued follow-up to 4f2fd17, 2026-11-17
+
+Frozen board evidence, unchanged:
+  hy04.v, hy04.config, observations.log
+  Original capture: run.py hy04.bit Y4 3 90 --settle-seconds 2
+  Three complete SRAM loads, 730 unique windows/load, 731 startup replays/load.
+  ULX3S LFE5U-85F, CABGA381; 25 MHz observer (40 ns), UART L4 115200 8N1.
+  Initial/final 0x9E; 601 drift samples/load over 60.000048 s, all 0x9E.
+  No hardware or serial access, RTL regeneration or routing in this follow-up.
+  Original hashes of board HDL/config/log and unchanged tools verified.
+
+Reproduce analysis from this directory:
+  PYTHONDONTWRITEBYTECODE=1 python3 hy04_analyse.py --selftest
+  PYTHONDONTWRITEBYTECODE=1 python3 hy04_analyse.py observations.log --board-reading > analysis.txt
+The parser validates B/C/E groups and sample sums and deduplicates startup.
+1995 isolated conversions retain 173 one-tick dwell values in the raw evidence.
+Omitting only those dwells yields 00..1E,9E in every isolated conversion.
+
+Timing selection (observer ticks, prior to nominal 2.5-tick correction):
+  analysis.txt gives min/median/max and max-minus-min spread for every step.
+  Pooled 01 offset from fall: 27/88/101 ticks, spread 74 ticks (2.96 us).
+  Pooled 1E offset from fall: 748/809/823 ticks, spread 75 ticks (3.00 us).
+  Subsequent increments: 7947 intervals of 24 ticks, 49908 of 25 ticks;
+  median 25 ticks (1 us). First-count median exceeds this period by 63 ticks.
+  One-tick pulse kind 1 alone starts at 76/88/101, not one count period.
+  Thus increments are regular only after variable startup; a uniform count
+  anchored at fall is not supported within one or two observer cycles.
+  All 173 transient codes occur one tick before an adjacent persistent count
+  and contain only mixtures of its old/new bits: consistent with bus skew of
+  one increment, not extra count steps. Internal cause remains unproven.
+
+Exact selected model:
+  Before any pulse: full compile::Board::dtr_code, None -> measured 0x9E.
+  Assertion: clear all eight bits to 00 immediately and cancel pending work.
+  While high: hold 00 indefinitely; no repeated completion.
+  Definite high -> low: hold 00 until exactly fall + 32,740,000 ps, then
+  publish the full profile byte. Bit 7 stays zero throughout conversion.
+  This is the requested fallback for nonuniform fall-relative steps.
+  Completion uses the pooled median (821 - 2.5) * 40,000 ps; actual board
+  completion has width/phase variation, which the fixed policy does not fit.
+  Retrigger cancels old timer generations and restarts, without a queue.
+  X/Z controls cancel work and hold 00 until a definite high -> low.
+  Initial high/X/Z: 00; only known high -> low starts a conversion.
+  Active DTR never emits X. DTR.MODE NONE still has inactive X outputs.
+  Fast mode remains refused; src/kernel/fast.rs is unchanged.
+  No Celsius scale, analog noise model or sub-40 ns timing claim.
+
+Validation host: rserv via tools/rserv.sh. Before every sync:
+  touch src/kernel/dtr.rs tests/event_kernel.rs tests/dtr_native.rs
+No cargo or Rust build was run on the Mac. Formatting ran on rserv; only
+its formatted tests/dtr_native.rs was copied back (the other edits already
+conformed to rustfmt).
+
+Targeted checks, including ignored native tests:
+  cargo test --release --test event_kernel dtr_ -- --include-ignored --nocapture
+  4 passed, 0 failed, 0 ignored, 28 filtered out.
+  cargo test --release --test dtr_native -- --include-ignored --nocapture
+  3 passed, 0 failed, 0 ignored.
+An initial targeted pass also passed before the native interval calculations
+were generalized to derive their bounds from the selected board record.
+The final targeted pass covers the delivered code.
+
+Kernel coverage: initial/profile overrides, four measured high widths, every
+40 ns acquisition through conversion, exact deadline, restart pairs at
+10/30/60 us and eight starts at 20 us, stale timers, alias routing, initial
+high and X/Z cancellation/recovery. Every active output remains two-valued.
+Native coverage: exact hy04.config, planner dispatch, native DTR wires,
+profile override and fast refusal. Capture-only test independently checks
+1995 persistent sequences, count timing and all 173 old/new-bit transients.
+The native conversion test selects a real one-tick board record at the pooled
+median and compares every post-fall observer acquisition's done flag and the
+full final byte. Physical edges are in (k-3,k-2] observer ticks, and the model
+completion lies inside that record's 40 ns interval. It also checks 00 at
+one picosecond before the deadline and the profile exactly at the deadline.
+Before done, low bits are compared with the selected zero fallback, not
+claimed equal to the board's raw count. No full three-second UART execution.
+
+Whole workspace suite, invoked exactly once in this follow-up:
+  cargo test --release --workspace
+  381 passed, 0 failed, 195 ignored across 77 result groups.
+  Includes GUI: 84 passed, 0 failed, 6 ignored; doc tests passed.
+Then, on rserv:
+  cargo fmt --all -- --check
+  cargo clippy --release --workspace --all-targets -- -D warnings
+  Both passed. The combined validation command exited 0.
+  PYTHONDONTWRITEBYTECODE=1 python3 docs/inventory/LFE5U-85F/hy04_dtr/hy04_analyse.py --selftest
+  PYTHONDONTWRITEBYTECODE=1 python3 docs/inventory/LFE5U-85F/hy04_dtr/hy04_analyse.py docs/inventory/LFE5U-85F/hy04_dtr/observations.log --board-reading > /tmp/hy04-analysis-rserv.txt
+  cmp docs/inventory/LFE5U-85F/hy04_dtr/analysis.txt /tmp/hy04-analysis-rserv.txt
+  Selftest passed and generated report matched analysis.txt byte for byte.
+
+Changed execution code: src/kernel/dtr.rs only. Tests: event_kernel.rs and
+dtr_native.rs. Updated HY04 analysis, README, tool record, coverage CSV,
+system research contract and current root/system/resource/validation docs.
+No branch switch, stash, reset or commit. src/kernel/fast.rs and all frozen
+board artifacts remain unchanged. SHA256SUMS generated last.

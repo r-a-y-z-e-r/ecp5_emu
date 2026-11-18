@@ -1,0 +1,9 @@
+tile,site_index,site_name,label_family,vendor_pos_row,vendor_pos_col,resource_id,relation,rule
+MIB_R10C0:BANKREF7,0,BCINRD7,BCINRD,-173,0,,unresolved,unresolved
+MIB_R10C0:BANKREF7,1,BCLVDSO7,BCLVDSO,-172,0,,unresolved,unresolved
+MIB_R10C126:BANKREF2,0,BCINRD2,BCINRD,-173,126,,unresolved,unresolved
+MIB_R10C126:BANKREF2,1,BCLVDSO2,BCLVDSO,-172,126,,unresolved,unresolved
+MIB_R95C125:BANKREF3,0,BCINRD3,BCINRD,93,126,,unresolved,unresolved
+MIB_R95C125:BANKREF3,1,BCLVDSO3,BCLVDSO,94,126,,unresolved,unresolved
+MIB_R95C1:BANKREF6,0,BCINRD6,BCINRD,93,0,,unresolved,unresolved
+MIB_R95C1:BANKREF6,1,BCLVDSO6,BCLVDSO,94,0,,unresolved,unresolved

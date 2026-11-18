@@ -1,0 +1,13 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+  python3 hb11_gen.py > hb11.v; python3 hb11_gen.py s > hb11s.v
+  yosys -p 'read_verilog hb11.v; synth_ecp5 -top top -json hb11.json'
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c), --85k --package CABGA381 --seed 1
+  nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json hb11.json --lpf hb11.lpf --textcfg hb11.config
+ecppack: prjtrellis a31ff7042e712c0e2ad217054116ce2c4995f5c7
+  ecppack hb11.config hb11.bit; ecppack hb11s.config hb11s.bit
+openFPGALoader v1.1.1
+pyserial 3.5, /dev/cu.usbserial-<FTDI-serial> at 115200 8N1
+  python3 run.py hb11.bit R 3 25; python3 run.py hb11s.bit R 3 8
+Python 3 (hb11_gen.py, hb11_analyse.py)
+  python3 hb11_analyse.py observations.log; python3 hb11_analyse.py observations_s.log s
+ecp5_emu fast mode and event kernel, 2026-11-16 working tree (tests/ebr_narrow_rbw_native.rs)

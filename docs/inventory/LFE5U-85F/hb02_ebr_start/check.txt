@@ -1,0 +1,2 @@
+6 loads: 3 gave a line, 3 none in their window; distinct lines: 1
+every unread latch reads 0, and e7 its word from the first edge

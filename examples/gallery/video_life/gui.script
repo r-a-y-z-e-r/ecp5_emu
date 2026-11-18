@@ -1,0 +1,22 @@
+# video_life in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# The Monitor window opens by itself when the design drives the GPDI pads.
+# For the first 15 s nothing is pressed, so the frames the window decodes from
+# the pads are those of the power-on start pattern, whose CRCs the design
+# prints on the UART (and the board printed after a restart): gui_run.py
+# compares them. Then the buttons, each held for a second: the design
+# debounces them for 10 ms (250 000 clocks), which the window may take most
+# of a second to run.
+0 rate max
+0 run
+1 board 3d
+15 button 1 down   # FIRE1: fill the world with random soup
+16 button 1 up
+23 button 2 down   # FIRE2: pause
+24 button 2 up
+27 button 6 down   # RIGHT: one generation while paused
+28 button 6 up
+31 button 2 down   # FIRE2: run again
+32 button 2 up
+35 button 3 down   # UP: faster (4 -> 2 frames per generation)
+36 button 3 up
+50 quit

@@ -1,0 +1,20 @@
+# led_tennis in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# Attract mode plays both sides; FIRE1 then starts a game: the left player
+# (FIRE1, under D7) against the computer on the right. The script cannot
+# see the ball, so its hits land at random: some return the ball, some are
+# faults. Buttons are held for a second, past the 10 ms debounce at the
+# window's speed.
+0 rate max
+0 run
+1 board 3d
+20 button 1 down   # FIRE1: start a human game
+21 button 1 up
+26 button 1 down   # swings at the ball
+27 button 1 up
+32 button 1 down
+33 button 1 up
+38 button 1 down
+39 button 1 up
+44 button 1 down
+45 button 1 up
+55 quit

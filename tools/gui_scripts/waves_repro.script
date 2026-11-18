@@ -1,0 +1,16 @@
+# Reproduce the waves path on picorv32_console; use gui_record.py run --start-screen.
+# top_routed.json has cpu.reg_pc[2] and all 64 bits cpu.count_cycle[0]..[63].
+1 open target/reference/picorv32_console/top.config
+# Times below count from when the opened design is ready.
+0 rate real
+1 run
+8 waves open
+9 watch cpu.reg_pc[2]
+10 watch cpu.count_cycle
+12 point 0.5 0.5
+12.5 watch pointed
+13 watch shown
+20 rate 4
+35 rate max
+45 pause
+50 quit

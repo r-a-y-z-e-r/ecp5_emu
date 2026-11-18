@@ -1,0 +1,13 @@
+
+# Products in the DSP blocks: a 16x16 dot product and a 32x32 product, on the UART.
+# Build: ecp5_emu build examples/ulx3s/mac (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/mac; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/mac.
+
+[project]
+name = "mac"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

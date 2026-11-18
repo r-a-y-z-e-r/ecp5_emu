@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "PIO": 365,
+  "banks": 8,
+  "PIO_per_bank": {
+    "0": 56,
+    "1": 48,
+    "2": 48,
+    "3": 64,
+    "4": 24,
+    "6": 64,
+    "7": 48,
+    "8": 13
+  },
+  "field_fragments": 4883,
+  "composed_fields": 4451,
+  "bit_references": 15435,
+  "unique_cram_bits": 8928,
+  "encoding_alias_groups": 373,
+  "default_discrepancies": 328,
+  "option_polarity_conflicts": 0,
+  "native_setting_descriptors": 439,
+  "native_encoding_groups": 4064,
+  "shared_bits_in_selection": 1204,
+  "shared_bits_with_other_families": 448,
+  "bank_control_fixed_templates": 32,
+  "bank_control_unbound_references": 8,
+  "runtime_changed": false,
+  "hardware": "not_run",
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "cfdaaa5856ca902e73b92470f387b398b2b3ace6abadb1585e8e3e6fee53bb23"
+    },
+    {
+      "source": "inventory",
+      "sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6"
+    },
+    {
+      "source": "pytrellis",
+      "sha256": "7da85afab08068e0aabcdd04858309f2bedfe678583f17c0136363b48f998654"
+    },
+    {
+      "source": "bindings",
+      "sha256": "674c7c155e6b5e6cb756342663a49fcc5c6297d04b3c6673c16086962113e702"
+    },
+    {
+      "source": "audit",
+      "sha256": "407151ca2abd62e19081ca6a385f5decb637a0364ee64741bacf008d70e0e92b"
+    },
+    {
+      "source": "bind_fields",
+      "sha256": "69af393c7930252451a606d6bc447292c931c7acd3a0228b906012d2849c573a"
+    },
+    {
+      "source": "sysIO",
+      "sha256": "47830ffc0c7a879c8458431a1861c82a7656d0015092826337a317a6b08ee5cc"
+    },
+    {
+      "source": "power",
+      "sha256": "dda61d1f808612a9be30f6724791f52ee2361a5c25905ffd78913dded9c844cb"
+    },
+    {
+      "source": "writer",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    },
+    {
+      "source": "bank_fuzzer",
+      "sha256": "a4694e42b303f5d7c70d39719eb9a680db69f3329c46776d97420c88b5d3a359"
+    },
+    {
+      "source": "contract",
+      "sha256": "0a340bf39135f7c02b58cac1a723beefbe24969ae38724d921a278aed357e55d"
+    }
+  ]
+}

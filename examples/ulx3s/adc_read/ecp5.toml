@@ -1,0 +1,12 @@
+# MAX11125 ADC readings on the UART, with channel zero on the LEDs.
+# Build: ecp5_emu build examples/ulx3s/adc_read (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/adc_read; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/adc_read.
+
+[project]
+name = "adc_read"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

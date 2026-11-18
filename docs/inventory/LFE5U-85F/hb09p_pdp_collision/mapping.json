@@ -1,0 +1,1906 @@
+{
+  "yosys": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+  "command": "read_verilog CASE.v; synth_ecp5 -top top -json CASE.json",
+  "cases": [
+    {
+      "width": 16,
+      "depth": 32,
+      "blocks": [],
+      "cells": {
+        "LUT4": 18,
+        "TRELLIS_DPR16X4": 8,
+        "TRELLIS_FF": 16
+      }
+    },
+    {
+      "width": 16,
+      "depth": 64,
+      "blocks": [],
+      "cells": {
+        "L6MUX21": 16,
+        "LUT4": 68,
+        "PFUMX": 32,
+        "TRELLIS_DPR16X4": 16,
+        "TRELLIS_FF": 16
+      }
+    },
+    {
+      "width": 16,
+      "depth": 128,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 16,
+      "depth": 256,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 16,
+      "depth": 512,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 16,
+      "depth": 1024,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 16,
+      "depth": 2048,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 2
+      }
+    },
+    {
+      "width": 16,
+      "depth": 4096,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 4
+      }
+    },
+    {
+      "width": 18,
+      "depth": 32,
+      "blocks": [],
+      "cells": {
+        "LUT4": 20,
+        "TRELLIS_DPR16X4": 10,
+        "TRELLIS_FF": 18
+      }
+    },
+    {
+      "width": 18,
+      "depth": 64,
+      "blocks": [],
+      "cells": {
+        "L6MUX21": 18,
+        "LUT4": 76,
+        "PFUMX": 36,
+        "TRELLIS_DPR16X4": 20,
+        "TRELLIS_FF": 18
+      }
+    },
+    {
+      "width": 18,
+      "depth": 128,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 18,
+      "depth": 256,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 18,
+      "depth": 512,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 18,
+      "depth": 1024,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 1
+      }
+    },
+    {
+      "width": 18,
+      "depth": 2048,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 2
+      }
+    },
+    {
+      "width": 18,
+      "depth": 4096,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 4,
+        "LUT4": 20,
+        "TRELLIS_FF": 1
+      }
+    },
+    {
+      "width": 32,
+      "depth": 32,
+      "blocks": [],
+      "cells": {
+        "LUT4": 34,
+        "TRELLIS_DPR16X4": 16,
+        "TRELLIS_FF": 32
+      }
+    },
+    {
+      "width": 32,
+      "depth": 64,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 1,
+        "LUT4": 41,
+        "PFUMX": 2,
+        "TRELLIS_FF": 72
+      }
+    },
+    {
+      "width": 32,
+      "depth": 128,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "LUT4": 38,
+        "PFUMX": 1,
+        "TRELLIS_FF": 73
+      }
+    },
+    {
+      "width": 32,
+      "depth": 256,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 2,
+        "LUT4": 46,
+        "PFUMX": 4,
+        "TRELLIS_FF": 74
+      }
+    },
+    {
+      "width": 32,
+      "depth": 512,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 5,
+        "LUT4": 52,
+        "PFUMX": 8,
+        "TRELLIS_FF": 75
+      }
+    },
+    {
+      "width": 32,
+      "depth": 1024,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 2
+      }
+    },
+    {
+      "width": 32,
+      "depth": 2048,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 4
+      }
+    },
+    {
+      "width": 32,
+      "depth": 4096,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.4",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.5",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.6",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.7",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            4,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 8
+      }
+    },
+    {
+      "width": 36,
+      "depth": 32,
+      "blocks": [],
+      "cells": {
+        "LUT4": 38,
+        "TRELLIS_DPR16X4": 18,
+        "TRELLIS_FF": 36
+      }
+    },
+    {
+      "width": 36,
+      "depth": 64,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 3,
+        "LUT4": 46,
+        "PFUMX": 4,
+        "TRELLIS_FF": 80
+      }
+    },
+    {
+      "width": 36,
+      "depth": 128,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "LUT4": 42,
+        "PFUMX": 1,
+        "TRELLIS_FF": 81
+      }
+    },
+    {
+      "width": 36,
+      "depth": 256,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 3,
+        "LUT4": 53,
+        "PFUMX": 6,
+        "TRELLIS_FF": 82
+      }
+    },
+    {
+      "width": 36,
+      "depth": 512,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "PDPW16KD",
+          "widths_AB": [
+            36,
+            36
+          ],
+          "write_modes_AB": [
+            "NORMAL (default)",
+            "NORMAL (default)"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "1",
+            "OCEA": "0",
+            "OCEB": "1",
+            "WEA": "1",
+            "WEB": "0"
+          },
+          "same_clock": true
+        }
+      ],
+      "cells": {
+        "DP16KD": 1,
+        "L6MUX21": 5,
+        "LUT4": 56,
+        "PFUMX": 8,
+        "TRELLIS_FF": 83
+      }
+    },
+    {
+      "width": 36,
+      "depth": 1024,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            18,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 2
+      }
+    },
+    {
+      "width": 36,
+      "depth": 2048,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 4
+      }
+    },
+    {
+      "width": 36,
+      "depth": 4096,
+      "blocks": [
+        {
+          "cell": "m.0.0",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.1",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.2",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.3",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.4",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.5",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.6",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        },
+        {
+          "cell": "m.0.7",
+          "primitive": "DP16KD",
+          "physical_mode": "DP16KD",
+          "widths_AB": [
+            9,
+            18
+          ],
+          "write_modes_AB": [
+            "READBEFOREWRITE",
+            "READBEFOREWRITE"
+          ],
+          "reg_modes_AB": [
+            "NOREG",
+            "NOREG"
+          ],
+          "reset": "ASYNC",
+          "release": "ASYNC",
+          "controls": {
+            "CEA": "1",
+            "CEB": "0",
+            "OCEA": "1",
+            "OCEB": "1",
+            "WEA": "signal",
+            "WEB": "0"
+          },
+          "same_clock": false
+        }
+      ],
+      "cells": {
+        "DP16KD": 8,
+        "LUT4": 38,
+        "TRELLIS_FF": 1
+      }
+    }
+  ]
+}

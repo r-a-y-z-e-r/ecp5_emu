@@ -1,0 +1,8 @@
+[project]
+name = "riscv_terminal"
+top = "top"
+[sources]
+# picorv32.v is a symlink to ../../ulx3s/picorv32_console/picorv32.v;
+# pll.v, tmds.v and video_out.v are symlinks to ../../ulx3s/hdmi_moving/.
+verilog = ["top.v", "picorv32.v", "pll.v", "tmds.v", "video_out.v"]
+constraints = "top.lpf"

@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "scope": "Fabric FF, CCU2 and output-selection research; not emulator execution or silicon validation",
+  "reused_native_interface_audit": {
+    "PLC_count": 10455,
+    "FF_count": 83640,
+    "port_templates": 48,
+    "source": "plc_research/evidence_report.json"
+  },
+  "configuration": {
+    "fields": 50,
+    "enum_options": 111,
+    "route_options": 194,
+    "native_bit_groups_checked": 305,
+    "raw_control_patterns": 64,
+    "shared_bit_positions": 20,
+    "output_context_rows": 16
+  },
+  "carry_exit_count": 10455,
+  "carry_exit_status": {
+    "next_PLC_FCI_candidate;MODE_required": 10370,
+    "no_PLC_BEL_at_endpoint;termination_open_S04": 85
+  },
+  "FF_model_variants": 256,
+  "FF_startup_observations": 256,
+  "FF_transition_observations": 14336,
+  "FF_GSR_parameter_trace_pairs": 128,
+  "CCU2_model_variants": 164,
+  "CCU2_input_vectors_per_variant": 512,
+  "CCU2_output_triples": 83968,
+  "carry_adapter_observations": 6,
+  "synthesis_cases": 16,
+  "synthesis_status": {
+    "ABC9_nonconstant_INIT_rejection": 1,
+    "implicit_latch_rejected_by_default": 1,
+    "legacy_noabc9_does_not_bypass_ABC9": 1,
+    "requires_asyncprld_opt_in": 1,
+    "synthesized": 12
+  },
+  "yosys_version": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+  "hardware": "not_run",
+  "runtime_changed": false,
+  "native_catalogue": {
+    "tile_types_checked": 1,
+    "checks": [
+      "mux_sinks",
+      "mux_sources",
+      "fixed_connections",
+      "word_names",
+      "word_widths",
+      "word_defaults",
+      "enum_names",
+      "enum_defaults",
+      "enum_options"
+    ]
+  },
+  "source_files": [
+    {
+      "source": "collector",
+      "sha256": "9b2b0c1b3afaf7b862773e778ab6d5d79af5bc0923eb5a0031c64e1da76cc833"
+    },
+    {
+      "source": "probe_helper",
+      "sha256": "b5754f180df21e0aae760312c8774b297510a1edd6b0d99a5eb1d6a1031a6b05"
+    },
+    {
+      "source": "contract",
+      "sha256": "0125c071bfe83055a79c84ec86f9b7345babcfa4d09b6a6978f21b88516aa564"
+    },
+    {
+      "source": "inventory_helpers",
+      "sha256": "b0837badfbd7d1db7126840c2d4fd8398da472035c0d831a10aae7c487c29af8"
+    },
+    {
+      "source": "PLC_helpers",
+      "sha256": "31473cdd9f9db9993aa9f438dee4b5832b3f7899e8e1e7ef9884b1bd192fcb60"
+    },
+    {
+      "source": "inventory",
+      "sha256": "d4c96a575b1805b2b4f538d9115750d0be335594bd34afb5851ea56d45bf13c6"
+    },
+    {
+      "source": "PLC2_database",
+      "sha256": "22f6120c97d793a40b3dd06d700be0befe1686d24ac67af4fb0f9aa5287ff621"
+    },
+    {
+      "source": "wire_probe",
+      "sha256": "ab5d7354dd55c72fbf037ca6459bd0a13a145db9cf642aec3f5c86ba2ece5acc"
+    },
+    {
+      "source": "wire_probe_source",
+      "sha256": "4f53b06ea33c5a8b4a004aa2d45908dd0b76b578d2dae7f8553989979883cb7f"
+    },
+    {
+      "source": "pytrellis",
+      "sha256": "7da85afab08068e0aabcdd04858309f2bedfe678583f17c0136363b48f998654"
+    },
+    {
+      "source": "libtrellis",
+      "sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06"
+    },
+    {
+      "source": "carry-wire-requests.txt",
+      "sha256": "a528fcf59715538d6d49d9c049b31fb4f625bb9fff19dc091a67b460d8068172"
+    },
+    {
+      "source": "carry-wire-endpoints.tsv",
+      "sha256": "2ac9e9a99a31fdaabd32f08be26ffb364673baf3f5c16e0c64015b5c93059cfc"
+    },
+    {
+      "source": "carry-wire-probe.log",
+      "sha256": "380fb6009d56ce1904a18de07e33603329756ffe196d14fdee9b2f1f3099b5b4"
+    },
+    {
+      "source": "PLC_audit:native_ports.csv",
+      "sha256": "d1ed8d2071ed66ddf2c67a314dcc685f83ca73f9a8077de28c64b3eddba13a8f"
+    },
+    {
+      "source": "PLC_audit:instances.csv",
+      "sha256": "63afab019a18ac248fdc684dba2d8fc773da78795a641ac3dcefed1d88467c83"
+    },
+    {
+      "source": "PLC_audit:shared_bits.csv",
+      "sha256": "caaf84b80824409754e9ae7d70617c69c79d91ec03a9ed5ed8c6aba6a6bfc18b"
+    },
+    {
+      "source": "PLC_audit:evidence_report.json",
+      "sha256": "bfd25ab9acde2edfe8683d94cceb8c08ad08694cfdb2bc28070d8783f07efbb9"
+    },
+    {
+      "source": "yosys:common_sim.vh",
+      "sha256": "3d55fcb1b659f9a99e081d0e8cd3e0a74fb8d659644103db9ad10b04a64ce75d"
+    },
+    {
+      "source": "yosys:cells_map_trellis.v",
+      "sha256": "ea608cada6e640bf555afb9a5328dfddf23e03137bf1e67ba80d195c113d2126"
+    },
+    {
+      "source": "yosys:cells_ff.vh",
+      "sha256": "9d3c49d7a470d87a8888ffef5312334f5a4b9567d71bffb33782f88a59c296f4"
+    },
+    {
+      "source": "yosys:latches_map.v",
+      "sha256": "57937005a20c2faf1e3a5843694254b3c5be82045e3e33ec0ed527de69d2a5aa"
+    },
+    {
+      "source": "yosys:ccu2c_sim.vh",
+      "sha256": "178b1310b2e70768114e1c795118529055799df1ad650a09d0613b3856a81ccc"
+    },
+    {
+      "source": "yosys:arith_map_ccu2c.v",
+      "sha256": "46f63e58251d21088783e817c609aed5ecdf075b938d038de1b310c4ee89bbe6"
+    },
+    {
+      "source": "nextpnr:pack.cc",
+      "sha256": "8877eaf3154bad794a2ca23888c571f1969b5320ec5b99b6de6939c7428fba7b"
+    },
+    {
+      "source": "nextpnr:bitstream.cc",
+      "sha256": "93079a1307e637b2cbc52bb66392368266c5dd614ecad05a7e7edee5a88d96c6"
+    },
+    {
+      "source": "nextpnr:arch_place.cc",
+      "sha256": "c02c90bd4cc62e2b63d544ce97913c080afcd679ed053d3de4773f9fcc5f4764"
+    },
+    {
+      "source": "nextpnr:cells.cc",
+      "sha256": "2ce5bd6b820a57d0ab5d4b1820bce3e2af74479859fbacb5ee88f66cc3ac31b9"
+    },
+    {
+      "source": "fuzzer:005-reg_config",
+      "sha256": "360e94d1b560c08faf23010cafdecc874294f6a11691472c61c341ce652e37e1"
+    },
+    {
+      "source": "fuzzer:007-plc2_cemux",
+      "sha256": "4642c509d29db9d67b3bf3c317004bdf460402473b6db4973e5bfa238dc570a5"
+    },
+    {
+      "source": "fuzzer:008-plc2_clkmux",
+      "sha256": "5f59ec9c3f19abcff22f1ce9509784cfe721c8dacf093a17143d57a566dcd513"
+    },
+    {
+      "source": "fuzzer:009-plc2_lsr",
+      "sha256": "1d5708b1b805909913b149c8c3ad7b0a3419e4486be0434e1a40d959a9cac62f"
+    },
+    {
+      "source": "fuzzer:011-ccu2_inject",
+      "sha256": "cfc1b15f36fc359419c471ac57419c43c7d7cffda5755af5dc3a018861904d08"
+    },
+    {
+      "source": "libraries",
+      "sha256": "339c0d511bf6b576f775118f47f3bda6235e24fcc8633b17e87c661ff6f263fd"
+    },
+    {
+      "source": "datasheet",
+      "sha256": "26570f8bb2b800123120829cacd75d818d7a985d573797610521b5bda2e293c3"
+    },
+    {
+      "source": "lattice_gsr",
+      "sha256": "d7c73b0697ea45330950d9f2364937a528202ecc55e2c8945c5c7c1e716e77b6"
+    },
+    {
+      "source": "synth_lattice",
+      "sha256": "f9a669b73e23d9772932acc16d346bb4c27c86be22effbb533c78a87d358aeea"
+    },
+    {
+      "source": "ff-models:testbench",
+      "sha256": "5c7632fadade61055bcaa4d38c577b801893999f56247cc61d4a0e8b658ad500"
+    },
+    {
+      "source": "ff-models:trace",
+      "sha256": "34ad57b7b02c3f0bc955a2b7027a1f47c4bb72c4e9749988fab153267821162b"
+    },
+    {
+      "source": "ccu-models:testbench",
+      "sha256": "8a4cf6f0888d1cf0d9f678cbe8412000bfc995cb39f7ce81680a5560b4d0d81d"
+    },
+    {
+      "source": "ccu-models:trace",
+      "sha256": "25bde496023d392bffdc01f87909dfe794e41e71c45c546a53241dd96dfabd7b"
+    },
+    {
+      "source": "synthesis:init0:source",
+      "sha256": "d0c3837fb34b91f797c09934cf893c983e92f414b21ed46e1408e4a8317f3873"
+    },
+    {
+      "source": "synthesis:init0:netlist",
+      "sha256": "5266a2825e5fdfc63c131f2bf3c6f10d0e49b4c7a099a61bcfe6e4066034a4a7"
+    },
+    {
+      "source": "synthesis:init1:source",
+      "sha256": "fdbaf3aedc4397bbf8dcae73f997f8a4dd68d7b3222c82be282ac9f161e79442"
+    },
+    {
+      "source": "synthesis:init1:netlist",
+      "sha256": "85cde569dc0b860931856ddacb00c37746cd31ffb0c7d6357222743c580eab9a"
+    },
+    {
+      "source": "synthesis:init1_with_GSR:source",
+      "sha256": "cc4a963fe467bc5d2d6653e1ba7e52a1cfb91a4f755b5e694fb52b96abed609b"
+    },
+    {
+      "source": "synthesis:init1_with_GSR:netlist",
+      "sha256": "28b06e37946be7c9edce7a932891bc5177a16f5db4def2349d972393e6426dba"
+    },
+    {
+      "source": "synthesis:init1_with_SGSR:source",
+      "sha256": "f23611779b10357dae8a7be853db39ad7de0a4414a7c229541288870c20b6d31"
+    },
+    {
+      "source": "synthesis:init1_with_SGSR:netlist",
+      "sha256": "4f58d6624c02ff4d6ff9d67ed780414a67d4893b5f3b3a1826eb3079fd484d72"
+    },
+    {
+      "source": "synthesis:init1_wire_nogsr:source",
+      "sha256": "638b398e2480999cecac3142f34ca16726f6c1289f002637e758e152867849a6"
+    },
+    {
+      "source": "synthesis:init1_wire_nogsr:netlist",
+      "sha256": "84259cf99ce607c2009177c58ac9b3a3aad8c7f7e10fbe2eff56c02afb5209e5"
+    },
+    {
+      "source": "synthesis:direct_FF_nogsr:source",
+      "sha256": "9c93ae31731d5ee3332ad32bf8935d886ef42db989445b0f84dbbf4be0221df6"
+    },
+    {
+      "source": "synthesis:direct_FF_nogsr:netlist",
+      "sha256": "48a5a06f3cba42bd7c63bafe1ce8015230a77b40742d41878ab348e9eb9919ee"
+    },
+    {
+      "source": "synthesis:falling_enable_low:source",
+      "sha256": "a975a110ba28ea401d9b71cd4bc9b64a49dbebc4383cabd29e84580be36b7eb6"
+    },
+    {
+      "source": "synthesis:falling_enable_low:netlist",
+      "sha256": "7243338ad0262c9346b5a7249398406454698ea9a424f0d9355fc3fbaef92789"
+    },
+    {
+      "source": "synthesis:sync_clear_over_ce:source",
+      "sha256": "31c43dd62e5d45d6f353f4b9a1fe6e1cf053baa700f26ec01257d15b90be627c"
+    },
+    {
+      "source": "synthesis:sync_clear_over_ce:netlist",
+      "sha256": "34d9ff104f7605b73b6d5b7aa084e64847d31e7548c6690168b16c4593ec2432"
+    },
+    {
+      "source": "synthesis:sync_ce_over_clear:source",
+      "sha256": "451e846a215eec36f8660147d405ab6eb59e2bef8ccebdb6fa03b2e19e94cde1"
+    },
+    {
+      "source": "synthesis:sync_ce_over_clear:netlist",
+      "sha256": "b31ea96470ed532c81f93c1ad17119f9f8a93cc9f15ef41fe87313ec5337a9e8"
+    },
+    {
+      "source": "synthesis:async_set_over_ce:source",
+      "sha256": "0375268c7c1ae5d0bda44e3f6661baeeb94163a63d87fedfb8df62f9b04aeb78"
+    },
+    {
+      "source": "synthesis:async_set_over_ce:netlist",
+      "sha256": "6fb22d961a6e7c91d663bdbf881c78761819a3a4d2651b03e198bd4c70f106a9"
+    },
+    {
+      "source": "synthesis:async_preload:source",
+      "sha256": "7494a7994bf7fb9c3cb9312dcb885945fd1f002484c383cf09c6ca496daff7bd"
+    },
+    {
+      "source": "synthesis:async_preload:failure_log",
+      "sha256": "dc38114398865bacd3ddd0a8719ca3b903d8446b285df30f72005f50c789fd2b"
+    },
+    {
+      "source": "synthesis:async_preload_opt_in:source",
+      "sha256": "7494a7994bf7fb9c3cb9312dcb885945fd1f002484c383cf09c6ca496daff7bd"
+    },
+    {
+      "source": "synthesis:async_preload_opt_in:failure_log",
+      "sha256": "02c73125118bc6293a493ba41271846195eb4071f9adaf9064c3ceb569d1fe2b"
+    },
+    {
+      "source": "synthesis:async_preload_noabc9:source",
+      "sha256": "7494a7994bf7fb9c3cb9312dcb885945fd1f002484c383cf09c6ca496daff7bd"
+    },
+    {
+      "source": "synthesis:async_preload_noabc9:failure_log",
+      "sha256": "edb69e8c42e8f8d16d7ed7335dfac48c3328e3176f983145df1ab5d249cb344e"
+    },
+    {
+      "source": "synthesis:latch:source",
+      "sha256": "3f18bd5382e70cda42e1686ac31fca56dce0b3785a0f63257957dd388a50d58f"
+    },
+    {
+      "source": "synthesis:latch:failure_log",
+      "sha256": "7fd3f5c62e01fe8c74319765b8d37442cf31b6f2eeccfad1ad34b861728f81a3"
+    },
+    {
+      "source": "synthesis:latch_permitted:source",
+      "sha256": "3f18bd5382e70cda42e1686ac31fca56dce0b3785a0f63257957dd388a50d58f"
+    },
+    {
+      "source": "synthesis:latch_permitted:netlist",
+      "sha256": "1ee81e582c991cd65a842b2ae02ed1538ee2944e575ad7c61bc1036420c7d1f7"
+    },
+    {
+      "source": "synthesis:explicit_always_latch:source",
+      "sha256": "c4eb9771fe1707c67a5602c668da0dc89de5f345131f7fdeebeeda8ed87f53e0"
+    },
+    {
+      "source": "synthesis:explicit_always_latch:netlist",
+      "sha256": "faccea194b8885aa0b5d5f664cf8b01eb2a355b8af026fa740a4a9db9996195c"
+    },
+    {
+      "source": "yosys",
+      "sha256": "9ed8ea21a37acb95305366fd1c9131e64fc3a5096147cb4beba1d3fade32a1a4"
+    },
+    {
+      "source": "iverilog",
+      "sha256": "bb74f0404b78011746cf7057448c669757f1afa733428abdce79e8aaeaabbac1"
+    },
+    {
+      "source": "vvp",
+      "sha256": "d169f6dce8bb2203e1503c5aecd4ea5d7cc35f69d4a38f07525e7c3e34a1a893"
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "S01",
+      "related": [
+        "L04",
+        "L05"
+      ],
+      "question": "Physical startup/PUR versus user GSR, disabled slice GSR, REGSET and PRLD initialization; assertion/release interaction with local controls and global synchronizer."
+    },
+    {
+      "id": "S02",
+      "related": [
+        "L02"
+      ],
+      "question": "Does asynchronous PRLD follow M continuously while LSR is asserted, or sample on specific events? Which combinations of SD, PRLD and shared M are physically meaningful?"
+    },
+    {
+      "id": "S03",
+      "related": [
+        "L05",
+        "L06"
+      ],
+      "question": "Verify DI/M data selection and shared CE/CLK/LSR/GSR with paired FF and wide-LUT mux use, distinguishing physical constraints from placer conservatism."
+    },
+    {
+      "id": "S04",
+      "related": [
+        "L06"
+      ],
+      "question": "Establish mode-qualified F/OFX/carry outputs, injection codes, noncanonical MODE patterns and chain entry/exit at missing PLC neighbors; empty route patterns alone are insufficient."
+    },
+    {
+      "id": "S05",
+      "related": [
+        "L03"
+      ],
+      "question": "Define digital unknown/contending-control semantics and simultaneous-event policy without treating Verilog if/X scheduling as a physical-chip guarantee."
+    },
+    {
+      "id": "S06",
+      "related": [
+        "L09"
+      ],
+      "question": "Find a physical configuration binding for the datasheet's level-sensitive registers; LUT-feedback latch synthesis does not identify that binding."
+    }
+  ]
+}

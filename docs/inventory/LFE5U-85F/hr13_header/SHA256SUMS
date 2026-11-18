@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+65330c1ed31acbfb8d8adbddd7a1ba9432b2b12b10f73eb1d4541b2c5cb95e2e  README.md
+78c5f2c98ff06dd4715020ec508d0ce97d1f47d3262ba8295a6b17178623fbb5  TOOLS.txt
+d741a848a2723ee7fd0484b1d16343a41ec571f15014edf5d731f481adb0d5d9  observations.log
+de2f65fd35a8172ed9044e7c15b5ba185852b133cdc57016f1d202ec461bdb4c  header_probe.config
+99b38b031c68b330e0ca093c48a312f6c5bc69a0ad9c2396a11501445ebc2d9d  header_probe_driven.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 9798bdd110be806a5201dc5ae1f390c052382d8a2da0f3c03a1d5aef4051477e  header_probe top.bit (target/reference/header_probe, built on the Mac; not stored)
+# Historical digest (artifact unavailable in this record): a12752d23caac0a317e28fca95f522589948eb3d5d3ddd0927e743525edc547b  header_probe/driven top.bit (target/reference/header_probe_driven, built on the Mac; not stored)

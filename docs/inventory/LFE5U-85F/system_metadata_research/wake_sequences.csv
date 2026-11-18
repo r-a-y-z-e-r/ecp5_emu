@@ -1,0 +1,9 @@
+sequence,DONE_EX,phase,signals_released,source
+4,ON,T0,DONE,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+4,ON,T1,GOE,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+4,ON,T2,GWDIS;GSR,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+4,ON,T3,,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+21,OFF,T0,,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+21,OFF,T1,GOE,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+21,OFF,T2,GWDIS;GSR,sysCONFIG_2.5_p49;phase_edge_relation_unspecified
+21,OFF,T3,DONE,sysCONFIG_2.5_p49;phase_edge_relation_unspecified

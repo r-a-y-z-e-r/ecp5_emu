@@ -1,0 +1,20 @@
+
+# PicoRV32 (RV32I) with 8 KB of block RAM, a UART console and the LEDs.
+# Build: ecp5_emu build examples/ulx3s/picorv32_console (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/picorv32_console; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/picorv32_console.
+
+[project]
+name = "picorv32_console"
+top = "top"
+
+[sources]
+verilog = ["picorv32.v", "top.v"]
+constraints = "top.lpf"
+files = []
+
+[memory]
+# The firmware (firmware/build.sh), one byte lane per EBR. They are put in
+# after place and route (ecpbram), so a new firmware needs no new place and
+# route: the same as ecpbram.txt for build.sh and swap.sh.
+images = ["fw0.hex", "fw1.hex", "fw2.hex", "fw3.hex"]

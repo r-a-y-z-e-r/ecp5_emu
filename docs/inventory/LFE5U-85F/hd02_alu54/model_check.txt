@@ -1,0 +1,3 @@
+3 loads, [16384, 16384, 16384] distinct lines, 16384 in all
+16384 steps (2048 opcodes x 8), R differs from the model in 0 []
+flag field values seen: ['0x180']

@@ -1,0 +1,6 @@
+[project]
+name = "hdmi_plasma"
+top = "top"
+[sources]
+verilog = ["top.v", "render.v", "io.v", "pll.v", "tmds.v", "video_out.v"]
+constraints = "top.lpf"

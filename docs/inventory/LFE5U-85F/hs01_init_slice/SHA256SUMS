@@ -1,0 +1,14 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+0aee0f3ca8919e3381cf96e31642253d3dde8994fc033218ee0ea276d1b8fb16  hs01_init.v
+2556d1be3e958526459552419d2d74e265153701227d60a7d510dd2c57419b31  hs01_noclk.v
+956fda40ae83aa33b5a0649dbdfbaa2803bc29e293fec3814586d58165b6c4ad  hs01_repeat.v
+b4ec6ea672a48057175d253819f2c1177265f14b65e0100fc7f730ba82510c1a  ulx3s.lpf
+64f8b6391f35b3b008f5426ac2bca14762773b9067db4a25edfbf822969342be  ulx3s_plain.lpf
+adc727f8d48a7c448660823ef93b9bcab221dd03362ebcc722d1ae58268c9e18  hs01.config
+235e5757dcd880360c7fe0d7d9d8d504d5b91b60c481129077c6adda4ff76436  hs01b.config
+6812e566236b9294bac754107d736e05f703c118627ea661912db1d261be54b0  hs01r.config
+4825d638713478181f67b9ca41689d8e2c68f141dc9cc46cd8f51eb55e35d5e5  twin2.config
+# Historical digest (artifact unavailable in this record): 5aec86ccfa242b9561340aeda0b866af97928b2d1a8c589eee9e6e427a66bc43  hs01.bit
+# Historical digest (artifact unavailable in this record): 9d3a6af6009e4b10f4f7eb950bfc6eef596c7939ce07148a39ea2a375a8074b2  hs01b.bit
+# Historical digest (artifact unavailable in this record): b13d953343ef5aaea476134a97955f3d2d6857839f98a09254c0db5ffbd4bd0c  hs01r.bit
+# Historical digest (artifact unavailable in this record): 2591f7327c1bd33f4edaa6ca777dc458340fb4ea9d876d0fb9327c3d532ad5dd  twin2.bit

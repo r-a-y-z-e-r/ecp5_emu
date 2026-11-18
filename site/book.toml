@@ -1,0 +1,18 @@
+[book]
+title = "ecp5_emu"
+authors = ["r-a-y-z-e-r"]
+language = "en"
+src = "build/src"
+description = "Architecture, execution, and verification of the bitstream-driven ECP5 emulator."
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/r-a-y-z-e-r/ecp5_emu"
+default-theme = "light"
+preferred-dark-theme = "navy"
+
+[output.html.search]
+enable = true

@@ -1,0 +1,2363 @@
+{
+  "all_formats_and_scopes_match": true,
+  "cli_observations": 7,
+  "collision_policy": "settled read sampled by FF before simultaneous RAM write; digital policy, not hardware timing proof",
+  "date": "2026-10-22",
+  "fixture": "two independent 16x4 distributed RAMs; posedge and negedge writes; asynchronous reads; four capturing FF",
+  "hardware_validated": false,
+  "pinmap": {
+    "captured[0]": "B13",
+    "captured[1]": "B15",
+    "captured[2]": "B16",
+    "captured[3]": "B17",
+    "clk_a": "G2",
+    "clk_b": "J4",
+    "di[0]": "A2",
+    "di[1]": "A3",
+    "di[2]": "A4",
+    "di[3]": "A5",
+    "qa[0]": "A6",
+    "qa[1]": "A7",
+    "qa[2]": "A8",
+    "qa[3]": "A9",
+    "qb[0]": "B1",
+    "qb[1]": "B10",
+    "qb[2]": "B11",
+    "qb[3]": "B12",
+    "ra[0]": "A12",
+    "ra[1]": "A13",
+    "ra[2]": "A14",
+    "ra[3]": "A15",
+    "reset": "A11",
+    "wa[0]": "A16",
+    "wa[1]": "A17",
+    "wa[2]": "A18",
+    "wa[3]": "A19",
+    "we": "A10"
+  },
+  "runs": [
+    {
+      "counts": {
+        "carry_halves": 0,
+        "constants": 12,
+        "dcc_bypasses": 1,
+        "flip_flops": 4,
+        "lut4": 4,
+        "lutram_columns": 8,
+        "pio": 28,
+        "ramw": 2,
+        "routes": 561,
+        "wide_muxes": 0
+      },
+      "final_memory_a": [
+        10,
+        10,
+        0,
+        0,
+        10,
+        5,
+        10,
+        0,
+        0,
+        5,
+        10,
+        10,
+        0,
+        5,
+        0,
+        5
+      ],
+      "final_memory_b": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:75b3a9e6bf562a55",
+        "decoded_sha256": "76d50b8f70da8604c0319b7e43e6d386169a4481605f410ee404768060e3688e",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": null,
+          "parser_defaults_may_apply": false,
+          "sysconfig_directives": {},
+          "text_comments": [
+            "Part: LFE5U-85F-6CABGA381"
+          ],
+          "text_variant": null
+        },
+        "source_bytes": 28534,
+        "source_kind": "text_config",
+        "source_sha256": "60444cc3005277524b35e9a1dfae27759bbead7f0c2f100c60e69141af4b3086"
+      },
+      "initial_addresses_checked": 16,
+      "lutram_groups": [
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C71:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [],
+          "write_clock_mux": "INV",
+          "write_enable_mux": "WRE"
+        },
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C72:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [],
+          "write_clock_mux": "CLK",
+          "write_enable_mux": "WRE"
+        }
+      ],
+      "prewrite_collision_captures": 108,
+      "samples": 2048,
+      "scope": "observed",
+      "source_kind": "config",
+      "state": {
+        "configuration_sha256": "ef84ab00c6405171eccd16e8483eee83a626dcba3061c3e9062e99faebbd3403",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 650
+      },
+      "statistics": {
+        "combinational_evaluations": 675443,
+        "discarded_timer_events": 0,
+        "driver_changes": 663961,
+        "lut_bit_changes": 1054,
+        "lut_write_edges": 2900,
+        "lut_write_evaluations": 16333,
+        "possible_clock_edges": 0,
+        "register_evaluations": 7354,
+        "signal_changes": 664611,
+        "time_batches": 2048,
+        "trace_overwrites": 0
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C65/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C71/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C78/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C78/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 78,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C105/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C105/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 105,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C110/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C110/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 110,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C114/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C114/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 114,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 20,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 21,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 23,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 19,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 25,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        }
+      ],
+      "trace_transitions": 10172,
+      "write_edges": [
+        436,
+        289
+      ],
+      "written_address_masks": [
+        65535,
+        65535
+      ]
+    },
+    {
+      "counts": {
+        "carry_halves": 0,
+        "constants": 12,
+        "dcc_bypasses": 1,
+        "flip_flops": 4,
+        "lut4": 4,
+        "lutram_columns": 8,
+        "pio": 28,
+        "ramw": 2,
+        "routes": 561,
+        "wide_muxes": 0
+      },
+      "final_memory_a": [
+        10,
+        10,
+        0,
+        0,
+        10,
+        5,
+        10,
+        0,
+        0,
+        5,
+        10,
+        10,
+        0,
+        5,
+        0,
+        5
+      ],
+      "final_memory_b": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:75b3a9e6bf562a55",
+        "decoded_sha256": "fc09c39d167835fc885696185ab9a5a2e5632f64eaf43f9c9a853e19dcd65e60",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280766,
+        "source_kind": "bitstream",
+        "source_sha256": "04c444904084621a84035bb94cabbb9425129842ace67a5bcc298c9cbdc67438"
+      },
+      "initial_addresses_checked": 16,
+      "lutram_groups": [
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C71:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [],
+          "write_clock_mux": "INV",
+          "write_enable_mux": "WRE"
+        },
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C72:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [],
+          "write_clock_mux": "CLK",
+          "write_enable_mux": "WRE"
+        }
+      ],
+      "prewrite_collision_captures": 108,
+      "samples": 2048,
+      "scope": "observed",
+      "source_kind": "bit",
+      "state": {
+        "configuration_sha256": "4b919231d4942224d237d4bbffbcfdbc97c0d8c2d82a35f1594e5dedfcf7a3bc",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 650
+      },
+      "statistics": {
+        "combinational_evaluations": 675443,
+        "discarded_timer_events": 0,
+        "driver_changes": 663961,
+        "lut_bit_changes": 1054,
+        "lut_write_edges": 2900,
+        "lut_write_evaluations": 16333,
+        "possible_clock_edges": 0,
+        "register_evaluations": 7354,
+        "signal_changes": 664611,
+        "time_batches": 2048,
+        "trace_overwrites": 0
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C65/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C71/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C78/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C78/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 78,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C105/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C105/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 105,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C110/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C110/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 110,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C114/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C114/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 114,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 20,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 21,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 23,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 19,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 25,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        }
+      ],
+      "trace_transitions": 10172,
+      "write_edges": [
+        436,
+        289
+      ],
+      "written_address_masks": [
+        65535,
+        65535
+      ]
+    },
+    {
+      "counts": {
+        "carry_halves": 0,
+        "constants": 12,
+        "dcc_bypasses": 1,
+        "flip_flops": 83640,
+        "lut4": 83628,
+        "lutram_columns": 8,
+        "pio": 28,
+        "ramw": 2,
+        "routes": 711395,
+        "wide_muxes": 0
+      },
+      "final_memory_a": [
+        10,
+        10,
+        0,
+        0,
+        10,
+        5,
+        10,
+        0,
+        0,
+        5,
+        10,
+        10,
+        0,
+        5,
+        0,
+        5
+      ],
+      "final_memory_b": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:75b3a9e6bf562a55",
+        "decoded_sha256": "fc09c39d167835fc885696185ab9a5a2e5632f64eaf43f9c9a853e19dcd65e60",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280766,
+        "source_kind": "bitstream",
+        "source_sha256": "04c444904084621a84035bb94cabbb9425129842ace67a5bcc298c9cbdc67438"
+      },
+      "initial_addresses_checked": 16,
+      "lutram_groups": [
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C71:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [
+            "SLICEC.FF0",
+            "SLICEC.FF1"
+          ],
+          "write_clock_mux": "INV",
+          "write_enable_mux": "WRE"
+        },
+        {
+          "columns": [
+            "SLICEA.K0",
+            "SLICEA.K1",
+            "SLICEB.K0",
+            "SLICEB.K1"
+          ],
+          "plc": "R2C72:PLC2",
+          "rule": "shared A/B DPRAM + C RAMW; physical INIT and live cells; WAD[3,1,2,0]; atomic edge write; read/FF collision policy unvalidated on hardware",
+          "unmodelled_c_ff_di": [
+            "SLICEC.FF0",
+            "SLICEC.FF1"
+          ],
+          "write_clock_mux": "CLK",
+          "write_enable_mux": "WRE"
+        }
+      ],
+      "prewrite_collision_captures": 108,
+      "samples": 2048,
+      "scope": "all_plc_registers",
+      "source_kind": "bit",
+      "state": {
+        "configuration_sha256": "4b919231d4942224d237d4bbffbcfdbc97c0d8c2d82a35f1594e5dedfcf7a3bc",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 4,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 1338690
+      },
+      "statistics": {
+        "combinational_evaluations": 1814958,
+        "discarded_timer_events": 0,
+        "driver_changes": 1468965,
+        "lut_bit_changes": 1054,
+        "lut_write_edges": 2900,
+        "lut_write_evaluations": 16333,
+        "possible_clock_edges": 0,
+        "register_evaluations": 96127,
+        "signal_changes": 2347709,
+        "time_batches": 2048,
+        "trace_overwrites": 0
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C65/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C71/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C78/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C78/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 78,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C105/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C105/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 105,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C110/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C110/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 110,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C114/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R0C114/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 114,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C71/PIOA"
+            }
+          ],
+          "delta": 20,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 71,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 21,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 23,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C65/PIOA"
+            }
+          ],
+          "delta": 18,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 65,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 19,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "output:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 25,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 2
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        }
+      ],
+      "trace_transitions": 10172,
+      "write_edges": [
+        436,
+        289
+      ],
+      "written_address_masks": [
+        65535,
+        65535
+      ]
+    }
+  ],
+  "schema_version": 1
+}

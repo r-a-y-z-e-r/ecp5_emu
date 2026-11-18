@@ -1,0 +1,6 @@
+[project]
+name = "ebr_life"
+top = "top"
+[sources]
+verilog = ["top.v", "io.v"]
+constraints = "top.lpf"

@@ -1,0 +1,5 @@
+# Adapted from board_close.script; crop the live board rectangle from its trace.
+0 theme dark
+0 board 3d
+0 rate max
+0 run

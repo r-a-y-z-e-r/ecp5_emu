@@ -1,0 +1,63 @@
+[hi12-none_default.log]
+HC0: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 262144, 262144), (1048576, 524288, 524288)]
+  startup delay candidates in CLKI periods: [0]
+  I-(P+F)=[0, 0]; I-2P=[0, 0]
+  snapshot increments: I=524288 P=262144 F=262144
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [8]; low/high widths: {0: [4], 1: [4]}
+[hi12-none_2.log]
+HC1: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 262144, 262144), (1048576, 524288, 524288)]
+  startup delay candidates in CLKI periods: [0]
+  I-(P+F)=[0, 0]; I-2P=[0, 0]
+  snapshot increments: I=524288 P=262144 F=262144
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [8]; low/high widths: {0: [4], 1: [4]}
+[hi12-none_35.log]
+HC2: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 149796, 149797), (1048576, 299593, 299593)]
+  /3.5 delay -> initial phase candidates: {0: [0, 1, 2], 1: [2, 3]}
+  zero-deficit fit: True; phase/rounding prevents a unique first-edge startup inference
+  ideal cycles 2I/7: ['1048576/7', '2097152/7']
+  rounding residuals (7P-2I, 7F-2I): [(-4, 3), (-1, -1)]
+  snapshot increments: I=524288 P=149797 F=149796
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [14]; low/high widths: {0: [6], 1: [8]}
+HC2: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 149796, 149797), (1048576, 299593, 299593)]
+  /3.5 delay -> initial phase candidates: {0: [0, 1, 2], 1: [2, 3]}
+  zero-deficit fit: True; phase/rounding prevents a unique first-edge startup inference
+  ideal cycles 2I/7: ['1048576/7', '2097152/7']
+  rounding residuals (7P-2I, 7F-2I): [(-4, 3), (-1, -1)]
+  snapshot increments: I=524288 P=149797 F=149796
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [14]; low/high widths: {0: [6], 1: [8]}
+[hi12-sync_2.log]
+HC3: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 262144, 262144), (1048576, 524288, 524288)]
+  startup delay candidates in CLKI periods: [0]
+  I-(P+F)=[0, 0]; I-2P=[0, 0]
+  snapshot increments: I=524288 P=262144 F=262144
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [8]; low/high widths: {0: [4], 1: [4]}
+[hi12-sync_35.log]
+HC4: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 149796, 149797), (1048576, 299593, 299593)]
+  /3.5 delay -> initial phase candidates: {0: [0, 1, 2], 1: [2, 3]}
+  zero-deficit fit: True; phase/rounding prevents a unique first-edge startup inference
+  ideal cycles 2I/7: ['1048576/7', '2097152/7']
+  rounding residuals (7P-2I, 7F-2I): [(-4, 3), (-1, -1)]
+  snapshot increments: I=524288 P=149797 F=149796
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [14]; low/high widths: {0: [6], 1: [8]}
+HC4: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 149797, 149796), (1048576, 299593, 299593)]
+  /3.5 delay -> initial phase candidates: {0: [4, 5], 1: [5, 6]}
+  zero-deficit fit: True; phase/rounding prevents a unique first-edge startup inference
+  ideal cycles 2I/7: ['1048576/7', '2097152/7']
+  rounding residuals (7P-2I, 7F-2I): [(3, -4), (-1, -1)]
+  snapshot increments: I=524288 P=149796 F=149797
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [14]; low/high widths: {0: [6], 1: [8]}
+HC4: snapshots (CLKI rises, CDIVX rises, CDIVX falls)=[(524288, 149797, 149797), (1048576, 299593, 299594)]
+  /3.5 delay -> initial phase candidates: {0: [3]}
+  zero-deficit fit: True; phase/rounding prevents a unique first-edge startup inference
+  ideal cycles 2I/7: ['1048576/7', '2097152/7']
+  rounding residuals (7P-2I, 7F-2I): [(3, 3), (-1, 6)]
+  snapshot increments: I=524288 P=149796 F=149797
+  CDIVX transitions relative to nearest CLKI transition, 10 ns samples: [0]
+  CDIVX rising intervals, 10 ns samples: [14]; low/high widths: {0: [6], 1: [8]}

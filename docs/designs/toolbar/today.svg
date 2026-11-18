@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="400" viewBox="0 0 1500 400" role="img" aria-labelledby="title desc">
+<title id="title">Today / three rows, redrawn from the feedback crop</title><desc id="desc">1500 pt comparison sheet • screenshot content occupies its original 1000 × 66.5 pt at 2×. Proposal only, no implementation. Logical width 1500 points.</desc>
+<style>text {font-family: Arial, DejaVu Sans, sans-serif; fill:#b4b4b4; font-size:13px} .small {font-size:12px} .heading {font-size:18px;font-weight:600} .mono {font-family: DejaVu Sans Mono, monospace;font-size:12px}</style>
+<rect x="0" y="0" width="1500" height="400" rx="0" fill="#131313"/>
+<text x="12" y="25" class="heading">Today / three rows, redrawn from the feedback crop</text>
+<text x="12" y="46" class="small">1500 pt comparison sheet • screenshot content occupies its original 1000 × 66.5 pt at 2×</text>
+<rect x="0" y="62" width="1500" height="66.5" rx="0" fill="#1b1b1b"/>
+<text x="4" y="77">blinky_cycle</text>
+<path d="M80 63L80 85" fill="none" stroke="#4b4b4b"/>
+<text x="93" y="77">Project</text>
+<g><title>Chip</title>
+<rect x="143" y="64" width="33" height="17" rx="3" fill="#005a8c"/>
+<text x="151" y="81" style="fill:#ffffff">Chip</text>
+</g>
+<path d="M186 63L186 85" fill="none" stroke="#4b4b4b"/>
+<rect x="196" y="64" width="36" height="17" rx="2" fill="#3c3c3c"/>
+<text x="200" y="77">Build</text>
+<rect x="238" y="64" width="49" height="17" rx="2" fill="#3c3c3c"/>
+<text x="242" y="77">Rebuild</text>
+<rect x="295" y="64" width="53" height="17" rx="2" fill="#3c3c3c"/>
+<text x="299" y="77">Emulate</text>
+<rect x="355" y="64" width="84" height="17" rx="2" fill="#3c3c3c"/>
+<text x="359" y="77">Load to board</text>
+<path d="M449 63L449 85" fill="none" stroke="#4b4b4b"/>
+<text x="459" y="77">Emulating (ready in 3.1 s)</text>
+<path d="M0 83H1500" fill="none" stroke="#4b4b4b"/>
+<rect x="4" y="85" width="46" height="16" rx="2" fill="#3c3c3c"/>
+<text x="8" y="98">Design</text>
+<text x="115" y="99">blinky_cycle</text>
+<path d="M250 87L250 109" fill="none" stroke="#4b4b4b"/>
+<rect x="260" y="86" width="44" height="17" rx="2" fill="#3c3c3c"/>
+<text x="264" y="99" style="fill:#858585">▶ Run</text>
+<rect x="311" y="86" width="53" height="17" rx="2" fill="#3c3c3c"/>
+<text x="315" y="99" style="fill:#858585">⏸ Pause</text>
+<rect x="385" y="86" width="49" height="17" rx="2" fill="#3c3c3c"/>
+<text x="389" y="99" style="fill:#858585">◀ Back</text>
+<g><title>1</title>
+<rect x="441" y="86" width="14" height="17" rx="3" fill="#005a8c"/>
+<text x="449" y="103" style="fill:#ffffff">1</text>
+</g>
+<text x="465" y="99">1k</text>
+<text x="494" y="99">1M</text>
+<text x="526" y="99">Custom</text>
+<rect x="580" y="86" width="64" height="17" rx="2" fill="#111111"/>
+<text x="584" y="99" style="fill:#656565">cycles</text>
+<rect x="650" y="86" width="48" height="17" rx="2" fill="#3c3c3c"/>
+<text x="654" y="99" style="fill:#858585">Step ▶</text>
+<path d="M709 87L709 109" fill="none" stroke="#4b4b4b"/>
+<rect x="718" y="86" width="73" height="17" rx="2" fill="#111111"/>
+<text x="722" y="99" style="fill:#656565">go to cycle</text>
+<rect x="798" y="86" width="24" height="17" rx="2" fill="#3c3c3c"/>
+<text x="802" y="99" style="fill:#858585">Go</text>
+<text x="4" y="120">Rate</text>
+<rect x="37" y="107" width="163" height="17" rx="2" fill="#3c3c3c"/>
+<text x="41" y="120">4 cycles/s</text>
+<path d="M186 113L191 118L196 113Z" fill="#b4b4b4" stroke="#b4b4b4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="207" y="107" width="64" height="17" rx="2" fill="#111111"/>
+<text x="211" y="120" style="fill:#656565">cycles/s</text>
+<text x="279" y="120">cycles/s</text>
+<path d="M330 108L330 130" fill="none" stroke="#4b4b4b"/>
+<rect x="341" y="107" width="39" height="17" rx="2" fill="#005a8c"/>
+<text x="345" y="120">Fabric</text>
+<text x="392" y="120">Grid</text>
+<rect x="426" y="109" width="12" height="12" rx="2" fill="#3c3c3c"/>
+<text x="442" y="120">0/1</text>
+<text x="471" y="120">Waves</text>
+<text x="521" y="120">Critical path</text>
+<path d="M600 108L600 130" fill="none" stroke="#4b4b4b"/>
+<path d="M0 128.5H1500" fill="none" stroke="#4b4b4b"/>
+<path d="M1000 62L1000 144" fill="none" stroke="#4b4b4b"/>
+<text x="1016" y="85" class="small">Original crop ends here</text>
+<text x="1016" y="110" class="small">Rows continue across a 1500 pt window.</text>
+<text x="12" y="176" class="heading">What the crop makes visible</text>
+<text x="12" y="205">1  Navigation and build share a row with emulator status; the design name is repeated below.</text>
+<text x="12" y="231">2  Run / Pause, Back, four step sizes, a placeholder field, Step and go-to compete for attention.</text>
+<text x="12" y="257">3  Rate repeats its unit; Fabric / Grid and 0/1 need explanation; 300 pt is reserved for history.</text>
+<rect x="610" y="152" width="300" height="24" rx="2" fill="none" stroke="#4b4b4b"/>
+<text x="620" y="168" class="small">300 pt reserved, including when ahead = 0</text>
+<text x="12" y="308" class="small">Source: out/feedback/2026-11-17_owner_toolbar.png • hand redraw, not an implemented toolbar capture</text>
+<text x="12" y="336" class="small">The screenshot is 1000 pt wide. A, B and C use the requested 1500 pt width without stretching this reference.</text>
+<text x="12" y="378" class="small">Proposal comparison asset • dark panel #1b1b1b / widget #3c3c3c / selected #005a8c / text #b4b4b4</text>
+</svg>

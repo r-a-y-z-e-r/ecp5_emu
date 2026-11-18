@@ -1,0 +1,55 @@
+module dsp_mac(input clk, input enable, input first, input [17:0] a, b, output [53:0] r);
+  wire [35:0] p;
+  wire [17:0] roa, rob;
+  wire signedp;
+  wire [10:0] op=first ? 11'h20d : 11'h25d;
+  MULT18X18D #(.REG_INPUTA_CLK("NONE"),.REG_INPUTB_CLK("NONE"),
+    .REG_INPUTC_CLK("NONE"),.REG_PIPELINE_CLK("NONE"),
+    .REG_OUTPUT_CLK("NONE"),.GSR("ENABLED"),.RESETMODE("SYNC")) mult(
+    .A0(a[0]),.A1(a[1]),.A2(a[2]),.A3(a[3]),.A4(a[4]),.A5(a[5]),.A6(a[6]),.A7(a[7]),
+    .A8(a[8]),.A9(a[9]),.A10(a[10]),.A11(a[11]),.A12(a[12]),.A13(a[13]),.A14(a[14]),
+    .A15(a[15]),.A16(a[16]),.A17(a[17]),
+    .B0(b[0]),.B1(b[1]),.B2(b[2]),.B3(b[3]),.B4(b[4]),.B5(b[5]),.B6(b[6]),.B7(b[7]),
+    .B8(b[8]),.B9(b[9]),.B10(b[10]),.B11(b[11]),.B12(b[12]),.B13(b[13]),.B14(b[14]),
+    .B15(b[15]),.B16(b[16]),.B17(b[17]),
+    .C0(1'b0),.C1(1'b0),.C2(1'b0),.C3(1'b0),.C4(1'b0),.C5(1'b0),.C6(1'b0),.C7(1'b0),
+    .C8(1'b0),.C9(1'b0),.C10(1'b0),.C11(1'b0),.C12(1'b0),.C13(1'b0),.C14(1'b0),
+    .C15(1'b0),.C16(1'b0),.C17(1'b0),
+    .SIGNEDA(1'b1),.SIGNEDB(1'b1),.SOURCEA(1'b0),.SOURCEB(1'b0),
+    .CLK0(clk),.CLK1(1'b0),.CLK2(1'b0),.CLK3(1'b0),
+    .CE0(enable),.CE1(1'b1),.CE2(1'b1),.CE3(1'b1),
+    .RST0(1'b0),.RST1(1'b0),.RST2(1'b0),.RST3(1'b0),
+    .P0(p[0]),.P1(p[1]),.P2(p[2]),.P3(p[3]),.P4(p[4]),.P5(p[5]),.P6(p[6]),.P7(p[7]),
+    .P8(p[8]),.P9(p[9]),.P10(p[10]),.P11(p[11]),.P12(p[12]),.P13(p[13]),.P14(p[14]),
+    .P15(p[15]),.P16(p[16]),.P17(p[17]),.P18(p[18]),.P19(p[19]),.P20(p[20]),.P21(p[21]),
+    .P22(p[22]),.P23(p[23]),.P24(p[24]),.P25(p[25]),.P26(p[26]),.P27(p[27]),.P28(p[28]),
+    .P29(p[29]),.P30(p[30]),.P31(p[31]),.P32(p[32]),.P33(p[33]),.P34(p[34]),.P35(p[35]),
+    .ROA0(roa[0]),.ROA1(roa[1]),.ROA2(roa[2]),.ROA3(roa[3]),.ROA4(roa[4]),.ROA5(roa[5]),
+    .ROA6(roa[6]),.ROA7(roa[7]),.ROA8(roa[8]),.ROA9(roa[9]),.ROA10(roa[10]),.ROA11(roa[11]),
+    .ROA12(roa[12]),.ROA13(roa[13]),.ROA14(roa[14]),.ROA15(roa[15]),.ROA16(roa[16]),.ROA17(roa[17]),
+    .ROB0(rob[0]),.ROB1(rob[1]),.ROB2(rob[2]),.ROB3(rob[3]),.ROB4(rob[4]),.ROB5(rob[5]),
+    .ROB6(rob[6]),.ROB7(rob[7]),.ROB8(rob[8]),.ROB9(rob[9]),.ROB10(rob[10]),.ROB11(rob[11]),
+    .ROB12(rob[12]),.ROB13(rob[13]),.ROB14(rob[14]),.ROB15(rob[15]),.ROB16(rob[16]),.ROB17(rob[17]),
+    .SIGNEDP(signedp));
+  ALU54B #(.REG_OUTPUT0_CLK("CLK0"),.REG_OUTPUT1_CLK("CLK0"),
+    .REG_FLAG_CLK("CLK0"),.GSR("ENABLED"),.RESETMODE("SYNC")) alu(
+    .MA0(p[0]),.MA1(p[1]),.MA2(p[2]),.MA3(p[3]),.MA4(p[4]),.MA5(p[5]),.MA6(p[6]),.MA7(p[7]),
+    .MA8(p[8]),.MA9(p[9]),.MA10(p[10]),.MA11(p[11]),.MA12(p[12]),.MA13(p[13]),.MA14(p[14]),
+    .MA15(p[15]),.MA16(p[16]),.MA17(p[17]),.MA18(p[18]),.MA19(p[19]),.MA20(p[20]),.MA21(p[21]),
+    .MA22(p[22]),.MA23(p[23]),.MA24(p[24]),.MA25(p[25]),.MA26(p[26]),.MA27(p[27]),.MA28(p[28]),
+    .MA29(p[29]),.MA30(p[30]),.MA31(p[31]),.MA32(p[32]),.MA33(p[33]),.MA34(p[34]),.MA35(p[35]),
+    .OP0(op[0]),.OP1(op[1]),.OP2(op[2]),.OP3(op[3]),.OP4(op[4]),.OP5(op[5]),.OP6(op[6]),
+    .OP7(op[7]),.OP8(op[8]),.OP9(op[9]),.OP10(op[10]),
+    .SIGNEDIA(signedp),.SIGNEDIB(1'b0),
+    .CLK0(clk),.CLK1(1'b0),.CLK2(1'b0),.CLK3(1'b0),
+    .CE0(enable),.CE1(1'b1),.CE2(1'b1),.CE3(1'b1),
+    .RST0(1'b0),.RST1(1'b0),.RST2(1'b0),.RST3(1'b0),
+    .R0(r[0]),.R1(r[1]),.R2(r[2]),.R3(r[3]),.R4(r[4]),.R5(r[5]),.R6(r[6]),.R7(r[7]),
+    .R8(r[8]),.R9(r[9]),.R10(r[10]),.R11(r[11]),.R12(r[12]),.R13(r[13]),.R14(r[14]),
+    .R15(r[15]),.R16(r[16]),.R17(r[17]),.R18(r[18]),.R19(r[19]),.R20(r[20]),.R21(r[21]),
+    .R22(r[22]),.R23(r[23]),.R24(r[24]),.R25(r[25]),.R26(r[26]),.R27(r[27]),.R28(r[28]),
+    .R29(r[29]),.R30(r[30]),.R31(r[31]),.R32(r[32]),.R33(r[33]),.R34(r[34]),.R35(r[35]),
+    .R36(r[36]),.R37(r[37]),.R38(r[38]),.R39(r[39]),.R40(r[40]),.R41(r[41]),.R42(r[42]),
+    .R43(r[43]),.R44(r[44]),.R45(r[45]),.R46(r[46]),.R47(r[47]),.R48(r[48]),.R49(r[49]),
+    .R50(r[50]),.R51(r[51]),.R52(r[52]),.R53(r[53]));
+endmodule

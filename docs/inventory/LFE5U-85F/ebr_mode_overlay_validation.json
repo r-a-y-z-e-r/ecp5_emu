@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "scope": "EBR MODE/WEAMUX qualification and CIB clock/reset constant interpretation",
+  "regular_tests_passed": 90,
+  "native_integration_tests_passed": 11,
+  "total_tests_passed": 101,
+  "new_unit_tests": 5,
+  "new_native_tests": 2,
+  "configuration_audit": {
+    "resources": 208,
+    "valid_encoding_cases": 1040,
+    "rejected_non_overlay_mode_bit_flips": 1872,
+    "two_fragments": 104,
+    "three_fragments": 104
+  },
+  "new_native_runs": {
+    "inverted": [
+      {
+        "source": "config",
+        "scope": "observed",
+        "startup": "ready_unknown",
+        "samples": 513,
+        "reads": [
+          78,
+          35
+        ],
+        "write_attempts": [
+          39,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 37,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1998,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 7260,
+              "observed_value": true,
+              "selector": "EBR0.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 487,
+            "partial": 312,
+            "resolved": 8655,
+            "unmatched": 1289,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [],
+        "statistics": {
+          "combinational_evaluations": 188603,
+          "discarded_timer_events": 0,
+          "driver_changes": 197218,
+          "ebr_access_edges": 165,
+          "ebr_bit_changes": 245,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 45,
+          "ebr_evaluations": 514,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 325,
+          "signal_changes": 199523,
+          "system_evaluations": 1,
+          "time_batches": 513,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "bit",
+        "scope": "observed",
+        "startup": "ready_unknown",
+        "samples": 513,
+        "reads": [
+          78,
+          35
+        ],
+        "write_attempts": [
+          39,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 37,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1998,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 7260,
+              "observed_value": true,
+              "selector": "EBR0.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 487,
+            "partial": 312,
+            "resolved": 8655,
+            "unmatched": 1289,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [],
+        "statistics": {
+          "combinational_evaluations": 188603,
+          "discarded_timer_events": 0,
+          "driver_changes": 197218,
+          "ebr_access_edges": 165,
+          "ebr_bit_changes": 245,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 45,
+          "ebr_evaluations": 514,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 325,
+          "signal_changes": 199523,
+          "system_evaluations": 1,
+          "time_batches": 513,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "config",
+        "scope": "observed",
+        "startup": "wake_phases",
+        "samples": 513,
+        "reads": [
+          78,
+          35
+        ],
+        "write_attempts": [
+          39,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 37,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1998,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 7260,
+              "observed_value": true,
+              "selector": "EBR0.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 487,
+            "partial": 312,
+            "resolved": 8655,
+            "unmatched": 1289,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [],
+        "statistics": {
+          "combinational_evaluations": 189044,
+          "discarded_timer_events": 0,
+          "driver_changes": 197694,
+          "ebr_access_edges": 166,
+          "ebr_bit_changes": 245,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 46,
+          "ebr_evaluations": 517,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 329,
+          "signal_changes": 200000,
+          "system_evaluations": 9,
+          "time_batches": 521,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "bit",
+        "scope": "all_plc_registers",
+        "startup": "wake_phases",
+        "samples": 513,
+        "reads": [
+          78,
+          35
+        ],
+        "write_attempts": [
+          39,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 37,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 83640,
+          "lut4": 83639,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 712920,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 7260,
+              "observed_value": true,
+              "selector": "EBR0.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 487,
+            "partial": 312,
+            "resolved": 8655,
+            "unmatched": 1289,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [],
+        "statistics": {
+          "combinational_evaluations": 1318159,
+          "discarded_timer_events": 0,
+          "driver_changes": 1075894,
+          "ebr_access_edges": 166,
+          "ebr_bit_changes": 245,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 46,
+          "ebr_evaluations": 517,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 167867,
+          "signal_changes": 1956400,
+          "system_evaluations": 9,
+          "time_batches": 521,
+          "trace_overwrites": 0
+        }
+      }
+    ],
+    "readonly": [
+      {
+        "source": "config",
+        "scope": "observed",
+        "startup": "ready_unknown",
+        "samples": 513,
+        "reads": [
+          117,
+          35
+        ],
+        "write_attempts": [
+          0,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 38,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1995,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 6572,
+              "observed_value": true,
+              "selector": "EBR2.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 488,
+            "partial": 312,
+            "resolved": 8656,
+            "unmatched": 1287,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [
+          {
+            "encoded_value": "0",
+            "field": "CIB.JLSR1MUX",
+            "rule": "CIB CLK/LSR label 0 was fuzzed at the EBR pin after consumer inversion; nextpnr tie_cib_signal drives raw high and then applies the consumer mux once",
+            "tile": "CIB_R22C63:CIB_EBR",
+            "value": "one",
+            "wire": {
+              "location": {
+                "col": 63,
+                "row": 22
+              },
+              "name": "JLSR1"
+            }
+          }
+        ],
+        "statistics": {
+          "combinational_evaluations": 187487,
+          "discarded_timer_events": 0,
+          "driver_changes": 195770,
+          "ebr_access_edges": 165,
+          "ebr_bit_changes": 51,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 16,
+          "ebr_evaluations": 514,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 365,
+          "signal_changes": 198073,
+          "system_evaluations": 1,
+          "time_batches": 513,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "bit",
+        "scope": "observed",
+        "startup": "ready_unknown",
+        "samples": 513,
+        "reads": [
+          117,
+          35
+        ],
+        "write_attempts": [
+          0,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 38,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1995,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 6572,
+              "observed_value": true,
+              "selector": "EBR2.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 488,
+            "partial": 312,
+            "resolved": 8656,
+            "unmatched": 1287,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [
+          {
+            "encoded_value": "0",
+            "field": "CIB.JLSR1MUX",
+            "rule": "CIB CLK/LSR label 0 was fuzzed at the EBR pin after consumer inversion; nextpnr tie_cib_signal drives raw high and then applies the consumer mux once",
+            "tile": "CIB_R22C63:CIB_EBR",
+            "value": "one",
+            "wire": {
+              "location": {
+                "col": 63,
+                "row": 22
+              },
+              "name": "JLSR1"
+            }
+          }
+        ],
+        "statistics": {
+          "combinational_evaluations": 187487,
+          "discarded_timer_events": 0,
+          "driver_changes": 195770,
+          "ebr_access_edges": 165,
+          "ebr_bit_changes": 51,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 16,
+          "ebr_evaluations": 514,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 365,
+          "signal_changes": 198073,
+          "system_evaluations": 1,
+          "time_batches": 513,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "config",
+        "scope": "observed",
+        "startup": "wake_phases",
+        "samples": 513,
+        "reads": [
+          117,
+          35
+        ],
+        "write_attempts": [
+          0,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 38,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 1,
+          "lut4": 0,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 1995,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 6572,
+              "observed_value": true,
+              "selector": "EBR2.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 488,
+            "partial": 312,
+            "resolved": 8656,
+            "unmatched": 1287,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [
+          {
+            "encoded_value": "0",
+            "field": "CIB.JLSR1MUX",
+            "rule": "CIB CLK/LSR label 0 was fuzzed at the EBR pin after consumer inversion; nextpnr tie_cib_signal drives raw high and then applies the consumer mux once",
+            "tile": "CIB_R22C63:CIB_EBR",
+            "value": "one",
+            "wire": {
+              "location": {
+                "col": 63,
+                "row": 22
+              },
+              "name": "JLSR1"
+            }
+          }
+        ],
+        "statistics": {
+          "combinational_evaluations": 187903,
+          "discarded_timer_events": 0,
+          "driver_changes": 196221,
+          "ebr_access_edges": 166,
+          "ebr_bit_changes": 51,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 16,
+          "ebr_evaluations": 517,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 369,
+          "signal_changes": 198525,
+          "system_evaluations": 9,
+          "time_batches": 521,
+          "trace_overwrites": 0
+        }
+      },
+      {
+        "source": "bit",
+        "scope": "all_plc_registers",
+        "startup": "wake_phases",
+        "samples": 513,
+        "reads": [
+          117,
+          35
+        ],
+        "write_attempts": [
+          0,
+          13
+        ],
+        "counts": {
+          "carry_halves": 0,
+          "constants": 38,
+          "dcc_bypasses": 0,
+          "ebr_blocks": 1,
+          "ebr_read_ports": 2,
+          "flip_flops": 83640,
+          "lut4": 83639,
+          "lutram_columns": 0,
+          "pio": 113,
+          "ramw": 0,
+          "routes": 712917,
+          "wide_muxes": 0
+        },
+        "mode_decode": {
+          "candidates": [
+            "DP16KD"
+          ],
+          "overrides": [
+            {
+              "base_value": false,
+              "bit": 266,
+              "frame": 6572,
+              "observed_value": true,
+              "selector": "EBR2.WEAMUX"
+            }
+          ],
+          "rule": "complete MODE across all fragments with exactly one verified WEAMUX overlay; DP/NONE base bit=0, INV bit=1; PDP requires an unmodified strict MODE match",
+          "status": "qualified",
+          "value": "DP16KD"
+        },
+        "initialization": "bound",
+        "configuration_summary": {
+          "composed_fields": 28810,
+          "ebr_binding_statuses": {
+            "bound": 1,
+            "inactive": 207
+          },
+          "ebr_mode_statuses": {
+            "qualified": 1,
+            "resolved": 207
+          },
+          "field_statuses": {
+            "ambiguous": 488,
+            "partial": 312,
+            "resolved": 8656,
+            "unmatched": 1287,
+            "unobserved": 18067
+          },
+          "init_image_count": 1,
+          "plc_words_from_tile_bit_patterns": 83640,
+          "resources_with_composed_fields": 1371,
+          "sysconfig_application": "directives_preserved;startup_controller_not_executed"
+        },
+        "raw_high_ties": [
+          {
+            "encoded_value": "0",
+            "field": "CIB.JLSR1MUX",
+            "rule": "CIB CLK/LSR label 0 was fuzzed at the EBR pin after consumer inversion; nextpnr tie_cib_signal drives raw high and then applies the consumer mux once",
+            "tile": "CIB_R22C63:CIB_EBR",
+            "value": "one",
+            "wire": {
+              "location": {
+                "col": 63,
+                "row": 22
+              },
+              "name": "JLSR1"
+            }
+          }
+        ],
+        "statistics": {
+          "combinational_evaluations": 1317018,
+          "discarded_timer_events": 0,
+          "driver_changes": 1074421,
+          "ebr_access_edges": 166,
+          "ebr_bit_changes": 51,
+          "ebr_collision_rows": 0,
+          "ebr_control_ambiguities": 16,
+          "ebr_evaluations": 517,
+          "ebr_notice_overwrites": 0,
+          "lut_bit_changes": 0,
+          "lut_write_edges": 0,
+          "lut_write_evaluations": 0,
+          "possible_clock_edges": 0,
+          "register_evaluations": 167907,
+          "signal_changes": 1954925,
+          "system_evaluations": 9,
+          "time_batches": 521,
+          "trace_overwrites": 0
+        }
+      }
+    ]
+  },
+  "CLI": {
+    "runs": 2,
+    "observations_per_run": 514,
+    "working_samples_compared_per_run": 513,
+    "probes_per_run": 7,
+    "passed": true
+  },
+  "hardware_results": 0,
+  "validation_commands": [
+    {
+      "command": "cargo test --locked",
+      "status": "passed",
+      "log": "target/ebr-overlay-tests.log"
+    },
+    {
+      "command": "cargo test --release --locked -- --ignored --skip real_bitstream_matches_text_config --test-threads=1",
+      "status": "passed",
+      "log": "target/ebr-overlay-native-regression.log"
+    },
+    {
+      "command": "cargo clippy --all-targets -- -D warnings",
+      "status": "passed"
+    },
+    {
+      "command": "cargo fmt --check",
+      "status": "passed"
+    },
+    {
+      "command": "python3 tools/audit_ebr_mode_overlay.py",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Single checked MODE/WEAMUX overlap only; raw MODE status and all observations are retained",
+    "CIB CLK/LSR rule follows pinned fuzzer and writer semantics; not a physical measurement",
+    "PDP36 reads, active ASYNC reset with SYNC release and hardware collision/control behavior retain the prior EBR restrictions",
+    "External blink test requiring ECP5_TEST_BIT was not run"
+  ],
+  "source_files": [
+    {
+      "path": "src/decode.rs",
+      "sha256": "5e1ea5fa43d5e300b9eb0ed27c72726375ab533a5f96e4e23d22b8599b7bbbac"
+    },
+    {
+      "path": "src/decode/ebr.rs",
+      "sha256": "afde6104724ed397a84b54a78bd0e8beca5e1b2fb135e1b18f39383297c84ee0"
+    },
+    {
+      "path": "src/prepared.rs",
+      "sha256": "f214d59687cd31c9fafe3c1a009a7621c0f205e0cc60dd7f60cf89c197451136"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "73584138b19783534212392c8fb67f88b6d6f5f4749d09b4fc63db6ad52d3b78"
+    },
+    {
+      "path": "src/compile/ebr.rs",
+      "sha256": "c0968dbda2d180edd50bfeb05f36dcd788ae90b0b48fa587201cf07a93ca01d8"
+    },
+    {
+      "path": "tests/automatic_compile.rs",
+      "sha256": "4e92011517dce01129b2fbb0d6c51a51b5b3ed4832493de01ae21affda29f3d7"
+    },
+    {
+      "path": "tests/ebr_native.rs",
+      "sha256": "8953645a41efb23ac07d93a543e3764c5460b954fe73cbe7f4bc5a0020f5c4fc"
+    },
+    {
+      "path": "tools/audit_ebr_mode_overlay.py",
+      "sha256": "e070b1230c17b09630e692f7dea4fb2aa48cf20011d883a8b874bb7622ec5afb"
+    },
+    {
+      "path": "docs/EBR_MODE_OVERLAY.md",
+      "sha256": "c1aec624b1fd20ba8ad05bcf0de862dbd1753b4504288904d2ba7ea95299f05b"
+    },
+    {
+      "path": "docs/EBR_EXECUTION.md",
+      "sha256": "036fa840e4fa7e260bee0d21155b4b28c78902fe985e041589f5d7cd535c52fd"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "e0df79574f5c884b5ff3c14c7353e29a4d0ef2d4610bfd3931af4771eb4c1e8a"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "6a0d55339192ecfa7bcdb65cd5a2dbddf5f16b3e707fe7b46120e01f7d01ba3f"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "3b246b6f83268256673243a6d5315a28ed0257b1fe8473b362c2c3d48b4a148c"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "d382ddcdc60e4241648f7ab8fcf9278a79022dcca386a12d9e6fdfd4b4435ec6"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_audit.json",
+      "sha256": "2e6381d64064a1fb80cb6c55944ddbbfa42e21e8d6d3cc1584b9e24870479048"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_inverted_cli.json",
+      "sha256": "0dd7567bb2c4bfe500735d93377a97719d96a630632694d5a67f6f3e3fd3fbb2"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_inverted_events.json",
+      "sha256": "48e08594fbdc03a4e4845d8cd32388e35b5f041e0bd4787c43737b1e9b381fe4"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_inverted_fixture.lpf",
+      "sha256": "665c298492492be76e5a704b52908e5b93b31856eb36d86ef67aa9da1a9714b3"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_inverted_fixture.v",
+      "sha256": "77701da33d867f8b7d7d5b42a95da97bfa010474dcddfe71004d7811c74f72fd"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_inverted_native.json",
+      "sha256": "f59701886908d500f66c44376f6a59d912150c701bb64ec639e5a890f890f8aa"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_readonly_cli.json",
+      "sha256": "8ae87482d3333e0ad011e717862004c8a2368b28c3d4ac3a65a703225ca53158"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_readonly_events.json",
+      "sha256": "ff4acdc149c9ddd0abc3041976d41bf09c212b61ffb940a11072efdb54dd572b"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_readonly_fixture.lpf",
+      "sha256": "e80f976d96ee38c932962a329ab5f40cf267a1b0ba58c3535d084a4f8404a236"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_readonly_fixture.v",
+      "sha256": "99fc7464cfe7076a43c39c16e113c906ca81173ce18ea8b711b8d1cc1b4bf290"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/ebr_mode_overlay_readonly_native.json",
+      "sha256": "3edec8b54f092ec2438c425fc0ac48863b65c423d3651b92714f561daa05a8c7"
+    }
+  ]
+}

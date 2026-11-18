@@ -1,0 +1,1587 @@
+{
+  "distinct_windows": 78,
+  "windows_per_load": [
+    78,
+    78,
+    78
+  ],
+  "once": false,
+  "results": {
+    "p32_64": {
+      "width": 32,
+      "depth": 64,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1258,
+          "same": 41
+        }
+      ],
+      "examples": []
+    },
+    "p32_128": {
+      "width": 32,
+      "depth": 128,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1258,
+          "same": 41
+        }
+      ],
+      "examples": []
+    },
+    "p32_256": {
+      "width": 32,
+      "depth": 256,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1258,
+          "same": 41
+        }
+      ],
+      "examples": []
+    },
+    "p32_512": {
+      "width": 32,
+      "depth": 512,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1258,
+          "same": 41
+        }
+      ],
+      "examples": []
+    },
+    "p36_64": {
+      "width": 36,
+      "depth": 64,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1296,
+          "same": 3
+        }
+      ],
+      "examples": []
+    },
+    "p36_128": {
+      "width": 36,
+      "depth": 128,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1296,
+          "same": 3
+        }
+      ],
+      "examples": []
+    },
+    "p36_256": {
+      "width": 36,
+      "depth": 256,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1296,
+          "same": 3
+        }
+      ],
+      "examples": []
+    },
+    "p36_512": {
+      "width": 36,
+      "depth": 512,
+      "cases": {
+        "idle_read": {
+          "edges": 2487,
+          "unknown_old": 329,
+          "known": 2158,
+          "match": 2158
+        },
+        "disjoint_write": {
+          "edges": 932,
+          "unknown_old": 125,
+          "known": 807,
+          "match": 807
+        },
+        "collision": {
+          "edges": 1495,
+          "unknown_old": 196,
+          "known": 1299,
+          "new": 1299,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 1853,
+          "match": 1853
+        }
+      },
+      "lanes": [
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1297,
+          "same": 2
+        },
+        {
+          "new": 1295,
+          "same": 4
+        },
+        {
+          "new": 1296,
+          "same": 3
+        }
+      ],
+      "examples": []
+    }
+  },
+  "per_load": [
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      }
+    },
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      }
+    },
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1258,
+            "same": 41
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 2487,
+            "unknown_old": 329,
+            "known": 2158,
+            "match": 2158
+          },
+          "disjoint_write": {
+            "edges": 932,
+            "unknown_old": 125,
+            "known": 807,
+            "match": 807
+          },
+          "collision": {
+            "edges": 1495,
+            "unknown_old": 196,
+            "known": 1299,
+            "new": 1299,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 1853,
+            "match": 1853
+          }
+        },
+        "lanes": [
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1297,
+            "same": 2
+          },
+          {
+            "new": 1295,
+            "same": 4
+          },
+          {
+            "new": 1296,
+            "same": 3
+          }
+        ],
+        "examples": []
+      }
+    }
+  ]
+}

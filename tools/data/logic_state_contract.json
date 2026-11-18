@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "Fabric FF, CCU2 and output-selection research; not emulator execution or silicon validation",
+  "rules": [
+    {"id":"LS01","claim":"REGn.SD=1 selects the local DI path; SD=0 selects M. nextpnr pairs a COMB F driver for SD=1 or renames DI to M for SD=0.","evidence":"packer_and_database","source":"pack.cc:pack_ffs;Bels.cpp:add_ff"},
+    {"id":"LS02","claim":"DI is reached from the selected F output via fixed F# -> DI# -> DI#_SLICE connections, rather than a second independent copy of the LUT output.","evidence":"database","source":"PLC2/bits.db"},
+    {"id":"LS03","claim":"Each FF has separate REGSET, SD and LSRMODE settings; the two FF of a slice share GSR, CEMUX and selected CLK/LSR wires.","evidence":"database_and_native_ports","source":"PLC2/bits.db;native_ports.csv"},
+    {"id":"LS04","claim":"Two raw CLK and two raw LSR routes have inversion/mode controls. MUXCLK0..3 and MUXLSR0..3 select the slice inputs. nextpnr applies additional tile-wide compatibility rules.","evidence":"database_and_tool_source","source":"PLC2/bits.db;arch_place.cc"},
+    {"id":"LS05","claim":"Public FD1P3IX/JX documentation gives synchronous local clear/preset precedence over enable. TRELLIS_FF has local LSR precedence over CE in both synchronous and asynchronous branches.","evidence":"documented_and_public_software_model","source":"libraries","pages":[36,363,364,365]},
+    {"id":"LS06","claim":"TRELLIS_FF preload takes its reset value from M; the software event list samples it on LSR assertion or an active clock edge, not every change of M while asynchronous LSR remains asserted.","evidence":"public_software_model_limitation","source":"common_sim.vh"},
+    {"id":"LS07","claim":"TRELLIS_FF has no global-reset input or GSR behavior despite its GSR parameter. Startup observations and identical GSR parameter traces cannot validate physical startup or GSR.","evidence":"public_software_model_limitation","source":"common_sim.vh"},
+    {"id":"LS08","claim":"Database defaults and synthesis defaults differ: PLC REGSET defaults to SET and SD to 1; TRELLIS_FF defaults to RESET, and the writer defaults SD to 0. Raw CRAM constraints remain authoritative for decoding.","evidence":"database_and_tool_source","source":"PLC2/bits.db;common_sim.vh;bitstream.cc"},
+    {"id":"LS09","claim":"Yosys lattice_gsr resolves AUTO using presence of a GSR/SGSR primitive and the nogsr cell attribute. It can remove matching asynchronous local reset wiring; this is a netlist transformation, not runtime GSR emulation.","evidence":"tool_source_and_synthesis_probes","source":"lattice_gsr"},
+    {"id":"LS10","claim":"For each CCU2 half p=INIT[ABCD], g=INIT[AB]; S=p XOR (INJECT1=NO ? carry : 0), next=p ? carry : (INJECT1=NO ? g : 0). The second half uses the first half's carry.","evidence":"public_software_model_and_probes","source":"ccu2c_sim.vh"},
+    {"id":"LS11","claim":"INJECT1=YES does not force carry to zero when p=1: carry propagates, although the sum ignores it. INIT low four bits feed both LUT4 and LUT2 functions.","evidence":"public_software_model_and_probes","source":"ccu2c_sim.vh"},
+    {"id":"LS12","claim":"Eight INJECT1 settings overlap F-output route bits. LOGIC mux selection and CCU2 injection cannot be executed as independent simultaneous meanings of the same CRAM bit.","evidence":"database_overlap_and_writer","source":"PLC2/bits.db;bitstream.cc"},
+    {"id":"LS13","claim":"The current Yosys latch synthesis probe uses LUT feedback rather than a fabric FF latch configuration. This does not establish the configuration binding of the level-sensitive registers mentioned by the datasheet.","evidence":"synthesis_probe;open_L09","source":"latches_map.v;datasheet"},
+    {"id":"LS14","claim":"nextpnr uses CCU2C cells for fabric carry feed-in, feed-out and loopback, consuming ordinary carry/LUT resources. With unused C/D inputs high, their public-model functions are COUT=A0 for INIT0=000a/INIT1=ffff, NO/YES; and S0=CIN, looped COUT=CIN for INIT0=0000/INIT1=000a, NO/NO.","evidence":"tool_source_and_model_identities","source":"pack.cc:make_carry_feed_in;make_carry_feed_out;bitstream.cc:write_comb"},
+    {"id":"LS15","claim":"TRELLIS_FF software always captures DI and has no SD parameter; post-pack SD=0 data on M needs a separate adapter. M retains its separate preload role.","evidence":"public_software_model_interface","source":"common_sim.vh;pack.cc:pack_ffs"}
+  ],
+  "open_questions": [
+    {"id":"S01","related":["L04","L05"],"question":"Physical startup/PUR versus user GSR, disabled slice GSR, REGSET and PRLD initialization; assertion/release interaction with local controls and global synchronizer."},
+    {"id":"S02","related":["L02"],"question":"Does asynchronous PRLD follow M continuously while LSR is asserted, or sample on specific events? Which combinations of SD, PRLD and shared M are physically meaningful?"},
+    {"id":"S03","related":["L05","L06"],"question":"Verify DI/M data selection and shared CE/CLK/LSR/GSR with paired FF and wide-LUT mux use, distinguishing physical constraints from placer conservatism."},
+    {"id":"S04","related":["L06"],"question":"Establish mode-qualified F/OFX/carry outputs, injection codes, noncanonical MODE patterns and chain entry/exit at missing PLC neighbors; empty route patterns alone are insufficient."},
+    {"id":"S05","related":["L03"],"question":"Define digital unknown/contending-control semantics and simultaneous-event policy without treating Verilog if/X scheduling as a physical-chip guarantee."},
+    {"id":"S06","related":["L09"],"question":"Find a physical configuration binding for the datasheet's level-sensitive registers; LUT-feedback latch synthesis does not identify that binding."}
+  ],
+  "hardware_cases": [
+    {"id":"HS01","questions":["S01"],"stimulus":"Build distinguishable REGSET 0/1 fingerprints with user GSR enabled/disabled, then exercise configuration startup and GSR assertion/release with clocks stopped and running. Keep observer outside the reset under test.","observe":"Initial Q and retention, differences between startup and user GSR, selected global synchronizer and local LSR priority; record exact CRAM."},
+    {"id":"HS02","questions":["S02","S03"],"stimulus":"Constrain DI and M separately; sweep SD and PRLD, both clock/reset polarities and CE constants. Hold asynchronous LSR active while changing M without clock edges, then add an active edge.","observe":"Continuous versus sampled preload, normal data source and shared-M compatibility; distinguish open-model sampling from hardware."},
+    {"id":"HS03","questions":["S01","S03"],"stimulus":"Pair FF0/1 in each slice with asymmetric REGSET/SD/LSRMODE and shared controls; combine wide-LUT mux use in separate variants. Change reset and CE away from edges before separate coincidence tests.","observe":"Shared versus individual behavior and physical availability of routed paths; save constraints and routes."},
+    {"id":"HS04","questions":["S04"],"stimulus":"Use one-hot and asymmetric CCU2 INIT, all injection pairs, both CIN values, FF observation and wide-LUT alternatives. Test local chain stages and cross-PLC boundary positions separately; include exact route-bit manifests.","observe":"S0/S1/COUT and active F/OFX paths per MODE; distinguish injection from ordinary output mux selection. Undefined patterns retain undocumented status."},
+    {"id":"HS05","questions":["S06"],"stimulus":"After finding a candidate physical latch configuration, hold each gate level and change D without edges; compare with an explicitly LUT-feedback latch.","observe":"Transparency and hold behavior plus resource/configuration binding; do not substitute a feedback implementation for evidence of a register latch."}
+  ],
+  "sources": {
+    "libraries":{"url":"https://www.latticesemi.com/view_document?document_id=53950","path":"target/research/dsp/Diamond-3.13-FPGA-Libraries.pdf","revision":"Diamond 3.13, August 24 2023"},
+    "datasheet":{"url":"https://www.latticesemi.com/view_document?document_id=50461","path":"target/research/dqs/ECP5-Family-Data-Sheet.pdf","revision":"FPGA-DS-02012-3.4"},
+    "lattice_gsr":{"url":"https://raw.githubusercontent.com/YosysHQ/yosys/7f8fdfd8d7bc08c749a2a969388d3425d4f369d5/techlibs/lattice/lattice_gsr.cc","path":"target/research/logic_state/lattice_gsr.cc"},
+    "synth_lattice":{"url":"https://raw.githubusercontent.com/YosysHQ/yosys/7f8fdfd8d7bc08c749a2a969388d3425d4f369d5/techlibs/lattice/synth_lattice.cc","path":"target/research/logic_state/synth_lattice.cc"}
+  }
+}

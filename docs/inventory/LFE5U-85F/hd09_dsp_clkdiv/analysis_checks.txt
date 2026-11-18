@@ -1,0 +1,10 @@
+HD09 selftest: full synthetic C/opcode lines, every edge, both divided phases, GSR divider reset, never, composite stages: PASS
+HD09 joint selftest: independent rising-C/rise+fall-output trace and wrong-stage rejection: PASS
+HD09m/p selftest: every edge, both divided phases, GSR divider reset, never; full synthetic lines: PASS
+HD09 timing selftest: independent serialized rise+fall trace, wrong-edge rejection: PASS
+Original HD07/HD08c ENABLED known C/opcode/composite/output models still fit all reference windows: PASS
+Python 3.14.7; NumPy 2.5.2
+6 analysis reports reproduce byte-for-byte from the final scripts: PASS
+18 protected board inputs (Verilog/configs/observations) unchanged by SHA256: PASS
+Python syntax and formatting: PASS
+Board-config CLK0 DIV and PRLD enum counts: PASS

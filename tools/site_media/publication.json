@@ -1,0 +1,324 @@
+{
+  "app_commit": "0d53bef",
+  "zip_sha256": "733154caa081dd83977ab42195341bc5cf5b9c26ac01f3e11148b22c68a38906",
+  "capture_date": "2026-11-18",
+  "gui_sha256": "dd5e8a5efa2893105aa4378a53c97f58714f9856cb56e9463ac42f008b846886",
+  "files": [
+    {
+      "file": "hero-life-full.webp",
+      "shot": "life",
+      "take": "20261118-103159-final-ty6f63tt",
+      "raw": "life.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1680,
+        960
+      ],
+      "seconds": null,
+      "old_bytes": 194904,
+      "encoding": null
+    },
+    {
+      "file": "window-life-full.mp4",
+      "shot": "life",
+      "take": "20261118-103159-final-ty6f63tt",
+      "raw": "life.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1680,
+        960
+      ],
+      "seconds": 30,
+      "old_bytes": 1542829,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "oled-bricks.webp",
+      "shot": "oled",
+      "take": "20261118-102257-final-qpk95g1x",
+      "raw": "oled.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 0,
+      "encoding": null
+    },
+    {
+      "file": "oled-bricks.mp4",
+      "shot": "oled",
+      "take": "20261118-102257-final-qpk95g1x",
+      "raw": "oled.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": 18,
+      "old_bytes": 0,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "window-cross-probe.webp",
+      "shot": "cross-probe",
+      "take": "20261118-102257-final-qpk95g1x",
+      "raw": "cross-probe.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        898
+      ],
+      "seconds": null,
+      "old_bytes": 69362,
+      "encoding": null
+    },
+    {
+      "file": "window-cross-probe.mp4",
+      "shot": "cross-probe",
+      "take": "20261118-102257-final-qpk95g1x",
+      "raw": "cross-probe.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        898
+      ],
+      "seconds": 15,
+      "old_bytes": 193899,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "window-start.webp",
+      "shot": "start",
+      "take": "20261118-102257-final-qpk95g1x",
+      "raw": "start.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 39116,
+      "encoding": null
+    },
+    {
+      "file": "window-new-project.webp",
+      "shot": "new-project",
+      "take": "20261118-105037-final-lyz8tljk",
+      "raw": "new-project.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 0,
+      "encoding": null
+    },
+    {
+      "file": "window-project.webp",
+      "shot": "project",
+      "take": "20261118-104244-final-c_uqo3_p",
+      "raw": "project.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 98676,
+      "encoding": null
+    },
+    {
+      "file": "window-project-build.mp4",
+      "shot": "project",
+      "take": "20261118-104244-final-c_uqo3_p",
+      "raw": "project.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": 28,
+      "old_bytes": 239649,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "window-critical-path.webp",
+      "shot": "critical",
+      "take": "20261118-104321-final-yn14buhl",
+      "raw": "critical.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        898
+      ],
+      "seconds": null,
+      "old_bytes": 88796,
+      "encoding": null
+    },
+    {
+      "file": "window-waves.webp",
+      "shot": "waves",
+      "take": "20261118-104337-final-bkgokjev",
+      "raw": "waves.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 74764,
+      "encoding": null
+    },
+    {
+      "file": "window-waves.mp4",
+      "shot": "waves",
+      "take": "20261118-104337-final-bkgokjev",
+      "raw": "waves.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": 18,
+      "old_bytes": 214718,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "window-riscv-terminal.webp",
+      "shot": "terminal",
+      "take": "20261118-104408-final-qnm21_1j",
+      "raw": "terminal.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 142160,
+      "encoding": null
+    },
+    {
+      "file": "window-riscv-terminal.mp4",
+      "shot": "terminal",
+      "take": "20261118-104408-final-qnm21_1j",
+      "raw": "terminal.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": 60,
+      "old_bytes": 654590,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    },
+    {
+      "file": "window-life-full-zoom.webp",
+      "shot": "life-zoom",
+      "take": "20261118-104531-final-lscxjttq",
+      "raw": "life-zoom.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 2247798,
+      "encoding": null
+    },
+    {
+      "file": "board-closeup.webp",
+      "shot": "board",
+      "take": "20261118-104549-final-y2627qcr",
+      "raw": "board.raw.png",
+      "kind": "still",
+      "rect": [
+        30,
+        80,
+        1500,
+        978
+      ],
+      "seconds": null,
+      "old_bytes": 83838,
+      "encoding": null
+    },
+    {
+      "file": "window-tour.mp4",
+      "shot": "tour",
+      "take": "20261118-104607-final-2gu6bkhd",
+      "raw": "tour.raw.mov",
+      "kind": "clip",
+      "rect": [
+        30,
+        80,
+        1500,
+        898
+      ],
+      "seconds": 43,
+      "old_bytes": 435749,
+      "encoding": {
+        "crf": 28,
+        "preset": "veryslow",
+        "fps": 12
+      }
+    }
+  ]
+}

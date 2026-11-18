@@ -1,0 +1,18 @@
+# Kinetic seed lantern, 90 wall seconds; no board attached.
+0 rate max
+0 run
+1 board 3d
+2 type r
+25 button 5 down
+27 button 5 up
+35 button 6 down
+37 button 6 up
+45 button 5 down
+47 button 5 up
+55 button 6 down
+57 button 6 up
+65 button 5 down
+67 button 5 up
+75 button 6 down
+77 button 6 up
+90 quit

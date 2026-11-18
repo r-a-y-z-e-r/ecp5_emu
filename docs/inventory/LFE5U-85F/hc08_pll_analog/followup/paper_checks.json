@@ -1,0 +1,351 @@
+{
+  "database_file": "ECP5/tiledata/PLL0_UL/bits.db",
+  "database_sha256": "ce8cf5e1ef7af6e3e4d8b7244fe0cc06b9e4229c590361c2ef30fecfcd17c358",
+  "enum_lines": [
+    ".config_enum FEEDBK_PATH USERCLOCK",
+    "CLKOP -",
+    "CLKOS -",
+    "CLKOS2 -",
+    "CLKOS3 -",
+    "INT_OP F2B1 F3B1 F4B1",
+    "INT_OS F1B1 F3B1 F4B1 F5B1",
+    "INT_OS2 F3B1 F4B1 F6B1",
+    "INT_OS3 F1B1 F2B1 F4B1 F5B1 F6B1",
+    "USERCLOCK -"
+  ],
+  "mux_lines": [
+    ".mux E1_CLKFB",
+    "E1_CLKINTFB -",
+    "E1_JCLKFB1 F1B1",
+    "E1_JCLKFB2 F2B1",
+    "E1_JCLKFB3 F1B1 F2B1"
+  ],
+  "mask": [
+    "F1B1",
+    "F2B1",
+    "F3B1",
+    "F4B1",
+    "F5B1",
+    "F6B1"
+  ],
+  "all_internal_plus_JCLKFB3": [
+    {
+      "selector": "INT_OP",
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "exact_enum_matches": []
+    },
+    {
+      "selector": "INT_OS",
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1",
+        "F5B1"
+      ],
+      "exact_enum_matches": []
+    },
+    {
+      "selector": "INT_OS2",
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": []
+    },
+    {
+      "selector": "INT_OS3",
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F4B1",
+        "F5B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": [
+        "INT_OS3"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "profile": "C",
+      "source_selector": "INT_OP",
+      "source_arc": "E1_JCLKFB3",
+      "selector_ones": [
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "arc_ones": [
+        "F1B1",
+        "F2B1"
+      ],
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "union_zeroes": [
+        "F5B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": [],
+      "packed_equals_union": true,
+      "dividers": {
+        "CLKI_DIV": {
+          "written": "0000000",
+          "divider": 1
+        },
+        "CLKFB_DIV": {
+          "written": "0000011",
+          "divider": 4
+        },
+        "CLKOP_DIV": {
+          "written": "0000101",
+          "divider": 6
+        },
+        "CLKOS_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS2_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS3_DIV": {
+          "written": "0000111",
+          "divider": 8
+        }
+      },
+      "config_sha256": "7dd99e5de5a48b9c5b2a7468f79a38f93669869f757ef07e69d448a5a68d4644",
+      "bit_sha256": "2749cac96dea7b221a46c6ac6e617d7e28c1d676deab591b41ffd511cfa83a06"
+    },
+    {
+      "profile": "D",
+      "source_selector": "INT_OP",
+      "source_arc": "E1_JCLKFB3",
+      "selector_ones": [
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "arc_ones": [
+        "F1B1",
+        "F2B1"
+      ],
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "union_zeroes": [
+        "F5B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": [],
+      "packed_equals_union": true,
+      "dividers": {
+        "CLKI_DIV": {
+          "written": "0000000",
+          "divider": 1
+        },
+        "CLKFB_DIV": {
+          "written": "0000011",
+          "divider": 4
+        },
+        "CLKOP_DIV": {
+          "written": "0000101",
+          "divider": 6
+        },
+        "CLKOS_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS2_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS3_DIV": {
+          "written": "0000111",
+          "divider": 8
+        }
+      },
+      "config_sha256": "b277a2cc08d9b80e31c67610fbce1d270bdbb5d1b8082e309640918a560ff3ab",
+      "bit_sha256": "21db615dc3f55edb1fa41d3d868612b6f13a6d3bd192e78a2ba4b81126ef48a3"
+    },
+    {
+      "profile": "F",
+      "source_selector": "INT_OP",
+      "source_arc": "E1_JCLKFB3",
+      "selector_ones": [
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "arc_ones": [
+        "F1B1",
+        "F2B1"
+      ],
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "union_zeroes": [
+        "F5B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": [],
+      "packed_equals_union": true,
+      "dividers": {
+        "CLKI_DIV": {
+          "written": "0000000",
+          "divider": 1
+        },
+        "CLKFB_DIV": {
+          "written": "0000011",
+          "divider": 4
+        },
+        "CLKOP_DIV": {
+          "written": "0000101",
+          "divider": 6
+        },
+        "CLKOS_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS2_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS3_DIV": {
+          "written": "0000010",
+          "divider": 3
+        }
+      },
+      "config_sha256": "709a047a6ac342590c791bb4fbc05cd6ad2646c6590e30131f7a3f0ab611c9db",
+      "bit_sha256": "eea6c739c8972a49b425ff5b0ffe54c2b4b43bb5c6b7ca3870ec365066f1ca8f"
+    },
+    {
+      "profile": "G",
+      "source_selector": "INT_OP",
+      "source_arc": "E1_JCLKFB3",
+      "selector_ones": [
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "arc_ones": [
+        "F1B1",
+        "F2B1"
+      ],
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1"
+      ],
+      "union_zeroes": [
+        "F5B1",
+        "F6B1"
+      ],
+      "exact_enum_matches": [],
+      "packed_equals_union": true,
+      "dividers": {
+        "CLKI_DIV": {
+          "written": "0000000",
+          "divider": 1
+        },
+        "CLKFB_DIV": {
+          "written": "0000011",
+          "divider": 4
+        },
+        "CLKOP_DIV": {
+          "written": "0000101",
+          "divider": 6
+        },
+        "CLKOS_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS2_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS3_DIV": {
+          "written": "0000001",
+          "divider": 2
+        }
+      },
+      "config_sha256": "1b89bd499c1593cff46f6c1ac0bdb0435790e9de4700e73d8291303a2a473c64",
+      "bit_sha256": "c9ca5fa0d2c1a500ed722395a19bb310b6a2fc40f1286f6a96799893f4559f6d"
+    },
+    {
+      "profile": "H",
+      "source_selector": "INT_OS",
+      "source_arc": "E1_JCLKFB3",
+      "selector_ones": [
+        "F1B1",
+        "F3B1",
+        "F4B1",
+        "F5B1"
+      ],
+      "arc_ones": [
+        "F1B1",
+        "F2B1"
+      ],
+      "union_ones": [
+        "F1B1",
+        "F2B1",
+        "F3B1",
+        "F4B1",
+        "F5B1"
+      ],
+      "union_zeroes": [
+        "F6B1"
+      ],
+      "exact_enum_matches": [],
+      "packed_equals_union": true,
+      "dividers": {
+        "CLKI_DIV": {
+          "written": "0000000",
+          "divider": 1
+        },
+        "CLKFB_DIV": {
+          "written": "0000011",
+          "divider": 4
+        },
+        "CLKOP_DIV": {
+          "written": "0000101",
+          "divider": 6
+        },
+        "CLKOS_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS2_DIV": {
+          "written": "0000111",
+          "divider": 8
+        },
+        "CLKOS3_DIV": {
+          "written": "0000010",
+          "divider": 3
+        }
+      },
+      "config_sha256": "995f98a241b4b834bb637aab909f16316f9fb89b38210423feb84bc62ae92e55",
+      "bit_sha256": "8d783c8cd7f872fac2823025f6d5b4b50103cbb26dccf503ff675ad78bcebd54"
+    }
+  ]
+}

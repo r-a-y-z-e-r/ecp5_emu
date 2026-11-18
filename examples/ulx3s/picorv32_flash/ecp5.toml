@@ -1,0 +1,15 @@
+# PicoRV32 booting from block RAM and executing read-only flash firmware.
+# Build: ecp5_emu build examples/ulx3s/picorv32_flash (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/picorv32_flash; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/picorv32_flash.
+
+[project]
+name = "picorv32_flash"
+top = "top"
+
+[sources]
+verilog = ["flash_reader.v", "picorv32.v", "top.v", "uart_tx.v"]
+constraints = "top.lpf"
+# The boot byte lanes are read by $readmemh during synthesis; firmware.hex
+# is the emulator's flash payload. build.sh copies all five without ecpbram.
+files = ["firmware.hex", "fw0.hex", "fw1.hex", "fw2.hex", "fw3.hex"]

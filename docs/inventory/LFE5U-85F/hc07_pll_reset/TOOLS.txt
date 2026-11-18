@@ -1,0 +1,20 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c), --85k --package CABGA381 --seed 1
+ecppack: prjtrellis a31ff7042e712c0e2ad217054116ce2c4995f5c7
+openFPGALoader v1.1.1
+pyserial 3.5, /dev/cu.usbserial-<FTDI-serial> at 115200 8N1
+pytrellis (prjtrellis above)
+Python 3 (hc06_gen.py, hc06_analyse.py, run.py)
+ecp5_emu event kernel, 2026-11-16 working tree (tests/pll_reset_native.rs); fast mode refuses live RST/STDBY
+
+python3 hc06_gen.py > hc06.v; python3 hc06_gen.py b > hc06b.v
+yosys -p 'read_verilog hc06.v; synth_ecp5 -top top -json hc06.json'
+nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json hc06.json --lpf hc06.lpf --textcfg hc06.config
+ecppack hc06.config hc06.bit
+yosys -p 'read_verilog hc06b.v; synth_ecp5 -top top -json hc06b.json'
+nextpnr-ecp5 --85k --package CABGA381 --seed 1 --json hc06b.json --lpf hc06.lpf --textcfg hc06b.config
+ecppack hc06b.config hc06b.bit
+
+Under out/board.lock, SRAM loads only:
+run.py hc06.bit H 3 25
+run.py hc06b.bit H 3 40

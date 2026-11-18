@@ -1,0 +1,12 @@
+# Read-only configuration flash ID, data windows and CRCs on the UART.
+# Build: ecp5_emu build examples/ulx3s/flash_dump (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/flash_dump; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/flash_dump.
+
+[project]
+name = "flash_dump"
+top = "top"
+
+[sources]
+verilog = ["flash_reader.v", "top.v", "uart_tx.v"]
+constraints = "top.lpf"

@@ -1,0 +1,6 @@
+# Adapted from life_full_v3; CLI supplies --focus R44C60 --cell 120.
+0 theme dark
+0 board 3d
+0 rate 100
+0 values on
+0 run

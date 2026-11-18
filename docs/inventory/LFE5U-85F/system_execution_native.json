@@ -1,0 +1,5245 @@
+{
+  "cli_observations": [
+    9,
+    10
+  ],
+  "date": "2026-10-22",
+  "device": "LFE5U-85F",
+  "formats_and_observed_all_plc_match": true,
+  "hardware_results": 0,
+  "pinmap": {
+    "clk": "G2",
+    "d[0]": "A19",
+    "d[1]": "A2",
+    "d[2]": "A3",
+    "d[3]": "A4",
+    "gsr": "J4",
+    "q_nogsr": "B10",
+    "q_reset": "A9",
+    "q_set": "B1",
+    "qa[0]": "A5",
+    "qa[1]": "A6",
+    "qa[2]": "A7",
+    "qa[3]": "A8",
+    "ra[0]": "A11",
+    "ra[1]": "A12",
+    "ra[2]": "A13",
+    "ra[3]": "A14",
+    "reset": "H2",
+    "wa[0]": "A15",
+    "wa[1]": "A16",
+    "wa[2]": "A17",
+    "wa[3]": "A18",
+    "we": "A10"
+  },
+  "runs": [
+    {
+      "allowed_word_writes": 204,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 3,
+        "lut4": 0,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 394,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "1cbb41d6e6236e3957a09f8645fceb006bfd5bf2e7892642c4d58776cbee1188",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 3,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 471,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": 3,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "wake-phases",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "top",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:cc1f4e79bda98a1c",
+        "decoded_sha256": "2585d24e7e0e95e6cafc557c2296caef222222f5c2e2d9ba4f765734596f7857",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": null,
+          "parser_defaults_may_apply": false,
+          "sysconfig_directives": {},
+          "text_comments": [
+            "Part: LFE5U-85F-6CABGA381"
+          ],
+          "text_variant": null
+        },
+        "source_bytes": 23727,
+        "source_kind": "text_config",
+        "source_sha256": "0d192ecce5e9913c8fab31ca02faa8274040fa56eb4925c56e52df3ee37fe41e"
+      },
+      "inhibited_word_writes": 1,
+      "samples": 1025,
+      "scope": "observed",
+      "source_kind": "config",
+      "startup": "wake_phases",
+      "statistics": {
+        "combinational_evaluations": 223038,
+        "discarded_timer_events": 0,
+        "driver_changes": 228312,
+        "lut_bit_changes": 487,
+        "lut_write_edges": 816,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 2222,
+        "signal_changes": 228783,
+        "system_evaluations": 13,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 1,
+        "gsr_enabled_ff": 2,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_LOW",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": "Sequence21"
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        }
+      ],
+      "trace_transitions": 3439,
+      "undriven": 0,
+      "word_writes_during_user_gsr": 1
+    },
+    {
+      "allowed_word_writes": 204,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 3,
+        "lut4": 0,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 394,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "a3608a5ac5bfca67ca3fe42bf388786a8ac0310b31cd2c8ab09cafb32568ba49",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 3,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 471,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": 3,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "wake-phases",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "top",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:cc1f4e79bda98a1c",
+        "decoded_sha256": "6f08ca174951668cc03cfc62a3a47d4bd1248660b6a624657024e4349b6ae014",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280506,
+        "source_kind": "bitstream",
+        "source_sha256": "906c7b9da940252b88b82db876e20abb93799c543fbb1970f140d61e889ea039"
+      },
+      "inhibited_word_writes": 1,
+      "samples": 1025,
+      "scope": "observed",
+      "source_kind": "bit",
+      "startup": "wake_phases",
+      "statistics": {
+        "combinational_evaluations": 223038,
+        "discarded_timer_events": 0,
+        "driver_changes": 228312,
+        "lut_bit_changes": 487,
+        "lut_write_edges": 816,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 2222,
+        "signal_changes": 228783,
+        "system_evaluations": 13,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 1,
+        "gsr_enabled_ff": 2,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_LOW",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": "Sequence21"
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        }
+      ],
+      "trace_transitions": 3439,
+      "undriven": 0,
+      "word_writes_during_user_gsr": 1
+    },
+    {
+      "allowed_word_writes": 204,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 3,
+        "lut4": 0,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 394,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "6064b36b567c6980eaf46764dc44088367dbf7f81e01557408dbc7097f578efa",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 3,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 471,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": 3,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "wake-phases",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "wake4",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:f36f81844903a21c",
+        "decoded_sha256": "079b6ac70596b766edab285b24c55bd83762b7fea5dee7652955e23acdca7539",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": null,
+          "parser_defaults_may_apply": false,
+          "sysconfig_directives": {},
+          "text_comments": [
+            "Part: LFE5U-85F-6CABGA381"
+          ],
+          "text_variant": null
+        },
+        "source_bytes": 23890,
+        "source_kind": "text_config",
+        "source_sha256": "01996995812defcced2a88bb12d69c86130d62e2557499900f19012e7a794ef3"
+      },
+      "inhibited_word_writes": 1,
+      "samples": 1025,
+      "scope": "observed",
+      "source_kind": "config",
+      "startup": "wake_phases",
+      "statistics": {
+        "combinational_evaluations": 223038,
+        "discarded_timer_events": 0,
+        "driver_changes": 228315,
+        "lut_bit_changes": 487,
+        "lut_write_edges": 816,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 2222,
+        "signal_changes": 228785,
+        "system_evaluations": 16,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 1,
+        "gsr_enabled_ff": 2,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_LOW",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": "Sequence4"
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:DONE-pullup"
+            },
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            },
+            {
+              "reason": "initial driver",
+              "source": "system:external-DONE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        }
+      ],
+      "trace_transitions": 3441,
+      "undriven": 0,
+      "word_writes_during_user_gsr": 1
+    },
+    {
+      "allowed_word_writes": 204,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 3,
+        "lut4": 0,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 394,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "f679657c6930cf563d52e1a7e2fddfd13c868f50ca62eea0ec7f769e6a213186",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 3,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 471,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": 3,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "wake-phases",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "wake4",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:f36f81844903a21c",
+        "decoded_sha256": "fca945b83813af506f6dbc46e04f6219d3ba4b06b157a33fe717004dda67ca98",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280506,
+        "source_kind": "bitstream",
+        "source_sha256": "582ef465168dbbfeb93604ca20ae0ced3125df9017182a3e99ace8dbaa2cfa65"
+      },
+      "inhibited_word_writes": 1,
+      "samples": 1025,
+      "scope": "observed",
+      "source_kind": "bit",
+      "startup": "wake_phases",
+      "statistics": {
+        "combinational_evaluations": 223038,
+        "discarded_timer_events": 0,
+        "driver_changes": 228315,
+        "lut_bit_changes": 487,
+        "lut_write_edges": 816,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 2222,
+        "signal_changes": 228785,
+        "system_evaluations": 16,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 1,
+        "gsr_enabled_ff": 2,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_LOW",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": "Sequence4"
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:DONE-pullup"
+            },
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            },
+            {
+              "reason": "initial driver",
+              "source": "system:external-DONE"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        }
+      ],
+      "trace_transitions": 3441,
+      "undriven": 0,
+      "word_writes_during_user_gsr": 1
+    },
+    {
+      "allowed_word_writes": 204,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 83640,
+        "lut4": 83631,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 711266,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "a3608a5ac5bfca67ca3fe42bf388786a8ac0310b31cd2c8ab09cafb32568ba49",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 83640,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 1338582,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": 3,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "wake-phases",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "top",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:cc1f4e79bda98a1c",
+        "decoded_sha256": "6f08ca174951668cc03cfc62a3a47d4bd1248660b6a624657024e4349b6ae014",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280506,
+        "source_kind": "bitstream",
+        "source_sha256": "906c7b9da940252b88b82db876e20abb93799c543fbb1970f140d61e889ea039"
+      },
+      "inhibited_word_writes": 1,
+      "samples": 1025,
+      "scope": "all_plc_registers",
+      "source_kind": "bit",
+      "startup": "wake_phases",
+      "statistics": {
+        "combinational_evaluations": 1357864,
+        "discarded_timer_events": 0,
+        "driver_changes": 1112244,
+        "lut_bit_changes": 487,
+        "lut_write_edges": 816,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 508060,
+        "signal_changes": 1990855,
+        "system_evaluations": 13,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 2,
+        "gsr_enabled_ff": 83638,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_LOW",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": "Sequence21"
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "z",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 4
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        }
+      ],
+      "trace_transitions": 3439,
+      "undriven": 459971,
+      "word_writes_during_user_gsr": 1
+    },
+    {
+      "allowed_word_writes": 205,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 7,
+        "dcc_bypasses": 1,
+        "flip_flops": 3,
+        "lut4": 0,
+        "lutram_columns": 4,
+        "pio": 23,
+        "ramw": 1,
+        "routes": 394,
+        "wide_muxes": 0
+      },
+      "final_memory": [
+        9,
+        1,
+        6,
+        14,
+        9,
+        12,
+        7,
+        1,
+        6,
+        0,
+        12,
+        14,
+        9,
+        4,
+        9,
+        2
+      ],
+      "final_state": {
+        "configuration_sha256": "d9a951c7f8bed95f0599dbdbd3a9afb5205067c5d5406732b2d4f5e4ee00f8e0",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_ebr_bits": 0,
+        "known_flip_flops": 3,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 470,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "fixture": "high",
+      "image": {
+        "bits_per_frame": 1136,
+        "cram_fingerprint": "fnv1a64:12dccccb3fb2ad9c",
+        "decoded_sha256": "747bf88d7e9fa2ee5480794318313db4f5950eb1e4ec5307b55e46c244d05fd3",
+        "ebr_init_images": 0,
+        "frames": 13294,
+        "service": {
+          "native_comments": [
+            [
+              80,
+              97,
+              114,
+              116,
+              58,
+              32,
+              76,
+              70,
+              69,
+              53,
+              85,
+              45,
+              56,
+              53,
+              70,
+              45,
+              54,
+              67,
+              65,
+              66,
+              71,
+              65,
+              51,
+              56,
+              49
+            ]
+          ],
+          "native_registers": {
+            "ctrl0": 1073741824,
+            "ctrl1": 1157627904,
+            "sed_reference": 4294967295,
+            "usercode": 0
+          },
+          "parser_defaults_may_apply": true,
+          "sysconfig_directives": {},
+          "text_comments": [],
+          "text_variant": null
+        },
+        "source_bytes": 280505,
+        "source_kind": "bitstream",
+        "source_sha256": "32e7c8520af7d4e86277530f58cd85fbcbadd532c46ca6954f346500accd247d"
+      },
+      "inhibited_word_writes": 0,
+      "samples": 1025,
+      "scope": "observed",
+      "source_kind": "bit",
+      "startup": "ready_unknown",
+      "statistics": {
+        "combinational_evaluations": 223087,
+        "discarded_timer_events": 0,
+        "driver_changes": 228355,
+        "lut_bit_changes": 493,
+        "lut_write_edges": 820,
+        "lut_write_evaluations": 4100,
+        "possible_clock_edges": 0,
+        "register_evaluations": 2222,
+        "signal_changes": 228825,
+        "system_evaluations": 5,
+        "time_batches": 1024,
+        "trace_overwrites": 0
+      },
+      "system_plan": {
+        "gsr_disabled_ff": 1,
+        "gsr_enabled_ff": 2,
+        "rule": "logical strobes settle before FF/RAM capture; GSR only enabled slice FF; GOE gates output driver; GWDIS inhibits RAM writes; wake sys:step is an explicit phase boundary, not physical START; sequence4 external DONE holds completion at T3; PUR unmodelled",
+        "sync_candidates": [
+          "ASYNC",
+          "NONE"
+        ],
+        "user_gsr_mode": "ACTIVE_HIGH",
+        "user_gsr_resource": "LFE5U-85F/R94C4/GSR",
+        "wake_sequence": null
+      },
+      "trace_head": [
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:done"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.done"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C4/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C18/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOA"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R0C60/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R11C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "initial driver",
+              "source": "external:LFE5U-85F/R35C0/PIOB"
+            },
+            {
+              "reason": "initial driver",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 0,
+          "phase": "initial",
+          "previous": "z",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "x",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:goe"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.goe"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:gwdis"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.gwdis"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:ready"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.ready"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:startup_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.startup_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "logical system strobes before resource capture",
+              "source": "system:user_gsr"
+            }
+          ],
+          "delta": 32,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 0
+            },
+            "name": "$SYS.user_gsr"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C4/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 4,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 33,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOB"
+            }
+          ],
+          "delta": 26,
+          "phase": "combinational",
+          "previous": "zero",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C18/PIOA"
+            }
+          ],
+          "delta": 27,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 18,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R11C0/PIOB"
+            }
+          ],
+          "delta": 31,
+          "phase": "combinational",
+          "previous": "one",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 11
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOA"
+            }
+          ],
+          "delta": 40,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_A"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R0C60/PIOB"
+            }
+          ],
+          "delta": 40,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "zero",
+          "wire": {
+            "location": {
+              "col": 60,
+              "row": 0
+            },
+            "name": "PAD_B"
+          }
+        },
+        {
+          "causes": [
+            {
+              "reason": "combinational evaluation",
+              "source": "goe:LFE5U-85F/R35C0/PIOB"
+            }
+          ],
+          "delta": 40,
+          "phase": "combinational",
+          "previous": "x",
+          "time": {
+            "denominator": 1,
+            "numerator": 1
+          },
+          "value": "one",
+          "wire": {
+            "location": {
+              "col": 0,
+              "row": 35
+            },
+            "name": "PAD_B"
+          }
+        }
+      ],
+      "trace_transitions": 3440,
+      "undriven": 0,
+      "word_writes_during_user_gsr": 1
+    }
+  ],
+  "schema_version": 1,
+  "scope": "logical wake phases and asynchronous user GSR; physical POR/START/transport and synchronized GSR unmodelled"
+}

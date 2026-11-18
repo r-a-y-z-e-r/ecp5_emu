@@ -1,0 +1,4 @@
+O and I as in HI07: True True N: N=24 N=24
+sclk rising edges: [40, 96, 152, 208, 264, 320, 376]
+Q changes at: [40, 96, 152, 208, 264, 320, 376]
+fits (first edge from P, edge index held by Q0..Q6, words checked): [(-96, (3, 4, 5, 6, 0, 1, 2), 5)]

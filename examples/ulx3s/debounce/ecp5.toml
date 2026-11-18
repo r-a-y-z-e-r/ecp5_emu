@@ -1,0 +1,13 @@
+
+# FIRE1 synchronised and debounced, the presses counted on the LEDs.
+# Build: ecp5_emu build examples/ulx3s/debounce (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/debounce; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/debounce.
+
+[project]
+name = "debounce"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

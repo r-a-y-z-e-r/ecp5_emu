@@ -1,0 +1,12 @@
+hi10_ff, all flip-flops: 39396 compared, 0 differ
+hi10, O0/I0 as flip-flops: 39396 compared, 4523 differ
+hi10, latch transparent while sclk=0 and CE=1, else holding its output: 39530 compared, 0 differ
+hi10, the same transparent while sclk=1: 39536 compared, 3304 differ
+hi10, latch transparent while sclk=1, CE gates, closing takes D before the edge: 39556 compared, 3344 differ
+hi10, latch transparent while sclk=1, CE gates, closing takes D after the edge: 39556 compared, 4274 differ
+hi10, latch transparent while sclk=1, CE ignored, closing takes D before the edge: 39560 compared, 4983 differ
+hi10, latch transparent while sclk=1, CE ignored, closing takes D after the edge: 39560 compared, 4983 differ
+hi10, latch transparent while sclk=0, CE gates, closing takes D before the edge: 39542 compared, 82 differ
+hi10, latch transparent while sclk=0, CE gates, closing takes D after the edge: 39542 compared, 1310 differ
+hi10, latch transparent while sclk=0, CE ignored, closing takes D before the edge: 39552 compared, 2040 differ
+hi10, latch transparent while sclk=0, CE ignored, closing takes D after the edge: 39552 compared, 2040 differ

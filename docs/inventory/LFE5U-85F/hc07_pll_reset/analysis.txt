@@ -1,0 +1,73 @@
+events per load: {1: 1186, 2: 1183, 3: 1183}
+
+== pa
+W=     1 n= 231: drop=none x231  during=2  level=0..1 (median 0)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=     2 n= 211: drop=none x211  during=4  level=0..1 (median 0)  first=0  stable=0..63 (median 31)  lock=0  bmin=128  bmax=128  lost=0
+W=     3 n= 235: drop=none x235  during=6  level=0..1 (median 0)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=     4 n= 209: drop=none x209  during=8  level=0..1 (median 0)  first=0  stable=0..62 (median 33)  lock=0  bmin=128  bmax=128  lost=0
+W=     5 n= 227: drop=none x227  during=10  level=0..1 (median 0)  first=0  stable=0..63 (median 34)  lock=0  bmin=128  bmax=128  lost=0
+W=     8 n= 214: drop=none x214  during=16  level=0..1 (median 0)  first=0  stable=0..63 (median 31)  lock=0  bmin=128  bmax=128  lost=0
+W=    16 n= 225: drop=none x225  during=32  level=0..1 (median 0)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=    32 n= 226: drop=none x226  during=64  level=0..1 (median 0)  first=0  stable=0..63 (median 35)  lock=0  bmin=128  bmax=128  lost=0
+W=   100 n= 228: drop=none x228  during=200  level=0..1 (median 0)  first=0  stable=0..63 (median 37)  lock=0  bmin=128  bmax=128  lost=0
+W=   256 n= 219: drop=none x219  during=512  level=0..1 (median 0)  first=0  stable=0..63 (median 28)  lock=0  bmin=128  bmax=128  lost=0
+W=  1000 n= 194: drop=none x194  during=2000  level=0..1 (median 0)  first=0  stable=0..63 (median 29)  lock=0  bmin=128  bmax=128  lost=0
+W=  4096 n= 190: drop=none x190  during=8192  level=0..1 (median 0)  first=0  stable=0..63 (median 27)  lock=0  bmin=128  bmax=128  lost=0
+W= 10000 n= 238: drop=none x238  during=20000  level=0..1 (median 0)  first=0  stable=0..63 (median 33)  lock=0  bmin=128  bmax=128  lost=0
+W= 25000 n= 248: drop=none x248  during=50000  level=0..1 (median 0)  first=0  stable=0..63 (median 34)  lock=0  bmin=128  bmax=128  lost=0
+W= 50000 n= 231: drop=none x231  during=34464  level=0..1 (median 0)  first=0  stable=0..63 (median 30)  lock=0  bmin=128  bmax=128  lost=0
+W=100000 n= 226: drop=none x226  during=3392  level=0..1 (median 0)  first=0  stable=0..63 (median 35)  lock=0  bmin=128  bmax=128  lost=0
+
+== pb
+W=     1 n= 231: drop=2  during=0  level=0..1 (median 1)  first=0  stable=0..321 (median 288)  lock=0  bmin=122..125 (median 123)  bmax=128..129 (median 128)  lost=0
+W=     2 n= 211: drop=2  during=0  level=0..1 (median 1)  first=3  stable=258..321 (median 289)  lock=98311  bmin=120..124 (median 121)  bmax=128..129 (median 128)  lost=0
+W=     3 n= 235: drop=2  during=0  level=0..1 (median 1)  first=3  stable=258..321 (median 290)  lock=98311  bmin=118..123 (median 119)  bmax=128..129 (median 128)  lost=0
+W=     4 n= 209: drop=2  during=0  level=0..1 (median 1)  first=3  stable=258..322 (median 292)  lock=98311  bmin=116..122 (median 116)  bmax=128..129 (median 129)  lost=0
+W=     5 n= 227: drop=2  during=0  level=0..1 (median 1)  first=3  stable=259..322 (median 293)  lock=98311  bmin=114..120 (median 114)  bmax=128..129 (median 129)  lost=0
+W=     8 n= 214: drop=2  during=0  level=0..1 (median 1)  first=3  stable=260..322 (median 289)  lock=98311  bmin=108..118 (median 108)  bmax=129  lost=0
+W=    16 n= 225: drop=2  during=0  level=0..1 (median 1)  first=3  stable=454..582 (median 515)  lock=98411..98541 (median 98479)  bmin=18..67 (median 44)  bmax=129  lost=0
+W=    32 n= 226: drop=2  during=0  level=0..1 (median 1)  first=53..54 (median 54)  stable=1547..1806 (median 1605)  lock=99439..99691 (median 99544)  bmin=0..33 (median 9)  bmax=129..130 (median 129)  lost=0
+W=   100 n= 228: drop=2  during=0  level=0..1 (median 1)  first=58..59 (median 58)  stable=3748..4012 (median 3815)  lock=101647..101895 (median 101748)  bmin=0  bmax=129..130 (median 129)  lost=0
+W=   256 n= 219: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=7755..8010 (median 7822)  lock=105657..105920 (median 105750)  bmin=0  bmax=129..130 (median 129)  lost=0
+W=  1000 n= 194: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10767..11041 (median 10844)  lock=108673..109008 (median 108772)  bmin=0  bmax=128..130 (median 129)  lost=0
+W=  4096 n= 190: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10777..11057 (median 10854)  lock=108681..108981 (median 108782)  bmin=0  bmax=129..130 (median 129)  lost=0
+W= 10000 n= 238: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10768..11078 (median 10860)  lock=108669..108956 (median 108785)  bmin=0  bmax=129..130 (median 129)  lost=0
+W= 25000 n= 248: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10781..11061 (median 10859)  lock=108686..108960 (median 108784)  bmin=0  bmax=128..130 (median 129)  lost=0
+W= 50000 n= 231: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10781..11059 (median 10861)  lock=108684..108981 (median 108779)  bmin=0  bmax=128..130 (median 129)  lost=0
+W=100000 n= 226: drop=2  during=0  level=0..1 (median 1)  first=59..61 (median 60)  stable=10771..11065 (median 10856)  lock=108690..108966 (median 108784)  bmin=0  bmax=128..130 (median 129)  lost=0
+
+== pc
+W=     1 n= 231: drop=none x231  during=2  level=0..1 (median 1)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=     2 n= 211: drop=none x211  during=4  level=0..1 (median 1)  first=0  stable=0..63 (median 31)  lock=0  bmin=128  bmax=128  lost=0
+W=     3 n= 235: drop=none x235  during=6  level=0..1 (median 1)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=     4 n= 209: drop=none x209  during=8  level=0..1 (median 1)  first=0  stable=0..62 (median 33)  lock=0  bmin=128  bmax=128  lost=0
+W=     5 n= 227: drop=none x227  during=10  level=0..1 (median 1)  first=0  stable=0..63 (median 34)  lock=0  bmin=128  bmax=128  lost=0
+W=     8 n= 214: drop=none x214  during=16  level=0..1 (median 1)  first=0  stable=0..63 (median 31)  lock=0  bmin=128  bmax=128  lost=0
+W=    16 n= 225: drop=none x225  during=32  level=0..1 (median 1)  first=0  stable=0..63 (median 32)  lock=0  bmin=128  bmax=128  lost=0
+W=    32 n= 226: drop=none x226  during=64  level=0..1 (median 1)  first=0  stable=0..63 (median 35)  lock=0  bmin=128  bmax=128  lost=0
+W=   100 n= 228: drop=none x228  during=200  level=0..1 (median 1)  first=0  stable=0..63 (median 37)  lock=0  bmin=128  bmax=128  lost=0
+W=   256 n= 219: drop=none x219  during=512  level=0..1 (median 1)  first=0  stable=0..63 (median 28)  lock=0  bmin=128  bmax=128  lost=0
+W=  1000 n= 194: drop=none x194  during=2000  level=0..1 (median 1)  first=0  stable=0..63 (median 29)  lock=0  bmin=128  bmax=128  lost=0
+W=  4096 n= 190: drop=none x190  during=8192  level=0..1 (median 1)  first=0  stable=0..63 (median 27)  lock=0  bmin=128  bmax=128  lost=0
+W= 10000 n= 238: drop=none x238  during=20000  level=0..1 (median 1)  first=0  stable=0..63 (median 33)  lock=0  bmin=128  bmax=128  lost=0
+W= 25000 n= 248: drop=none x248  during=50000  level=0..1 (median 1)  first=0  stable=0..63 (median 34)  lock=0  bmin=128  bmax=128  lost=0
+W= 50000 n= 231: drop=none x231  during=34464  level=0..1 (median 1)  first=0  stable=0..63 (median 30)  lock=0  bmin=128  bmax=128  lost=0
+W=100000 n= 226: drop=none x226  during=3392  level=0..1 (median 1)  first=0  stable=0..63 (median 35)  lock=0  bmin=128  bmax=128  lost=0
+
+== pd
+W=     1 n= 231: drop=2  during=0  level=0..1 (median 0)  first=0  stable=0..319 (median 288)  lock=0  bmin=125..126 (median 125)  bmax=128  lost=0
+W=     2 n= 211: drop=2  during=0  level=0..1 (median 0)  first=0  stable=0..321 (median 289)  lock=98313  bmin=123..125 (median 123)  bmax=128  lost=0
+W=     3 n= 235: drop=2  during=0  level=0..1 (median 0)  first=3  stable=258..321 (median 290)  lock=98313  bmin=121..124 (median 121)  bmax=128  lost=0
+W=     4 n= 209: drop=2  during=0  level=0..1 (median 0)  first=3  stable=258..321 (median 292)  lock=98313  bmin=119..123 (median 119)  bmax=128  lost=0
+W=     5 n= 227: drop=2  during=0  level=0..1 (median 0)  first=3  stable=258..321 (median 293)  lock=98313  bmin=117..122 (median 117)  bmax=128  lost=0
+W=     8 n= 214: drop=2  during=0  level=0..1 (median 0)  first=3  stable=264..327 (median 295)  lock=98314  bmin=109..118 (median 109)  bmax=128  lost=0
+W=    16 n= 225: drop=2  during=0  level=0..1 (median 1)  first=3  stable=442..630 (median 515)  lock=98419..98618 (median 98426)  bmin=25..72 (median 52)  bmax=128..130 (median 129)  lost=0
+W=    32 n= 226: drop=2  during=0  level=0..1 (median 1)  first=54..55 (median 55)  stable=1809..2040 (median 1866)  lock=99710..99976 (median 99771)  bmin=0..35 (median 10)  bmax=128..130 (median 129)  lost=0
+W=   100 n= 228: drop=2  during=0  level=0..1 (median 1)  first=58  stable=4275..4489 (median 4332)  lock=102173..102443 (median 102262)  bmin=0  bmax=128..130 (median 129)  lost=0
+W=   256 n= 219: drop=2  during=0  level=0..1 (median 1)  first=58..59 (median 58)  stable=8670..8803 (median 8737)  lock=106590..106881 (median 106670)  bmin=0  bmax=128..129 (median 129)  lost=0
+W=  1000 n= 194: drop=2  during=0  level=0..1 (median 1)  first=58..59 (median 58)  stable=11740..11872 (median 11814)  lock=109651..109894 (median 109730)  bmin=0  bmax=128..129 (median 129)  lost=0
+W=  4096 n= 190: drop=2  during=0  level=0..1 (median 1)  first=58..59 (median 58)  stable=11755..11976 (median 11825)  lock=109667..109959 (median 109749)  bmin=0  bmax=128..130 (median 129)  lost=0
+W= 10000 n= 238: drop=2  during=0  level=0..1 (median 1)  first=58..59 (median 58)  stable=11764..11989 (median 11828)  lock=109666..110000 (median 109758)  bmin=0  bmax=128..130 (median 129)  lost=0
+W= 25000 n= 248: drop=2  during=0  level=0..1 (median 1)  first=58  stable=11741..11984 (median 11827)  lock=109646..109980 (median 109749)  bmin=0  bmax=128..130 (median 129)  lost=0
+W= 50000 n= 231: drop=2  during=0  level=0..1 (median 1)  first=58  stable=11737..11985 (median 11828)  lock=109661..109956 (median 109748)  bmin=0  bmax=128..130 (median 129)  lost=0
+W=100000 n= 226: drop=2  during=0  level=0..1 (median 1)  first=58  stable=11762..11898 (median 11826)  lock=109666..109931 (median 109740)  bmin=0  bmax=128..129 (median 129)  lost=0

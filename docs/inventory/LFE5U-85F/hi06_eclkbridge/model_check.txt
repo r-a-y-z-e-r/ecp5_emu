@@ -1,0 +1,44 @@
+== MODE=ECLKBRIDGECS (observations_mode.log)
+E00 fits (gate opens after 5 falling edges)
+E01 fits
+E02 fits
+E03 fits
+E04 fits
+E05 fits
+E06 fits
+E07 fits
+lines without a fit: 0
+== MODE unset, as nextpnr writes it (observations_nextpnr.log)
+E00 fits (gate opens after 5 falling edges)
+E01 fits
+E01 fits
+E01 fits
+E01 fits
+E02 fits
+E02 fits
+E02 fits
+E02 fits
+E03 fits
+E03 fits
+E03 fits
+E03 fits
+E04 fits
+E04 fits
+E04 fits
+E04 fits
+E05 fits
+E05 fits
+E05 fits
+E05 fits
+E06 fits
+E06 fits
+E06 fits
+E06 fits
+E07 fits
+E07 fits
+E07 fits
+E07 fits
+lines without a fit: 0
+== each log against the other mode (must fail)
+lines without a fit: 4
+lines without a fit: 16

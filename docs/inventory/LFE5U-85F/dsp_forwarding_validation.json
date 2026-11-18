@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "hardware_results": 0,
+  "scope": "MULT18 parallel ROA/ROB execution and full native fixed wiring to ALU; D01-D10 remain open",
+  "native_runs": 9,
+  "samples_per_run": 513,
+  "forwarding_bits_per_sample": 144,
+  "forwarding_bit_comparisons": 664848,
+  "equal_traces_per_fixture": true,
+  "cli_runs": 3,
+  "cli_observations": 514,
+  "cli_probe_counts": [
+    28,
+    28,
+    16
+  ],
+  "rust_tests": {
+    "regular": 106,
+    "native_DSP_targeted": 2,
+    "other_native": 12,
+    "total_unique": 120,
+    "expanded_dsp_tests_rechecked": 13,
+    "external_ECP5_TEST_BIT": "not_run"
+  },
+  "test_logs": {
+    "dsp-forward-tests.log": {
+      "passed": 106,
+      "sha256": "b0a698d67aab182cefa9ae47f4df121121aad6430f0e948def55bc5d3fc9f4d9"
+    },
+    "dsp-forward-unit.log": {
+      "passed": 13,
+      "sha256": "3094a5a416e9a01d07b4ad44ed3669329beb3567d69acfb8427107e9b5e940b8"
+    },
+    "dsp-forward-native-regression.log": {
+      "passed": 12,
+      "sha256": "16b04e7550a13328ca4f86bfea7eda6c6b1b4e46fc805b2fa6d94711695cf09a"
+    }
+  },
+  "source_files": [
+    {
+      "path": "src/kernel/dsp.rs",
+      "sha256": "21e97df0efa10f0fdc9b180553ff7810b30cdacec1f678fea710e59bacf23af0"
+    },
+    {
+      "path": "src/compile/dsp.rs",
+      "sha256": "a812ae5ac3c0f152bc9d5209acc8023034df75fc3c912fbfe8b112d1842df233"
+    },
+    {
+      "path": "tests/dsp.rs",
+      "sha256": "c0026e95f53b1e38b1ab66945a9a73310f5d1c797f3657d50bd6eb0b0a207186"
+    },
+    {
+      "path": "tests/dsp_register_native.rs",
+      "sha256": "31f7902ae34c9cdd964cc0d9c360dfab03f310eb9fe5cfbca4cee3d7f8922731"
+    },
+    {
+      "path": "tests/dsp_output_native.rs",
+      "sha256": "89cd51e69668811b7f892f6c4302aceb665184a5482ed49c04e276c2a716e209"
+    },
+    {
+      "path": "tools/collect_dsp_forwarding.py",
+      "sha256": "6447b6b10ee0f29c525d8d7e863587289fd36c0d46bd01db05f897a92ae8ae38"
+    },
+    {
+      "path": "tools/summarize_dsp_forwarding.py",
+      "sha256": "0e13dd4d4fbe7cb82bc5927f474986563d2299bf0a549ee3b058b66634954d89"
+    },
+    {
+      "path": "docs/DSP_FORWARDING.md",
+      "sha256": "65298f15472b51a2f5e8834b53c3877a67a5ce83bcc3c95beb2e6b839b523382"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_forwarding_evidence.json",
+      "sha256": "b48f66937214ca328d55ac21499c979ff424402d74f1f08fdfe0b6dbe36059e6"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_forwarding_native.json",
+      "sha256": "dcbdaa45e907d7aaa1175ea81e2c655a2d02daad6a7b537331640a265b0e5ef4"
+    }
+  ],
+  "generated_inputs": [
+    {
+      "path": "target/dsp-registers-sync/native.json",
+      "sha256": "ec8888a77376fe812a3c62e08656bf940284fa37e0a4a7e410d08a5e98bc8761"
+    },
+    {
+      "path": "target/dsp-registers-sync/cli.json",
+      "sha256": "b9193690b36fe0d5a0b400d74fdbe61f7dbc3fd888e13f965a006152877a2485"
+    },
+    {
+      "path": "target/dsp-registers-sync/top.config",
+      "sha256": "e366768715dd388c4bb7549e63d214dc715b9c387d97f9aeaee049180b40102f"
+    },
+    {
+      "path": "target/dsp-registers-sync/top.bit",
+      "sha256": "ea32d192bfb91f4202c558b0a79d4f27cba80da5f79d23f6f69c7dc6837f0e31"
+    },
+    {
+      "path": "target/dsp-registers-sync/top.v",
+      "sha256": "7cc26db656d1306bcebf02fcf66d5d631657bb1f3da7e5d9944d7ad213ad8f04"
+    },
+    {
+      "path": "target/dsp-registers-sync/top.lpf",
+      "sha256": "813fdb2f2e863a392b5e4678c0a87fb0a663774a99d6e08f0d55f658c5d69b8d"
+    },
+    {
+      "path": "target/dsp-registers-async/native.json",
+      "sha256": "f7149b671622ffbe44cac08a849988a267f4b0859afb8fb4442a6f952503909d"
+    },
+    {
+      "path": "target/dsp-registers-async/cli.json",
+      "sha256": "5188b02ad648a346b4a57bef2d5664969e1e207d3726770d4aff261defee5969"
+    },
+    {
+      "path": "target/dsp-registers-async/top.config",
+      "sha256": "931a6d76f547641e3e2cdb130367caeb2a489f18dfe9d54a7aab67c01c6b9fce"
+    },
+    {
+      "path": "target/dsp-registers-async/top.bit",
+      "sha256": "de529e1e33b1bdb7511877f6d123e311800034ba275f0515104d240ced563a0c"
+    },
+    {
+      "path": "target/dsp-registers-async/top.v",
+      "sha256": "1ff29c37ebcda8ee19d933653343229dd4aa322d88023ce0e75c0a1b9f1f59b0"
+    },
+    {
+      "path": "target/dsp-registers-async/top.lpf",
+      "sha256": "813fdb2f2e863a392b5e4678c0a87fb0a663774a99d6e08f0d55f658c5d69b8d"
+    },
+    {
+      "path": "target/dsp-output/native.json",
+      "sha256": "f8aa7f61e5bebaedea528b3f0f629de4ece52fb7300777f3feaeef8f26e7cdda"
+    },
+    {
+      "path": "target/dsp-output/cli.json",
+      "sha256": "f6e24ae28008a5635b739f5ebe39ce31d2c25927de3f0ef6be1ac3b008f18686"
+    },
+    {
+      "path": "target/dsp-output/top.config",
+      "sha256": "e7b50cecb53dbfe2d51cc39f7d0de25de3a89bf218ab690da173b7d2b33c3fad"
+    },
+    {
+      "path": "target/dsp-output/top.bit",
+      "sha256": "811b964cc690243034836c106658ea7650d6f7d0c8a03a3aa7655fcec961d613"
+    },
+    {
+      "path": "target/dsp-output/top.v",
+      "sha256": "0f10118ceaa8037fb06ddfe8c3a3a36a5d86025a15bcaf632931e87b74a5a1ff"
+    },
+    {
+      "path": "target/dsp-output/top.lpf",
+      "sha256": "6ec16e447ee5213bb7a4f1e25706639e237da9b9dd37ad06a9b15026abbe2817"
+    }
+  ],
+  "limits": [
+    "software checks do not establish silicon equivalence",
+    "ALU arithmetic and registered SIGNEDP remain unimplemented",
+    "output profile retains CE=1/RST=0/GSR disabled"
+  ]
+}

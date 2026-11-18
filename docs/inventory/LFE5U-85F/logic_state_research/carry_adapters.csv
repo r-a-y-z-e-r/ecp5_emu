@@ -1,0 +1,7 @@
+kind,variant,input_vector,CIN,fabric_input_or_loopback,S0,S1,COUT,evidence
+feed_in,89,254,0,0,0,1,0,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R
+feed_in,89,255,0,1,0,1,1,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R
+feed_in,89,510,1,0,1,1,0,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R
+feed_in,89,511,1,1,1,1,1,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R
+feed_out_loopback,20,239,0,0,0,0,0,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R
+feed_out_loopback,20,511,1,1,1,0,1,nextpnr_source_pattern;unconnected_C_D_tied_high;public_model_identity;not_P_and_R

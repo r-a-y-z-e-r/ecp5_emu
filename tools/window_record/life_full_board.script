@@ -1,0 +1,15 @@
+# The 3D board in the window on full-chip Life: its LEDs as the GPU drew them
+# against what the design drove, at each rate; btn[1] pressed through the
+# board (it loads the pattern again); the views turned.
+0    rate 4
+1    run
+16   rate 100
+31   rate max
+46   button 1 down
+47   button 1 up
+52   board top
+62   board bottom
+67   board 3d
+72   rate real
+87   pause
+88   quit

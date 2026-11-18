@@ -1,0 +1,11 @@
+LOCATE COMP "clk_25mhz" SITE "G2";
+IOBUF PORT "clk_25mhz" IO_TYPE=LVCMOS33 PULLMODE=NONE;
+LOCATE COMP "ftdi_rxd" SITE "L4";
+IOBUF PORT "ftdi_rxd" IO_TYPE=LVCMOS33 PULLMODE=UP DRIVE=4;
+# J1 GP9, package A2: header-only side-bank GPIO, no on-board peripheral.
+LOCATE COMP "side_input" SITE "A2";
+IOBUF PORT "side_input" IO_TYPE=LVCMOS33 PULLMODE=UP;
+FREQUENCY PORT "clk_25mhz" 25 MHZ;
+# FIRE1: HI08 btn[0] on bottom-bank R1, same IOBUF settings; leave released.
+LOCATE COMP "bottom_input" SITE "R1";
+IOBUF PORT "bottom_input" IO_TYPE=LVCMOS33 PULLMODE=DOWN;

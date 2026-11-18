@@ -1,0 +1,17 @@
+# Four 8 KB banks, each with four independent byte lanes.
+fw_0_0.hex
+fw_0_1.hex
+fw_0_2.hex
+fw_0_3.hex
+fw_1_0.hex
+fw_1_1.hex
+fw_1_2.hex
+fw_1_3.hex
+fw_2_0.hex
+fw_2_1.hex
+fw_2_2.hex
+fw_2_3.hex
+fw_3_0.hex
+fw_3_1.hex
+fw_3_2.hex
+fw_3_3.hex

@@ -1,0 +1,6 @@
+[project]
+name = "oled_bricks"
+top = "top"
+[sources]
+verilog = ["top.v", "game.v", "render.v", "text.v", "io.v"]
+constraints = "top.lpf"

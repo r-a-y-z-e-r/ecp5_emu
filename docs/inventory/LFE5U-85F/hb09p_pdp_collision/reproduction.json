@@ -1,0 +1,90 @@
+{
+  "stimulus": "configured; clk 40 ns; A=0; D=1; WE=0/1",
+  "mapping": {
+    "width": 32,
+    "depth": 512,
+    "blocks": [
+      {
+        "cell": "m.0.0",
+        "primitive": "DP16KD",
+        "physical_mode": "PDPW16KD",
+        "widths_AB": [
+          36,
+          36
+        ],
+        "write_modes_AB": [
+          "NORMAL (default)",
+          "NORMAL (default)"
+        ],
+        "reg_modes_AB": [
+          "NOREG",
+          "NOREG"
+        ],
+        "reset": "ASYNC",
+        "release": "ASYNC",
+        "controls": {
+          "CEA": "1",
+          "CEB": "1",
+          "OCEA": "0",
+          "OCEB": "1",
+          "WEA": "1",
+          "WEB": "0"
+        },
+        "same_clock": true
+      }
+    ],
+    "cells": {
+      "DP16KD": 1,
+      "L6MUX21": 5,
+      "LUT4": 52,
+      "PFUMX": 8,
+      "TRELLIS_FF": 75
+    }
+  },
+  "config_sha256": "b049b444519e7b790ed4bcfb0c00558ef5d277a7f53e9cacb627110d95a3d7c6",
+  "ebr": "LFE5U-85F/R22C60/EBR1",
+  "first_collision": {
+    "delta": 2,
+    "kind": "possible cross-port collision; conservative INIT9 row domain",
+    "resource": "LFE5U-85F/R22C60/EBR1",
+    "row_count": 4,
+    "rows9": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "time": {
+      "denominator": 1,
+      "numerator": 60000
+    }
+  },
+  "at_60_ns": {
+    "DOA[17:0]": "18'bx",
+    "DOB[17:0]": "18'bx",
+    "q[31:0]": "0x00000001"
+  },
+  "idle_equal_trace": true,
+  "executors": {
+    "we0_event_5": {
+      "exit": 0,
+      "error": ""
+    },
+    "we0_fast_5": {
+      "exit": 0,
+      "error": ""
+    },
+    "we1_event_5": {
+      "exit": 0,
+      "error": ""
+    },
+    "we1_fast_1": {
+      "exit": 0,
+      "error": ""
+    },
+    "we1_fast_2": {
+      "exit": 1,
+      "error": "Error: fast mode stopped at 0 ps: the logic reads an output of EBR LFE5U-85F/R22C60/EBR1 that the event kernel makes unknown here (a cross-port collision on one row, a control combination the board has not shown, or a read of unknown memory); fast mode is two-valued, so run this with the event kernel"
+    }
+  }
+}

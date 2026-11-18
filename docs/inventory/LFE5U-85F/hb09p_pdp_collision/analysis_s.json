@@ -1,0 +1,1371 @@
+{
+  "distinct_windows": 1,
+  "windows_per_load": [
+    1,
+    1,
+    1
+  ],
+  "once": true,
+  "results": {
+    "p32_64": {
+      "width": 32,
+      "depth": 64,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 22,
+          "same": 1
+        }
+      ],
+      "examples": []
+    },
+    "p32_128": {
+      "width": 32,
+      "depth": 128,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    },
+    "p32_256": {
+      "width": 32,
+      "depth": 256,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 22,
+          "same": 1
+        }
+      ],
+      "examples": []
+    },
+    "p32_512": {
+      "width": 32,
+      "depth": 512,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    },
+    "p36_64": {
+      "width": 36,
+      "depth": 64,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    },
+    "p36_128": {
+      "width": 36,
+      "depth": 128,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    },
+    "p36_256": {
+      "width": 36,
+      "depth": 256,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    },
+    "p36_512": {
+      "width": 36,
+      "depth": 512,
+      "cases": {
+        "idle_read": {
+          "edges": 28,
+          "known": 28,
+          "match": 28
+        },
+        "disjoint_write": {
+          "edges": 12,
+          "known": 12,
+          "match": 12
+        },
+        "collision": {
+          "edges": 23,
+          "known": 23,
+          "new": 23,
+          "held_match": 0,
+          "bits_outside_old_new": 0
+        },
+        "clean_after_collision": {
+          "known": 19,
+          "match": 19
+        }
+      },
+      "lanes": [
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        },
+        {
+          "new": 23
+        }
+      ],
+      "examples": []
+    }
+  },
+  "per_load": [
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      }
+    },
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      }
+    },
+    {
+      "p32_64": {
+        "width": 32,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_128": {
+        "width": 32,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p32_256": {
+        "width": 32,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 22,
+            "same": 1
+          }
+        ],
+        "examples": []
+      },
+      "p32_512": {
+        "width": 32,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_64": {
+        "width": 36,
+        "depth": 64,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_128": {
+        "width": 36,
+        "depth": 128,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_256": {
+        "width": 36,
+        "depth": 256,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      },
+      "p36_512": {
+        "width": 36,
+        "depth": 512,
+        "cases": {
+          "idle_read": {
+            "edges": 28,
+            "known": 28,
+            "match": 28
+          },
+          "disjoint_write": {
+            "edges": 12,
+            "known": 12,
+            "match": 12
+          },
+          "collision": {
+            "edges": 23,
+            "known": 23,
+            "new": 23,
+            "held_match": 0,
+            "bits_outside_old_new": 0
+          },
+          "clean_after_collision": {
+            "known": 19,
+            "match": 19
+          }
+        },
+        "lanes": [
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          },
+          {
+            "new": 23
+          }
+        ],
+        "examples": []
+      }
+    }
+  ]
+}

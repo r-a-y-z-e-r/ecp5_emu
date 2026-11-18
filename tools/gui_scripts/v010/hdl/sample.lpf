@@ -1,0 +1,4 @@
+# LPF directives, quoted pins, comments and numbers.
+LOCATE COMP "clk" SITE "G2";
+IOBUF PORT "data[0]" IO_TYPE=LVCMOS33 DRIVE=4;
+FREQUENCY PORT "clk" 25.0 MHz;

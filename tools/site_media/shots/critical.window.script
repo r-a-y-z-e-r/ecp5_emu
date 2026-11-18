@@ -1,0 +1,6 @@
+# Adapted from crit2_gui.script.
+0 theme dark
+0 board 3d
+0 rate 20000
+0 run
+1.5 critical on

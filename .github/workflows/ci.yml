@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    # Mixed prose and code changes still run CI with paths-ignore.
+    paths-ignore:
+      - '*.md'
+      - 'docs/**/*.md'
+      - 'site/**'
+  pull_request:
+    # Mixed prose and code changes still run CI with paths-ignore.
+    paths-ignore:
+      - '*.md'
+      - 'docs/**/*.md'
+      - 'site/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+  # docs/inventory/LFE5U-85F/model_manifest.json pins the database files by
+  # SHA-256; this commit is the one recorded in docs/TOOLCHAIN.md.
+  TRELLIS_DB_COMMIT: 9754ff473bfaa1e6edfaf57ce13bd447c76a88f6
+  ECP5_DB: ${{ github.workspace }}/../prjtrellis-db
+
+jobs:
+  fast-checks:
+    # Native integration tests (`--ignored`) need Yosys, nextpnr and the
+    # Trellis probes and are not run here.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-15]
+    # macos-15 is the arm64 standard runner (not macos-15-intel).
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check tracked files for personal home paths
+        run: python3 tools/check_home_paths.py
+
+      - name: Fetch the pinned Trellis database
+        run: |
+          git init -q "$ECP5_DB"
+          git -C "$ECP5_DB" fetch -q --depth 1 https://github.com/YosysHQ/prjtrellis-db "$TRELLIS_DB_COMMIT"
+          git -C "$ECP5_DB" checkout -q FETCH_HEAD
+
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: 1.92.0
+          components: clippy, rustfmt
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install Linux GUI system dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libx11-dev libxext-dev libxrandr-dev libxi-dev libxcursor-dev libxinerama-dev libxfixes-dev libxkbcommon-dev libxkbcommon-x11-dev libwayland-dev wayland-protocols libegl1-mesa-dev libgl1-mesa-dev libvulkan-dev
+
+      - name: Install macOS native build dependencies
+        if: runner.os == 'macOS'
+        run: brew install cmake ninja boost
+
+      - name: Install the pinned fixture synthesis tools
+        run: |
+          case "$RUNNER_OS" in
+            Linux) platform=linux-x64 ;;
+            macOS) platform=darwin-arm64 ;;
+            *) exit 1 ;;
+          esac
+          curl --fail --location --retry 3 "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-10-22/oss-cad-suite-${platform}-20261022.tgz" -o "$RUNNER_TEMP/oss-cad-suite.tgz"
+          tar -xzf "$RUNNER_TEMP/oss-cad-suite.tgz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/oss-cad-suite/bin" >> "$GITHUB_PATH"
+
+      # Built here with this runner's tools, so their placement differs from
+      # the Mac's; the default tests that use them check placement-independent
+      # properties only (site/pages/verification.md, "Designs that CI builds").
+      - name: Prepare the two non-ignored native test fixtures
+        run: |
+          bash packaging/build_trellis.sh
+          bash packaging/build_test_fixtures.sh
+
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets --locked -- -D warnings
+      - run: cargo test --release --locked
+      - run: cargo build -p ecp5_gui --release --locked
+      - run: cargo clippy -p ecp5_gui --all-targets --locked -- -D warnings

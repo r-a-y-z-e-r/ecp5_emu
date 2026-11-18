@@ -1,0 +1,84 @@
+{
+  "trellis": {
+    "path": "~/FPGA/prjtrellis",
+    "before_revision": "73bd411731808d80ead650bbc9840d9e02911e9e",
+    "revision": "a31ff7042e712c0e2ad217054116ce2c4995f5c7",
+    "branch": "main",
+    "latest_commit_date": "2026-10-12"
+  },
+  "database": {
+    "path": "~/FPGA/prjtrellis/database",
+    "before_revision": "015e0330630d7c238c0e4f2cdd9c8157eb78c54a",
+    "revision": "9754ff473bfaa1e6edfaf57ce13bd447c76a88f6",
+    "branch": "HEAD",
+    "latest_commit_date": "2026-10-12"
+  },
+  "nextpnr": {
+    "path": "~/FPGA/nextpnr",
+    "before_revision": "58e3b85866de409eac8b61393746140e7b30c808",
+    "revision": "6b438a1c9ab83cfb872fea21d9545d7d0bb8573f",
+    "branch": "main",
+    "latest_commit_date": "2026-10-20"
+  },
+  "before_yosys_version": "Yosys 0.66 (git sha1 7f8fdfd8d7bc08c749a2a969388d3425d4f369d5, clang++ 17.0.0 -fPIC -O3)",
+  "yosys_version": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)",
+  "installed_prefix": "/opt/homebrew",
+  "legacy_prefix": "/usr/local",
+  "snapshot_directory": "~/FPGA/toolchain-snapshots/2026-10-22-before",
+  "programs": {
+    "yosys": {
+      "path": "/opt/homebrew/bin/yosys",
+      "sha256": "9ed8ea21a37acb95305366fd1c9131e64fc3a5096147cb4beba1d3fade32a1a4"
+    },
+    "nextpnr-ecp5": {
+      "path": "/opt/homebrew/bin/nextpnr-ecp5",
+      "sha256": "f865374016294145d9c773a51a4d93bf830d4c0c656a2bd8226c499235c2a885"
+    },
+    "ecppack": {
+      "path": "/opt/homebrew/bin/ecppack",
+      "sha256": "5dc833952433d0f39667cd1822bd413ba9c540e4447387138ccd8b25b576c115"
+    },
+    "ecpunpack": {
+      "path": "/opt/homebrew/bin/ecpunpack",
+      "sha256": "9fe6972a6e00255df04c59ee256f2ae9946291c9713233161bb09b2ac7187caf"
+    },
+    "ecpbram": {
+      "path": "/opt/homebrew/bin/ecpbram",
+      "sha256": "3012994cc218155472d00bf231dfa079fc89623e9ca06892b65af16180aaa960"
+    },
+    "ecppll": {
+      "path": "/opt/homebrew/bin/ecppll",
+      "sha256": "b451c0e971ab979b969f2bc6808d9c333e93fdaa9220401ef04e02b1af8c4d78"
+    },
+    "ecpmulti": {
+      "path": "/opt/homebrew/bin/ecpmulti",
+      "sha256": "9ddb16b9deae2ca14f99c1c8415e34eb56821d4d3844f902415e53bfd253bbb2"
+    }
+  },
+  "native_libraries": {
+    "libtrellis.dylib": {
+      "path": "/opt/homebrew/lib/trellis/libtrellis.dylib",
+      "sha256": "e44f0f44964b46777ea18cfc1c4ac1a7479a8bd1a777bf8750cc1bec65785b06"
+    },
+    "pytrellis.so": {
+      "path": "/opt/homebrew/lib/trellis/pytrellis.so",
+      "sha256": "7da85afab08068e0aabcdd04858309f2bedfe678583f17c0136363b48f998654"
+    }
+  },
+  "build": {
+    "trellis": "~/FPGA/prjtrellis/libtrellis/build-20261022",
+    "nextpnr": "~/FPGA/nextpnr/build_ecp5_20261022",
+    "nextpnr_GUI": true,
+    "nextpnr_Python": true,
+    "ECP5_devices": [
+      "25k",
+      "45k",
+      "85k"
+    ],
+    "Boost": "1.92.0",
+    "Python": "3.14.7",
+    "Qt": "6.11.1",
+    "pybind11": "3.1.0",
+    "nextpnr_IPO": false
+  }
+}

@@ -1,0 +1,8 @@
+# Lexer samples only. This project is never built by the kit.
+[project]
+name = "v010_lexer_samples"
+top = "sample"
+[sources]
+verilog = ["sample.sv"]
+files = ["sample.vhd", "notes.txt"]
+constraints = "sample.lpf"

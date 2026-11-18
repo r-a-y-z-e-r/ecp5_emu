@@ -1,0 +1,6 @@
+[project]
+name = "fir_scope"
+top = "top"
+[sources]
+verilog = ["top.v", "io.v", "filter.v", "dsp_mac.v"]
+constraints = "top.lpf"

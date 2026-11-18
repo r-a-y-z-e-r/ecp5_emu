@@ -1,0 +1,8 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+# Historical digest (artifact unavailable in this record): c856b52495cf2b33f25e680df7490209a483b7128276ad1a91f8f148730ab4c9  official/top.bit (target/reference/picorv32_console, committed firmware)
+# Historical digest (artifact unavailable in this record): f6e1883afa87f479793681a7768eaec6fa96cc3bec7e9242f2d040ec0cfad787  variant/top.bit (swap.sh with variant/fw*.hex)
+# Historical digest (artifact unavailable in this record): 44d61569650130189d6d3ba738e18bcb95175a839f87ef8ad743fd2a627fb15a  variant/top.config
+b15b75b42663fbbfe8b304c96180c85be050db284345a1e673df5858e8558d34  variant/fw0.hex
+7f228e2a9c42146e3c65ba31de95b71f06219d5e372a5b732a3de82a65b1204e  variant/fw1.hex
+0c11b4cf1b9a3b0cc34d340712c23de78fda6db46c6714783d190dd0540d9d33  variant/fw2.hex
+dd0f337bb2b751239ef0913997937c997abf20763c783cee74322edc280a8aa5  variant/fw3.hex

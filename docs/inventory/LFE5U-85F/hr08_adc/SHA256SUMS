@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+6429b713c76c204a80c98372399b285886d52d1fd47e655bd4c10323a3144002  README.md
+03d80c416293fa26fa777b8e0f5fe0fe63a74b2d6d02a5037463e328ad50c2e9  TOOLS.txt
+1e5f5167be42be2915347dcf0bcec938e812ea357016f15ec297a130c6666c1f  observations.log
+adf4efa101d515ad41d2aaba2a2eca368c68c6229d406144b6d0fc94bfbe0042  adc_read.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 456b307a03afdc8b1b00bff874fd6baf55ee4e470e83bfbb99a9a6ba4891420f  adc_read top.bit (target/reference/adc_read, built on the Mac; not stored)

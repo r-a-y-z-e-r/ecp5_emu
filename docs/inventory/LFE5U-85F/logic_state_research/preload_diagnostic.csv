@@ -1,0 +1,4 @@
+event,variant,observed_Q,interpretation
+assert_lsr,138,0,ASYNC_PRLD_model_samples_M_on_LSR_or_clock_events;S02
+held_lsr_M_change,138,0,ASYNC_PRLD_model_samples_M_on_LSR_or_clock_events;S02
+held_lsr_clock,138,1,ASYNC_PRLD_model_samples_M_on_LSR_or_clock_events;S02

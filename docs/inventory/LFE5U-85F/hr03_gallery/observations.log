@@ -1,0 +1,82 @@
+== riscv_shell
+load 1 at 2026-11-16T02:47:15Z: loader_done=True bytes=3214 PASS: 3214 bytes from the marker on match (3214 arrived from the marker) top.bit sha256 91ec07b5369a26a85462148bdb245767ae9995cd6c9b8ad0c765722b73ef5ac7
+load 2 at 2026-11-16T02:47:26Z: loader_done=True bytes=3214 PASS: 3214 bytes from the marker on match (3214 arrived from the marker) top.bit sha256 91ec07b5369a26a85462148bdb245767ae9995cd6c9b8ad0c765722b73ef5ac7
+load 3 at 2026-11-16T02:47:37Z: loader_done=True bytes=3214 PASS: 3214 bytes from the marker on match (3214 arrived from the marker) top.bit sha256 91ec07b5369a26a85462148bdb245767ae9995cd6c9b8ad0c765722b73ef5ac7
+== ebr_life
+load 1 at 2026-11-16T02:48:02Z: loader_done=True bytes=87832 PASS: 64462 bytes from the marker on match (82354 arrived from the marker) top.bit sha256 db9c5a4195c40ff498a429777ffe44772472d5024853bd3e59d3677e2ad14998
+load 2 at 2026-11-16T02:48:16Z: loader_done=True bytes=87958 PASS: 64462 bytes from the marker on match (82410 arrived from the marker) top.bit sha256 db9c5a4195c40ff498a429777ffe44772472d5024853bd3e59d3677e2ad14998
+load 3 at 2026-11-16T02:48:30Z: loader_done=True bytes=88407 PASS: 64462 bytes from the marker on match (82879 arrived from the marker) top.bit sha256 db9c5a4195c40ff498a429777ffe44772472d5024853bd3e59d3677e2ad14998
+load 1 at 2026-11-16T02:56:52Z: loader_done=True bytes=104152 PASS: 80523 bytes from the marker on match (98633 arrived from the marker) top.bit sha256 15455aabc52928d684b608f263ba86cb751ac22adeb7bf6271bba9eee29c399c
+load 2 at 2026-11-16T02:57:07Z: loader_done=True bytes=104183 PASS: 80523 bytes from the marker on match (98639 arrived from the marker) top.bit sha256 15455aabc52928d684b608f263ba86cb751ac22adeb7bf6271bba9eee29c399c
+load 3 at 2026-11-16T02:57:22Z: loader_done=True bytes=104164 PASS: 80523 bytes from the marker on match (98624 arrived from the marker) top.bit sha256 15455aabc52928d684b608f263ba86cb751ac22adeb7bf6271bba9eee29c399c
+== led_tennis
+load 1 at 2026-11-16T02:50:44Z: loader_done=True bytes=433 PASS: 401 bytes from the marker on match (433 arrived from the marker) top.bit sha256 53a2a1cb9574d3173d6a1744d84e9163e7fa1cf171952df0f088d18725b4ab3c
+load 2 at 2026-11-16T02:51:10Z: loader_done=True bytes=433 PASS: 401 bytes from the marker on match (433 arrived from the marker) top.bit sha256 53a2a1cb9574d3173d6a1744d84e9163e7fa1cf171952df0f088d18725b4ab3c
+load 3 at 2026-11-16T02:51:36Z: loader_done=True bytes=433 PASS: 401 bytes from the marker on match (433 arrived from the marker) top.bit sha256 53a2a1cb9574d3173d6a1744d84e9163e7fa1cf171952df0f088d18725b4ab3c
+== mandelbrot
+load 1 at 2026-11-16T03:24:03Z: loader_done=True bytes=26297 PASS: 24567 bytes from the marker on match (25376 arrived from the marker) top.bit sha256 180ffa8267859b2e819e2b9e54f481155a8fbfc1c4c1452ffb7e82fc0ee0a8d0
+load 2 at 2026-11-16T03:24:13Z: loader_done=True bytes=26269 PASS: 24567 bytes from the marker on match (25376 arrived from the marker) top.bit sha256 180ffa8267859b2e819e2b9e54f481155a8fbfc1c4c1452ffb7e82fc0ee0a8d0
+load 3 at 2026-11-16T03:24:23Z: loader_done=True bytes=26316 PASS: 24567 bytes from the marker on match (25376 arrived from the marker) top.bit sha256 180ffa8267859b2e819e2b9e54f481155a8fbfc1c4c1452ffb7e82fc0ee0a8d0
+== fir_scope
+load 1 at 2026-11-16T03:24:39Z: loader_done=True bytes=26712 PASS: 6961 bytes from the marker on match (22169 arrived from the marker) top.bit sha256 c251a414d573a6ce4633f2aa9f8201c80f8be4e76694bb3a07d1ac4516b39168
+load 2 at 2026-11-16T03:24:48Z: loader_done=True bytes=26539 PASS: 6961 bytes from the marker on match (21995 arrived from the marker) top.bit sha256 c251a414d573a6ce4633f2aa9f8201c80f8be4e76694bb3a07d1ac4516b39168
+load 3 at 2026-11-16T03:24:57Z: loader_done=True bytes=26632 PASS: 6961 bytes from the marker on match (22088 arrived from the marker) top.bit sha256 c251a414d573a6ce4633f2aa9f8201c80f8be4e76694bb3a07d1ac4516b39168
+load 1 at 2026-11-16T03:57:56Z: loader_done=True bytes=30951 PASS: 13547 bytes from the marker on match (30951 arrived from the marker) top.bit sha256 d6a1d528803c5e1eb2e7068e77ffc750cf2901035603a1883e9c4ecc225e2da2
+load 2 at 2026-11-16T03:58:07Z: loader_done=True bytes=31158 PASS: 13547 bytes from the marker on match (31158 arrived from the marker) top.bit sha256 d6a1d528803c5e1eb2e7068e77ffc750cf2901035603a1883e9c4ecc225e2da2
+load 3 at 2026-11-16T03:58:19Z: loader_done=True bytes=31067 PASS: 13547 bytes from the marker on match (31067 arrived from the marker) top.bit sha256 d6a1d528803c5e1eb2e7068e77ffc750cf2901035603a1883e9c4ecc225e2da2
+== video_life
+load 1 at 2026-11-16T04:12:48Z: loader_done=True bytes=5121 PASS: 1748 bytes from the marker on match (4456 arrived from the marker) top.bit sha256 aaaca1061a177d4a864dc99251a0c6e452fdedb7da520bd18bc1ca0939210c9f
+load 2 at 2026-11-16T04:12:57Z: loader_done=True bytes=5124 PASS: 1748 bytes from the marker on match (4486 arrived from the marker) top.bit sha256 aaaca1061a177d4a864dc99251a0c6e452fdedb7da520bd18bc1ca0939210c9f
+load 3 at 2026-11-16T04:13:07Z: loader_done=True bytes=5122 PASS: 1748 bytes from the marker on match (4455 arrived from the marker) top.bit sha256 aaaca1061a177d4a864dc99251a0c6e452fdedb7da520bd18bc1ca0939210c9f
+== riscv_terminal
+load 1 at 2026-11-16T07:44:16Z: loader_done=True bytes=2837 PASS: 2837 bytes from the marker on match (2837 arrived from the marker) top.bit sha256 4e7ac406e150e4f449705bcb8c100a36b1385a4592043a8fb926dc6e56458c8f
+load 2 at 2026-11-16T07:44:26Z: loader_done=True bytes=2837 PASS: 2837 bytes from the marker on match (2837 arrived from the marker) top.bit sha256 4e7ac406e150e4f449705bcb8c100a36b1385a4592043a8fb926dc6e56458c8f
+load 3 at 2026-11-16T07:44:36Z: loader_done=True bytes=2837 PASS: 2837 bytes from the marker on match (2837 arrived from the marker) top.bit sha256 4e7ac406e150e4f449705bcb8c100a36b1385a4592043a8fb926dc6e56458c8f
+== serv_shell
+load 1 at 2026-11-16T14:47:02Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 f85fa3803c945a871d3a128868291a7c1a5768081343dd44d85628b4c415d1da
+load 2 at 2026-11-16T14:47:11Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 f85fa3803c945a871d3a128868291a7c1a5768081343dd44d85628b4c415d1da
+load 3 at 2026-11-16T14:47:21Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 f85fa3803c945a871d3a128868291a7c1a5768081343dd44d85628b4c415d1da
+== serv_shell (stock register file)
+load 1 at 2026-11-17T02:18:30Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+load 2 at 2026-11-17T02:18:39Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+load 3 at 2026-11-17T02:18:48Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+load 1 at 2026-11-17T07:30:43Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+load 2 at 2026-11-17T07:30:53Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+load 3 at 2026-11-17T07:31:02Z: loader_done=True bytes=1304 PASS: 1304 bytes from the marker on match (1304 arrived from the marker) top.bit sha256 4cb26b746fabdecb39acdee81fbf448a73602533de3debcebb14ddadf9b33a5b
+== sdram_bench
+load 1 at 2026-11-17T07:54:55Z: loader_done=True bytes=254 PASS: 68 bytes from the marker on match (131 arrived from the marker) top.bit sha256 3bd5038b40c85393c52d387187c5ca47d58950323f9014cbacd52c14331fb1bd
+load 2 at 2026-11-17T07:55:04Z: loader_done=True bytes=254 PASS: 68 bytes from the marker on match (131 arrived from the marker) top.bit sha256 3bd5038b40c85393c52d387187c5ca47d58950323f9014cbacd52c14331fb1bd
+load 3 at 2026-11-17T07:55:14Z: loader_done=True bytes=254 PASS: 68 bytes from the marker on match (131 arrived from the marker) top.bit sha256 3bd5038b40c85393c52d387187c5ca47d58950323f9014cbacd52c14331fb1bd
+== oled_bricks
+load 1 at 2026-11-17T15:17:23Z: loader_done=True bytes=9478 PASS: 4434 bytes from the marker on match (8946 arrived from the marker) top.bit sha256 990f23674325b2c1057766552c79c257092ed1a1940d14e81e079636c7765ee3
+load 2 at 2026-11-17T15:17:36Z: loader_done=True bytes=9471 PASS: 4434 bytes from the marker on match (8921 arrived from the marker) top.bit sha256 990f23674325b2c1057766552c79c257092ed1a1940d14e81e079636c7765ee3
+load 3 at 2026-11-17T15:17:48Z: loader_done=True bytes=9478 PASS: 4434 bytes from the marker on match (8946 arrived from the marker) top.bit sha256 990f23674325b2c1057766552c79c257092ed1a1940d14e81e079636c7765ee3
+== clock_domains
+load 1 at 2026-11-17T15:57:49Z: loader_done=True bytes=6808 PASS: 356 bytes from the marker on match (4996 arrived from the marker) top.bit sha256 6beb96be32d0c8af5b4b83df84552a0ed7978bedb1b4fb1503b879ede81c1c81
+load 2 at 2026-11-17T15:57:57Z: loader_done=True bytes=6815 PASS: 356 bytes from the marker on match (4979 arrived from the marker) top.bit sha256 6beb96be32d0c8af5b4b83df84552a0ed7978bedb1b4fb1503b879ede81c1c81
+load 3 at 2026-11-17T15:58:05Z: loader_done=True bytes=6738 PASS: 356 bytes from the marker on match (4996 arrived from the marker) top.bit sha256 6beb96be32d0c8af5b4b83df84552a0ed7978bedb1b4fb1503b879ede81c1c81
+extra load (key f, not compared) ended 2026-11-17T15:58:46Z: FREQ 02625A00 01FCA055 02532C5F (hex Hz: 40 MHz, 33.33 MHz, OSCG) top.bit sha256 6beb96be32d0c8af5b4b83df84552a0ed7978bedb1b4fb1503b879ede81c1c81
+== sha256_chains
+load 1 at 2026-11-17T18:07:30Z: loader_done=True bytes=37422 PASS: 2780 bytes from the marker on match (33375 arrived from the marker) top.bit sha256 565fc42c7a9d6025a00925f00261b886c2e8d5edcc5abb0149fa481781872807
+load 2 at 2026-11-17T18:07:47Z: loader_done=True bytes=38518 PASS: 2780 bytes from the marker on match (34498 arrived from the marker) top.bit sha256 565fc42c7a9d6025a00925f00261b886c2e8d5edcc5abb0149fa481781872807
+load 3 at 2026-11-17T18:08:04Z: loader_done=True bytes=37456 PASS: 2780 bytes from the marker on match (33384 arrived from the marker) top.bit sha256 565fc42c7a9d6025a00925f00261b886c2e8d5edcc5abb0149fa481781872807
+== riscv_oled
+load 1 at 2026-11-17T19:36:36Z: loader_done=True bytes=13284 PASS: 1534 bytes from the marker on match (12684 arrived from the marker) top.bit sha256 c9793c55ad76e9ee1159e4c0477baa702af9f6c3b296aca8b099ac3a05015266
+load 2 at 2026-11-17T19:36:51Z: loader_done=True bytes=13284 PASS: 1534 bytes from the marker on match (12684 arrived from the marker) top.bit sha256 c9793c55ad76e9ee1159e4c0477baa702af9f6c3b296aca8b099ac3a05015266
+load 3 at 2026-11-17T19:37:07Z: loader_done=True bytes=13284 PASS: 1534 bytes from the marker on match (12684 arrived from the marker) top.bit sha256 c9793c55ad76e9ee1159e4c0477baa702af9f6c3b296aca8b099ac3a05015266
+== oled_bricks_p18
+load 1 at 2026-11-18T00:47:19Z: loader_done=True bytes=9445 PASS: 4434 bytes from the marker on match (8898 arrived from the marker) top.bit sha256 1e9c4db7c520e28a99308408acf0810d63b31f716de1d0acec35d88b54feaff0
+load 2 at 2026-11-18T00:47:32Z: loader_done=True bytes=9420 PASS: 4434 bytes from the marker on match (8888 arrived from the marker) top.bit sha256 1e9c4db7c520e28a99308408acf0810d63b31f716de1d0acec35d88b54feaff0
+load 3 at 2026-11-18T00:47:44Z: loader_done=True bytes=9449 PASS: 4434 bytes from the marker on match (8917 arrived from the marker) top.bit sha256 1e9c4db7c520e28a99308408acf0810d63b31f716de1d0acec35d88b54feaff0
+== hdmi_plasma
+load 1 at 2026-11-18T01:01:16Z: loader_done=True bytes=6031 PASS: 1389 bytes from the marker on match (5514 arrived from the marker) top.bit sha256 2b91d6d64b138a9bd781a5c058709f00dc87e9f3c1320cd198559cde6eb5904e
+load 2 at 2026-11-18T01:01:26Z: loader_done=True bytes=6032 PASS: 1389 bytes from the marker on match (5514 arrived from the marker) top.bit sha256 2b91d6d64b138a9bd781a5c058709f00dc87e9f3c1320cd198559cde6eb5904e
+load 3 at 2026-11-18T01:01:37Z: loader_done=True bytes=6032 PASS: 1389 bytes from the marker on match (5508 arrived from the marker) top.bit sha256 2b91d6d64b138a9bd781a5c058709f00dc87e9f3c1320cd198559cde6eb5904e
+== chip_synth
+load 1 at 2026-11-18T01:48:51Z: loader_done=True bytes=2888 PASS: 836 bytes from the marker on match (2570 arrived from the marker) top.bit sha256 a848efb0bc0e2a42f608d274b17d983ba446fb3c756114dfc68c481b0b98158f
+load 2 at 2026-11-18T01:49:02Z: loader_done=True bytes=2905 PASS: 836 bytes from the marker on match (2587 arrived from the marker) top.bit sha256 a848efb0bc0e2a42f608d274b17d983ba446fb3c756114dfc68c481b0b98158f
+load 3 at 2026-11-18T01:49:12Z: loader_done=True bytes=2905 PASS: 836 bytes from the marker on match (2570 arrived from the marker) top.bit sha256 a848efb0bc0e2a42f608d274b17d983ba446fb3c756114dfc68c481b0b98158f
+== oled_bricks_p28
+load 1 at 2026-11-18T02:29:48Z: loader_done=True bytes=9427 PASS: 4434 bytes from the marker on match (8888 arrived from the marker) top.bit sha256 d402a6128bb5fb840c0ea9ea9e1f82256d319022efbc32c29fea4b2b48c988ef
+load 2 at 2026-11-18T02:30:01Z: loader_done=True bytes=9449 PASS: 4434 bytes from the marker on match (8917 arrived from the marker) top.bit sha256 d402a6128bb5fb840c0ea9ea9e1f82256d319022efbc32c29fea4b2b48c988ef
+load 3 at 2026-11-18T02:30:13Z: loader_done=True bytes=9444 PASS: 4434 bytes from the marker on match (8912 arrived from the marker) top.bit sha256 d402a6128bb5fb840c0ea9ea9e1f82256d319022efbc32c29fea4b2b48c988ef

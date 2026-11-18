@@ -1,0 +1,6 @@
+[project]
+name = "led_tennis"
+top = "top"
+[sources]
+verilog = ["top.v", "io.v"]
+constraints = "top.lpf"

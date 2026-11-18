@@ -1,0 +1,8 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+2dd7ea843a71ebf73e538d30f376e92a257c74998edc077d488e623aeb6eaaef  hc01.v
+1e701a6cea4b4947bca4be9f310122434fc3e3eb2f2295df33fc42c7984114ba  hc01.lpf
+ec68ee0559d96ac8775be6cce43538fe57624107225a27db53982b384624017c  hc01.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+95f5118a3ddcf8b7f693a0626d522afdd1e5e452be39b5fce5e24b73029ad2f2  observations.log
+ea859cae1855dd51fca6a994c6724a1b8f6aad587a41ad875ae1b227a66c9c99  pass.txt
+# Historical digest (artifact unavailable in this record): 3c60f41800417c1c1eba6723a4187490252464e994e8371aece159875e752bbc  hc01.bit (ecppack --compress hc01.config; not stored)

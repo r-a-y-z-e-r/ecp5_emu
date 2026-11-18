@@ -1,0 +1,8 @@
+# The toolchain every build uses: this Mac, rserv and CI. A newer stable
+# brings new clippy lints (CI runs clippy with -D warnings), so it changes
+# only by editing this file, together with the `toolchain:` in
+# .github/workflows/*.yml.
+[toolchain]
+channel = "1.92.0"
+components = ["clippy", "rustfmt"]
+profile = "minimal"

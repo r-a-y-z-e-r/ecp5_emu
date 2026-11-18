@@ -1,0 +1,7 @@
+case,width,depth,write_edge,LUTRAM_cells,all_cells,evidence
+ram16x1,1,16,rising,1,"{""TRELLIS_DPR16X4"":1}",Yosys_structure_only;nextpnr_packing_not_executed
+ram16x2,2,16,rising,1,"{""TRELLIS_DPR16X4"":1}",Yosys_structure_only;nextpnr_packing_not_executed
+ram16x4,4,16,rising,1,"{""TRELLIS_DPR16X4"":1}",Yosys_structure_only;nextpnr_packing_not_executed
+ram16x8,8,16,rising,2,"{""TRELLIS_DPR16X4"":2}",Yosys_structure_only;nextpnr_packing_not_executed
+ram32x4,4,32,rising,2,"{""LUT4"":6,""TRELLIS_DPR16X4"":2}",Yosys_structure_only;nextpnr_packing_not_executed
+ram16x4_falling,4,16,falling,1,"{""TRELLIS_DPR16X4"":1}",Yosys_structure_only;nextpnr_packing_not_executed

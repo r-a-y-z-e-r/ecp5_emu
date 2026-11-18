@@ -1,0 +1,17 @@
+# riscv_terminal in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# The window runs it at about 0.2-0.9 MHz and opens the Monitor window by
+# itself when the design drives the GPDI pads: the shell's output appears on
+# the monitor as it is typed into the UART console. Typed text waits in the
+# design's 511-byte FIFO, so commands can be sent while the shell is busy.
+# The Mandelbrot picture is the long pole: about 20 s at 0.2 MHz. The button
+# is held for two seconds: the design debounces it for 10 ms (250 000 clocks), and the window runs about 0.25 MHz.
+0 rate max
+0 run
+1 board 3d
+2 type help\r
+12 type led 5a\r
+17 type mandel\r
+55 type screen\r
+74 button 1 down   # FIRE1: an event line, on the UART and on the monitor
+76 button 1 up
+90 quit

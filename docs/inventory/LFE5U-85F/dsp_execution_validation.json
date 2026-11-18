@@ -1,0 +1,551 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "scope": "first parallel unregistered MULT18 execution and shared OR/FR storage reservation",
+  "regular_tests_passed": 95,
+  "native_integration_tests_passed": 12,
+  "total_tests_passed": 107,
+  "new_portable_tests": 5,
+  "new_native_tests": 1,
+  "hardware_results": 0,
+  "native_runs": [
+    {
+      "source": "config",
+      "scope": "observed",
+      "samples": 513,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 73,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 1,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 2,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 2348,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        },
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        }
+      ],
+      "excluded_dsp_routes": 98,
+      "state": {
+        "configuration_sha256": "23d7a03b0bd11c235d99d1bbaad4d2f595a30dd8807fbc03b2cf9a1a08a093ca",
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; D01 bit-to-mode mapping and other DSP stages remain unmodelled",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 1,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 2730,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 613937,
+        "discarded_timer_events": 0,
+        "driver_changes": 640519,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 1030,
+        "possible_clock_edges": 0,
+        "register_evaluations": 513,
+        "signal_changes": 643249,
+        "system_evaluations": 1,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      }
+    },
+    {
+      "source": "bit",
+      "scope": "observed",
+      "samples": 513,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 73,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 1,
+        "lut4": 1,
+        "lutram_columns": 0,
+        "multiplier18": 2,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 2348,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        },
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        }
+      ],
+      "excluded_dsp_routes": 98,
+      "state": {
+        "configuration_sha256": "228d1921e38cd6a7bc6c359eb24610eec13920ac1011d18b0197a6e5ede643f9",
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; D01 bit-to-mode mapping and other DSP stages remain unmodelled",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 1,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 2730,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 613937,
+        "discarded_timer_events": 0,
+        "driver_changes": 640519,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 1030,
+        "possible_clock_edges": 0,
+        "register_evaluations": 513,
+        "signal_changes": 643249,
+        "system_evaluations": 1,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      }
+    },
+    {
+      "source": "bit",
+      "scope": "all_plc_registers",
+      "samples": 513,
+      "counts": {
+        "carry_halves": 0,
+        "constants": 73,
+        "dcc_bypasses": 0,
+        "ebr_blocks": 0,
+        "ebr_read_ports": 0,
+        "flip_flops": 83640,
+        "lut4": 83639,
+        "lutram_columns": 0,
+        "multiplier18": 2,
+        "pio": 113,
+        "ramw": 0,
+        "routes": 713269,
+        "wide_muxes": 0
+      },
+      "multipliers": [
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C105/MULT18_0",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        },
+        {
+          "cibout_bypass": "ON",
+          "implicit_unmodelled_parameters": [
+            "MULT_BYPASS=DISABLED",
+            "CAS_MATCH_REG=FALSE",
+            "HIGHSPEED_CLK=NONE"
+          ],
+          "register_candidates": {
+            "REG_INPUTA_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTB_CLK": [
+              "NONE"
+            ],
+            "REG_INPUTC_CLK": [
+              "NONE"
+            ],
+            "REG_OUTPUT_CLK": [
+              "NONE"
+            ],
+            "REG_PIPELINE_CLK": [
+              "NONE"
+            ]
+          },
+          "resource": "LFE5U-85F/R10C106/MULT18_1",
+          "rule": "parallel A/B, SOURCEA/B=0 required; all stages bypassed; SIGNEDP=A OR B sign control; OR/FR bank reserved X; no registered/ALU/preadder/MULT9/36x36 behavior",
+          "slice": "LFE5U-85F/R10C105/DSP_SLICE_LEFT"
+        }
+      ],
+      "excluded_dsp_routes": 98,
+      "state": {
+        "configuration_sha256": "228d1921e38cd6a7bc6c359eb24610eec13920ac1011d18b0197a6e5ede643f9",
+        "dsp_shared_output_bits": 5616,
+        "dsp_slices": 78,
+        "dsp_storage_mapping": "one reserved OR/FR 72-bit bank per slice; D01 bit-to-mode mapping and other DSP stages remain unmodelled",
+        "ebr_arrays": 208,
+        "ebr_initialization": {
+          "inactive": 208
+        },
+        "execution": "event_kernel;explicit_execution_plan",
+        "flip_flops": 83640,
+        "known_dsp_shared_output_bits": 0,
+        "known_ebr_bits": 0,
+        "known_ebr_latch_bits": 0,
+        "known_ebr_output_register_bits": 0,
+        "known_flip_flops": 2,
+        "known_lut_bits": 1338240,
+        "lut_arrays": 83640,
+        "lut_bits": 1338240,
+        "observed_wire_values": 1340933,
+        "system": {
+          "done": "one",
+          "goe": "one",
+          "gsr": "zero",
+          "gwdis": "zero",
+          "phase": null,
+          "power_on_reset": "unmodelled; image already loaded",
+          "profile": "ready-unknown",
+          "ready": "one",
+          "startup_gsr": "zero",
+          "user_gsr": "zero"
+        }
+      },
+      "statistics": {
+        "combinational_evaluations": 1743049,
+        "discarded_timer_events": 0,
+        "driver_changes": 1435079,
+        "ebr_access_edges": 0,
+        "ebr_bit_changes": 0,
+        "ebr_collision_rows": 0,
+        "ebr_control_ambiguities": 0,
+        "ebr_evaluations": 0,
+        "ebr_notice_overwrites": 0,
+        "lut_bit_changes": 0,
+        "lut_write_edges": 0,
+        "lut_write_evaluations": 0,
+        "multiplier_evaluations": 1030,
+        "possible_clock_edges": 0,
+        "register_evaluations": 84664,
+        "signal_changes": 2316007,
+        "system_evaluations": 1,
+        "time_batches": 513,
+        "trace_overwrites": 0
+      }
+    }
+  ],
+  "CLI": {
+    "observations": 514,
+    "working_samples_compared": 513,
+    "probes": 7,
+    "counts": {
+      "carry_halves": 0,
+      "constants": 7,
+      "dcc_bypasses": 0,
+      "ebr_blocks": 0,
+      "ebr_read_ports": 0,
+      "flip_flops": 1,
+      "lut4": 1,
+      "lutram_columns": 0,
+      "multiplier18": 2,
+      "pio": 47,
+      "ramw": 0,
+      "routes": 1056,
+      "wide_muxes": 0
+    },
+    "passed": true
+  },
+  "validation_commands": [
+    {
+      "command": "cargo test --locked",
+      "status": "passed",
+      "log": "target/dsp-tests.log"
+    },
+    {
+      "command": "cargo test --release --locked -- --ignored --skip real_bitstream_matches_text_config --test-threads=1",
+      "status": "passed",
+      "log": "target/dsp-native-regression.log"
+    },
+    {
+      "command": "cargo test --release --locked --test dsp_native -- --ignored",
+      "status": "passed",
+      "log": "target/dsp-native-tests.log"
+    },
+    {
+      "command": "cargo clippy --all-targets -- -D warnings",
+      "status": "passed"
+    },
+    {
+      "command": "cargo fmt --check",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "78 shared OR/FR banks of 72 bits reserved X only; no complete DSP register census or bit-to-mode mapping",
+    "parallel SOURCEA=SOURCEB=0 only; B_SHIFT, CIBOUT=ON, CIBOUT_BYP=ON and inactive ALU54 required",
+    "all internal input/pipeline/output registers, other forwarding outputs, ALU, preadders, MULT9/36x36 and cascades unimplemented",
+    "MULT_BYPASS=DISABLED, CAS_MATCH_REG=FALSE and HIGHSPEED_CLK=NONE are explicit nextpnr-profile assumptions; no independent complete decoded fields, arbitrary Diamond/unmodelled modes not certified",
+    "SIGNEDP checked internally; nextpnr did not route it to GPIO",
+    "unknown arithmetic is conservative four-state logic, not analog/metastability simulation",
+    "No physical board run or Diamond model; external ECP5_TEST_BIT test not run"
+  ],
+  "source_files": [
+    {
+      "path": "src/state.rs",
+      "sha256": "b77f4ec0dbe0a3f8d618048250c9836ca63b0491b6feb3c6fb18b7044ee20601"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "0b06233a3182a70b498fd3b6cd60876797b16fd4a9eb4f0871b18a9ac4838ce3"
+    },
+    {
+      "path": "src/kernel/dsp.rs",
+      "sha256": "fcbe3a946ea76b9377f6b5d91d3b2dfcabf50aced7d9dc960f1ba3d2017881dd"
+    },
+    {
+      "path": "src/compile/mod.rs",
+      "sha256": "56903f092eb8e6797b457c0c7a12ea15b7fa0c3fd289801377fd487166ded38c"
+    },
+    {
+      "path": "src/compile/dsp.rs",
+      "sha256": "6addbfd94cd164df0d2d195e48246272ac279dfc6d3665d3e300ed1d5b32256f"
+    },
+    {
+      "path": "tests/dsp.rs",
+      "sha256": "f760c31cdab49a1f42d92a38e9f85b61a655237c4239f34f5e56786abb3cc67c"
+    },
+    {
+      "path": "tests/dsp_native.rs",
+      "sha256": "96ccb3ea7f8f48000c7eed919985ae70709cece10334bbdfa50234085238f872"
+    },
+    {
+      "path": "docs/DSP_EXECUTION.md",
+      "sha256": "0c0d87565d7a66799eadb39b6650e2feefd63dd495a74d32ceda5333f126fa59"
+    },
+    {
+      "path": "docs/DSP_INTERNALS.md",
+      "sha256": "abeb8179e848814059e3fa7317f22f4e378513b2aa45a4bcde3500ab26eb8ec8"
+    },
+    {
+      "path": "docs/DSP_ROUTING.md",
+      "sha256": "a1683be58430944320ced96851a087ab14910fc34d1061693aaaa0573b441546"
+    },
+    {
+      "path": "docs/MEMORY_DSP_RESOURCES.md",
+      "sha256": "0a82b27a4fc940fdc66864854e35a71e9eade16f4126c82f5a168f388dee6449"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "8a78c0cfe36438e71bbca4e3a19d5645cf52d5bcf2bfe6a4c758d61b1db4c42a"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "b57e5653d5079f87633d19a9aff0a24635608422bf5f00e4f9e797e7bcf9d5fe"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "bab3899063d40cc8d72ddf022bc6f7262ef0f16e5659250fcbe9b9ede9b64f45"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "5be75916878e05649a06748afc81a72e342796fd47c9dfc8cca963ba214322e6"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_execution_fixture.v",
+      "sha256": "c3502cbe8817f9a1c899d96208f519ab7e33c4e785a84054ec371c34a22ca697"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_execution_fixture.lpf",
+      "sha256": "344a0aa38721f970b4ced4cd71eb50c3b2b63a0d0a833f1e0f02d4d112c61e79"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_execution_native.json",
+      "sha256": "fe30e3f145bf0383c79d09f5f763bc108f82dd9f560812a4fd162e5f7507c9bb"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_execution_cli.json",
+      "sha256": "41f0efea808ceff7c01958c0cc5c834e0229c75b546e81fd51c3649478af27c8"
+    },
+    {
+      "path": "docs/inventory/LFE5U-85F/dsp_execution_events.json",
+      "sha256": "e4be1934eef5841848c157cd1b37cb7516ec8f6ac07ed9e9de6e3e243e9199c5"
+    }
+  ]
+}

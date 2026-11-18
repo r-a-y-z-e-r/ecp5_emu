@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="800" viewBox="0 0 1500 800" role="img" aria-labelledby="title desc">
+<title id="title">A / One grouped row — recommended</title><desc id="desc">1500 pt • navigation | build | run and time | view • paused, step 1, rate 4 cycles/s. Proposal only, no implementation. Logical width 1500 points.</desc>
+<style>text {font-family: Arial, DejaVu Sans, sans-serif; fill:#303030; font-size:13px} .small {font-size:12px} .heading {font-size:18px;font-weight:600} .mono {font-family: DejaVu Sans Mono, monospace;font-size:12px}</style>
+<rect x="0" y="0" width="1500" height="800" rx="0" fill="#fafafa"/>
+<text x="12" y="25" class="heading">A / One grouped row — recommended</text>
+<text x="12" y="46" class="small">1500 pt • navigation | build | run and time | view • paused, step 1, rate 4 cycles/s</text>
+<rect x="0" y="62" width="1500" height="46" rx="0" fill="#eeeeee"/>
+<g><title>Design</title>
+<rect x="12" y="72" width="72" height="26" rx="3" fill="#dedede"/>
+<text x="20" y="89" style="fill:#303030">Design</text>
+<path d="M67 83L72 88L77 83Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="92" y="89">blinky_cycle</text>
+<g><title>Project</title>
+<rect x="194" y="72" width="60" height="26" rx="3" fill="#dedede"/>
+<text x="202" y="89" style="fill:#303030">Project</text>
+</g>
+<g><title>Chip</title>
+<rect x="256" y="72" width="42" height="26" rx="3" fill="#005a8c"/>
+<text x="264" y="89" style="fill:#ffffff">Chip</text>
+</g>
+<path d="M310 74L310 96" fill="none" stroke="#c5c5c5"/>
+<g><title>Build</title>
+<rect x="320" y="72" width="66" height="26" rx="3" fill="#dedede"/>
+<text x="328" y="89" style="fill:#303030">Build</text>
+<path d="M369 83L374 88L379 83Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Emulate</title>
+<rect x="394" y="72" width="72" height="26" rx="3" fill="#dedede"/>
+<text x="402" y="89" style="fill:#303030">Emulate</text>
+</g>
+<path d="M476 74L476 96" fill="none" stroke="#c5c5c5"/>
+<g><title>Back 1 cycle (←)</title>
+<rect x="486" y="72" width="28" height="26" rx="3" fill="#dedede"/>
+<path d="M504 79L495 85L504 91Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Run</title>
+<rect x="522" y="72" width="66" height="26" rx="3" fill="#dedede"/>
+<path d="M532 79L542 85L532 91Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="549" y="89" style="fill:#303030">Run</text>
+</g>
+<g><title>Step 1 cycle (→); arrow selects 1, 1k, 1M or Custom…</title>
+<rect x="596" y="72" width="94" height="26" rx="3" fill="#dedede"/>
+</g>
+<text x="604" y="89">Step</text>
+<path d="M638 79L648 85L638 91Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="653" y="89">1</text>
+<path d="M666 74L666 96" fill="none" stroke="#c5c5c5"/>
+<path d="M673 83L678 88L683 83Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M700 74L700 96" fill="none" stroke="#c5c5c5"/>
+<g><title>Cycle 1 234 567; +240 cycles recorded ahead. Go to cycle…; click to type, Enter goes there</title>
+<rect x="710" y="72" width="188" height="26" rx="3" fill="#dedede"/>
+</g>
+<text x="718" y="89" class="mono">cycle 1 234 567</text>
+<rect x="837" y="76" width="56" height="18" rx="5" fill="#005a8c"/>
+<text x="865" y="88" class="small" style="fill:white" text-anchor="middle">+240</text>
+<path d="M908 74L908 96" fill="none" stroke="#c5c5c5"/>
+<g><title>4 cycles/s</title>
+<rect x="918" y="72" width="112" height="26" rx="3" fill="#dedede"/>
+<text x="926" y="89" style="fill:#303030">4 cycles/s</text>
+<path d="M1013 83L1018 88L1023 83Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Colour wires, LUTs and flip-flops by their values</title>
+<rect x="1071" y="72" width="75" height="26" rx="3" fill="#dedede"/>
+<path d="M1079 81H1084V89H1079ZM1088 81H1091V89" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1098" y="89" style="fill:#303030">Values</text>
+</g>
+<g><title>Wires and sites of the die</title>
+<rect x="1152" y="72" width="66" height="26" rx="3" fill="#005a8c"/>
+<path d="M1160 89L1164 81L1169 88L1173 79" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1179" y="89" style="fill:#ffffff">Wires</text>
+</g>
+<g><title>Tiles and sites without wires</title>
+<rect x="1220" y="72" width="59" height="26" rx="3" fill="#dedede"/>
+<path d="M1228 79H1240V91H1228ZM1234 79V91M1228 85H1240" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1247" y="89" style="fill:#303030">Tiles</text>
+</g>
+<g><title>Waves; W over a wire adds a watch</title>
+<rect x="1285" y="72" width="74" height="26" rx="3" fill="#dedede"/>
+<path d="M1293 89H1296V81H1301V89H1306" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1312" y="89" style="fill:#303030">Waves</text>
+</g>
+<g><title>Show nextpnr&#x27;s estimated critical path</title>
+<rect x="1365" y="72" width="107" height="26" rx="3" fill="#dedede"/>
+<path d="M1373 90L1377 85H1381L1386 79" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1392" y="89" style="fill:#303030">Critical path</text>
+</g>
+<path d="M0 108H1500" fill="none" stroke="#c5c5c5"/>
+<rect x="0" y="108" width="1500" height="160" rx="0" fill="#f5f5f5"/>
+<path d="M0 108H1500" fill="none" stroke="#c5c5c5"/>
+<rect x="16" y="124" width="236" height="128" rx="3" fill="#eeeeee" stroke="#c5c5c5"/>
+<text x="32" y="147" class="small">ULX3S board</text>
+<rect x="35" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="60" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="85" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="110" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="135" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="160" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="185" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<rect x="210" y="163" width="12" height="8" rx="2" fill="#c5c5c5"/>
+<path d="M270 122L270 254" fill="none" stroke="#c5c5c5"/>
+<text x="300" y="153" class="heading">Chip canvas</text>
+<text x="300" y="177" class="small">The controls give more space back to the design.</text>
+<rect x="900" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="900" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="900" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="900" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="900" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="900" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="934" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="968" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1002" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1036" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1070" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1104" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1138" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1172" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1206" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1240" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1274" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1308" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1342" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1376" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1410" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="128" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="153" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="178" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="203" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="228" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="1444" y="253" width="9" height="9" rx="1" fill="#c5c5c5"/>
+<rect x="0" y="268" width="1500" height="28" rx="0" fill="#eeeeee"/>
+<path d="M0 268H1500" fill="none" stroke="#c5c5c5"/>
+<text x="12" y="286" class="small">Emulating (ready in 3.1 s)</text>
+<text x="300" y="286" class="small">Paused</text>
+<text x="440" y="286" class="mono">board 0.049383 s</text>
+<text x="660" y="286" class="small">rate 4 cycles/s</text>
+<text x="920" y="286" class="small">fast mode: 2 threads</text>
+<text x="12" y="328" class="heading">Menus and fields appear only when requested</text>
+<text x="12" y="342" class="small">Design ▾</text>
+<rect x="12" y="354" width="214" height="254" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<rect x="16" y="360" width="206" height="20" rx="2" fill="#005a8c"/>
+<text x="24" y="377" style="fill:white">New project…</text>
+<text x="24" y="399">Start from a demo…</text>
+<text x="24" y="421">Open…</text>
+<text x="24" y="443">Recent  ›</text>
+<text x="24" y="465">Demos  ›</text>
+<text x="24" y="487">Close</text>
+<text x="24" y="509">Theme  ›</text>
+<text x="24" y="531">Build  ›</text>
+<text x="24" y="553">Run  ›</text>
+<text x="24" y="575">View  ›</text>
+<text x="24" y="597">Help  ›</text>
+<text x="246" y="342" class="small">Build ▾</text>
+<rect x="246" y="354" width="174" height="120" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<text x="258" y="377">Build     Cmd/Ctrl+B</text>
+<text x="258" y="404">Rebuild</text>
+<text x="258" y="431">Stop build</text>
+<text x="258" y="458">Emulate</text>
+<text x="440" y="342" class="small">Step arrow</text>
+<rect x="440" y="354" width="150" height="120" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<rect x="444" y="360" width="142" height="25" rx="2" fill="#005a8c"/>
+<text x="452" y="377" style="fill:white">1 cycle</text>
+<text x="452" y="404">1k cycles</text>
+<text x="452" y="431">1M cycles</text>
+<text x="452" y="458">Custom…</text>
+<text x="610" y="342" class="small">Custom step</text>
+<rect x="610" y="354" width="220" height="114" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<text x="622" y="378">Cycles per step</text>
+<rect x="622" y="390" width="108" height="26" rx="3" fill="#fafafa" stroke="#c5c5c5"/>
+<text x="630" y="407">2500</text>
+<text x="742" y="407">cycles</text>
+<g><title>Apply</title>
+<rect x="622" y="428" width="66" height="26" rx="3" fill="#dedede"/>
+<text x="630" y="445" style="fill:#303030">Apply</text>
+</g>
+<g><title>Cancel</title>
+<rect x="696" y="428" width="72" height="26" rx="3" fill="#dedede"/>
+<text x="704" y="445" style="fill:#303030">Cancel</text>
+</g>
+<text x="850" y="342" class="small">Rate &gt; Custom…</text>
+<rect x="850" y="354" width="230" height="114" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<text x="862" y="378">Custom rate</text>
+<rect x="862" y="390" width="108" height="26" rx="3" fill="#fafafa" stroke="#c5c5c5"/>
+<text x="870" y="407">2.5k</text>
+<text x="982" y="407">cycles/s</text>
+<g><title>Apply</title>
+<rect x="862" y="428" width="66" height="26" rx="3" fill="#dedede"/>
+<text x="870" y="445" style="fill:#303030">Apply</text>
+</g>
+<g><title>Cancel</title>
+<rect x="936" y="428" width="72" height="26" rx="3" fill="#dedede"/>
+<text x="944" y="445" style="fill:#303030">Cancel</text>
+</g>
+<text x="1100" y="342" class="small">Click cycle readout</text>
+<rect x="1100" y="354" width="378" height="114" rx="4" fill="#eeeeee" stroke="#c5c5c5"/>
+<text x="1112" y="378">Go to cycle</text>
+<rect x="1112" y="390" width="354" height="26" rx="3" fill="#fafafa" stroke="#005a8c"/>
+<text x="1120" y="407" class="mono">1 234 567  |</text>
+<text x="1112" y="447" class="small">Enter goes there · Escape cancels</text>
+<text x="1100" y="486" class="small">Ahead badge: shown only above zero.</text>
+<text x="1100" y="510" class="small">Hover gives the exact count and replay rules.</text>
+<text x="246" y="560" class="small">Same handlers in menus and scripts; popup fields do not occupy the resting row.</text>
+<text x="12" y="644" class="heading">1100 pt / view icons, shorter name, same controls and menu labels</text>
+<rect x="0" y="666" width="1100" height="46" rx="0" fill="#eeeeee"/>
+<g><title>Design</title>
+<rect x="8" y="676" width="68" height="26" rx="3" fill="#dedede"/>
+<text x="16" y="693" style="fill:#303030">Design</text>
+<path d="M59 687L64 692L69 687Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="82" y="693">blinky…</text>
+<g><title>Project</title>
+<rect x="150" y="676" width="52" height="26" rx="3" fill="#dedede"/>
+<text x="158" y="693" style="fill:#303030">Project</text>
+</g>
+<g><title>Chip</title>
+<rect x="204" y="676" width="42" height="26" rx="3" fill="#005a8c"/>
+<text x="212" y="693" style="fill:#ffffff">Chip</text>
+</g>
+<path d="M254 678L254 700" fill="none" stroke="#c5c5c5"/>
+<g><title>Build</title>
+<rect x="262" y="676" width="62" height="26" rx="3" fill="#dedede"/>
+<text x="270" y="693" style="fill:#303030">Build</text>
+<path d="M307 687L312 692L317 687Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Emulate</title>
+<rect x="330" y="676" width="68" height="26" rx="3" fill="#dedede"/>
+<text x="338" y="693" style="fill:#303030">Emulate</text>
+</g>
+<path d="M406 678L406 700" fill="none" stroke="#c5c5c5"/>
+<g><title>Back 1 cycle (←)</title>
+<rect x="414" y="676" width="26" height="26" rx="3" fill="#dedede"/>
+<path d="M432 683L423 689L432 695Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Run</title>
+<rect x="446" y="676" width="62" height="26" rx="3" fill="#dedede"/>
+<path d="M456 683L466 689L456 695Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="473" y="693" style="fill:#303030">Run</text>
+</g>
+<g><title>Step 1 cycle (→); arrow selects 1, 1k, 1M or Custom…</title>
+<rect x="514" y="676" width="90" height="26" rx="3" fill="#dedede"/>
+</g>
+<text x="522" y="693">Step</text>
+<path d="M556 683L566 689L556 695Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="571" y="693">1</text>
+<path d="M580 678L580 700" fill="none" stroke="#c5c5c5"/>
+<path d="M587 687L592 692L597 687Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M612 678L612 700" fill="none" stroke="#c5c5c5"/>
+<g><title>Cycle 1 234 567; +240 cycles recorded ahead. Go to cycle…; click to type, Enter goes there</title>
+<rect x="620" y="676" width="152" height="26" rx="3" fill="#dedede"/>
+</g>
+<text x="628" y="693" class="mono">cycle 1.23M</text>
+<rect x="711" y="680" width="56" height="18" rx="5" fill="#005a8c"/>
+<text x="739" y="692" class="small" style="fill:white" text-anchor="middle">+240</text>
+<g><title>4 cycles/s</title>
+<rect x="780" y="676" width="112" height="26" rx="3" fill="#dedede"/>
+<text x="788" y="693" style="fill:#303030">4 cycles/s</text>
+<path d="M875 687L880 692L885 687Z" fill="#303030" stroke="#303030" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Values — colour by value</title>
+<rect x="934" y="676" width="26" height="26" rx="3" fill="#dedede"/>
+<path d="M942 685H947V693H942ZM951 685H954V693" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Wires — wires and sites</title>
+<rect x="964" y="676" width="26" height="26" rx="3" fill="#005a8c"/>
+<path d="M972 693L976 685L981 692L985 683" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Tiles — sites without wires</title>
+<rect x="994" y="676" width="26" height="26" rx="3" fill="#dedede"/>
+<path d="M1002 683H1014V695H1002ZM1008 683V695M1002 689H1014" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Waves — watched nets</title>
+<rect x="1024" y="676" width="26" height="26" rx="3" fill="#dedede"/>
+<path d="M1032 693H1035V685H1040V693H1045" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g><title>Critical path — nextpnr estimate</title>
+<rect x="1054" y="676" width="26" height="26" rx="3" fill="#dedede"/>
+<path d="M1062 694L1066 689H1070L1075 683" fill="none" stroke="#303030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M0 712H1100" fill="none" stroke="#c5c5c5"/>
+<text x="1120" y="680" class="small">No wrapping or smaller type.</text>
+<text x="1120" y="704" class="small">Width is a proposal to test in egui.</text>
+<text x="12" y="752" class="small">Config only: omit Project / Chip, Build and Emulate; keep one name, transport, time, rate and views.</text>
+<text x="12" y="778" class="small">Proposal only • SVG drawn by hand • 1 SVG unit = 1 logical point; render at 2×</text>
+</svg>

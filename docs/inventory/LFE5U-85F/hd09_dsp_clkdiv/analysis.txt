@@ -1,0 +1,286 @@
+distinct windows=55, ignored incomplete/invalid lines=3
+loads=3; full windows/load=[55, 55, 55]; identical=True
+Unique windows=55; samples=7040; available transitions=6985
+Output R: measured rise+fall from HD09m, CE0/RST0/GSR, RESETMODE respected.
+Internal stages: HD08c masks/controls; rising/falling/rise+fall, /2,/4 all phases; never; bypass.
+Hidden state starts unknown each window. Unknown predictions are excluded and counted, never treated as matches.
+Multi-stage opcode tests apply the same candidate clock to all active opcode stages.
+
+c1 R[50] from c[50]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 361/6934 mismatches; unknown=51
+  rise+fall: 325/6970 mismatches; unknown=15
+  never captures: 1382/5214 mismatches; unknown=1771
+  rising /2 free phase: 998/6939 mismatches; unknown=46; phase per sorted window=[0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+  rising /2 GSR resets phase: 1039/6941 mismatches; unknown=44; phase per sorted window=[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]
+  falling /2 free phase: 1043/6909 mismatches; unknown=76; phase per sorted window=[1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1]
+  falling /2 GSR resets phase: 1126/6907 mismatches; unknown=78; phase per sorted window=[1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0]
+  rising /4 free phase: 1414/6836 mismatches; unknown=149; phase per sorted window=[0, 0, 1, 0, 1, 3, 3, 1, 0, 2, 1, 3, 0, 0, 1, 2, 2, 3, 1, 2, 1, 2, 1, 1, 0, 3, 2, 2, 3, 1, 1, 3, 2, 2, 1, 2, 1, 3, 2, 1, 1, 0, 0, 3, 2, 3, 1, 1, 2, 2, 3, 2, 1, 2, 1]
+  rising /4 GSR resets phase: 1578/6867 mismatches; unknown=118; phase per sorted window=[0, 2, 1, 0, 0, 3, 0, 0, 0, 0, 1, 3, 0, 2, 1, 2, 1, 3, 1, 0, 2, 2, 0, 0, 0, 2, 3, 1, 1, 0, 0, 0, 3, 2, 3, 2, 0, 3, 2, 1, 1, 2, 0, 3, 2, 3, 1, 0, 2, 3, 0, 2, 1, 0, 1]
+  falling /4 free phase: 1440/6821 mismatches; unknown=164; phase per sorted window=[3, 1, 2, 0, 1, 0, 0, 2, 1, 3, 2, 0, 1, 1, 2, 1, 3, 0, 2, 3, 1, 3, 0, 2, 1, 0, 1, 3, 3, 3, 2, 0, 3, 3, 2, 3, 2, 0, 3, 2, 2, 1, 1, 0, 3, 0, 2, 1, 3, 3, 0, 3, 0, 3, 2]
+  falling /4 GSR resets phase: 1569/6836 mismatches; unknown=149; phase per sorted window=[1, 1, 2, 0, 0, 0, 0, 0, 0, 1, 2, 0, 1, 3, 1, 3, 2, 0, 2, 0, 3, 3, 2, 0, 1, 3, 0, 2, 2, 0, 0, 1, 0, 2, 0, 3, 0, 0, 3, 2, 2, 3, 2, 0, 3, 3, 2, 1, 3, 0, 0, 1, 0, 0, 2]
+  combinational bypass ahead of R: 2393/6985; unknown=0
+
+c1 R[30] from c[30]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 347/6934 mismatches; unknown=51
+  rise+fall: 312/6970 mismatches; unknown=15
+  never captures: 1387/5214 mismatches; unknown=1771
+  rising /2 free phase: 1038/6946 mismatches; unknown=39; phase per sorted window=[0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+  rising /2 GSR resets phase: 1074/6941 mismatches; unknown=44; phase per sorted window=[0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0]
+  falling /2 free phase: 1057/6897 mismatches; unknown=88; phase per sorted window=[1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0]
+  falling /2 GSR resets phase: 1117/6907 mismatches; unknown=78; phase per sorted window=[1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1]
+  rising /4 free phase: 1482/6859 mismatches; unknown=126; phase per sorted window=[2, 3, 0, 0, 1, 2, 3, 1, 0, 3, 2, 3, 0, 0, 3, 2, 2, 3, 2, 2, 3, 2, 3, 2, 1, 1, 2, 0, 1, 1, 0, 0, 2, 0, 1, 2, 3, 3, 0, 3, 1, 1, 0, 1, 2, 3, 1, 3, 0, 3, 1, 0, 0, 2, 1]
+  rising /4 GSR resets phase: 1655/6865 mismatches; unknown=120; phase per sorted window=[2, 3, 1, 0, 1, 2, 1, 0, 0, 0, 0, 3, 0, 3, 3, 1, 1, 3, 2, 0, 0, 1, 0, 0, 1, 1, 2, 0, 3, 0, 0, 3, 0, 0, 0, 1, 1, 3, 0, 0, 1, 1, 0, 0, 1, 0, 1, 3, 0, 0, 2, 1, 0, 0, 2]
+  falling /4 free phase: 1495/6845 mismatches; unknown=140; phase per sorted window=[3, 0, 1, 3, 1, 0, 0, 2, 1, 0, 3, 0, 1, 1, 0, 3, 3, 0, 2, 3, 1, 3, 3, 3, 2, 2, 3, 1, 2, 2, 1, 1, 3, 1, 0, 3, 0, 0, 1, 0, 2, 3, 1, 2, 2, 0, 2, 0, 1, 0, 2, 1, 1, 3, 2]
+  falling /4 GSR resets phase: 1666/6825 mismatches; unknown=160; phase per sorted window=[1, 1, 2, 0, 2, 0, 1, 0, 0, 1, 1, 3, 1, 0, 0, 3, 1, 0, 0, 0, 1, 2, 1, 0, 2, 2, 3, 2, 0, 0, 0, 0, 3, 1, 1, 2, 2, 0, 1, 1, 2, 3, 1, 1, 2, 1, 2, 0, 1, 0, 3, 2, 1, 0, 3]
+  combinational bypass ahead of R: 2424/6985; unknown=0
+
+c1 R[20] from c[20]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 375/6934 mismatches; unknown=51
+  rise+fall: 331/6970 mismatches; unknown=15
+  never captures: 1386/5214 mismatches; unknown=1771
+  rising /2 free phase: 1032/6945 mismatches; unknown=40; phase per sorted window=[0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  rising /2 GSR resets phase: 1067/6944 mismatches; unknown=41; phase per sorted window=[1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  falling /2 free phase: 1085/6905 mismatches; unknown=80; phase per sorted window=[1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+  falling /2 GSR resets phase: 1125/6901 mismatches; unknown=84; phase per sorted window=[0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+  rising /4 free phase: 1485/6873 mismatches; unknown=112; phase per sorted window=[0, 1, 3, 2, 1, 2, 3, 3, 0, 2, 3, 1, 1, 1, 3, 2, 3, 2, 1, 1, 1, 2, 0, 3, 0, 0, 3, 0, 2, 0, 3, 2, 3, 2, 3, 0, 1, 1, 1, 2, 2, 2, 2, 3, 1, 1, 2, 1, 1, 2, 3, 1, 2, 2, 0]
+  rising /4 GSR resets phase: 1596/6884 mismatches; unknown=101; phase per sorted window=[2, 2, 3, 0, 1, 3, 3, 0, 0, 1, 3, 1, 1, 2, 0, 2, 3, 2, 0, 0, 3, 2, 0, 0, 0, 3, 0, 0, 1, 0, 0, 3, 3, 1, 2, 3, 0, 1, 1, 2, 2, 2, 2, 3, 1, 0, 2, 1, 1, 2, 2, 2, 2, 0, 2]
+  falling /4 free phase: 1508/6862 mismatches; unknown=123; phase per sorted window=[0, 2, 0, 3, 2, 3, 0, 1, 2, 3, 1, 2, 2, 2, 0, 0, 1, 3, 0, 2, 2, 3, 1, 0, 1, 1, 0, 1, 3, 0, 0, 3, 0, 3, 0, 3, 2, 2, 2, 3, 3, 3, 3, 0, 2, 2, 3, 2, 2, 3, 0, 2, 3, 1, 1]
+  falling /4 GSR resets phase: 1600/6851 mismatches; unknown=134; phase per sorted window=[1, 1, 0, 0, 1, 0, 0, 0, 0, 2, 0, 2, 2, 3, 0, 3, 1, 3, 1, 0, 0, 3, 1, 0, 1, 0, 1, 1, 2, 0, 0, 0, 0, 2, 1, 0, 1, 1, 2, 3, 3, 3, 3, 0, 2, 1, 3, 2, 2, 3, 3, 3, 3, 0, 3]
+  combinational bypass ahead of R: 2466/6985; unknown=0
+
+c1 R[0] from c[0]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 362/6934 mismatches; unknown=51
+  rise+fall: 326/6970 mismatches; unknown=15
+  never captures: 1368/5214 mismatches; unknown=1771
+  rising /2 free phase: 1046/6933 mismatches; unknown=52; phase per sorted window=[0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1]
+  rising /2 GSR resets phase: 1093/6929 mismatches; unknown=56; phase per sorted window=[0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 1072/6910 mismatches; unknown=75; phase per sorted window=[1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1]
+  falling /2 GSR resets phase: 1116/6914 mismatches; unknown=71; phase per sorted window=[1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+  rising /4 free phase: 1461/6863 mismatches; unknown=122; phase per sorted window=[2, 0, 2, 2, 2, 3, 1, 3, 1, 1, 3, 3, 2, 2, 2, 1, 0, 1, 3, 2, 0, 3, 3, 2, 3, 2, 0, 0, 3, 2, 2, 3, 2, 2, 3, 0, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 1, 2, 3, 1, 1, 2, 0]
+  rising /4 GSR resets phase: 1575/6849 mismatches; unknown=136; phase per sorted window=[2, 1, 2, 0, 2, 3, 0, 0, 0, 1, 2, 3, 2, 2, 3, 1, 2, 2, 3, 0, 0, 1, 2, 0, 3, 3, 1, 1, 3, 0, 0, 1, 0, 2, 2, 1, 3, 1, 2, 0, 1, 1, 2, 2, 2, 0, 2, 1, 1, 2, 0, 1, 1, 0, 2]
+  falling /4 free phase: 1465/6844 mismatches; unknown=141; phase per sorted window=[3, 1, 3, 3, 3, 0, 2, 1, 2, 2, 0, 0, 3, 3, 1, 2, 1, 3, 0, 3, 1, 0, 1, 3, 1, 0, 1, 1, 0, 3, 3, 0, 3, 3, 0, 1, 2, 2, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 2, 0, 0, 2, 2, 3, 1]
+  falling /4 GSR resets phase: 1572/6839 mismatches; unknown=146; phase per sorted window=[1, 1, 3, 0, 3, 0, 3, 0, 0, 2, 3, 0, 3, 3, 0, 0, 1, 3, 0, 0, 1, 2, 3, 0, 1, 0, 2, 0, 2, 0, 0, 2, 1, 3, 1, 2, 0, 2, 3, 1, 3, 2, 0, 3, 2, 1, 3, 0, 2, 3, 0, 2, 2, 0, 3]
+  combinational bypass ahead of R: 2483/6985; unknown=0
+
+c2 R[50] from c[14]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 352/6936 mismatches; unknown=49
+  rise+fall: 319/6970 mismatches; unknown=15
+  never captures: 1944/6434 mismatches; unknown=551
+  rising /2 free phase: 956/6945 mismatches; unknown=40; phase per sorted window=[0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0]
+  rising /2 GSR resets phase: 1030/6942 mismatches; unknown=43; phase per sorted window=[1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0]
+  falling /2 free phase: 1013/6908 mismatches; unknown=77; phase per sorted window=[0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1]
+  falling /2 GSR resets phase: 1032/6913 mismatches; unknown=72; phase per sorted window=[0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1]
+  rising /4 free phase: 1356/6881 mismatches; unknown=104; phase per sorted window=[3, 0, 0, 0, 1, 1, 3, 3, 0, 0, 3, 0, 0, 0, 2, 2, 2, 1, 2, 2, 1, 3, 2, 1, 3, 2, 0, 2, 0, 0, 1, 2, 2, 0, 2, 1, 1, 2, 2, 0, 1, 3, 0, 3, 3, 3, 1, 0, 0, 1, 2, 0, 0, 0, 2]
+  rising /4 GSR resets phase: 1545/6877 mismatches; unknown=108; phase per sorted window=[2, 0, 1, 0, 2, 1, 3, 0, 0, 3, 3, 3, 0, 0, 1, 2, 2, 1, 2, 0, 1, 1, 0, 0, 3, 1, 0, 1, 0, 0, 0, 2, 2, 0, 3, 1, 2, 2, 2, 0, 1, 3, 0, 3, 3, 0, 0, 0, 0, 1, 0, 2, 0, 0, 2]
+  falling /4 free phase: 1376/6844 mismatches; unknown=141; phase per sorted window=[0, 1, 1, 0, 2, 2, 0, 0, 3, 1, 0, 1, 1, 1, 3, 3, 3, 2, 3, 3, 2, 0, 3, 2, 0, 3, 3, 3, 1, 1, 2, 2, 3, 1, 3, 2, 3, 3, 3, 1, 2, 0, 1, 0, 3, 0, 2, 0, 2, 2, 2, 1, 1, 3, 3]
+  falling /4 GSR resets phase: 1489/6845 mismatches; unknown=140; phase per sorted window=[1, 0, 2, 0, 3, 2, 0, 0, 0, 0, 0, 1, 1, 0, 1, 3, 3, 0, 3, 0, 2, 2, 0, 0, 0, 2, 2, 2, 1, 0, 0, 1, 0, 1, 0, 2, 3, 3, 3, 1, 2, 3, 1, 0, 0, 0, 3, 1, 1, 2, 0, 3, 1, 0, 3]
+  combinational bypass ahead of R: 2460/6985; unknown=0
+
+c2 R[44] from c[8]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 372/6936 mismatches; unknown=49
+  rise+fall: 343/6970 mismatches; unknown=15
+  never captures: 1907/6434 mismatches; unknown=551
+  rising /2 free phase: 969/6938 mismatches; unknown=47; phase per sorted window=[0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0]
+  rising /2 GSR resets phase: 1039/6930 mismatches; unknown=55; phase per sorted window=[0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1]
+  falling /2 free phase: 1038/6915 mismatches; unknown=70; phase per sorted window=[1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1]
+  falling /2 GSR resets phase: 1083/6916 mismatches; unknown=69; phase per sorted window=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0]
+  rising /4 free phase: 1362/6890 mismatches; unknown=95; phase per sorted window=[3, 1, 1, 2, 2, 2, 1, 1, 0, 3, 3, 1, 1, 1, 2, 1, 0, 3, 0, 2, 3, 3, 2, 3, 1, 0, 0, 1, 3, 2, 3, 1, 2, 2, 3, 2, 3, 1, 1, 2, 3, 2, 0, 1, 1, 0, 1, 3, 0, 3, 3, 2, 1, 3, 2]
+  rising /4 GSR resets phase: 1473/6868 mismatches; unknown=117; phase per sorted window=[2, 0, 1, 0, 1, 2, 1, 0, 0, 2, 3, 3, 1, 0, 3, 1, 1, 3, 0, 0, 3, 0, 0, 0, 1, 3, 0, 1, 3, 0, 0, 2, 2, 2, 3, 1, 2, 1, 1, 2, 3, 3, 0, 1, 1, 0, 1, 3, 0, 1, 0, 1, 1, 0, 1]
+  falling /4 free phase: 1387/6850 mismatches; unknown=135; phase per sorted window=[0, 2, 2, 3, 3, 1, 3, 2, 1, 0, 0, 2, 2, 2, 0, 1, 1, 0, 1, 3, 1, 1, 3, 0, 2, 1, 1, 2, 3, 3, 0, 2, 3, 3, 0, 2, 2, 3, 3, 3, 2, 3, 1, 2, 2, 1, 2, 0, 1, 0, 0, 3, 2, 0, 3]
+  falling /4 GSR resets phase: 1516/6832 mismatches; unknown=153; phase per sorted window=[1, 1, 2, 0, 2, 1, 2, 0, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0, 1, 0, 0, 1, 3, 0, 2, 0, 2, 3, 2, 0, 0, 3, 0, 3, 0, 2, 3, 2, 3, 3, 2, 0, 2, 2, 2, 1, 1, 0, 1, 2, 0, 2, 2, 0, 2]
+  combinational bypass ahead of R: 2467/6985; unknown=0
+
+c2 R[40] from c[4]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 349/6936 mismatches; unknown=49
+  rise+fall: 312/6970 mismatches; unknown=15
+  never captures: 1983/6434 mismatches; unknown=551
+  rising /2 free phase: 941/6931 mismatches; unknown=54; phase per sorted window=[0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0]
+  rising /2 GSR resets phase: 1004/6940 mismatches; unknown=45; phase per sorted window=[0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0]
+  falling /2 free phase: 995/6915 mismatches; unknown=70; phase per sorted window=[1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1]
+  falling /2 GSR resets phase: 1061/6921 mismatches; unknown=64; phase per sorted window=[1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1]
+  rising /4 free phase: 1364/6871 mismatches; unknown=114; phase per sorted window=[2, 1, 1, 2, 3, 3, 1, 0, 0, 3, 1, 0, 1, 0, 2, 1, 0, 3, 0, 2, 1, 0, 2, 3, 1, 0, 2, 3, 0, 0, 3, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 1, 2, 1, 0, 1, 1, 2, 1, 3, 1, 2, 1, 0, 2]
+  rising /4 GSR resets phase: 1416/6858 mismatches; unknown=127; phase per sorted window=[2, 1, 0, 0, 0, 2, 1, 0, 0, 1, 2, 3, 1, 2, 0, 0, 3, 3, 0, 0, 0, 2, 2, 0, 1, 3, 3, 3, 3, 0, 0, 2, 2, 2, 1, 1, 2, 3, 2, 2, 2, 1, 1, 1, 0, 1, 0, 2, 1, 1, 2, 1, 1, 0, 0]
+  falling /4 free phase: 1378/6844 mismatches; unknown=141; phase per sorted window=[3, 2, 2, 3, 0, 0, 2, 1, 1, 3, 1, 2, 2, 3, 1, 1, 1, 0, 0, 0, 2, 1, 3, 3, 2, 1, 3, 0, 2, 0, 3, 2, 3, 3, 0, 2, 2, 0, 3, 3, 2, 2, 3, 2, 2, 2, 2, 3, 2, 0, 0, 3, 2, 1, 2]
+  falling /4 GSR resets phase: 1493/6828 mismatches; unknown=157; phase per sorted window=[1, 2, 3, 0, 1, 0, 2, 0, 0, 2, 3, 0, 2, 3, 0, 1, 1, 0, 0, 0, 1, 3, 3, 0, 2, 1, 1, 0, 0, 0, 0, 3, 0, 0, 2, 2, 3, 0, 3, 3, 2, 2, 2, 2, 1, 2, 1, 3, 2, 2, 3, 2, 2, 0, 3]
+  combinational bypass ahead of R: 2425/6985; unknown=0
+
+c2 R[36] from c[0]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 362/6936 mismatches; unknown=49
+  rise+fall: 326/6970 mismatches; unknown=15
+  never captures: 1922/6434 mismatches; unknown=551
+  rising /2 free phase: 991/6935 mismatches; unknown=50; phase per sorted window=[0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+  rising /2 GSR resets phase: 1027/6933 mismatches; unknown=52; phase per sorted window=[1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 1029/6916 mismatches; unknown=69; phase per sorted window=[1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1]
+  falling /2 GSR resets phase: 1066/6920 mismatches; unknown=65; phase per sorted window=[0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+  rising /4 free phase: 1345/6874 mismatches; unknown=111; phase per sorted window=[2, 1, 1, 2, 1, 3, 2, 2, 1, 3, 2, 3, 2, 2, 2, 1, 2, 1, 3, 2, 0, 0, 3, 2, 3, 2, 3, 0, 3, 2, 2, 3, 2, 2, 3, 2, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 0, 0, 2, 3, 1, 1, 0, 1]
+  rising /4 GSR resets phase: 1448/6862 mismatches; unknown=123; phase per sorted window=[2, 1, 2, 0, 1, 3, 0, 0, 0, 3, 2, 3, 2, 2, 3, 1, 2, 2, 3, 0, 0, 1, 2, 0, 3, 3, 1, 1, 3, 0, 0, 1, 0, 2, 2, 1, 3, 1, 2, 2, 1, 1, 2, 2, 2, 0, 1, 0, 0, 2, 0, 1, 1, 0, 2]
+  falling /4 free phase: 1372/6878 mismatches; unknown=107; phase per sorted window=[3, 2, 2, 3, 2, 0, 2, 1, 2, 0, 0, 3, 3, 3, 3, 2, 3, 3, 0, 3, 1, 1, 3, 3, 2, 0, 1, 1, 0, 3, 3, 0, 3, 3, 0, 1, 2, 2, 3, 3, 2, 3, 3, 3, 3, 1, 2, 1, 2, 0, 0, 2, 2, 1, 2]
+  falling /4 GSR resets phase: 1467/6849 mismatches; unknown=136; phase per sorted window=[1, 1, 3, 0, 1, 0, 1, 0, 0, 0, 3, 0, 3, 3, 0, 0, 1, 3, 0, 0, 1, 2, 3, 0, 2, 0, 2, 0, 2, 0, 0, 2, 1, 3, 1, 2, 0, 2, 3, 3, 2, 2, 0, 1, 2, 1, 2, 1, 2, 3, 0, 2, 2, 0, 3]
+  combinational bypass ahead of R: 2483/6985; unknown=0
+
+c3 R[50] from c[50]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+c3 R[30] from c[30]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+c3 R[20] from c[20]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 375/6934 mismatches; unknown=51
+  rise+fall: 331/6970 mismatches; unknown=15
+  never captures: 1386/5214 mismatches; unknown=1771
+  rising /2 free phase: 1032/6945 mismatches; unknown=40; phase per sorted window=[0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  rising /2 GSR resets phase: 1067/6944 mismatches; unknown=41; phase per sorted window=[1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  falling /2 free phase: 1085/6905 mismatches; unknown=80; phase per sorted window=[1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+  falling /2 GSR resets phase: 1125/6901 mismatches; unknown=84; phase per sorted window=[0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
+  rising /4 free phase: 1485/6873 mismatches; unknown=112; phase per sorted window=[0, 1, 3, 2, 1, 2, 3, 3, 0, 2, 3, 1, 1, 1, 3, 2, 3, 2, 1, 1, 1, 2, 0, 3, 0, 0, 3, 0, 2, 0, 3, 2, 3, 2, 3, 0, 1, 1, 1, 2, 2, 2, 2, 3, 1, 1, 2, 1, 1, 2, 3, 1, 2, 2, 0]
+  rising /4 GSR resets phase: 1596/6884 mismatches; unknown=101; phase per sorted window=[2, 2, 3, 0, 1, 3, 3, 0, 0, 1, 3, 1, 1, 2, 0, 2, 3, 2, 0, 0, 3, 2, 0, 0, 0, 3, 0, 0, 1, 0, 0, 3, 3, 1, 2, 3, 0, 1, 1, 2, 2, 2, 2, 3, 1, 0, 2, 1, 1, 2, 2, 2, 2, 0, 2]
+  falling /4 free phase: 1508/6862 mismatches; unknown=123; phase per sorted window=[0, 2, 0, 3, 2, 3, 0, 1, 2, 3, 1, 2, 2, 2, 0, 0, 1, 3, 0, 2, 2, 3, 1, 0, 1, 1, 0, 1, 3, 0, 0, 3, 0, 3, 0, 3, 2, 2, 2, 3, 3, 3, 3, 0, 2, 2, 3, 2, 2, 3, 0, 2, 3, 1, 1]
+  falling /4 GSR resets phase: 1600/6851 mismatches; unknown=134; phase per sorted window=[1, 1, 0, 0, 1, 0, 0, 0, 0, 2, 0, 2, 2, 3, 0, 3, 1, 3, 1, 0, 0, 3, 1, 0, 1, 0, 1, 1, 2, 0, 0, 0, 0, 2, 1, 0, 1, 1, 2, 3, 3, 3, 3, 0, 2, 1, 3, 2, 2, 3, 3, 3, 3, 0, 3]
+  combinational bypass ahead of R: 2466/6985; unknown=0
+
+c3 R[0] from c[0]: C register
+  rising: 0/6970 mismatches; unknown=15
+  falling: 362/6934 mismatches; unknown=51
+  rise+fall: 326/6970 mismatches; unknown=15
+  never captures: 1368/5214 mismatches; unknown=1771
+  rising /2 free phase: 1046/6933 mismatches; unknown=52; phase per sorted window=[0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1]
+  rising /2 GSR resets phase: 1093/6929 mismatches; unknown=56; phase per sorted window=[0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 1072/6910 mismatches; unknown=75; phase per sorted window=[1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1]
+  falling /2 GSR resets phase: 1116/6914 mismatches; unknown=71; phase per sorted window=[1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+  rising /4 free phase: 1461/6863 mismatches; unknown=122; phase per sorted window=[2, 0, 2, 2, 2, 3, 1, 3, 1, 1, 3, 3, 2, 2, 2, 1, 0, 1, 3, 2, 0, 3, 3, 2, 3, 2, 0, 0, 3, 2, 2, 3, 2, 2, 3, 0, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 2, 2, 1, 2, 3, 1, 1, 2, 0]
+  rising /4 GSR resets phase: 1575/6849 mismatches; unknown=136; phase per sorted window=[2, 1, 2, 0, 2, 3, 0, 0, 0, 1, 2, 3, 2, 2, 3, 1, 2, 2, 3, 0, 0, 1, 2, 0, 3, 3, 1, 1, 3, 0, 0, 1, 0, 2, 2, 1, 3, 1, 2, 0, 1, 1, 2, 2, 2, 0, 2, 1, 1, 2, 0, 1, 1, 0, 2]
+  falling /4 free phase: 1465/6844 mismatches; unknown=141; phase per sorted window=[3, 1, 3, 3, 3, 0, 2, 1, 2, 2, 0, 0, 3, 3, 1, 2, 1, 3, 0, 3, 1, 0, 1, 3, 1, 0, 1, 1, 0, 3, 3, 0, 3, 3, 0, 1, 2, 2, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 2, 0, 0, 2, 2, 3, 1]
+  falling /4 GSR resets phase: 1572/6839 mismatches; unknown=146; phase per sorted window=[1, 1, 3, 0, 3, 0, 3, 0, 0, 2, 3, 0, 3, 3, 0, 0, 1, 3, 0, 0, 1, 2, 3, 0, 1, 0, 2, 0, 2, 0, 0, 2, 1, 3, 1, 2, 0, 2, 3, 1, 3, 2, 0, 3, 2, 1, 3, 0, 2, 3, 0, 2, 2, 0, 3]
+  combinational bypass ahead of R: 2483/6985; unknown=0
+
+c4 R[50] from c[50]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+c4 R[30] from c[30]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+c4 R[20] from c[20]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+c4 R[0] from c[0]: configured bypass
+  bypass: 0/6985 mismatches; unknown=0
+
+o1 opcode register(s):
+  rising: 235/6967 word mismatches; unknown=18
+  falling: 49/6935 word mismatches; unknown=50
+  rise+fall: 0/6971 word mismatches; unknown=14
+  never captures: 1825/5214 word mismatches; unknown=1771
+  rising /2 free phase: 1653/6948 word mismatches; unknown=37; phase per sorted window=[1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1]
+  rising /2 GSR resets phase: 1709/6948 word mismatches; unknown=37; phase per sorted window=[1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+  falling /2 free phase: 1510/6906 word mismatches; unknown=79; phase per sorted window=[0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+  falling /2 GSR resets phase: 1575/6911 word mismatches; unknown=74; phase per sorted window=[0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0]
+  rising /4 free phase: 2272/6885 word mismatches; unknown=100; phase per sorted window=[3, 2, 1, 3, 2, 2, 2, 0, 2, 0, 3, 1, 2, 2, 3, 3, 1, 0, 3, 1, 2, 0, 2, 3, 0, 2, 2, 3, 0, 3, 3, 0, 0, 1, 2, 1, 0, 2, 3, 3, 1, 2, 1, 3, 2, 1, 2, 1, 1, 3, 2, 3, 2, 2, 3]
+  rising /4 GSR resets phase: 2400/6892 word mismatches; unknown=93; phase per sorted window=[3, 2, 1, 0, 2, 2, 2, 0, 0, 0, 2, 0, 2, 3, 3, 3, 3, 0, 3, 0, 3, 3, 3, 0, 0, 2, 3, 3, 3, 0, 0, 2, 2, 3, 2, 1, 1, 0, 3, 3, 1, 2, 1, 3, 2, 1, 2, 2, 1, 2, 0, 2, 2, 0, 0]
+  falling /4 free phase: 2205/6868 word mismatches; unknown=117; phase per sorted window=[0, 3, 2, 0, 3, 3, 3, 1, 1, 1, 3, 2, 3, 3, 1, 0, 2, 1, 0, 2, 3, 1, 3, 0, 1, 1, 3, 0, 1, 0, 0, 1, 3, 2, 3, 0, 1, 3, 0, 0, 2, 3, 2, 0, 3, 3, 3, 2, 2, 0, 3, 0, 3, 3, 0]
+  falling /4 GSR resets phase: 2338/6881 word mismatches; unknown=104; phase per sorted window=[0, 2, 2, 0, 1, 3, 3, 0, 0, 1, 3, 1, 3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 0, 3, 3, 0, 3, 2, 2, 1, 0, 0, 2, 3, 2, 0, 3, 2, 3, 2, 2, 3, 0, 3, 3, 0, 0]
+  opcode bypass ahead of R: 3370/6985; unknown=0
+
+o2 opcode register(s):
+  rising: 158/6962 word mismatches; unknown=23
+  falling: 14/6940 word mismatches; unknown=45
+  rise+fall: 0/6964 word mismatches; unknown=21
+  never captures: 1209/6481 word mismatches; unknown=504
+  rising /2 free phase: 646/6950 word mismatches; unknown=35; phase per sorted window=[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1]
+  rising /2 GSR resets phase: 709/6950 word mismatches; unknown=35; phase per sorted window=[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 569/6925 word mismatches; unknown=60; phase per sorted window=[0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0]
+  falling /2 GSR resets phase: 626/6924 word mismatches; unknown=61; phase per sorted window=[0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0]
+  rising /4 free phase: 812/6904 word mismatches; unknown=81; phase per sorted window=[3, 0, 0, 0, 0, 0, 3, 2, 0, 0, 0, 3, 2, 0, 1, 0, 0, 2, 3, 1, 1, 2, 2, 3, 1, 3, 1, 0, 3, 0, 0, 0, 1, 0, 0, 3, 0, 0, 2, 1, 3, 2, 3, 2, 0, 1, 3, 0, 1, 2, 2, 1, 1, 2, 3]
+  rising /4 GSR resets phase: 945/6918 word mismatches; unknown=67; phase per sorted window=[2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1, 0, 0, 2, 3, 0, 1, 1, 2, 0, 1, 2, 3, 0, 0, 0, 0, 2, 3, 0, 1, 0, 0, 3, 2, 0, 3, 2, 3, 0, 0, 3, 3, 0, 1, 0, 0, 2, 1, 0, 0]
+  falling /4 free phase: 781/6886 word mismatches; unknown=99; phase per sorted window=[0, 1, 1, 2, 1, 1, 0, 3, 1, 1, 1, 0, 2, 1, 2, 1, 1, 3, 0, 2, 2, 0, 3, 0, 2, 3, 1, 1, 0, 1, 2, 1, 2, 1, 1, 0, 1, 3, 3, 2, 0, 3, 0, 3, 1, 0, 0, 1, 2, 3, 3, 2, 2, 3, 0]
+  falling /4 GSR resets phase: 879/6893 word mismatches; unknown=92; phase per sorted window=[3, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 3, 2, 0, 2, 1, 1, 3, 0, 0, 2, 0, 3, 0, 2, 3, 0, 1, 3, 0, 0, 3, 0, 1, 3, 0, 1, 0, 3, 1, 0, 3, 0, 3, 1, 0, 0, 1, 2, 0, 0, 3, 2, 0, 0]
+  opcode bypass ahead of R: 1635/6985; unknown=0
+
+o3 opcode register(s):
+  rising: 323/6973 word mismatches; unknown=12
+  falling: 51/6932 word mismatches; unknown=53
+  rise+fall: 0/6973 word mismatches; unknown=12
+  never captures: 1867/5214 word mismatches; unknown=1771
+  rising /2 free phase: 1630/6956 word mismatches; unknown=29; phase per sorted window=[0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]
+  rising /2 GSR resets phase: 1679/6957 word mismatches; unknown=28; phase per sorted window=[1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1]
+  falling /2 free phase: 1451/6914 word mismatches; unknown=71; phase per sorted window=[0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1]
+  falling /2 GSR resets phase: 1508/6909 word mismatches; unknown=76; phase per sorted window=[0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0]
+  rising /4 free phase: 2212/6898 word mismatches; unknown=87; phase per sorted window=[3, 1, 1, 1, 2, 0, 3, 1, 1, 2, 3, 2, 2, 3, 3, 1, 1, 1, 0, 2, 1, 3, 0, 1, 0, 1, 2, 2, 0, 2, 2, 0, 3, 2, 3, 0, 3, 3, 3, 2, 2, 3, 2, 2, 2, 1, 2, 3, 3, 2, 2, 1, 2, 2, 2]
+  rising /4 GSR resets phase: 2347/6893 word mismatches; unknown=92; phase per sorted window=[3, 2, 1, 2, 2, 0, 3, 0, 0, 2, 3, 2, 2, 0, 3, 1, 0, 1, 3, 0, 1, 1, 3, 0, 0, 0, 1, 2, 2, 0, 0, 2, 3, 2, 3, 0, 1, 3, 3, 1, 2, 2, 2, 2, 1, 0, 2, 0, 3, 2, 3, 2, 2, 0, 1]
+  falling /4 free phase: 2133/6875 word mismatches; unknown=110; phase per sorted window=[0, 2, 2, 2, 3, 1, 0, 2, 2, 3, 0, 3, 3, 0, 0, 2, 2, 2, 1, 0, 1, 0, 1, 2, 1, 2, 1, 3, 3, 3, 0, 1, 0, 3, 0, 0, 2, 0, 0, 3, 3, 0, 0, 3, 3, 1, 3, 0, 0, 1, 3, 2, 3, 3, 3]
+  falling /4 GSR resets phase: 2257/6865 word mismatches; unknown=120; phase per sorted window=[0, 3, 1, 3, 3, 1, 0, 0, 0, 3, 0, 3, 3, 2, 0, 2, 1, 2, 0, 0, 2, 2, 0, 0, 1, 1, 2, 3, 3, 0, 0, 3, 0, 3, 0, 1, 2, 0, 0, 3, 3, 3, 3, 3, 2, 1, 3, 1, 0, 3, 0, 3, 3, 0, 2]
+  opcode bypass ahead of R: 3286/6985; unknown=0
+
+o4 opcode register(s):
+  rising: 524/6965 word mismatches; unknown=20
+  falling: 58/6924 word mismatches; unknown=61
+  rise+fall: 0/6965 word mismatches; unknown=20
+  never captures: 2765/6391 word mismatches; unknown=594
+  rising /2 free phase: 2059/6923 word mismatches; unknown=62; phase per sorted window=[1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0]
+  rising /2 GSR resets phase: 2118/6928 word mismatches; unknown=57; phase per sorted window=[1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 1788/6895 word mismatches; unknown=90; phase per sorted window=[0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1]
+  falling /2 GSR resets phase: 1836/6892 word mismatches; unknown=93; phase per sorted window=[0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0]
+  rising /4 free phase: 2582/6846 word mismatches; unknown=139; phase per sorted window=[0, 0, 0, 3, 2, 0, 3, 3, 2, 2, 2, 0, 2, 2, 2, 2, 0, 3, 3, 3, 2, 1, 0, 1, 2, 0, 2, 2, 3, 1, 3, 3, 3, 1, 1, 3, 0, 0, 3, 3, 1, 1, 1, 2, 1, 1, 1, 0, 3, 3, 0, 3, 1, 3, 2]
+  rising /4 GSR resets phase: 2691/6837 word mismatches; unknown=148; phase per sorted window=[3, 1, 0, 0, 2, 0, 0, 0, 0, 3, 3, 0, 2, 2, 2, 1, 0, 3, 3, 0, 3, 0, 3, 0, 2, 3, 2, 2, 2, 0, 0, 3, 0, 3, 1, 3, 1, 1, 3, 2, 1, 1, 1, 0, 3, 0, 1, 2, 3, 2, 0, 2, 1, 0, 0]
+  falling /4 free phase: 2456/6815 word mismatches; unknown=170; phase per sorted window=[1, 1, 1, 0, 3, 1, 0, 0, 3, 3, 3, 1, 3, 3, 1, 3, 1, 0, 0, 0, 3, 2, 1, 2, 3, 1, 3, 2, 1, 2, 0, 0, 2, 0, 2, 0, 2, 1, 0, 0, 1, 2, 2, 1, 2, 2, 1, 1, 1, 0, 1, 0, 2, 0, 3]
+  falling /4 GSR resets phase: 2571/6819 word mismatches; unknown=166; phase per sorted window=[0, 2, 1, 0, 3, 1, 3, 0, 0, 2, 0, 1, 3, 2, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 3, 1, 3, 3, 3, 0, 0, 0, 1, 0, 3, 0, 2, 2, 0, 3, 1, 2, 2, 2, 1, 1, 1, 2, 1, 3, 0, 3, 2, 0, 0]
+  opcode bypass ahead of R: 3918/6985; unknown=0
+
+o5 opcode register(s):
+  rising: 109/6969 word mismatches; unknown=16
+  falling: 14/6938 word mismatches; unknown=47
+  rise+fall: 0/6973 word mismatches; unknown=12
+  never captures: 917/5214 word mismatches; unknown=1771
+  rising /2 free phase: 753/6947 word mismatches; unknown=38; phase per sorted window=[1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0]
+  rising /2 GSR resets phase: 814/6950 word mismatches; unknown=35; phase per sorted window=[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0]
+  falling /2 free phase: 697/6911 word mismatches; unknown=74; phase per sorted window=[0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1]
+  falling /2 GSR resets phase: 720/6916 word mismatches; unknown=69; phase per sorted window=[0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1]
+  rising /4 free phase: 987/6880 word mismatches; unknown=105; phase per sorted window=[1, 2, 3, 1, 2, 3, 2, 0, 1, 1, 1, 0, 3, 0, 0, 1, 1, 2, 3, 2, 1, 0, 1, 3, 1, 2, 0, 1, 0, 1, 2, 2, 3, 3, 2, 1, 3, 2, 3, 2, 2, 0, 3, 1, 3, 2, 2, 1, 2, 3, 2, 1, 1, 3, 3]
+  rising /4 GSR resets phase: 1165/6884 word mismatches; unknown=101; phase per sorted window=[2, 1, 0, 2, 2, 0, 2, 0, 0, 2, 3, 3, 3, 3, 2, 1, 0, 1, 3, 0, 0, 1, 2, 0, 1, 2, 0, 1, 0, 0, 0, 2, 3, 3, 3, 1, 3, 3, 3, 3, 2, 1, 3, 2, 3, 1, 2, 2, 2, 0, 2, 2, 1, 0, 2]
+  falling /4 free phase: 961/6873 word mismatches; unknown=112; phase per sorted window=[2, 3, 0, 2, 3, 3, 3, 1, 1, 2, 0, 1, 0, 1, 1, 2, 2, 3, 0, 1, 2, 0, 2, 0, 2, 3, 1, 2, 1, 2, 3, 3, 0, 0, 3, 2, 0, 3, 0, 3, 3, 2, 0, 2, 0, 3, 3, 2, 1, 0, 3, 0, 2, 0, 0]
+  falling /4 GSR resets phase: 1072/6867 word mismatches; unknown=118; phase per sorted window=[0, 2, 1, 3, 3, 1, 1, 0, 0, 3, 0, 0, 0, 0, 3, 2, 1, 2, 0, 0, 1, 2, 0, 0, 2, 0, 1, 2, 1, 0, 0, 3, 0, 0, 0, 3, 2, 0, 0, 0, 3, 2, 0, 3, 0, 2, 3, 3, 3, 3, 3, 3, 2, 0, 3]
+  opcode bypass ahead of R: 1649/6985; unknown=0
+
+o6 opcode register(s):
+  rising: 300/6967 word mismatches; unknown=18
+  falling: 38/6943 word mismatches; unknown=42
+  rise+fall: 0/6969 word mismatches; unknown=16
+  never captures: 2425/6495 word mismatches; unknown=490
+  rising /2 free phase: 1357/6952 word mismatches; unknown=33; phase per sorted window=[1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0]
+  rising /2 GSR resets phase: 1454/6957 word mismatches; unknown=28; phase per sorted window=[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+  falling /2 free phase: 1194/6924 word mismatches; unknown=61; phase per sorted window=[0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1]
+  falling /2 GSR resets phase: 1251/6922 word mismatches; unknown=63; phase per sorted window=[1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0]
+  rising /4 free phase: 1861/6906 word mismatches; unknown=79; phase per sorted window=[3, 1, 0, 2, 0, 2, 0, 3, 0, 0, 0, 0, 1, 1, 0, 2, 2, 3, 2, 3, 0, 1, 1, 2, 2, 3, 2, 0, 2, 0, 3, 0, 1, 0, 0, 2, 2, 0, 1, 1, 0, 2, 2, 2, 2, 0, 3, 2, 0, 1, 1, 1, 0, 0, 2]
+  rising /4 GSR resets phase: 2006/6904 word mismatches; unknown=81; phase per sorted window=[0, 1, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 1, 3, 1, 2, 2, 3, 1, 0, 3, 0, 2, 0, 2, 1, 2, 1, 2, 0, 0, 2, 1, 0, 1, 2, 1, 0, 1, 1, 0, 1, 2, 1, 2, 3, 3, 2, 0, 2, 0, 2, 0, 0, 0]
+  falling /4 free phase: 1767/6876 word mismatches; unknown=109; phase per sorted window=[0, 2, 1, 3, 1, 3, 1, 0, 1, 1, 0, 1, 1, 2, 1, 2, 3, 0, 3, 0, 1, 0, 1, 3, 3, 0, 3, 1, 3, 1, 0, 1, 2, 1, 1, 3, 2, 1, 2, 2, 1, 3, 3, 3, 3, 1, 1, 3, 1, 2, 1, 2, 1, 1, 3]
+  falling /4 GSR resets phase: 1909/6887 word mismatches; unknown=98; phase per sorted window=[1, 2, 1, 0, 1, 3, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 3, 0, 2, 0, 0, 0, 1, 0, 3, 2, 3, 1, 3, 0, 0, 1, 2, 1, 2, 3, 2, 1, 2, 2, 1, 2, 3, 2, 3, 0, 1, 3, 1, 3, 0, 3, 1, 0, 0]
+  opcode bypass ahead of R: 3240/6985; unknown=0
+
+o7 opcode register(s):
+  rising: 1942/6913 word mismatches; unknown=72
+  falling: 1713/6888 word mismatches; unknown=97
+  rise+fall: 0/6936 word mismatches; unknown=49
+  never captures: 1971/5214 word mismatches; unknown=1771
+  rising /2 free phase: 2873/6878 word mismatches; unknown=107; phase per sorted window=[1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1]
+  rising /2 GSR resets phase: 2975/6886 word mismatches; unknown=99; phase per sorted window=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+  falling /2 free phase: 2808/6837 word mismatches; unknown=148; phase per sorted window=[1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0]
+  falling /2 GSR resets phase: 2869/6838 word mismatches; unknown=147; phase per sorted window=[0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1]
+  rising /4 free phase: 3145/6736 word mismatches; unknown=249; phase per sorted window=[2, 1, 0, 3, 0, 2, 1, 2, 1, 0, 2, 0, 3, 2, 1, 3, 1, 3, 0, 2, 3, 2, 3, 2, 1, 3, 1, 3, 3, 1, 0, 0, 1, 1, 0, 1, 2, 2, 1, 3, 0, 1, 1, 0, 0, 0, 0, 2, 2, 0, 0, 3, 0, 0, 1]
+  rising /4 GSR resets phase: 3258/6741 word mismatches; unknown=244; phase per sorted window=[1, 1, 2, 1, 0, 2, 0, 0, 0, 0, 2, 0, 3, 0, 1, 3, 1, 3, 0, 0, 2, 2, 3, 0, 1, 0, 3, 2, 2, 0, 0, 2, 3, 3, 0, 0, 3, 0, 1, 3, 0, 1, 1, 0, 0, 3, 0, 0, 2, 3, 0, 0, 0, 0, 0]
+  falling /4 free phase: 3085/6679 word mismatches; unknown=306; phase per sorted window=[3, 2, 1, 0, 1, 3, 2, 3, 3, 1, 3, 1, 0, 3, 3, 2, 2, 0, 1, 2, 0, 3, 0, 3, 2, 0, 3, 1, 1, 2, 0, 1, 2, 2, 1, 2, 3, 3, 2, 0, 1, 2, 2, 1, 1, 1, 1, 1, 3, 1, 1, 0, 1, 1, 2]
+  falling /4 GSR resets phase: 3194/6682 word mismatches; unknown=303; phase per sorted window=[3, 2, 3, 1, 1, 3, 1, 0, 0, 1, 3, 1, 0, 2, 2, 2, 2, 0, 1, 0, 3, 3, 0, 0, 2, 1, 0, 1, 3, 0, 0, 3, 0, 1, 0, 3, 0, 1, 2, 0, 1, 2, 2, 1, 1, 0, 1, 1, 3, 0, 0, 2, 1, 0, 0]
+  opcode bypass ahead of R: 4232/6985; unknown=0
+
+Preferred timing summaries:
+  C: 0/69700; unknown=150; EXACT ON PREDICTED SAMPLES
+  bypass: 0/41910; unknown=0; EXACT ON PREDICTED SAMPLES
+  opcode: 0/48751; unknown=144; EXACT ON PREDICTED SAMPLES
+Physical edge sensitivity versus phase transparency is not uniquely identified. Flags and IN_1 remain unmeasured.

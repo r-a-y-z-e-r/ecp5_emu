@@ -1,0 +1,18 @@
+{
+  "reference_head": "31509dfa6af6caf5fd7f0c613fe494611f66c14a",
+  "emulator_binary_sha256": "7f099c8425c5470dda2fd6bdb37c20e346f3445a63a8daa7c00076808c85de74",
+  "original_C_D_packed_hashes_reproduced": {
+    "C": true,
+    "D": true
+  },
+  "note": "Compiled from the existing working tree in external scratch; no emulator source edits for this follow-up.",
+  "source_status": [
+    " M src/compile/mod.rs",
+    " M src/compile/system.rs",
+    " M src/kernel/cache.rs",
+    " M src/kernel/mod.rs",
+    " M tests/automatic_compile.rs",
+    " M tests/system_controls.rs",
+    "?? tests/sgsr_native.rs"
+  ]
+}

@@ -1,0 +1,9 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  run.py
+b747a834247d2c2664e833c4ac0fa2e47fbdcd83bab5bc72c83e1813a4db4852  observations.log
+d8dc59e7c022678378c802514d815dd54d9a7c0c0c77f201c4c4ad862f12b032  hdmi_moving.config
+31e9a2483a847723d9824cad2fd1313b32698880521927398389735ce3e37916  oled_pattern.config
+aa36dfe9b22b992adbbc4a80510dd372ada04bec0fa76a090a9ba49ba0f5ec85  emulator_hdmi_moving.txt
+a690ff864f7459752f3626c397727274719dd1f7be789edb906f31449dba5c02  emulator_oled_pattern.txt
+# Historical digest (artifact unavailable in this record): 44c840c3b4ee9f5ef86aeeebae2dd5c9ad93ea5b20ad40183329ab2a9800e152  hdmi_moving top.bit (target/reference/hdmi_moving, examples/ulx3s/build.sh; not stored)
+# Historical digest (artifact unavailable in this record): 2b4405a807deed2c39a4f9f914e0855bbdff50119fb5451b276ad26a79078b8b  oled_pattern top.bit (target/reference/oled_pattern, examples/ulx3s/build.sh; not stored)

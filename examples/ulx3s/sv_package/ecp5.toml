@@ -1,0 +1,5 @@
+[sources]
+hdl = ["top.sv"]
+
+[synthesis]
+sv_frontend = "slang"

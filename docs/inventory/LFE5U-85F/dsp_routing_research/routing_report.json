@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "device": "LFE5U-85F",
+  "scope": "Directed database paths and wire namespace candidates; no executable routing or physical lane allocation.",
+  "dsp_blocks": 39,
+  "tile_instances": 702,
+  "tile_types": 18,
+  "tile_types_with_connection_records": 12,
+  "template_records": 6873,
+  "instantiated_edge_records": 268047,
+  "rejected_wire_requests": 0,
+  "native_wire_check": {
+    "performed": true,
+    "compared_requests": 340899,
+    "library_sha256": "d3ecc36231525beac047ab8f29769b0284b81f05c87d6f10c37e75f9f5d75835"
+  },
+  "port_name_states": {
+    "documented_unobserved": 2,
+    "name_match": 515,
+    "observed_unmapped_name": 2
+  },
+  "candidate_namespaces_by_family": {
+    "ALU24": 78,
+    "MULT9": 156,
+    "PRADD18": 156,
+    "PRADD9": 156
+  },
+  "raw_site_references": 5733,
+  "namespaces_missing_documented_ports": 156,
+  "unassigned_external_primitive_namespaces": [
+    [
+      10,
+      0,
+      "MULT9"
+    ],
+    [
+      10,
+      0,
+      "PRADD18"
+    ],
+    [
+      10,
+      0,
+      "PRADD9"
+    ],
+    [
+      10,
+      1,
+      "ALU24"
+    ],
+    [
+      10,
+      65,
+      "MULT9"
+    ],
+    [
+      10,
+      65,
+      "PRADD18"
+    ],
+    [
+      10,
+      65,
+      "PRADD9"
+    ],
+    [
+      10,
+      66,
+      "ALU24"
+    ],
+    [
+      34,
+      0,
+      "MULT9"
+    ],
+    [
+      34,
+      0,
+      "PRADD18"
+    ],
+    [
+      34,
+      0,
+      "PRADD9"
+    ],
+    [
+      34,
+      1,
+      "ALU24"
+    ],
+    [
+      34,
+      65,
+      "MULT9"
+    ],
+    [
+      34,
+      65,
+      "PRADD18"
+    ],
+    [
+      34,
+      65,
+      "PRADD9"
+    ],
+    [
+      34,
+      66,
+      "ALU24"
+    ],
+    [
+      58,
+      0,
+      "MULT9"
+    ],
+    [
+      58,
+      0,
+      "PRADD18"
+    ],
+    [
+      58,
+      0,
+      "PRADD9"
+    ],
+    [
+      58,
+      1,
+      "ALU24"
+    ],
+    [
+      58,
+      65,
+      "MULT9"
+    ],
+    [
+      58,
+      65,
+      "PRADD18"
+    ],
+    [
+      58,
+      65,
+      "PRADD9"
+    ],
+    [
+      58,
+      66,
+      "ALU24"
+    ]
+  ],
+  "fixed_mux_overlap_sinks": 11934,
+  "fixed_mux_overlap_per_block": {
+    "LFE5U-85F/R10C105/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C114/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C13/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C22/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C31/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C4/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C40/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C49/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C58/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C69/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C78/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C87/DSP_BLOCK": 306,
+    "LFE5U-85F/R10C96/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C105/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C114/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C13/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C22/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C31/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C4/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C40/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C49/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C58/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C69/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C78/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C87/DSP_BLOCK": 306,
+    "LFE5U-85F/R34C96/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C105/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C114/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C13/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C22/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C31/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C4/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C40/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C49/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C58/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C69/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C78/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C87/DSP_BLOCK": 306,
+    "LFE5U-85F/R58C96/DSP_BLOCK": 306
+  },
+  "fixed_mux_overlap_names": {
+    "JCFB*": 2106,
+    "JDSPC*": 2106,
+    "JMULTA*": 2106,
+    "JP*": 4212,
+    "JQ*": 1404
+  },
+  "preadder_to_multiplier_paths": 7020,
+  "preadder_to_multiplier_per_block": {
+    "LFE5U-85F/R10C105/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C114/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C13/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C22/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C31/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C4/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C40/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C49/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C58/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C69/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C78/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C87/DSP_BLOCK": 180,
+    "LFE5U-85F/R10C96/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C105/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C114/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C13/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C22/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C31/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C4/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C40/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C49/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C58/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C69/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C78/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C87/DSP_BLOCK": 180,
+    "LFE5U-85F/R34C96/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C105/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C114/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C13/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C22/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C31/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C4/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C40/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C49/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C58/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C69/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C78/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C87/DSP_BLOCK": 180,
+    "LFE5U-85F/R58C96/DSP_BLOCK": 180
+  },
+  "paths_with_unqualified_fixed_default": 5265,
+  "preadder_route_controls": 156,
+  "preadder_selection_cram_bits": 156,
+  "preadder_selection_bits_without_named_resource_field": 156,
+  "limitations": [
+    "A fixed connection can describe a mode-specific view; do not union all primitive views.",
+    "Observed 9-bit site labels do not identify both physical 9-bit lanes.",
+    "ALU24 OP5/OP7 are not assigned to documented OPADDNSUB/OPCINSEL by name alone.",
+    "External primitive names at block boundaries are retained without creating physical resources.",
+    "Path traversal stops after three edges or on reaching another primitive; no internal arithmetic is traversed."
+  ],
+  "source_files": [
+    {
+      "source": "device_inventory.json",
+      "sha256": "aae1fc16d0bec9b56b2e5890aad3c725a53cf849ff46bc6ccdc924883789b145"
+    },
+    {
+      "source": "tile_instances.csv",
+      "sha256": "0da09e09bcefb49f0ef1e1998888b2a2f7199e4f326469b555e046d65be55101"
+    },
+    {
+      "source": "resource_instances.csv",
+      "sha256": "45b0746849219ea2bc14824bfb21bab29bacf7753a1f5959766674f680938947"
+    },
+    {
+      "source": "site_bindings.csv",
+      "sha256": "674c7c155e6b5e6cb756342663a49fcc5c6297d04b3c6673c16086962113e702"
+    },
+    {
+      "source": "decode_catalog.json",
+      "sha256": "cef1fea6a299615b71ecdf08fe13fd3a25ddba20dcda7ce5494f3cf49a57f2f7"
+    },
+    {
+      "source": "dsp_research/evidence_report.json",
+      "sha256": "cf59d017b024903478f9e7a6fc64c4925a403a7467c0f8c978acfbcc168fec79"
+    },
+    {
+      "source": "collector",
+      "sha256": "19f39eb477f11602739327055841c52316c95e823b0381df72251f6c10c6f789"
+    },
+    {
+      "source": "native_probe_source",
+      "sha256": "4f53b06ea33c5a8b4a004aa2d45908dd0b76b578d2dae7f8553989979883cb7f"
+    },
+    {
+      "source": "Trellis:RoutingGraph.cpp",
+      "sha256": "5ea1e15451ab188a97ce601ee58e53a48b922ffead40e1950206007bc7061294"
+    },
+    {
+      "source": "native_probe_binary",
+      "sha256": "e486a7f11253e97a8ea79e368960ec7fb2ce288882680473729c580fd96803b4"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+Routing validation 2026-11-17T05:57:17.793781+00:00
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis ecppack Version 1.4-86-ga31ff70
+Scratch artifacts: /private/tmp/ecp5-hd09-hs02-routed.Gsj8MA
+Commands: supplied build.sh flow, CABGA381, --85k --seed 1; added --write DESIGN.routed.json.
+Synthesis, routing and packing artifacts are in scratch space; checked-in Verilog is in the series directory.
+No config patch; no nextpnr/library source modification; no board/serial/cargo/commit.
+Timing target matches supplied build.sh: default 12 MHz. Actual board clock: 25 MHz.
+HS02 has no user GSR primitive; probe GSR remains ENABLED.
+
+hs02: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: d708b98d11962b778d812e8d1981410706357e4fbf6c24cdad21d9c5a6610ede
+  Synthesis cells: {'CCU2C': 43, 'L6MUX21': 178, 'LUT4': 4906, 'PFUMX': 1098, 'TRELLIS_COMB': 32, 'TRELLIS_FF': 4424}
+  Routed cells: {'DCCA': 1, 'TRELLIS_COMB': 5066, 'TRELLIS_FF': 4424, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 55.65 MHz (PASS at 12.00 MHz)
+hs02.config: REGx.LSRMODE PRLD=24; 32 probe parameter/placement/config checks; no identity-LUT M tie: PASS
+
+hs02s: yosys PASS; nextpnr PASS; ecppack PASS
+  Verilog SHA256: f1d91415f379a868d3e86941910db7739dbca035470afdb6f441898b6f44a7ff
+  Synthesis cells: {'CCU2C': 43, 'L6MUX21': 4, 'LUT4': 4588, 'PFUMX': 856, 'TRELLIS_COMB': 32, 'TRELLIS_FF': 4424}
+  Routed cells: {'DCCA': 1, 'TRELLIS_COMB': 4748, 'TRELLIS_FF': 4424, 'TRELLIS_IO': 2}
+  Bitstream bytes: 1927725
+  Info: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 52.69 MHz (PASS at 12.00 MHz)
+hs02s.config: REGx.LSRMODE PRLD=24; 32 probe parameter/placement/config checks; no identity-LUT M tie: PASS
+
+HS02 selftest: 12 known models, 32 FFs, three synthetic lines each: PASS
+Regression: checker rejects an identity-LUT M port tied to GND: PASS
+Yosys 0.70 plain HS02 flow still has the native whitebox initial Q=M failure; tested interface-blackbox flow preserves all native FF settings.
+
+Actual grep -Ec counts from routed .config files:
+hs02: REGx.LSRMODE PRLD=24
+hs02s: REGx.LSRMODE PRLD=24

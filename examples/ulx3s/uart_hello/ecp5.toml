@@ -1,0 +1,12 @@
+# A UART transmitter: Hello, ULX3S! at 115200 8N1, ten times per second.
+# Build: ecp5_emu build examples/ulx3s/uart_hello (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/uart_hello; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/uart_hello.
+
+[project]
+name = "uart_hello"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

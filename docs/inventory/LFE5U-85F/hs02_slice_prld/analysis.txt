@@ -1,0 +1,184 @@
+distinct windows=132, ignored incomplete/invalid lines=3
+loads=3; full windows/load=[132, 132, 132]; identical=True
+Unique windows=132; samples/FF=16896; transitions/FF=16764
+Repeated loads are deduplicated. Group counts sum replicas, not reloads.
+Search: M/REGSET; sync, async-level, async-assert, M latched at LSR rise, clocked-M async load;
+        over/under CE; pin/1/0/inverse pin; release old/new/AND/OR M.
+        ff03 additionally tests the record-specific CE|ff27.DI routing proxy; this is not applied to other FFs.
+Nonzero best counts remain unexplained; an enable override is not a claim about valid CEMUX=1 hardware.
+ff00 PRLD/LSR_OVER_CE/RESET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1043/16764, async-assert=961/16764, assert-latched=1040/16744, async-clock-M=955/16764
+ff01 PRLD/LSR_OVER_CE/RESET/1: nominal old-model best=1831/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1014/16764, async-assert=916/16764, assert-latched=1020/16744, async-clock-M=900/16764
+ff02 PRLD/LSR_OVER_CE/SET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=991/16764, async-assert=867/16764, assert-latched=992/16755, async-clock-M=899/16764
+ff03 PRLD/LSR_OVER_CE/SET/1: nominal old-model best=931/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin OR ff27.DI; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=990/16764, async-assert=875/16764, assert-latched=982/16751, async-clock-M=855/16764
+ff04 PRLD/ASYNC/RESET/CE: nominal old-model best=892/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=1868/16764, async-level=0/16764, async-assert=1007/16764, assert-latched=1002/16748, async-clock-M=1896/16764
+  release alternatives with this effective CE: old=892/16764, new=0/16764, and=447/16764, or=445/16764
+ff05 PRLD/ASYNC/RESET/1: nominal old-model best=2458/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=1965/16764, async-level=0/16764, async-assert=1058/16764, assert-latched=1041/16740, async-clock-M=1955/16764
+  release alternatives with this effective CE: old=923/16764, new=0/16764, and=468/16764, or=455/16764
+ff06 PRLD/ASYNC/SET/CE: nominal old-model best=932/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=2049/16764, async-level=0/16764, async-assert=1067/16764, assert-latched=1040/16741, async-clock-M=2001/16764
+  release alternatives with this effective CE: old=932/16764, new=0/16764, and=469/16764, or=463/16764
+ff07 PRLD/ASYNC/SET/1: nominal old-model best=2526/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=1975/16764, async-level=0/16764, async-assert=1047/16764, assert-latched=1040/16740, async-clock-M=1973/16764
+  release alternatives with this effective CE: old=916/16764, new=0/16764, and=463/16764, or=453/16764
+ff08 PRLD/LSR_OVER_CE/RESET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1087/16764, async-assert=982/16764, assert-latched=1096/16749, async-clock-M=922/16764
+ff09 PRLD/LSR_OVER_CE/RESET/1: nominal old-model best=2821/16764; extended best=1816/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1 ; NO EXACT MODEL
+  timing hypotheses with this effective CE: sync=1816/16764, async-level=2632/16764, async-assert=2482/16764, assert-latched=2625/16744, async-clock-M=2486/16764
+ff10 PRLD/LSR_OVER_CE/SET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1042/16764, async-assert=938/16764, assert-latched=1038/16754, async-clock-M=862/16764
+ff11 PRLD/LSR_OVER_CE/SET/1: nominal old-model best=1881/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=984/16764, async-assert=883/16764, assert-latched=983/16752, async-clock-M=900/16764
+ff12 PRLD/ASYNC/RESET/CE: nominal old-model best=452/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=and; tied best models=1
+  timing hypotheses with this effective CE: sync=1487/16764, async-level=0/16764, async-assert=587/16764, assert-latched=623/16741, async-clock-M=1445/16764
+  release alternatives with this effective CE: old=452/16764, new=440/16764, and=0/16764, or=892/16764
+ff13 PRLD/ASYNC/RESET/1: nominal old-model best=1611/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=old; tied best models=1
+  timing hypotheses with this effective CE: sync=1053/16764, async-level=0/16764, async-assert=125/16764, assert-latched=242/16755, async-clock-M=1039/16764
+  release alternatives with this effective CE: old=0/16764, new=891/16764, and=437/16764, or=454/16764
+ff14 PRLD/ASYNC/SET/CE: nominal old-model best=927/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=1977/16764, async-level=0/16764, async-assert=1048/16764, assert-latched=1036/16744, async-clock-M=1935/16764
+  release alternatives with this effective CE: old=927/16764, new=0/16764, and=464/16764, or=463/16764
+ff15 PRLD/ASYNC/SET/1: nominal old-model best=2034/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=and; tied best models=1
+  timing hypotheses with this effective CE: sync=1553/16764, async-level=0/16764, async-assert=592/16764, assert-latched=644/16742, async-clock-M=1491/16764
+  release alternatives with this effective CE: old=468/16764, new=467/16764, and=0/16764, or=935/16764
+ff16 PRLD/LSR_OVER_CE/RESET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1074/16764, async-assert=946/16764, assert-latched=1073/16753, async-clock-M=870/16764
+ff17 PRLD/LSR_OVER_CE/RESET/1: nominal old-model best=2774/16764; extended best=1857/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1 ; NO EXACT MODEL
+  timing hypotheses with this effective CE: sync=1857/16764, async-level=2650/16764, async-assert=2531/16764, assert-latched=2652/16741, async-clock-M=2540/16764
+ff18 PRLD/LSR_OVER_CE/SET/CE: nominal old-model best=0/16764; extended best=0/16764
+  M, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=1055/16764, async-assert=948/16764, assert-latched=1052/16749, async-clock-M=978/16764
+ff19 PRLD/LSR_OVER_CE/SET/1: nominal old-model best=916/16764; extended best=916/16764
+  M, sync, LSR over CE, effective CE=one; tied best models=2 ; NO EXACT MODEL
+  timing hypotheses with this effective CE: sync=916/16764, async-level=1822/16764, async-assert=1702/16764, assert-latched=1823/16748, async-clock-M=1705/16764
+ff20 PRLD/ASYNC/RESET/CE: nominal old-model best=960/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=2005/16764, async-level=0/16764, async-assert=1095/16764, assert-latched=1099/16754, async-clock-M=2049/16764
+  release alternatives with this effective CE: old=960/16764, new=0/16764, and=492/16764, or=468/16764
+ff21 PRLD/ASYNC/RESET/1: nominal old-model best=2065/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=and; tied best models=1
+  timing hypotheses with this effective CE: sync=1509/16764, async-level=0/16764, async-assert=599/16764, assert-latched=643/16749, async-clock-M=1556/16764
+  release alternatives with this effective CE: old=469/16764, new=493/16764, and=0/16764, or=962/16764
+ff22 PRLD/ASYNC/SET/CE: nominal old-model best=973/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=pin, release M=new; tied best models=1
+  timing hypotheses with this effective CE: sync=2032/16764, async-level=0/16764, async-assert=1105/16764, assert-latched=1091/16739, async-clock-M=2073/16764
+  release alternatives with this effective CE: old=973/16764, new=0/16764, and=493/16764, or=480/16764
+ff23 PRLD/ASYNC/SET/1: nominal old-model best=906/16764; extended best=0/16764
+  M, async-level, LSR over CE, effective CE=one, release M=new; tied best models=2
+  timing hypotheses with this effective CE: sync=1930/16764, async-level=0/16764, async-assert=1016/16764, assert-latched=1015/16746, async-clock-M=1945/16764
+  release alternatives with this effective CE: old=906/16764, new=0/16764, and=460/16764, or=446/16764
+ff24 LSR/LSR_OVER_CE/RESET/CE: nominal old-model best=0/16764; extended best=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=886/16764, async-assert=901/16764, assert-latched=886/16764, async-clock-M=886/16764
+ff25 LSR/LSR_OVER_CE/RESET/1: nominal old-model best=1878/16764; extended best=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=856/16764, async-assert=880/16764, assert-latched=856/16764, async-clock-M=856/16764
+ff26 LSR/LSR_OVER_CE/SET/CE: nominal old-model best=0/16764; extended best=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin; tied best models=1
+  timing hypotheses with this effective CE: sync=0/16764, async-level=868/16764, async-assert=887/16764, assert-latched=868/16764, async-clock-M=868/16764
+ff27 LSR/LSR_OVER_CE/SET/1: nominal old-model best=868/16764; extended best=868/16764
+  REGSET, sync, LSR over CE, effective CE=one; tied best models=2 ; NO EXACT MODEL
+  timing hypotheses with this effective CE: sync=868/16764, async-level=1652/16764, async-assert=1652/16764, assert-latched=1652/16764, async-clock-M=1652/16764
+ff28 LSR/ASYNC/RESET/CE: nominal old-model best=0/16764; extended best=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin; tied best models=4
+  timing hypotheses with this effective CE: sync=905/16764, async-level=0/16764, async-assert=0/16764, assert-latched=0/16764, async-clock-M=0/16764
+ff29 LSR/ASYNC/RESET/1: nominal old-model best=1546/16764; extended best=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin; tied best models=4
+  timing hypotheses with this effective CE: sync=873/16764, async-level=0/16764, async-assert=0/16764, assert-latched=0/16764, async-clock-M=0/16764
+ff30 LSR/ASYNC/SET/CE: nominal old-model best=0/16764; extended best=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin; tied best models=4
+  timing hypotheses with this effective CE: sync=901/16764, async-level=0/16764, async-assert=0/16764, assert-latched=0/16764, async-clock-M=0/16764
+ff31 LSR/ASYNC/SET/1: nominal old-model best=2429/16764; extended best=1589/16764
+  REGSET, async-level, LSR over CE, effective CE=pin; tied best models=4 ; NO EXACT MODEL
+  timing hypotheses with this effective CE: sync=2508/16764, async-level=1589/16764, async-assert=1589/16764, assert-latched=1589/16764, async-clock-M=1589/16764
+
+Setting groups: common model versus sum of individually fitted replicas
+group PRLD/LSR_OVER_CE/RESET/CE FFs=[0, 8, 16]: common=0/50292; individual=0/50292
+  M, sync, LSR over CE, effective CE=pin
+group PRLD/LSR_OVER_CE/RESET/1 FFs=[1, 9, 17]: common=3673/50292; individual=3673/50292
+  M, sync, LSR over CE, effective CE=pin ; NO COMMON EXACT MODEL
+group PRLD/LSR_OVER_CE/SET/CE FFs=[2, 10, 18]: common=0/50292; individual=0/50292
+  M, sync, LSR over CE, effective CE=pin
+group PRLD/LSR_OVER_CE/SET/1 FFs=[3, 11, 19]: common=1839/50292; individual=916/50292
+  M, sync, LSR over CE, effective CE=pin ; NO COMMON EXACT MODEL
+group PRLD/ASYNC/RESET/CE FFs=[4, 12, 20]: common=440/50292; individual=0/50292
+  M, async-level, LSR over CE, effective CE=pin, release M=new ; NO COMMON EXACT MODEL
+group PRLD/ASYNC/RESET/1 FFs=[5, 13, 21]: common=905/50292; individual=0/50292
+  M, async-level, LSR over CE, effective CE=pin, release M=and ; NO COMMON EXACT MODEL
+group PRLD/ASYNC/SET/CE FFs=[6, 14, 22]: common=0/50292; individual=0/50292
+  M, async-level, LSR over CE, effective CE=pin, release M=new
+group PRLD/ASYNC/SET/1 FFs=[7, 15, 23]: common=2064/50292; individual=0/50292
+  M, async-level, LSR over CE, effective CE=pin, release M=new ; NO COMMON EXACT MODEL
+group LSR/LSR_OVER_CE/RESET/CE FFs=[24]: common=0/16764; individual=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin
+group LSR/LSR_OVER_CE/RESET/1 FFs=[25]: common=0/16764; individual=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin
+group LSR/LSR_OVER_CE/SET/CE FFs=[26]: common=0/16764; individual=0/16764
+  REGSET, sync, LSR over CE, effective CE=pin
+group LSR/LSR_OVER_CE/SET/1 FFs=[27]: common=868/16764; individual=868/16764
+  REGSET, sync, LSR over CE, effective CE=one ; NO COMMON EXACT MODEL
+group LSR/ASYNC/RESET/CE FFs=[28]: common=0/16764; individual=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin
+group LSR/ASYNC/RESET/1 FFs=[29]: common=0/16764; individual=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin
+group LSR/ASYNC/SET/CE FFs=[30]: common=0/16764; individual=0/16764
+  REGSET, async-level, LSR over CE, effective CE=pin
+group LSR/ASYNC/SET/1 FFs=[31]: common=1589/16764; individual=1589/16764
+  REGSET, async-level, LSR over CE, effective CE=pin ; NO COMMON EXACT MODEL
+
+Enable diagnosis on ordinary DI transitions (LSR(a)=LSR(b)=0):
+  ff01: pin-CE DI rule 0/12849; one-CE DI rule 1578/12849
+  ff03: pin-CE DI rule 792/12874; one-CE DI rule 787/12874
+  ff05: pin-CE DI rule 0/12893; one-CE DI rule 1535/12893
+  ff07: pin-CE DI rule 0/12814; one-CE DI rule 1610/12814
+  ff09: pin-CE DI rule 1559/12718; one-CE DI rule 2433/12718
+  ff11: pin-CE DI rule 0/12871; one-CE DI rule 1648/12871
+  ff13: pin-CE DI rule 0/12823; one-CE DI rule 1611/12823
+  ff15: pin-CE DI rule 0/12812; one-CE DI rule 1566/12812
+  ff17: pin-CE DI rule 1627/12862; one-CE DI rule 2444/12862
+  ff19: pin-CE DI rule 821/12975; one-CE DI rule 804/12975
+  ff21: pin-CE DI rule 0/12696; one-CE DI rule 1596/12696
+  ff23: pin-CE DI rule 1597/12797; one-CE DI rule 0/12797
+  ff25: pin-CE DI rule 0/12808; one-CE DI rule 1646/12808
+  ff27: pin-CE DI rule 741/12813; one-CE DI rule 757/12813
+  ff29: pin-CE DI rule 0/12816; one-CE DI rule 1546/12816
+  ff31: pin-CE DI rule 1589/12740; one-CE DI rule 2429/12740
+
+ASYNC PRLD with nominal CEMUX=CE: original level-model errors by LSR transition:
+  ff04: 0->0: 0, 0->1: 0, 1->0: 892, 1->1: 0
+    M changes while LSR stays high: 0/115 fail to follow new M
+  ff06: 0->0: 0, 0->1: 0, 1->0: 932, 1->1: 0
+    M changes while LSR stays high: 0/135 fail to follow new M
+  ff12: 0->0: 0, 0->1: 0, 1->0: 452, 1->1: 0
+    M changes while LSR stays high: 0/135 fail to follow new M
+  ff14: 0->0: 0, 0->1: 0, 1->0: 927, 1->1: 0
+    M changes while LSR stays high: 0/121 fail to follow new M
+  ff20: 0->0: 0, 0->1: 0, 1->0: 960, 1->1: 0
+    M changes while LSR stays high: 0/135 fail to follow new M
+  ff22: 0->0: 0, 0->1: 0, 1->0: 973, 1->1: 0
+    M changes while LSR stays high: 0/132 fail to follow new M
+
+Release rules are empirical timing outcomes for concurrent M/LSR changes, not universal asynchronous logic semantics.

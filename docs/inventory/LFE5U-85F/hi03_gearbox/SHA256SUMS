@@ -1,0 +1,11 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+49d85cdde065a11b2da911ba1e5f4b0f4fbfbf0cd534c7f2d789db6ca3fe90d4  hi03.v
+81eb71bd04ee4143f528b0476008c3001510733038d1ca8016d4310a263b0589  hi03.lpf
+b403c4b8f3bd61bb51425c23253eb503b4b6c14cb9ea8c0468ef6b5fa7da9ffd  hi03.config
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+b2d89736ada829801d33a3c6904cffa28e203afca6fff0c6fd5de3ead6f761e2  hi03_analyse.py
+54b93b1c6649773207919b25646b74ca092ce0ee1d0071d3f9d14a59bdc81b2f  observations.log
+d74eddc03945078588e59afb3700a066155d1b40bc26a0ad26227dd0f3a60d2f  observations_first_build.log
+3a6ce680b2257035f7e9905fa4c51f0fd23732e347798049f6113625f5263ad2  pass.txt
+77aa8fe0b26803dd936bbdb23cd0dc0ab4343dc9f143ec7a28b14caa6d396c78  analysis.txt
+# Historical digest (artifact unavailable in this record): 5d4eb1bf49cebb5ae955531aa7b3b9713bd24b1d90dd4223041b24514c868e72  hi03.bit (ecppack --compress hi03.config; not stored)

@@ -1,0 +1,258 @@
+HI11s boundary Mac verification: software only; new board measurements pending.
+2026-11-17T15:46:31.410493+00:00
+
+Reproduction commands from repository root:
+HI11_SRC=docs/inventory/LFE5U-85F/hi11_output_delay
+HI11S_BUILD="$(mktemp -d /tmp/hi11s-boundary.XXXXXX)"
+python3 -u -B "$HI11_SRC/build.py" "$HI11S_BUILD" hi11s1 hi11s63 hi11s64 hi11s127
+
+Actual scratch artifacts: /private/tmp/ecp5-hi11-boundary.U3OcfU
+
+Tool versions:
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis - Open Source Tools for ECP5 FPGAs
+Version 1.4-86-ga31ff70
+ecppack: ECP5 bitstream packer
+
+Build summary (each yosys/nextpnr/ecppack command exited 0):
+hi11s1: /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 0000001
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 0000001
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  .tile MIB_R95C4:EFB0_PICB0
+  word: IOLOGICA.DELAY.DEL_VALUE 0000001
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.PULLMODE DOWN
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  routed BEL=X4/Y95/SIOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  bit SHA256=c4f37aa78264472b74a1cc0145d1d57c4b85533c2dd6e2fc608834a767a7dafc
+hi11s63: /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 0111111
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 0111111
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  .tile MIB_R95C4:EFB0_PICB0
+  word: IOLOGICA.DELAY.DEL_VALUE 0111111
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.PULLMODE DOWN
+  routed BEL=X4/Y95/SIOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  bit SHA256=bbd8ac99302b4c2e955ac828b184d9eb5b427df8495f26c7e9ae16379d36ee68
+hi11s64: /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 1000000
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 1000000
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  .tile MIB_R95C4:EFB0_PICB0
+  word: IOLOGICA.DELAY.DEL_VALUE 1000000
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.PULLMODE DOWN
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  routed BEL=X4/Y95/SIOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  bit SHA256=f01a2df6762649f01292fdd447889fc99ec693593b0e6a8c5687999267c3f0d3
+hi11s127: /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.bit
+  .tile MIB_R35C0:PICL0
+  word: IOLOGICA.DELAY.DEL_VALUE 1111111
+  enum: IOLOGICA.MTDDRX.MODE NONE
+  enum: IOLOGICA.MODDRX.MODE NONE
+  enum: IOLOGICA.MIDDRX.MODE NONE
+  enum: IOLOGICA.ODDRXN.MODE NONE
+  enum: IOLOGICA.IDDRXN.MODE NONE
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  .tile MIB_R58C0:MIB_CIB_LR
+  word: IOLOGICC.DELAY.DEL_VALUE 1111111
+  enum: PIOC.BASE_TYPE OUTPUT_LVCMOS33
+  enum: PIOC.DATAMUX_OREG IOLDO
+  enum: IOLOGICC.MTDDRX.MODE NONE
+  enum: IOLOGICC.MODDRX.MODE NONE
+  enum: IOLOGICC.MIDDRX.MODE NONE
+  enum: IOLOGICC.ODDRXN.MODE NONE
+  enum: IOLOGICC.IDDRXN.MODE NONE
+  enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICC.DELAY.OUTDEL ENABLED
+  enum: IOLOGICC.MODE IREG_OREG
+  .tile MIB_R95C4:EFB0_PICB0
+  word: IOLOGICA.DELAY.DEL_VALUE 1111111
+  enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+  enum: IOLOGICA.DELAY.OUTDEL DISABLED
+  enum: IOLOGICA.MODE IREG_OREG
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.BASE_TYPE INPUT_LVCMOS33
+  enum: PIOA.PULLMODE DOWN
+  routed BEL=X4/Y95/SIOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y35/IOLOGICA MODE=IREG_OREG OUTDEL=DISABLED
+  routed BEL=X0/Y56/IOLOGICC MODE=IREG_OREG OUTDEL=ENABLED
+  bit SHA256=0559720e948d903d9c62fae289a300a13935f33b05ab489961836b767f9ccee8
+
+Routed configuration grep, qualified by file:
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:word: IOLOGICA.DELAY.DEL_VALUE 0000001
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:word: IOLOGICC.DELAY.DEL_VALUE 0000001
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICC.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:word: IOLOGICA.DELAY.DEL_VALUE 0000001
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:word: IOLOGICA.DELAY.DEL_VALUE 1111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:word: IOLOGICC.DELAY.DEL_VALUE 1111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICC.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:word: IOLOGICA.DELAY.DEL_VALUE 1111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:word: IOLOGICA.DELAY.DEL_VALUE 0111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:word: IOLOGICC.DELAY.DEL_VALUE 0111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICC.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:word: IOLOGICA.DELAY.DEL_VALUE 0111111
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:word: IOLOGICA.DELAY.DEL_VALUE 1000000
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:word: IOLOGICC.DELAY.DEL_VALUE 1000000
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICC.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICC.DELAY.OUTDEL ENABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICC.MODE IREG_OREG
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:word: IOLOGICA.DELAY.DEL_VALUE 1000000
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.DELAY.WAIT_FOR_EDGE DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.DELAY.OUTDEL DISABLED
+/private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config:enum: IOLOGICA.MODE IREG_OREG
+
+SHA256:
+ae5e1dda1cd4f1e533e3c6f1c83658da2f0fb91cd693398b96158a111d4521e0  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s_gen.py
+992441d9fe9a9973676971e08b917c5f97b5bcda251e05f13393d11ccc1ca2db  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s3.lpf
+20569019e39c370c45eb72156c11228879aaf0f1ec1ce47ce8043f2a7c3bc9a4  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s1.v
+6ace3c435cb1f8a3ca2a85733bec30b64456b2d36bd6d037164c64c010b1235b  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s63.v
+16893504b8411ed9ed7c2d12317f367b7117e26783e6bde462742ec89b1d4621  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s64.v
+be09561cebc68bc66140a8a9114f783f986bada2b3562556207b942df0b96b1b  docs/inventory/LFE5U-85F/hi11_output_delay/hi11s127.v
+3c948e3eae26ab1c9410b14deabce3d0a6b9df0e690ffd2925d9b59df6a50dd3  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.config
+c4f37aa78264472b74a1cc0145d1d57c4b85533c2dd6e2fc608834a767a7dafc  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s1/top.bit
+9a355be8a590a6fa4fe0bd511043598655b4ea804e84cc75d96ec4238624796a  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.config
+bbd8ac99302b4c2e955ac828b184d9eb5b427df8495f26c7e9ae16379d36ee68  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s63/top.bit
+f3b8d7b3fa989054607ceb8e4e15b46d67af133d6e4606849ab2a2f3f6e6da91  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.config
+f01a2df6762649f01292fdd447889fc99ec693593b0e6a8c5687999267c3f0d3  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s64/top.bit
+fcc95a59a585226d9dcbe29da2b8020d5e8bff57e364db5d955f6247c7657373  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.config
+0559720e948d903d9c62fae289a300a13935f33b05ab489961836b767f9ccee8  /private/tmp/ecp5-hi11-boundary.U3OcfU/hi11s127/top.bit
+
+Software checks:
+10 Python tests passed, including 90 original HI11 frames and 25 measured two-lane HI11s frames.
+Tests cover boundary-format startup inference in all three lanes and post-load corruption in each lane.
+All four generated sources reproduce. Historical two-lane sources remain byte-for-byte reproducible.
+Each new config ran 10,000,000 cycles in the unchanged emulator and emitted one valid complete UART frame.
+/private/tmp/ecp5-hi11-boundary.U3OcfU/emulated-hi11s1.txt: 1 frames OK, variant=S2, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup bottom-bank input (FIRE1/R1): CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped (3 lanes)
+/private/tmp/ecp5-hi11-boundary.U3OcfU/emulated-hi11s63.txt: 1 frames OK, variant=S3, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup bottom-bank input (FIRE1/R1): CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped (3 lanes)
+/private/tmp/ecp5-hi11-boundary.U3OcfU/emulated-hi11s64.txt: 1 frames OK, variant=S4, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup bottom-bank input (FIRE1/R1): CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped (3 lanes)
+/private/tmp/ecp5-hi11-boundary.U3OcfU/emulated-hi11s127.txt: 1 frames OK, variant=S5, sequences=0..0; framing, controls and XOR OK
+  startup output: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup side-bank input: CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  startup bottom-bank input (FIRE1/R1): CFLAG[0]=1; 140 down steps before load; first down endpoint sample 0, after 0 down steps; initial counter=0 (HI08-compatible)
+  HI08 check from first load sample 609: 1439 real samples/path, 0 differ, 0 skipped (3 lanes)
+The startup of zero in those emulated frames is not a new board result.
+
+Personal-path check: all series files scanned for personal home prefixes, including untracked files.
+Loader-log record-path metadata normalized; raw UART bytes and routed board configs unchanged.

@@ -1,0 +1,18 @@
+HD01 in the emulator (2026-11-11)
+
+1. hd01.config itself:
+   - The MULT18 output bank starts X: the board's start value was not recorded.
+   - The first window records that X into the 6144-bit recorder, which keeps it through the
+     first UART line (3.3 M cycles).
+   - So fast mode starts only after the second window, and at that point (fast.rs
+     64751f69f0f7) its C program failed to link ("Undefined symbols: _piece0"). That is a
+     fast-mode code-splitting defect on this large program (6.2k FF, 5.8k LUT), reported to
+     the fast-mode session.
+   - The event kernel runs the design at about 7 kHz; a whole window comparison was not run.
+
+2. The same two MULT18X18D with live CE0..3 and RST0..3 and output registers, without the
+   recorder (scratchpad variant: P bits on the LEDs): fast mode and the event kernel write
+   byte-identical VCD files over 2 000 cycles.
+
+3. tests/dsp.rs: the output stage's enable, its synchronous reset and unknown controls in the
+   kernel; fast mode against the kernel with driven CE and RST over 4 000 random steps.

@@ -1,0 +1,31 @@
+Historical preparation/repair checks below. Current board analysis and rserv checks: run_2/validation.txt.
+
+none_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+none_2: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+none_35: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+sync_2: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=ECLKSYNCB; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=constant 0; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+sync_35: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=ECLKSYNCB; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=constant 0; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+probe_pin_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=none; route/pack PASS
+probe_pin_2.0: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=none; route/pack PASS
+probe_pin_3.5: CIB_R46C2:ECLK_L ECLKSYNC1_BK7.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; PLL=none; route/pack PASS
+probe_pll_default: CIB_R46C2:ECLK_L ECLKSYNC1_BK6.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+probe_pll_2.0: CIB_R46C2:ECLK_L ECLKSYNC1_BK6.MODE=NONE; CLKDIV_L1 DIV=2.0 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+probe_pll_3.5: CIB_R46C2:ECLK_L ECLKSYNC1_BK6.MODE=NONE; CLKDIV_L1 DIV=3.5 GSR=DISABLED; STOP=unrouted; PLL=HY01 CLKOP feedback/analog checked; route/pack PASS
+
+Repair validation, no board/serial/flash access:
+  cargo build --release --bin ecp5_emu: PASS (Mac).
+  python3 -B check_support.py: 7 tests PASS; includes 4 HDL fault cases
+    (none_default/sync_2 x unlocked/missing observer), raw byte preservation,
+    empty/read/loader failures, output preservation, and load-before-serial.
+  python3 -B check_emulator.py /private/tmp/hi12-repair-build: PASS.
+    All 5 revised board variants: 29 HB + 1 complete HC within 64 ms;
+    both count snapshots match the provisional NONE / HI04 control model.
+  python3 -B check_emulator.py /private/tmp/r09-hi12-build --legacy --variants none_default sync_2: PASS.
+    Both old packed bitstreams: LOCK=1 at time zero, finished=1 at 64 ms,
+    complete HC transmitted, contradicting the planning session's silent board.
+    This is the configured/observed PLL qualification finding in DIAGNOSIS.md.
+  Generated artifact checksums: 71 verified.
+  R09 compiler sources and tests/eclksync_none.rs unchanged (SHA-256 checked).
+  Series-wide syntax/personal-path checks and git diff --check: PASS.
+
+The PLL hardware profile was corrected, but no new hardware behavior is claimed.

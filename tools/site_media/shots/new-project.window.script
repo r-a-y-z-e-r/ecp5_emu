@@ -1,0 +1,5 @@
+0 theme dark
+0 dev off
+# Relative destination resolves inside the neutral take folder; never submit.
+# The creation parser has no Advanced visibility option; leave it collapsed.
+0.5 new-project {"dir":"new-counter","name":"My counter","resources":["clock","leds","buttons","switches","uart"]}

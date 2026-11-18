@@ -1,0 +1,12 @@
+# Read-only EDID over DDC, reported on the UART alongside DVI colour bars.
+# Build: ecp5_emu build examples/ulx3s/edid_read (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/edid_read; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/edid_read.
+
+[project]
+name = "edid_read"
+top = "top"
+
+[sources]
+verilog = ["dvi_source.v", "edid_reader.v", "pll.v", "tmds.v", "top.v", "uart_tx.v", "video_out.v"]
+constraints = "top.lpf"

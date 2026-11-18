@@ -1,0 +1,13 @@
+
+# Life on a 72x72 torus filling the chip (94% of the LUTs); place and route takes about 40 minutes.
+# Build: ecp5_emu build examples/ulx3s/life_full (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/life_full; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/life_full.
+
+[project]
+name = "life_full"
+top = "top"
+
+[sources]
+verilog = ["top.v"]
+constraints = "top.lpf"

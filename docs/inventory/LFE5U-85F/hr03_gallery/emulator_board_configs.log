@@ -1,0 +1,117 @@
+# The gallery's emulator checks rerun on the board's own configurations, 2026-11-17.
+# Command (rserv, through tools/rserv.sh, no rebuild): python3 examples/gallery/check.py all --emulator
+# after copying the Mac-built target/gallery/DEMO/top.config and top_routed.json there.
+# config sha256 = rserv's copy = the Mac build = gunzip(DEMO.config.gz) in this record.
+
+== clock_domains config 0fc50c5c199ec2e0b15141d671543dc687169f52853de7c77a2d5c7f15be37b1 = rserv copy = record
+Fast mode ran 2400000 cycles (0.096000 s of board time) in 17.444 s: 0.14 MHz
+PASS: 356 bytes from the marker on match (472 arrived from the marker) (28.6 s)
+== ebr_life config e610740abca9dacedaedb3d330ffc724673142be08c6d664341a4b6fc196e388 = rserv copy = record
+Fast mode ran 198200000 cycles (7.928000 s of board time) in 220.772 s: 0.90 MHz
+PASS: 80523 bytes from the marker on match (88872 arrived from the marker) (228.7 s)
+== fir_scope config 15d05f47d75275373edfb8cac5f542cac56b24922a9b73a48668cdb528bc9754 = rserv copy = record
+Fast mode ran 68300000 cycles (2.732000 s of board time) in 380.079 s: 0.18 MHz
+PASS: 13547 bytes from the marker on match (13685 arrived from the marker) (393.4 s)
+== led_tennis config 30a08179d16551fd2d60b75e9110b971f4958ac67088565a2218b293048bca22 = rserv copy = record
+Fast mode ran 495200000 cycles (19.808000 s of board time) in 311.810 s: 1.59 MHz
+PASS: 401 bytes from the marker on match (433 arrived from the marker) (316.8 s)
+== mandelbrot config bc36c5c20ef413f62b893dbe076539619c07abce30f5e789441029c41ca4a2ab = rserv copy = record
+Fast mode ran 62900000 cycles (2.516000 s of board time) in 45.451 s: 1.38 MHz
+PASS: 24567 bytes from the marker on match (25376 arrived from the marker) (51.0 s)
+== oled_bricks config 7022a3a6ae8fb31d909c5def9c041dde6213e5f4862cea67e84d49ad6c508154 = rserv copy = record
+Fast mode ran 75000000 cycles (3.000000 s of board time) in 89.762 s: 0.84 MHz
+peripheral: oled frames=151 crc32=0F3CECC2 commands=324 data_bytes=1865503 errors=0 unknown_commands=0 display_on=yes
+PASS: 4434 bytes from the marker on match (4434 arrived from the marker) (96.0 s)
+== riscv_shell config 8a649de8d64ab68415110a9f1a8ab603b8ba4de469db846bcd0d0b9286c5d61d = rserv copy = record
+Fast mode ran 17800000 cycles (0.712000 s of board time) in 60.583 s: 0.29 MHz
+PASS: 3214 bytes from the marker on match (3214 arrived from the marker) (70.7 s)
+== riscv_terminal config 3518d5f51d723d5abb5c5f64001ff9115ad44cf186522f2f8a0c3dd6a3237789 = rserv copy = record
+Fast mode ran 12300000 cycles (0.492000 s of board time) in 47.962 s: 0.26 MHz
+PASS: 2837 bytes from the marker on match (2837 arrived from the marker) (58.1 s)
+== sdram_bench config b72b0c761f9c4a6e69a9ebae8f573636dace5584dbe975a0f68452ce14fa4226 = rserv copy = record
+Fast mode ran 6800000 cycles (0.272000 s of board time) in 10.586 s: 0.64 MHz
+peripheral: sdram init=yes reads=2097152 writes=4008601 timing_violations=0 unknown_samples=0 refresh_shortfalls=0
+PASS: 68 bytes from the marker on match (68 arrived from the marker) (17.8 s)
+== serv_shell config 6ffd9ab679c794961deb982c2253f2f344204f7311c4bc3bfe26b3e63f879c78 = rserv copy = record (serv_shell_stock_rf.config.gz, the stock register file now on dev)
+Fast mode ran 13400000 cycles (0.536000 s of board time) in 10.311 s: 1.30 MHz
+PASS: 1304 bytes from the marker on match (1304 arrived from the marker) (15.5 s)
+== sha256_chains config e960285d6ef004177ecc394cda41fb31e10af3e108f920a92b80b551e7bee27e = rserv copy = record
+Fast mode ran 7086000 cycles (0.283440 s of board time) in 75.850 s: 0.09 MHz
+PASS: 2780 bytes from the marker on match (3134 arrived from the marker) (113.7 s)
+== video_life config 7e01f4413aacbd02bb0d1e82a0a018b566c7791e7f386b9820d10cb9121c776e = rserv copy = record
+Fast mode ran 29020000 cycles (1.160800 s of board time) in 63.730 s: 0.46 MHz
+PASS: 1748 bytes from the marker on match (1940 arrived from the marker) (74.2 s)
+
+== riscv_oled config 54f65b7f5aa5ae48cb07f0169846a2171b9426390314522740b877f53ec6c424 = rserv copy = record (added 2026-11-17, same command)
+Fast mode ran 26000000 cycles (1.040000 s of board time) in 269.054 s: 0.10 MHz
+peripheral: oled frames=64 crc32=36E1F3DE commands=172 data_bytes=799384 errors=0 unknown_commands=0 display_on=yes
+PASS: 1534 bytes from the marker on match (1584 arrived from the marker) (279.5 s)
+
+== oled_bricks_p18 config 764c57afe9ee191dc06814942b7cf95d69d3623d2f2dee1c5ed89ff036485bed = rserv copy = record (added 2026-11-18, same command; P18 build)
+Fast mode ran 75000000 cycles (3.000000 s of board time) in 88.247 s: 0.85 MHz
+peripheral: oled frames=151 crc32=0F3CECC2 commands=324 data_bytes=1865503 errors=0 unknown_commands=0 display_on=yes
+PASS: 4434 bytes from the marker on match (4434 arrived from the marker) (94.3 s)
+
+== hdmi_plasma config ac678206cae02c8f4c8f58ae2e6a8b476c063b62e7932cfac9322cc797af2dde = rserv copy = record (added 2026-11-18, same command)
+Fast mode ran 28690000 cycles (1.147600 s of board time) in 39.637 s: 0.72 MHz
+PASS: 1389 bytes from the marker on match (1550 arrived from the marker) (46.7 s)
+
+== chip_synth config 3dabd1971f830ef6c60d8b171fc63bd78d0897269a7dfd1ec030b04b3cae0ee4 = rserv copy = record (added 2026-11-18, same command; rserv CLI rebuilt with the audio model)
+Fast mode ran 25000000 cycles (1.000000 s of board time) in 99.202 s: 0.25 MHz
+PASS: 836 bytes from the marker on match (836 arrived from the marker) (109.1 s)
+peripheral: oled frames=40 crc32=F00BD767 commands=100 data_bytes=491520 errors=0 unknown_commands=0 display_on=yes
+peripheral: audio l_hz=-- l_vpp=1.796938 r_hz=404.606 r_vpp=1.796938 v_hz=-- v_vpp=0.000000 transitions=3221
+
+== oled_bricks_p28 config 630b5018e106434d355a0191523bb35a1f47e4633fe398cbb6168c93b4d784d6 = rserv copy = record (added 2026-11-18, same command; P27/P28 build)
+Fast mode ran 75000000 cycles (3.000000 s of board time) in 88.536 s: 0.85 MHz
+peripheral: oled frames=151 crc32=89DC07BB commands=324 data_bytes=1865503 errors=0 unknown_commands=0 display_on=yes
+PASS: 4434 bytes from the marker on match (4434 arrived from the marker) (96.0 s)
+
+# Rerun 2026-11-18 with fast mode d377f3e (captures grouped by enable/reset), rserv, same
+# command and the same board configurations (hashes equal to the Mac builds; see entries above).
+
+== chip_synth config 3dabd1971f830ef6c60d8b171fc63bd78d0897269a7dfd1ec030b04b3cae0ee4
+Fast mode ran 25000000 cycles (1.000000 s of board time) in 39.790 s: 0.63 MHz
+PASS: 836 bytes from the marker on match (836 arrived from the marker) (51.1 s)
+== clock_domains config 0fc50c5c199ec2e0b15141d671543dc687169f52853de7c77a2d5c7f15be37b1
+Fast mode ran 2400000 cycles (0.096000 s of board time) in 4.031 s: 0.60 MHz
+PASS: 356 bytes from the marker on match (472 arrived from the marker) (17.5 s)
+== ebr_life config e610740abca9dacedaedb3d330ffc724673142be08c6d664341a4b6fc196e388
+Fast mode ran 198200000 cycles (7.928000 s of board time) in 142.832 s: 1.39 MHz
+PASS: 80523 bytes from the marker on match (88872 arrived from the marker) (150.4 s)
+== fir_scope config 15d05f47d75275373edfb8cac5f542cac56b24922a9b73a48668cdb528bc9754
+Fast mode ran 68300000 cycles (2.732000 s of board time) in 349.595 s: 0.20 MHz
+PASS: 13547 bytes from the marker on match (13685 arrived from the marker) (360.2 s)
+== hdmi_plasma config ac678206cae02c8f4c8f58ae2e6a8b476c063b62e7932cfac9322cc797af2dde
+Fast mode ran 28690000 cycles (1.147600 s of board time) in 35.332 s: 0.81 MHz
+PASS: 1389 bytes from the marker on match (1550 arrived from the marker) (41.7 s)
+== led_tennis config 30a08179d16551fd2d60b75e9110b971f4958ac67088565a2218b293048bca22
+Fast mode ran 495200000 cycles (19.808000 s of board time) in 226.330 s: 2.19 MHz
+PASS: 401 bytes from the marker on match (433 arrived from the marker) (230.8 s)
+== mandelbrot config bc36c5c20ef413f62b893dbe076539619c07abce30f5e789441029c41ca4a2ab
+Fast mode ran 62900000 cycles (2.516000 s of board time) in 35.094 s: 1.79 MHz
+PASS: 24567 bytes from the marker on match (25376 arrived from the marker) (41.4 s)
+== oled_bricks config 630b5018e106434d355a0191523bb35a1f47e4633fe398cbb6168c93b4d784d6
+Fast mode ran 75000000 cycles (3.000000 s of board time) in 68.023 s: 1.10 MHz
+PASS: 4434 bytes from the marker on match (4434 arrived from the marker) (75.6 s)
+== riscv_oled config 54f65b7f5aa5ae48cb07f0169846a2171b9426390314522740b877f53ec6c424
+Fast mode ran 26000000 cycles (1.040000 s of board time) in 230.385 s: 0.11 MHz
+PASS: 1534 bytes from the marker on match (1584 arrived from the marker) (244.1 s)
+== riscv_shell config 8a649de8d64ab68415110a9f1a8ab603b8ba4de469db846bcd0d0b9286c5d61d
+Fast mode ran 17800000 cycles (0.712000 s of board time) in 53.836 s: 0.33 MHz
+PASS: 3214 bytes from the marker on match (3214 arrived from the marker) (64.3 s)
+== riscv_terminal config 3518d5f51d723d5abb5c5f64001ff9115ad44cf186522f2f8a0c3dd6a3237789
+Fast mode ran 12300000 cycles (0.492000 s of board time) in 49.856 s: 0.25 MHz
+PASS: 2837 bytes from the marker on match (2837 arrived from the marker) (61.9 s)
+== sdram_bench config b72b0c761f9c4a6e69a9ebae8f573636dace5584dbe975a0f68452ce14fa4226
+Fast mode ran 6800000 cycles (0.272000 s of board time) in 7.661 s: 0.89 MHz
+PASS: 68 bytes from the marker on match (68 arrived from the marker) (15.0 s)
+== serv_shell config 6ffd9ab679c794961deb982c2253f2f344204f7311c4bc3bfe26b3e63f879c78
+Fast mode ran 13400000 cycles (0.536000 s of board time) in 9.428 s: 1.42 MHz
+PASS: 1304 bytes from the marker on match (1304 arrived from the marker) (14.5 s)
+== sha256_chains config e960285d6ef004177ecc394cda41fb31e10af3e108f920a92b80b551e7bee27e
+Fast mode ran 7086000 cycles (0.283440 s of board time) in 8.966 s: 0.79 MHz
+PASS: 2780 bytes from the marker on match (3134 arrived from the marker) (28.6 s)
+== video_life config 7e01f4413aacbd02bb0d1e82a0a018b566c7791e7f386b9820d10cb9121c776e
+Fast mode ran 29020000 cycles (1.160800 s of board time) in 45.710 s: 0.63 MHz
+PASS: 1748 bytes from the marker on match (1940 arrived from the marker) (57.5 s)

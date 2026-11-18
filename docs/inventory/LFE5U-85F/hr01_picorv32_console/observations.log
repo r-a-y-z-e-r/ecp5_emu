@@ -1,0 +1,30 @@
+# run.py BITSTREAM TEXT...: load into SRAM with openFPGALoader -b ulx3s, then open
+# /dev/cu.usbserial-<FTDI-serial>, type each TEXT, print what came back within 0.5 s.
+
+# A first try opened the port before the load, to catch the banner. The loader
+# then failed: "unable to open ftdi device: -5 (unable to claim usb device. Make
+# sure the default FTDI driver is not in use)". JTAG and the UART share the
+# FT231X, so nothing was loaded and the flash design kept running.
+
+# Official bitstream (committed firmware), 2026-11-08T20:05:29Z
+loader exit: 0 | ['SRAM erase: DONE', 'Disable configuration: DONE']
+on opening: b''
+typed b'hi\r' -> b'HI\r\n> '
+typed b'Hello, ULX3S\r' -> b'HELLO, ULX3S\r\n> '
+
+# Variant bitstream (variant/key_first.patch: a key before the banner), three loads
+2026-11-08T20:06:19Z loader exit: 0 | ['SRAM erase: DONE', 'Disable configuration: DONE']
+on opening: b''
+typed b'x' -> b'PicoRV32 on ECP5\r\nprimes below 2000: 303, 151485 cycles\r\n> '
+typed b'hi\r' -> b'HI\r\n> '
+typed b'Hello, ULX3S\r' -> b'HELLO, ULX3S\r\n> '
+2026-11-08T20:06:40Z loader exit: 0 | ['SRAM erase: DONE', 'Disable configuration: DONE']
+typed b'x' -> b'PicoRV32 on ECP5\r\nprimes below 2000: 303, 151485 cycles\r\n> '
+typed b'hi\r' -> b'HI\r\n> '
+2026-11-08T20:06:48Z loader exit: 0 | ['SRAM erase: DONE', 'Disable configuration: DONE']
+typed b'x' -> b'PicoRV32 on ECP5\r\nprimes below 2000: 303, 151485 cycles\r\n> '
+typed b'hi\r' -> b'HI\r\n> '
+
+# The emulator on the variant's top.config, before the board run (CLI console, same keys)
+after x: b'PicoRV32 on ECP5\r\nprimes below 2000: 303, 151485 cycles\r\n> '
+whole: b'PicoRV32 on ECP5\r\nprimes below 2000: 303, 151485 cycles\r\n> HI\r\n> HELLO, ULX3S\r\n> '

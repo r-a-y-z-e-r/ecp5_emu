@@ -1,0 +1,10 @@
+N = 62
+sclk rising edges seen at samples [8, 40, 72, 104, 136, 168] (an eclk rising edge between i-1 and i)
+pad per eclk half (h even: eclk low): 001101001110110110001010
+ODDRX2F fits (n0, latency in sclk edges, half shift, lane per half):
+   (62, 2, 2, (0, 1, 2, 3))
+   (62, 3, -2, (0, 1, 2, 3))
+IDDRX2F fits (k0, latency, eclk edge per Q0..Q3, half shift):
+   (62, 1, (0, 1, 2, 3), -2)
+   (62, 2, (0, 1, 2, 3), 2)
+2 IDDRX2F fits

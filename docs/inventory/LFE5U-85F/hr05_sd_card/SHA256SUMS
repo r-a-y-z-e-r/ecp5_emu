@@ -1,0 +1,5 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+069fad21af4c2f47d1eca663c990a1431aae89008ce9c0f238ae0e69167648a6  observations.log
+b1a0eaa57d62c89e892da1376e90374621ec8520d7e254723ea6d02dbd9db710  sd_read.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 868d58def09f86da715d498ef80d85f8626a250c49ae6a314f155ad1b0be2ace  sd_read top.bit (target/reference/sd_read, examples/ulx3s/build.sh; not stored)

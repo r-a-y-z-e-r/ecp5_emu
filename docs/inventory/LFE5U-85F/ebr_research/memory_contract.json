@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "scope": "Research contract; not an executable memory model",
+  "storage": {
+    "init_words": 2048,
+    "init_word_bits": 9,
+    "total_bits": 18432,
+    "meaning": "architectural INIT view; not SRAM transistor geometry"
+  },
+  "width_profiles": [
+    {
+      "width": 1,
+      "depth": 16384,
+      "address_shift": 0,
+      "visible_bits": 16384
+    },
+    {
+      "width": 2,
+      "depth": 8192,
+      "address_shift": 1,
+      "visible_bits": 16384
+    },
+    {
+      "width": 4,
+      "depth": 4096,
+      "address_shift": 2,
+      "visible_bits": 16384
+    },
+    {
+      "width": 9,
+      "depth": 2048,
+      "address_shift": 3,
+      "visible_bits": 18432
+    },
+    {
+      "width": 18,
+      "depth": 1024,
+      "address_shift": 4,
+      "visible_bits": 18432
+    },
+    {
+      "width": 36,
+      "depth": 512,
+      "address_shift": 5,
+      "visible_bits": 18432,
+      "restriction": "PDPW16KD_write_or_read;not_true_dual_port"
+    }
+  ],
+  "rules": [
+    {
+      "id": "EB01",
+      "subject": "NORMAL",
+      "same_port_write_output": "hold",
+      "widths": [
+        1,
+        2,
+        4,
+        9,
+        18
+      ],
+      "source": "memory",
+      "page": 59
+    },
+    {
+      "id": "EB02",
+      "subject": "WRITETHROUGH",
+      "same_port_write_output": "input_data",
+      "widths": [
+        1,
+        2,
+        4,
+        9,
+        18
+      ],
+      "partial_write_output": "unresolved",
+      "source": "memory",
+      "page": 59
+    },
+    {
+      "id": "EB03",
+      "subject": "READBEFOREWRITE",
+      "same_port_write_output": "old_contents",
+      "documented_true_dual_widths": [
+        9,
+        18
+      ],
+      "source": "datasheet",
+      "page": 27
+    },
+    {
+      "id": "EB04",
+      "subject": "NOREG",
+      "synchronous_array_input": true,
+      "optional_output_register": false,
+      "source": "datasheet",
+      "page": 27
+    },
+    {
+      "id": "EB05",
+      "subject": "OUTREG",
+      "optional_output_register": true,
+      "extra_read_clock_stage": 1,
+      "exact_CE_OCE_priority": "unresolved",
+      "source": "memory",
+      "pages": [
+        21,
+        22
+      ]
+    },
+    {
+      "id": "EB06",
+      "subject": "reset",
+      "clears_memory_contents": false,
+      "register_reset_scope": "requires_refinement_between_input_latches_and_output_latches",
+      "source": "memory",
+      "page": 12
+    },
+    {
+      "id": "EB07",
+      "subject": "CSDECODE",
+      "bits": 3,
+      "matching": "equality_to_configured_decode",
+      "source": "memory",
+      "page": 59
+    },
+    {
+      "id": "EB08",
+      "subject": "cross_port_read_write_collision",
+      "read_result": "may_be_unknown",
+      "single_fixed_port_priority": null,
+      "source": "memory",
+      "page": 59
+    },
+    {
+      "id": "EB09",
+      "subject": "cross_port_conflicting_writes",
+      "stored_result": "undetermined_when_values_conflict",
+      "same_value_guarantee": null,
+      "source": "memory",
+      "page": 59
+    },
+    {
+      "id": "EB10",
+      "subject": "byte_enable",
+      "primitive_group_bits": 9,
+      "DP18_address_contacts": [
+        0,
+        1
+      ],
+      "PDP36_address_contacts": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "source": "yosys",
+      "reference": "brams_map_16kd.v"
+    },
+    {
+      "id": "EB11",
+      "subject": "INITVAL",
+      "parameter_count": 64,
+      "bits_per_parameter": 320,
+      "words_per_parameter": 16,
+      "data_bits_per_word": 18,
+      "padding_bits_per_word": 2,
+      "source": "nextpnr",
+      "reference": "bitstream.cc:write_bram"
+    },
+    {
+      "id": "EB12",
+      "subject": "PDPW16KD",
+      "write_width": 36,
+      "read_widths": [
+        1,
+        2,
+        4,
+        9,
+        18,
+        36
+      ],
+      "read_domain": "CLKR/native_CLKB",
+      "write_domain": "CLKW/native_CLKA",
+      "source": "nextpnr",
+      "reference": "pack.cc:pack_ebr"
+    },
+    {
+      "id": "EB13",
+      "subject": "ROM",
+      "implementation": "initialized_EBR_with_write_disabled",
+      "separate_array": false,
+      "source": "datasheet",
+      "page": 27
+    },
+    {
+      "id": "EB14",
+      "subject": "ECC",
+      "implementation": "PFU_logic_outside_EBR",
+      "automatic_primitive_ECC": false,
+      "source": "memory",
+      "page": 11
+    },
+    {
+      "id": "EB15",
+      "subject": "FIFO_DC_flags",
+      "implementation": "FPGA_logic_around_block_RAM",
+      "automatic_EBR_flags": false,
+      "source": "memory",
+      "page": 41
+    }
+  ],
+  "source_disagreements": [
+    {
+      "id": "ES01",
+      "subject": "2049x9_in_memory_table",
+      "source": "memory",
+      "page": 19,
+      "resolution": "2048x9_in_datasheet_p27_and_toolchain;preserve_typo_as_source_issue"
+    },
+    {
+      "id": "ES02",
+      "subject": "PDP36_output_half_order",
+      "sources": [
+        "yosys:brams_map_16kd.v",
+        "nextpnr:pack.cc:pack_ebr"
+      ],
+      "resolution": "unresolved_between_distinct_lowering_paths;no_silicon_order_selected"
+    },
+    {
+      "id": "ES03",
+      "subject": "READBEFOREWRITE_narrow_widths",
+      "documentation": "9_and_18_in_true_dual_mode",
+      "yosys_memory_library": "old_data_semantics_declared_for_all_widths",
+      "resolution": "catalogue_availability_does_not_override_documented_restriction"
+    },
+    {
+      "id": "ES04",
+      "subject": "reset_scope",
+      "memory_p12": "input_and_output_registers",
+      "datasheet_p28": "output_latches",
+      "resolution": "contents_preserved;exact_reset_priority_and_release_remain_open"
+    },
+    {
+      "id": "ES05",
+      "subject": "PDP_primitive_diagram_bus_width",
+      "memory_p27": "DI_and_DO_labeled_17_to_0",
+      "library_p735_and_public_header": "DI35_to_0_and_DO35_to_0",
+      "resolution": "use_111_public_scalar_ports;do_not_infer_18_bit_PDP_from_diagram"
+    }
+  ],
+  "open_questions": [
+    "PDP36 physical output half order and primitive-specific mapping",
+    "CE/OCE/CS/reset priority for core output latch and optional register",
+    "ASYNC_RESET_RELEASE exact deassertion sequence and write gating",
+    "Partial-byte WRITETHROUGH and READBEFOREWRITE output granularity",
+    "Collision aperture and uncertainty granularity for mixed widths and masks",
+    "Guarantee for simultaneous same-value writes and nonoverlapping subword accesses",
+    "Defined behavior of undocumented width/write-mode combinations",
+    "Exact INIT/configuration effect on output latches and registers"
+  ],
+  "sources": {
+    "memory": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50466",
+      "path": "target/research/ebr/ECP5-Memory-Usage-Guide.pdf",
+      "revision": "FPGA-TN-02204-1.6"
+    },
+    "datasheet": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50461",
+      "path": "target/research/dqs/ECP5-Family-Data-Sheet.pdf",
+      "revision": "FPGA-DS-02012-3.4"
+    },
+    "library": {
+      "url": "https://www.latticesemi.com/view_document?document_id=53950",
+      "path": "target/research/dsp/Diamond-3.13-FPGA-Libraries.pdf",
+      "revision": "Diamond 3.13"
+    }
+  }
+}

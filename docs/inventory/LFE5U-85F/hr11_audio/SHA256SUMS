@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+0d20e560ea4ec67b4b384d3e334ee9fe7ce47ab3ed8db5e9534b86b016bb58b3  README.md
+6162f8cb8daf2e3d747d7ec04a01143b798cccf9070fcd35dcdd1d0a6e192cde  TOOLS.txt
+72aba110b1c89377dae9b0cce68c514080a12c1d911b4760a82cae5556f81149  observations.log
+3f29418b80c0901ee65197c598cb34951711e4a57d6db978e0ffc089cb36fd06  audio_tone.config
+ccaeb1e74725ecd06758ceed5717a886033737c047d91b06773cb2d90889998a  ../hr04_hdmi_oled/run.py
+# Historical digest (artifact unavailable in this record): 16ff567af1bdd1df136632c02c25dc75f19309170e213609eb89abdad1f7f573  audio_tone top.bit (target/reference/audio_tone, built on the Mac; not stored)

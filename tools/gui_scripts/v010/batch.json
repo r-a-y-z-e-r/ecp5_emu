@@ -1,0 +1,259 @@
+{
+  "records": [
+    {
+      "label": "v010_shelf",
+      "design": "blinky_cycle",
+      "script": "tools/gui_scripts/v010/shelf.window.script",
+      "criteria": [
+        {
+          "check": "layout"
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "v010_toolbar",
+      "design": "blinky_cycle",
+      "script": "tools/gui_scripts/v010/toolbar.window.script",
+      "criteria": [
+        {
+          "check": "toolbar",
+          "sizes": [
+            [
+              1500,
+              950
+            ],
+            [
+              1100,
+              800
+            ]
+          ]
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "v010_live_blinky",
+      "project": "examples/ulx3s/blinky_cycle",
+      "script": "tools/gui_scripts/v010/live_blinky.window.script",
+      "project_script": "tools/gui_scripts/v010/live_blinky.project.script",
+      "criteria": [
+        {
+          "check": "live",
+          "names": [
+            "count",
+            "led"
+          ],
+          "inline": true
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "v010_live_life_full",
+      "project": "examples/ulx3s/life_full",
+      "script": "tools/gui_scripts/v010/live_life_full.window.script",
+      "project_script": "tools/gui_scripts/v010/live_life_full.project.script",
+      "timeout": 600,
+      "criteria": [
+        {
+          "check": "live",
+          "names": [
+            "noise",
+            "generation"
+          ],
+          "kind": "numeric",
+          "rate": "max"
+        },
+        {
+          "check": "live",
+          "kind": "unavailable",
+          "names": [
+            "live"
+          ],
+          "reason": "`live` has no net on the chip: optimised away, a constant, or inside a cell"
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "v010_syntax",
+      "project": "examples/ulx3s/picorv32_console",
+      "script": "tools/gui_scripts/v010/syntax.window.script",
+      "project_script": "tools/gui_scripts/v010/syntax.project.script",
+      "criteria": [
+        {
+          "check": "syntax",
+          "languages": [
+            "verilog",
+            "systemverilog",
+            "vhdl",
+            "lpf",
+            "toml",
+            "plain"
+          ],
+          "budget_ms": 16.7,
+          "idle_ratio": 1.25,
+          "idle_slack_ms": 0.5,
+          "typing_phases": 6
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ],
+      "prepare": {
+        "command": [
+          "cp",
+          "examples/ulx3s/picorv32_console/picorv32.v",
+          "out/records/v010/picorv32_plain.txt"
+        ],
+        "output": "out/records/v010/picorv32_plain.txt"
+      }
+    },
+    {
+      "label": "header_pulls",
+      "design": "header_probe_driven",
+      "script": "tools/window_record/header_probe.script",
+      "prepare": {
+        "command": [
+          "examples/ulx3s/build.sh",
+          "examples/ulx3s/header_probe/driven",
+          "target/reference/header_probe_driven"
+        ],
+        "output": "target/reference/header_probe_driven/top.bit"
+      },
+      "env": {
+        "ECP5_HEADER": ""
+      },
+      "unset_env": [
+        "ECP5_GUI_NO_BOARD"
+      ],
+      "judge": [
+        "python3",
+        "tools/window_record/header_summary.py",
+        "{record}"
+      ],
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "header_external",
+      "design": "header_probe_driven",
+      "script": "tools/window_record/header_probe.script",
+      "prepare": {
+        "command": [
+          "examples/ulx3s/build.sh",
+          "examples/ulx3s/header_probe/driven",
+          "target/reference/header_probe_driven"
+        ],
+        "output": "target/reference/header_probe_driven/top.bit"
+      },
+      "env": {
+        "ECP5_HEADER": "GN0=0"
+      },
+      "unset_env": [
+        "ECP5_GUI_NO_BOARD"
+      ],
+      "judge": [
+        "python3",
+        "tools/window_record/header_summary.py",
+        "--external",
+        "GN0=0",
+        "{record}"
+      ],
+      "criteria": [
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    },
+    {
+      "label": "v010_new_project",
+      "project": "examples/ulx3s/blinky_cycle",
+      "script": "tools/gui_scripts/v010/new_project.window.script",
+      "timeout": 300,
+      "criteria": [
+        {
+          "check": "note",
+          "source": "both",
+          "pattern": "new-project cancelled",
+          "min": 2
+        },
+        {
+          "check": "note",
+          "source": "window",
+          "pattern": "^# new-project \"My counter #1\" ok [0-9]+\\.[0-9]{3}$",
+          "min": 1
+        },
+        {
+          "check": "note",
+          "source": "project",
+          "pattern": "^new-project \"My counter #1\" ok [0-9]+\\.[0-9]{3}$",
+          "min": 1
+        },
+        {
+          "check": "note",
+          "source": "project",
+          "pattern": "^project My counter #1 \\.$",
+          "min": 1
+        },
+        {
+          "check": "note",
+          "source": "project",
+          "pattern": "^open top\\.v:1 language=verilog$",
+          "min": 1
+        },
+        {
+          "check": "note",
+          "source": "project",
+          "pattern": "\\A(?![\\s\\S]*build start)[\\s\\S]*\\Z",
+          "min": 1
+        },
+        {
+          "check": "note",
+          "source": "both",
+          "pattern": "copy-demo ulx3s/uart_hello \"My UART\" ok ",
+          "min": 2
+        },
+        {
+          "check": "no_home"
+        },
+        {
+          "check": "no_error"
+        }
+      ]
+    }
+  ]
+}

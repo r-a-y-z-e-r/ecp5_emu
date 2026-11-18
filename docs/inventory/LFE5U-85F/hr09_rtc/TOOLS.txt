@@ -1,0 +1,6 @@
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 17.0.0.17000604)
+"nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-77-g6b438a1c)
+Project Trellis - Open Source Tools for ECP5 FPGAs
+openFPGALoader v1.1.1
+pyserial 3.5 /dev/cu.usbserial-<FTDI-serial> at 115200 8N1
+ecp5_emu emulate --fast (tests/rtc.rs), branch claude/peripherals-657c3d at aabf9290ba0503335d9ba1285afbbebc9fc9ab2e (working tree changes)

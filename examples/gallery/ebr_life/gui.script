@@ -1,0 +1,18 @@
+# ebr_life in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# Life runs from its start pattern; the UART console shows each generation.
+# Buttons are held for a second: the design debounces them for 10 ms
+# (250 000 clocks), which the window may take most of a second to run.
+0 rate max
+0 run
+1 board 3d
+12 button 1 down   # FIRE1: fill the world with random soup
+13 button 1 up
+24 button 2 down   # FIRE2: pause
+25 button 2 up
+28 button 6 down   # RIGHT: one generation while paused
+29 button 6 up
+32 button 6 down   # RIGHT: one more
+33 button 6 up
+36 button 2 down   # FIRE2: run again
+37 button 2 up
+48 quit

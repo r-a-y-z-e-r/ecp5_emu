@@ -1,0 +1,12 @@
+# Scrolling DVI colour bars and a bouncing square, with UART frame CRCs.
+# Build: ecp5_emu build examples/ulx3s/hdmi_moving (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/hdmi_moving; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/hdmi_moving.
+
+[project]
+name = "hdmi_moving"
+top = "top"
+
+[sources]
+verilog = ["pll.v", "tmds.v", "top.v", "video_out.v"]
+constraints = "top.lpf"

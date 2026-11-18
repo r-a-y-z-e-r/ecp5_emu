@@ -1,0 +1,7 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+cbcfee7f4c8ddd2366d3df9b19b3cad764c884d325a60d23027162df7192faea  hc05_lock.v
+0088d07039555d1b25a6ed2a95a938186511407984edc850787a30a773cab242  pll100.v
+1e701a6cea4b4947bca4be9f310122434fc3e3eb2f2295df33fc42c7984114ba  hc05.lpf
+089df56cb1c8c25e3321ebc57f37cc3aad033a1fa74a8232c586b389eaa834a1  hc05.config
+52a4cfc005dcb3f816175973b2d8304614dd6bce72365b5753f85d3a69932bad  run.py
+# Historical digest (artifact unavailable in this record): c7b547df7ea18709c1c57d6e90213de4e082133c560bcfba13e737de190f94f5  hc05.bit

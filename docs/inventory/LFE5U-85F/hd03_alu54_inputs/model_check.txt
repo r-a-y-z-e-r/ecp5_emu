@@ -1,0 +1,23 @@
+3 loads, distinct lines [8238, 8237, 8236], in all loads 6989
+load 1:
+a0: R equal 8192, differ 0, not predicted 0; flags differ 0
+b0: R equal 5376, differ 0, not predicted 2816; flags differ 0
+a1: R equal 7552, differ 0, not predicted 640; flags differ 0
+b1: R equal 7552, differ 0, not predicted 640; flags differ 0
+a2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+b2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+load 2:
+a0: R equal 8192, differ 0, not predicted 0; flags differ 0
+b0: R equal 5376, differ 0, not predicted 2816; flags differ 0
+a1: R equal 7552, differ 0, not predicted 640; flags differ 0
+b1: R equal 7552, differ 0, not predicted 640; flags differ 0
+a2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+b2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+load 3:
+a0: R equal 8192, differ 0, not predicted 0; flags differ 0
+b0: R equal 5376, differ 0, not predicted 2816; flags differ 0
+a1: R equal 7552, differ 0, not predicted 640; flags differ 0
+b1: R equal 7552, differ 0, not predicted 640; flags differ 0
+a2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+b2: R equal 5120, differ 0, not predicted 3072; flags differ 0
+model fits

@@ -1,0 +1,222 @@
+PASS: raw-OR-sync2 against literal stage-output timing, all groups/REGSETs; startup counters for both wake phases and no-SGSR control
+HY01 joint-model residual audit. No board or serial access.
+Clock slots include a marker in the input-release bin as slot 1; sub-bin order is unknown.
+
+=== observations.log ===
+valid_frames=313 unique_windows=310 duplicates=3 rejected={}
+# load=1 utc=2026-11-17T14:36:15.360072+00:00 loader_done=True
+# load=1 candidate_lines=108 discarded_fragments=33
+# load=2 utc=2026-11-17T14:37:07.824463+00:00 loader_done=True
+# load=2 candidate_lines=95 discarded_fragments=151
+# load=3 utc=2026-11-17T14:38:01.684820+00:00 loader_done=True
+# load=3 candidate_lines=110 discarded_fragments=2
+model=raw-active-OR-sync2(initial=11,ref=same,new-input,old-s2-at-capture)
+examined=151590 bins/channel, 909540 channel-bins; exact_residuals=120; affected_windows=50
+same: RESET=19 SET=16; assertion_pair_latency_ticks={0: 310}
+inverted: RESET=7 SET=11; assertion_pair_latency_ticks={0: 310}
+other: RESET=36 SET=31; assertion_pair_latency_ticks={0: 310}
+early-excursion: runs=71 windows=35 bins=71
+  bins_by_release_phase={0: 6, 1: 24, 2: 27, 3: 14}
+  bins_by_width_ticks={4: 71}
+  window_ids=3,16,19,21,22,46,52,59,69,80,112,136,140,150,156,157,161,169,175,182,184,190,202,206,213,219,224,234,239,245,252,277,298,301,308
+  by_group={'same': {'bins': 35, 'windows': 35}, 'inverted': {'bins': 18, 'windows': 18}, 'other': {'bins': 18, 'windows': 18}}
+  by_channel={'same/RESET': 19, 'same/SET': 16, 'inverted/RESET': 7, 'inverted/SET': 11, 'other/RESET': 7, 'other/SET': 11}
+held-through-capture: runs=17 windows=17 bins=34
+  bins_by_release_phase={0: 6, 1: 6, 2: 8, 3: 14}
+  bins_by_width_ticks={4: 4, 8: 2, 12: 4, 20: 6, 80: 18}
+  window_ids=21,32,46,62,66,73,101,108,152,167,177,186,222,246,261,284,292
+  by_group={'other': {'bins': 34, 'windows': 17}}
+  by_channel={'same/RESET': 0, 'same/SET': 0, 'inverted/RESET': 0, 'inverted/SET': 0, 'other/RESET': 24, 'other/SET': 10}
+unobserved-early-capture: runs=8 windows=8 bins=15
+  bins_by_release_phase={1: 5, 2: 8, 3: 2}
+  bins_by_width_ticks={4: 15}
+  window_ids=16,46,52,175,202,219,245,277
+  by_group={'other': {'bins': 15, 'windows': 8}}
+  by_channel={'same/RESET': 0, 'same/SET': 0, 'inverted/RESET': 0, 'inverted/SET': 0, 'other/RESET': 5, 'other/SET': 10}
+regular_pair_capture inverted phase=0: latency_ticks={6: 87}
+regular_pair_capture inverted phase=1: latency_ticks={9: 75}
+regular_pair_capture inverted phase=2: latency_ticks={8: 73}
+regular_pair_capture inverted phase=3: latency_ticks={7: 75}
+regular_pair_capture other phase=0: latency_ticks={5: 29, 6: 25, 7: 33}
+regular_pair_capture other phase=1: latency_ticks={8: 25, 9: 25, 10: 25}
+regular_pair_capture other phase=2: latency_ticks={7: 21, 8: 26, 9: 26}
+regular_pair_capture other phase=3: latency_ticks={6: 18, 7: 25, 8: 32}
+regular_pair_capture same phase=0: latency_ticks={8: 87}
+regular_pair_capture same phase=1: latency_ticks={11: 75}
+regular_pair_capture same phase=2: latency_ticks={10: 73}
+regular_pair_capture same phase=3: latency_ticks={9: 75}
+Interpretation:
+  Early excursions are Q departures before the nominal release, followed by return to REGSET;
+  they are not a whole-trace shift and not evidence for assertion being synchronous.
+  A phase-0 release shares a bin with CLK rising; other phases do not. Compare phase counts above.
+  Held-through-capture is a missed predicted non-REGSET capture; a later departure is censored by alternating D.
+  Bin timing alone cannot identify metastability, analog reset distribution delay, or internal circuit topology.
+  hazard_class=early-excursion nearest_transition=s2-rise distance_ticks=0 bins=71
+  hazard_class=held-through-capture nearest_transition=s2-fall distance_ticks=1 bins=17
+  hazard_class=held-through-capture nearest_transition=s2-fall distance_ticks=2 bins=17
+  hazard_class=unobserved-early-capture nearest_transition=GSR_N-rise distance_ticks=0 bins=8
+  hazard_class=unobserved-early-capture nearest_transition=GSR_N-rise distance_ticks=1 bins=6
+  hazard_class=unobserved-early-capture nearest_transition=GSR_N-rise distance_ticks=2 bins=1
+  execution_gate=PASS: within_2_ticks=120 outside_2_ticks=0
+  Accepted functional rule: raw-active OR plain sync2(initial 11).
+  Reset network propagation delay accounts for boundary captures within 2 ticks (20 ns).
+  The emulator assigns zero time to propagation delays; these are timing hazards, not extra data rules.
+Every exact residual, grouped into contiguous runs (all ticks enumerated):
+w=003 sources=L1/seq6/line5 seed=0A62986B assert=184 release=188 phase=1 width=4ticks/1cycles same/SET class=early-excursion ticks=191 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=199 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=003 sources=L1/seq6/line5 seed=0A62986B assert=184 release=188 phase=1 width=4ticks/1cycles inverted/SET class=early-excursion ticks=191 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=197 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=003 sources=L1/seq6/line5 seed=0A62986B assert=184 release=188 phase=1 width=4ticks/1cycles other/SET class=early-excursion ticks=191 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=201 early_by=10ticks/4local_edges/2CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=016 sources=L1/seq19/line18 seed=C4995845 assert=165 release=169 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=171 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=179 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=171:s2-rise@171+0
+w=016 sources=L1/seq19/line18 seed=C4995845 assert=165 release=169 phase=2 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=171 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=177 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=171:s2-rise@171+0
+w=016 sources=L1/seq19/line18 seed=C4995845 assert=165 release=169 phase=2 width=4ticks/1cycles other/RESET class=unobserved-early-capture ticks=169,170 dt_release=0..1 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-6..-5 observed=00 predicted=11 nearest_reset_transition=169:GSR_N-rise@169+0,170:GSR_N-rise@169+1
+w=019 sources=L1/seq22/line21 seed=FC36EC00 assert=131 release=135 phase=0 width=4ticks/1cycles same/SET class=early-excursion ticks=135 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=143 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=135:s2-rise@135+0
+w=021 sources=L1/seq24/line23 seed=95C0F04C assert=169 release=173 phase=2 width=4ticks/1cycles same/SET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=021 sources=L1/seq24/line23 seed=95C0F04C assert=169 release=173 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=021 sources=L1/seq24/line23 seed=95C0F04C assert=169 release=173 phase=2 width=4ticks/1cycles other/RESET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=180 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=021 sources=L1/seq24/line23 seed=95C0F04C assert=169 release=173 phase=2 width=4ticks/1cycles other/RESET class=held-through-capture ticks=180,181 dt_release=7..8 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=185 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=180:s2-fall@179+1,181:s2-fall@179+2
+w=022 sources=L1/seq25/line24 seed=8C700C4B assert=168 release=172 phase=1 width=4ticks/1cycles same/SET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=022 sources=L1/seq25/line24 seed=8C700C4B assert=168 release=172 phase=1 width=4ticks/1cycles inverted/SET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=022 sources=L1/seq25/line24 seed=8C700C4B assert=168 release=172 phase=1 width=4ticks/1cycles other/SET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=2 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=032 sources=L1/seq36/line35 seed=B75F5E1F assert=146 release=226 phase=3 width=80ticks/20cycles other/RESET class=held-through-capture ticks=232,233 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=237 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=232:s2-fall@231+1,233:s2-fall@231+2
+w=046 sources=L1/seq50/line49 seed=863A8437 assert=158 release=162 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=163 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=171 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=163:s2-rise@163+0
+w=046 sources=L1/seq50/line49 seed=863A8437 assert=158 release=162 phase=3 width=4ticks/1cycles other/RESET class=unobserved-early-capture ticks=162 dt_release=0..0 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-5..-5 observed=0 predicted=1 nearest_reset_transition=162:GSR_N-rise@162+0
+w=046 sources=L1/seq50/line49 seed=863A8437 assert=158 release=162 phase=3 width=4ticks/1cycles other/RESET class=held-through-capture ticks=168,169 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=173 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=168:s2-fall@167+1,169:s2-fall@167+2
+w=052 sources=L1/seq56/line55 seed=C8C60C54 assert=173 release=177 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=179 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=187 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=052 sources=L1/seq56/line55 seed=C8C60C54 assert=173 release=177 phase=2 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=179 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=185 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=052 sources=L1/seq56/line55 seed=C8C60C54 assert=173 release=177 phase=2 width=4ticks/1cycles other/RESET class=unobserved-early-capture ticks=177,178 dt_release=0..1 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-6..-5 observed=00 predicted=11 nearest_reset_transition=177:GSR_N-rise@177+0,178:GSR_N-rise@177+1
+w=052 sources=L1/seq56/line55 seed=C8C60C54 assert=173 release=177 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=179 dt_release=2..2 CLK_slot=1 local_slot=2 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=185 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=059 sources=L1/seq63/line62 seed=376B5423 assert=148 release=152 phase=1 width=4ticks/1cycles same/RESET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=163 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=059 sources=L1/seq63/line62 seed=376B5423 assert=148 release=152 phase=1 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=161 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=059 sources=L1/seq63/line62 seed=376B5423 assert=148 release=152 phase=1 width=4ticks/1cycles other/SET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=164 early_by=9ticks/4local_edges/2CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=062 sources=L1/seq66/line65 seed=A8BCA258 assert=175 release=255 phase=0 width=80ticks/20cycles other/RESET class=held-through-capture ticks=260,261 dt_release=5..6 CLK_slot=2 local_slot=2 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=265 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=260:s2-fall@259+1,261:s2-fall@259+2
+w=066 sources=L1/seq70/line69 seed=C1C80320 assert=147 release=227 phase=0 width=80ticks/20cycles other/RESET class=held-through-capture ticks=232,233 dt_release=5..6 CLK_slot=2 local_slot=2 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=237 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=232:s2-fall@231+1,233:s2-fall@231+2
+w=069 sources=L1/seq73/line72 seed=2C8C2479 assert=191 release=195 phase=0 width=4ticks/1cycles same/RESET class=early-excursion ticks=195 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=203 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=195:s2-rise@195+0
+w=073 sources=L1/seq77/line76 seed=4E7C68EB assert=184 release=192 phase=1 width=8ticks/2cycles other/RESET class=held-through-capture ticks=200,201 dt_release=8..9 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=205 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=200:s2-fall@199+1,201:s2-fall@199+2
+w=080 sources=L1/seq84/line83 seed=5CD0CC1E assert=146 release=150 phase=3 width=4ticks/1cycles same/SET class=early-excursion ticks=151 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=159 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=151:s2-rise@151+0
+w=080 sources=L1/seq84/line83 seed=5CD0CC1E assert=146 release=150 phase=3 width=4ticks/1cycles other/RESET class=early-excursion ticks=151 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=156 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=151:s2-rise@151+0
+w=101 sources=L1/seq105/line104 seed=3AF9C674 assert=189 release=269 phase=2 width=80ticks/20cycles other/RESET class=held-through-capture ticks=276,277 dt_release=7..8 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=281 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=276:s2-fall@275+1,277:s2-fall@275+2
+w=108 sources=L2/seq17/line113 seed=830711A5 assert=149 release=169 phase=2 width=20ticks/5cycles other/RESET class=held-through-capture ticks=176,177 dt_release=7..8 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=181 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=176:s2-fall@175+1,177:s2-fall@175+2
+w=112 sources=L2/seq21/line117 seed=3864AC6C assert=185 release=189 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=191 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=199 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=112 sources=L2/seq21/line117 seed=3864AC6C assert=185 release=189 phase=2 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=191 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=197 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=112 sources=L2/seq21/line117 seed=3864AC6C assert=185 release=189 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=191 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=196 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=136 sources=L2/seq45/line141 seed=0BB64C19 assert=143 release=147 phase=0 width=4ticks/1cycles same/SET class=early-excursion ticks=147 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=155 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=147:s2-rise@147+0
+w=140 sources=L2/seq49/line145 seed=93A8EC36 assert=158 release=162 phase=3 width=4ticks/1cycles same/SET class=early-excursion ticks=163 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=171 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=163:s2-rise@163+0
+w=150 sources=L2/seq59/line155 seed=0EBD904E assert=170 release=174 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=175 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=152 sources=L2/seq61/line157 seed=526AEDE7 assert=182 release=202 phase=3 width=20ticks/5cycles other/RESET class=held-through-capture ticks=208,209 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=213 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=208:s2-fall@207+1,209:s2-fall@207+2
+w=156 sources=L2/seq65/line161 seed=0A10B029 assert=151 release=155 phase=0 width=4ticks/1cycles same/SET class=early-excursion ticks=155 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=163 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=157 sources=L2/seq66/line162 seed=1517944B assert=168 release=172 phase=1 width=4ticks/1cycles same/RESET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=157 sources=L2/seq66/line162 seed=1517944B assert=168 release=172 phase=1 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=157 sources=L2/seq66/line162 seed=1517944B assert=168 release=172 phase=1 width=4ticks/1cycles other/SET class=early-excursion ticks=175 dt_release=3..3 CLK_slot=1 local_slot=2 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=161 sources=L2/seq70/line166 seed=F8390064 assert=181 release=185 phase=2 width=4ticks/1cycles same/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=195 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=161 sources=L2/seq70/line166 seed=F8390064 assert=181 release=185 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=193 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=161 sources=L2/seq70/line166 seed=F8390064 assert=181 release=185 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=193 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=167 sources=L2/seq77/line173 seed=A9CF8D1D assert=145 release=157 phase=2 width=12ticks/3cycles other/RESET class=held-through-capture ticks=164,165 dt_release=7..8 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=169 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=164:s2-fall@163+1,165:s2-fall@163+2
+w=169 sources=L2/seq79/line175 seed=5061904D assert=169 release=173 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=169 sources=L2/seq79/line175 seed=5061904D assert=169 release=173 phase=2 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=169 sources=L2/seq79/line175 seed=5061904D assert=169 release=173 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=175 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=181 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=175 sources=L2/seq85/line181 seed=E186FC2B assert=152 release=156 phase=1 width=4ticks/1cycles same/RESET class=early-excursion ticks=159 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=167 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=159:s2-rise@159+0
+w=175 sources=L2/seq85/line181 seed=E186FC2B assert=152 release=156 phase=1 width=4ticks/1cycles inverted/RESET class=early-excursion ticks=159 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=165 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=159:s2-rise@159+0
+w=175 sources=L2/seq85/line181 seed=E186FC2B assert=152 release=156 phase=1 width=4ticks/1cycles other/RESET class=early-excursion ticks=159 dt_release=3..3 CLK_slot=1 local_slot=2 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=164 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=159:s2-rise@159+0
+w=175 sources=L2/seq85/line181 seed=E186FC2B assert=152 release=156 phase=1 width=4ticks/1cycles other/SET class=unobserved-early-capture ticks=156,157,158 dt_release=0..2 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-7..-5 observed=111 predicted=000 nearest_reset_transition=156:GSR_N-rise@156+0,157:GSR_N-rise@156+1,158:GSR_N-rise@156+2
+w=177 sources=L2/seq87/line183 seed=C3E71FDE assert=178 release=258 phase=3 width=80ticks/20cycles other/RESET class=held-through-capture ticks=264,265 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=269 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=264:s2-fall@263+1,265:s2-fall@263+2
+w=182 sources=L2/seq92/line188 seed=7E7B4853 assert=172 release=176 phase=1 width=4ticks/1cycles same/SET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=187 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=182 sources=L2/seq92/line188 seed=7E7B4853 assert=172 release=176 phase=1 width=4ticks/1cycles inverted/SET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=185 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=182 sources=L2/seq92/line188 seed=7E7B4853 assert=172 release=176 phase=1 width=4ticks/1cycles other/RESET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=189 early_by=10ticks/4local_edges/2CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=184 sources=L2/seq94/line190 seed=0C0E545E assert=178 release=182 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=183 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=191 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=183:s2-rise@183+0
+w=184 sources=L2/seq94/line190 seed=0C0E545E assert=178 release=182 phase=3 width=4ticks/1cycles other/SET class=early-excursion ticks=183 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=189 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=183:s2-rise@183+0
+w=186 sources=L2/seq96/line192 seed=6BFAE543 assert=164 release=176 phase=1 width=12ticks/3cycles other/RESET class=held-through-capture ticks=184,185 dt_release=8..9 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=00 predicted=11 next_Q_departure=189 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=184:s2-fall@183+1,185:s2-fall@183+2
+w=190 sources=L2/seq100/line196 seed=F5998053 assert=172 release=176 phase=1 width=4ticks/1cycles same/SET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=187 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=190 sources=L2/seq100/line196 seed=F5998053 assert=172 release=176 phase=1 width=4ticks/1cycles inverted/SET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=185 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=190 sources=L2/seq100/line196 seed=F5998053 assert=172 release=176 phase=1 width=4ticks/1cycles other/RESET class=early-excursion ticks=179 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=184 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=202 sources=L3/seq2/line210 seed=D0AD7467 assert=182 release=186 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=187 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=195 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=202 sources=L3/seq2/line210 seed=D0AD7467 assert=182 release=186 phase=3 width=4ticks/1cycles other/SET class=unobserved-early-capture ticks=186 dt_release=0..0 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-5..-5 observed=1 predicted=0 nearest_reset_transition=186:GSR_N-rise@186+0
+w=206 sources=L3/seq6/line214 seed=85314C35 assert=157 release=161 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=163 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=171 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=163:s2-rise@163+0
+w=206 sources=L3/seq6/line214 seed=85314C35 assert=157 release=161 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=163 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=169 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=163:s2-rise@163+0
+w=206 sources=L3/seq6/line214 seed=85314C35 assert=157 release=161 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=163 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=169 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=163:s2-rise@163+0
+w=213 sources=L3/seq13/line221 seed=14836471 assert=187 release=191 phase=0 width=4ticks/1cycles same/SET class=early-excursion ticks=191 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=199 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=219 sources=L3/seq19/line227 seed=624CAC22 assert=148 release=152 phase=1 width=4ticks/1cycles same/RESET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=163 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=219 sources=L3/seq19/line227 seed=624CAC22 assert=148 release=152 phase=1 width=4ticks/1cycles inverted/SET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=161 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=219 sources=L3/seq19/line227 seed=624CAC22 assert=148 release=152 phase=1 width=4ticks/1cycles other/RESET class=early-excursion ticks=155 dt_release=3..3 CLK_slot=1 local_slot=2 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=160 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=219 sources=L3/seq19/line227 seed=624CAC22 assert=148 release=152 phase=1 width=4ticks/1cycles other/SET class=unobserved-early-capture ticks=152,153 dt_release=0..1 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-7..-6 observed=11 predicted=00 nearest_reset_transition=152:GSR_N-rise@152+0,153:GSR_N-rise@152+1
+w=222 sources=L3/seq22/line230 seed=7E1B7600 assert=131 release=211 phase=0 width=80ticks/20cycles other/SET class=held-through-capture ticks=216,217 dt_release=5..6 CLK_slot=2 local_slot=2 dt_nominal_reset_release=1..2 observed=11 predicted=00 next_Q_departure=221 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=216:s2-fall@215+1,217:s2-fall@215+2
+w=224 sources=L3/seq24/line232 seed=4AE07826 assert=150 release=154 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=155 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=163 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=155:s2-rise@155+0
+w=234 sources=L3/seq34/line242 seed=5B27286E assert=186 release=190 phase=3 width=4ticks/1cycles same/SET class=early-excursion ticks=191 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=199 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=234 sources=L3/seq34/line242 seed=5B27286E assert=186 release=190 phase=3 width=4ticks/1cycles other/RESET class=early-excursion ticks=191 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=197 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=191:s2-rise@191+0
+w=239 sources=L3/seq39/line247 seed=BB9C7C61 assert=179 release=183 phase=0 width=4ticks/1cycles same/SET class=early-excursion ticks=183 dt_release=0..0 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=191 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=183:s2-rise@183+0
+w=245 sources=L3/seq45/line253 seed=2ED93064 assert=181 release=185 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=195 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=245 sources=L3/seq45/line253 seed=2ED93064 assert=181 release=185 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=193 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=245 sources=L3/seq45/line253 seed=2ED93064 assert=181 release=185 phase=2 width=4ticks/1cycles other/SET class=unobserved-early-capture ticks=185,186 dt_release=0..1 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-6..-5 observed=11 predicted=00 nearest_reset_transition=185:GSR_N-rise@185+0,186:GSR_N-rise@185+1
+w=246 sources=L3/seq46/line254 seed=A4B7EAC7 assert=166 release=246 phase=3 width=80ticks/20cycles other/SET class=held-through-capture ticks=252,253 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=11 predicted=00 next_Q_departure=257 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=252:s2-fall@251+1,253:s2-fall@251+2
+w=252 sources=L3/seq52/line260 seed=3AF4D44E assert=170 release=174 phase=3 width=4ticks/1cycles same/SET class=early-excursion ticks=175 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+w=261 sources=L3/seq61/line269 seed=49ABB79F assert=146 release=226 phase=3 width=80ticks/20cycles other/SET class=held-through-capture ticks=232,233 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=11 predicted=00 next_Q_departure=237 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=232:s2-fall@231+1,233:s2-fall@231+2
+w=277 sources=L3/seq77/line285 seed=A73E3475 assert=189 release=193 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=195 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=203 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=195:s2-rise@195+0
+w=277 sources=L3/seq77/line285 seed=A73E3475 assert=189 release=193 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=195 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=201 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=195:s2-rise@195+0
+w=277 sources=L3/seq77/line285 seed=A73E3475 assert=189 release=193 phase=2 width=4ticks/1cycles other/SET class=unobserved-early-capture ticks=193,194 dt_release=0..1 CLK_slot=0 local_slot=1 dt_nominal_reset_release=-6..-5 observed=11 predicted=00 nearest_reset_transition=193:GSR_N-rise@193+0,194:GSR_N-rise@193+1
+w=284 sources=L3/seq84/line292 seed=AE68660F assert=138 release=218 phase=3 width=80ticks/20cycles other/SET class=held-through-capture ticks=224,225 dt_release=6..7 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=11 predicted=00 next_Q_departure=229 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=224:s2-fall@223+1,225:s2-fall@223+2
+w=292 sources=L3/seq93/line301 seed=6EE335EB assert=184 release=204 phase=1 width=20ticks/5cycles other/SET class=held-through-capture ticks=212,213 dt_release=8..9 CLK_slot=2 local_slot=3 dt_nominal_reset_release=1..2 observed=11 predicted=00 next_Q_departure=217 departure_shift=+5ticks/2local_edges/1CLK_edges (D toggles: not a direct measurement of reset-release delay) nearest_reset_transition=212:s2-fall@211+1,213:s2-fall@211+2
+w=298 sources=L3/seq99/line307 seed=A989AC64 assert=181 release=185 phase=2 width=4ticks/1cycles same/RESET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=195 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=298 sources=L3/seq99/line307 seed=A989AC64 assert=181 release=185 phase=2 width=4ticks/1cycles inverted/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=193 early_by=6ticks/2local_edges/1CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=298 sources=L3/seq99/line307 seed=A989AC64 assert=181 release=185 phase=2 width=4ticks/1cycles other/SET class=early-excursion ticks=187 dt_release=2..2 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=192 early_by=5ticks/2local_edges/1CLK_edges nearest_reset_transition=187:s2-rise@187+0
+w=301 sources=L3/seq102/line310 seed=FB237857 assert=174 release=178 phase=3 width=4ticks/1cycles same/RESET class=early-excursion ticks=179 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=1 predicted=0 regular_pred_Q_departure=187 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=179:s2-rise@179+0
+w=308 sources=L3/seq109/line317 seed=1579884E assert=170 release=174 phase=3 width=4ticks/1cycles same/SET class=early-excursion ticks=175 dt_release=1..1 CLK_slot=1 local_slot=1 dt_nominal_reset_release=-4..-4 observed=0 predicted=1 regular_pred_Q_departure=183 early_by=8ticks/2local_edges/2CLK_edges nearest_reset_transition=175:s2-rise@175+0
+
+=== observations_s.log ===
+valid_frames=86 unique_windows=2 duplicates=84 rejected={}
+# load=1 utc=2026-11-17T14:38:53.602762+00:00 loader_done=True
+# load=1 candidate_lines=43 discarded_fragments=2
+# load=2 utc=2026-11-17T14:39:35.235375+00:00 loader_done=True
+# load=2 candidate_lines=43 discarded_fragments=2
+# load=3 utc=2026-11-17T14:40:16.902766+00:00 loader_done=True
+# load=3 candidate_lines=0 discarded_fragments=755
+model=raw-active-OR-sync2(initial=11,ref=same,new-input,old-s2-at-capture)
+examined=974 bins/channel, 5844 channel-bins; exact_residuals=0; affected_windows=0
+same: RESET=0 SET=0; assertion_pair_latency_ticks={0: 2}
+inverted: RESET=0 SET=0; assertion_pair_latency_ticks={0: 2}
+other: RESET=0 SET=0; assertion_pair_latency_ticks={0: 2}
+regular_pair_capture inverted phase=0: latency_ticks={6: 1}
+regular_pair_capture inverted phase=2: latency_ticks={8: 1}
+regular_pair_capture other phase=0: latency_ticks={7: 1}
+regular_pair_capture other phase=2: latency_ticks={7: 1}
+regular_pair_capture same phase=0: latency_ticks={8: 1}
+regular_pair_capture same phase=2: latency_ticks={10: 1}
+Interpretation:
+  Early excursions are Q departures before the nominal release, followed by return to REGSET;
+  they are not a whole-trace shift and not evidence for assertion being synchronous.
+  A phase-0 release shares a bin with CLK rising; other phases do not. Compare phase counts above.
+  Held-through-capture is a missed predicted non-REGSET capture; a later departure is censored by alternating D.
+  Bin timing alone cannot identify metastability, analog reset distribution delay, or internal circuit topology.
+  execution_gate=PASS: within_2_ticks=0 outside_2_ticks=0
+  Accepted functional rule: raw-active OR plain sync2(initial 11).
+  Reset network propagation delay accounts for boundary captures within 2 ticks (20 ns).
+  The emulator assigns zero time to propagation delays; these are timing hazards, not extra data rules.
+Every exact residual, grouped into contiguous runs (all ticks enumerated):
+(none)
+
+=== observations_b.log ===
+valid_frames=10497 loads=10 rejected={}
+load=1 frames=1049 rising_B-A=2 falling_B-A=1 predicted_rising=(2,) predicted_falling=(1, 2)
+load=2 frames=1051 rising_B-A=2 falling_B-A=1 predicted_rising=(2,) predicted_falling=(1, 2)
+load=3 frames=1049 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=4 frames=1050 rising_B-A=2 falling_B-A=1 predicted_rising=(2,) predicted_falling=(1, 2)
+load=5 frames=1049 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=6 frames=1049 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=7 frames=1050 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=8 frames=1050 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=9 frames=1050 rising_B-A=2 falling_B-A=2 predicted_rising=(2,) predicted_falling=(1, 2)
+load=10 frames=1050 rising_B-A=2 falling_B-A=1 predicted_rising=(2,) predicted_falling=(1, 2)
+exact_offset_residuals_per_class={'startup-rising': 0, 'startup-falling': 0}; falling wake phase is not measured, so this is set membership, not a phase fit
+execution_gate=PASS: offset_residuals=0; frozen snapshots contain no transition timestamps
+
+=== observations_c.log ===
+valid_frames=10505 loads=10 rejected={}
+load=1 frames=1053 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=2 frames=1052 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=3 frames=1050 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=4 frames=1050 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=5 frames=1049 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=6 frames=1055 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=7 frames=1049 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=8 frames=1049 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=9 frames=1049 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+load=10 frames=1049 rising_B-A=0 falling_B-A=0 predicted_rising=(0,) predicted_falling=(0,)
+exact_offset_residuals_per_class={'startup-rising': 0, 'startup-falling': 0}; falling wake phase is not measured, so this is set membership, not a phase fit
+execution_gate=PASS: offset_residuals=0; frozen snapshots contain no transition timestamps

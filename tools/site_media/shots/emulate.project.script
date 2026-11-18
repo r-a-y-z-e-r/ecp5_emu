@@ -1,0 +1,3 @@
+# Shared startup for prebuilt project shots: opens Chip and awaits readiness
+# before the window script can advance on an unbuilt Project tab.
+0 emulate

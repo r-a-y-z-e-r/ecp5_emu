@@ -1,0 +1,47 @@
+ENABLED DSP generated-C identity, 2026-11-17
+Before: original DSP emitter plus optional test snapshot instrumentation.
+After: HD09 both-edge fast emitter; same test profiles and default FastOptions.
+Before command: DSP_SOURCE_SNAPSHOT=/tmp/hd09-enabled-before cargo test --release --test alu54 --test dsp fast -- --include-ignored --test-threads=1
+After command: DSP_SOURCE_SNAPSHOT=/tmp/hd09-enabled-after cargo test --release --test alu54 --test dsp -- --include-ignored --nocapture
+Every baseline file is present after the change and cmp-equivalent.
+Three extra ALU snapshots from the broader after selection are not part of this baseline.
+37 files; 7,384,356 bytes; all byte-identical. Hashes below apply to both copies.
+
+SHA256  bytes  program
+c0efb099f131f609da91863ea0c68412253a1b40114a978d61775c9248be421f 666130 alu-0-0-0-true-None-false.c
+243d3064a5e45204ed3b79459ffb8012f21ba77db0e2b732b6debfb6412e87c2 667084 alu-0-0-17979214271348736-true-None-false.c
+acb6cca202681dcdceede970c8fb4904784ce6a1c36a5ff2de9da708648ac030 670779 alu-0-0-17979214271348736-true-None-true.c
+5100be7224ea6ceac8a978f539bcf8c857b460ddfabb1730eb624ba02d355ef8 427538 alu-0-35184237871104-18014398509481983-false-None-false.c
+a3d7039eccd135f566439307cd1cf22d7df463a1d091130f473f1c545552cb00 430009 alu-0-35184237871104-18014398509481983-false-None-true.c
+20d5023f3a916921edfa0b2f239da0b33ff896da8933ca727ee66a310f30abb6 690394 alu-inputs-16.c
+3b70258ebf60405264570f98fac31c3116fef9b37ff02163a687fd5033753df5 690988 alu-inputs-320255973501893.c
+50d08d22d9dd1b4ed61a9e2a9c17f501fb7b805631dce4b3e3a2e03b266649f1 416385 mult-1-Asynchronous.c
+eed476d06d7e57c73f7f4b00d23009a45bba6722113c3fa1d37729ba9f2d07cc 415397 mult-1-Synchronous.c
+efeeee9670695d12ebffad1ccecf62d844d66860bac68611f40a46cedf904df9 56339 mult-10-Asynchronous.c
+fb4255f6ab9945d270b00b11a0720c3bdc30ece440d80485e946cbdf7009ce0c 53479 mult-10-Synchronous.c
+8521282b91213125dc23b3ff184c27e18866dacd3c58ff1c42b47ee4f62ed88c 62672 mult-11-Asynchronous.c
+5274291da7570ec65fe6ad78daefc1058f20ef24ff0ce0e5cfb443ef5ced1361 58824 mult-11-Synchronous.c
+322cc25bb29e479e1aec9df7916c46a903615c0e5dc8e454186ad366000c53fc 58893 mult-12-Asynchronous.c
+fb305611d3350079b0a70cf099f9808d29e4fc53e07ce8a8eed22fa18b9b6380 55097 mult-12-Synchronous.c
+993d7852404fe8b0a907b41198a6666eda423d7d3fdabececc6f919d92bedc09 65228 mult-13-Asynchronous.c
+801b6337fc480c8817aa98e2d4cba9b5ec237d021f45fea0dd8d5654f3246c6f 60444 mult-13-Synchronous.c
+246c0e5a9f823eb5733501f390794991afa8774fd4330d2bee85a66ac5f0be17 64528 mult-14-Asynchronous.c
+d1713c9d311fe73d2eb0056810b1dba8bce0b858ee28a0de30e90bd1dbc2f441 59744 mult-14-Synchronous.c
+1a0068d565b97ef755d5b788032fe16717042a7c8e650aac9414854afeb62df9 70885 mult-15-Asynchronous.c
+47e202fb5a31e2ddea9f3c28615cf0f8d1b9d96abf6ecda4e322759d626535aa 65113 mult-15-Synchronous.c
+51a9e811c496405987028b20ddc23def5771d8be1d53a895b06ab61fa6c74a35 408835 mult-2-Asynchronous.c
+0dcdfde60229ebe90ed9a655ce59ec74e6af005a20bcc89325d19f7c9a0f885c 407847 mult-2-Synchronous.c
+fe5f59dc3f8c9031af8c1d85def78db4682e4b23c2f86800abc60d2baacab8e5 79123 mult-3-Asynchronous.c
+74f768daad891c6c0b9ae66a765720b0cd537d0cb73090a176e6d87b35e13465 77147 mult-3-Synchronous.c
+b54c8acf31e177fa50f77fbb714a85598a2207e67330a9a72b7747901a14ce03 32351 mult-4-Asynchronous.c
+7ff6e22f015865e1f002f974b1862b9e19ab879aa7ee1aac18f6c2c03a92c453 30427 mult-4-Synchronous.c
+2d66f5b6f9f56f5e429db45e466ff0ad0b8c02adc1b8a802d6dcfa3330b847b0 61772 mult-5-Asynchronous.c
+fc0352c67b7e96b51a57906f4fe40644bd0845b8134f997eb1e9027fe615f017 58860 mult-5-Synchronous.c
+69cbc7389b0d3192fbf04860bf3b253d912ce2f4100a216cc3a459b3f0d6a89c 61072 mult-6-Asynchronous.c
+26b14042e2f93a149c71643919516845c8c33808e494f79fa2cf84418fc2be7d 58160 mult-6-Synchronous.c
+7a8544249f6845f08d888c2f05ad12ec423bd1941c256b698a3023c3ad11e6c2 68927 mult-7-Asynchronous.c
+3b453831183856ed3a0642b2153825e387bf0e0c8909e34ee53a30478cd684c6 65027 mult-7-Synchronous.c
+be4fb06835173b985cbf18ce6b1c9738f9d71b0bce1fbff010b85b38dd8900e5 29756 mult-8-Asynchronous.c
+e345a49cc435cbb3d4424c0e86aa128bbb63d6fb5f59e3a34446c137225c83cb 27884 mult-8-Synchronous.c
+f7806dc0682c52143ce1190b9fad655b968c51318a91eb0606643b62abf77514 57039 mult-9-Asynchronous.c
+31583238b1cc8c707bd46635ae169e7b67c1d924e093de2dfd5b6ae8d8775bf2 54179 mult-9-Synchronous.c

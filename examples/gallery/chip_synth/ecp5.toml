@@ -1,0 +1,6 @@
+[project]
+name = "chip_synth"
+top = "top"
+[sources]
+verilog = ["top.v", "synth.v", "oled.v", "render.v", "io.v", "text.v"]
+constraints = "top.lpf"

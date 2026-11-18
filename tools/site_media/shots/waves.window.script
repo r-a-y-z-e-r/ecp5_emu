@@ -1,0 +1,12 @@
+# Adapted from hero_waves2.script.
+0 theme dark
+0 board 3d
+0 rate max
+0 run
+3 waves open
+3.5 watch cpu.reg_pc
+4 watch led
+4.5 watch ftdi_rxd
+5 watch ftdi_txd
+6 rate 20000
+8 type hello\r

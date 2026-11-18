@@ -1,0 +1,15 @@
+# Historical entries below are provenance only; verify the stored files with shasum -a 256 -c SHA256SUMS.
+06999e9dec57f11fff0b9a57009896ceff7f8618eafe0620706a2a9fa7c816b6  hd07.v
+6a8e607fc302ee055848e596685b89384830e22e7b8d2f2d71e0db8472fed6c8  hd07s.v
+641ef7b9bd56aa8f5005f1daf73764ce19db8b1b836bca47f4a19c9f76e3f5b5  hd07.lpf
+2638cae5a8a6c1c578cecf3879488be724b6566e01e42838e6330698470faea3  hd07.config
+4ffbdbce451e356ae844c045cd24f92a70a6b3b11c89d1d4ef2ce0762a75a0b5  hd07s.config
+ef90102054c49de320e5b9d3f5357c5c5389a100bd5709ba88a700ea17b238e5  hd07_gen.py
+ae121ce3b94b3bbaebf6e94ff74397e9e85d3207ab3569d53735ec11dd7f9f32  hd07_analyse.py
+94908eaed6583de2d2cabc20af173ad6ead933019e93f88f3ca97e6829771b1a  run.py
+e91fe67c9c63de975835a32c9a19d768cf455ba11f6f7f73ec56056a73796942  observations.log
+79167dd42d2f7f387388ba217f7389298f92864a8e86fa8e20f0683feb3fdc1b  observations_s.log
+3790172bbec89911725b7284b6c3fb66e6e8d487ea74bac22cef75f12cfa419f  analysis.txt
+ecd3260036f8327e6712eed5031d5a6c7bac7ba76288d94355e44839c420a5b3  analysis_s.txt
+# Historical digest (artifact unavailable in this record): 898ab712d6d7d17560f84f3dfe3ee6d7ecdccfb703198ede5b37df840aa3e68a  hd07.bit (ecppack hd07.config; not stored)
+# Historical digest (artifact unavailable in this record): 6bd344850489258af179fba643a06e943d13a46b6fc5b841d2e80a4a48724c60  hd07s.bit (ecppack hd07s.config; not stored)

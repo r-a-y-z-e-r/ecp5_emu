@@ -1,0 +1,6 @@
+[project]
+name = "clock_domains"
+top = "top"
+[sources]
+verilog = ["top.v", "pll.v", "cdc.v", "fifo.v", "handshake.v", "io.v"]
+constraints = "top.lpf"

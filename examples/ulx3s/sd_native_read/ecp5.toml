@@ -1,0 +1,12 @@
+# Read-only SDHC block zero over the native four-bit SD bus, reported on the UART.
+# Build: ecp5_emu build examples/ulx3s/sd_native_read (outputs in build/); run in the
+# window: ecp5_emu run examples/ulx3s/sd_native_read; load into the board's SRAM:
+# ecp5_emu load examples/ulx3s/sd_native_read.
+
+[project]
+name = "sd_native_read"
+top = "top"
+
+[sources]
+verilog = ["reader.v", "top.v", "uart_tx.v"]
+constraints = "top.lpf"

@@ -1,0 +1,13 @@
+# Noise and generation are numeric; live honestly has no routed net (inside LUTs).
+# No source-named Life net is in a folded cone. Folded-publication exactness is covered headlessly
+# by tests/published_values.rs, not inferred from this window record.
+0 emulate
+2 view project
+0 open top.v
+0 hover top.v 36 14
+1 hover top.v 39 13
+1 hover top.v 54 20
+8 hover top.v 36 14
+2 hover top.v 39 13
+2 hover top.v 54 20
+3 quit

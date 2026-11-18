@@ -1,0 +1,48 @@
+--- a/src/kernel/fast.rs
++++ b/src/kernel/fast.rs
+@@ -3424,6 +3424,21 @@
+                 .collect::<Result<Vec<_>>>()?
+                 .iter()
+                 .any(|&t| t != Term::Lit(0));
++        let hb09p_scope = [
++            (config.ports[0].output_enable, 0),
++            (config.ports[1].output_enable, 1),
++        ]
++        .into_iter()
++        .chain(config.ports[0].address[..4].iter().map(|&i| (i, 1)))
++        .map(|(i, want)| term(i).map(|t| (t, want)))
++        .collect::<Result<Vec<_>>>();
++        let hb09p = config.hb09p_profile()
++            && block.same_clock == Some(true)
++            && hb09p_scope.as_ref().is_ok_and(|scope| {
++                scope
++                    .iter()
++                    .all(|&(t, want)| !matches!(t, Term::Lit(v) if v != want))
++            });
+         let mut c = String::new();
+         let fail = format!("{{ return fast_fail(v, 2, {b}); }}");
+         let _ = writeln!(
+@@ -3490,6 +3505,14 @@
+             }
+             let _ = writeln!(c, "  int hb09 = {};", scope.join(" && "));
+         }
++        if hb09p {
++            let scope = hb09p_scope?
++                .iter()
++                .map(|&(t, want)| format!("{} == {want}", t.c()))
++                .collect::<Vec<_>>()
++                .join(" && ");
++            let _ = writeln!(c, "  int hb09p = e0 && e1 && acc0 && acc1 && !rst0 && !rst1 && !inh && !glb && {scope};");
++        }
+         // Writes, from the memory before the edge.
+         for side in (0..2).filter(|&s| writes(s)) {
+             let port = &config.ports[side];
+@@ -3557,6 +3580,8 @@
+                             c,
+                             "      }} else if (row_in(wc{other}, nw{other}, c / 9)) mem = 2;"
+                         );
++                    } else if hb09p {
++                        let _ = writeln!(c, "      if (hb09p && a0 == a1) {{ for (int i = 0; i < nw0; i++) if (wc0[i] == c) mem = wv0[i]; }} else if (row_in(wc0, nw0, c / 9)) mem = 2;");
+                     } else {
+                         let _ =
+                             writeln!(c, "      if (row_in(wc{other}, nw{other}, c / 9)) mem = 2;");

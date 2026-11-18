@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "scope": "Research and hardware experiment design; no executable EBR behavior and no completed hardware measurements",
+  "hardware_policy": {
+    "decision": "Unresolved behavior and source disagreements are queued for tests on the user's ECP5-85F board; continue collecting other resources meanwhile",
+    "authority": "User instruction of 2026-10-22",
+    "measurement_status": "not_run",
+    "evidence_rule": "Retain exact configuration and observation; reproducibility on one device does not establish a universal outcome for vendor-undefined collisions"
+  },
+  "rules": [
+    {
+      "id": "EC01",
+      "subject": "core_clock_enable",
+      "claim": "clken gates read and write in the Yosys memory contract",
+      "evidence": "synthesis_contract",
+      "source": "memlib",
+      "section": "clken and rden"
+    },
+    {
+      "id": "EC02",
+      "subject": "sync_reset_priority",
+      "claim": "Yosys DP sync reset zero has priority over clock/read enables",
+      "evidence": "synthesis_contract",
+      "source": "brams_16kd.txt",
+      "reference": "rdsrst zero ungated block_wr"
+    },
+    {
+      "id": "EC03",
+      "subject": "sync_reset_write",
+      "claim": "Yosys uses native synchronous reset only when write and reset are proved mutually exclusive; otherwise it emulates reset in fabric. This does not establish hardware reset-versus-write priority.",
+      "evidence": "synthesis_implementation",
+      "source": "memlibmap",
+      "reference": "handle_rd_rst; get_wr_excludes_srst"
+    },
+    {
+      "id": "EC04",
+      "subject": "async_reset_write",
+      "claim": "rdarst zero resets the read result; this declaration supplies no general asynchronous write-blocking rule",
+      "evidence": "synthesis_contract",
+      "source": "brams_16kd.txt",
+      "reference": "rdarst zero"
+    },
+    {
+      "id": "EC05",
+      "subject": "byte_write",
+      "claim": "Yosys wrbe_separate writes a group only when CLK_EN, WR_EN and its WR_BE bit are one",
+      "evidence": "synthesis_contract",
+      "source": "memlib",
+      "section": "wrbe_separate and the write enables"
+    },
+    {
+      "id": "EC06",
+      "subject": "read_write_new",
+      "claim": "Yosys rdwr new means the whole new memory word, including unchanged groups of a masked write; this is not a chip measurement",
+      "evidence": "synthesis_contract",
+      "source": "memlib",
+      "section": "rdwr property"
+    },
+    {
+      "id": "EC07",
+      "subject": "cross_port_priority",
+      "claim": "The ECP5 Yosys library declares neither wrprio nor wrtrans; no cross-port priority or read transparency is supplied",
+      "evidence": "synthesis_contract",
+      "source": "brams_16kd.txt"
+    },
+    {
+      "id": "EC08",
+      "subject": "initial_read_output",
+      "claim": "Yosys rdinit zero declares an initial read value; actual configuration/startup behavior still needs a board test",
+      "evidence": "synthesis_contract",
+      "source": "brams_16kd.txt"
+    },
+    {
+      "id": "EC09",
+      "subject": "output_clock_enable",
+      "claim": "Memory guide output-clock-enable selection requires the optional output register",
+      "evidence": "documented",
+      "source": "memory",
+      "pages": [
+        20,
+        28
+      ]
+    },
+    {
+      "id": "EC10",
+      "subject": "reset_release",
+      "claim": "Memory guide distinguishes synchronous and asynchronous release of asynchronous reset, but does not specify the internal edge count or its complete enable priority",
+      "evidence": "documented_partial",
+      "source": "memory",
+      "pages": [
+        20,
+        28
+      ]
+    },
+    {
+      "id": "EC11",
+      "subject": "reset_contents",
+      "claim": "Reset preserves the memory array; FAQ 3626 additionally describes reset as applying to output registers",
+      "evidence": "documented",
+      "source": "faq_3626"
+    },
+    {
+      "id": "EC12",
+      "subject": "raw_cs",
+      "claim": "CSDECODE from the bitstream already includes the writer's source-level CS inversion; compare reverse3(decoded_word) with raw CS",
+      "evidence": "tool_source",
+      "source": "nextpnr_writer",
+      "reference": "write_bram"
+    }
+  ],
+  "sources": {
+    "memlib": {
+      "url": "https://raw.githubusercontent.com/YosysHQ/yosys/7f8fdfd8d7bc08c749a2a969388d3425d4f369d5/passes/memory/memlib.md",
+      "path": "target/research/ebr/yosys-memlib.md"
+    },
+    "memlibmap": {
+      "url": "https://raw.githubusercontent.com/YosysHQ/yosys/7f8fdfd8d7bc08c749a2a969388d3425d4f369d5/passes/memory/memory_libmap.cc",
+      "path": "target/research/ebr/yosys-memory-libmap.cc"
+    },
+    "faq_3626": {
+      "url": "https://www.latticesemi.com/en/Support/AnswerDatabase/3/6/2/3626",
+      "path": "target/research/ebr/lattice-faq-3626.html"
+    },
+    "memory": {
+      "url": "https://www.latticesemi.com/view_document?document_id=50466",
+      "path": "target/research/ebr/ECP5-Memory-Usage-Guide.pdf"
+    }
+  }
+}

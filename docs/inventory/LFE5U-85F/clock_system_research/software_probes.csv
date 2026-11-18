@@ -1,0 +1,10 @@
+case,field,expected_tool_result,observed_config,evidence
+dcs_parameter_NEG,DCSMODE,POS,"{""DCS0.DCSMODE"":""POS""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+dcs_attribute_NEG,DCSMODE,NEG,"{""DCS0.DCSMODE"":""NEG""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+dcs_parameter_CLK0_LOW,DCSMODE,POS,"{""DCS0.DCSMODE"":""POS""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+osc_2,OSC.DIV,2,"{""OSC.DIV"":""2""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+osc_3,OSC.DIV,3,"{""OSC.DIV"":""3""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+osc_127,OSC.DIV,127,"{""OSC.DIV"":""127""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+osc_128,OSC.DIV,127,"{""OSC.DIV"":""127""}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+pll_external,PLL_divider_fields,from_synthesized_parameters,"{""CLKFB_DIV"":3,""CLKI_DIV"":0,""CLKOP_CPHASE"":2,""CLKOP_DIV"":5,""CLKOP_FPHASE"":0,""CLKOS2_DIV"":7,""CLKOS3_DIV"":7,""CLKOS_CPHASE"":5,""CLKOS_DIV"":11,""CLKOS_FPHASE"":0}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior
+pll_internal,PLL_divider_fields,from_synthesized_parameters,"{""CLKFB_DIV"":3,""CLKI_DIV"":0,""CLKOP_CPHASE"":2,""CLKOP_DIV"":5,""CLKOP_FPHASE"":0,""CLKOS2_DIV"":7,""CLKOS3_DIV"":7,""CLKOS_CPHASE"":5,""CLKOS_DIV"":11,""CLKOS_FPHASE"":0}",actual_Yosys_and_nextpnr_post_placement_config;not_routed;not_hardware_behavior

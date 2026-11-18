@@ -1,0 +1,20 @@
+# mandelbrot in the emulator's window (ECP5_GUI_SCRIPT; see gui/src/trace.rs).
+# A frame is about 0.15 s of board time (the UART, not the engine, sets it);
+# at ~2.5 MHz in fast mode the window draws one every second or two, and the
+# LEDs shimmer with the iteration count of each pixel.
+# Buttons are held for a second: the design debounces them for 10 ms
+# (250 000 clocks), which the window may take most of a second to run.
+# A key or button acts when the frame being drawn ends.
+0 rate max
+0 run
+1 board 3d
+4 button 1 down    # FIRE1: zoom in x2
+5 button 1 up
+10 button 6 down   # RIGHT: pan 1/8 of the width
+11 button 6 up
+16 button 3 down   # UP: pan up
+17 button 3 up
+22 button 1 down   # FIRE1: zoom in again
+23 button 1 up
+28 type t          # the seahorse-valley tour: 8 views
+70 quit

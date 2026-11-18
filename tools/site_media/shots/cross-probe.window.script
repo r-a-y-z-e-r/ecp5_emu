@@ -1,0 +1,7 @@
+# Adapted from xprobe3_gui: watch a specific bit after the editor probe.
+0 theme dark
+0 rate 20
+0 board 3d
+0 run
+2.5 waves open
+7 watch count[2]

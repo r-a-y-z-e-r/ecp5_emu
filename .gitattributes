@@ -1,0 +1,10 @@
+# Third-party inputs (board design, photos, fonts) live in git LFS.
+assets/** filter=lfs diff=lfs merge=lfs -text
+# Licence and notice texts stay plain text so they read in diffs and on the web.
+assets/**/*.md -filter diff merge text
+assets/**/*.txt -filter diff merge text
+# The icon is small and needed at compile time, so it stays outside git LFS.
+assets/icon/** -filter -diff -merge -text
+assets/icon/**/*.svg -filter diff merge text
+# Pin constraints are compiled into the binary (New project); keep them outside git LFS with text diffs.
+assets/**/*.lpf -filter diff merge text

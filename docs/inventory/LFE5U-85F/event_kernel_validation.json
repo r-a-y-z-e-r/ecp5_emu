@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "device": "LFE5U-85F",
+  "scope": "event kernel and explicit partial LUT/FF execution plan; not full-chip behavioral validation",
+  "architecture_manifest_sha256": "25cef4b967d66b7e0d805addbc5145db9628886ae179ecfbce54fee6abc0992a",
+  "configuration_manifest_sha256": "a2d6dd35448a8957e85b0dbaf4e99a5394476a8c5b73cbc7354a738fe66a4a8c",
+  "tests": {
+    "regular": {
+      "command": "cargo test --release --locked",
+      "passed": 47,
+      "unit": 18,
+      "portable_architecture": 5,
+      "portable_configuration_state": 8,
+      "portable_kernel": 16
+    },
+    "explicit_integrations": [
+      {
+        "command": "cargo test --release --locked --test event_kernel -- --ignored",
+        "passed": 1,
+        "scope": "text and compressed bit, exact native LUT/mux/DI/FF path, all 16 addresses, explicit FF controls"
+      },
+      {
+        "command": "cargo test --release --locked --test configuration_state -- --ignored",
+        "passed": 1,
+        "scope": "text/plain/compressed bit, CRAM/INIT and service metadata preservation"
+      },
+      {
+        "command": "cargo test --release --locked --test device_model -- --ignored",
+        "passed": 1,
+        "scope": "full architecture and all 197408 clock segment relationships"
+      },
+      {
+        "command": "cargo test --release --locked --test resource_decode -- --ignored",
+        "passed": 1,
+        "scope": "legacy native EBR/DSP/INIT decoder"
+      },
+      {
+        "command": "cargo test --release --locked --test whole_chip routed_counter_counts_through_tile_boundaries -- --ignored",
+        "passed": 1,
+        "scope": "legacy counter, 65538 observations"
+      }
+    ],
+    "total_passed": 52,
+    "not_run": [
+      "whole_chip::real_bitstream_matches_text_config requiring ECP5_TEST_BIT"
+    ]
+  },
+  "clippy": {
+    "command": "cargo clippy --all-targets --locked -- -D warnings",
+    "result": "passed"
+  },
+  "format": {
+    "command": "cargo fmt --check",
+    "result": "passed"
+  },
+  "kernel_contract": {
+    "time": "exact reduced u64/u64 rational picoseconds, u128 intermediate arithmetic, checked overflow",
+    "same_time": "collect stimulus; resolve all drivers; settle combinational waves; capture all FF; publish all Q; repeat",
+    "initial_clock": "establish stable levels without an invented edge",
+    "unknown_clock": "possible edge merges hold and capture; unchanged unknown is not an edge",
+    "data_z": "unknown input, never a high impedance FF storage value",
+    "strengths": [
+      "strong",
+      "pull"
+    ],
+    "local_reset": "sync/async, reset over CE, explicit digital policy for X/Z controls",
+    "timers": "generation cancellation; no automatic oscillator or PLL yet",
+    "trace": "bounded, readable wire order, immediate sources and causes; disabling it does not change execution",
+    "feedback": "bounded delta waves, recent source diagnostics, execution faults stop further scheduling"
+  },
+  "native_execution": {
+    "path": "docs/inventory/LFE5U-85F/kernel_native_execution.json",
+    "sha256": "a95796941129979197734ad40624947ae33371d1902ae9d00cd83cd43af16b7b",
+    "variants": 2,
+    "addresses_per_variant": 16,
+    "transitions_per_variant": 65,
+    "manual_plan": true,
+    "hardware_results": 0
+  },
+  "limitations": [
+    "No automatic full-device execution plan from CRAM",
+    "No new CLI run integration; existing run remains prototype",
+    "No global startup/PUR/GSR/GOE/GWDIS controller or PRLD",
+    "No new carry, PIO, RAMW/EBR port, DSP, IOLOGIC, PLL or other family behavior",
+    "Combinational clock hazards collapse to stable capture phases; no physical timing or metastability",
+    "No full driver/timer/queue save-resume",
+    "78 research questions and 37 future hardware series remain open; no board results"
+  ],
+  "source_files": [
+    {
+      "path": "Cargo.toml",
+      "sha256": "415939d78fb9c2be2e93155bca929c2ea2bafd692e6531be2d721a8c0565048a"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "0ebd1b0a1a2e68dbcce7fe35a0d3416415375c638e51483d2543cd6d51434229"
+    },
+    {
+      "path": "src/kernel/mod.rs",
+      "sha256": "dd890fb3a353fdc97ae99bb324edf0db8d91ecda060d4ab71ff43048c0656801"
+    },
+    {
+      "path": "src/kernel/time.rs",
+      "sha256": "b074808e21d9e17a76781c5caceb5725e2d7885733f0f47049d3df420982acb1"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "34dfb687ae0fd455fde548d2dd2638b6cd2f4212a680446ea497ec883eaba3de"
+    },
+    {
+      "path": "src/logic.rs",
+      "sha256": "fcfb4832f26404cac14fdda000c5fd1c1054f1ccd390878d65692c56f52fe3e9"
+    },
+    {
+      "path": "src/model/topology.rs",
+      "sha256": "58f2b569089126069c2141bc6d7cabbf92e050dcf35497484688f1f8d6045448"
+    },
+    {
+      "path": "src/state.rs",
+      "sha256": "d16853c4b956f7d57f2036464ea0854604dfa565f7711e3aea9cab07ece58c37"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "762ccd3e46fa68f76edc9f4f08132ca8eeaf24d6bafc257a6cc6dde87662cc3a"
+    },
+    {
+      "path": "tests/event_kernel.rs",
+      "sha256": "acd263e2560786fc5feaff5c5f00b409a0417b7b60a0cdbb66952c2a90159032"
+    },
+    {
+      "path": "docs/EVENT_KERNEL.md",
+      "sha256": "b78b6d92a594b863934bdae2a150e7f8c3cdfbf4ef160bb92a6d4a9dd0489e8e"
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "2a4031e0d0d6855ce9d49d6aa5b9b2ade62ab279948978b69261b6ca16ccf1b9"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "33fd1475de7b14a3d9a8c0cc421fd41b12e09821500c2b394e61a610d15288f8"
+    },
+    {
+      "path": "docs/CORE_STATUS.md",
+      "sha256": "fcc6da497168f4d20b08b3f3c83b853eb9b882aedd18921c8499115a1b2827a5"
+    },
+    {
+      "path": "docs/CONFIGURATION_STATE.md",
+      "sha256": "96ba5b8821dc7977baf9b5aaa6d305b7f76017860db241fe169f52e287449880"
+    },
+    {
+      "path": "docs/STRUCTURAL_MODEL.md",
+      "sha256": "714ea507e0dc831ba03e2cddfb492051d96b8ac32d5ecc2c778de220aa07b4aa"
+    },
+    {
+      "path": "docs/RESOURCE_COVERAGE.md",
+      "sha256": "67c29c09198ea227b3537c9b636f4c4286526aaa0183c2c56d4728f480b8b771"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS.md",
+      "sha256": "f92975e6d8b0b98e1bdd2858ab3d1eb6f9bff610946d03d8fd1d2c66961f6634"
+    }
+  ]
+}

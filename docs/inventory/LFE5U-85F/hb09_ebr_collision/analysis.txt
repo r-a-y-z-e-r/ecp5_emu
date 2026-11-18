@@ -1,0 +1,114 @@
+loads: 3 full windows per load: [86, 86, 85] distinct: 107
+=== e0 (2/2, READBEFOREWRITE/READBEFOREWRITE, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |  4863      -   4863        0(0)
+  A   rd_wr_col    827 |   827    206    827        0(0)
+  A   wr_wr_col    752 |   752      -    752        0(0)
+  A   wr_rd_col    758 |   758      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |  4932      -   4932        0(0)
+  B   rd_wr_col    758 |   758    205    758        0(0)
+  B   wr_wr_col    752 |   752      -    752        0(0)
+  B   wr_rd_col    827 |   827      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=305 same(A==B)=76 mix=0 neither=0
+
+=== e1 (1/1, READBEFOREWRITE/READBEFOREWRITE, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |  4863      -   4863        0(0)
+  A   rd_wr_col    827 |   827    407    827        0(0)
+  A   wr_wr_col    752 |   752      -    752        0(0)
+  A   wr_rd_col    758 |   758      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |  4932      -   4932        0(0)
+  B   rd_wr_col    758 |   758    423    758        0(0)
+  B   wr_wr_col    752 |   752      -    752        0(0)
+  B   wr_rd_col    827 |   827      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=195 same(A==B)=186 mix=0 neither=0
+
+=== e2 (4/4, READBEFOREWRITE/READBEFOREWRITE, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |  4863      -   4863        0(0)
+  A   rd_wr_col    827 |   827     55    827        0(0)
+  A   wr_wr_col    752 |   752      -    752        0(0)
+  A   wr_rd_col    758 |   758      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |  4932      -   4932        0(0)
+  B   rd_wr_col    758 |   758     54    758        0(0)
+  B   wr_wr_col    752 |   752      -    752        0(0)
+  B   wr_rd_col    827 |   827      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=364 same(A==B)=17 mix=0 neither=0
+
+=== e3 (9/9, READBEFOREWRITE/READBEFOREWRITE, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |  4863      -   4863        0(0)
+  A   rd_wr_col    827 |   827      1    827        0(0)
+  A   wr_wr_col    752 |   752      -    752        0(0)
+  A   wr_rd_col    758 |   758      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |  4932      -   4932        0(0)
+  B   rd_wr_col    758 |   758      4    758        0(0)
+  B   wr_wr_col    752 |   752      -    752        0(0)
+  B   wr_rd_col    827 |   827      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=381 same(A==B)=0 mix=0 neither=0
+
+=== e4 (18/18, READBEFOREWRITE/READBEFOREWRITE, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |  4863      -   4863        0(0)
+  A   rd_wr_col    827 |   827      0    827        0(0)
+  A   wr_wr_col    752 |   752      -    752        0(0)
+  A   wr_rd_col    758 |   758      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |  4932      -   4932        0(0)
+  B   rd_wr_col    758 |   758      0    758        0(0)
+  B   wr_wr_col    752 |   752      -    752        0(0)
+  B   wr_rd_col    827 |   827      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=354 same(A==B)=0 mix=27 neither=0
+
+=== e5 (9/9, NORMAL/NORMAL, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |   971      -   4863        0(0)
+  A   rd_wr_col    827 |     1    827      1        0(0)
+  A   wr_wr_col    752 |   135      -    752        0(0)
+  A   wr_rd_col    758 |   147      -    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |   933      -   4932        0(0)
+  B   rd_wr_col    758 |     4    758      4        0(0)
+  B   wr_wr_col    752 |   146      -    752        0(0)
+  B   wr_rd_col    827 |   147      -    827        0(0)
+post-both-write clean reads: total=381 A=0 B=381 same(A==B)=0 mix=0 neither=0
+
+=== e6 (9/9, WRITETHROUGH/WRITETHROUGH, NOREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5638 |  5638      -   5638        0(0)
+  A   clean_wr    4863 |    17   4863   4863        0(0)
+  A   rd_wr_col    827 |     1    827      1        0(0)
+  A   wr_wr_col    752 |     1    752    752        0(0)
+  A   wr_rd_col    758 |     4    758    758        0(0)
+  B   clean_rd    5550 |  5550      -   5550        0(0)
+  B   clean_wr    4932 |    13   4932   4932        0(0)
+  B   rd_wr_col    758 |     4    758      4        0(0)
+  B   wr_wr_col    752 |     4    752    752        0(0)
+  B   wr_rd_col    827 |     1    827    827        0(0)
+post-both-write clean reads: total=381 A=0 B=381 same(A==B)=0 mix=0 neither=0
+
+=== e7 (9/9, READBEFOREWRITE/READBEFOREWRITE, OUTREG) ===
+PORT  CASE       KNOWN |   OLD    NEW    OWN  NONE(BITS)
+  A   clean_rd    5599 |  5599      -   5599        0(0)
+  A   clean_wr    4818 |  4818      -   4818        0(0)
+  A   rd_wr_col    817 |   817      1    817        0(0)
+  A   wr_wr_col    749 |   749      -    749        0(0)
+  A   wr_rd_col    748 |   748      -    748        0(0)
+  B   clean_rd    5509 |  5509      -   5509        0(0)
+  B   clean_wr    4890 |  4890      -   4890        0(0)
+  B   rd_wr_col    748 |   748      4    748        0(0)
+  B   wr_wr_col    749 |   749      -    749        0(0)
+  B   wr_rd_col    817 |   817      -    817        0(0)
+post-both-write clean reads: total=381 A=0 B=381 same(A==B)=0 mix=0 neither=0
+
+none-of-these cases (showing 0 of 0):
