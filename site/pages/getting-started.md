@@ -15,9 +15,9 @@ Download `SHA256SUMS` too. In the download folder, run `shasum -a 256 -c SHA256S
 or `sha256sum -c SHA256SUMS` on Linux. These commands report missing files for archives you
 did not download; check that your archive reports `OK`.
 
-The macOS app is ad hoc signed, not notarized, so Gatekeeper may block the first open.
-After unzipping, right-click `ECP5 Emu.app` → **Open**, or use **System Settings → Privacy & Security → Open Anyway**.
-Alternatively, run `xattr -dr com.apple.quarantine "ECP5 Emu.app"` only for a download whose checksum matches `SHA256SUMS`.
+Unzip by double-click in Finder or with `ditto -x -k <zip> <dir>`.
+On the first open macOS refuses the ad hoc signed app; then use System Settings → Privacy & Security → Open Anyway.
+Or, only for a download whose checksum matches `SHA256SUMS`, run `xattr -dr com.apple.quarantine "ECP5 Emu.app"`.
 
 New releases are prepared as drafts by the [release workflow](../../.github/workflows/release.yml)
 and published after checks; the
